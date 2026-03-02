@@ -1,0 +1,16 @@
+[environments.default]
+store = "theme-evolution-os2.myshopify.com"
+#theme = 123456
+path = "./"
+
+[environments.production]
+store = "theme-evolution-os2.myshopify.com"
+theme = "live"
+
+[ignore]
+patterns = [
+  "*.txt",
+  "config/settings_data.json",
+  ".git/*",
+  "node_modules/*"
+]
