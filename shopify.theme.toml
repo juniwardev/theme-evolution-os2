@@ -10,7 +10,6 @@ theme = "live"
 [ignore]
 patterns = [
   "*.txt",
-  "config/settings_data.json",
   ".git/*",
   "node_modules/*"
 ]
