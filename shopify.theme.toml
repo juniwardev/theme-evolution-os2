@@ -1,6 +1,6 @@
 [environments.default]
 store = "theme-evolution-os2.myshopify.com"
-#theme = 123456
+theme = 138872651872
 path = "./"
 
 [environments.production]
