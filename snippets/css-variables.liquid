@@ -16,10 +16,53 @@
     --font-primary--family: {{ settings.type_primary_font.family }}, {{ settings.type_primary_font.fallback_families }};
     --font-primary--style: {{ settings.type_primary_font.style }};
     --font-primary--weight: {{ settings.type_primary_font.weight }};
-    --page-width: {{ settings.max_page_width }};
-    --page-margin: {{ settings.min_page_margin }}px;
-    --color-background: {{ settings.background_color }};
-    --color-foreground: {{ settings.foreground_color }};
-    --style-border-radius-inputs: {{ settings.input_corner_radius }}px;
+    --page-width: {{ settings.max_page_width | default: '120rem' }};
+    --page-margin: {{ settings.min_page_margin | default: '15' }}px;
+    --color-background: {{ settings.background_color | default: '#ffffff' }};
+    --color-foreground: {{ settings.foreground_color | default: '#000000' }};
+    --style-border-radius-inputs: {{ settings.input_corner_radius | default: '0' }}px;
+
+    /* Dawn Card Fallbacks */
+    --product-card-image-padding: 0rem;
+    --product-card-corner-radius: 0rem;
+    --product-card-text-alignment: left;
+    --product-card-border-width: 0rem;
+    --product-card-border-opacity: 0;
+    --product-card-shadow-opacity: 0;
+    --product-card-shadow-visible: 0;
+    --product-card-shadow-horizontal-offset: 0rem;
+    --product-card-shadow-vertical-offset: 0rem;
+    --product-card-shadow-blur-radius: 0rem;
+
+    --collection-card-image-padding: 0rem;
+    --collection-card-corner-radius: 0rem;
+    --collection-card-text-alignment: left;
+    --collection-card-border-width: 0rem;
+    --collection-card-border-opacity: 0;
+    --collection-card-shadow-opacity: 0;
+    --collection-card-shadow-visible: 0;
+    --collection-card-shadow-horizontal-offset: 0rem;
+    --collection-card-shadow-vertical-offset: 0rem;
+    --collection-card-shadow-blur-radius: 0rem;
+
+    --blog-card-image-padding: 0rem;
+    --blog-card-corner-radius: 0rem;
+    --blog-card-text-alignment: left;
+    --blog-card-border-width: 0rem;
+    --blog-card-border-opacity: 0;
+    --blog-card-shadow-opacity: 0;
+    --blog-card-shadow-visible: 0;
+    --blog-card-shadow-horizontal-offset: 0rem;
+
+    --text-boxes-border-opacity: 0;
+    --text-boxes-border-width: 0rem;
+    --text-boxes-radius: 0rem;
+    --text-boxes-shadow-opacity: 0;
+    --text-boxes-shadow-visible: 0;
+    --text-boxes-shadow-horizontal-offset: 0rem;
+    --text-boxes-shadow-vertical-offset: 0rem;
+    --text-boxes-shadow-blur-radius: 0rem;
+
+    --badge-corner-radius: 0rem;
   }
 {% endstyle %}
