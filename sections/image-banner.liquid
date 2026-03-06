@@ -1,7 +1,4 @@
-{% comment %}
- Excluding css files/styles at this point. I'm focusing on understanding the structure and functionality of the Theme 2.0 architecture and JSON templates.
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
-{% endcomment %}
 
 {%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
   {%- style -%}
