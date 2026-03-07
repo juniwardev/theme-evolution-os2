@@ -1,50 +1,178 @@
 {% comment %}
-  This section is used in the product template to render product page with
-  media, content, and add-to-cart form.
+  Renders the main product section with customizable blocks.
 
-  https://shopify.dev/docs/storefronts/themes/architecture/templates/product
+  @example
+  {% section 'product' %}
 {% endcomment %}
 
-<div class="product-images">
-  {% for image in product.images %}
-    {% render 'image', class: 'product-image', image: image %}
-  {% endfor %}
-</div>
+<div class="product-container" style="display: flex; gap: 2rem;">
+  <div class="product-media">
+    {% for image in product.images %}
+      {{ image | image_url: width: 1000 | image_tag: class: 'product-image' }}
+    {% endfor %}
+  </div>
 
-<div class="product-info">
-  <h1>{{ product.title }}</h1>
-  <p>{{ product.price | money }}</p>
-  <p>{{ product.description }}</p>
-</div>
+  <div class="product-info">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when '@app' -%}
+          {% render block %}
 
-<div class="product-form">
-  {% form 'product', product %}
-    {% assign current_variant = product.selected_or_first_available_variant %}
+        {%- when 'text' -%}
+          <div class="product__text" {{ block.shopify_attributes }}>
+            {{ block.settings.text }}
+          </div>
 
-    <select name="id">
-      {% for variant in product.variants %}
-        <option
-          value="{{ variant.id }}"
-          {% if variant == current_variant %}
-            selected="selected"
-          {% endif %}
-        >
-          {{ variant.title }} - {{ variant.price | money }}
-        </option>
-      {% endfor %}
-    </select>
+        {%- when 'title' -%}
+          <h1 class="product__title" {{ block.shopify_attributes }}>
+            {{ product.title | escape }}
+          </h1>
 
-    <input type="text" name="quantity" min="1" value="1">
+        {%- when 'price' -%}
+          <div class="product__price" {{ block.shopify_attributes }}>
+            {{ product.price | money }}
+          </div>
 
-    <input type="submit" value="Add to cart">
-    {{ form | payment_button }}
-  {% endform %}
+        {%- when 'description' -%}
+          <div class="product__description" {{ block.shopify_attributes }}>
+            {{ product.description }}
+          </div>
+
+        {%- when 'variant_picker' -%}
+          <div class="product__variant-picker" {{ block.shopify_attributes }}>
+            <select name="id">
+              {% for variant in product.variants %}
+                <option value="{{ variant.id }}" {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}>
+                  {{ variant.title }} - {{ variant.price | money }}
+                </option>
+              {% endfor %}
+            </select>
+          </div>
+
+        {%- when 'quantity_selector' -%}
+          <div class="product__quantity" {{ block.shopify_attributes }}>
+            <label for="Quantity-{{ section.id }}">{{ 'products.product.quantity.label' | t }}</label>
+            <input type="number" id="Quantity-{{ section.id }}" name="quantity" min="1" value="1">
+          </div>
+
+        {%- when 'buy_buttons' -%}
+          <div class="product__buy-buttons" {{ block.shopify_attributes }}>
+            {% form 'product', product %}
+              <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+              <button type="submit" name="add">
+                {{ 'products.product.add_to_cart' | t }}
+              </button>
+              {% if block.settings.show_dynamic_checkout %}
+                {{ form | payment_button }}
+              {% endif %}
+            {% endform %}
+          </div>
+
+        {%- when 'share' -%}
+          <div class="product__share" {{ block.shopify_attributes }}>
+            <button>{{ block.settings.share_label | escape }}</button>
+          </div>
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
 </div>
 
 {% schema %}
 {
   "name": "t:general.product",
   "settings": [],
+  "blocks": [
+    {
+      "type": "@app"
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Text block",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "title",
+      "name": "Title",
+      "limit": 1
+    },
+    {
+      "type": "price",
+      "name": "Price",
+      "limit": 1
+    },
+    {
+      "type": "variant_picker",
+      "name": "Variant picker",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "picker_type",
+          "options": [
+            {
+              "value": "dropdown",
+              "label": "Dropdown"
+            },
+            {
+              "value": "button",
+              "label": "Button"
+            }
+          ],
+          "default": "button",
+          "label": "Picker type"
+        }
+      ]
+    },
+    {
+      "type": "quantity_selector",
+      "name": "Quantity selector",
+      "limit": 1
+    },
+    {
+      "type": "buy_buttons",
+      "name": "Buy buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_dynamic_checkout",
+          "default": true,
+          "label": "Show dynamic checkout buttons"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_gift_card_recipient",
+          "default": true,
+          "label": "Show recipient information form for gift cards"
+        }
+      ]
+    },
+    {
+      "type": "description",
+      "name": "Description",
+      "limit": 1
+    },
+    {
+      "type": "share",
+      "name": "Share",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "share_label",
+          "label": "Share label",
+          "default": "Share"
+        }
+      ]
+    }
+  ],
   "disabled_on": {
     "groups": ["header", "footer"]
   }

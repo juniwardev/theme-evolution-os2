@@ -1,3 +1,10 @@
+{% comment %}
+  Renders an image banner with customizable text and buttons.
+
+  @example
+  {% section 'image-banner' %}
+{% endcomment %}
+
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 
 {%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
