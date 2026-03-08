@@ -6,7 +6,15 @@
   {% endif %}
 
   <div class="custom-section__content">
-    {% content_for 'blocks' %}
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'trust_badge' -%}
+          {% render 'trust-badge', block: block %}
+        
+        {%- when '@app' -%}
+          {% render block %}
+      {%- endcase -%}
+    {%- endfor -%}
   </div>
 </div>
 
@@ -42,8 +50,7 @@
 
 {% schema %}
 {
-  "name": "t:general.custom_section",
-  "blocks": [{ "type": "@theme" }],
+  "name": "Custom section",
   "settings": [
     {
       "type": "image_picker",
@@ -51,9 +58,48 @@
       "label": "t:labels.background"
     }
   ],
+  "blocks": [
+    {
+      "type": "@app"
+    },
+    {
+      "type": "trust_badge",
+      "name": "Trust badge",
+      "settings": [
+        {
+          "type": "select",
+          "id": "style",
+          "label": "Badge style",
+          "options": [
+            { "value": "minimal", "label": "Minimal" },
+            { "value": "pill", "label": "Pill" },
+            { "value": "underline", "label": "Underline" }
+          ],
+          "default": "underline"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Badge text",
+          "default": "Free shipping on all orders"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text color",
+          "default": "#000000"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "t:general.custom_section"
+      "name": "t:general.custom_section",
+      "blocks": [
+        {
+          "type": "trust_badge"
+        }
+      ]
     }
   ]
 }

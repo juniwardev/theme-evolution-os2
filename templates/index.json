@@ -45,10 +45,24 @@
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
+    },
+    "custom-section": {
+      "type": "custom-section",
+      "blocks": {
+        "trust-badge": {
+          "type": "trust_badge",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "trust-badge"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "image-banner"
+    "image-banner",
+    "custom-section"
   ]
 }

@@ -1,0 +1,38 @@
+{% doc %}
+  @param {object} block - The block object containing settings
+{% enddoc %}
+
+<style>
+  #TrustBadge-{{ block.id }} {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: {{ block.settings.text_color }};
+    transition: opacity 0.3s ease;
+  }
+  #TrustBadge-{{ block.id }}:hover {
+    opacity: 0.8;
+  }
+
+  {% if block.settings.style == 'pill' %}
+  #TrustBadge-{{ block.id }} {
+    border: 1px solid {{ block.settings.text_color }};
+    border-radius: 30px;
+    padding: 8px 16px;
+    background: {{ block.settings.text_color | color_modify: 'alpha', 0.05 }};
+  }
+  {% elsif block.settings.style == 'underline' %}
+  #TrustBadge-{{ block.id }} {
+    border-bottom: 2px solid {{ block.settings.text_color }};
+    border-radius: 0;
+  }
+  {% endif %}
+</style>
+
+<div id="TrustBadge-{{ block.id }}" class="trust-badge trust-badge--{{ block.settings.style }}" {{ block.shopify_attributes }}>
+  <span class="trust-badge__icon">✨</span>
+  <span class="trust-badge__text">{{ block.settings.heading | escape }}</span>
+</div>
