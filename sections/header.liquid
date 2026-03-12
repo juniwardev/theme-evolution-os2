@@ -1,4 +1,4 @@
-<header>
+<header style="--logo-width: {{ section.settings.logo_width }}px;">
   <h2 class="header__title">
     <a href="{{ routes.root_url }}" class="header__logo-link">
       {%- if section.settings.logo != blank -%}
@@ -41,7 +41,9 @@
 
 {% stylesheet %}
   header {
-    height: 5rem;
+    min-height: 5rem;
+    height: auto;
+    padding: 1rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,15 +67,23 @@
   header .header__icons {
     display: flex;
     gap: 1rem;
+    align-items: center;
+  }
+  .header__title {
+    margin: 0;
+    line-height: 1;
   }
   .header__logo-link {
     display: flex;
     align-items: center;
     text-decoration: none;
+    width: var(--logo-width);
+    max-width: 100%;
   }
   .header__logo {
     height: auto;
-    max-height: 4.5rem; /* Constrain to header height [cite: 6] */
+    width: 100%;
+    max-width: 100%;
     display: block;
   }
 {% endstylesheet %}
@@ -91,9 +101,9 @@
       "type": "range",
       "id": "logo_width",
       "min": 50,
-      "max": 300,
+      "max": 600,
       "step": 10,
-      "default": 150,
+      "default": 300,
       "unit": "px",
       "label": "Custom logo width"
     },
