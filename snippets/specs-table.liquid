@@ -1,0 +1,39 @@
+<style>
+  .specs-table {
+    margin: 2rem 0;
+    border-top: 1px solid {{ block.settings.text_color | color_modify: 'alpha', 0.1 }};
+  }
+  .specs-table__row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 12px 0;
+    border-bottom: 1px solid {{ block.settings.text_color | color_modify: 'alpha', 0.1 }};
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
+  }
+  .specs-table__label {
+    font-weight: 600;
+    color: {{ block.settings.text_color }};
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.8em;
+  }
+  .specs-table__value {
+    color: {{ block.settings.text_color | color_modify: 'alpha', 0.8 }};
+  }
+</style>
+
+{%- if product.metafields.custom.technical_specs.value != blank -%}
+  <div class="specs-table" {{ block.shopify_attributes }}>
+    {%- for spec in product.metafields.custom.technical_specs.value -%}
+      {%- assign parts = spec | split: ':' -%}
+      <div class="specs-table__row">
+        <div class="specs-table__label">
+          {{ parts[0] | strip }}
+        </div>
+        <div class="specs-table__value">
+          {{ parts[1] | default: parts[0] | strip }}
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+{%- endif -%}
