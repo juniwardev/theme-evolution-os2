@@ -41,12 +41,13 @@
 
 {% stylesheet %}
   header {
-    height: 5rem;
+    height: 4rem;
+    max-height: 4rem;
     padding: 0 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow: hidden; /* Prevents visual blowout */
+    overflow: hidden; /* Ensures any overflowing image gets clipped rather than blowing out the layout */
   }
   header a {
     position: relative;
@@ -96,8 +97,7 @@
   }
   .header__logo {
     display: block;
-    height: auto;
-    max-height: 3.5rem; /* Maintains breathing room within the 5rem header */
+    height: 100%;
     width: 100%;
     object-fit: contain;
     object-position: left;
