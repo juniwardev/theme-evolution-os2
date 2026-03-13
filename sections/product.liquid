@@ -5,7 +5,7 @@
   {% section 'product' %}
 {% endcomment %}
 
-<div class="product-container" style="display: flex; gap: 2rem;">
+<div class="product-container">
   <div class="product-media">
     {% for image in product.images %}
       {{ image | image_url: width: 1000 | image_tag: class: 'product-image' }}
@@ -76,6 +76,13 @@
     {%- endfor -%}
   </div>
 </div>
+
+{% stylesheet %}
+  .product-container {
+    display: flex;
+    gap: 2rem;
+  }
+{% endstylesheet %}
 
 {% schema %}
 {
