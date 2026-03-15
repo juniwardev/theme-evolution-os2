@@ -13,6 +13,9 @@
 
         {%- when 'specs_table' -%}
           {% render 'specs-table', block: block %}
+
+        {%- when 'material_highlight' -%}
+          {% render 'material-info', material: product.metafields.custom.material_link.value %}
         
         {%- when '@app' -%}
           {% render block %}
@@ -103,6 +106,17 @@
           "id": "text_color",
           "label": "Text color",
           "default": "#000000"
+        }
+      ]
+    },
+    {
+      "type": "material_highlight",
+      "name": "Material Highlight",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Displays detailed info from the linked Material Metaobject (custom.material_link)."
         }
       ]
     }
