@@ -27,7 +27,11 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_style_secondary_1": true
+            "button_link_1": "",
+            "button_style_secondary_1": true,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
@@ -36,25 +40,43 @@
         "button"
       ],
       "settings": {
+        "image_overlay_opacity": 0,
         "image_height": "large",
+        "image_behavior": "none",
         "desktop_content_position": "bottom-center",
-        "show_text_box": false,
         "desktop_content_alignment": "center",
+        "show_text_box": false,
         "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
         "show_text_below": false
       }
     },
     "custom-section": {
       "type": "custom-section",
       "blocks": {
+        "material_highlight_BizXkC": {
+          "type": "material_highlight",
+          "settings": {}
+        },
+        "specs_table_dn3xmM": {
+          "type": "specs_table",
+          "settings": {
+            "text_color": "#000000"
+          }
+        },
         "trust-badge": {
           "type": "trust_badge",
-          "settings": {}
+          "settings": {
+            "style": "underline",
+            "heading": "Free shipping on all orders",
+            "text_color": "#000000"
+          }
         }
       },
       "block_order": [
+        "material_highlight_BizXkC",
+        "specs_table_dn3xmM",
         "trust-badge"
       ],
       "settings": {}
