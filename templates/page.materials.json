@@ -1,0 +1,15 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-material-archive",
+      "settings": {
+        "columns_desktop": 3,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

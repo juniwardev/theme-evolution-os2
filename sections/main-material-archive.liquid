@@ -1,0 +1,225 @@
+{% comment %}
+  Renders a grid of 'Material' Metaobjects.
+  This section is designed to be used on the 'page.materials' template.
+  It dynamically pulls all values from the 'shop.metaobjects.material' namespace.
+
+  @example
+  {% section 'main-material-archive' %}
+{% endcomment %}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .material-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .material-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .material-grid {
+      grid-template-columns: repeat({{ section.settings.columns_desktop }}, 1fr);
+    }
+  }
+{%- endstyle -%}
+
+{% stylesheet %}
+  .material-archive-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .material-archive-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  }
+
+  .material-archive-card__image {
+    aspect-ratio: 16 / 9;
+    background: #f4f4f4;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .material-archive-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .material-archive-card__content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .material-archive-card__title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .material-archive-card__story {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1.5rem;
+  }
+
+  .material-archive-card__footer {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0,0,0,0.05);
+  }
+
+  .sustainability-bar-wrapper {
+    display: flex;
+    gap: 4px;
+    height: 6px;
+    margin-top: 8px;
+  }
+
+  .sustainability-bar-item {
+    flex: 1;
+    border-radius: 3px;
+    background: #eee;
+  }
+
+  .sustainability-bar-item.active {
+    background: #2d5a27;
+  }
+  .material-archive__header {
+    max-width: 600px;
+    margin: 0 auto 4rem auto;
+    text-align: center;
+  }
+  .material-archive__description {
+    margin-top: 1.5rem;
+    color: #666;
+  }
+  .material-archive-card__sustainability-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #888;
+  }
+{% endstylesheet %}
+
+<div class="section-{{ section.id }}-padding">
+  <div class="page-width">
+    <div class="material-archive__header center mb-12">
+      <h1 class="h1">{{ page.title | escape }}</h1>
+      {%- if page.content != blank -%}
+        <div class="material-archive__description rte">
+          {{ page.content }}
+        </div>
+      {%- endif -%}
+    </div>
+
+    <div class="material-grid">
+      {%- for material in shop.metaobjects.material.values -%}
+        <div class="material-archive-card">
+          <div class="material-archive-card__image">
+            {%- if material.icon.value != blank -%}
+              {{ material.icon.value | image_url: width: 600 | image_tag: loading: 'lazy' }}
+            {%- else -%}
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+          </div>
+          
+          <div class="material-archive-card__content">
+            <h2 class="material-archive-card__title">
+              {{ material.name.value | default: material.system.handle | capitalize }}
+            </h2>
+            
+            {%- if material.story.value != blank -%}
+              <div class="material-archive-card__story">
+                {{ material.story.value | truncate: 160 }}
+              </div>
+            {%- endif -%}
+
+            {%- if material.sustainability_rating.value != blank -%}
+              <div class="material-archive-card__footer">
+                <div class="material-archive-card__sustainability-header">
+                  <span>Sustainability</span>
+                  <span>{{ material.sustainability_rating.value }}/5</span>
+                </div>
+                <div class="sustainability-bar-wrapper">
+                  {%- for i in (1..5) -%}
+                    <div class="sustainability-bar-item{% if i <= material.sustainability_rating.value %} active{% endif %}"></div>
+                  {%- endfor -%}
+                </div>
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Material archive",
+  "settings": [
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 3,
+      "label": "Number of columns on desktop"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 36,
+      "label": "Top padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 36,
+      "label": "Bottom padding"
+    }
+  ]
+}
+{% endschema %}
