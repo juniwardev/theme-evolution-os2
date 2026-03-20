@@ -1,10 +1,5 @@
 {% comment %}
   Renders a grid of 'Material' Metaobjects.
-  This section is designed to be used on the 'page.materials' template.
-  It dynamically pulls all values from the 'shop.metaobjects.material' namespace.
-
-  @example
-  {% section 'main-material-archive' %}
 {% endcomment %}
 
 {%- style -%}
@@ -37,9 +32,57 @@
       grid-template-columns: repeat({{ section.settings.columns_desktop }}, 1fr);
     }
   }
-{%- endstyle -%}
 
-{% stylesheet %}
+  /* REINFORCED ARCHITECTURAL LOGIC - MATCHING PDP SNIPPET */
+  .material-archive-card__sustainability-bars {
+    display: flex !important;
+    gap: 4px !important;
+    height: 8px !important;
+    margin-top: 12px !important;
+    width: 100% !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .material-archive-card__sustainability-bar {
+    flex: 1 !important;
+    border-radius: 4px !important;
+    background-color: #eeeeee !important;
+    position: relative !important;
+    overflow: hidden !important;
+    height: 8px !important;
+    display: block !important;
+  }
+
+  /* THE GREEN FILL - HIGH SPECIFICITY */
+  .material-archive-card__sustainability-bar--active::after {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #2d5a27 !important;
+    transform-origin: left !important;
+    z-index: 10 !important;
+    display: block !important;
+    
+    /* Performance Optimization: GPU acceleration for smooth transforms */
+    will-change: transform;
+    /* Base state is visible; animation handles the 'reveal' */
+    transform: scaleX(1); 
+    animation: fillBarReveal 1s cubic-bezier(0.19, 1, 0.22, 1) both;
+    animation-delay: var(--anim-delay, 0s);
+  }
+
+  @keyframes fillBarReveal {
+    0% { transform: scaleX(0); }
+    100% { transform: scaleX(1); }
+  }
+
+  /* Archive Layout Styles */
   .material-archive-card {
     height: 100%;
     display: flex;
@@ -95,31 +138,17 @@
     border-top: 1px solid rgba(0,0,0,0.05);
   }
 
-  .sustainability-bar-wrapper {
-    display: flex;
-    gap: 4px;
-    height: 6px;
-    margin-top: 8px;
-  }
-
-  .sustainability-bar-item {
-    flex: 1;
-    border-radius: 3px;
-    background: #eee;
-  }
-
-  .sustainability-bar-item.active {
-    background: #2d5a27;
-  }
   .material-archive__header {
     max-width: 600px;
     margin: 0 auto 4rem auto;
     text-align: center;
   }
+
   .material-archive__description {
     margin-top: 1.5rem;
     color: #666;
   }
+
   .material-archive-card__sustainability-header {
     display: flex;
     justify-content: space-between;
@@ -128,7 +157,7 @@
     text-transform: uppercase;
     color: #888;
   }
-{% endstylesheet %}
+{%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding">
   <div class="page-width">
@@ -141,8 +170,22 @@
       {%- endif -%}
     </div>
 
+    {%- comment -%}
+      Engineering Choice: Relational Data
+      We iterate directly over shop.metaobjects.material.values. This centralized relational data model
+      reduces manual entry and ensures consistency across the store.
+    {%- endcomment -%}
     <div class="material-grid">
       {%- for material in shop.metaobjects.material.values -%}
+        {%- comment -%}Defensive Coding: Ensure material object exists before rendering{%- endcomment -%}
+        {%- if material == blank %}{% continue %}{% endif -%}
+        
+        {%- comment -%}
+          Engineering Choice: Integer casting
+          The sustainability rating is stored as a string or a scalar object.
+          We pipe it through `plus: 0` to forcefully cast it to an Integer for numerical logic.
+        {%- endcomment -%}
+        {%- assign rating_val = material.sustainability_rating.value | plus: 0 -%}
         <div class="material-archive-card">
           <div class="material-archive-card__image">
             {%- if material.icon.value != blank -%}
@@ -163,15 +206,26 @@
               </div>
             {%- endif -%}
 
-            {%- if material.sustainability_rating.value != blank -%}
+            {%- if rating_val > 0 -%}
               <div class="material-archive-card__footer">
                 <div class="material-archive-card__sustainability-header">
                   <span>Sustainability</span>
-                  <span>{{ material.sustainability_rating.value }}/5</span>
+                  <span>{{ rating_val }}/5</span>
                 </div>
-                <div class="sustainability-bar-wrapper">
+                <div 
+                  class="material-archive-card__sustainability-bars"
+                  role="meter"
+                  aria-label="Sustainability rating: {{ rating_val }} out of 5"
+                  aria-valuenow="{{ rating_val }}"
+                  aria-valuemin="0"
+                  aria-valuemax="5"
+                >
                   {%- for i in (1..5) -%}
-                    <div class="sustainability-bar-item{% if i <= material.sustainability_rating.value %} active{% endif %}"></div>
+                    <div 
+                      class="material-archive-card__sustainability-bar{% if i <= rating_val %} material-archive-card__sustainability-bar--active{% endif %}" 
+                      style="--anim-delay: {{ forloop.index0 | times: 150 }}ms;"
+                      aria-hidden="true"
+                    ></div>
                   {%- endfor -%}
                 </div>
               </div>
