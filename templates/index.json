@@ -40,6 +40,8 @@
         "button"
       ],
       "settings": {
+        "image": "shopify://shop_images/person-cuts-through-the-snow-on-skis.jpg",
+        "image_2": "shopify://shop_images/ski-tracks-at-the-foot-of-a-rocky-mountain-range.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "image_behavior": "none",
