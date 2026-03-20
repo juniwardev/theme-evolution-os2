@@ -1,7 +1,16 @@
-{% comment %}
+{% doc %}
   Renders information from a Material Metaobject.
-  The 'material' variable passed in should be the metaobject value.
-{% endcomment %}
+  Designed for use on Product Details Pages (PDP) or other templates requiring material context.
+
+  Architectural Notes:
+  - Synchronized animation logic and high-specificity BEM styling with the main archive section.
+  - Includes defensive integer casting of the sustainability rating for robust logic evaluation.
+
+  @param {metaobject} material - The 'Material' metaobject value containing icon, name, story, and sustainability_rating.
+
+  @example
+  {% render 'material-info', material: product.metafields.custom.primary_material.value %}
+{% enddoc %}
 
 {%- if material != blank -%}
   {%- assign rating_val = material.sustainability_rating.value | plus: 0 -%}

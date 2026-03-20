@@ -1,5 +1,15 @@
 {% comment %}
   Renders a grid of 'Material' Metaobjects.
+  This section is designed to be used on the 'page.materials' template.
+  It dynamically pulls all values from the 'shop.metaobjects.material' namespace.
+
+  Architectural Notes:
+  - Accessibility (A11y): Integrates ARIA roles (meter) and dynamic labels for screen readers.
+  - Performance: Uses GPU-accelerated transforms (scaleX) for sustainability bar animations.
+  - Styling: Applies strict BEM naming conventions for CSS predictability.
+
+  @example
+  {% section 'main-material-archive' %}
 {% endcomment %}
 
 {%- style -%}
