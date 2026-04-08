@@ -1,0 +1,22 @@
+{% layout none %}
+{%- assign material = product.metafields.custom.material_link.value -%}
+{
+  "product": {
+    "id": {{ product.id | json }},
+    "handle": {{ product.handle | json }},
+    "title": {{ product.title | json }},
+    "url": {{ product.url | prepend: shop.url | json }}
+  },
+  "has_material": {% if material != blank %}true{% else %}false{% endif %},
+  {% if material != blank %}
+  "material_data": {
+    "system_handle": {{ material.system.handle | json }},
+    "name": {{ material.name.value | default: null | json }},
+    "story": {{ material.story.value | default: null | json }},
+    "sustainability_rating": {{ material.sustainability_rating.value | default: null | json }},
+    "icon": {{ material.icon.value | image_url | default: null | json }}
+  }
+  {% else %}
+  "message": "No material data associated with this product."
+  {% endif %}
+}
