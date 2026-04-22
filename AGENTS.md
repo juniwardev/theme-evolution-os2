@@ -70,10 +70,22 @@
 
 - JSON file that define the structure, ordering, and which sections and blocks appear on each page type, allowing merchants to customize layouts without code changes
 
-### CSS & JavaScript
+### CSS Performance & Architecture Directives
 
-- Write CSS and JavaScript per components using the `{% stylesheet %}` and `{% javascript %}` tags
-- Note: `{% stylesheet %}` and `{% javascript %}` are only supported in `snippets/`, `blocks/`, and `sections/`
+- **No Global Bloat:** Never inject section-specific CSS into a global stylesheet (like `base.css` or `theme.css`). All CSS required for a specific Liquid section or snippet MUST be kept within that specific file.
+- **Avoid Inline Styles:** Do not use inline HTML `style="..."` attributes. Always use semantic classes and define the rules using one of the three approved tags below.
+- **The `{% stylesheet %}` Tag:** Use this tag when you have static, non-dynamic CSS for a section. Shopify will bundle and minify this code automatically.
+- **The `{% style %}` Tag:** Use this Liquid tag ONLY when the CSS requires dynamic Liquid variables (e.g., pulling color values or padding settings from `section.settings`).
+- **The `<style>` Tag:** Use the standard HTML style tag for ultra-lightweight, highly contextual CSS that needs to be rendered strictly in the DOM precisely where the component lives, ensuring it is isolated and non-blocking.
+- ** RULE ADDITION:** The `{% stylesheet %}` and `{% style %}` tags can ONLY be used in Section files (`sections/`). They must NEVER be nested inside Liquid logic (like `if` or `for` loops). If styling is required inside a Snippet file (`snippets/`), or if the styling must be conditionally rendered inside an `if` statement, you MUST use standard HTML `<style>` tags.
+
+### JavaScript Performance & Integration Directives
+
+- **Custom Elements:** Always use Web Components (`extends HTMLElement`) for interactive components. Avoid global functions. 
+- **Namespace Collisions:** NEVER use generic class names (like `CartDrawer`, `ProductForm`). Always namespace your custom elements (e.g., `AjaxCartDrawer`) to prevent silent Webpack/bundler collisions with native Dawn/Shopify theme assets.
+- **The `<script>` vs `{% javascript %}` Tags:** The `{% javascript %}` tag behaves exactly like the `{% stylesheet %}` tag. It MUST NOT be used inside of Liquid logic (like `{% if %}` statements). If you need to output JS dynamically inside an `if` block, or you are experiencing bundler failures where the JS is not propagating, use standard inline `<script>` tags to guarantee execution in the DOM.
+- **Section Rendering API (Ajax Cart):** When building custom cart drawers or components that must intercept standard Shopify `product-form.js` submissions, your custom element MUST natively implement two methods: `getSectionsToRender()` (returning an array of section IDs to fetch) and `renderContents(parsedState)` (to ingest the HTML). 
+- **Form Data Arrays:** When modifying `product-form.js` or `cart.js` to pass arrays of sections in a `FormData` object to the Section Rendering API, you MUST cast the array to a comma-separated string using `.join(',')` (e.g., `sections.map((s) => s.id).join(',')`). Failing to do so will cause Shopify to silently strip the `sections` object from the JSON response payload.
 
 ### LiquidDoc
 

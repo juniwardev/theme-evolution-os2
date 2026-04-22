@@ -2,7 +2,7 @@
   @param {object} block - The block object containing settings
 {% enddoc %}
 
-<style>
+{% style %}
   #TrustBadge-{{ block.id }} {
     display: inline-flex;
     align-items: center;
@@ -30,7 +30,7 @@
     border-radius: 0;
   }
   {% endif %}
-</style>
+{% endstyle %}
 
 <div id="TrustBadge-{{ block.id }}" class="trust-badge trust-badge--{{ block.settings.style }}" {{ block.shopify_attributes }}>
   <span class="trust-badge__icon">✨</span>

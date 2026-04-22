@@ -158,9 +158,13 @@
         </div>
         <div class="sustainability-bar-wrapper">
           {%- for i in (1..5) -%}
+            <style>
+              .sustainability-bar-item-delay-{{ forloop.index0 }} {
+                --anim-delay: {{ forloop.index0 | times: 150 }}ms;
+              }
+            </style>
             <div 
-              class="sustainability-bar-item{% if i <= rating_val %} active{% endif %}" 
-              style="--anim-delay: {{ forloop.index0 | times: 150 }}ms;"
+              class="sustainability-bar-item sustainability-bar-item-delay-{{ forloop.index0 }}{% if i <= rating_val %} active{% endif %}" 
             ></div>
           {%- endfor -%}
         </div>

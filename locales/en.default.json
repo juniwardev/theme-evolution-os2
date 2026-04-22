@@ -18,7 +18,10 @@
     "checkout": "Checkout",
     "title": "Cart",
     "update": "Update",
-    "remove": "Remove"
+    "remove": "Remove",
+    "intelligence_banner": {
+      "sustainable_message": "Awesome! You have {{ count }} sustainable item(s) in your cart. You are actively reducing your carbon footprint!"
+    }
   },
   "customers": {
     "login": {

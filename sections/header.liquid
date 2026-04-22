@@ -29,7 +29,7 @@
       </a>
     {% endif %}
 
-    <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart">
+    <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart" {% if settings.enable_cart_drawer %}data-cart-drawer-trigger{% endif %}>
       {% if cart.item_count > 0 %}
         <sup>{{ cart.item_count }}</sup>
       {% endif %}

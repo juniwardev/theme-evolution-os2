@@ -1,0 +1,398 @@
+{% if settings.enable_cart_drawer %}
+  <cart-drawer class="cart-drawer drawer{% if cart == empty %} is-empty{% endif %}">
+    <div id="CartDrawer" class="cart-drawer__inner">
+      <div class="cart-drawer__overlay" data-cart-drawer-close></div>
+      <div class="cart-drawer__panel" role="dialog" aria-modal="true" aria-label="{{ 'cart.title' | t }}">
+        <div class="cart-drawer__header">
+          <h2 class="cart-drawer__heading">{{ 'cart.title' | t }}</h2>
+          <button class="cart-drawer__close" type="button" data-cart-drawer-close aria-label="Close cart">
+            &times;
+          </button>
+        </div>
+
+        {% render 'cart-intelligence-banner' %}
+
+        <div class="cart-drawer__body" id="CartDrawer-CartItems">
+          {%- if cart == empty -%}
+            <div class="cart-drawer__empty-message">
+              <p>{{ 'cart.empty' | t | default: 'Your cart is currently empty.' }}</p>
+              <a href="{{ routes.all_products_collection_url }}" class="button">
+                {{ 'general.continue_shopping' | t | default: 'Continue shopping' }}
+              </a>
+            </div>
+          {%- else -%}
+            <form action="{{ routes.cart_url }}" id="CartDrawer-Form" class="cart-drawer__form" method="post">
+              <div class="cart-drawer__items">
+                {%- for item in cart.items -%}
+                  <div class="cart-drawer__item">
+                    <div class="cart-drawer__item-image">
+                      {% if item.image %}
+                        <img src="{{ item.image | image_url: width: 150 }}" alt="{{ item.image.alt | escape }}" loading="lazy" width="150" height="{{ 150 | divided_by: item.image.aspect_ratio | ceil }}">
+                      {% endif %}
+                    </div>
+                    <div class="cart-drawer__item-details">
+                      <a href="{{ item.url }}" class="cart-drawer__item-title">{{ item.product.title | escape }}</a>
+                      <div class="cart-drawer__item-price">
+                        {{ item.final_line_price | money }}
+                      </div>
+                      <div class="cart-drawer__item-quantity">
+                        <label class="visually-hidden" for="Drawer-quantity-{{ item.index | plus: 1 }}">
+                          Quantity
+                        </label>
+                        <input class="cart-drawer__quantity-input"
+                          type="number"
+                          name="updates[]"
+                          value="{{ item.quantity }}"
+                          min="0"
+                          aria-label="Quantity for {{ item.product.title | escape }}"
+                          id="Drawer-quantity-{{ item.index | plus: 1 }}"
+                          data-index="{{ item.index | plus: 1 }}"
+                        >
+                      </div>
+                      <a href="{{ item.url_to_remove }}" class="cart-drawer__item-remove" data-index="{{ item.index | plus: 1 }}">
+                        {{ 'cart.remove' | t }}
+                      </a>
+                    </div>
+                  </div>
+                {%- endfor -%}
+              </div>
+            </form>
+          {%- endif -%}
+        </div>
+
+        <div class="cart-drawer__footer">
+          {%- if cart != empty -%}
+            <div class="cart-drawer__totals">
+              <h3 class="cart-drawer__subtotal-title">Total</h3>
+              <p class="cart-drawer__subtotal-value">{{ cart.total_price | money_with_currency }}</p>
+            </div>
+            <div class="cart-drawer__actions">
+              <button type="submit" id="CartDrawer-Checkout" class="cart-drawer__checkout button button--primary" name="checkout" form="CartDrawer-Form">
+                {{ 'cart.checkout' | t }}
+              </button>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </cart-drawer>
+
+  <style>
+    .cart-drawer {
+      display: none;
+    }
+    .cart-drawer.is-active {
+      display: block;
+    }
+    .cart-drawer__inner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1000;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .cart-drawer__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+    }
+    .cart-drawer.is-open .cart-drawer__overlay {
+      opacity: 1;
+    }
+    .cart-drawer__panel {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      height: 100%;
+      background: #ffffff;
+      transform: translateX(100%);
+      transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+      display: flex;
+      flex-direction: column;
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+    .cart-drawer.is-open .cart-drawer__panel {
+      transform: translateX(0);
+    }
+    .cart-drawer__header {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    .cart-drawer__heading {
+      margin: 0;
+      font-size: 1.25rem;
+    }
+    .cart-drawer__close {
+      background: none;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: 0;
+    }
+    .cart-drawer__body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+    }
+    .cart-drawer__item {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    .cart-drawer__item-image img {
+      width: 80px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    .cart-drawer__item-details {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .cart-drawer__item-title {
+      font-weight: 600;
+      text-decoration: none;
+      color: #121212;
+      margin-bottom: 5px;
+    }
+    .cart-drawer__item-price {
+      margin-bottom: 10px;
+    }
+    .cart-drawer__quantity-input {
+      width: 60px;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .cart-drawer__item-remove {
+      font-size: 0.85rem;
+      color: #d32f2f;
+      text-decoration: underline;
+    }
+    .cart-drawer__footer {
+      padding: 20px;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      background: #fafafa;
+    }
+    .cart-drawer__totals {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .cart-drawer__subtotal-title {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+    .cart-drawer__subtotal-value {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+    .cart-drawer__checkout {
+      width: 100%;
+      padding: 15px;
+      background: #121212;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .cart-drawer__checkout:hover {
+      background: #333333;
+    }
+  </style>
+
+  <script>
+    class AjaxCartDrawer extends HTMLElement {
+      constructor() {
+        super();
+        this.drawer = this;
+        this.bindEvents();
+      }
+
+      bindEvents() {
+        document.querySelectorAll('[data-cart-drawer-trigger]').forEach((trigger) => {
+          const newTrigger = trigger.cloneNode(true);
+          if (trigger.parentNode) {
+            trigger.parentNode.replaceChild(newTrigger, trigger);
+          }
+          newTrigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            this.open();
+          });
+        });
+
+        this.querySelectorAll('[data-cart-drawer-close]').forEach((trigger) => {
+          trigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            this.close();
+          });
+        });
+
+        this.querySelectorAll('.cart-drawer__quantity-input').forEach((input) => {
+          input.addEventListener('change', (e) => {
+            this.updateLineItem(input.dataset.index, input.value);
+          });
+        });
+
+        this.querySelectorAll('.cart-drawer__item-remove').forEach((link) => {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            this.updateLineItem(link.dataset.index, 0);
+          });
+        });
+
+        document.addEventListener('keyup', (e) => {
+          if (e.code === 'Escape') this.close();
+        });
+      }
+
+      open() {
+        this.drawer.classList.add('is-active');
+        setTimeout(() => {
+          this.drawer.classList.add('is-open');
+          document.body.style.overflow = 'hidden';
+        }, 10);
+      }
+
+      close() {
+        this.drawer.classList.remove('is-open');
+        document.body.style.overflow = '';
+        setTimeout(() => {
+          this.drawer.classList.remove('is-active');
+        }, 300);
+      }
+
+      getSectionsToRender() {
+        return [
+          {
+            id: 'cart-drawer',
+            selector: '.cart-drawer__inner'
+          },
+          {
+            id: 'header',
+            selector: '.header__icon--cart'
+          }
+        ];
+      }
+
+      setActiveElement(element) {
+        this.activeElement = element;
+      }
+
+      renderContents(parsedState) {
+        if (!parsedState || !parsedState.sections) {
+          this.updateCart();
+          return;
+        }
+
+        this.getSectionsToRender().forEach((section) => {
+          const html = parsedState.sections[section.id];
+          if (!html) return;
+          
+          const parsedHTML = new DOMParser().parseFromString(html, 'text/html');
+          const newContent = parsedHTML.querySelector(section.selector);
+          
+          const sectionElement = section.id === 'header' 
+            ? document.querySelector(section.selector) 
+            : this.querySelector(section.selector);
+            
+          if (newContent && sectionElement) {
+            sectionElement.innerHTML = newContent.innerHTML;
+          }
+        });
+        
+        this.bindEvents();
+        this.open();
+      }
+
+      updateLineItem(line, quantity) {
+        this.drawer.classList.add('is-loading');
+
+        const body = JSON.stringify({
+          line: line,
+          quantity: quantity,
+          sections: this.getSectionsToRender().map((s) => s.id).join(','),
+          sections_url: window.location.pathname
+        });
+
+        fetch(window.routes.cart_change_url || '/cart/change.js', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/javascript'
+          },
+          body
+        })
+        .then((response) => response.json())
+        .then((parsedState) => {
+          this.drawer.classList.remove('is-loading');
+          this.renderContents(parsedState);
+        })
+        .catch((error) => {
+          console.error('Error updating line item:', error);
+          this.drawer.classList.remove('is-loading');
+          this.updateCart();
+        });
+      }
+
+      updateCart() {
+        fetch('/?section_id=cart-drawer')
+          .then((response) => response.text())
+          .then((html) => {
+            const parsedHTML = new DOMParser().parseFromString(html, 'text/html');
+            const newDrawerInner = parsedHTML.querySelector('.cart-drawer__inner');
+            if (newDrawerInner) {
+              this.querySelector('.cart-drawer__inner').innerHTML = newDrawerInner.innerHTML;
+              this.bindEvents();
+              this.open();
+            }
+          })
+          .catch((error) => console.error('Error updating cart drawer:', error));
+
+        fetch('/?section_id=header')
+          .then((response) => response.text())
+          .then((html) => {
+            const parsedHTML = new DOMParser().parseFromString(html, 'text/html');
+            const newHeaderIcon = parsedHTML.querySelector('.header__icon--cart');
+            const currentHeaderIcon = document.querySelector('.header__icon--cart');
+            if (newHeaderIcon && currentHeaderIcon) {
+              currentHeaderIcon.innerHTML = newHeaderIcon.innerHTML;
+            }
+          })
+          .catch((e) => console.error('Error updating header icon:', e));
+      }
+    }
+
+    if (!customElements.get('cart-drawer')) {
+      customElements.define('cart-drawer', AjaxCartDrawer);
+    }
+  </script>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Cart Drawer",
+  "settings": []
+}
+{% endschema %}

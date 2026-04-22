@@ -7,9 +7,13 @@
 
 <h1>{{ 'collections.title' | t }}</h1>
 
+<style>
+  .collections-custom-gap-{{ section.id }} {
+    --grid-gap: {{ section.settings.grid_gap }}px;
+  }
+</style>
 <div
-  class="collections {{ section.settings.grid_item_width }}"
-  style="--grid-gap: {{ section.settings.grid_gap }}px"
+  class="collections {{ section.settings.grid_item_width }} collections-custom-gap-{{ section.id }}"
 >
   {% for collection in collections %}
     <a class="collection-card" href="{{ collection.url }}">

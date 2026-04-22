@@ -6,6 +6,7 @@
 {% endcomment %}
 
 <script src="{{ 'material-api-fetch.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
 <div class="product-container page-width">
   <div class="product-media">
@@ -71,15 +72,22 @@
 
         {%- when 'buy_buttons' -%}
           <div class="product__buy-buttons" {{ block.shopify_attributes }}>
-            {% form 'product', product %}
-              <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-              <button type="submit" name="add">
-                {{ 'products.product.add_to_cart' | t }}
-              </button>
-              {% if block.settings.show_dynamic_checkout %}
-                {{ form | payment_button }}
-              {% endif %}
-            {% endform %}
+            <product-form>
+              {% form 'product', product %}
+                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                <button type="submit" name="add">
+                  <span>{{ 'products.product.add_to_cart' | t }}</span>
+                  <div class="loading__spinner hidden">
+                    <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                      <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                    </svg>
+                  </div>
+                </button>
+                {% if block.settings.show_dynamic_checkout %}
+                  {{ form | payment_button }}
+                {% endif %}
+              {% endform %}
+            </product-form>
           </div>
 
         {%- when 'share' -%}

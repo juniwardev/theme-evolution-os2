@@ -231,9 +231,13 @@
                   aria-valuemax="5"
                 >
                   {%- for i in (1..5) -%}
+                    <style>
+                      .material-archive-card__sustainability-bar-delay-{{ forloop.index0 }} {
+                        --anim-delay: {{ forloop.index0 | times: 150 }}ms;
+                      }
+                    </style>
                     <div 
-                      class="material-archive-card__sustainability-bar{% if i <= rating_val %} material-archive-card__sustainability-bar--active{% endif %}" 
-                      style="--anim-delay: {{ forloop.index0 | times: 150 }}ms;"
+                      class="material-archive-card__sustainability-bar material-archive-card__sustainability-bar-delay-{{ forloop.index0 }}{% if i <= rating_val %} material-archive-card__sustainability-bar--active{% endif %}" 
                       aria-hidden="true"
                     ></div>
                   {%- endfor -%}

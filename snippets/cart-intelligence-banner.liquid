@@ -1,0 +1,35 @@
+{% doc %}
+  Renders a cart intelligence banner showing the count of sustainable items.
+
+  @example
+  {% render 'cart-intelligence-banner' %}
+{% enddoc %}
+
+{% assign eco_material_count = 0 %}
+
+{% for item in cart.items %}
+  {% assign material_handle = item.product.metafields.custom.material_link.value.system.handle %}
+  {% if material_handle == 'mycelium-bio-fabric' or material_handle == 'recycled-steel' %}
+    {% assign eco_material_count = eco_material_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+{% if eco_material_count > 0 %}
+  <div class="cart-intelligence-banner">
+    <p>{{ 'cart.intelligence_banner.sustainable_message' | t: count: eco_material_count }}</p>
+  </div>
+  <style>
+    .cart-intelligence-banner {
+      background-color: #e8f5e9;
+      border: 1px solid #4caf50;
+      color: #2e7d32;
+      padding: 15px 20px;
+      border-radius: 8px;
+      margin: 0 20px 24px;
+      font-weight: 600;
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  </style>
+{% endif %}
