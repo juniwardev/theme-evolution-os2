@@ -18,8 +18,8 @@
     {% endunless %}
 
     {% # Load and preload the critical CSS %}
-    {{ 'eco-tooltip.css' | asset_url | stylesheet_tag }}
     {{ 'critical.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'eco-tooltip.css' | asset_url | stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
     {% # Social, title, etc. %}
