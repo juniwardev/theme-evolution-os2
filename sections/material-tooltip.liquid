@@ -1,0 +1,59 @@
+{% comment %}
+  Renders metaobject content for a material tooltip.
+  Uses 'search.terms' as the material handle passed via query parameter.
+{% endcomment %}
+
+{% liquid
+  # Extract the material handle from search terms
+  assign material_handle = search.terms | strip
+  
+  # Configuration: The handle of your Metaobject Definition.
+  assign metaobject_definition_handle = 'material'
+
+  # Attempt to fetch the specific metaobject
+  assign material_metaobject = shop.metaobjects[metaobject_definition_handle][material_handle]
+
+  # Fallback: If not found, grab the first available material for demo purposes
+  if material_metaobject == blank
+    assign material_metaobject = shop.metaobjects[metaobject_definition_handle].values | first
+  endif
+%}
+
+<div class="material-tooltip-inner">
+  {% if material_metaobject != blank %}
+    <div class="material-info-content">
+      <h3 class="material-tooltip__title">
+        {{ material_metaobject.name.value | default: material_metaobject.system.handle | replace: '-', ' ' | capitalize }}
+      </h3>
+      {% if material_metaobject.story.value != blank %}
+        <div class="material-tooltip__description">
+          {{ material_metaobject.story.value }}
+        </div>
+      {% endif %}
+      
+      {% if material_metaobject.sustainability_rating.value != blank %}
+        <div class="material-tooltip__score">
+          <strong>Sustainability Score:</strong> {{ material_metaobject.sustainability_rating.value }} / 5
+        </div>
+      {% endif %}
+    </div>
+  {% else %}
+    <div class="material-info-content material-info-content--error">
+      <p>Definition for <strong>{{ material_handle }}</strong> currently unavailable.</p>
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Material Tooltip Section",
+  "tag": "section",
+  "class": "section-material-tooltip",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Material Tooltip"
+    }
+  ]
+}
+{% endschema %}

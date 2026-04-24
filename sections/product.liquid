@@ -38,7 +38,14 @@
 
         {%- when 'description' -%}
           <div class="product__description" {{ block.shopify_attributes }}>
-            {{ product.description }}
+            {%- assign sustainable_materials = "Mycelium Bio-Fabric,Organic Cotton,Recycled Polyester" | split: "," -%}
+            {%- assign description_with_tooltips = product.description -%}
+            {%- for material in sustainable_materials -%}
+              {%- assign material_handle = material | handleize -%}
+              {%- assign trigger_span = '<span class="eco-tooltip-trigger" data-material-handle="' | append: material_handle | append: '">' | append: material | append: '</span>' -%}
+              {%- assign description_with_tooltips = description_with_tooltips | replace: material, trigger_span -%}
+            {%- endfor -%}
+            {{ description_with_tooltips }}
           </div>
 
           <details id="MaterialAccordion" class="material-accordion">

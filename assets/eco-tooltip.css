@@ -1,0 +1,85 @@
+.eco-tooltip {
+  /* Positioning */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999; /* Ensure it stays above everything */
+  
+  /* Initial State (Hidden) */
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  display: block; /* Keep in DOM flow for size calculations */
+  
+  /* Box Styling */
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 320px;
+  min-width: 200px;
+  
+  /* Typography */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #121212;
+  text-align: left;
+  
+  /* Animation */
+  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+  transform: translateY(5px);
+}
+
+/* Visible State */
+.eco-tooltip.is-visible {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Content Styling */
+.material-tooltip__title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #000;
+}
+
+.material-tooltip__description {
+  margin: 0;
+  color: #4a4a4a;
+}
+
+.material-tooltip__score {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #f0f0f0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+/* Trigger Element Styling */
+.eco-tooltip-trigger {
+  cursor: help;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 4px;
+  color: #00707c; /* Brand color */
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.eco-tooltip-trigger:hover {
+  color: #004c55;
+  text-decoration-style: solid;
+}
+
+/* Error State */
+.material-info-content--error {
+  color: #856404;
+  font-style: italic;
+}

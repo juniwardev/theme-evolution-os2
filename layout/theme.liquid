@@ -18,6 +18,7 @@
     {% endunless %}
 
     {% # Load and preload the critical CSS %}
+    {{ 'eco-tooltip.css' | asset_url | stylesheet_tag }}
     {{ 'critical.css' | asset_url | stylesheet_tag: preload: true }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
@@ -27,6 +28,7 @@
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'eco-tooltip.js' | asset_url }}" defer="defer"></script>
 
     {{ content_for_header }}
   </head>
