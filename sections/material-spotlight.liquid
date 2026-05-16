@@ -78,7 +78,7 @@
     endif
   -%}
 
-  <div class="material-spotlight material-spotlight--{{ icon_style }} color-{{ color_scheme }} section-{{ section.id }}-padding">
+  <div class="material-spotlight material-spotlight--{{ icon_style }} color-{{ color_scheme }} gradient section-{{ section.id }}-padding">
     <div class="page-width">
       <div class="material-spotlight__card">
         <div class="material-spotlight__header">
@@ -96,6 +96,18 @@
                       fetchpriority: 'high',
                       preload: true,
                       widths: '400, 800, 1200, 1500',
+                      sizes: '100vw'
+                }}
+              {%- elsif icon_style == 'hero' -%}
+                {{
+                  icon_image
+                  | image_url: width: icon_width
+                  | image_tag:
+                      class: 'material-spotlight__icon',
+                      width: icon_image.width,
+                      height: icon_image.height,
+                      loading: 'lazy',
+                      widths: '600, 900, 1200, 1500',
                       sizes: '100vw'
                 }}
               {%- else -%}
