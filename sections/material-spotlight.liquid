@@ -1,0 +1,342 @@
+{% comment %}
+  Renders the Material Spotlight section on product pages.
+
+  Reads the material metaobject linked from
+  `product.metafields.custom.material_link` and renders its name, icon,
+  story, and sustainability rating in a single card.
+
+  Renders NOTHING when no material is linked (no empty container, no
+  heading, no whitespace). Restricted to product templates via the
+  section schema (`"enabled_on": { "templates": ["product"] }`).
+
+  Expected metaobject contract (Shopify admin -> Settings -> Custom data):
+  - material.name                 : single-line text
+  - material.icon                 : file reference (image) -- MediaImage
+  - material.story                : multi-line text
+  - material.sustainability_rating: integer (0-5)
+
+  If `material.icon` is set to a non-image File, the section falls back
+  to a placeholder SVG rather than emitting a broken <img> tag.
+
+  All multi-line merchant-supplied text (`material.story.value`) is
+  passed through `escape | newline_to_br` (escape FIRST, then newline_to_br)
+  so any pasted `<script>` or similar markup is rendered as inert text.
+
+  Note: The merchant is responsible for maintaining sequential heading
+  hierarchy when stacking multiple spotlight-style sections on a single page.
+
+  @example
+  {% section 'material-spotlight' %}
+{% endcomment %}
+
+{%- liquid
+  assign material = product.metafields.custom.material_link.value
+  assign padding_top_mobile = section.settings.padding_top | times: 0.75 | round
+  assign padding_bottom_mobile = section.settings.padding_bottom | times: 0.75 | round
+-%}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ padding_top_mobile }}px;
+    padding-bottom: {{ padding_bottom_mobile }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- if material != blank -%}
+  {%- liquid
+    assign rating_val = material.sustainability_rating.value | plus: 0
+    assign icon_style = section.settings.icon_style | default: 'inline'
+    assign icon_image = material.icon.value
+    assign show_rating = section.settings.show_rating
+    assign heading_tag = section.settings.heading_tag | default: 'h2'
+    assign color_scheme = section.settings.color_scheme | default: 'scheme-1'
+
+    if icon_style == 'hero'
+      assign icon_width = 1500
+    else
+      assign icon_width = 120
+    endif
+
+    assign rating_label = 'sections.material_spotlight.rating_label' | t
+    assign rating_score_text = 'sections.material_spotlight.rating_score_text' | t: rating: rating_val
+    assign rating_aria_label = 'sections.material_spotlight.rating_aria_label' | t: rating: rating_val
+
+    assign display_name = material.name.value
+    if display_name == blank
+      assign display_name = material.system.handle | replace: '-', ' ' | capitalize
+    endif
+
+    assign has_valid_icon = false
+    if icon_image != blank and icon_image.src != blank
+      assign has_valid_icon = true
+    endif
+  -%}
+
+  <div class="material-spotlight material-spotlight--{{ icon_style }} color-{{ color_scheme }} section-{{ section.id }}-padding">
+    <div class="page-width">
+      <div class="material-spotlight__card">
+        <div class="material-spotlight__header">
+          {%- if has_valid_icon -%}
+            <div class="material-spotlight__icon-wrap">
+              {%- if icon_style == 'hero' and section.settings.preload_icon -%}
+                {{
+                  icon_image
+                  | image_url: width: icon_width
+                  | image_tag:
+                      class: 'material-spotlight__icon',
+                      width: icon_image.width,
+                      height: icon_image.height,
+                      loading: 'eager',
+                      fetchpriority: 'high',
+                      preload: true,
+                      widths: '400, 800, 1200, 1500',
+                      sizes: '100vw'
+                }}
+              {%- else -%}
+                {{
+                  icon_image
+                  | image_url: width: icon_width
+                  | image_tag:
+                      class: 'material-spotlight__icon',
+                      width: icon_image.width,
+                      height: icon_image.height,
+                      loading: 'lazy',
+                      widths: '120, 240, 360',
+                      sizes: '80px'
+                }}
+              {%- endif -%}
+            </div>
+          {%- elsif icon_image != blank -%}
+            <div class="material-spotlight__icon-wrap material-spotlight__icon-wrap--placeholder">
+              {{ 'product-1' | placeholder_svg_tag: 'material-spotlight__icon material-spotlight__icon--placeholder' }}
+            </div>
+          {%- endif -%}
+
+          <div class="material-spotlight__heading-group">
+            {%- if section.settings.heading != blank -%}
+              <span class="material-spotlight__subtitle">
+                {{ section.settings.heading | escape }}
+              </span>
+            {%- endif -%}
+
+            <{{ heading_tag }} class="material-spotlight__title">
+              {{ display_name | escape }}
+            </{{ heading_tag }}>
+          </div>
+        </div>
+
+        {%- if material.story.value != blank -%}
+          <div class="material-spotlight__story rte">
+            {{ material.story.value | escape | newline_to_br }}
+          </div>
+        {%- endif -%}
+
+        {%- if show_rating and rating_val > 0 -%}
+          {% render 'sustainability-rating',
+            rating: rating_val,
+            label: rating_label,
+            score_text: rating_score_text,
+            aria_label: rating_aria_label
+          %}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% stylesheet %}
+  .material-spotlight {
+    width: 100%;
+  }
+
+  .material-spotlight__card {
+    margin: 0 auto;
+    padding: 2.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Header layout: inline style -- icon beside name */
+  .material-spotlight--inline .material-spotlight__header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .material-spotlight--inline .material-spotlight__icon-wrap {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f4f4f4;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .material-spotlight--inline .material-spotlight__icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Header layout: hero style -- icon full-width above name */
+  .material-spotlight--hero .material-spotlight__header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .material-spotlight--hero .material-spotlight__icon-wrap {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f4f4f4;
+  }
+
+  .material-spotlight--hero .material-spotlight__icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .material-spotlight__icon-wrap--placeholder svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+  }
+
+  .material-spotlight__subtitle {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #a1a1a1;
+    margin-bottom: 4px;
+  }
+
+  .material-spotlight__title {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #121212;
+  }
+
+  .material-spotlight__story {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #3d3d3d;
+    margin-bottom: 2rem;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "t:sections.material_spotlight.name",
+  "tag": "section",
+  "class": "section--material-spotlight",
+  "enabled_on": {
+    "templates": ["product"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.material_spotlight.headers.content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:sections.material_spotlight.settings.heading.label",
+      "default": "Crafted from"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "t:sections.material_spotlight.settings.heading_tag.label",
+      "options": [
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" }
+      ],
+      "default": "h2",
+      "info": "t:sections.material_spotlight.settings.heading_tag.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.material_spotlight.headers.layout"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "select",
+      "id": "icon_style",
+      "label": "t:sections.material_spotlight.settings.icon_style.label",
+      "options": [
+        { "value": "inline", "label": "t:sections.material_spotlight.settings.icon_style.options.inline" },
+        { "value": "hero", "label": "t:sections.material_spotlight.settings.icon_style.options.hero" }
+      ],
+      "default": "inline"
+    },
+    {
+      "type": "checkbox",
+      "id": "preload_icon",
+      "label": "t:sections.material_spotlight.settings.preload_icon.label",
+      "info": "t:sections.material_spotlight.settings.preload_icon.info",
+      "default": true,
+      "visible_if": "{{ section.settings.icon_style == 'hero' }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_rating",
+      "label": "t:sections.material_spotlight.settings.show_rating.label",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.material_spotlight.headers.spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "t:sections.material_spotlight.settings.padding_top.label",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "t:sections.material_spotlight.settings.padding_bottom.label",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.material_spotlight.name"
+    }
+  ]
+}
+{% endschema %}
