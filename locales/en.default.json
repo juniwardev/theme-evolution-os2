@@ -238,6 +238,11 @@
       "min_error": "This item has a minimum of {{ min }}",
       "max_error": "This item has a maximum of {{ max }}",
       "step_error": "You can only add this item in increments of {{ step }}"
+    },
+    "material_spotlight": {
+      "rating_label": "Sustainability score",
+      "rating_score_text": "{{ rating }} of 5",
+      "rating_aria_label": "Sustainability rating: {{ rating }} out of 5"
     }
   },
   "accessibility": {

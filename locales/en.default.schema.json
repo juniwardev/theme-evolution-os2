@@ -3106,6 +3106,43 @@
       "presets": {
         "name": "Collapsible content"
       }
+    },
+    "material_spotlight": {
+      "name": "Material spotlight",
+      "headers": {
+        "content": "Content",
+        "layout": "Layout",
+        "spacing": "Spacing"
+      },
+      "settings": {
+        "heading": {
+          "label": "Eyebrow label"
+        },
+        "heading_tag": {
+          "label": "Heading level",
+          "info": "Choose H2 if this is the most prominent heading on the page below the product title (H1)."
+        },
+        "icon_style": {
+          "label": "Icon style",
+          "options": {
+            "inline": "Inline with name",
+            "hero": "Hero (full width)"
+          }
+        },
+        "preload_icon": {
+          "label": "Preload icon",
+          "info": "Preload the icon image for faster first paint. Enable for hero placements; leave off for below-the-fold sections."
+        },
+        "show_rating": {
+          "label": "Show sustainability rating"
+        },
+        "padding_top": {
+          "label": "Top padding"
+        },
+        "padding_bottom": {
+          "label": "Bottom padding"
+        }
+      }
     }
   }
 }
