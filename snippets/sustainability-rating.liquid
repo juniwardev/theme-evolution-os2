@@ -1,0 +1,129 @@
+{% doc %}
+  Renders a 5-bar sustainability rating with a left-to-right reveal
+  animation. Each bar is filled (green) when its index is less than or
+  equal to the supplied rating.
+
+  Note: Per project CSS directive, snippets must use standard <style>
+  tags (not {% stylesheet %} or {% style %}). The CSS is therefore
+  inlined here.
+
+  This snippet is a generic, reusable primitive. It does NOT bake in
+  any feature-specific locale keys; callers pass localized strings
+  via the `score_text`, `aria_label`, and `label` parameters. English
+  defaults are derived via conditional assignment (NOT a `default:`
+  filter chain) so that a caller-supplied string like `"4 of 5"` is
+  preserved verbatim rather than getting `' / 5'` appended onto it.
+
+  @param {number} rating - Integer 0-5. Bars 1..rating render as active.
+  @param {string} [label] - Optional label shown above the bars (e.g. "Sustainability score").
+  @param {string} [score_text] - Optional pre-formatted score text (e.g. "4 of 5"). Defaults to "<rating> / 5".
+  @param {string} [aria_label] - Optional ARIA label for the meter element. Defaults to "<rating> out of 5".
+
+  @example
+  {% render 'sustainability-rating', rating: 4 %}
+  {% render 'sustainability-rating', rating: 4, label: 'Sustainability score' %}
+  {%- assign my_score = 'sections.foo.score' | t: rating: 4 -%}
+  {% render 'sustainability-rating', rating: 4, score_text: my_score %}
+{% enddoc %}
+
+{%- liquid
+  assign rating_int = rating | plus: 0
+  if rating_int < 0
+    assign rating_int = 0
+  endif
+  if rating_int > 5
+    assign rating_int = 5
+  endif
+
+  if score_text == blank
+    assign score_text = rating_int | append: ' / 5'
+  endif
+  if aria_label == blank
+    assign aria_label = rating_int | append: ' out of 5'
+  endif
+-%}
+
+<style>
+  .sustainability-rating { padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.08); }
+  .sustainability-rating__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 12px;
+  }
+  .sustainability-rating__label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #121212;
+  }
+  .sustainability-rating__score {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2d5a27;
+  }
+  .sustainability-rating__bars {
+    display: flex;
+    gap: 4px;
+    height: 8px;
+    margin-top: 12px;
+    width: 100%;
+  }
+  .sustainability-rating__bar {
+    flex: 1;
+    border-radius: 4px;
+    background-color: #eeeeee;
+    position: relative;
+    overflow: hidden;
+    height: 8px;
+  }
+  .sustainability-rating__bar--active::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #2d5a27;
+    transform-origin: left;
+    transform: scaleX(1);
+    will-change: transform;
+    animation: sustainabilityFillReveal 1s cubic-bezier(0.19, 1, 0.22, 1) both;
+    animation-delay: var(--sustainability-anim-delay, 0s);
+  }
+  .sustainability-rating__bar:nth-child(1) { --sustainability-anim-delay: 0ms; }
+  .sustainability-rating__bar:nth-child(2) { --sustainability-anim-delay: 150ms; }
+  .sustainability-rating__bar:nth-child(3) { --sustainability-anim-delay: 300ms; }
+  .sustainability-rating__bar:nth-child(4) { --sustainability-anim-delay: 450ms; }
+  .sustainability-rating__bar:nth-child(5) { --sustainability-anim-delay: 600ms; }
+  @keyframes sustainabilityFillReveal {
+    0% { transform: scaleX(0); }
+    100% { transform: scaleX(1); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .sustainability-rating__bar--active::after {
+      animation: none;
+    }
+  }
+</style>
+
+<div class="sustainability-rating">
+  <div class="sustainability-rating__header">
+    {%- if label != blank -%}
+      <span class="sustainability-rating__label">{{ label | escape }}</span>
+    {%- endif -%}
+    <span class="sustainability-rating__score">{{ score_text | escape }}</span>
+  </div>
+  <div
+    class="sustainability-rating__bars"
+    role="meter"
+    aria-label="{{ aria_label | escape }}"
+    aria-valuenow="{{ rating_int }}"
+    aria-valuemin="0"
+    aria-valuemax="5"
+  >
+    {%- for i in (1..5) -%}
+      <div
+        class="sustainability-rating__bar{% if i <= rating_int %} sustainability-rating__bar--active{% endif %}"
+        aria-hidden="true"
+      ></div>
+    {%- endfor -%}
+  </div>
+</div>
