@@ -24,6 +24,7 @@ Date: 2026-05-16
 | Step 1 | `1c94b4c` | feat(snippets): add reusable sustainability-rating snippet |
 | Step 2 | `ad163af` | chore(locales): add material spotlight translation keys |
 | Steps 3–7 | `2169b15` | feat(sections): scaffold material-spotlight section with schema |
+| QA fix | `b60554a` | fix(sections): correct hero icon widths/sizes and add gradient class |
 
 ---
 
@@ -67,7 +68,27 @@ shopify theme dev
 
 ---
 
+## QA fixes applied (post-QA-report)
+
+Two issues identified in `docs/qa/material-spotlight-report.md` were fixed in commit `b60554a`:
+
+1. **Issue 1 (Medium) — Hero icon without `preload_icon` used inline `widths`/`sizes`.** The `else` branch at lines 101–112 was split into two branches: a new `elsif icon_style == 'hero'` branch using hero-appropriate widths (`600, 900, 1200, 1500`) and sizes (`100vw`), and the existing `else` branch retaining inline widths (`120, 240, 360`) and sizes (`80px`). This ensures below-the-fold hero icons request full-width srcset candidates rather than degraded 80 px thumbnails.
+
+2. **Issue 2 (Nit) — Missing `gradient` class on color scheme wrapper.** Added `gradient` to the wrapper `<div>`'s class list alongside `color-{{ color_scheme }}`, matching the established pattern in `related-products.liquid` and `image-banner.liquid` and enabling the merchant's gradient-background CSS variable from the selected scheme.
+
+---
+
 ## `shopify theme check` warnings
+
+`shopify theme check` was run after the QA fixes. It reported 2 offenses across 2 files, neither of which is related to this feature:
+- `sections/cart-drawer.liquid` — `TranslationKeyExists` error for `cart.empty` (pre-existing, out of scope)
+- `snippets/card-product.liquid` — `UnusedAssign` warning for `page_width` (pre-existing, out of scope)
+
+`sections/material-spotlight.liquid` and `snippets/sustainability-rating.liquid` passed with no errors or warnings.
+
+---
+
+## `shopify theme check` warnings (original run note)
 
 `shopify theme check` requires interactive Shopify CLI authentication and could not be run non-interactively in this environment (`"Please provide a valid environment."` error from CLI 3.90.1). The command depends on a live store session that requires OAuth in the terminal.
 
