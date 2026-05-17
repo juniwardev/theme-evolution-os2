@@ -133,6 +133,14 @@ The plan's hero branch passes `sizes: '(min-width: 750px) 100vw, 100vw'`. The re
 
 ---
 
+## QA fixes applied (second round — post-second-QA-report)
+
+One nit identified in `docs/qa/material-spotlight-report.md` (second QA pass) was fixed in commit `124bb96`:
+
+1. **Nit — Hardcoded `#ffffff` card background does not respect color scheme.** `.material-spotlight__card` in the `{% stylesheet %}` block had `background-color: #ffffff`. The outer wrapper already applied the merchant's color scheme via `color-{{ color_scheme }} gradient`, but the inner card always rendered white regardless of the selected scheme. Changed to `background-color: rgb(var(--color-background))` — the same pattern used throughout `assets/base.css` — so the card background tracks the scheme's CSS variable. `shopify theme check` confirmed no new warnings; only the two pre-existing offenses in `cart-drawer.liquid` and `card-product.liquid` were reported.
+
+---
+
 ## Base branch
 
 `main` — SHA at start of work: `95218db` (`chore: move tooltip css below base css`)
