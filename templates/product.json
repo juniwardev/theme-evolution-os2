@@ -66,6 +66,19 @@
       ],
       "settings": {}
     },
+    "material-spotlight": {
+      "type": "material-spotlight",
+      "settings": {
+        "heading": "Crafted from",
+        "heading_tag": "h2",
+        "color_scheme": "scheme-1",
+        "icon_style": "inline",
+        "preload_icon": true,
+        "show_rating": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -110,6 +123,7 @@
   },
   "order": [
     "main",
+    "material-spotlight",
     "related-products",
     "custom_section_jxpfJF"
   ]
