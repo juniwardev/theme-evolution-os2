@@ -20,3 +20,6 @@ release
 .claude/settings.local.json
 # QA fixtures — contains dev store password
 docs/dev-fixtures.md
+
+# QA screenshots — ephemeral test artifacts, kept locally only
+docs/qa/screenshots/
