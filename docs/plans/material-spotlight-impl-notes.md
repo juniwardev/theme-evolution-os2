@@ -141,6 +141,14 @@ One nit identified in `docs/qa/material-spotlight-report.md` (second QA pass) wa
 
 ---
 
+## QA fixes applied (third round — post-round-6-QA-report)
+
+One critical issue identified in `docs/qa/material-spotlight-report.md` (round 6) was fixed:
+
+1. **Issue 1 (Critical) — Rating bars invisible due to `div:empty` global rule.** `assets/base.css` contains a global rule `div:empty { display: none }` that hid the five empty `<div class="sustainability-rating__bar">` elements in `snippets/sustainability-rating.liquid` before their `::after` pseudo-elements could render. The bar background and animated green fill were both invisible; only the text labels remained visible. Fixed by adding `display: block !important` to the `.sustainability-rating__bar` ruleset inside the snippet's `<style>` block. This overrides the global hide rule while leaving the HTML structure, the `::after` animation, and all ARIA attributes unchanged. `shopify theme check` confirmed no new offenses (only the two pre-existing unrelated warnings in `cart-drawer.liquid` and `card-product.liquid`).
+
+---
+
 ## Base branch
 
 `main` — SHA at start of work: `95218db` (`chore: move tooltip css below base css`)

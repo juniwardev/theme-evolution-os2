@@ -76,6 +76,11 @@
     position: relative;
     overflow: hidden;
     height: 8px;
+    /* base.css contains `div:empty { display: none }` which hides these
+       empty divs before their ::after pseudo-elements can render.
+       Override unconditionally so the bar background and green fill
+       are always visible. */
+    display: block !important;
   }
   .sustainability-rating__bar--active::after {
     content: '';
