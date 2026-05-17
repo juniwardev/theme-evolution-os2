@@ -70,17 +70,13 @@
     width: 100%;
   }
   .sustainability-rating__bar {
+    display: block;
     flex: 1;
     border-radius: 4px;
     background-color: #eeeeee;
     position: relative;
     overflow: hidden;
     height: 8px;
-    /* base.css contains `div:empty { display: none }` which hides these
-       empty divs before their ::after pseudo-elements can render.
-       Override unconditionally so the bar background and green fill
-       are always visible. */
-    display: block !important;
   }
   .sustainability-rating__bar--active::after {
     content: '';
@@ -125,10 +121,10 @@
     aria-valuemax="5"
   >
     {%- for i in (1..5) -%}
-      <div
+      <span
         class="sustainability-rating__bar{% if i <= rating_int %} sustainability-rating__bar--active{% endif %}"
         aria-hidden="true"
-      ></div>
+      ></span>
     {%- endfor -%}
   </div>
 </div>

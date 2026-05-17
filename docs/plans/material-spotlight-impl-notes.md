@@ -149,6 +149,18 @@ One critical issue identified in `docs/qa/material-spotlight-report.md` (round 6
 
 ---
 
+## QA fixes applied (fourth round — post-round-7-QA-report)
+
+One critical issue identified in `docs/qa/material-spotlight-report.md` (round 7) was fixed:
+
+1. **Issue 1 (Critical) — Rating bars invisible; `display: block !important` swallowed by Shopify CSS processing.** The previous fix added `display: block !important` immediately after a multi-line CSS comment inside the snippet's `<style>` block. Shopify's server-side `<style>` processing strips multi-line comments and silently drops the CSS property on the line that immediately follows the closing `*/`. The `display: block !important` property never reached the browser.
+
+   Applied Option B from the QA report: changed every `<div class="sustainability-rating__bar">` / `</div>` pair to `<span class="sustainability-rating__bar">` / `</span>`. The `base.css` global rule targets `div:empty { display: none }` — `span` elements are unaffected by it. Added an explicit `display: block` (without any preceding CSS comment) to the `.sustainability-rating__bar` ruleset so `span`'s default `inline` display does not break the flex-item height geometry. Removed the obsolete multi-line comment and `!important` override entirely.
+
+   `shopify theme check` confirmed no new offenses — only the two pre-existing unrelated warnings in `cart-drawer.liquid` and `card-product.liquid`.
+
+---
+
 ## Base branch
 
 `main` — SHA at start of work: `95218db` (`chore: move tooltip css below base css`)
