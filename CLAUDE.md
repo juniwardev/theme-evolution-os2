@@ -25,7 +25,11 @@ After every deploy:
 
 1. `curl -s -o /dev/null -w "%{http_code}\n" https://theme-evolution-os2.myshopify.com` — expect 200, 302, or 401.
 2. Visit the theme editor and confirm the affected sections appear correctly.
-3. Visit at least one test product URL from `docs/dev-fixtures.md` and verify visual correctness.
+3. Visit at least one test product URL from `docs/dev-fixtures.md` and verify visual correctness at both **desktop (1440×900)** and **mobile (375×667)** viewports via Playwright. Use the product that best exercises the feature under test:
+   - Single-variant behavior → `the-3p-fulfilled-snowboard` (⚠️ add-to-cart returns 422 — visual tests only)
+   - Multi-variant behavior or add-to-cart → `selling-plans-ski-wax` or `the-complete-snowboard`
+   - Material Spotlight → `the-3p-fulfilled-snowboard`
+   - See `docs/dev-fixtures.md` for full profiles and known gaps.
 
 ## Multi-agent workflow
 
@@ -50,10 +54,11 @@ handoffs between agents live under:
 
 ### QA
 - **Dev server:** `shopify theme dev` (background it)
-- **Base URL:** `http://127.0.0.1:9292` (preview URL printed on startup may differ; use whichever the CLI announces)
+- **Base URL:** Use the `https://<hash>.shopifypreview.com` preview URL the CLI prints — do NOT use `http://127.0.0.1:9292` directly (CLI 3.94.x undici proxy bug causes Playwright failures on localhost).
 - Test the new feature against the page templates it affects (product, collection, cart, etc.).
-- For viewport-sensitive UI, capture both mobile (375x667) and desktop (1440x900) snapshots via Playwright.
+- For viewport-sensitive UI, capture both mobile (375×667) and desktop (1440×900) snapshots via Playwright.
 - Check the theme editor preview as well as the storefront — features must work in both contexts.
+- When running `shopify theme check`, two pre-existing offenses are expected and are not regressions: `TranslationKeyExists` in `cart-drawer.liquid` and `UnusedAssign` in `card-product.liquid`. Any offense beyond these two is a blocker.
 
 ### DevOps
 - **Staging deploy:** `shopify theme push --unpublished --theme="<feature-slug>-staging"`
