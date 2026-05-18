@@ -12,6 +12,21 @@
 - **Pull live theme:** `shopify theme pull --live`
 - **Push to unpublished theme:** `shopify theme push --unpublished --theme="<name>-staging"`
 
+## Deploy targets
+
+- **Development store** (`theme-evolution-os2.myshopify.com`):
+  - Live theme: `138872651872` (currently the published theme on this dev store)
+  - Verification URL: `https://theme-evolution-os2.myshopify.com`
+  - Notes: This is a Shopify development store. The "live" theme here is not customer-facing — it's the active theme on a dev store with no real traffic. Pushing to it is acceptable for experimentation. For real production stores, prefer pushing to an unpublished theme and using theme swap to publish.
+
+## Verification
+
+After every deploy:
+
+1. `curl -s -o /dev/null -w "%{http_code}\n" https://theme-evolution-os2.myshopify.com` — expect 200, 302, or 401.
+2. Visit the theme editor and confirm the affected sections appear correctly.
+3. Visit at least one test product URL from `docs/dev-fixtures.md` and verify visual correctness.
+
 ## Multi-agent workflow
 
 This project uses the OpenCode/Claude Code squad workflow. File-based
