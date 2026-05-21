@@ -121,19 +121,136 @@
 {% endstyle %}
 
 {% stylesheet %}
-  footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
+  /* --- wrapper + colors (decisions 4.1 + 4.7) --- */
+  .theme-evolution-footer-wrapper {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    --footer-border: color-mix(in srgb, currentColor 8%, transparent);
   }
-  footer a {
+  .theme-evolution-footer {
+    padding: 4rem 2rem 2rem;
+  }
+  .theme-evolution-footer a {
+    color: inherit;
     text-decoration: none;
-    color: var(--color-foreground);
   }
-  footer .footer__links,
-  footer .footer__payment {
+  .theme-evolution-footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* --- three-column grid content area (decision 4.2) --- */
+  .theme-evolution-footer__columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+    padding-bottom: 3rem;
+  }
+  .theme-evolution-footer__columns:empty {
+    display: none;
+    padding: 0;
+  }
+
+  /* --- column 1: about-text (decision 4.3) --- */
+  .theme-evolution-footer__about-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-width: 32rem;
+  }
+  .theme-evolution-footer__about-text p {
+    margin: 0 0 0.75rem;
+  }
+  .theme-evolution-footer__about-text p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* --- column 2: nav links (decision 4.4) --- */
+  .theme-evolution-footer__menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .theme-evolution-footer__menu-link {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  /* --- column 3: social icons (decision 4.5) --- */
+  .theme-evolution-footer__social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     gap: 1rem;
+    align-items: center;
+  }
+  .theme-evolution-footer__social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: inherit;
+  }
+  .theme-evolution-footer__social-link svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    fill: currentColor;
+  }
+
+  /* --- bottom bar (decisions 4.6 + 4.7) --- */
+  .theme-evolution-footer__bottom {
+    border-top: 1px solid var(--footer-border);
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .theme-evolution-footer__copyright {
+    margin: 0;
+    font-size: 0.85rem;
+    opacity: 0.85;
+  }
+  .theme-evolution-footer__payment {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .theme-evolution-footer__payment li {
+    display: inline-flex;
+  }
+  .theme-evolution-footer__payment svg {
+    width: auto;
+    height: 1.6rem;
+  }
+
+  /* --- mobile (decision 4.2): stack to single column at 749px and below --- */
+  @media screen and (max-width: 749px) {
+    .theme-evolution-footer {
+      padding: 3rem 1.5rem 1.5rem;
+    }
+    .theme-evolution-footer__columns {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding-bottom: 2rem;
+    }
+    .theme-evolution-footer__bottom {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .theme-evolution-footer__about-text {
+      max-width: none;
+    }
   }
 {% endstylesheet %}
 
