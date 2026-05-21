@@ -10,10 +10,10 @@
   assign close_menu_label = 'sections.header.close_menu_label' | t
 -%}
 
-<div class="ride-header-wrapper">
+<div class="theme-evolution-header-wrapper">
   {%- if show_announcement and announcement_text != blank -%}
-    <div class="ride-announcement-bar" role="note">
-      <p class="ride-announcement-bar__text">{{ announcement_text | escape }}</p>
+    <div class="theme-evolution-announcement-bar" role="note">
+      <p class="theme-evolution-announcement-bar__text">{{ announcement_text | escape }}</p>
     </div>
   {%- endif -%}
 
@@ -50,32 +50,32 @@
 
     <div class="header__icons">
       {%- if has_menu -%}
-        <ride-header-menu class="header__mobile-toggle">
+        <theme-evolution-header-menu class="header__mobile-toggle">
           <button
             type="button"
-            class="ride-header-menu__toggle header__icon"
+            class="theme-evolution-header-menu__toggle header__icon"
             aria-expanded="false"
-            aria-controls="ride-header-menu-panel-{{ section.id }}"
+            aria-controls="theme-evolution-header-menu-panel-{{ section.id }}"
           >
             <span
               class="visually-hidden"
               data-label-open="{{ mobile_menu_label | escape }}"
               data-label-close="{{ close_menu_label | escape }}"
             >{{ mobile_menu_label | escape }}</span>
-            <span class="ride-header-menu__icon ride-header-menu__icon--open">{{ 'icon-hamburger.svg' | inline_asset_content }}</span>
-            <span class="ride-header-menu__icon ride-header-menu__icon--close">{{ 'icon-close.svg' | inline_asset_content }}</span>
+            <span class="theme-evolution-header-menu__icon theme-evolution-header-menu__icon--open">{{ 'icon-hamburger.svg' | inline_asset_content }}</span>
+            <span class="theme-evolution-header-menu__icon theme-evolution-header-menu__icon--close">{{ 'icon-close.svg' | inline_asset_content }}</span>
           </button>
           <div
-            id="ride-header-menu-panel-{{ section.id }}"
-            class="ride-header-menu__panel"
+            id="theme-evolution-header-menu-panel-{{ section.id }}"
+            class="theme-evolution-header-menu__panel"
             data-state="closed"
             hidden
           >
             {%- for link in section.settings.menu.links -%}
-              <a href="{{ link.url }}" class="ride-header-menu__link">{{ link.title | escape }}</a>
+              <a href="{{ link.url }}" class="theme-evolution-header-menu__link">{{ link.title | escape }}</a>
             {%- endfor -%}
           </div>
-        </ride-header-menu>
+        </theme-evolution-header-menu>
       {%- endif -%}
 
       {%- if shop.customer_accounts_enabled -%}
@@ -106,7 +106,7 @@
   .section-header {
     --logo-width: {{ section.settings.logo_width }}px;
   }
-  .ride-header-wrapper {
+  .theme-evolution-header-wrapper {
     --header-bg: {{ section.settings.header_background }};
     --header-text: {{ section.settings.header_text }};
   }
@@ -119,7 +119,7 @@
     top: 0;
     z-index: 10;
   }
-  .ride-header-wrapper {
+  .theme-evolution-header-wrapper {
     position: relative; /* containing block for the absolutely-positioned mobile panel */
     background-color: var(--header-bg);
     color: var(--header-text);
@@ -189,7 +189,7 @@
 
   /* --- nav typography (decision 4.4) --- */
   .header__menu a,
-  .ride-header-menu__link {
+  .theme-evolution-header-menu__link {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-weight: 600;
@@ -197,12 +197,12 @@
   }
 
   /* --- announcement bar (decisions 4.2 + 4.7) --- */
-  .ride-announcement-bar {
+  .theme-evolution-announcement-bar {
     padding: 0.5rem 2rem;
     text-align: center;
     border-bottom: 1px solid var(--header-border);
   }
-  .ride-announcement-bar__text {
+  .theme-evolution-announcement-bar__text {
     margin: 0;
     font-size: 0.8rem;
     letter-spacing: 0.05em;
@@ -232,16 +232,16 @@
   .header__mobile-toggle {
     display: none;
   }
-  .ride-header-menu__icon--close {
+  .theme-evolution-header-menu__icon--close {
     display: none;
   }
-  .ride-header-menu__toggle[aria-expanded="true"] .ride-header-menu__icon--open {
+  .theme-evolution-header-menu__toggle[aria-expanded="true"] .theme-evolution-header-menu__icon--open {
     display: none;
   }
-  .ride-header-menu__toggle[aria-expanded="true"] .ride-header-menu__icon--close {
+  .theme-evolution-header-menu__toggle[aria-expanded="true"] .theme-evolution-header-menu__icon--close {
     display: inline-flex;
   }
-  .ride-header-menu__panel {
+  .theme-evolution-header-menu__panel {
     position: absolute;
     top: 100%;
     left: 0;
@@ -254,10 +254,10 @@
     gap: 1rem;
     border-top: 1px solid var(--header-border);
   }
-  .ride-header-menu__panel[hidden] {
+  .theme-evolution-header-menu__panel[hidden] {
     display: none;
   }
-  .ride-header-menu__link {
+  .theme-evolution-header-menu__link {
     color: inherit;
     text-decoration: none;
   }
@@ -284,7 +284,7 @@
   }
   @media screen and (min-width: 750px) {
     /* defensive: a panel left open on mobile must not leak onto desktop */
-    .ride-header-menu__panel {
+    .theme-evolution-header-menu__panel {
       display: none;
     }
   }
@@ -292,9 +292,9 @@
 
 <script>
   (function () {
-    if (customElements.get('ride-header-menu')) return;
+    if (customElements.get('theme-evolution-header-menu')) return;
 
-    class RideHeaderMenu extends HTMLElement {
+    class ThemeEvolutionHeaderMenu extends HTMLElement {
       constructor() {
         super();
         this.toggle = null;
@@ -306,8 +306,8 @@
       }
 
       connectedCallback() {
-        this.toggle = this.querySelector('.ride-header-menu__toggle');
-        this.panel = this.querySelector('.ride-header-menu__panel');
+        this.toggle = this.querySelector('.theme-evolution-header-menu__toggle');
+        this.panel = this.querySelector('.theme-evolution-header-menu__panel');
         this.label = this.querySelector('[data-label-open]');
         if (!this.toggle || !this.panel) return;
         this.toggle.addEventListener('click', this.onToggleClick);
@@ -369,7 +369,7 @@
       }
     }
 
-    customElements.define('ride-header-menu', RideHeaderMenu);
+    customElements.define('theme-evolution-header-menu', ThemeEvolutionHeaderMenu);
   })();
 </script>
 

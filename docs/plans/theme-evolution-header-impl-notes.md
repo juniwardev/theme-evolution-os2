@@ -1,4 +1,4 @@
-# Implementation notes: ride-header
+# Implementation notes: theme-evolution-header
 
 Implementer: Coder (Claude Sonnet 4.6)
 Date: 2026-05-20
@@ -12,7 +12,7 @@ Base branch / starting commit: `main` @ `9143875`
 | --- | --- |
 | `locales/en.default.json` | Added `sections.header.mobile_menu_label` ("Open menu") and `sections.header.close_menu_label` ("Close menu") inside the existing `sections.header` object. |
 | `locales/en.default.schema.json` | Added `headers.announcement.content` ("Announcement bar") as a sibling of `settings`, plus `settings.show_announcement.label`, `settings.announcement_text.label`, `settings.announcement_text.info`, `settings.header_background.label`, `settings.header_text.label`. All existing Dawn-era keys preserved and in original order. |
-| `sections/header.liquid` | Complete refactor per plan section 7: liquid setup block, `.ride-header-wrapper` outer div, announcement bar with `role="note"`, always-rendered cart badge, `RideHeaderMenu` Web Component and mobile panel, nav typography, `{% style %}` with `--header-bg`/`--header-text`/`--logo-width`, `{% stylesheet %}` with full CSS, `<script>` tag for Web Component, updated `{% schema %}` with new color and announcement settings. |
+| `sections/header.liquid` | Complete refactor per plan section 7: liquid setup block, `.theme-evolution-header-wrapper` outer div, announcement bar with `role="note"`, always-rendered cart badge, `ThemeEvolutionHeaderMenu` Web Component and mobile panel, nav typography, `{% style %}` with `--header-bg`/`--header-text`/`--logo-width`, `{% stylesheet %}` with full CSS, `<script>` tag for Web Component, updated `{% schema %}` with new color and announcement settings. |
 
 ---
 
@@ -25,7 +25,7 @@ Base branch / starting commit: `main` @ `9143875`
 | Step 3 — Markup/wrapper/announcement/color | `95c49c9` | feat(header): add wrapper, announcement bar, and color custom properties |
 | Step 4 — Cart badge | `6f932cf` | feat(header): always render cart count badge to prevent CLS |
 | Step 5 — Nav typography | `669866c` | feat(header): apply uppercase letter-spaced nav typography |
-| Step 6 — Mobile hamburger | `0dc884d` | feat(header): add RideHeaderMenu mobile toggle Web Component |
+| Step 6 — Mobile hamburger | `0dc884d` | feat(header): add ThemeEvolutionHeaderMenu mobile toggle Web Component |
 | Step 7 — Logo CLS guard | `8710ad1` | fix(header): add explicit logo height to prevent CLS |
 
 ---
@@ -57,9 +57,9 @@ The plan's section 7 outline used `{{ 'labels.menu' | t }}` for the `aria-label`
 
 ## Key constraints confirmed
 
-1. **`RideHeaderMenu` namespace**: Custom element class is `RideHeaderMenu` (PascalCase), registered tag is `ride-header-menu` (kebab-case). No generic names.
+1. **`ThemeEvolutionHeaderMenu` namespace**: Custom element class is `ThemeEvolutionHeaderMenu` (PascalCase), registered tag is `theme-evolution-header-menu` (kebab-case). No generic names.
 2. **`<script>` tag, not `{% javascript %}`**: The Web Component definition uses a plain `<script>` block. `{% javascript %}` was not used.
-3. **Two explicit `color` settings, not `color_scheme`**: `header_background` (default `#111111`) and `header_text` (default `#ffffff`) are wired through `--header-bg`/`--header-text` custom properties on `.ride-header-wrapper` in the `{% style %}` block.
+3. **Two explicit `color` settings, not `color_scheme`**: `header_background` (default `#111111`) and `header_text` (default `#ffffff`) are wired through `--header-bg`/`--header-text` custom properties on `.theme-evolution-header-wrapper` in the `{% style %}` block.
 4. **Always-rendered cart badge**: `<span class="header__cart-count">` is always in the DOM; `hidden` attribute is set when count is 0. The legacy conditional `<sup>` is removed.
 
 ---
@@ -78,7 +78,7 @@ Result: **No matches found.** The only occurrence of `super` in `sections/cart-d
 
 ## Mobile panel clipping confirmation
 
-`overflow: hidden` was moved from `<header>` to `.header__logo-link`. The `<header>` now has `overflow: visible`. The `.ride-header-menu__panel` uses `position: absolute; top: 100%; left: 0; right: 0` anchored to `.ride-header-wrapper` which has `position: relative`. The panel drops below the full header+announcement-bar height. No clipping of the panel by the header element.
+`overflow: hidden` was moved from `<header>` to `.header__logo-link`. The `<header>` now has `overflow: visible`. The `.theme-evolution-header-menu__panel` uses `position: absolute; top: 100%; left: 0; right: 0` anchored to `.theme-evolution-header-wrapper` which has `position: relative`. The panel drops below the full header+announcement-bar height. No clipping of the panel by the header element.
 
 ---
 
@@ -101,13 +101,13 @@ Existing merchants whose header currently renders with the legacy `var(--color-b
 
 ## Analytics flag (review-rev-2 nit #3)
 
-The `RideHeaderMenu#onToggleClick` method calls `event.stopPropagation()` to defensively isolate the toggle click from the document-level outside-click handler. If a future PR attaches a header-wide click tracker on `<header>` or `<body>`, that tracker will NOT see the toggle click. Look here to wire it explicitly. The call site is `sections/header.liquid` inside the `<script>` block, in the `onToggleClick` method, with an inline comment for discoverability.
+The `ThemeEvolutionHeaderMenu#onToggleClick` method calls `event.stopPropagation()` to defensively isolate the toggle click from the document-level outside-click handler. If a future PR attaches a header-wide click tracker on `<header>` or `<body>`, that tracker will NOT see the toggle click. Look here to wire it explicitly. The call site is `sections/header.liquid` inside the `<script>` block, in the `onToggleClick` method, with an inline comment for discoverability.
 
 ---
 
 ## `color-mix()` border fallback decision (review-rev-2 nit #8 + risk #11)
 
-The implementation uses the bare `color-mix(in srgb, currentColor 8%, transparent)` declaration on `.ride-header-wrapper` with no static fallback `border-color` declaration. Rationale:
+The implementation uses the bare `color-mix(in srgb, currentColor 8%, transparent)` declaration on `.theme-evolution-header-wrapper` with no static fallback `border-color` declaration. Rationale:
 
 - `color-mix()` support: Safari 16.2+ (Dec 2022), Chrome 111+ (Mar 2023), Firefox 113+ (May 2023). Shopify's baseline is "last two versions of major browsers" — all three cutoffs are 2-3 years old.
 - For pre-2023 browsers: the `--header-border` custom property becomes invalid; the `border-color` consuming it falls back to the property's initial value `currentColor`. The border renders as a solid 1px line in the full `--header-text` color — heavier than the intended 8% alpha, but visible and not broken.
@@ -146,4 +146,4 @@ Cart counts to verify: 0 (badge hidden), 1 (single digit), 10 (two digits), 99 (
 
 ## Hand-off
 
-Do NOT auto-deploy. Await QA pass and creation of `docs/qa/ride-header.approved` sentinel file before DevOps stage.
+Do NOT auto-deploy. Await QA pass and creation of `docs/qa/theme-evolution-header.approved` sentinel file before DevOps stage.
