@@ -126,6 +126,10 @@
     background-color: var(--footer-bg);
     color: var(--footer-text);
     --footer-border: color-mix(in srgb, currentColor 8%, transparent);
+    /* Span all three grid columns of the parent .shopify-section so the
+       background paints edge-to-edge. critical.css forces .shopify-section
+       direct children into the middle 1400px column by default. */
+    grid-column: 1 / -1;
   }
   .theme-evolution-footer {
     padding: 4rem 2rem 2rem;
