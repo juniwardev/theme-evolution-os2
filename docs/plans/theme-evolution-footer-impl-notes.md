@@ -133,6 +133,16 @@ This has NOT been pre-emptively added — it should only be added if the visual 
 
 ---
 
+## Post-QA deviation: grid-column full-bleed fix (commit ab239d6)
+
+QA confirmed (FAIL verdict, Issue 1 BLOCKER) that `critical.css` applies `display: grid; grid-template-columns: 20px 1400px 20px` to every `.shopify-section`, and `.shopify-section > * { grid-column: 2 }` forces all direct children into the middle 1400px column. The `.theme-evolution-footer-wrapper` therefore painted its dark `#111111` background only within the 1400px content column, leaving visible 20px white gaps at both left and right viewport edges (measured: `left=20, right=1420, width=1400px` on a 1440px viewport).
+
+The fix was to add `grid-column: 1 / -1;` to the `.theme-evolution-footer-wrapper` rule in the `{% stylesheet %}` block of `sections/footer.liquid`. This matches plan risk #11's prescribed mitigation exactly. No other files were changed.
+
+`shopify theme check` after the fix: 2 offenses (identical to baseline — both pre-existing).
+
+---
+
 ## Out-of-scope observations
 
 - The Dawn-era `sections.footer.settings` keys in `locales/en.default.schema.json` (`newsletter_enable`, `header__1`, `show_social`, `enable_country_selector`, `enable_language_selector`, `payment_enable`, `show_policy`, `margin_top`, `header__9`, `enable_follow_on_shop`) are now orphaned — no setting in the current schema references them. Cleaning these up would be a separate plan. Left untouched per plan section 2 (non-goals) and `CLAUDE.md` "What NOT to change" guidance on locale files.
