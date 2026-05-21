@@ -1,24 +1,117 @@
-<footer>
-  <div class="footer__copyright">
-    &copy;
-    {{ 'now' | date: '%Y' }}
-    {{ shop.name | link_to: routes.root_url }}, {{ powered_by_link }}
-  </div>
+{%- liquid
+  assign has_menu = false
+  if section.settings.menu != blank and section.settings.menu.links.size > 0
+    assign has_menu = true
+  endif
 
-  <div class="footer__links">
-    {% for link in section.settings.menu.links %}
-      {{ link.title | link_to: link.url }}
-    {% endfor %}
-  </div>
+  assign has_social = false
+  if section.settings.show_social_icons
+    if section.settings.instagram_url != blank
+      assign has_social = true
+    elsif section.settings.facebook_url != blank
+      assign has_social = true
+    elsif section.settings.youtube_url != blank
+      assign has_social = true
+    elsif section.settings.tiktok_url != blank
+      assign has_social = true
+    elsif section.settings.twitter_url != blank
+      assign has_social = true
+    endif
+  endif
 
-  <div class="footer__payment">
-    {% if section.settings.show_payment_icons %}
-      {% for type in shop.enabled_payment_types %}
-        {{ type | payment_type_svg_tag }}
-      {% endfor %}
-    {% endif %}
-  </div>
-</footer>
+  assign has_about = false
+  if section.settings.about_text != blank
+    assign has_about = true
+  endif
+
+  assign social_label = 'sections.footer.social.aria_label' | t
+  assign payment_label = 'sections.footer.payment' | t
+  assign menu_label = 'sections.footer.menu' | t
+-%}
+
+<div class="theme-evolution-footer-wrapper">
+  <footer class="theme-evolution-footer">
+    {%- if has_about or has_menu or has_social -%}
+      <div class="theme-evolution-footer__columns">
+        {%- if has_about -%}
+          <div class="theme-evolution-footer__column theme-evolution-footer__column--about">
+            <div class="theme-evolution-footer__about-text rte">
+              {{ section.settings.about_text }}
+            </div>
+          </div>
+        {%- endif -%}
+
+        {%- if has_menu -%}
+          <nav class="theme-evolution-footer__column theme-evolution-footer__column--menu" aria-label="{{ menu_label | escape }}">
+            <ul class="theme-evolution-footer__menu" role="list">
+              {%- for link in section.settings.menu.links -%}
+                <li>
+                  <a href="{{ link.url }}" class="theme-evolution-footer__menu-link">{{ link.title | escape }}</a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          </nav>
+        {%- endif -%}
+
+        {%- if has_social -%}
+          <div class="theme-evolution-footer__column theme-evolution-footer__column--social">
+            <ul class="theme-evolution-footer__social" role="list" aria-label="{{ social_label | escape }}">
+              {%- if section.settings.instagram_url != blank -%}
+                <li>
+                  <a href="{{ section.settings.instagram_url }}" class="theme-evolution-footer__social-link" aria-label="{{ 'sections.footer.social.instagram' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
+                    {{ 'icon-instagram.svg' | inline_asset_content }}
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if section.settings.facebook_url != blank -%}
+                <li>
+                  <a href="{{ section.settings.facebook_url }}" class="theme-evolution-footer__social-link" aria-label="{{ 'sections.footer.social.facebook' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
+                    {{ 'icon-facebook.svg' | inline_asset_content }}
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if section.settings.youtube_url != blank -%}
+                <li>
+                  <a href="{{ section.settings.youtube_url }}" class="theme-evolution-footer__social-link" aria-label="{{ 'sections.footer.social.youtube' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
+                    {{ 'icon-youtube.svg' | inline_asset_content }}
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if section.settings.tiktok_url != blank -%}
+                <li>
+                  <a href="{{ section.settings.tiktok_url }}" class="theme-evolution-footer__social-link" aria-label="{{ 'sections.footer.social.tiktok' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
+                    {{ 'icon-tiktok.svg' | inline_asset_content }}
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if section.settings.twitter_url != blank -%}
+                <li>
+                  <a href="{{ section.settings.twitter_url }}" class="theme-evolution-footer__social-link" aria-label="{{ 'sections.footer.social.twitter' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
+                    {{ 'icon-twitter.svg' | inline_asset_content }}
+                  </a>
+                </li>
+              {%- endif -%}
+            </ul>
+          </div>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    <div class="theme-evolution-footer__bottom">
+      <p class="theme-evolution-footer__copyright">
+        &copy; {{ 'now' | date: '%Y' }} {{ shop.name | link_to: routes.root_url }} &middot; {{ powered_by_link }}
+      </p>
+
+      {%- if section.settings.show_payment_icons -%}
+        <ul class="theme-evolution-footer__payment" role="list" aria-label="{{ payment_label | escape }}">
+          {%- for type in shop.enabled_payment_types -%}
+            <li>{{ type | payment_type_svg_tag }}</li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+    </div>
+  </footer>
+</div>
 
 {% stylesheet %}
   footer {
