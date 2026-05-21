@@ -935,6 +935,46 @@
         "enable_follow_on_shop": {
           "label": "Follow on Shop",
           "info": "Shop Pay must be enabled. [Learn more](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
+        },
+        "header__color": {
+          "content": "Color"
+        },
+        "footer_background": {
+          "label": "Footer background color"
+        },
+        "footer_text": {
+          "label": "Footer text color"
+        },
+        "header__content": {
+          "content": "Content"
+        },
+        "about_text": {
+          "label": "About text",
+          "info": "Short brand or store description shown in the leftmost column."
+        },
+        "header__social": {
+          "content": "Social media"
+        },
+        "show_social_icons": {
+          "label": "Show social icons"
+        },
+        "instagram_url": {
+          "label": "Instagram URL"
+        },
+        "facebook_url": {
+          "label": "Facebook URL"
+        },
+        "youtube_url": {
+          "label": "YouTube URL"
+        },
+        "tiktok_url": {
+          "label": "TikTok URL"
+        },
+        "twitter_url": {
+          "label": "Twitter URL"
+        },
+        "header__payment": {
+          "content": "Payment"
         }
       }
     },

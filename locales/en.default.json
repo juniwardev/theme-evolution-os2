@@ -182,7 +182,16 @@
       }
     },
     "footer": {
-      "payment": "Payment methods"
+      "payment": "Payment methods",
+      "menu": "Footer menu",
+      "social": {
+        "aria_label": "Social media",
+        "instagram": "Instagram",
+        "facebook": "Facebook",
+        "youtube": "YouTube",
+        "tiktok": "TikTok",
+        "twitter": "X (Twitter)"
+      }
     },
     "featured_blog": {
       "view_all": "View all",
