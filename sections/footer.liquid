@@ -113,6 +113,13 @@
   </footer>
 </div>
 
+{% style %}
+  .theme-evolution-footer-wrapper {
+    --footer-bg: {{ section.settings.footer_background }};
+    --footer-text: {{ section.settings.footer_text }};
+  }
+{% endstyle %}
+
 {% stylesheet %}
   footer {
     display: flex;
