@@ -1,76 +1,147 @@
-<header>
-  <h2 class="header__title">
-    <a href="{{ routes.root_url }}" class="header__logo-link">
-      {%- if section.settings.logo != blank -%}
-        {%- assign logo_alt = section.settings.logo.alt | default: shop.name | escape -%}
-        {{ section.settings.logo | image_url: width: section.settings.logo_width | image_tag:
-          class: 'header__logo',
-          widths: '50, 100, 150, 200, 250, 300, 400, 500',
-          width: section.settings.logo_width,
-          alt: logo_alt,
-          loading: 'eager'
-        }}
-      {%- else -%}
-        <span class="h2">{{ shop.name }}</span>
-      {%- endif -%}
-    </a>
-  </h2>
+{%- liquid
+  assign show_announcement = section.settings.show_announcement
+  assign announcement_text = section.settings.announcement_text
+  assign has_menu = false
+  if section.settings.menu != blank and section.settings.menu.links.size > 0
+    assign has_menu = true
+  endif
+  assign cart_count_label = 'sections.header.cart_count' | t: count: cart.item_count
+  assign mobile_menu_label = 'sections.header.mobile_menu_label' | t
+  assign close_menu_label = 'sections.header.close_menu_label' | t
+-%}
 
-  <div class="header__menu">
-    {% for link in section.settings.menu.links %}
-      {{ link.title | link_to: link.url }}
-    {% endfor %}
-  </div>
+<div class="ride-header-wrapper">
+  {%- if show_announcement and announcement_text != blank -%}
+    <div class="ride-announcement-bar" role="note">
+      <p class="ride-announcement-bar__text">{{ announcement_text | escape }}</p>
+    </div>
+  {%- endif -%}
 
-  <div class="header__icons">
-    {% if shop.customer_accounts_enabled %}
-      <a href="{{ routes.account_url }}" class="header__icon header__icon--account">
-        {{ 'icon-account.svg' | inline_asset_content }}
+  <header>
+    <h2 class="header__title">
+      <a href="{{ routes.root_url }}" class="header__logo-link">
+        {%- if section.settings.logo != blank -%}
+          {%- assign logo_alt = section.settings.logo.alt | default: shop.name | escape -%}
+          {%- assign logo_height = section.settings.logo_width | times: section.settings.logo.height | divided_by: section.settings.logo.width -%}
+          {{
+            section.settings.logo
+            | image_url: width: section.settings.logo_width
+            | image_tag:
+                class: 'header__logo',
+                widths: '50, 100, 150, 200, 250, 300, 400, 500',
+                width: section.settings.logo_width,
+                height: logo_height,
+                alt: logo_alt,
+                loading: 'eager'
+          }}
+        {%- else -%}
+          <span class="h2">{{ shop.name }}</span>
+        {%- endif -%}
       </a>
-    {% endif %}
+    </h2>
 
-    <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart" {% if settings.enable_cart_drawer %}data-cart-drawer-trigger{% endif %}>
-      {% if cart.item_count > 0 %}
-        <sup>{{ cart.item_count }}</sup>
-      {% endif %}
+    {%- if has_menu -%}
+      <div class="header__menu" aria-label="{{ 'sections.header.menu' | t }}">
+        {%- for link in section.settings.menu.links -%}
+          <a href="{{ link.url }}">{{ link.title | escape }}</a>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
 
-      {{ 'icon-cart.svg' | inline_asset_content }}
-    </a>
-  </div>
-</header>
+    <div class="header__icons">
+      {%- if has_menu -%}
+        <ride-header-menu class="header__mobile-toggle">
+          <button
+            type="button"
+            class="ride-header-menu__toggle header__icon"
+            aria-expanded="false"
+            aria-controls="ride-header-menu-panel-{{ section.id }}"
+          >
+            <span
+              class="visually-hidden"
+              data-label-open="{{ mobile_menu_label | escape }}"
+              data-label-close="{{ close_menu_label | escape }}"
+            >{{ mobile_menu_label | escape }}</span>
+            <span class="ride-header-menu__icon ride-header-menu__icon--open">{{ 'icon-hamburger.svg' | inline_asset_content }}</span>
+            <span class="ride-header-menu__icon ride-header-menu__icon--close">{{ 'icon-close.svg' | inline_asset_content }}</span>
+          </button>
+          <div
+            id="ride-header-menu-panel-{{ section.id }}"
+            class="ride-header-menu__panel"
+            data-state="closed"
+            hidden
+          >
+            {%- for link in section.settings.menu.links -%}
+              <a href="{{ link.url }}" class="ride-header-menu__link">{{ link.title | escape }}</a>
+            {%- endfor -%}
+          </div>
+        </ride-header-menu>
+      {%- endif -%}
+
+      {%- if shop.customer_accounts_enabled -%}
+        <a href="{{ routes.account_url }}" class="header__icon header__icon--account">
+          {{ 'icon-account.svg' | inline_asset_content }}
+        </a>
+      {%- endif -%}
+
+      <a
+        href="{{ routes.cart_url }}"
+        class="header__icon header__icon--cart"
+        {% if settings.enable_cart_drawer %}data-cart-drawer-trigger{% endif %}
+        aria-label="{{ cart_count_label | escape }}"
+      >
+        <span
+          class="header__cart-count"
+          data-count="{{ cart.item_count }}"
+          {% if cart.item_count == 0 %}hidden{% endif %}
+          aria-label="{{ cart_count_label | escape }}"
+        >{{ cart.item_count }}</span>
+        {{ 'icon-cart.svg' | inline_asset_content }}
+      </a>
+    </div>
+  </header>
+</div>
 
 {% style %}
   .section-header {
     --logo-width: {{ section.settings.logo_width }}px;
   }
+  .ride-header-wrapper {
+    --header-bg: {{ section.settings.header_background }};
+    --header-text: {{ section.settings.header_text }};
+  }
 {% endstyle %}
 
 {% stylesheet %}
+  /* --- sticky + wrapper colors (decision 4.1 + 4.6 + 4.7) --- */
   .section-header {
     position: sticky;
     top: 0;
     z-index: 10;
   }
+  .ride-header-wrapper {
+    position: relative; /* containing block for the absolutely-positioned mobile panel */
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    /* Decision 4.7: derive internal separator color from currentColor (which inherits --header-text)
+       so dividers remain visible regardless of the merchant's chosen header_background. */
+    --header-border: color-mix(in srgb, currentColor 8%, transparent);
+  }
+
+  /* --- header bar layout (overflow moved off of <header> per decision 4.3) --- */
   header {
-    background-color: var(--color-background);
     height: 4rem;
     max-height: 4rem;
     padding: 0 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow: hidden; /* Ensures any overflowing image gets clipped rather than blowing out the layout */
+    overflow: visible; /* was: hidden; moved to .header__logo-link below */
   }
   header a {
     position: relative;
     text-decoration: none;
-    color: var(--color-foreground);
-  }
-  header a sup {
-    position: absolute;
-    left: 100%;
-    overflow: hidden;
-    max-width: var(--page-margin);
+    color: inherit;
   }
   header svg {
     width: 2rem;
@@ -104,8 +175,9 @@
     align-items: center;
     text-decoration: none;
     width: var(--logo-width, 150px);
-    max-width: 40vw; /* Prevents logo from crowding the menu on medium screens */
+    max-width: 40vw;
     height: 100%;
+    overflow: hidden; /* clips overflowing logo image (was on <header>) */
   }
   .header__logo {
     display: block;
@@ -115,7 +187,191 @@
     object-position: left;
   }
 
+  /* --- nav typography (decision 4.4) --- */
+  .header__menu a,
+  .ride-header-menu__link {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+
+  /* --- announcement bar (decisions 4.2 + 4.7) --- */
+  .ride-announcement-bar {
+    padding: 0.5rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid var(--header-border);
+  }
+  .ride-announcement-bar__text {
+    margin: 0;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+  }
+
+  /* --- cart count badge (decision 4.5) --- */
+  .header__cart-count {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    min-width: 1.4rem;
+    height: 1.4rem;
+    padding: 0 0.4rem;
+    border-radius: 999px;
+    background-color: var(--header-text);
+    color: var(--header-bg);
+    font-size: 0.7rem;
+    line-height: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .header__cart-count[hidden] {
+    display: none;
+  }
+
+  /* --- mobile menu toggle and panel (decisions 4.3 + 4.7) --- */
+  .header__mobile-toggle {
+    display: none;
+  }
+  .ride-header-menu__icon--close {
+    display: none;
+  }
+  .ride-header-menu__toggle[aria-expanded="true"] .ride-header-menu__icon--open {
+    display: none;
+  }
+  .ride-header-menu__toggle[aria-expanded="true"] .ride-header-menu__icon--close {
+    display: inline-flex;
+  }
+  .ride-header-menu__panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 1px solid var(--header-border);
+  }
+  .ride-header-menu__panel[hidden] {
+    display: none;
+  }
+  .ride-header-menu__link {
+    color: inherit;
+    text-decoration: none;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* --- breakpoint gate: show inline menu desktop, hamburger mobile --- */
+  @media screen and (max-width: 749px) {
+    .header__menu {
+      display: none;
+    }
+    .header__mobile-toggle {
+      display: flex;
+    }
+  }
+  @media screen and (min-width: 750px) {
+    /* defensive: a panel left open on mobile must not leak onto desktop */
+    .ride-header-menu__panel {
+      display: none;
+    }
+  }
 {% endstylesheet %}
+
+<script>
+  (function () {
+    if (customElements.get('ride-header-menu')) return;
+
+    class RideHeaderMenu extends HTMLElement {
+      constructor() {
+        super();
+        this.toggle = null;
+        this.panel = null;
+        this.label = null;
+        this.onToggleClick = this.onToggleClick.bind(this);
+        this.onKeydown = this.onKeydown.bind(this);
+        this.onDocumentClick = this.onDocumentClick.bind(this);
+      }
+
+      connectedCallback() {
+        this.toggle = this.querySelector('.ride-header-menu__toggle');
+        this.panel = this.querySelector('.ride-header-menu__panel');
+        this.label = this.querySelector('[data-label-open]');
+        if (!this.toggle || !this.panel) return;
+        this.toggle.addEventListener('click', this.onToggleClick);
+        document.addEventListener('keydown', this.onKeydown);
+        document.addEventListener('click', this.onDocumentClick);
+      }
+
+      disconnectedCallback() {
+        if (this.toggle) this.toggle.removeEventListener('click', this.onToggleClick);
+        document.removeEventListener('keydown', this.onKeydown);
+        document.removeEventListener('click', this.onDocumentClick);
+      }
+
+      onToggleClick(event) {
+        event.preventDefault();
+        // Defensive: don't bubble to onDocumentClick. If a future header-wide click
+        // tracker is attached to <header> or <body>, this stopPropagation() will
+        // also prevent that tracker from seeing the toggle click. Document this
+        // in impl-notes so the analytics PR knows where to look. (review-rev-2 nit #3)
+        event.stopPropagation();
+        var isOpen = this.toggle.getAttribute('aria-expanded') === 'true';
+        this.setOpen(!isOpen);
+      }
+
+      onKeydown(event) {
+        if (event.key === 'Escape') {
+          this.setOpen(false);
+        }
+      }
+
+      onDocumentClick(event) {
+        if (this.toggle.getAttribute('aria-expanded') !== 'true') return;
+        if (this.contains(event.target)) return;
+        this.setOpen(false);
+      }
+
+      setOpen(open) {
+        this.toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (open) {
+          this.panel.removeAttribute('hidden');
+          this.panel.setAttribute('data-state', 'open');
+          if (this.label) this.label.textContent = this.label.getAttribute('data-label-close');
+          // Focus management (plan-review required change #5 + review-rev-2 nit #2):
+          // Move focus into the panel. Defer one frame so the freshly-unhidden
+          // panel is laid out before `.focus()` runs — older Safari can no-op
+          // a synchronous focus on a just-unhidden element.
+          var panel = this.panel;
+          requestAnimationFrame(function () {
+            var firstFocusable = panel.querySelector('a, button, [tabindex]');
+            if (firstFocusable) firstFocusable.focus();
+          });
+        } else {
+          this.panel.setAttribute('hidden', '');
+          this.panel.setAttribute('data-state', 'closed');
+          if (this.label) this.label.textContent = this.label.getAttribute('data-label-open');
+          // Focus management: return focus to the trigger.
+          if (this.toggle) this.toggle.focus();
+        }
+      }
+    }
+
+    customElements.define('ride-header-menu', RideHeaderMenu);
+  })();
+</script>
 
 {% schema %}
 {
