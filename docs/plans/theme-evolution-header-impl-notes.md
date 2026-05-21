@@ -147,3 +147,13 @@ Cart counts to verify: 0 (badge hidden), 1 (single digit), 10 (two digits), 99 (
 ## Hand-off
 
 Do NOT auto-deploy. Await QA pass and creation of `docs/qa/theme-evolution-header.approved` sentinel file before DevOps stage.
+
+---
+
+## Bug fix: mobile nav CSS specificity (post-QA)
+
+**Bug:** The desktop rule `header .header__menu { display: flex }` (specificity 0,1,1) outweighed the mobile media-query rule `.header__menu { display: none }` (specificity 0,1,0). Because specificity is evaluated independently of source order and media queries, the lower-specificity `display: none` declaration was silently overridden, causing the inline nav to remain visible alongside the hamburger toggle on viewports ≤749px.
+
+**Fix:** Changed the media-query selector from `.header__menu` to `header .header__menu` (matching the desktop rule's specificity of 0,1,1), so `display: none` now wins correctly inside the `@media screen and (max-width: 749px)` block.
+
+**Commit:** `bfc6d1b` — `fix(header): increase mobile nav specificity to match desktop rule`
