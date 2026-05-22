@@ -4,20 +4,13 @@
     assign has_menu = true
   endif
 
-  assign has_social = false
-  if section.settings.show_social_icons
-    if section.settings.instagram_url != blank
-      assign has_social = true
-    elsif section.settings.facebook_url != blank
-      assign has_social = true
-    elsif section.settings.youtube_url != blank
-      assign has_social = true
-    elsif section.settings.tiktok_url != blank
-      assign has_social = true
-    elsif section.settings.twitter_url != blank
-      assign has_social = true
-    endif
-  endif
+  assign instagram_url = section.settings.instagram_url | default: settings.social_instagram_link | default: 'https://www.instagram.com/'
+  assign facebook_url  = section.settings.facebook_url  | default: settings.social_facebook_link  | default: 'https://www.facebook.com/'
+  assign youtube_url   = section.settings.youtube_url   | default: settings.social_youtube_link   | default: 'https://www.youtube.com/'
+  assign tiktok_url    = section.settings.tiktok_url    | default: settings.social_tiktok_link    | default: 'https://www.tiktok.com/'
+  assign twitter_url   = section.settings.twitter_url   | default: settings.social_twitter_link   | default: 'https://x.com/'
+
+  assign has_social = section.settings.show_social_icons
 
   assign has_about = false
   if section.settings.about_text != blank
@@ -56,41 +49,31 @@
         {%- if has_social -%}
           <div class="theme-evolution-footer__column theme-evolution-footer__column--social">
             <ul class="theme-evolution-footer__social" role="list" aria-label="{{ social_label | escape }}">
-              {%- if section.settings.instagram_url != blank -%}
-                <li>
-                  <a href="{{ section.settings.instagram_url }}" class="theme-evolution-footer__social-link" aria-label="{{ 'sections.footer.social.instagram' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
-                    {{ 'icon-instagram.svg' | inline_asset_content }}
-                  </a>
-                </li>
-              {%- endif -%}
-              {%- if section.settings.facebook_url != blank -%}
-                <li>
-                  <a href="{{ section.settings.facebook_url }}" class="theme-evolution-footer__social-link" aria-label="{{ 'sections.footer.social.facebook' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
-                    {{ 'icon-facebook.svg' | inline_asset_content }}
-                  </a>
-                </li>
-              {%- endif -%}
-              {%- if section.settings.youtube_url != blank -%}
-                <li>
-                  <a href="{{ section.settings.youtube_url }}" class="theme-evolution-footer__social-link" aria-label="{{ 'sections.footer.social.youtube' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
-                    {{ 'icon-youtube.svg' | inline_asset_content }}
-                  </a>
-                </li>
-              {%- endif -%}
-              {%- if section.settings.tiktok_url != blank -%}
-                <li>
-                  <a href="{{ section.settings.tiktok_url }}" class="theme-evolution-footer__social-link" aria-label="{{ 'sections.footer.social.tiktok' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
-                    {{ 'icon-tiktok.svg' | inline_asset_content }}
-                  </a>
-                </li>
-              {%- endif -%}
-              {%- if section.settings.twitter_url != blank -%}
-                <li>
-                  <a href="{{ section.settings.twitter_url }}" class="theme-evolution-footer__social-link" aria-label="{{ 'sections.footer.social.twitter' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
-                    {{ 'icon-twitter.svg' | inline_asset_content }}
-                  </a>
-                </li>
-              {%- endif -%}
+              <li>
+                <a href="{{ instagram_url }}" class="theme-evolution-footer__social-link" aria-label="{{ 'sections.footer.social.instagram' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
+                  {{ 'icon-instagram.svg' | inline_asset_content }}
+                </a>
+              </li>
+              <li>
+                <a href="{{ facebook_url }}" class="theme-evolution-footer__social-link" aria-label="{{ 'sections.footer.social.facebook' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
+                  {{ 'icon-facebook.svg' | inline_asset_content }}
+                </a>
+              </li>
+              <li>
+                <a href="{{ youtube_url }}" class="theme-evolution-footer__social-link" aria-label="{{ 'sections.footer.social.youtube' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
+                  {{ 'icon-youtube.svg' | inline_asset_content }}
+                </a>
+              </li>
+              <li>
+                <a href="{{ tiktok_url }}" class="theme-evolution-footer__social-link" aria-label="{{ 'sections.footer.social.tiktok' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
+                  {{ 'icon-tiktok.svg' | inline_asset_content }}
+                </a>
+              </li>
+              <li>
+                <a href="{{ twitter_url }}" class="theme-evolution-footer__social-link" aria-label="{{ 'sections.footer.social.twitter' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
+                  {{ 'icon-twitter.svg' | inline_asset_content }}
+                </a>
+              </li>
             </ul>
           </div>
         {%- endif -%}
@@ -286,7 +269,8 @@
       "type": "richtext",
       "id": "about_text",
       "label": "t:sections.footer.settings.about_text.label",
-      "info": "t:sections.footer.settings.about_text.info"
+      "info": "t:sections.footer.settings.about_text.info",
+      "default": "<p>We're passionate about bringing you the best products. Our story started with a simple idea and a commitment to quality.</p>"
     },
     {
       "type": "link_list",
