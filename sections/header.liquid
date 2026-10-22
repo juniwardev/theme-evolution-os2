@@ -89,13 +89,13 @@
 
       <a
         href="{{ routes.cart_url }}"
-        class="relative flex size-11 items-center justify-center text-inherit no-underline [&_svg]:size-6"
+        class="relative flex size-11 items-center justify-center text-inherit no-underline [&_svg]:size-10"
         data-header-cart-icon
         {% if settings.enable_cart_drawer %}data-cart-drawer-trigger{% endif %}
         aria-label="{{ cart_count_label | escape }}"
       >
         <span
-          class="absolute top-2.5 right-2.5 h-[1.4rem] min-w-[1.4rem] rounded-full bg-(--header-text) px-1.5 text-center text-[0.7rem] leading-[1.4rem] font-bold text-(--header-bg)"
+          class="absolute top-0 -right-1.5 h-[1.4rem] min-w-[1.4rem] rounded-full bg-(--header-text) px-1.5 text-center text-[0.7rem] leading-[1.4rem] font-bold text-(--header-bg)"
           data-count="{{ cart.item_count }}"
           {% if cart.item_count == 0 %}hidden{% endif %}
           aria-label="{{ cart_count_label | escape }}"
