@@ -27,3 +27,10 @@ docs/*
 # sections/*-group.json) is deliberately NOT ignored: on this dev store, features
 # ship by pushing those files (e.g. footer-group.json social URLs). Ignore them
 # before this theme deploys to a real merchant's store.
+
+# Tailwind build inputs and check scripts (docs/plans/theme-evolution-tailwind.md).
+# Only the compiled assets/tailwind.css is theme content.
+src/*
+scripts/*
+package.json
+package-lock.json
