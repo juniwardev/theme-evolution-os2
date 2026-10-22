@@ -61,7 +61,7 @@ handoffs between agents live under:
 
 ### DevOps
 - **Staging deploy:** `shopify theme push --unpublished --theme="<feature-slug>-staging"`
-- **Live deploy:** `shopify theme push -e production` only (see Deploy targets). This overrides any `--theme=<id>` push command in the global DevOps agent definition.
+- **Live deploy:** `shopify theme push -e production` only (see Deploy targets). The project-scoped agent at `.claude/agents/devops.md` encodes this and overrides the global DevOps agent.
 - **Environments and `--path`:** the CLI reads `shopify.theme.toml` from the `--path` directory, so `-e` doesn't work with `--path=/tmp/...`. For snapshot pulls and rollbacks, pass `--store` and `--theme` explicitly.
 - **Smoke test:** open the unpublished theme's preview URL (printed by the CLI) and confirm the storefront loads, the feature renders, and no console errors appear.
 - **Publish:** via the Shopify admin (Online Store → Themes → Actions → Publish) AFTER manual verification of the unpublished theme. Do NOT auto-publish from CLI.
