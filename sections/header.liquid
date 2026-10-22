@@ -44,7 +44,7 @@
     </h2>
 
     {%- if has_menu -%}
-      <div class="flex items-center gap-6 max-md:hidden" aria-label="{{ 'sections.header.menu' | t }}">
+      <div class="flex items-center gap-6 max-lg:hidden" aria-label="{{ 'sections.header.menu' | t }}">
         {%- for link in section.settings.menu.links -%}
           <a href="{{ link.url }}" class="relative text-sm font-semibold tracking-[0.1em] uppercase no-underline">{{ link.title | escape }}</a>
         {%- endfor -%}
@@ -53,7 +53,7 @@
 
     <div class="flex items-center">
       {%- if has_menu -%}
-        <theme-evolution-header-menu class="flex md:hidden">
+        <theme-evolution-header-menu class="flex lg:hidden">
           <button
             type="button"
             class="theme-evolution-header-menu__toggle group/menu flex size-11 items-center justify-center text-inherit [&_svg]:size-6"
@@ -70,7 +70,7 @@
           </button>
           <div
             id="theme-evolution-header-menu-panel-{{ section.id }}"
-            class="theme-evolution-header-menu__panel absolute inset-x-0 top-full flex flex-col gap-4 border-t border-current/8 bg-(--header-bg) px-8 py-6 text-(--header-text) md:hidden"
+            class="theme-evolution-header-menu__panel absolute inset-x-0 top-full flex flex-col gap-4 border-t border-current/8 bg-(--header-bg) px-8 py-6 text-(--header-text) lg:hidden"
             data-state="closed"
             hidden
           >
