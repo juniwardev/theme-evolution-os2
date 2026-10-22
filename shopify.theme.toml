@@ -1,6 +1,9 @@
+# No `theme` here on purpose: with one set, `shopify theme dev` syncs the working
+# tree straight to that theme. When it pointed at the live theme, dev sessions
+# overwrote live and disabled app embeds. Without it, dev uses its own development
+# theme, and live pushes must name the theme explicitly (--theme=<id> --allow-live).
 [environments.default]
 store = "theme-evolution-os2.myshopify.com"
-theme = 138872651872
 path = "./"
 
 [environments.production]

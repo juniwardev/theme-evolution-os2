@@ -6,8 +6,9 @@
 
 - **Install:** Shopify CLI handles theme dependencies automatically. For any
   Node tooling in this project, run `npm install`.
-- **Dev server:** `shopify theme dev` (preview URL printed on startup;
-  default base URL is `http://127.0.0.1:9292`).
+- **Dev server:** `shopify theme dev` — syncs the working tree to a private
+  **development** theme, never the live theme (`shopify.theme.toml` deliberately
+  sets no default theme). Prints a `?preview_theme_id=<id>` preview URL on startup.
 - **Lint / theme check:** `shopify theme check`
 - **Pull live theme:** `shopify theme pull --live`
 - **Push to unpublished theme:** `shopify theme push --unpublished --theme="<name>-staging"`
@@ -16,6 +17,8 @@
 
 - **Development store** (`theme-evolution-os2.myshopify.com`):
   - Live theme: `138872651872` (currently the published theme on this dev store)
+  - ⚠️ Never point `shopify theme dev` at the live theme, and never put a theme ID in `shopify.theme.toml`'s default environment. Dev sessions sync the whole working tree, including `config/settings_data.json`; on 2026-10-22 this overwrote live and disabled an app embed. Live pushes must name the theme explicitly: `shopify theme push --theme=138872651872 --nodelete --allow-live`.
+  - A live push also uploads `config/settings_data.json` and template JSON. Before pushing, pull live's copies (`shopify theme pull --theme=138872651872 --only config/settings_data.json`, plus any templates the theme editor may have changed) and commit them, so app embeds and editor settings aren't overwritten.
   - Verification URL: `https://theme-evolution-os2.myshopify.com`
   - Notes: This is a Shopify development store. The "live" theme here is not customer-facing — it's the active theme on a dev store with no real traffic. Pushing to it is acceptable for experimentation. For real production stores, prefer pushing to an unpublished theme and using theme swap to publish.
 
@@ -54,7 +57,7 @@ handoffs between agents live under:
 
 ### QA
 - **Dev server:** `shopify theme dev` (background it)
-- **Base URL:** Use the `https://<hash>.shopifypreview.com` preview URL the CLI prints — do NOT use `http://127.0.0.1:9292` directly (CLI 3.94.x undici proxy bug causes Playwright failures on localhost).
+- **Base URL:** Use the `https://theme-evolution-os2.myshopify.com/?preview_theme_id=<id>` preview URL the CLI prints (it points at the development theme). Avoid `http://127.0.0.1:9292`: CLI 3.94.x had a localhost proxy bug that broke Playwright, not yet re-checked on CLI 4.8.x.
 - Test the new feature against the page templates it affects (product, collection, cart, etc.).
 - For viewport-sensitive UI, capture both mobile (375×667) and desktop (1440×900) snapshots via Playwright.
 - Check the theme editor preview as well as the storefront — features must work in both contexts.
