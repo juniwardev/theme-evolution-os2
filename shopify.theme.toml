@@ -6,9 +6,17 @@
 store = "theme-evolution-os2.myshopify.com"
 path = "./"
 
+# Live pushes: `shopify theme push -e production`. settings_data.json is skipped so
+# pushes never overwrite theme-editor settings or app embeds set on the live theme.
+# `live = true` targets whichever theme is published, so a theme swap can't leave
+# this pointing at a stale ID. Note `theme pull -e production` also skips
+# settings_data.json; pull it explicitly when you need live's copy.
 [environments.production]
 store = "theme-evolution-os2.myshopify.com"
-theme = "live"
+live = true
+allow-live = true
+nodelete = true
+ignore = ["config/settings_data.json"]
 
 [ignore]
 patterns = [

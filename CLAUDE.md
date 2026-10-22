@@ -17,8 +17,9 @@
 
 - **Development store** (`theme-evolution-os2.myshopify.com`):
   - Live theme: `138872651872` (currently the published theme on this dev store)
-  - ⚠️ Never point `shopify theme dev` at the live theme, and never put a theme ID in `shopify.theme.toml`'s default environment. Dev sessions sync the whole working tree, including `config/settings_data.json`; on 2026-10-22 this overwrote live and disabled an app embed. Live pushes must name the theme explicitly: `shopify theme push --theme=138872651872 --nodelete --allow-live`.
-  - A live push also uploads `config/settings_data.json` and template JSON. Before pushing, pull live's copies (`shopify theme pull --theme=138872651872 --only config/settings_data.json`, plus any templates the theme editor may have changed) and commit them, so app embeds and editor settings aren't overwritten.
+  - ⚠️ Never point `shopify theme dev` at the live theme, and never put a theme ID in `shopify.theme.toml`'s default environment. Dev sessions sync the whole working tree, including `config/settings_data.json`; on 2026-10-22 this overwrote live and disabled an app embed.
+  - **Live pushes:** always `shopify theme push -e production`, run from the repo root. That environment (in `shopify.theme.toml`) targets the published theme with `--nodelete --allow-live` and skips `config/settings_data.json`, so theme-editor settings and app embeds on live are never overwritten. Never push to live with an explicit `--theme=<id>`: that bypasses the skip.
+  - The production environment still uploads template and section-group JSON. If the theme editor may have changed any of those on live (e.g. app blocks), pull live's copies and commit them before pushing.
   - Verification URL: `https://theme-evolution-os2.myshopify.com`
   - Notes: This is a Shopify development store. The "live" theme here is not customer-facing — it's the active theme on a dev store with no real traffic. Pushing to it is acceptable for experimentation. For real production stores, prefer pushing to an unpublished theme and using theme swap to publish.
 
@@ -65,6 +66,8 @@ handoffs between agents live under:
 
 ### DevOps
 - **Staging deploy:** `shopify theme push --unpublished --theme="<feature-slug>-staging"`
+- **Live deploy:** `shopify theme push -e production` only (see Deploy targets). This overrides any `--theme=<id>` push command in the global DevOps agent definition.
+- **Environments and `--path`:** the CLI reads `shopify.theme.toml` from the `--path` directory, so `-e` doesn't work with `--path=/tmp/...`. For snapshot pulls and rollbacks, pass `--store` and `--theme` explicitly.
 - **Smoke test:** open the unpublished theme's preview URL (printed by the CLI) and confirm the storefront loads, the feature renders, and no console errors appear.
 - **Publish:** via the Shopify admin (Online Store → Themes → Actions → Publish) AFTER manual verification of the unpublished theme. Do NOT auto-publish from CLI.
 - **Rollback:** Shopify retains the previous live theme as "unpublished" automatically. Re-publish that one to revert.

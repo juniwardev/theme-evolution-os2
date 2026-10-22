@@ -282,7 +282,7 @@ Invoked via `/investigate <slug>`. Follows the procedure documented in the inves
 
 ### DevOps — same for bugs and features
 
-Reads `docs/qa/fix-<slug>.approved` to confirm operator sign-off. Captures pre-deploy snapshot. Pushes via `shopify theme push --theme=<id> --nodelete`. Verifies storefront. Writes deploy note. Rolls back on failure.
+Reads `docs/qa/fix-<slug>.approved` to confirm operator sign-off. Captures pre-deploy snapshot. Pushes to live via `shopify theme push -e production` (skips `config/settings_data.json`; see CLAUDE.md Deploy targets). Verifies storefront. Writes deploy note. Rolls back on failure.
 
 ---
 

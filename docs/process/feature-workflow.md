@@ -152,7 +152,7 @@ Feature slugs use plain kebab-case (e.g., `material-spotlight`, `ajax-cart-drawe
 
 ### DevOps — same for features and bug fixes
 
-Reads `docs/qa/<slug>.approved` to confirm operator sign-off. Captures pre-deploy snapshot. Pushes via `shopify theme push --theme=<id> --nodelete --allow-live`. Verifies storefront smoke test. Writes deploy note. Rolls back on failure.
+Reads `docs/qa/<slug>.approved` to confirm operator sign-off. Captures pre-deploy snapshot. Pushes to live via `shopify theme push -e production` (skips `config/settings_data.json`; see CLAUDE.md Deploy targets). Verifies storefront smoke test. Writes deploy note. Rolls back on failure.
 
 ---
 
