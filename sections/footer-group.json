@@ -15,7 +15,12 @@
       "type": "footer",
       "settings": {
         "menu": "footer",
-        "show_payment_icons": true
+        "show_payment_icons": true,
+        "instagram_url": "https://www.instagram.com/",
+        "facebook_url": "https://www.facebook.com/",
+        "youtube_url": "https://www.youtube.com/",
+        "tiktok_url": "https://www.tiktok.com/",
+        "twitter_url": "https://x.com/"
       }
     }
   },
