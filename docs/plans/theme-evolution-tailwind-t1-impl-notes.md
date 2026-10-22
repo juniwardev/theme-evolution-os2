@@ -82,7 +82,7 @@ All Δ rows above were observed. Things the plan did not say or understated, for
 
 1. **The cart bag glyph is much smaller than at baseline.** At baseline (after the T0 shim) the bag glyph was 30.6x39.2px inside a 70.4px box. With the plan's 24px SVG it is **10.4x13.4px** (the bag art only fills about 43% of its 40x40 viewBox), against 21.5x22.7px for the account glyph. The plan lists "SVG 32 -> 24px", which understates the cart (it was 70px). Screenshot: scratchpad `out/hdr-home-375-one-top.png`. At 375 the cart was off-screen at baseline, so this is the first time it is visible there. Recommendation: give the cart link a larger SVG (for example `[&_svg]:size-14!`), but that departs from the plan, so it was not done.
 2. The hamburger glyph moved: 29.7x26.7 at x 222 -> 22.3x20 at x 212.7 (24px SVG, 44px box).
-3. The cart count badge could not be seen in the "one item" screenshots: the pre-seeded cart (`/cart/add.js` before load) did not render a badge in either build. The Section Rendering flow does (C1.3 below).
+3. (Corrected, QA N6.) The "pre-seeded cart renders no badge in either build" finding was a harness artifact: my seed used `page.request.post('/cart/add.js')` with a malformed body (400). With a proper in-page JSON `fetch` add the badge renders in both builds, and in T1 it is 22.4x22.4 at (1356,20) at 1440 and (302,20) at 375 (QA's figures). The Section Rendering flow also works (C1.3).
 4. `!important` on icon sizes, see deviation 2.
 
 ## Shim deletion
@@ -144,3 +144,55 @@ Both header-icon `!important` rules were deleted from `@layer shims` in `src/tai
 - `blocks/group.liquid` defines a global `.group` class (cause of deviation 1).
 - The header sits inside the `.shopify-section` content column (20px margins at 375), so the dark header bar does not reach the screen edges; pre-existing and visible in the baseline screenshots.
 - `.bg-accent` and `.text-accent-foreground` are not in the compiled CSS until a file uses them (expected); `.font-heading` is (the shop-name fallback uses it).
+
+## QA-fix round 1 (N1-N3)
+
+Commits (local, nothing pushed): `a7588d4` N3, `d87b4cd` N1, `bad0f8c` N2. N4, N5 go to the Architect (T2 addendum); N7 out of scope; N6 corrected above.
+
+### Files changed
+| Path | Reason |
+|---|---|
+| `sections/hello-world.liquid` | `.icon` -> `.welcome-content .icon` (width 300px), with a why-comment |
+| `sections/header.liquid` | `!` removed from the 3 `[&_svg]:size-6`; cart link `[&_svg]:size-10`; badge `top-0 -right-1.5`; `md` -> `lg` on the nav (`max-lg:hidden`), toggle wrapper and panel (`lg:hidden`). Schema untouched |
+| `sections/footer.liquid` | `!` removed from `size-5.5`, `h-6.5`, `w-auto` |
+| `assets/tailwind.css` | rebuilt each commit |
+| `docs/qa/harness/t1fix-*.mjs` | new probe, menu and remove scripts (QA originals untouched) |
+
+### N3: scoped `.icon`
+The rule sized the section's own `<div class="icon">` (the homepage illustration), so it was kept and scoped under `.welcome-content`. hello-world not converted (T3). With the scope in place the five `!` modifiers were removed and the icons still size correctly: header toggle 24, account 24, footer social 22x22 (probe, 1440 and 375). `shopify theme check` unchanged.
+Illustration, before (HEAD) vs after, `.welcome-content .icon` div and img, identical at every width: 1440 300x292.6 -> 300x292.6; 375 74.2x72.3 -> 74.2x72.3 (also 768 181.7x177.3, 1024 251.8x245.6 unchanged in the later runs). **Illustration unchanged.**
+
+### N1: cart glyph
+`icon-cart.svg` is only inlined by the header (grep of sections, snippets, blocks, layout, templates, assets), but the asset was not edited; the change is a size on the cart link only.
+
+| | Before (T1) | After |
+|---|---|---|
+| cart link box | 44x44 | 44x44 (hit area kept) |
+| cart svg | 24x24 | 40x40 (inside the 44 box, no overflow) |
+| cart bag art | 10.4x13.4 | 17.4x22.3 |
+| account art (unchanged) | 21.5x22.7 | 21.5x22.7 |
+| badge (22.4 round) | top 10 / right 10: x 1372 at 1440, covered the bag | top 0 / right -6px: x 1371.6, y 10 at 1440 (10 after the offset is the box top, y 10 = top of the 44 box); sits at the top-right corner, about 3.6px horizontal corner overlap with the bag, bag readable (screenshot `docs/qa/screenshots/t1fix-n1-p3p-1440.png`, `-375.png`) |
+
+Badge right edge at 320: 318 (viewport 320), so no overflow; `X_hdr` at 320 is -2 on the product page.
+
+### N2: breakpoint decision
+Moved the header's desktop nav / mobile toggle switch from `md` (768) to `lg` (1024), a default Tailwind breakpoint (Q4). Why not tighten spacing at md: the overflow at 768 was 34px and the 4-link nav plus two 44px icons plus a 150px logo needs about 805px; trimming `gap-6`/`px-8` enough to fit 768 (about 36px) would squeeze the nav to cramped spacing, and arbitrary breakpoints are excluded. `lg` is a one-token change in three places and leaves all widths below 1024 on the existing, verified mobile panel. Cost: 768-1023 (iPad portrait and small landscape) now gets the hamburger instead of the inline nav. Footer switch stays at `md` (768).
+
+`X_hdr / X_page` after (p3p; `/` identical for X_hdr):
+| Width | 320 | 375 | 390 | 430 | 768 | 790 | 805 | 900 | 1023 | 1024 | 1440 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| p3p X_hdr | -8 | -20 | -20 | -20 | -20 | -20 | -20 | -20 | -20 | -20 | -20 |
+| p3p X_page | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `/` X_page | 76 | 21 | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+Before at 768/790/805: X_hdr 34.1 / 12.1 / -2.9, X_page 34 / 12 / 0, "OUR MATERIALS" wrapped (link height 40). After: nav not shown below 1024, at 1024 and 1440 all links 20px high. The `/` remainder at 320/375/390 (76/21/6) is the hero banner, T3, not fixed.
+
+C1.4 (`t1fix-menu.mjs`) at 375, 768, 900, 1023: aria-expanded toggles, panel `none` <-> `flex`, label "Open menu" <-> "Close menu", exactly one icon visible per state, focus into the panel on open, Escape closes and returns focus to the toggle, outside click closes; `xPage` 0 open and closed.
+
+### Cart flow (`selling-plans-ski-wax`, 1440)
+Add to cart: badge 0 hidden -> 1, drawer opens (`is-open`); seeded cart quantity 3 -> badge 3 (`t1-drawer.mjs`); drawer remove -> badge 0 hidden (`t1fix-remove.mjs`). Header cart link keeps all attributes after Section Rendering and its svg stays 40x40 in a 44x44 link.
+
+### Gates
+`npm run build:css` -> stage -> `npm run check:css` exit 0 before each commit; `npm run check:hidden` exit 0; `shopify theme check` 62 files, exactly the 2 baseline offenses; `assets/tailwind.css` 14,639 B / 4,158 B gzip (budget 25,000 / 12,000 per T1 notes); header and footer `{% schema %}` blocks shasum-identical to `8cf1253`; `settings_data.json`, `templates/*.json`, `*-group.json` untouched. Dev server stopped.
+
+### Not verified
+Theme editor behaviour (still no admin session); badge at the corner was judged visually at 1440 and 375 only; footer payment icon size not re-measured after removing `h-6.5!`/`w-auto!` (social icons 22x22 re-measured; payment selector in my probe hit a social icon).
