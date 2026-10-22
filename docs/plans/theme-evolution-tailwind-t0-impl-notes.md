@@ -94,7 +94,7 @@ E6 candidates (not in the E-list; for the owner at C0.12):
 2. **Button cursor** `default` -> `pointer` on 142 elements: the planned permanent D6 cursor rule, not in the E-list; no layout effect.
 3. **`<small>`** `font-size: 80%` (12.8px) vs the UA 13.33px (2 elements, both `display: none` shopify payment-button text; none visible).
 4. **`html` font-family** Times -> Work Sans (no visible effect; all body content already used Work Sans).
-5. **Header icon SVG box**: account svg width 32 -> 70.4px, cart svg height 70.4 -> 32px, cart count badge height 70.4 -> 22.4px (computed). Screenshots at 375 and 1440 show no visible change (the glyph is centred in either box). It is a cascade flip where unlayered `critical.css` `svg { height: auto }` no longer outranks the Dawn/`header` rules. Recorded because the plan did not list it.
+5. **Header icon SVG box**: account svg width 32 -> 70.4px, cart svg height 70.4 -> 32px, cart count badge height 70.4 -> 22.4px (computed). **CORRECTION (QA F1): this was visible; the cart bag rendered at about 45% size. See "QA-fix round 1 (F1)" below.** (Original, wrong claim: screenshots show no visible change.) It is a cascade flip where unlayered `critical.css` `svg { height: auto }` no longer outranks the Dawn/`header` rules. Recorded because the plan did not list it.
 6. `option` padding `0 2px 1px` -> 0 (16, inside `select`).
 
 E11 fallback, recorded per R2-N3 (only if the owner rejects E11): `iframe, embed, object { display: inline; }` (no `:where`, no `audio`).
@@ -149,3 +149,31 @@ CSS sizes: `assets/tailwind.css` 9,202 B minified, 2,855 B gzip (T0 budget 25,00
 - Home banner buttons still overflow (`btnRights` 396 at every width <= 430); that is the bug's banner half (T3).
 - R2-N5 (cross-origin `<head>` stylesheets making C0.10 invalid) and CF1 (`B_rb` counts only `<head>` links) apply to QA's measurement; the validity rule fired here already.
 - Roadmap plan still prescribes `color-{{ setting }}` (review N8) and `shopify.theme.toml:4` comment (N11); not touched.
+
+
+## QA-fix round 1 (F1)
+
+**Root cause (differs from QA's diagnosis).** Not `svg { height: auto }`. base.css now sits in `@layer legacy`, while two unlayered section rules now beat it: `header svg { width: 2rem; height: 2rem }` (sections/header.liquid) and `.icon { width: 300px }` (sections/hello-world.liquid, a pre-existing stray rule, capped by `max-width: 100%`). Before T0 both sides were unlayered and base.css `.header__icon--cart .icon` (0,2,0) won on specificity. Matched-rule dump confirmed this.
+
+**Fix.** `src/tailwind.css`, `@layer shims`, removal phase T1 (header rewrite). A plain shim cannot beat unlayered CSS, so it uses `!important` (important declarations reverse the layer order, D4/N2):
+```
+.header__icon .icon { width: 2rem !important; height: 2rem !important; }
+.header__icon--cart .icon { width: 4.4rem !important; height: 4.4rem !important; }
+```
+Values and specificity mirror the base.css rules. Header markup untouched. `assets/tailwind.css` rebuilt (9,338 B min, 2,896 B gzip; budget 25,000/12,000).
+
+**Measurements** (empty cart and one item; `/` and the-3p-fulfilled-snowboard; 1440 and 375; identical in all), base = pre-T0 CSS:
+| | before fix (QA) | after fix | baseline |
+|---|---|---|---|
+| cart glyph | 13.9x17.8 | 30.6x39.2 | 30.6x39.2 |
+| cart svg box | 70.4x32 | 70.4x70.4 | 70.4x70.4 |
+| account svg box | 70.4x32 | 32x32 | 32x32 |
+| account glyph | 28.6x30.3 | 28.6x30.3 | 28.6x30.3 |
+| hamburger glyph (375) | 33.4x30 | 29.7x26.7 | 29.7x26.7 |
+| hamburger svg box (375) | n/a | 32x32 | 32x32 |
+
+**N3.** Same cause; size restored by the same shim. Residual: the hamburger glyph's left edge is 222 vs 206 px at 375 (+16 px). That is E1, not the cascade: the close span is now `display: none`, so the open span is centred in the 70.4 px button instead of sharing it with the close span. Left as is.
+
+**Badge.** Not restored and nothing added. Badge stays 22.4x22.4 (baseline 22.4x70.4 tall capsule): `.header__cart-count { height: 1.4rem }` (unlayered) now beats legacy `.header__icon span { height: 100% }`. The shim does not touch it.
+
+**Gates.** build:css, stage, check:css exit 0; check:hidden exit 0; `shopify theme check` 2 offenses (baseline). Dev server stopped; nothing pushed.

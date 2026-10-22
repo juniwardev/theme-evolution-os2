@@ -175,4 +175,21 @@
   .product-grid.grid {
     display: flex;
   }
+
+  /*
+   * Header icon sizes (QA F1/N3). base.css sizes these in `legacy`, but sections/header.liquid
+   * (`header svg { 2rem }`) and sections/hello-world.liquid (`.icon { width: 300px }`) are
+   * unlayered, so since T0 they beat `legacy` and the cart bag shrank. !important flips the
+   * layer order (an important `shims` declaration beats a normal unlayered one). Values and
+   * specificity mirror base.css `.header__icon .icon` and `.header__icon--cart .icon`.
+   * Delete in T1 when the header is rewritten.
+   */
+  .header__icon .icon {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+  .header__icon--cart .icon {
+    width: 4.4rem !important;
+    height: 4.4rem !important;
+  }
 }
