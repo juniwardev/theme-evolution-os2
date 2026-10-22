@@ -54,3 +54,28 @@ shopify theme push --theme=138872651872 --path=/tmp/pre-deploy-snapshots/theme-e
 ```
 
 Then re-verify with the health-check curl. The snapshot lives only on this machine's /tmp. After a reboot, re-publish the previous theme from Shopify admin.
+
+---
+
+## Live push (2026-10-22)
+
+**Deploy timestamp:** 2026-10-22 18:24:02 UTC
+**Target:** theme-evolution-os2.myshopify.com, theme `138872651872` (live)
+**Git SHA deployed:** e86969d (theme files identical to 17fa04e, which went to staging)
+**Method:** `shopify theme push --store=theme-evolution-os2.myshopify.com --theme=138872651872 --nodelete --allow-live`
+
+### Backups taken before the push
+- Store-side duplicate of live: `theme-evolution-os2-backup-2026-10-22-pre-footer` (#187953774688, unpublished). To roll back, publish this theme from Online Store → Themes.
+- Local pull of live: `~/Projects/Shopify/theme-backups/theme-evolution-os2/2026-10-22-pre-footer-live` (outside the repo; survives reboots).
+
+### Pre-push comparison
+Live already matched the repo for every theme file except Shopify's auto-generated comment headers on four files (both `locales/en.default*.json`, `templates/page.materials.json`, `templates/product.landing-page.json`). A post-push pull is byte-identical to the pre-push backup, so the push changed no content on live.
+
+**Why live already had the footer:** `shopify.theme.toml`'s default environment sets `theme = 138872651872`, so `shopify theme dev` (run by QA earlier on 2026-10-22) synced the working tree straight to the live theme. The footer was effectively live before the approval gate.
+
+### Verification
+- Storefront: **302** (password gate, expected)
+- Live homepage behind the password gate: 200; `theme-evolution-footer` present; all five social links render.
+
+### App configuration (owner report)
+The owner reported installing and configuring the Cupercycle app on the live theme. No app blocks, app embeds (`shopify://apps/...`) or references to the app exist in the live theme files before or after this push (`config/settings_data.json` → `current.blocks` is empty), and none appear in the rendered homepage. The push therefore did not remove any app configuration from theme files. Whether the app's settings live outside the theme, or were overwritten earlier by the `shopify theme dev` sync, is unresolved.
