@@ -4,14 +4,14 @@
 
 ## Run locally
 
-- **Install:** Shopify CLI handles theme dependencies automatically. For any
-  Node tooling in this project, run `npm install`.
-- **Dev server:** `shopify theme dev` — syncs the working tree to a private
+- **Install:** `npm ci` (Node 22+). This installs the pinned Tailwind CSS CLI. Shopify CLI is installed separately.
+- **Dev server:** `npm run dev`, which runs the Tailwind watcher (`npm run watch:css`) and `shopify theme dev` together. `shopify theme dev` syncs the working tree to a private
   **development** theme, never the live theme (`shopify.theme.toml` deliberately
-  sets no default theme). Prints a `?preview_theme_id=<id>` preview URL on startup.
-- **Lint / theme check:** `shopify theme check`
+  sets no default theme). Prints a `?preview_theme_id=<id>` preview URL on startup. If the combined command misbehaves in your terminal, run `npm run watch:css` and `shopify theme dev` in two terminals.
+- **Build CSS:** `npm run build:css` compiles `src/tailwind.css` to `assets/tailwind.css`. `npm run check:css` rebuilds, checks the cascade-layer statement (`scripts/check-css-layers.mjs`), and fails if `assets/tailwind.css` is untracked or differs from the version in the git index (what you staged, or what is committed on a clean tree).
+- **Lint / theme check:** `shopify theme check`. `npm run check` runs `check:css`, `check:hidden` (the bare-`hidden` guard, `scripts/check-bare-hidden.mjs`) and theme check.
 - **Pull live theme:** `shopify theme pull --live`
-- **Push to unpublished theme:** `shopify theme push --unpublished --theme="<name>-staging"`
+- **Push to unpublished theme:** `npm run check:css && shopify theme push --unpublished --theme="<name>-staging"`
 
 ## Deploy targets
 
@@ -19,6 +19,7 @@
   - Live theme: `138872651872` (currently the published theme on this dev store)
   - ⚠️ Never point `shopify theme dev` at the live theme, and never put a theme ID in `shopify.theme.toml`'s default environment. Dev sessions sync the whole working tree, including `config/settings_data.json`; on 2026-10-22 this overwrote live and disabled an app embed.
   - **Live pushes:** always `shopify theme push -e production`, run from the repo root. That environment (in `shopify.theme.toml`) targets the published theme with `--nodelete --allow-live` and skips `config/settings_data.json`, so theme-editor settings and app embeds on live are never overwritten. Never push to live with an explicit `--theme=<id>`: that bypasses the skip.
+  - **Build before every push.** `shopify theme push` uploads files as they are, so `assets/tailwind.css` must be current before any push (dev, staging or live). It is committed: run `npm ci && npm run check:css` first and don't push if it fails. The live command itself stays `shopify theme push -e production`.
   - The production environment still uploads template and section-group JSON. If the theme editor may have changed any of those on live (e.g. app blocks), pull live's copies and commit them before pushing.
   - Verification URL: `https://theme-evolution-os2.myshopify.com`
   - Notes: This is a Shopify development store. The "live" theme here is not customer-facing — it's the active theme on a dev store with no real traffic. Pushing to it is acceptable for experimentation. For real production stores, prefer pushing to an unpublished theme and using theme swap to publish.
@@ -27,7 +28,7 @@
 
 After every deploy:
 
-1. `curl -s -o /dev/null -w "%{http_code}\n" https://theme-evolution-os2.myshopify.com` — expect 200, 302, or 401.
+1. `curl -s -o /dev/null -w "%{http_code}\n" https://theme-evolution-os2.myshopify.com` — expect 200, 302, or 401. Also confirm the page's `<link>` to `tailwind.css` returns 200.
 2. Visit the theme editor and confirm the affected sections appear correctly.
 3. Visit at least one test product URL from `docs/dev-fixtures.md` and verify visual correctness at both **desktop (1440×900)** and **mobile (375×667)** viewports via Playwright. Use the product that best exercises the feature under test:
    - Single-variant behavior → `the-3p-fulfilled-snowboard` (⚠️ add-to-cart returns 422 — visual tests only)
@@ -55,6 +56,8 @@ handoffs between agents live under:
 - Run `shopify theme check` after each Liquid/JS/CSS edit. Treat warnings as worth addressing.
 - Section and block schema JSON must round-trip cleanly through the theme editor — preserve `presets`, `blocks`, and `settings` types and order when editing existing schemas.
 - Commits should be small and reviewable. One section/snippet per commit when possible.
+- Keep `npm run watch:css` (or `npm run dev`) running while editing Liquid. Before each commit: run `npm run build:css` (a fresh build; never commit the watcher's output, which can keep rules for classes you removed), stage `assets/tailwind.css` with the change that produced it, then run `npm run check:css`. It must exit 0. On a merge conflict in `assets/tailwind.css`, never hand-merge: take either side, then rerun `npm run build:css` and stage the result.
+- Follow `### CSS architecture (Tailwind CSS v4)` below. Until `assets/base.css` is retired, `npm run check:hidden` must exit 0 before you commit. It flags the bare `hidden` class next to a variant-prefixed display utility (`hidden md:flex`) in any quoted string under `layout`, `sections`, `blocks`, `snippets` and `templates`.
 
 ### QA
 - **Dev server:** `shopify theme dev` (background it)
@@ -63,9 +66,13 @@ handoffs between agents live under:
 - For viewport-sensitive UI, capture both mobile (375×667) and desktop (1440×900) snapshots via Playwright.
 - Check the theme editor preview as well as the storefront — features must work in both contexts.
 - When running `shopify theme check`, two pre-existing offenses are expected and are not regressions: `TranslationKeyExists` in `cart-drawer.liquid` and `UnusedAssign` in `card-product.liquid`. Any offense beyond these two is a blocker.
+- Before testing, run `npm ci && npm run check:css`. A failure is a blocker: the CSS under test isn't the committed CSS.
+- Record the size of `assets/tailwind.css` (`wc -c` and `gzip -9 -c assets/tailwind.css | wc -c`) and compare it with the CSS budget under `### Performance & Core Web Vitals`.
+- For every converted section, open it in the theme editor and change each `select`, `checkbox`, `range` and `color` setting at least once. Each option must visibly apply; one that doesn't usually means a class name was built from Liquid and never generated.
 
 ### DevOps
-- **Staging deploy:** `shopify theme push --unpublished --theme="<feature-slug>-staging"`
+- **Staging deploy:** `shopify theme push --unpublished --theme="<feature-slug>-staging"`. Exception: `theme-evolution-tailwind-*` phases push to the long-lived unpublished staging theme #187953643616 (see `.claude/agents/devops.md`). **Never publish #187953643616:** it receives the repo's `config/settings_data.json` on every push, so publishing it would overwrite live's settings and app embeds. The "Publish" bullet below doesn't apply to it.
+- **Build gate:** run `npm ci && npm run check:css` before any push and refuse to push if it fails. Never rebuild and push a file that isn't committed.
 - **Live deploy:** `shopify theme push -e production` only (see Deploy targets). The project-scoped agent at `.claude/agents/devops.md` encodes this and overrides the global DevOps agent.
 - **Environments and `--path`:** the CLI reads `shopify.theme.toml` from the `--path` directory, so `-e` doesn't work with `--path=/tmp/...`. For snapshot pulls and rollbacks, pass `--store` and `--theme` explicitly.
 - **Smoke test:** open the unpublished theme's preview URL (printed by the CLI) and confirm the storefront loads, the feature renders, and no console errors appear.
@@ -80,6 +87,7 @@ These files are merchant-controlled or theme-editor-controlled. Agents must NOT 
 - **`templates/*.json`** — section order is set by merchants in the theme editor. Editing the order or removing sections will clobber their customizations. Only modify if the plan explicitly requires a template structure change.
 - **`locales/*.json`** except `locales/en.default.json` — non-default locale files are typically managed by translators or via the Shopify admin.
 - **`.shopify/` directory** — Shopify CLI state, version-controlled but not human-edited.
+- **`assets/tailwind.css`**: generated by `npm run build:css` from `src/tailwind.css`. Edit the source and rebuild; never edit the output.
 
 ## Project-Specific Architectural Directives
 
@@ -92,7 +100,9 @@ In addition to the Shopify theme reference below, the following project-specific
   {{ image | image_url: width: 1500 | image_tag: preload: true }}
   ```
 - **CLS prevention:** Every `<img>` and `<iframe>` must have explicit `width` and `height` attributes to reserve layout space during page load.
-- **Asset location (hard rule):** Keep ONLY `critical.css` and essential always-on static files in the `assets/` directory. All component-specific CSS and JavaScript MUST live inside the relevant `sections/`, `blocks/`, or `snippets/` Liquid files using `{% stylesheet %}` / `{% javascript %}` tags (or `<style>` / `<script>` where the rules in the CSS and JS directive sections below require).
+- **Asset location (hard rule):** `assets/` holds the compiled `tailwind.css`, static files needed on every page (icons, fonts, global JavaScript) and legacy Dawn CSS awaiting retirement. Never add a new CSS file to `assets/`: style with Tailwind utilities (see `### CSS architecture (Tailwind CSS v4)`). Component JavaScript lives inside the relevant `sections/`, `blocks/` or `snippets/` file using `{% javascript %}` (or `<script>` where the JS rules below require).
+- **Render-blocking CSS:** the layouts load `assets/tailwind.css` with `stylesheet_tag` in `<head>` as the one always-on stylesheet. Sections, blocks and snippets never add `stylesheet_tag`s. Don't add `preload: true` to any other stylesheet: Shopify already sends Early Hints for render-blocking `<head>` stylesheets and caps preload Link headers at 10, dropping image preloads first. (The layouts' `preload: true` on `tailwind.css` is kept only for parity with the `critical.css` tag it replaced.)
+- **CSS budget:** `assets/tailwind.css` stays at or under 60,000 bytes minified and 12,000 bytes gzipped (`gzip -9`). A change that exceeds it needs the owner's sign-off in its plan or QA report; a breach alone is not a QA failure.
 
 ### Liquid Logic & Efficiency
 
@@ -165,8 +175,8 @@ In addition to the Shopify theme reference below, the following project-specific
 
 #### `assets`
 
-- Contains static files like CSS, JavaScript, and images—including compiled and optimized assets—referenced in templates via the `asset_url` filter
-- Keep it here only `critical.css` and static files necessary for every page, otherwise prefer the usage of the `{% stylesheet %}` and `{% javascript %}` tags
+- Contains static files referenced via the `asset_url` filter: icons, images, fonts, global JavaScript, and the compiled `tailwind.css`
+- `tailwind.css` is generated from `src/tailwind.css` by `npm run build:css`; never edit it by hand. Legacy Dawn CSS files remain here only until they are retired (`docs/plans/theme-evolution-tailwind.md`); don't add new CSS files
 
 #### `locales`
 
@@ -178,14 +188,28 @@ In addition to the Shopify theme reference below, the following project-specific
 
 - JSON file that define the structure, ordering, and which sections and blocks appear on each page type, allowing merchants to customize layouts without code changes
 
-### CSS Performance & Architecture Directives
+### CSS architecture (Tailwind CSS v4)
 
-- **No Global Bloat:** Never inject section-specific CSS into a global stylesheet (like `base.css` or `theme.css`). All CSS required for a specific Liquid section or snippet MUST be kept within that specific file.
-- **Avoid Inline Styles:** Do not use inline HTML `style="..."` attributes. Always use semantic classes and define the rules using one of the three approved tags below.
-- **The `{% stylesheet %}` Tag:** Use this tag when you have static, non-dynamic CSS for a section. Shopify will bundle and minify this code automatically.
-- **The `{% style %}` Tag:** Use this Liquid tag ONLY when the CSS requires dynamic Liquid variables (e.g., pulling color values or padding settings from `section.settings`).
-- **The `<style>` Tag:** Use the standard HTML style tag for ultra-lightweight, highly contextual CSS that needs to be rendered strictly in the DOM precisely where the component lives, ensuring it is isolated and non-blocking.
-- ** RULE ADDITION:** The `{% stylesheet %}` and `{% style %}` tags can ONLY be used in Section files (`sections/`). They must NEVER be nested inside Liquid logic (like `if` or `for` loops). If styling is required inside a Snippet file (`snippets/`), or if the styling must be conditionally rendered inside an `if` statement, you MUST use standard HTML `<style>` tags.
+This theme is styled with Tailwind CSS v4 (version pinned in `package.json`; design in `docs/plans/theme-evolution-tailwind.md`). Preflight is on, there is no class prefix, and the root font size is the browser default 16px. Never set `html { font-size: 62.5% }` or any other root size: Tailwind's whole scale is in rem.
+
+- **Utilities first.** Style markup with Tailwind utility classes in the Liquid file that renders it. Write custom CSS only for what utilities can't express (keyframes, complex pseudo-elements, markup you can't add classes to, such as Shopify's section wrapper).
+- **One source, one output.** `src/tailwind.css` is the only Tailwind source: tokens (`@theme`), base element styles (`@layer base`) and custom utilities (`@utility`). No section-specific CSS there. `npm run build:css` compiles it to `assets/tailwind.css`. Commit the output with the change that produced it.
+- **Use the theme tokens.** Merchant-controlled values are CSS custom properties printed by `snippets/css-variables.liquid` and mapped in `src/tailwind.css`: `bg-background`, `text-foreground`, `font-sans`, `max-w-page`, `rounded-input`, `px-(--page-margin)`, and, from phase T1, `bg-accent`, `text-accent-foreground` and `font-heading`. Don't hardcode hex colors or font stacks for anything a merchant can theme; Tailwind's palette is for neutral details only.
+- **Merchant colors go in plain `@theme`, never `@theme inline`.** A color the merchant sets keeps the same variable name as its Tailwind token (`--color-background`), so the value printed by `css-variables` overrides the default and the theme editor updates live. `@theme inline` bakes the default into every utility and breaks that. Use `@theme inline` only to point a Tailwind name at a differently named runtime variable (`--font-sans: var(--font-primary--family)`).
+- **Complete class names only.** Tailwind finds classes by scanning `layout/`, `sections/`, `blocks/`, `snippets/` and `templates/*.liquid` as plain text. A class built from Liquid (`md:grid-cols-{{ n }}`) produces no CSS. Map settings to complete class strings with `case`/`if`, assigning each as a single-line quoted string (`assign x = '…'`). Don't build class strings with `capture`.
+- **Settings to CSS.** Single-value settings (colors, ranges): set a custom property with an inline `style` attribute and consume it with the variable shorthand, e.g. `style="--section-pt: {{ section.settings.padding_top }}px"` with `pt-(--section-pt)`. Inline `style` attributes may ONLY set custom properties (`--name: value`); a property declaration such as `style="color: red"` is forbidden. Multi-property choices: keep semantic `select` option values and map them to class strings in Liquid. Never rename an existing option value; that orphans saved merchant settings.
+- **Cascade layers (do not reorder).** The order is `properties, theme, base, legacy, components, utilities, shims`, declared by the first `<style>` in `<head>` in both layouts and in `templates/gift_card.liquid`. `properties` is emitted by Tailwind itself and must stay listed first. `npm run check:css` fails if the compiled CSS declares a layer this statement doesn't list. Unlayered CSS beats every utility, so **new** CSS, and CSS in a file you are converting under a phase or roadmap plan, MUST sit inside `@layer components { … }`. Don't wrap the existing unlayered CSS of a file you aren't converting: that moves it below every other unlayered rule and changes the cascade.
+- **Where custom CSS goes:**
+  - `{% stylesheet %}`: static CSS for a section or block, wrapped in `@layer components { }`. Only in `sections/` and `blocks/`, never nested inside Liquid logic (`if`, `for`).
+  - `{% style %}`: only CSS that needs Liquid and can't be an inline custom property (e.g. `@font-face` from `font_face`). Only in `sections/` and `snippets/css-variables.liquid`, never inside Liquid logic.
+  - `<style>`: snippets, or CSS that must be rendered conditionally; wrap the contents in `@layer components { }`.
+- **Mobile first.** Unprefixed utilities apply to mobile; add `sm:`/`md:`/`lg:` for larger screens. Breakpoints are Tailwind's defaults (`md` = 768px).
+- **While `assets/base.css` still loads** (until phase T5 of `docs/plans/theme-evolution-tailwind.md`):
+  - Never put the bare `hidden` class on an element that must ever be shown (e.g. `hidden md:flex`). `base.css` defines `.hidden { display: none !important }`, which beats every utility. Use `max-md:hidden`, `md:hidden` or `group-aria-expanded:hidden`; prefixed forms are safe. Keep an element's visibility classes (the `hidden`-type class and its display counterpart) in **one quoted string on one line**, so `npm run check:hidden` can see them together.
+  - Don't use Dawn's other forced-hiding classes on Tailwind markup either: `small-hide`, `medium-hide` and `large-up-hide` are `display: none !important` at Dawn's breakpoints (749/750-989/990px), and `visually-hidden` sets `position: absolute !important`. Use `max-md:hidden`-style utilities and `sr-only`.
+  - Give intentionally empty elements (bars, spacers) an explicit display utility (`block`, `flex`) or use a `<span>`: `base.css` hides `div:empty`.
+  - An element with the `grid` utility also gets Dawn's `margin-bottom: 2rem`; add `mb-*` where it matters. `isolate` also gets `position: relative; z-index: 0`; prefer `relative z-0`.
+  - Don't put Dawn class names (`page-width`, `rte`, `button`, `header__*`, `h1`-`h5`, `visually-hidden`, …) on Tailwind-styled markup; their legacy rules keep matching. Use `sr-only` instead of `visually-hidden`.
 
 ### JavaScript Performance & Integration Directives
 
@@ -194,6 +218,8 @@ In addition to the Shopify theme reference below, the following project-specific
 - **The `<script>` vs `{% javascript %}` Tags:** The `{% javascript %}` tag behaves exactly like the `{% stylesheet %}` tag. It MUST NOT be used inside of Liquid logic (like `{% if %}` statements). If you need to output JS dynamically inside an `if` block, or you are experiencing bundler failures where the JS is not propagating, use standard inline `<script>` tags to guarantee execution in the DOM.
 - **Section Rendering API (Ajax Cart):** When building custom cart drawers or components that must intercept standard Shopify `product-form.js` submissions, your custom element MUST natively implement two methods: `getSectionsToRender()` (returning an array of section IDs to fetch) and `renderContents(parsedState)` (to ingest the HTML).
 - **Form Data Arrays:** When modifying `product-form.js` or `cart.js` to pass arrays of sections in a `FormData` object to the Section Rendering API, you MUST cast the array to a comma-separated string using `.join(',')` (e.g., `sections.map((s) => s.id).join(',')`). Failing to do so will cause Shopify to silently strip the `sections` object from the JSON response payload.
+- **Toggle state, not styles.** Change state with attributes (`aria-expanded`, `data-state`, `hidden`) and style it with variants (`aria-expanded:rotate-180`, `data-[state=open]:flex`, `group-aria-expanded:hidden`). If JS must add or remove a utility class, the complete class name must appear in a scanned file. Files in `assets/` are not scanned unless `src/tailwind.css` lists them with `@source`.
+- **JS hooks are not styling hooks.** Select elements from JS by a namespaced class or a `data-` attribute that carries no CSS (e.g. `data-header-cart-icon`), so restyling never breaks behavior.
 
 ### LiquidDoc
 
@@ -221,17 +247,11 @@ Snippets and blocks (when blocks are statically rendered) must include the Liqui
 
 When defining the `{% schema %}` tag on sections and blocks, follow these guidelines to use the values:
 
-**Single property settings**: For settings that correspond to a single CSS property, use CSS variables:
+**Single property settings**: For settings that correspond to a single CSS value, set a CSS custom property inline and consume it with Tailwind's variable shorthand:
 ```liquid
-<div class="collection" style="--gap: {{ block.settings.gap }}px">
+<div class="flex gap-(--gap)" style="--gap: {{ block.settings.gap }}px">
   Example
 </div>
-
-{% stylesheet %}
-  .collection {
-    gap: var(--gap);
-  }
-{% endstylesheet %}
 
 {% schema %}
 {
@@ -242,26 +262,26 @@ When defining the `{% schema %}` tag on sections and blocks, follow these guidel
     "min": 0,
     "max": 100,
     "unit": "px",
-    "default": 0,
+    "default": 0
   }]
 }
 {% endschema %}
 ```
 
-**Multiple property settings**: For settings that control multiple CSS properties, use CSS classes:
+**Multiple property settings**: For settings that control several CSS properties, keep semantic option values and map them to complete Tailwind class strings in Liquid. Never build a class name from a setting value, and never rename an existing option value:
 ```liquid
-<div class="collection {{ block.settings.layout }}">
+{% liquid
+  case block.settings.layout
+    when 'narrow'
+      assign layout_classes = 'mx-auto w-full max-w-3xl'
+    else
+      assign layout_classes = 'w-full'
+  endcase
+%}
+
+<div class="{{ layout_classes }}">
   Example
 </div>
-
-{% stylesheet %}
-  .collection--full-width {
-    /* multiple styles */
-  }
-  .collection--narrow {
-    /* multiple styles */
-  }
-{% endstylesheet %}
 
 {% schema %}
 {
@@ -269,10 +289,11 @@ When defining the `{% schema %}` tag on sections and blocks, follow these guidel
     "type": "select",
     "id": "layout",
     "label": "layout",
-    "values": [
-      { "value": "collection--full-width", "label": "t:options.full" },
-      { "value": "collection--narrow", "label": "t:options.narrow" }
-    ]
+    "options": [
+      { "value": "full", "label": "t:options.full" },
+      { "value": "narrow", "label": "t:options.narrow" }
+    ],
+    "default": "full"
   }]
 }
 {% endschema %}
@@ -280,18 +301,31 @@ When defining the `{% schema %}` tag on sections and blocks, follow these guidel
 
 #### Mobile layouts
 
-If you need to create a mobile layout and you want the merchant to be able to select one or two columns, use a select input:
+If you need to create a mobile layout and you want the merchant to be able to select one or two columns, use a select input and map each value to a complete class:
 
 ```liquid
+{% liquid
+  if section.settings.columns_mobile == '2'
+    assign mobile_columns = 'grid-cols-2'
+  else
+    assign mobile_columns = 'grid-cols-1'
+  endif
+%}
+
+<div class="grid {{ mobile_columns }} md:grid-cols-4">…</div>
+
 {% schema %}
 {
-  "type": "select",
-  "id": "columns_mobile",
-  "label": "Columns on mobile",
-  "options": [
-    { "value": 1, "label": "1" },
-    { "value": "2", "label": "2" }
-  ]
+  "settings": [{
+    "type": "select",
+    "id": "columns_mobile",
+    "label": "Columns on mobile",
+    "options": [
+      { "value": "1", "label": "1" },
+      { "value": "2", "label": "2" }
+    ],
+    "default": "1"
+  }]
 }
 {% endschema %}
 ```
@@ -1302,7 +1336,7 @@ Schema locale files, saved with a .schema.json extension, store translation stri
 
   @param {image} image - The image to be rendered
   @param {string} [url] - An optional destination URL for the image
-  @param {string} [css_class] - Optional class to be added to the image wrapper
+  @param {string} [css_class] - Optional Tailwind classes added to the image wrapper
   @param {number} [width] - The highest resolution width of the image to be rendered
   @param {number} [height] - The highest resolution height of the image to be rendered
   @param {string} [crop] - The crop position of the image
@@ -1311,7 +1345,7 @@ Schema locale files, saved with a .schema.json extension, store translation stri
   {% render 'image', image: product.featured_image %}
   {% render 'image', image: product.featured_image, url: product.url %}
   {% render 'image',
-    css_class: 'product__image',
+    css_class: 'rounded-lg',
     image: product.featured_image,
     url: product.url,
     width: 1200,
@@ -1333,28 +1367,13 @@ Schema locale files, saved with a .schema.json extension, store translation stri
 %}
 
 <{{ wrapper }}
-  class="image {{ css_class }}"
+  class="relative block w-full overflow-hidden {{ css_class }}"
   {% if url %}
     href="{{ url }}"
   {% endif %}
 >
-  {{ image | image_url: width: width, height: height, crop: crop | image_tag }}
+  {{ image | image_url: width: width, height: height, crop: crop | image_tag: class: 'block h-auto w-full' }}
 </{{ wrapper }}>
-
-{% stylesheet %}
-  .image {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-  }
-
-  .image > img {
-    width: 100%;
-    height: auto;
-  }
-{% endstylesheet %}
 
 {% javascript %}
   function doSomething() {
@@ -1362,12 +1381,13 @@ Schema locale files, saved with a .schema.json extension, store translation stri
   }
   doSomething()
 {% endjavascript %}
-
 ```
 
 ### `block`
 
 #### Text
+
+The option values below (`text--title`, `text--subtitle`, `text--normal`) are unchanged from the pre-Tailwind version of this block: saved merchant settings use them, so they are mapped to utilities, never renamed. `font-heading` exists from phase T1.
 
 ```liquid
 {% doc %}
@@ -1377,26 +1397,29 @@ Schema locale files, saved with a .schema.json extension, store translation stri
   {% content_for 'block', type: 'text', id: 'text' %}
 {% enddoc %}
 
-<div
-  class="text {{ block.settings.text_style }}"
-  style="--text-align: {{ block.settings.alignment }}"
-  {{ block.shopify_attributes }}
->
+{% liquid
+  case block.settings.text_style
+    when 'text--title'
+      assign style_classes = 'font-heading text-3xl font-bold'
+    when 'text--subtitle'
+      assign style_classes = 'text-2xl'
+    else
+      assign style_classes = 'text-base'
+  endcase
+
+  case block.settings.alignment
+    when 'center'
+      assign align_classes = 'text-center'
+    when 'right'
+      assign align_classes = 'text-right'
+    else
+      assign align_classes = 'text-left'
+  endcase
+%}
+
+<div class="{{ style_classes }} {{ align_classes }}" {{ block.shopify_attributes }}>
   {{ block.settings.text }}
 </div>
-
-{% stylesheet %}
-  .text {
-    text-align: var(--text-align);
-  }
-  .text--title {
-    font-size: 2rem;
-    font-weight: 700;
-  }
-  .text--subtitle {
-    font-size: 1.5rem;
-  }
-{% endstylesheet %}
 
 {% schema %}
 {
@@ -1433,6 +1456,8 @@ Schema locale files, saved with a .schema.json extension, store translation stri
 
 #### Group
 
+The option values below are unchanged from the pre-Tailwind version of this example: existing values are mapped to utilities, never renamed.
+
 ```liquid
 {% doc %}
   Renders a group of blocks with configurable layout direction, gap and
@@ -1447,36 +1472,28 @@ Schema locale files, saved with a .schema.json extension, store translation stri
   {% content_for 'block', type: 'group', id: 'group' %}
 {% enddoc %}
 
+{% liquid
+  if block.settings.layout_direction == 'group--horizontal'
+    assign layout_classes = 'flex-row items-center justify-between px-(--padding)'
+  else
+    case block.settings.alignment
+      when 'center'
+        assign layout_classes = 'flex-col items-center py-(--padding)'
+      when 'flex-end'
+        assign layout_classes = 'flex-col items-end py-(--padding)'
+      else
+        assign layout_classes = 'flex-col items-start py-(--padding)'
+    endcase
+  endif
+%}
+
 <div
-  class="group {{ block.settings.layout_direction }}"
-  style="
-    --padding: {{ block.settings.padding }}px;
-    --alignment: {{ block.settings.alignment }};
-  "
+  class="flex w-full flex-nowrap overflow-hidden {{ layout_classes }}"
+  style="--padding: {{ block.settings.padding }}px"
   {{ block.shopify_attributes }}
 >
   {% content_for 'blocks' %}
 </div>
-
-{% stylesheet %}
-  .group {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    width: 100%;
-  }
-  .group--horizontal {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 var(--padding);
-  }
-  .group--vertical {
-    flex-direction: column;
-    align-items: var(--alignment);
-    padding: var(--padding) 0;
-  }
-{% endstylesheet %}
 
 {% schema %}
 {
@@ -1542,48 +1559,17 @@ Schema locale files, saved with a .schema.json extension, store translation stri
 ### `section`
 
 ```liquid
-<div class="example-section full-width">
+<div class="full-width relative z-0 overflow-hidden">
   {% if section.settings.background_image %}
-    <div class="example-section__background">
-      {{ section.settings.background_image | image_url: width: 2000 | image_tag }}
+    <div class="absolute inset-0 -z-10">
+      {{ section.settings.background_image | image_url: width: 2000 | image_tag: class: 'size-full object-cover' }}
     </div>
   {% endif %}
 
-  <div class="custom-section__content">
+  <div class="grid grid-cols-(--content-grid) *:col-start-2">
     {% content_for 'blocks' %}
   </div>
 </div>
-
-{% stylesheet %}
-  .example-section {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-  }
-  .example-section__background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
-  }
-  .example-section__background img {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .example-section__content {
-    display: grid;
-    grid-template-columns: var(--content-grid);
-  }
-
-  .example-section__content > * {
-    grid-column: 2;
-  }
-{% endstylesheet %}
 
 {% schema %}
 {

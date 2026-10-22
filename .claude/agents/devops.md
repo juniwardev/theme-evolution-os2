@@ -19,10 +19,14 @@ Why this file exists: on 2026-10-22, a `shopify theme dev` session pointed at th
 2. `docs/qa/<slug>-report.md` ends with `PASS` or `PASS WITH NITS`. Refuse on `FAIL` or `DYNAMIC TESTS BLOCKED`.
 3. `git status --porcelain` shows no modified or staged tracked files. Untracked files under `docs/` are fine (`docs/*` is in `.shopifyignore`); untracked files anywhere else would be uploaded, so refuse and list them.
 4. Read `CLAUDE.md` → `## Deploy targets` and `### DevOps` before doing anything else.
+5. `npm ci` then `npm run check:css` exits 0. A failure means `assets/tailwind.css` is stale or untracked, or the cascade-layer statement doesn't match the compiled CSS: refuse and report. Never rebuild and push a file that isn't committed.
 
 ## Choose the target
 
 - **Staging (default):** a new unpublished theme named `<slug>-staging`. Use this unless the operator explicitly asks for live in the current request. If a theme with that name already exists, stop and report rather than overwriting it.
+  Exception: for `theme-evolution-tailwind-*` slugs, staging is the long-lived unpublished theme #187953643616 (identify it by this ID; its name is only a label). Run `shopify theme list --store=theme-evolution-os2.myshopify.com` first and confirm #187953643616 exists with role `unpublished`; if it is missing or not unpublished, stop. Then push with `shopify theme push --store=theme-evolution-os2.myshopify.com --theme=187953643616` (no `--allow-live`). Overwriting this theme is expected. **Never publish #187953643616**, and never suggest publishing it in a deploy note: it receives the repo's `config/settings_data.json` on every push, so publishing it would overwrite live's settings and app embeds. Live deploys for these slugs still use `shopify theme push -e production`.
+  One-time step, on the first `theme-evolution-tailwind-*` deploy (T0) only: rename the theme so its label matches its use, `shopify theme rename --store=theme-evolution-os2.myshopify.com --theme=187953643616 --name="theme-evolution-tailwind-staging"`. If the CLI rejects it, ask the operator to rename it in admin and record that in the deploy note. Skip this if `theme list` already shows that name.
+  One-time step, same T0 deploy only (owner: DevOps): append a dated note at the end of `## Actual behavior` in `docs/bugs/mobile-horizontal-overflow.md`: "<date>: after `theme-evolution-tailwind-t0` (E1), the menu toggle no longer shows the close icon, so the header overflow figures above are out of date. Re-measured `X_hdr`/`X_page` at 320/375/390/430: see `docs/qa/theme-evolution-tailwind-t0-report.md`. The header half will be resolved in T1 and the banner half in T3 (`docs/plans/theme-evolution-tailwind.md` D9)." Include that file in the audit commit (see Deploy note).
 - **Live:** only when the operator explicitly asks for a live deploy in the current request. Approval of an earlier deploy does not carry over.
 
 Resolve the live theme ID from the store rather than trusting docs:
@@ -53,7 +57,7 @@ If it differs from the ID in `CLAUDE.md`, stop and report.
    ```
    For each differing `.json` file, run `diff` on it. Shopify adds a `/* IMPORTANT: The contents of this file are auto-generated ... */` header to files it manages; a difference that is only that header is fine. Any other difference in a file the feature's plan does not change means the theme editor changed live (e.g. app blocks). Stop and report it. Do not push.
 
-3. **Push, from the repo root:**
+3. **Push.** After gate 5 has passed, from the repo root (for `theme-evolution-tailwind-*` slugs, use the staging command from Choose the target):
    - Staging: `shopify theme push --unpublished --theme="<slug>-staging"`
    - Live: `shopify theme push -e production`
 
@@ -74,7 +78,7 @@ If it differs from the ID in `CLAUDE.md`, stop and report.
      https://theme-evolution-os2.myshopify.com/password
    curl -s -b "$JAR" "https://theme-evolution-os2.myshopify.com/?preview_theme_id=<theme-id>" -o page.html
    ```
-   Confirm the feature's markup is in the page (class names and content from the plan). Delete the cookie jar and page afterwards.
+   Confirm the feature's markup is in the page (class names and content from the plan). Also confirm the page links `tailwind.css` and that the asset URL returns 200. Delete the cookie jar and page afterwards.
 3. Theme editor and desktop (1440×900) / mobile (375×667) visual checks are the operator's. List them in the deploy note as pending.
 
 ## Deploy note
@@ -109,7 +113,7 @@ Write `docs/qa/<slug>-deploy.md`:
 <see below, with the real IDs and paths filled in>
 ```
 
-Then commit the audit trail in one commit: every file that exists among `docs/bugs/<base-slug>.md`, `docs/bugs/<base-slug>-investigation.md`, `docs/plans/<slug>.md`, `docs/plans/<slug>-impl-notes.md`, `docs/reviews/<slug>-review.md`, `docs/qa/<slug>-report.md`, `docs/qa/<slug>.approved` and `docs/qa/<slug>-deploy.md`. For a `fix-` slug, `<base-slug>` is the slug without `fix-`. Add files by explicit path, never `git add -A`. Do not push to the git remote.
+Then commit the audit trail in one commit: every file that exists among `docs/bugs/<base-slug>.md`, `docs/bugs/<base-slug>-investigation.md`, `docs/plans/<slug>.md`, `docs/plans/<slug>-impl-notes.md`, `docs/reviews/<slug>-review.md`, `docs/qa/<slug>-report.md`, `docs/qa/<slug>.approved` and `docs/qa/<slug>-deploy.md`. For the T0 deploy (`theme-evolution-tailwind-t0`) also `docs/bugs/mobile-horizontal-overflow.md`, edited by the one-time step above. For a `fix-` slug, `<base-slug>` is the slug without `fix-`. Add files by explicit path, never `git add -A`. Do not push to the git remote.
 
 ## Rollback procedure
 
@@ -135,6 +139,6 @@ Then re-run the verification procedure and write `docs/qa/<slug>-postmortem.md` 
 
 ## Shopify CLI notes
 
-- CLI is 4.8.x. `.shopifyignore` excludes `AGENTS.md` (over the 50 KB upload limit), `DESIGN.md`, `docs/*`, `*.txt`, `.git/*` and `node_modules/*`.
+- CLI is 4.8.x. `.shopifyignore` excludes `AGENTS.md` (over the 50 KB upload limit), `DESIGN.md`, `docs/*`, `*.txt`, `.git/*`, `node_modules/*`, `src/*`, `scripts/*`, `package.json` and `package-lock.json`.
 - `shopify theme dev` uses its own development theme (no default theme is configured). Preview URLs look like `https://theme-evolution-os2.myshopify.com/?preview_theme_id=<id>`; the CLI no longer prints `shopifypreview.com` URLs.
 - If you see "Service is not valid for authentication" or 401 errors from the CLI, the operator needs to run `shopify auth login` in a native terminal.
