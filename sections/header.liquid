@@ -10,16 +10,19 @@
   assign close_menu_label = 'sections.header.close_menu_label' | t
 -%}
 
-<div class="theme-evolution-header-wrapper">
+<div
+  class="theme-evolution-header-wrapper relative bg-(--header-bg) text-(--header-text)"
+  style="--header-bg: {{ section.settings.header_background }}; --header-text: {{ section.settings.header_text }}; --logo-width: {{ section.settings.logo_width }}px"
+>
   {%- if show_announcement and announcement_text != blank -%}
-    <div class="theme-evolution-announcement-bar" role="note">
-      <p class="theme-evolution-announcement-bar__text">{{ announcement_text | escape }}</p>
+    <div class="border-b border-current/8 px-8 py-2 text-center" role="note">
+      <p class="m-0 text-xs tracking-[0.05em]">{{ announcement_text | escape }}</p>
     </div>
   {%- endif -%}
 
-  <header>
-    <h2 class="header__title">
-      <a href="{{ routes.root_url }}" class="header__logo-link">
+  <header class="flex h-16 items-center justify-between px-8">
+    <h2 class="m-0 leading-none">
+      <a href="{{ routes.root_url }}" class="relative flex h-full w-(--logo-width) max-w-[40vw] items-center overflow-hidden no-underline">
         {%- if section.settings.logo != blank -%}
           {%- assign logo_alt = section.settings.logo.alt | default: shop.name | escape -%}
           {%- assign logo_height = section.settings.logo_width | times: section.settings.logo.height | divided_by: section.settings.logo.width -%}
@@ -27,7 +30,7 @@
             section.settings.logo
             | image_url: width: section.settings.logo_width
             | image_tag:
-                class: 'header__logo',
+                class: 'block size-full object-contain object-left',
                 widths: '50, 100, 150, 200, 250, 300, 400, 500',
                 width: section.settings.logo_width,
                 height: logo_height,
@@ -35,63 +38,64 @@
                 loading: 'eager'
           }}
         {%- else -%}
-          <span class="h2">{{ shop.name }}</span>
+          <span class="font-heading text-2xl uppercase">{{ shop.name }}</span>
         {%- endif -%}
       </a>
     </h2>
 
     {%- if has_menu -%}
-      <div class="header__menu" aria-label="{{ 'sections.header.menu' | t }}">
+      <div class="flex items-center gap-6 max-md:hidden" aria-label="{{ 'sections.header.menu' | t }}">
         {%- for link in section.settings.menu.links -%}
-          <a href="{{ link.url }}">{{ link.title | escape }}</a>
+          <a href="{{ link.url }}" class="relative text-sm font-semibold tracking-[0.1em] uppercase no-underline">{{ link.title | escape }}</a>
         {%- endfor -%}
       </div>
     {%- endif -%}
 
-    <div class="header__icons">
+    <div class="flex items-center">
       {%- if has_menu -%}
-        <theme-evolution-header-menu class="header__mobile-toggle">
+        <theme-evolution-header-menu class="flex md:hidden">
           <button
             type="button"
-            class="theme-evolution-header-menu__toggle header__icon"
+            class="theme-evolution-header-menu__toggle group/menu flex size-11 items-center justify-center text-inherit [&_svg]:size-6!"
             aria-expanded="false"
             aria-controls="theme-evolution-header-menu-panel-{{ section.id }}"
           >
             <span
-              class="visually-hidden"
+              class="sr-only"
               data-label-open="{{ mobile_menu_label | escape }}"
               data-label-close="{{ close_menu_label | escape }}"
             >{{ mobile_menu_label | escape }}</span>
-            <span class="theme-evolution-header-menu__icon theme-evolution-header-menu__icon--open">{{ 'icon-hamburger.svg' | inline_asset_content }}</span>
-            <span class="theme-evolution-header-menu__icon theme-evolution-header-menu__icon--close">{{ 'icon-close.svg' | inline_asset_content }}</span>
+            <span class="inline-flex group-aria-expanded/menu:hidden">{{ 'icon-hamburger.svg' | inline_asset_content }}</span>
+            <span class="inline-flex group-aria-[expanded=false]/menu:hidden">{{ 'icon-close.svg' | inline_asset_content }}</span>
           </button>
           <div
             id="theme-evolution-header-menu-panel-{{ section.id }}"
-            class="theme-evolution-header-menu__panel"
+            class="theme-evolution-header-menu__panel absolute inset-x-0 top-full flex flex-col gap-4 border-t border-current/8 bg-(--header-bg) px-8 py-6 text-(--header-text) md:hidden"
             data-state="closed"
             hidden
           >
             {%- for link in section.settings.menu.links -%}
-              <a href="{{ link.url }}" class="theme-evolution-header-menu__link">{{ link.title | escape }}</a>
+              <a href="{{ link.url }}" class="relative text-sm font-semibold tracking-[0.1em] uppercase no-underline">{{ link.title | escape }}</a>
             {%- endfor -%}
           </div>
         </theme-evolution-header-menu>
       {%- endif -%}
 
       {%- if shop.customer_accounts_enabled -%}
-        <a href="{{ routes.account_url }}" class="header__icon header__icon--account">
+        <a href="{{ routes.account_url }}" class="relative flex size-11 items-center justify-center text-inherit no-underline [&_svg]:size-6!">
           {{ 'icon-account.svg' | inline_asset_content }}
         </a>
       {%- endif -%}
 
       <a
         href="{{ routes.cart_url }}"
-        class="header__icon header__icon--cart"
+        class="relative flex size-11 items-center justify-center text-inherit no-underline [&_svg]:size-6!"
+        data-header-cart-icon
         {% if settings.enable_cart_drawer %}data-cart-drawer-trigger{% endif %}
         aria-label="{{ cart_count_label | escape }}"
       >
         <span
-          class="header__cart-count"
+          class="absolute top-2.5 right-2.5 h-[1.4rem] min-w-[1.4rem] rounded-full bg-(--header-text) px-1.5 text-center text-[0.7rem] leading-[1.4rem] font-bold text-(--header-bg)"
           data-count="{{ cart.item_count }}"
           {% if cart.item_count == 0 %}hidden{% endif %}
           aria-label="{{ cart_count_label | escape }}"
@@ -102,190 +106,12 @@
   </header>
 </div>
 
-{% style %}
-  .section-header {
-    --logo-width: {{ section.settings.logo_width }}px;
-  }
-  .theme-evolution-header-wrapper {
-    --header-bg: {{ section.settings.header_background }};
-    --header-text: {{ section.settings.header_text }};
-  }
-{% endstyle %}
-
 {% stylesheet %}
-  /* --- sticky + wrapper colors (decision 4.1 + 4.6 + 4.7) --- */
-  .section-header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-  }
-  .theme-evolution-header-wrapper {
-    position: relative; /* containing block for the absolutely-positioned mobile panel */
-    background-color: var(--header-bg);
-    color: var(--header-text);
-    /* Decision 4.7: derive internal separator color from currentColor (which inherits --header-text)
-       so dividers remain visible regardless of the merchant's chosen header_background. */
-    --header-border: color-mix(in srgb, currentColor 8%, transparent);
-  }
-
-  /* --- header bar layout (overflow moved off of <header> per decision 4.3) --- */
-  header {
-    height: 4rem;
-    max-height: 4rem;
-    padding: 0 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    overflow: visible; /* was: hidden; moved to .header__logo-link below */
-  }
-  header a {
-    position: relative;
-    text-decoration: none;
-    color: inherit;
-  }
-  header svg {
-    width: 2rem;
-    height: 2rem;
-  }
-  .header__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 4.4rem;
-    height: 4.4rem;
-    color: inherit;
-  }
-  header .header__menu,
-  header .header__icons {
-    display: flex;
-    align-items: center;
-  }
-  .header__icons {
-    gap: 0;
-  }
-  .header__menu {
-    gap: 1.5rem;
-  }
-  .header__title {
-    margin: 0;
-    line-height: 1;
-  }
-  .header__logo-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    width: var(--logo-width, 150px);
-    max-width: 40vw;
-    height: 100%;
-    overflow: hidden; /* clips overflowing logo image (was on <header>) */
-  }
-  .header__logo {
-    display: block;
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    object-position: left;
-  }
-
-  /* --- nav typography (decision 4.4) --- */
-  .header__menu a,
-  .theme-evolution-header-menu__link {
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: 600;
-    font-size: 0.85rem;
-  }
-
-  /* --- announcement bar (decisions 4.2 + 4.7) --- */
-  .theme-evolution-announcement-bar {
-    padding: 0.5rem 2rem;
-    text-align: center;
-    border-bottom: 1px solid var(--header-border);
-  }
-  .theme-evolution-announcement-bar__text {
-    margin: 0;
-    font-size: 0.8rem;
-    letter-spacing: 0.05em;
-  }
-
-  /* --- cart count badge (decision 4.5) --- */
-  .header__cart-count {
-    position: absolute;
-    top: 0.6rem;
-    right: 0.6rem;
-    min-width: 1.4rem;
-    height: 1.4rem;
-    padding: 0 0.4rem;
-    border-radius: 999px;
-    background-color: var(--header-text);
-    color: var(--header-bg);
-    font-size: 0.7rem;
-    line-height: 1.4rem;
-    font-weight: 700;
-    text-align: center;
-  }
-  .header__cart-count[hidden] {
-    display: none;
-  }
-
-  /* --- mobile menu toggle and panel (decisions 4.3 + 4.7) --- */
-  .header__mobile-toggle {
-    display: none;
-  }
-  .theme-evolution-header-menu__icon--close {
-    display: none;
-  }
-  .theme-evolution-header-menu__toggle[aria-expanded="true"] .theme-evolution-header-menu__icon--open {
-    display: none;
-  }
-  .theme-evolution-header-menu__toggle[aria-expanded="true"] .theme-evolution-header-menu__icon--close {
-    display: inline-flex;
-  }
-  .theme-evolution-header-menu__panel {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: var(--header-bg);
-    color: var(--header-text);
-    padding: 1.5rem 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    border-top: 1px solid var(--header-border);
-  }
-  .theme-evolution-header-menu__panel[hidden] {
-    display: none;
-  }
-  .theme-evolution-header-menu__link {
-    color: inherit;
-    text-decoration: none;
-  }
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
-
-  /* --- breakpoint gate: show inline menu desktop, hamburger mobile --- */
-  @media screen and (max-width: 749px) {
-    header .header__menu {
-      display: none;
-    }
-    .header__mobile-toggle {
-      display: flex;
-    }
-  }
-  @media screen and (min-width: 750px) {
-    /* defensive: a panel left open on mobile must not leak onto desktop */
-    .theme-evolution-header-menu__panel {
-      display: none;
+  @layer components {
+    .section-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
   }
 {% endstylesheet %}

@@ -291,7 +291,7 @@
           },
           {
             id: 'header',
-            selector: '.header__icon--cart'
+            selector: '[data-header-cart-icon]'
           }
         ];
       }
@@ -374,8 +374,8 @@
           .then((response) => response.text())
           .then((html) => {
             const parsedHTML = new DOMParser().parseFromString(html, 'text/html');
-            const newHeaderIcon = parsedHTML.querySelector('.header__icon--cart');
-            const currentHeaderIcon = document.querySelector('.header__icon--cart');
+            const newHeaderIcon = parsedHTML.querySelector('[data-header-cart-icon]');
+            const currentHeaderIcon = document.querySelector('[data-header-cart-icon]');
             if (newHeaderIcon && currentHeaderIcon) {
               currentHeaderIcon.innerHTML = newHeaderIcon.innerHTML;
             }
