@@ -146,3 +146,21 @@ The fix was to add `grid-column: 1 / -1;` to the `.theme-evolution-footer-wrappe
 ## Out-of-scope observations
 
 - The Dawn-era `sections.footer.settings` keys in `locales/en.default.schema.json` (`newsletter_enable`, `header__1`, `show_social`, `enable_country_selector`, `enable_language_selector`, `payment_enable`, `show_policy`, `margin_top`, `header__9`, `enable_follow_on_shop`) are now orphaned — no setting in the current schema references them. Cleaning these up would be a separate plan. Left untouched per plan section 2 (non-goals) and `CLAUDE.md` "What NOT to change" guidance on locale files.
+
+---
+
+## Post-QA round 2: social URL behavior
+
+**What 08c22ed changed.** It replaced the per-icon `!= blank` guards with resolved variables (`section.settings.X_url | default: settings.social_X_link | default: '<platform root>'`) and set `has_social = section.settings.show_social_icons`. This deviated from plan §4.5 and the §2 non-goals: the `settings.social_*_link` globals do not exist in `config/settings_schema.json` (dead tier), and a merchant could no longer hide a single platform by clearing its URL. It never went through QA.
+
+**Owner decision (2026-10-22) and restored behavior.** `sections/footer.liquid` now reads URLs from `section.settings.*_url` only. `has_social` is true only when `show_social_icons` is on AND at least one URL is non-blank (chained `if/elsif`, no `or`). Each `<li>` is wrapped in `{%- if section.settings.X_url != blank -%}`. Kept from 08c22ed: aria-label with the new-window hint, `rel="noopener" target="_blank"`, `role="list"`. No `"default"` was added to any `url` setting.
+
+**Sanctioned `footer-group.json` seeding.** Placeholder platform root URLs (instagram, facebook, youtube, tiktok, x.com) were added to the footer section settings so icons show on a fresh install. Caveat: pushing `sections/footer-group.json` overwrites saved footer settings on any store where a merchant has already configured the footer.
+
+**Accepted deviation.** The `about_text` richtext keeps its `"default"` (QA flagged it as a plan deviation; owner accepts it because the project directive now requires text/richtext defaults).
+
+**theme-check.** Baseline 2 offenses (TranslationKeyExists in cart-drawer.liquid, UnusedAssign in card-product.liquid); final 2, identical. Nothing new.
+
+**Static verification.** All URLs blank + toggle on: `has_social` false, column not rendered. One URL set: only that `<li>` renders. Toggle off: column hidden.
+
+**QA should re-test.** Social icons visible on the seeded store; hiding a single icon by clearing its URL; three-column `2fr 1fr 1fr` grid with all columns present (desktop) and single-column stack at <=749px; SVG icons inherit `currentColor` from the footer text color; aria-labels (platform name plus new-window hint) and list `aria-label`; full-bleed background still edge to edge.
