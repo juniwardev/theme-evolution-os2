@@ -29,11 +29,14 @@
 @theme {
   --color-background: #ffffff;
   --color-foreground: #333333;
+  --color-accent: #e3fc01;
+  --color-accent-foreground: #111111;
 }
 
 /* Settings whose runtime names differ from Tailwind's namespaces. */
 @theme inline {
   --font-sans: var(--font-primary--family);
+  --font-heading: var(--font-heading--family);
   --container-page: var(--page-width);
   --radius-input: var(--style-border-radius-inputs);
 }

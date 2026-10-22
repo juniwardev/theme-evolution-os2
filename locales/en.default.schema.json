@@ -21,6 +21,7 @@
     "main": "Main",
     "page": "Page",
     "password": "Password",
+    "heading_font": "Heading font",
     "primary": "Primary",
     "product": "Product",
     "row": "Row",
@@ -34,6 +35,8 @@
     "typography": "Typography"
   },
   "labels": {
+    "accent": "Accent color",
+    "accent_foreground": "Text on accent color",
     "alignment": "Alignment",
     "background": "Background",
     "foreground": "Foreground",

@@ -20,6 +20,10 @@
       {{ settings.type_primary_font | font_url | preload_tag: as: 'font', crossorigin: 'anonymous' }}
     {% endunless %}
 
+    {% unless settings.type_heading_font.system? %}
+      {{ settings.type_heading_font | font_url | preload_tag: as: 'font', crossorigin: 'anonymous' }}
+    {% endunless %}
+
     {% # Tailwind, compiled from src/tailwind.css; base.css is legacy Dawn CSS inside @layer legacy %}
     {{ 'tailwind.css' | asset_url | stylesheet_tag: preload: true }}
     {{ 'base.css' | asset_url | stylesheet_tag }}

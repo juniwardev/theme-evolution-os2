@@ -19,6 +19,12 @@
         "id": "type_primary_font",
         "default": "work_sans_n4",
         "label": "t:general.primary"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_heading_font",
+        "default": "oswald_n7",
+        "label": "t:general.heading_font"
       }
     ]
   },
@@ -77,6 +83,18 @@
         "unit": "px",
         "label": "t:labels.input_corner_radius",
         "default": 4
+      },
+      {
+        "type": "color",
+        "id": "accent_color",
+        "default": "#e3fc01",
+        "label": "t:labels.accent"
+      },
+      {
+        "type": "color",
+        "id": "accent_foreground_color",
+        "default": "#111111",
+        "label": "t:labels.accent_foreground"
       }
     ]
   },
