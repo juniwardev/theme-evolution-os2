@@ -143,4 +143,4 @@ Both header-icon `!important` rules were deleted from `@layer shims` in `src/tai
 - `sections/hello-world.liquid` `.icon { width: 300px }` is global and hits every inline icon (cause of deviation 2).
 - `blocks/group.liquid` defines a global `.group` class (cause of deviation 1).
 - The header sits inside the `.shopify-section` content column (20px margins at 375), so the dark header bar does not reach the screen edges; pre-existing and visible in the baseline screenshots.
-- `.bg-accent`, `.text-accent-foreground` and `.font-heading` utilities are not in the compiled CSS until a file uses them (expected; the shop-name fallback uses `font-heading`).
+- `.bg-accent` and `.text-accent-foreground` are not in the compiled CSS until a file uses them (expected); `.font-heading` is (the shop-name fallback uses it).
