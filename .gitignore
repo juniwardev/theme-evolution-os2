@@ -21,5 +21,10 @@ release
 # QA fixtures — contains dev store password
 docs/dev-fixtures.md
 
-# QA screenshots — ephemeral test artifacts, kept locally only
+# QA screenshots & raw tool output — ephemeral test artifacts, kept locally only
+# (findings are distilled into the committed docs/qa/<slug>-report.md)
 docs/qa/screenshots/
+docs/qa/*-screenshots/
+docs/qa/*-lighthouse-*.html
+docs/qa/*-lighthouse-*.json
+.playwright-mcp/

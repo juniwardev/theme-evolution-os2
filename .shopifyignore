@@ -11,3 +11,19 @@
 #
 # Ignore templates and sections with a regular expression:
 #   /(templates|sections)/.*\.json/
+
+# --- Non-theme / local files ---
+# CLI 4.8.4+ uploads root AGENTS.md and DESIGN.md with the theme. Ours are internal
+# project docs, not theme content (and AGENTS.md exceeds the 50 KB upload limit).
+AGENTS.md
+DESIGN.md
+*.txt
+.git/*
+node_modules/*
+# docs/ holds plans, reviews and QA records; never upload any of it.
+docs/*
+
+# Merchant-controlled config (config/settings_data.json, templates/*.json,
+# sections/*-group.json) is deliberately NOT ignored: on this dev store, features
+# ship by pushing those files (e.g. footer-group.json social URLs). Ignore them
+# before this theme deploys to a real merchant's store.
