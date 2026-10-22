@@ -335,39 +335,52 @@ Spec/feature items in the left panel are merchant-composable blocks. The existin
 - `product` (product) — links to a Shopify product for the image and name
 - `custom_heading` (text, optional override for the product title)
 - `body_text` (richtext, optional)
-- `left_color_scheme` (color_scheme) — the dark panel
-- `right_color_scheme` (color_scheme) — the accent panel
+- `left_background`, `left_text` (color) — the dark panel
+- `right_background`, `right_text` (color) — the accent panel
 - `padding_top`, `padding_bottom` (range)
 
-**Note on two `color_scheme` settings**  
-This is the only section in the design that uses two independent panel colors. Per the project's CSS pattern, each panel gets its own `color-{{ setting }}` class rather than inheriting from a single scheme.
+**Note on two panel color sets**  
+This is the only section in the design that uses two independent panel colors. Each panel gets its own pair of `color` settings, mapped to CSS custom properties on that panel and consumed by Tailwind utilities (see "Styling: Tailwind-native" under Standing Coder directives). The earlier `color-{{ setting }}` class approach is retired: this theme has no color schemes.
 
 ---
 
 ## Sequencing summary
 
-| Phase | Feature | Slug | Tier | Extends existing? |
-|---|---|---|---|---|
-| 1 | Header enhancement | `theme-evolution-header` | 2 | Yes — `header.liquid` |
-| 1 | Footer enhancement | `theme-evolution-footer` | 2 | Yes — `footer.liquid` |
-| 2 | Ride hero (split banner) | `theme-evolution-hero` | 2 | No — new section |
-| 2 | Featured products strip | `theme-evolution-featured-products` | 2 | No — new section |
-| 3 | Editorial feature | `theme-evolution-editorial` | 2 | No — new section |
-| 3 | Split content | `theme-evolution-split-content` | 2 | No — new section |
-| 3 | CTA banner | `theme-evolution-cta-banner` | 1/2 | No — new section |
-| 4 | Product feature highlight | `theme-evolution-product-highlight` | 2 | No — new section |
+| Phase | Feature | Slug | Tier | Extends existing? | Status |
+|---|---|---|---|---|---|
+| 1 | Header enhancement | `theme-evolution-header` | 2 | Yes — `header.liquid` | Shipped 2026-05-21 |
+| 1 | Footer enhancement | `theme-evolution-footer` | 2 | Yes — `footer.liquid` | Shipped 2026-10-22 |
+| 2 | Ride hero (split banner) | `theme-evolution-hero` | 2 | No — new section | Waits for Tailwind T1 |
+| 2 | Featured products strip | `theme-evolution-featured-products` | 2 | No — new section | Waits for Tailwind T1 |
+| 3 | Editorial feature | `theme-evolution-editorial` | 2 | No — new section | Not started |
+| 3 | Split content | `theme-evolution-split-content` | 2 | No — new section | Not started |
+| 3 | CTA banner | `theme-evolution-cta-banner` | 1/2 | No — new section | Not started |
+| 4 | Product feature highlight | `theme-evolution-product-highlight` | 2 | No — new section | Not started |
+
+**Prerequisite for Phases 2–4:** the Tailwind overhaul (`docs/plans/theme-evolution-tailwind.md`) must ship phases T0 (foundation) and T1 (tokens, header, footer) first. After T1, the roadmap features are built Tailwind-native from day one and can run in parallel with Tailwind T2. Deploys stay one approved slug at a time. See D14 in that plan.
 
 **Shared block files** (created during Phase 2, reused across Phase 3):
 - `blocks/eyebrow.liquid`
 - `blocks/button.liquid`
 
-These should be designed generically when first created so later sections can use them without modification.
+These should be designed generically when first created so later sections can use them without modification. Build them with the Tailwind token utilities that T1 provides (e.g. `bg-accent text-accent-foreground font-heading`).
 
 ---
 
 ## Standing Coder directives
 
 These rules apply to **every feature in this roadmap** and must be applied without being asked each time.
+
+---
+
+### Styling: Tailwind-native
+
+Decided 2026-10-22 (owner chose full Tailwind adoption; see `docs/plans/theme-evolution-tailwind.md`). These rules override any styling detail in the feature entries above:
+
+1. **Tailwind utilities, per CLAUDE.md `### CSS architecture`.** That section is written by Tailwind phase T0. Every plan for a feature in Phases 2–4 must state "Tailwind-native per CLAUDE.md `### CSS architecture`" and follow it. No new Dawn-style component CSS in `assets/`.
+2. **Colors: no color schemes.** This theme has no color-scheme group, so wherever a feature above lists a `color_scheme` setting, read it as per-section `color` settings (e.g. `background_color`, `text_color`). They are mapped to CSS custom properties on the section wrapper and consumed by utilities: the header/footer pattern, owner decision Q5 in the Tailwind plan. Shipped Phase 1 entries are left as written for history.
+3. **No `hidden md:flex`-style pairs while `base.css` still loads.** Dawn's `.hidden` is `!important`. Follow the visibility rule in CLAUDE.md and make sure `npm run check:hidden` passes.
+4. **One `<h1>` per page.** The hero renders the homepage `<h1>`, but `sections/hello-world.liquid:8` renders one today. The hero plan must resolve that, and call out any `templates/index.json` change explicitly (merchant-controlled file).
 
 ---
 
