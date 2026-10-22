@@ -61,35 +61,35 @@
             <ul class="theme-evolution-footer__social flex items-center gap-4" role="list" aria-label="{{ social_label | escape }}">
               {%- if section.settings.instagram_url != blank -%}
                 <li>
-                  <a href="{{ section.settings.instagram_url }}" class="theme-evolution-footer__social-link inline-flex size-10 items-center justify-center no-underline hover:underline [&_svg]:size-5.5! [&_svg]:fill-current" aria-label="{{ 'sections.footer.social.instagram' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
+                  <a href="{{ section.settings.instagram_url }}" class="theme-evolution-footer__social-link inline-flex size-10 items-center justify-center no-underline hover:underline [&_svg]:size-5.5 [&_svg]:fill-current" aria-label="{{ 'sections.footer.social.instagram' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
                     {{ 'icon-instagram.svg' | inline_asset_content }}
                   </a>
                 </li>
               {%- endif -%}
               {%- if section.settings.facebook_url != blank -%}
                 <li>
-                  <a href="{{ section.settings.facebook_url }}" class="theme-evolution-footer__social-link inline-flex size-10 items-center justify-center no-underline hover:underline [&_svg]:size-5.5! [&_svg]:fill-current" aria-label="{{ 'sections.footer.social.facebook' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
+                  <a href="{{ section.settings.facebook_url }}" class="theme-evolution-footer__social-link inline-flex size-10 items-center justify-center no-underline hover:underline [&_svg]:size-5.5 [&_svg]:fill-current" aria-label="{{ 'sections.footer.social.facebook' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
                     {{ 'icon-facebook.svg' | inline_asset_content }}
                   </a>
                 </li>
               {%- endif -%}
               {%- if section.settings.youtube_url != blank -%}
                 <li>
-                  <a href="{{ section.settings.youtube_url }}" class="theme-evolution-footer__social-link inline-flex size-10 items-center justify-center no-underline hover:underline [&_svg]:size-5.5! [&_svg]:fill-current" aria-label="{{ 'sections.footer.social.youtube' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
+                  <a href="{{ section.settings.youtube_url }}" class="theme-evolution-footer__social-link inline-flex size-10 items-center justify-center no-underline hover:underline [&_svg]:size-5.5 [&_svg]:fill-current" aria-label="{{ 'sections.footer.social.youtube' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
                     {{ 'icon-youtube.svg' | inline_asset_content }}
                   </a>
                 </li>
               {%- endif -%}
               {%- if section.settings.tiktok_url != blank -%}
                 <li>
-                  <a href="{{ section.settings.tiktok_url }}" class="theme-evolution-footer__social-link inline-flex size-10 items-center justify-center no-underline hover:underline [&_svg]:size-5.5! [&_svg]:fill-current" aria-label="{{ 'sections.footer.social.tiktok' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
+                  <a href="{{ section.settings.tiktok_url }}" class="theme-evolution-footer__social-link inline-flex size-10 items-center justify-center no-underline hover:underline [&_svg]:size-5.5 [&_svg]:fill-current" aria-label="{{ 'sections.footer.social.tiktok' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
                     {{ 'icon-tiktok.svg' | inline_asset_content }}
                   </a>
                 </li>
               {%- endif -%}
               {%- if section.settings.twitter_url != blank -%}
                 <li>
-                  <a href="{{ section.settings.twitter_url }}" class="theme-evolution-footer__social-link inline-flex size-10 items-center justify-center no-underline hover:underline [&_svg]:size-5.5! [&_svg]:fill-current" aria-label="{{ 'sections.footer.social.twitter' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
+                  <a href="{{ section.settings.twitter_url }}" class="theme-evolution-footer__social-link inline-flex size-10 items-center justify-center no-underline hover:underline [&_svg]:size-5.5 [&_svg]:fill-current" aria-label="{{ 'sections.footer.social.twitter' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
                     {{ 'icon-twitter.svg' | inline_asset_content }}
                   </a>
                 </li>
@@ -108,7 +108,7 @@
       {%- if section.settings.show_payment_icons -%}
         <ul class="theme-evolution-footer__payment flex flex-wrap items-center gap-2" role="list" aria-label="{{ payment_label | escape }}">
           {%- for type in shop.enabled_payment_types -%}
-            <li class="inline-flex [&_svg]:h-6.5! [&_svg]:w-auto!">{{ type | payment_type_svg_tag }}</li>
+            <li class="inline-flex [&_svg]:h-6.5 [&_svg]:w-auto">{{ type | payment_type_svg_tag }}</li>
           {%- endfor -%}
         </ul>
       {%- endif -%}

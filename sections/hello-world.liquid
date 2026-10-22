@@ -76,7 +76,9 @@
     margin-top: 1.5rem;
   }
 
-  .icon {
+  /* Scoped to this section: a bare .icon rule is unlayered and global, so it
+     overrode the size of every inline SVG icon (class="icon") in the theme. */
+  .welcome-content .icon {
     width: 300px;
   }
 
