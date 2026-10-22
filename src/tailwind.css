@@ -1,0 +1,178 @@
+/*
+ * Source for assets/tailwind.css. Build: npm run build:css. Never edit the output.
+ * The layer order below is also declared by the first <style> in both layouts and in
+ * templates/gift_card.liquid; that inline statement is the one that fixes it.
+ * `properties` is a layer Tailwind itself emits; it must stay listed (and first) or it
+ * becomes the strongest layer. scripts/check-css-layers.mjs enforces this.
+ * See docs/plans/theme-evolution-tailwind.md D4.
+ */
+@layer properties, theme, base, legacy, components, utilities, shims;
+
+@import "tailwindcss" source(none);
+
+/*
+ * Scan theme markup only. Automatic detection would also read docs/, CLAUDE.md and
+ * AGENTS.md, which quote class names, and inflate the output.
+ * Add an assets/*.js file here only if it adds or removes utility classes.
+ */
+@source "../layout";
+@source "../sections";
+@source "../blocks";
+@source "../snippets";
+@source "../templates/*.liquid";
+
+/*
+ * Merchant settings printed on :root by snippets/css-variables.liquid. That block is
+ * unlayered, so it overrides these theme-layer defaults and utilities follow the
+ * theme editor. Defaults match config/settings_schema.json.
+ */
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #333333;
+}
+
+/* Settings whose runtime names differ from Tailwind's namespaces. */
+@theme inline {
+  --font-sans: var(--font-primary--family);
+  --container-page: var(--page-width);
+  --radius-input: var(--style-border-radius-inputs);
+}
+
+@layer base {
+  /*
+   * Moved from assets/critical.css (deleted in T0), verbatim except its universal
+   * box-sizing/margin reset, which Preflight already applies.
+   */
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100svh;
+  }
+
+  html:has(dialog[scroll-lock][open], details[scroll-lock][open]) {
+    overflow: hidden;
+  }
+
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  input,
+  textarea,
+  select {
+    font: inherit;
+    border-radius: var(--style-border-radius-inputs);
+  }
+
+  select {
+    background-color: var(--color-background);
+    color: currentcolor;
+  }
+
+  dialog {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+
+  p:empty {
+    display: none;
+  }
+
+  :is(p, h1, h2, h3, h4, h5, h6):first-child,
+  :empty:first-child + :where(p, h1, h2, h3, h4, h5, h6) {
+    margin-block-start: 0;
+  }
+
+  :is(p, h1, h2, h3, h4, h5, h6):last-child,
+  :where(p, h1, h2, h3, h4, h5, h6) + :has(+ :empty:last-child) {
+    margin-block-end: 0;
+  }
+
+  body {
+    font-family: var(--font-primary--family);
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+
+  .shopify-section {
+    --content-width: min(
+      calc(var(--page-width) - var(--page-margin) * 2),
+      calc(100% - var(--page-margin) * 2)
+    );
+    --content-margin: minmax(var(--page-margin), 1fr);
+    --content-grid: var(--content-margin) var(--content-width) var(--content-margin);
+
+    position: relative;
+    grid-template-columns: var(--content-grid);
+    display: grid;
+    width: 100%;
+  }
+
+  .shopify-section > * {
+    grid-column: 2;
+  }
+
+  .shopify-section > .full-width {
+    grid-column: 1 / -1;
+  }
+
+  /*
+   * Browser defaults that Preflight removes but unclassed Dawn, Shopify and merchant
+   * markup still relies on (plan D6). Remove each in the phase noted.
+   */
+  html {
+    line-height: normal; /* T5: Preflight sets 1.5; every page was built against normal */
+  }
+  ul:not([class]),
+  ol:not([class]) {
+    padding-inline-start: 1.5em; /* T4 */
+  }
+  ul:not([class]) {
+    list-style: disc; /* T4 */
+  }
+  ol:not([class]) {
+    list-style: decimal; /* T4 */
+  }
+  a:not([class]) {
+    text-decoration-line: underline; /* T4 */
+  }
+  input:where(:not([type="checkbox"], [type="radio"], [type="hidden"])),
+  select,
+  textarea {
+    border-width: 1px; /* T4 */
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer; /* permanent: v4 buttons default to cursor: default */
+  }
+}
+
+@layer shims {
+  /*
+   * sections/related-products.liquid uses Dawn's flex-wrap .grid (assets/base.css).
+   * Tailwind's grid utility would turn it into CSS grid. Delete in T2.
+   */
+  .product-grid.grid {
+    display: flex;
+  }
+}

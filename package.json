@@ -1,0 +1,21 @@
+{
+  "name": "theme-evolution-os2",
+  "private": true,
+  "description": "Build tooling for the theme-evolution-os2 Shopify theme (Tailwind CSS). See docs/plans/theme-evolution-tailwind.md.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/tailwind.css -o ./assets/tailwind.css --minify",
+    "watch:css": "tailwindcss -i ./src/tailwind.css -o ./assets/tailwind.css --minify --watch=always",
+    "dev": "concurrently --kill-others --names css,theme \"npm:watch:css\" \"shopify theme dev\"",
+    "check:css": "npm run build:css && node scripts/check-css-layers.mjs && git ls-files --error-unmatch assets/tailwind.css && git diff --exit-code -- assets/tailwind.css",
+    "check:hidden": "node scripts/check-bare-hidden.mjs",
+    "check": "npm run check:css && npm run check:hidden && shopify theme check"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.3",
+    "concurrently": "10.0.6",
+    "tailwindcss": "4.3.3"
+  }
+}

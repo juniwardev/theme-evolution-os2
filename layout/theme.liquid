@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="{{ request.locale.iso_code }}">
   <head>
+    {%- comment -%} Fixes the cascade-layer order before any stylesheet; keep it first. See docs/plans/theme-evolution-tailwind.md D4. {%- endcomment -%}
+    <style>@layer properties, theme, base, legacy, components, utilities, shims;</style>
+
     {% # Inlined CSS Variables %}
     {% render 'css-variables' %}
 
@@ -17,8 +20,8 @@
       {{ settings.type_primary_font | font_url | preload_tag: as: 'font', crossorigin: 'anonymous' }}
     {% endunless %}
 
-    {% # Load and preload the critical CSS %}
-    {{ 'critical.css' | asset_url | stylesheet_tag: preload: true }}
+    {% # Tailwind, compiled from src/tailwind.css; base.css is legacy Dawn CSS inside @layer legacy %}
+    {{ 'tailwind.css' | asset_url | stylesheet_tag: preload: true }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'eco-tooltip.css' | asset_url | stylesheet_tag }}
 

@@ -1,3 +1,5 @@
+/* Dawn legacy CSS, contained in a cascade layer below Tailwind utilities (docs/plans/theme-evolution-tailwind.md D4). Retired in T5. */
+@layer legacy {
 :root {
   --alpha-button-background: 1;
   --alpha-button-border: 1;
@@ -3594,4 +3596,5 @@ details-disclosure > details {
   100% {
     transform: translateX(100%) scaleX(0);
   }
+}
 }

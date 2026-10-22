@@ -3,11 +3,14 @@
 <!doctype html>
 <html lang="{{ request.locale.iso_code }}">
   <head>
+    {%- comment -%} Fixes the cascade-layer order before any stylesheet; keep it first. See docs/plans/theme-evolution-tailwind.md D4. {%- endcomment -%}
+    <style>@layer properties, theme, base, legacy, components, utilities, shims;</style>
+
     {% # Inlined CSS Variables %}
     {% render 'css-variables' %}
 
-    {% # Load and preload the critical CSS %}
-    {{ 'critical.css' | asset_url | stylesheet_tag: preload: true }}
+    {% # Tailwind, compiled from src/tailwind.css; base.css is legacy Dawn CSS inside @layer legacy %}
+    {{ 'tailwind.css' | asset_url | stylesheet_tag: preload: true }}
 
     {% # Social, title, etc. %}
     {% render 'meta-tags' %}
