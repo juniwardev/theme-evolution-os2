@@ -1,6 +1,6 @@
 # Theme Evolution Homepage — Phased Feature Roadmap
 
-Reference design: `docs/designs/ride-theme-ecommerce-website-homepage-template.png`  
+Reference design: `docs/designs/ride-theme-ecommerce-website-homepage-template-v2.png`  
 Author: Junior Warner  
 Date: 2026-05-20
 
@@ -362,6 +362,60 @@ This is the only section in the design that uses two independent panel colors. P
 - `blocks/button.liquid`
 
 These should be designed generically when first created so later sections can use them without modification.
+
+---
+
+## Standing Coder directives
+
+These rules apply to **every feature in this roadmap** and must be applied without being asked each time.
+
+---
+
+### Social media URL settings
+
+When a section or block exposes `url` type settings for social platforms (Instagram, Facebook, YouTube, TikTok, X/Twitter, Pinterest, etc.), social icons must render on a fresh install **and** each icon must stay individually hideable by the merchant:
+
+1. **Read URLs from the section or block setting only** — e.g. `section.settings.instagram_url`. No Liquid fallbacks to global settings or hardcoded platform URLs; a hardcoded fallback makes it impossible for a merchant to remove a single platform by clearing its URL.
+2. **Guard each icon on its own setting** — render an icon only when its URL is non-blank, and suppress the whole social group when none are set.
+3. **Seed placeholder URLs in the JSON data file** (see below) so the icons appear on a fresh install.
+
+Liquid example:
+```liquid
+{%- if section.settings.instagram_url != blank -%}
+  <a href="{{ section.settings.instagram_url }}">...</a>
+{%- endif -%}
+```
+
+Decided 2026-10-22 during the `theme-evolution-footer` QA-fix round, replacing an earlier three-tier fallback rule.
+
+**Important:** Shopify's `url` schema setting type rejects external URL strings as `"default"` values in the JSON schema — do not add `"default": "https://..."` to a `url` setting. Instead, pre-populate the section's JSON data file (e.g. `sections/footer-group.json`, or the relevant template JSON) with the placeholder URLs so they are present on a fresh theme install. The plan must call this edit out explicitly, because these files are otherwise merchant-controlled — pushing them overwrites any settings a merchant has already saved:
+
+```json
+"settings": {
+  "instagram_url": "https://www.instagram.com/",
+  "facebook_url": "https://www.facebook.com/",
+  "youtube_url": "https://www.youtube.com/",
+  "tiktok_url": "https://www.tiktok.com/",
+  "twitter_url": "https://x.com/"
+}
+```
+
+---
+
+### Text and richtext settings
+
+Every `text`, `richtext`, or `textarea` setting that a merchant must fill in before the section renders meaningful content **must include a `"default"` value** in the schema JSON. Sections must render useful placeholder content on a fresh install — a blank section that shows nothing until the merchant types something is never acceptable.
+
+Good defaults are short, on-brand stand-ins that communicate the field's purpose:
+
+| Setting type | Example default |
+|---|---|
+| `text` (heading) | `"Ride with us"` |
+| `text` (label/button) | `"Shop now"` |
+| `richtext` (about/body) | `"<p>Tell your brand story here. Share your values and what makes your store special.</p>"` |
+| `textarea` | `"Add a short description here."` |
+
+The `richtext` default must be a valid HTML string (paragraph tags required). The `text` default is a plain string.
 
 ---
 
