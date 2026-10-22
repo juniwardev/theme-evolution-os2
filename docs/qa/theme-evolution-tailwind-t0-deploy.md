@@ -1,0 +1,32 @@
+# theme-evolution-tailwind-t0 — Deploy Note
+
+**Deploy timestamp:** 2026-10-22 22:30:04 UTC
+**Target:** theme-evolution-os2.myshopify.com, theme `187953643616` (unpublished: theme-evolution-tailwind-staging, renamed from theme-evolution-footer-staging)
+**Operator:** DevOps agent (owner: Junior Warner, "ship it" for T0)
+**Git SHA deployed:** 4d5e8c9
+**Method:** `shopify theme push --store=theme-evolution-os2.myshopify.com --theme=187953643616`
+**Backups:** store-side `theme-evolution-os2-backup-2026-10-22-pre-theme-evolution-tailwind-t0` (#187957510240, copy of live #138872651872); local live `~/Projects/Shopify/theme-backups/theme-evolution-os2/2026-10-22-pre-theme-evolution-tailwind-t0-live`; local staging pre-overwrite (footer-era) `~/Projects/Shopify/theme-backups/theme-evolution-os2/2026-10-22-pre-t0-staging`
+
+## Push outcome
+
+Gates: report verdict PASS WITH NITS (owner accepted all 11 items), `.approved` present, tracked tree clean, `npm ci`, `npm run check:css` exit 0, `npm run check:hidden` exit 0. `theme list` confirmed #187953643616 `[unpublished]` and live still #138872651872.
+
+Rename: `The theme 'theme-evolution-footer-staging' (#187953643616) was renamed to 'theme-evolution-tailwind-staging'`.
+
+Push: "Theme upload complete"; "The theme 'theme-evolution-tailwind-staging' (#187953643616) was pushed successfully." The push had no `--nodelete`, so the CLI ran its remote-cleanup pass, removing remote files absent locally (expected for a full overwrite of staging). Live was not touched and nothing was published.
+
+## Files pushed
+
+Full theme upload per the T0 plan (`docs/plans/theme-evolution-tailwind.md` section 7): committed `assets/tailwind.css` (compiled), layouts linking `tailwind.css` with the cascade-layer statement first in `<head>`, `base.css` contained in the `legacy` layer, `critical.css` folded in and no longer referenced. Note that `config/settings_data.json` from the repo went to staging as well (staging only).
+
+## Verification
+
+- Storefront response: 302 (password gate, healthy)
+- Feature check (via `?preview_theme_id=187953643616`, behind the password): page theme id 187953643616; links `tailwind.css` (asset URL returns 200); no reference to `critical.css`; `<head>` begins with `<style>@layer properties, theme, base, legacy, components, utilities, shims;</style>`. PASS.
+- Pending operator checks: theme editor on staging (QA was blocked without admin login); 1440x900 and 375x667 visual checks; Supercycle app embed on live (owner-managed).
+
+## Rollback procedure
+
+Live was not changed, so no live rollback is needed. To restore staging to its footer-era state:
+`shopify theme push --store=theme-evolution-os2.myshopify.com --theme=187953643616 --path=~/Projects/Shopify/theme-backups/theme-evolution-os2/2026-10-22-pre-t0-staging --ignore=config/settings_data.json`
+Live backup, if ever needed: publish store-side `theme-evolution-os2-backup-2026-10-22-pre-theme-evolution-tailwind-t0` (#187957510240) from admin (operator action). Never publish #187953643616.

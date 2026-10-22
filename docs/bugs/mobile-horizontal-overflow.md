@@ -39,6 +39,8 @@ Two separate elements overflow:
 
 Screenshot (local only; `docs/qa/screenshots/` is gitignored): `docs/qa/screenshots/bug-mobile-overflow-375-home.png`, a full-page capture at 375px.
 
+2026-10-22: after `theme-evolution-tailwind-t0` (E1), the menu toggle no longer shows the close icon, so the header overflow figures above are out of date. Re-measured `X_hdr`/`X_page` at 320/375/390/430: see `docs/qa/theme-evolution-tailwind-t0-report.md`. QA found that T0 did NOT reduce the overflow (the E1 deviation, accepted by the owner). The header half will be resolved in T1 and the banner half in T3 (`docs/plans/theme-evolution-tailwind.md` D9).
+
 ## Hypothesis (optional)
 
 Two findings, both confirmed in the browser. Whether they are the whole story is for the investigation.
