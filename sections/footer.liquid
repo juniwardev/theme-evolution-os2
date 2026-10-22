@@ -29,13 +29,16 @@
   assign menu_label = 'sections.footer.menu' | t
 -%}
 
-<div class="theme-evolution-footer-wrapper">
-  <footer class="theme-evolution-footer">
+<div
+  class="theme-evolution-footer-wrapper col-span-full bg-(--footer-bg) text-(--footer-text)"
+  style="--footer-bg: {{ section.settings.footer_background }}; --footer-text: {{ section.settings.footer_text }}"
+>
+  <footer class="theme-evolution-footer px-6 pt-12 pb-6 md:px-8 md:pt-16 md:pb-8">
     {%- if has_about or has_menu or has_social -%}
-      <div class="theme-evolution-footer__columns">
+      <div class="theme-evolution-footer__columns mb-0 grid grid-cols-1 gap-8 pb-8 md:grid-cols-[2fr_1fr_1fr] md:gap-12 md:pb-12">
         {%- if has_about -%}
           <div class="theme-evolution-footer__column theme-evolution-footer__column--about">
-            <div class="theme-evolution-footer__about-text rte">
+            <div class="theme-evolution-footer__about-text max-w-none text-sm/[1.6] md:max-w-lg [&_p]:mb-3 [&_p:last-child]:mb-0">
               {{ section.settings.about_text }}
             </div>
           </div>
@@ -43,10 +46,10 @@
 
         {%- if has_menu -%}
           <nav class="theme-evolution-footer__column theme-evolution-footer__column--menu" aria-label="{{ menu_label | escape }}">
-            <ul class="theme-evolution-footer__menu" role="list">
+            <ul class="theme-evolution-footer__menu flex flex-col gap-3" role="list">
               {%- for link in section.settings.menu.links -%}
                 <li>
-                  <a href="{{ link.url }}" class="theme-evolution-footer__menu-link">{{ link.title | escape }}</a>
+                  <a href="{{ link.url }}" class="theme-evolution-footer__menu-link text-sm tracking-[0.08em] uppercase no-underline hover:underline">{{ link.title | escape }}</a>
                 </li>
               {%- endfor -%}
             </ul>
@@ -55,38 +58,38 @@
 
         {%- if has_social -%}
           <div class="theme-evolution-footer__column theme-evolution-footer__column--social">
-            <ul class="theme-evolution-footer__social" role="list" aria-label="{{ social_label | escape }}">
+            <ul class="theme-evolution-footer__social flex items-center gap-4" role="list" aria-label="{{ social_label | escape }}">
               {%- if section.settings.instagram_url != blank -%}
                 <li>
-                  <a href="{{ section.settings.instagram_url }}" class="theme-evolution-footer__social-link" aria-label="{{ 'sections.footer.social.instagram' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
+                  <a href="{{ section.settings.instagram_url }}" class="theme-evolution-footer__social-link inline-flex size-10 items-center justify-center no-underline hover:underline [&_svg]:size-5.5! [&_svg]:fill-current" aria-label="{{ 'sections.footer.social.instagram' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
                     {{ 'icon-instagram.svg' | inline_asset_content }}
                   </a>
                 </li>
               {%- endif -%}
               {%- if section.settings.facebook_url != blank -%}
                 <li>
-                  <a href="{{ section.settings.facebook_url }}" class="theme-evolution-footer__social-link" aria-label="{{ 'sections.footer.social.facebook' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
+                  <a href="{{ section.settings.facebook_url }}" class="theme-evolution-footer__social-link inline-flex size-10 items-center justify-center no-underline hover:underline [&_svg]:size-5.5! [&_svg]:fill-current" aria-label="{{ 'sections.footer.social.facebook' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
                     {{ 'icon-facebook.svg' | inline_asset_content }}
                   </a>
                 </li>
               {%- endif -%}
               {%- if section.settings.youtube_url != blank -%}
                 <li>
-                  <a href="{{ section.settings.youtube_url }}" class="theme-evolution-footer__social-link" aria-label="{{ 'sections.footer.social.youtube' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
+                  <a href="{{ section.settings.youtube_url }}" class="theme-evolution-footer__social-link inline-flex size-10 items-center justify-center no-underline hover:underline [&_svg]:size-5.5! [&_svg]:fill-current" aria-label="{{ 'sections.footer.social.youtube' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
                     {{ 'icon-youtube.svg' | inline_asset_content }}
                   </a>
                 </li>
               {%- endif -%}
               {%- if section.settings.tiktok_url != blank -%}
                 <li>
-                  <a href="{{ section.settings.tiktok_url }}" class="theme-evolution-footer__social-link" aria-label="{{ 'sections.footer.social.tiktok' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
+                  <a href="{{ section.settings.tiktok_url }}" class="theme-evolution-footer__social-link inline-flex size-10 items-center justify-center no-underline hover:underline [&_svg]:size-5.5! [&_svg]:fill-current" aria-label="{{ 'sections.footer.social.tiktok' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
                     {{ 'icon-tiktok.svg' | inline_asset_content }}
                   </a>
                 </li>
               {%- endif -%}
               {%- if section.settings.twitter_url != blank -%}
                 <li>
-                  <a href="{{ section.settings.twitter_url }}" class="theme-evolution-footer__social-link" aria-label="{{ 'sections.footer.social.twitter' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
+                  <a href="{{ section.settings.twitter_url }}" class="theme-evolution-footer__social-link inline-flex size-10 items-center justify-center no-underline hover:underline [&_svg]:size-5.5! [&_svg]:fill-current" aria-label="{{ 'sections.footer.social.twitter' | t }}, {{ 'accessibility.link_messages.new_window' | t }}" rel="noopener" target="_blank">
                     {{ 'icon-twitter.svg' | inline_asset_content }}
                   </a>
                 </li>
@@ -97,166 +100,21 @@
       </div>
     {%- endif -%}
 
-    <div class="theme-evolution-footer__bottom">
-      <p class="theme-evolution-footer__copyright">
+    <div class="theme-evolution-footer__bottom flex flex-col items-center gap-4 border-t border-current/8 pt-8 text-center md:flex-row md:flex-wrap md:justify-between md:text-left">
+      <p class="theme-evolution-footer__copyright m-0 text-sm opacity-85 [&_a]:no-underline [&_a:hover]:underline">
         &copy; {{ 'now' | date: '%Y' }} {{ shop.name | link_to: routes.root_url }} &middot; {{ powered_by_link }}
       </p>
 
       {%- if section.settings.show_payment_icons -%}
-        <ul class="theme-evolution-footer__payment" role="list" aria-label="{{ payment_label | escape }}">
+        <ul class="theme-evolution-footer__payment flex flex-wrap items-center gap-2" role="list" aria-label="{{ payment_label | escape }}">
           {%- for type in shop.enabled_payment_types -%}
-            <li>{{ type | payment_type_svg_tag }}</li>
+            <li class="inline-flex [&_svg]:h-6.5! [&_svg]:w-auto!">{{ type | payment_type_svg_tag }}</li>
           {%- endfor -%}
         </ul>
       {%- endif -%}
     </div>
   </footer>
 </div>
-
-{% style %}
-  .theme-evolution-footer-wrapper {
-    --footer-bg: {{ section.settings.footer_background }};
-    --footer-text: {{ section.settings.footer_text }};
-  }
-{% endstyle %}
-
-{% stylesheet %}
-  /* --- wrapper + colors (decisions 4.1 + 4.7) --- */
-  .theme-evolution-footer-wrapper {
-    background-color: var(--footer-bg);
-    color: var(--footer-text);
-    --footer-border: color-mix(in srgb, currentColor 8%, transparent);
-    /* Span all three grid columns of the parent .shopify-section so the
-       background paints edge-to-edge. critical.css forces .shopify-section
-       direct children into the middle 1400px column by default. */
-    grid-column: 1 / -1;
-  }
-  .theme-evolution-footer {
-    padding: 4rem 2rem 2rem;
-  }
-  .theme-evolution-footer a {
-    color: inherit;
-    text-decoration: none;
-  }
-  .theme-evolution-footer a:hover {
-    text-decoration: underline;
-  }
-
-  /* --- three-column grid content area (decision 4.2) --- */
-  .theme-evolution-footer__columns {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 3rem;
-    padding-bottom: 3rem;
-  }
-  .theme-evolution-footer__columns:empty {
-    display: none;
-    padding: 0;
-  }
-
-  /* --- column 1: about-text (decision 4.3) --- */
-  .theme-evolution-footer__about-text {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    max-width: 32rem;
-  }
-  .theme-evolution-footer__about-text p {
-    margin: 0 0 0.75rem;
-  }
-  .theme-evolution-footer__about-text p:last-child {
-    margin-bottom: 0;
-  }
-
-  /* --- column 2: nav links (decision 4.4) --- */
-  .theme-evolution-footer__menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-  .theme-evolution-footer__menu-link {
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-  }
-
-  /* --- column 3: social icons (decision 4.5) --- */
-  .theme-evolution-footer__social {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-  }
-  .theme-evolution-footer__social-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    color: inherit;
-  }
-  .theme-evolution-footer__social-link svg {
-    width: 1.4rem;
-    height: 1.4rem;
-    fill: currentColor;
-  }
-
-  /* --- bottom bar (decisions 4.6 + 4.7) --- */
-  .theme-evolution-footer__bottom {
-    border-top: 1px solid var(--footer-border);
-    padding-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-  .theme-evolution-footer__copyright {
-    margin: 0;
-    font-size: 0.85rem;
-    opacity: 0.85;
-  }
-  .theme-evolution-footer__payment {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    align-items: center;
-  }
-  .theme-evolution-footer__payment li {
-    display: inline-flex;
-  }
-  .theme-evolution-footer__payment svg {
-    width: auto;
-    height: 1.6rem;
-  }
-
-  /* --- mobile (decision 4.2): stack to single column at 749px and below --- */
-  @media screen and (max-width: 749px) {
-    .theme-evolution-footer {
-      padding: 3rem 1.5rem 1.5rem;
-    }
-    .theme-evolution-footer__columns {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-      padding-bottom: 2rem;
-    }
-    .theme-evolution-footer__bottom {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .theme-evolution-footer__about-text {
-      max-width: none;
-    }
-  }
-{% endstylesheet %}
 
 {% schema %}
 {
