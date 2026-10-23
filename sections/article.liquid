@@ -6,59 +6,67 @@
   https://shopify.dev/docs/storefronts/themes/architecture/templates/article
 {% endcomment %}
 
-{% if article.image %}
-  {{ article.image | image_url: width: 1000 | image_tag: preload: true }}
-{% endif %}
+<div class="flex flex-col gap-8 px-8 py-10 md:py-16" data-page-shell>
+  {% if article.image %}
+    {{ article.image | image_url: width: 1000 | image_tag: preload: true }}
+  {% endif %}
 
-<h1>{{ article.title }}</h1>
-
-{% assign date = article.published_at | time_tag: format: 'date' %}
-<p>{{ 'blog.article_metadata_html' | t: date: date, author: article.author }}</p>
-
-{{ article.content }}
-
-{% if blog.comments_enabled? %}
-  <h2>{{ 'blog.article_comments' | t }}</h2>
-
-  <div id="comments">
-    {% paginate article.comments by 10 %}
-      {% for comment in article.comments %}
-        <div>
-          <p>{{ comment.author }}</p>
-          <p>
-            {{- comment.created_at | time_tag: format: 'date' -}}
-          </p>
-          <p>{{ comment.content }}</p>
-        </div>
-      {% endfor %}
-
-      {{ paginate | default_pagination: anchor: 'comments' }}
-    {% endpaginate %}
+  <div class="flex flex-col gap-3">
+    <h1 class="font-heading text-3xl leading-tight font-bold uppercase md:text-4xl">{{ article.title | escape }}</h1>
+    {%- assign date = article.published_at | time_tag: format: 'date' -%}
+    {%- assign author = article.author | escape -%}
+    <p class="text-sm opacity-70">{{ 'blog.article_metadata_html' | t: date: date, author: author }}</p>
   </div>
 
-  {% form 'new_comment', article %}
-    <h2>{{ 'blog.comment_form_title' | t }}</h2>
+  {%- if article.content != blank -%}
+    <div data-rich-text>{{ article.content }}</div>
+  {%- endif -%}
 
-    {{ form.errors | default_errors }}
+  {% if blog.comments_enabled? %}
+    <div class="flex flex-col gap-6" id="comments">
+      <h2 class="font-heading text-2xl leading-tight font-bold uppercase">{{ 'blog.article_comments' | t }}</h2>
 
-    <div>
-      <label for="author">{{ 'blog.comment_form_name' | t }}</label>
-      <input type="text" name="comment[author]" id="author" value="{{ form.author }}" required>
+      {% paginate article.comments by 10 %}
+        {%- if article.comments.size > 0 -%}
+          <ul class="border-t border-foreground/10" role="list">
+            {% for comment in article.comments %}
+              <li class="flex flex-col gap-1 border-b border-foreground/10 py-6">
+                <p class="font-semibold">{{ comment.author | escape }}</p>
+                <p class="text-sm opacity-70">{{- comment.created_at | time_tag: format: 'date' -}}</p>
+                <div data-rich-text>{{ comment.content }}</div>
+              </li>
+            {% endfor %}
+          </ul>
+        {%- endif -%}
+
+        {% render 'pagination', paginate: paginate, anchor: 'comments' %}
+      {% endpaginate %}
     </div>
 
-    <div>
-      <label for="email">{{ 'blog.comment_form_email' | t }}</label>
-      <input type="email" name="comment[email]" id="email" value="{{ form.email }}" required>
-    </div>
+    {% form 'new_comment', article, class: 'flex max-w-[28.125rem] flex-col gap-4' %}
+      <h2 class="font-heading text-2xl leading-tight font-bold uppercase">{{ 'blog.comment_form_title' | t }}</h2>
 
-    <div>
-      <label for="body">{{ 'blog.comment_form_body' | t }}</label>
-      <textarea name="comment[body]" id="body" required>{{ form.body }}</textarea>
-    </div>
+      {{ form.errors | default_errors }}
 
-    <input type="submit" value="{{ 'blog.comment_form_submit' | t }}">
-  {% endform %}
-{% endif %}
+      <div class="flex flex-col gap-2">
+        <label for="author">{{ 'blog.comment_form_name' | t }}</label>
+        <input class="h-11 w-full rounded-input border border-current bg-transparent px-3" type="text" name="comment[author]" id="author" value="{{ form.author | escape }}" required>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <label for="email">{{ 'blog.comment_form_email' | t }}</label>
+        <input class="h-11 w-full rounded-input border border-current bg-transparent px-3" type="email" name="comment[email]" id="email" value="{{ form.email | escape }}" required>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <label for="body">{{ 'blog.comment_form_body' | t }}</label>
+        <textarea class="min-h-32 w-full rounded-input border border-current bg-transparent px-3 py-2" name="comment[body]" id="body" required>{{ form.body | escape }}</textarea>
+      </div>
+
+      <button type="submit" class="btn-primary w-fit">{{ 'blog.comment_form_submit' | t }}</button>
+    {% endform %}
+  {% endif %}
+</div>
 
 {% schema %}
 {
