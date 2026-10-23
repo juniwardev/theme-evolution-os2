@@ -5,37 +5,6 @@
   {% section 'image-banner' %}
 {% endcomment %}
 
-{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
-
-{%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
-  {%- style -%}
-    @media screen and (max-width: 749px) {
-      #Banner-{{ section.id }}::before,
-      #Banner-{{ section.id }} .banner__media::before,
-      #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
-        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
-        content: '';
-        display: block;
-      }
-    }
-
-    @media screen and (min-width: 750px) {
-      #Banner-{{ section.id }}::before,
-      #Banner-{{ section.id }} .banner__media::before {
-        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
-        content: '';
-        display: block;
-      }
-    }
-  {%- endstyle -%}
-{%- endif -%}
-
-{%- style -%}
-  #Banner-{{ section.id }}::after {
-    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
-  }
-{%- endstyle -%}
-
 {%- liquid
   assign full_width = '100vw'
   assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
@@ -56,19 +25,239 @@
   if section.index == 1
     assign fetch_priority = 'high'
   endif
+
+  assign has_image_1 = false
+  if section.settings.image != blank
+    assign has_image_1 = true
+  endif
+
+  assign has_image_2 = false
+  if section.settings.image_2 != blank
+    assign has_image_2 = true
+  endif
+
+  assign is_two = false
+  if has_image_1
+    if has_image_2
+      assign is_two = true
+    endif
+  endif
+
+  assign is_stacked = false
+  if is_two
+    if section.settings.stack_images_on_mobile
+      assign is_stacked = true
+    endif
+  endif
+
+  assign is_bottom = false
+  if section.settings.show_text_below
+    assign is_bottom = true
+  endif
+
+  assign is_adapt = false
+  if section.settings.image_height == 'adapt'
+    assign is_adapt = true
+  endif
+
+  assign has_ratio = false
+  if is_adapt
+    if has_image_1
+      assign has_ratio = true
+    endif
+  endif
+
+  assign is_boxed = false
+  if section.settings.show_text_box
+    assign is_boxed = true
+  endif
+
+  assign is_preload = false
+  if section.index == 1
+    assign is_preload = true
+  endif
+
+  assign size_desktop = ''
+  assign size_mobile_media = ''
+  assign size_mobile_content = ''
+  case section.settings.image_height
+    when 'small'
+      assign size_desktop = 'md:min-h-[26.25rem]'
+      assign size_mobile_media = 'max-md:h-[17.5rem]'
+      assign size_mobile_content = 'max-md:min-h-[17.5rem]'
+    when 'medium'
+      assign size_desktop = 'md:min-h-[35rem]'
+      assign size_mobile_media = 'max-md:h-[21.25rem]'
+      assign size_mobile_content = 'max-md:min-h-[21.25rem]'
+    when 'large'
+      assign size_desktop = 'md:min-h-[45rem]'
+      assign size_mobile_media = 'max-md:h-[24.375rem]'
+      assign size_mobile_content = 'max-md:min-h-[24.375rem]'
+  endcase
+
+  assign root_flow = 'max-md:flex-row max-md:flex-wrap'
+  if is_stacked
+    assign root_flow = ''
+  endif
+
+  assign root_overlay = ''
+  if is_bottom
+    assign root_overlay = 'max-md:after:hidden'
+  endif
+
+  assign root_ratio = ''
+  assign media_adapt = ''
+  assign content_ratio = ''
+  if has_ratio
+    assign root_ratio = "md:before:block md:before:pb-(--banner-ratio) md:before:content-['']"
+    assign media_adapt = "before:block before:pb-(--banner-ratio) before:content-['']"
+    unless is_bottom
+      assign content_ratio = "max-md:before:block max-md:before:pb-(--banner-ratio) max-md:before:content-['']"
+    endunless
+  endif
+
+  assign media_extra = ''
+  assign placeholder_classes = 'absolute top-0 left-0 block size-full object-cover object-center'
+  assign img_classes = 'absolute top-0 left-0 block size-full object-cover object-center'
+  assign img2_classes = 'absolute top-0 left-0 block size-full object-cover object-center'
+  case section.settings.image_behavior
+    when 'ambient'
+      assign img_classes = 'absolute top-0 left-0 block size-full object-cover object-center motion-safe:animate-[theme-banner-ambient_30s_linear_infinite]'
+      assign img2_classes = 'absolute top-0 left-0 block size-full object-cover object-center motion-safe:animate-[theme-banner-ambient_30s_linear_infinite]'
+    when 'fixed', 'zoom-in'
+      assign media_extra = '[clip-path:inset(0)]'
+      assign placeholder_classes = 'fixed top-0 left-0 block h-screen w-full object-cover object-center'
+      assign img_classes = 'fixed top-0 left-0 block h-screen w-full object-cover object-center'
+      assign img2_classes = 'fixed top-0 left-0 block h-screen w-full object-cover object-center'
+      if is_two
+        if is_stacked
+          assign img_classes = 'fixed top-0 left-0 block h-screen w-1/2 object-cover object-center max-md:w-full'
+          assign img2_classes = 'fixed top-0 left-1/2 block h-screen w-1/2 object-cover object-center max-md:left-0 max-md:w-full'
+        else
+          assign img_classes = 'fixed top-0 left-0 block h-screen w-1/2 object-cover object-center'
+          assign img2_classes = 'fixed top-0 left-1/2 block h-screen w-1/2 object-cover object-center'
+        endif
+      endif
+  endcase
+
+  assign media_1_base = 'absolute top-0 left-0 block h-full w-full overflow-hidden'
+  assign media_2_base = 'absolute top-0 left-0 block h-full w-full overflow-hidden'
+  if is_two
+    assign media_1_base = 'absolute top-0 left-0 block h-full w-1/2 overflow-hidden'
+    assign media_2_base = 'absolute top-0 right-0 block h-full w-1/2 overflow-hidden'
+  endif
+
+  assign media_mobile = ''
+  if is_bottom
+    assign media_mobile = 'max-md:relative'
+  elsif is_stacked
+    assign media_mobile = 'max-md:relative'
+  endif
+  assign media_mobile_size = ''
+  if media_mobile != ''
+    assign media_mobile_size = size_mobile_media
+  endif
+
+  assign media_stacked = ''
+  assign media_2_order = ''
+  if is_stacked
+    assign media_stacked = 'max-md:w-full'
+    assign media_2_order = 'max-md:order-1'
+  endif
+
+  case section.settings.desktop_content_position
+    when 'top-left'
+      assign content_position = 'md:items-start md:justify-start'
+    when 'top-center'
+      assign content_position = 'md:items-start md:justify-center'
+    when 'top-right'
+      assign content_position = 'md:items-start md:justify-end'
+    when 'middle-left'
+      assign content_position = 'md:items-center md:justify-start'
+    when 'middle-right'
+      assign content_position = 'md:items-center md:justify-end'
+    when 'bottom-left'
+      assign content_position = 'md:items-end md:justify-start'
+    when 'bottom-center'
+      assign content_position = 'md:items-end md:justify-center'
+    when 'bottom-right'
+      assign content_position = 'md:items-end md:justify-end'
+    else
+      assign content_position = 'md:items-center md:justify-center'
+  endcase
+
+  assign content_size = size_mobile_content
+  if is_bottom
+    assign content_size = ''
+  endif
+
+  assign content_order = ''
+  if is_bottom
+    unless is_stacked
+      assign content_order = 'max-md:order-2'
+    endunless
+  endif
+
+  assign content_stacked = ''
+  if is_stacked
+    if is_adapt
+      assign content_stacked = 'max-md:h-auto'
+      unless is_bottom
+        assign content_stacked = 'max-md:h-auto max-md:absolute max-md:max-h-full max-md:overflow-hidden'
+      endunless
+    else
+      unless is_bottom
+        assign content_stacked = 'max-md:absolute max-md:h-auto'
+      endunless
+    endif
+  endif
+
+  assign box_width = 'md:max-w-[55.625rem]'
+  assign box_padding = 'md:px-0'
+  assign box_background = ''
+  if is_boxed
+    assign box_width = 'md:max-w-[44.375rem] min-[87.5rem]:max-w-[56.25rem]'
+    assign box_padding = 'md:px-[2.1875rem]'
+    assign box_background = 'md:bg-background'
+  else
+    if section.settings.desktop_content_alignment == 'left'
+      assign box_width = 'md:max-w-[42.5rem]'
+    elsif section.settings.desktop_content_alignment == 'right'
+      assign box_width = 'md:max-w-[42.5rem]'
+    elsif section.settings.image_height == 'medium'
+      assign box_width = 'md:max-w-[42.5rem]'
+    endif
+  endif
+
+  assign box_align_mobile = ''
+  case section.settings.mobile_content_alignment
+    when 'left'
+      assign box_align_mobile = 'max-md:text-left'
+    when 'right'
+      assign box_align_mobile = 'max-md:text-right'
+  endcase
+
+  assign box_align_desktop = ''
+  case section.settings.desktop_content_alignment
+    when 'left'
+      assign box_align_desktop = 'md:text-left'
+    when 'right'
+      assign box_align_desktop = 'md:text-right'
+  endcase
+
+  assign previous_block_type = ''
 -%}
 
 <div
   id="Banner-{{ section.id }}"
-  class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile %}{% if section.settings.image != blank %}{% if section.settings.image_2 != blank %} banner--stacked{% endif %}{% endif %}{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+  class="relative z-0 col-span-full flex flex-col after:absolute after:top-0 after:left-0 after:z-1 after:size-full after:bg-black after:opacity-(--banner-overlay) after:content-[''] md:flex-row {{ root_flow }} {{ root_overlay }} {{ size_desktop }} {{ root_ratio }}"
+  style="--banner-overlay: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }}{% if has_ratio %}; --banner-ratio: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%{% endif %}"
+  data-image-banner
 >
-  {%- if section.settings.image != blank -%}
-    <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+  {%- if has_image_1 -%}
+    <div class="{{ media_1_base }} {{ media_extra }} {{ media_mobile }} {{ media_mobile_size }} {{ media_stacked }} {{ media_adapt }}" data-banner-media>
       {%- liquid
         assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
-        if section.settings.image_2 != blank
-          assign image_class = 'banner__media-image-half'
-        endif
         if section.settings.image_2 != blank and section.settings.stack_images_on_mobile
           assign sizes = stacked_sizes
         elsif section.settings.image_2 != blank
@@ -77,30 +266,42 @@
           assign sizes = full_width
         endif
       -%}
-      {{
-        section.settings.image
-        | image_url: width: 3840
-        | image_tag:
-          width: section.settings.image.width,
-          height: image_height,
-          class: image_class,
-          sizes: sizes,
-          widths: widths,
-          fetchpriority: fetch_priority
-      }}
+      {%- if is_preload -%}
+        {{
+          section.settings.image
+          | image_url: width: 3840
+          | image_tag:
+            preload: true,
+            width: section.settings.image.width,
+            height: image_height,
+            class: img_classes,
+            sizes: sizes,
+            widths: widths,
+            fetchpriority: fetch_priority
+        }}
+      {%- else -%}
+        {{
+          section.settings.image
+          | image_url: width: 3840
+          | image_tag:
+            width: section.settings.image.width,
+            height: image_height,
+            class: img_classes,
+            sizes: sizes,
+            widths: widths,
+            fetchpriority: fetch_priority
+        }}
+      {%- endif -%}
     </div>
   {%- elsif section.settings.image_2 == blank -%}
-    <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-      {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+    <div class="{{ media_1_base }} {{ media_extra }} {{ media_mobile }} {{ media_mobile_size }} {{ media_stacked }}" data-banner-media>
+      {{ 'hero-apparel-1' | placeholder_svg_tag: placeholder_classes }}
     </div>
   {%- endif -%}
-  {%- if section.settings.image_2 != blank -%}
-    <div class="banner__media media{% if section.settings.image != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+  {%- if has_image_2 -%}
+    <div class="{{ media_2_base }} {{ media_extra }} {{ media_mobile }} {{ media_mobile_size }} {{ media_stacked }} {{ media_2_order }} {{ media_adapt }}" data-banner-media>
       {%- liquid
         assign image_height_2 = section.settings.image_2.width | divided_by: section.settings.image_2.aspect_ratio
-        if section.settings.image != blank
-          assign image_class_2 = 'banner__media-image-half'
-        endif
         if section.settings.image != blank and section.settings.stack_images_on_mobile
           assign sizes = stacked_sizes
         elsif section.settings.image_2 != blank
@@ -109,37 +310,139 @@
           assign sizes = full_width
         endif
       -%}
-      {{
-        section.settings.image_2
-        | image_url: width: 3840
-        | image_tag:
-          width: section.settings.image_2.width,
-          height: image_height_2,
-          class: image_class_2,
-          sizes: sizes,
-          widths: widths,
-          fetchpriority: fetch_priority
-      }}
+      {%- if is_preload -%}
+        {{
+          section.settings.image_2
+          | image_url: width: 3840
+          | image_tag:
+            preload: true,
+            width: section.settings.image_2.width,
+            height: image_height_2,
+            class: img2_classes,
+            sizes: sizes,
+            widths: widths,
+            fetchpriority: fetch_priority
+        }}
+      {%- else -%}
+        {{
+          section.settings.image_2
+          | image_url: width: 3840
+          | image_tag:
+            width: section.settings.image_2.width,
+            height: image_height_2,
+            class: img2_classes,
+            sizes: sizes,
+            widths: widths,
+            fetchpriority: fetch_priority
+        }}
+      {%- endif -%}
     </div>
   {%- endif -%}
-  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+  <div
+    class="relative z-2 flex w-full items-center justify-center md:px-[calc((100%-var(--content-width))/2+2rem)] md:py-[3.125rem] {{ content_position }} {{ content_size }} {{ content_order }} {{ content_stacked }} {{ content_ratio }}"
+    data-banner-content
+  >
+    <div
+      class="relative z-1 h-fit w-full py-10 text-center [overflow-wrap:break-word] max-md:px-[calc((100%-var(--content-width))/2+2rem)] md:w-auto md:min-w-[28.125rem] {{ box_width }} {{ box_padding }} {{ box_background }} {{ box_align_mobile }} {{ box_align_desktop }}"
+      data-banner-box
+    >
       {%- for block in section.blocks -%}
+        {%- liquid
+          assign block_spacing = ''
+          unless forloop.first
+            case block.type
+              when 'heading'
+                assign block_spacing = 'mt-2.5'
+              when 'text'
+                if previous_block_type == 'heading'
+                  assign block_spacing = 'mt-2.5'
+                else
+                  assign block_spacing = 'mt-[0.9375rem] md:mt-5'
+                endif
+              when 'buttons'
+                assign block_spacing = 'mt-5'
+            endcase
+          endunless
+          assign previous_block_type = block.type
+        -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
+            {%- liquid
+              case block.settings.heading_size
+                when 'h2'
+                  assign heading_classes = 'text-xl leading-tight md:text-2xl'
+                when 'h0'
+                  assign heading_classes = 'text-[2.5rem] leading-tight md:text-[3.25rem]'
+                when 'hxl'
+                  assign heading_classes = 'text-[3.125rem] leading-tight md:text-[3.875rem]'
+                when 'hxxl'
+                  assign heading_classes = 'text-[length:clamp(3.5rem,14vw,4.5rem)] leading-[1.1]'
+                else
+                  assign heading_classes = 'text-3xl leading-tight md:text-[2.5rem]'
+              endcase
+            -%}
             <h2
-              class="banner__heading inline-richtext {{ block.settings.heading_size }}"
+              class="m-0 font-heading font-bold uppercase [&_a]:text-current [&_a]:decoration-[0.0625rem] [&_a]:underline-offset-[0.1875rem] [&_a:hover]:decoration-[0.125rem] {{ heading_classes }} {{ block_spacing }}"
               {{ block.shopify_attributes }}
             >
               {{ block.settings.heading }}
             </h2>
           {%- when 'text' -%}
-            <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-              <p>{{ block.settings.text }}</p>
+            {%- liquid
+              case block.settings.text_style
+                when 'subtitle'
+                  assign text_classes = 'text-[1.125rem] tracking-[0.0375rem]'
+                when 'caption-with-letter-spacing'
+                  assign text_classes = 'text-[0.625rem] tracking-[0.08125rem] uppercase'
+                else
+                  assign text_classes = ''
+              endcase
+            -%}
+            <div
+              class="[&_a]:text-current [&_a]:decoration-[0.0625rem] [&_a]:underline-offset-[0.1875rem] [&_a:hover]:decoration-[0.125rem] {{ text_classes }} {{ block_spacing }}"
+              {{ block.shopify_attributes }}
+            >
+              <p class="m-0">{{ block.settings.text }}</p>
             </div>
           {%- when 'buttons' -%}
+            {%- liquid
+              assign button_1_style = 'btn-primary'
+              if block.settings.button_style_secondary_1
+                assign button_1_style = 'btn-secondary'
+              endif
+              assign button_2_style = 'btn-primary'
+              if block.settings.button_style_secondary_2
+                assign button_2_style = 'btn-secondary'
+              endif
+
+              assign is_multiple = false
+              if block.settings.button_label_1 != blank
+                if block.settings.button_label_2 != blank
+                  assign is_multiple = true
+                endif
+              endif
+
+              assign buttons_mobile = ''
+              assign buttons_desktop = ''
+              assign button_mobile = ''
+              assign button_desktop = ''
+              if is_multiple
+                if section.settings.mobile_content_alignment == 'center'
+                  assign buttons_mobile = 'max-md:mx-auto max-md:flex max-md:w-full'
+                  assign button_mobile = 'max-md:grow max-md:min-w-[min(13.75rem,100%)]'
+                elsif section.settings.mobile_content_alignment == 'right'
+                  assign buttons_mobile = 'max-md:justify-end'
+                endif
+                if section.settings.desktop_content_alignment == 'center'
+                  assign button_desktop = 'md:grow md:min-w-[13.75rem]'
+                elsif section.settings.desktop_content_alignment == 'right'
+                  assign buttons_desktop = 'md:justify-end'
+                endif
+              endif
+            -%}
             <div
-              class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
+              class="inline-flex max-w-[28.125rem] flex-wrap gap-2.5 [word-break:break-word] {{ buttons_mobile }} {{ buttons_desktop }} {{ block_spacing }}"
+              data-banner-buttons
               {{ block.shopify_attributes }}
             >
               {%- if block.settings.button_label_1 != blank -%}
@@ -149,7 +452,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_1 }}"
                   {% endif %}
-                  class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                  class="{{ button_1_style }} {{ button_mobile }} {{ button_desktop }}"
                 >
                   {{- block.settings.button_label_1 | escape -}}
                 </a>
@@ -161,7 +464,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_2 }}"
                   {% endif %}
-                  class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                  class="{{ button_2_style }} {{ button_mobile }} {{ button_desktop }}"
                 >
                   {{- block.settings.button_label_2 | escape -}}
                 </a>
@@ -172,6 +475,19 @@
     </div>
   </div>
 </div>
+
+{% stylesheet %}
+  @layer components {
+    @keyframes theme-banner-ambient {
+      0% {
+        transform: rotate(0deg) translateX(1em) rotate(0deg) scale(1.2);
+      }
+      100% {
+        transform: rotate(360deg) translateX(1em) rotate(-360deg) scale(1.2);
+      }
+    }
+  }
+{% endstylesheet %}
 
 {% schema %}
 {
