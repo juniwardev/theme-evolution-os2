@@ -9,7 +9,8 @@
   <h1 class="font-heading text-3xl leading-tight font-bold uppercase md:text-4xl">{{ page.title | escape }}</h1>
 
   {%- if page.content != blank -%}
-    <div data-rich-text>{{ page.content }}</div>
+    {% # Shopify's privacy opt-out widget is wider than a phone column. It scrolls inside this box, not the page. %}
+    <div class="overflow-x-auto" data-rich-text>{{ page.content }}</div>
   {%- endif -%}
 </div>
 
