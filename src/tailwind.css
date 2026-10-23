@@ -6,7 +6,7 @@
  * becomes the strongest layer. scripts/check-css-layers.mjs enforces this.
  * See docs/plans/theme-evolution-tailwind.md D4.
  */
-@layer properties, theme, base, legacy, components, utilities, shims;
+@layer properties, theme, base, components, utilities;
 
 @import "tailwindcss" source(none);
 

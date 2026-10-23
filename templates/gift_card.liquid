@@ -4,12 +4,12 @@
 <html lang="{{ request.locale.iso_code }}">
   <head>
     {%- comment -%} Fixes the cascade-layer order before any stylesheet; keep it first. See docs/plans/theme-evolution-tailwind.md D4. {%- endcomment -%}
-    <style>@layer properties, theme, base, legacy, components, utilities, shims;</style>
+    <style>@layer properties, theme, base, components, utilities;</style>
 
     {% # Inlined CSS Variables %}
     {% render 'css-variables' %}
 
-    {% # Tailwind, compiled from src/tailwind.css; base.css is legacy Dawn CSS inside @layer legacy %}
+    {% # Tailwind CSS, compiled from src/tailwind.css %}
     {{ 'tailwind.css' | asset_url | stylesheet_tag: preload: true }}
 
     {% # Social, title, etc. %}

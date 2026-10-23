@@ -4,8 +4,8 @@
 // docs/plans/theme-evolution-tailwind.md D4.
 import { readFileSync } from 'node:fs';
 
-// Keep in step with the inline <style> in the files below. Phase T5 removes legacy and shims.
-const EXPECTED_LAYERS = ['properties', 'theme', 'base', 'legacy', 'components', 'utilities', 'shims'];
+// Keep in step with the inline <style> in the files below.
+const EXPECTED_LAYERS = ['properties', 'theme', 'base', 'components', 'utilities'];
 const FILES_WITH_LAYER_STATEMENT = [
   'layout/theme.liquid',
   'layout/password.liquid',
