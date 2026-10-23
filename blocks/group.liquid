@@ -22,8 +22,11 @@
   {% content_for 'blocks' %}
 </div>
 
+{% comment %}
+  Scoped so Tailwind's `group` class on other markup doesn't get this rule (docs/plans/theme-evolution-tailwind-t2.md D2.2).
+{% endcomment %}
 {% stylesheet %}
-  .group {
+  .group:is(.group--horizontal, .group--vertical) {
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
