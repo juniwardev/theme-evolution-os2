@@ -19,7 +19,7 @@
   </div>
 
   {%- if article.content != blank -%}
-    <div data-rich-text>{{ article.content }}</div>
+    <div class="prose prose-tokens" data-rich-text>{{ article.content }}</div>
   {%- endif -%}
 
   {% if blog.comments_enabled? %}
@@ -33,7 +33,7 @@
               <li class="flex flex-col gap-1 border-b border-foreground/10 py-6">
                 <p class="font-semibold">{{ comment.author | escape }}</p>
                 <p class="text-sm opacity-70">{{- comment.created_at | time_tag: format: 'date' -}}</p>
-                <div data-rich-text>{{ comment.content }}</div>
+                <div class="prose prose-tokens" data-rich-text>{{ comment.content }}</div>
               </li>
             {% endfor %}
           </ul>
