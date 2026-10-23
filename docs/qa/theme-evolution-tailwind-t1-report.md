@@ -456,4 +456,11 @@ Bar is full bleed and the content row is correct.
 
 `docs/qa/harness/t1r3q-{measure,menu,cart,rowgeom,panel,shots}.mjs`, `t1r3q-cmp.py`. Screenshots `docs/qa/screenshots/t1r3-*`.
 
+
+## Owner decision (2026-10-23)
+
+After reviewing T1 on staging (#187953643616, staging push 2 from `a7e2994`), the owner (Junior Warner) instructed: "Push to production and let's move on to the next phase." This is recorded as approval of the live push and acceptance of owner-acceptance items 1–9 from Re-run 3 as shipped. The owner did not comment on them item by item.
+
+Still open after the live push (operator checks, not blockers): theme editor checks C1.2/C1.7/C1.8, the announcement-bar full-bleed variant once enabled, and setting the dark Ride colors in the editor.
+
 PASS
