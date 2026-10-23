@@ -1,0 +1,10 @@
+p3p cards 4 {"nLinks":4,"bHead":21654,"bBody":0,"bDoc":21654,"nDawn":0,"invalid":[],"cross":0}
+    head:tailwind.css:8459 | head:base.css:10813 | head:accelerated-checkout.css:1598 | head:styles.css:784
+snow cards 4 {"nLinks":4,"bHead":21654,"bBody":0,"bDoc":21654,"nDawn":0,"invalid":[],"cross":0}
+    head:tailwind.css:8459 | head:base.css:10813 | head:accelerated-checkout.css:1598 | head:styles.css:784
+home cards 0 {"nLinks":4,"bHead":21654,"bBody":0,"bDoc":21654,"nDawn":0,"invalid":[],"cross":0}
+    head:tailwind.css:8459 | head:base.css:10813 | head:accelerated-checkout.css:1598 | head:styles.css:784
+land cards 0 {"nLinks":4,"bHead":21654,"bBody":0,"bDoc":21654,"nDawn":0,"invalid":[],"cross":0}
+    head:tailwind.css:8459 | head:base.css:10813 | head:accelerated-checkout.css:1598 | head:styles.css:784
+wax cards 4 {"nLinks":4,"bHead":21654,"bBody":0,"bDoc":21654,"nDawn":0,"invalid":[],"cross":0}
+    head:tailwind.css:8459 | head:base.css:10813 | head:accelerated-checkout.css:1598 | head:styles.css:784

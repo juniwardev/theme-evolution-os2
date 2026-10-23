@@ -1,0 +1,40 @@
+PASS C3.17    home: h1 1; headings h1,h2,h2,h2,h2
+PASS C3.17    land: h1 1; headings h2,h1
+PASS C3.17    home sequence h1,h2,h2,h2,h2
+PASS C3.18    h1 "Hello, world!"; titles Key concepts|Liquid|Best practices
+PASS C3.18    link attrs head ["title=","href=https://shopify.dev/docs/storefronts/themes/architecture","rel=nofollow"] base ["href=https://shopify.dev/docs/storefronts/themes/architecture","title=","rel=nofollow"]
+PASS C3.21    hello img {"alt":"","width":"300","height":"300"}
+PASS C3.21    banner imgs [{"fp":"auto","w":"4096","h":"2731.0000000000005","loading":null},{"fp":"auto","w":"4096","h":"2731.0000000000005","loading":null}]
+PASS C3.19    @375: h1 Oswald 700 uppercase 30px; banner heading Oswald 30px
+PASS C3.19    @1440: h1 Oswald 700 uppercase 36px; banner heading Oswald 40px
+PASS C3.20    btn0 btn-secondary max-md:grow max-md:min-w-[min(13.75rem,100%)] md:grow md:min-w-[13.75rem] bg rgba(0, 0, 0, 0); btn1 btn-primary max-md:grow max-md:min-w-[min(13.75rem,100%)] md:grow md:min-w-[13.75rem] bg rgb(227, 252, 1) accent rgb(227, 252, 1)
+PASS C3.20    attrs ["role=link","aria-disabled=true"]; opacity 0.6/0.6; h 48/48
+PASS C3.22    hello cards @1023: 1 columns
+PASS C3.22    hello cards @1024: 3 columns
+PASS C3.13    1920: L 292 R 1628; h1 292; card0 292; illus right 1628; last card right 1628; banner 0..1920
+PASS C3.5     home@320: xPage 0; offs 0; xbtn {"maxRight":-52,"minLeft":52}
+PASS C3.5     home@375: xPage 0; offs 0; xbtn {"maxRight":-52,"minLeft":52}
+PASS C3.5     home@390: xPage 0; offs 0; xbtn {"maxRight":-52,"minLeft":52}
+PASS C3.5     home@430: xPage 0; offs 0; xbtn {"maxRight":-52,"minLeft":52}
+PASS C3.5     home@767: xPage 0; offs 0; xbtn {"maxRight":-158.5,"minLeft":158.5}
+PASS C3.5     home@768: xPage 0; offs 0; xbtn {"maxRight":-159,"minLeft":159}
+PASS C3.5     home@1024: xPage 0; offs 0; xbtn {"maxRight":-287,"minLeft":287}
+PASS C3.5     home@1440: xPage 0; offs 0; xbtn {"maxRight":-495,"minLeft":495}
+PASS C3.5     home@1920: xPage 0; offs 0; xbtn {"maxRight":-735,"minLeft":735}
+PASS C3.5     land@320: xPage 0; offs 0; xbtn {"maxRight":-52,"minLeft":52}
+PASS C3.5     land@375: xPage 0; offs 0; xbtn {"maxRight":-52,"minLeft":52}
+PASS C3.5     land@390: xPage 0; offs 0; xbtn {"maxRight":-52,"minLeft":52}
+PASS C3.5     land@430: xPage 0; offs 0; xbtn {"maxRight":-52,"minLeft":52}
+PASS C3.5     land@767: xPage 0; offs 0; xbtn {"maxRight":-158.5,"minLeft":158.5}
+PASS C3.5     land@768: xPage 0; offs 0; xbtn {"maxRight":-159,"minLeft":159}
+PASS C3.5     land@1024: xPage 0; offs 0; xbtn {"maxRight":-287,"minLeft":287}
+PASS C3.5     land@1440: xPage 0; offs 0; xbtn {"maxRight":-495,"minLeft":495}
+PASS C3.5     land@1920: xPage 0; offs 0; xbtn {"maxRight":-735,"minLeft":735}
+  (base xPage home 320 76)
+  (base xPage home 375 21)
+  (base xPage home 390 6)
+  (base xPage home 430 0)
+  (base xPage land 320 108)
+  (base xPage land 375 53)
+  (base xPage land 390 38)
+  (base xPage land 430 0)

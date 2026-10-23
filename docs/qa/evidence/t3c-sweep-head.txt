@@ -1,0 +1,13 @@
+=== home 1440: els 37, h1 1, gridMargins!=0 0, bare hidden 0, .button 0, heads h1,h2,h2,h2,h2, imgs [["300","300",""],["4096","2731.0000000000005",""],["4096","2731.0000000000005",""]]
+  unlayered matches: 0
+  dawn classes used: grid overflow-hidden section uppercase
+=== land 1440: els 75, h1 1, gridMargins!=0 0, bare hidden 0, .button 0, heads h2,h1, imgs []
+  unlayered matches: 0
+  dawn classes used: overflow-hidden section uppercase
+=== home 375: els 37, h1 1, gridMargins!=0 0, bare hidden 0, .button 0, heads h1,h2,h2,h2,h2, imgs [["300","300",""],["4096","2731.0000000000005",""],["4096","2731.0000000000005",""]]
+  unlayered matches: 0
+  dawn classes used: grid overflow-hidden section uppercase
+=== land 375: els 75, h1 1, gridMargins!=0 0, bare hidden 0, .button 0, heads h2,h1, imgs []
+  unlayered matches: 0
+  dawn classes used: overflow-hidden section uppercase
+C3.24 probe {"bare":{"overflow":"visible","display":"block"},"vertical":{"overflow":"visible","display":"block"}}

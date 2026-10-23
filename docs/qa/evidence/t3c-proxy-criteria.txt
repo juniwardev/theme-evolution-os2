@@ -1,0 +1,97 @@
+PASS C3.5(proxy)  all variants x 320..1440                     xPage 0, no offenders, buttons inside viewport
+PASS C3.6         356 buttons                                  all within box content box +-0.5
+PASS C3.13        B0@320                                       L 52 E_R 268 (header cart right 312) {"h1":52,"p0":52,"card0":52,"illusR":268,"lastCardR":268,"bandL":0,"bandR":320,"banL":0,"banR":320}
+PASS C3.13        B0@320 box content                           box content [52,268] vs [52,268]
+PASS C3.13        B0@375                                       L 52 E_R 323 (header cart right 334) {"h1":52,"p0":52,"card0":52,"illusR":323,"lastCardR":323,"bandL":0,"bandR":375,"banL":0,"banR":375}
+PASS C3.13        B0@375 box content                           box content [52,323] vs [52,323]
+PASS C3.13        B0@767                                       L 52 E_R 715 (header cart right 715) {"h1":52,"p0":52,"card0":52,"illusR":715,"lastCardR":715,"bandL":0,"bandR":767,"banL":0,"banR":767}
+PASS C3.13        B0@768                                       L 52 E_R 716 (header cart right 716) {"h1":52,"p0":52,"card0":52,"illusR":716,"lastCardR":716,"bandL":0,"bandR":768,"banL":0,"banR":768}
+PASS C3.13        B0@1024                                      L 52 E_R 972 (header cart right 972) {"h1":52,"p0":52,"card0":52,"illusR":972,"lastCardR":972,"bandL":0,"bandR":1024,"banL":0,"banR":1024}
+PASS C3.13        B0@1440                                      L 52 E_R 1388 (header cart right 1388) {"h1":52,"p0":52,"card0":52,"illusR":1388,"lastCardR":1388,"bandL":0,"bandR":1440,"banL":0,"banR":1440}
+PASS C3.13        V3-top-left@768                              box content [52,580.3] L 52 R 716
+PASS C3.13        V3-top-left@1024                             box content [52,580.3] L 52 R 972
+PASS C3.13        V3-top-left@1440                             box content [52,580.3] L 52 R 1388
+PASS C3.13        V3-bottom-right@768                          box content [187.7,716] L 52 R 716
+PASS C3.13        V3-bottom-right@1024                         box content [443.7,972] L 52 R 972
+PASS C3.13        V3-bottom-right@1440                         box content [859.7,1388] L 52 R 1388
+PASS C3.14        V1-small root min-height@1440                672 -> 420
+PASS C3.14        V1-medium root min-height@1440               896 -> 560
+PASS C3.14        B0 root min-height@1440                      1152 -> 720
+PASS C3.14        V1-adapt root min-height@1440                auto -> auto
+PASS C3.14        V1-small content min-height@375              448 -> 280
+PASS C3.14        V1-medium content min-height@375             544 -> 340
+PASS C3.14        B0 content min-height@375                    624 -> 390
+PASS C3.14        V8 media height@375                          624 -> 390
+PASS C3.14        B0 content padding-top@1440 (80->50)         80px -> 50px
+PASS C3.14        B0 box padding-top (64->40)                  64px -> 40px
+PASS C3.14        B0 buttons column-gap (16->10)               16px -> 10px
+PASS C3.14        B0 box min-width (720->450)                  720px -> 450px
+PASS C3.14        B0 box max-width (1424->890)                 1424px -> 890px
+PASS C3.15        adapt root ::before@1440                     padding-bottom 960.109 vs 960
+PASS C3.15        adapt content ::before@375                   content ::before 250.016 vs 250; root h 281
+PASS C3.15        position top-left                            box y 50 h 198 content y 0 h 720; box x 52..580.3 L 52 R 1388
+PASS C3.15        position top-center                          box y 50 h 198 content y 0 h 720; box x 455.9..984.1 L 52 R 1388
+PASS C3.15        position top-right                           box y 50 h 198 content y 0 h 720; box x 859.7..1388 L 52 R 1388
+PASS C3.15        position middle-left                         box y 261 h 198 content y 0 h 720; box x 52..580.3 L 52 R 1388
+PASS C3.15        position middle-center                       box y 261 h 198 content y 0 h 720; box x 455.9..984.1 L 52 R 1388
+PASS C3.15        position middle-right                        box y 261 h 198 content y 0 h 720; box x 859.7..1388 L 52 R 1388
+PASS C3.15        position bottom-left                         box y 472 h 198 content y 0 h 720; box x 52..580.3 L 52 R 1388
+PASS C3.15        position bottom-center                       box y 472 h 198 content y 0 h 720; box x 455.9..984.1 L 52 R 1388
+PASS C3.15        position bottom-right                        box y 472 h 198 content y 0 h 720; box x 859.7..1388 L 52 R 1388
+PASS C3.15        desktop alignment left                       left
+PASS C3.15        desktop alignment right                      right
+PASS C3.15        desktop alignment center                     center
+PASS C3.15        mobile alignment left                        text-align left; buttons justify normal
+PASS C3.15        mobile alignment right                       text-align right; buttons justify flex-end
+PASS C3.15        mobile alignment center                      text-align center; buttons justify normal
+PASS C3.15        V5 box bg@1440                               bg rgb(255, 255, 255) vs rgb(255, 255, 255); padding-left 35px
+PASS C3.15        V5 max-width@1024/1440                       710px / 900px
+PASS C3.15        B0 box transparent/0                         rgba(0, 0, 0, 0); padding-left 0px
+PASS C3.15        V6 stacked@375                               media0 y 0 h 390 w 375; media1 y 390 w 375; root w 375
+PASS C3.15        B0 two images half                           media1 x 720
+PASS C3.15        V8 below@375                                 content y 390; media bottom 390; root ::after none
+PASS C3.15        overlay 0                                    0
+PASS C3.15        overlay 0.5                                  0.5
+PASS C3.15        overlay 1                                    1
+PASS C3.15        heading_size V10-h2                          20/24 expect 20/24
+PASS C3.15        heading_size B0                              30/40 expect 30/40
+PASS C3.15        heading_size V10-h0                          40/52 expect 40/52
+PASS C3.15        heading_size V10-hxl                         50/62 expect 50/62
+PASS C3.15        heading_size V10-hxxl                        56/72 expect 56/72
+PASS C3.15        text_style V11-body                          16px ls normal tt none
+PASS C3.15        text_style V11-subtitle                      18px ls 0.6px tt none
+PASS C3.15        text_style V11-caption-with-letter-spacing   10px ls 1.3px tt uppercase
+PASS C3.15        B0 btn0 secondary, btn1 primary              btn0 btn-secondary max-md:grow max-md:min-w-[min(13.75rem,100%)] md:grow md:min-w-[13.75rem] bg rgba(0, 0, 0, 0); btn1 btn-primary max-md:grow max-md:min-w-[min(13.75rem,100%)] md:grow md:min-w-[13.75rem] bg rgb(227, 252, 1) accent rgb(227, 252, 1)
+PASS C3.15        V12 swap                                     btn-primary max-md:grow max-md:min-w-[min(13.75rem,100%)] md:grow md:min-w-[13.75rem] / btn-secondary max-md:grow max-md:min-w-[min(13.75rem,100%)] md:grow md:min-w-[13.75rem]
+PASS C3.15        V12 links                                    [["href=/collections/all"],["href=/collections/all"]] opacity 1
+PASS C3.15        V12 label2 blank                             btn0 true btn1 false
+PASS C3.15        two buttons@375                              btn0 w 271 btn1 w 271 wrapper w 271; btn1.y 247.5 btn0 bottom 237.5
+PASS C3.15        two buttons@430                              btn0 w 326 btn1 w 326 wrapper w 326; btn1.y 247.5 btn0 bottom 237.5
+PASS C3.15        two buttons@767                              btn widths 220/220; y 199.8/199.8
+PASS C3.15        V13 image_2 only                             media0 w 1440 root w 1440; media1 false
+PASS C3.15        V13 placeholder                              svg 1440x720 media 1440x720
+PASS C3.16        B0                                           position absolute; anim none; reduced none
+PASS C3.16        V2-ambient                                   position absolute; anim theme-banner-ambient; reduced none
+PASS C3.16        V2-fixed                                     position fixed; h 900; clip inset(0px); img2 x 720
+PASS C3.16        V2-zoom-in                                   position fixed; h 900; clip inset(0px); img2 x 720
+PASS C3.22        V6 root flex-direction 767/768               column / row
+PASS C3.22        B0 content padding-top 767/768               0px / 50px
+PASS C3.27        C1 order                                     base ban.media0>ban.content>ban.media1 | head ban.media0>ban.content>ban.media1
+PASS C3.27        C1 position                                  base relative,relative,relative [absolute,absolute] | head relative,relative,relative [absolute,absolute]
+PASS C3.27        C1 heights                                   media0 h 624->390; content minH 0->0
+PASS C3.27        C2 order                                     base ban.content>ban.media0>ban.media1 | head ban.content>ban.media0>ban.media1
+PASS C3.27        C2 position                                  base relative,relative,absolute [absolute,absolute] | head relative,relative,absolute [absolute,absolute]
+PASS C3.27        C2 ratio boxes                               ban.media0 ::before 250.016 vs 250; ban.media1 ::before 250.016 vs 250; content ::before 250.016 vs 250
+PASS C3.27        C3 order                                     base ban.media0>ban.content | head ban.media0>ban.content
+PASS C3.27        C3 position                                  base relative,relative [absolute] | head relative,relative [absolute]
+PASS C3.27        C3 ratio boxes                               ban.media0 ::before 250.016 vs 250
+PASS C3.27        C4 order                                     base ban.content>ban.media0>ban.media1 | head ban.content>ban.media0>ban.media1
+PASS C3.27        C4 position                                  base relative,relative,absolute [fixed,fixed] | head relative,relative,absolute [fixed,fixed]
+PASS C3.27        C4 heights                                   media0 h 624->390; content minH 624->390
+PASS C3.27        V6 order                                     base ban.content>ban.media0>ban.media1 | head ban.content>ban.media0>ban.media1
+PASS C3.27        V6 position                                  base relative,relative,absolute [absolute,absolute] | head relative,relative,absolute [absolute,absolute]
+PASS C3.27        V6 heights                                   media0 h 624->390; content minH 624->390
+PASS C3.27        V8 order                                     base ban.media0>ban.media1>ban.content | head ban.media0>ban.media1>ban.content
+PASS C3.27        V8 position                                  base relative,relative,relative [absolute,absolute] | head relative,relative,relative [absolute,absolute]
+PASS C3.27        V8 heights                                   media0 h 624->390; content minH 0->0
+PASS C3.27        C5@1440                                      box x 52 L 52; left; bg rgb(255, 255, 255) vs rgb(255, 255, 255)

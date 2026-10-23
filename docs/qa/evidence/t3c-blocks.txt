@@ -1,0 +1,16 @@
+PASS C3.24 text--title/left                         30px 36px 700 left Oswald (base 32px normal "Work Sans")
+PASS C3.24 text--title/center                       30px 36px 700 center Oswald (base 32px normal "Work Sans")
+PASS C3.24 text--title/right                        30px 36px 700 right Oswald (base 32px normal "Work Sans")
+PASS C3.24 text--subtitle/left                      24px 32px 400 left "Work Sans" (base 24px normal "Work Sans")
+PASS C3.24 text--subtitle/center                    24px 32px 400 center "Work Sans" (base 24px normal "Work Sans")
+PASS C3.24 text--subtitle/right                     24px 32px 400 right "Work Sans" (base 24px normal "Work Sans")
+PASS C3.24 text--normal/left                        16px 24px 400 left "Work Sans" (base 16px normal "Work Sans")
+PASS C3.24 text--normal/center                      16px 24px 400 center "Work Sans" (base 16px normal "Work Sans")
+PASS C3.24 text--normal/right                       16px 24px 400 right "Work Sans" (base 16px normal "Work Sans")
+PASS C3.24 group--horizontal                        flex row jc space-between ai center pl 100px pt 0px nowrap hidden w 1440; equals base: true
+PASS C3.24 v flex-start/0                           flex column jc normal ai flex-start pl 0px pt 0px nowrap hidden w 1440; equals base: true
+PASS C3.24 v center/0                               flex column jc normal ai center pl 0px pt 0px nowrap hidden w 1440; equals base: true
+PASS C3.24 v flex-end/0                             flex column jc normal ai flex-end pl 0px pt 0px nowrap hidden w 1440; equals base: true
+PASS C3.24 v flex-start/200                         flex column jc normal ai flex-start pl 0px pt 200px nowrap hidden w 1440; equals base: true
+PASS C3.24 v center/200                             flex column jc normal ai center pl 0px pt 200px nowrap hidden w 1440; equals base: true
+PASS C3.24 v flex-end/200                           flex column jc normal ai flex-end pl 0px pt 200px nowrap hidden w 1440; equals base: true

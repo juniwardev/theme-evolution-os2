@@ -1,0 +1,6 @@
+blocks/text.liquid 7f23c863ed07
+blocks/group.liquid 7daea9c6440e
+sections/hello-world.liquid 97b5c1f6d007
+sections/image-banner.liquid 0357e01ec286
+sections/material-spotlight.liquid 82c538d97cf5
+sections/related-products.liquid eaee76ceb197

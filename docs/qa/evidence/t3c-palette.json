@@ -1,0 +1,32 @@
+{
+ "default": {
+  "valid": true,
+  "fg": "#333333",
+  "bandBg": "rgb(246, 246, 247)",
+  "h1": "rgb(51, 51, 51)",
+  "cardBg": "rgb(238, 243, 255)",
+  "cardColor": "rgb(92, 95, 98)",
+  "cardTitle": "rgb(32, 34, 35)",
+  "linkBg": "rgb(250, 251, 251)",
+  "heading": "rgb(51, 51, 51)",
+  "shopAll": "rgb(51, 51, 51)",
+  "shopAllBorder": "rgb(51, 51, 51)",
+  "btn2Bg": "rgb(227, 252, 1)",
+  "boxBg": "rgb(255, 255, 255)"
+ },
+ "palette": {
+  "valid": true,
+  "fg": "#ee1188",
+  "bandBg": "rgb(246, 246, 247)",
+  "h1": "rgb(51, 51, 51)",
+  "cardBg": "rgb(238, 243, 255)",
+  "cardColor": "rgb(92, 95, 98)",
+  "cardTitle": "rgb(32, 34, 35)",
+  "linkBg": "rgb(250, 251, 251)",
+  "heading": "rgb(238, 17, 136)",
+  "shopAll": "rgb(238, 17, 136)",
+  "shopAllBorder": "rgb(238, 17, 136)",
+  "btn2Bg": "rgb(227, 252, 1)",
+  "boxBg": "rgb(17, 34, 51)"
+ }
+}
