@@ -43,7 +43,7 @@
       {% endpaginate %}
     </div>
 
-    {% form 'new_comment', article, class: 'flex max-w-[28.125rem] flex-col gap-4' %}
+    {% form 'new_comment', article, class: 'flex max-w-[28.125rem] flex-col gap-4 [&_ul]:list-disc [&_ul]:ps-[1.5em]' %}
       <h2 class="font-heading text-2xl leading-tight font-bold uppercase">{{ 'blog.comment_form_title' | t }}</h2>
 
       {{ form.errors | default_errors }}
