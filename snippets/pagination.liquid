@@ -1,0 +1,53 @@
+{% doc %}
+  Renders page navigation for a paginated list from the paginate object: previous and
+  next links, page numbers and gaps. Renders nothing when there is only one page. The
+  current page carries aria-current.
+
+  @param {paginate} paginate - The paginate object of the enclosing paginate tag
+  @param {string} [anchor] - Optional element id appended to every link, without the #
+
+  @example
+  {% render 'pagination', paginate: paginate %}
+  {% render 'pagination', paginate: paginate, anchor: 'comments' %}
+{% enddoc %}
+
+{%- if paginate.pages > 1 -%}
+  {%- liquid
+    assign hash = ''
+    if anchor != blank
+      assign hash = '#' | append: anchor
+    endif
+    assign current_page_text = paginate.current_page | append: ''
+    assign item_classes = 'inline-flex h-11 min-w-11 items-center justify-center px-3'
+    assign link_classes = 'inline-flex h-11 min-w-11 items-center justify-center px-3 no-underline hover:underline'
+  -%}
+  <nav class="flex justify-center" aria-label="{{ 'general.pagination.label' | t }}" data-pagination>
+    <ul class="flex flex-wrap items-center justify-center gap-2" role="list">
+      {%- if paginate.previous.is_link -%}
+        <li>
+          <a href="{{ paginate.previous.url }}{{ hash }}" class="{{ link_classes }}" aria-label="{{ 'general.pagination.previous' | t }}">&larr;</a>
+        </li>
+      {%- endif -%}
+      {%- for part in paginate.parts -%}
+        {%- assign part_title_text = part.title | append: '' -%}
+        <li>
+          {%- if part.is_link -%}
+            <a href="{{ part.url }}{{ hash }}" class="{{ link_classes }}" aria-label="{{ 'general.pagination.page' | t: number: part.title }}">{{ part.title }}</a>
+          {%- elsif part_title_text == current_page_text -%}
+            <span class="{{ item_classes }} border border-current font-bold" aria-current="page">
+              <span class="sr-only">{{ 'general.pagination.page' | t: number: part.title }}</span>
+              <span aria-hidden="true">{{ part.title }}</span>
+            </span>
+          {%- else -%}
+            <span class="{{ item_classes }}">{{ part.title }}</span>
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+      {%- if paginate.next.is_link -%}
+        <li>
+          <a href="{{ paginate.next.url }}{{ hash }}" class="{{ link_classes }}" aria-label="{{ 'general.pagination.next' | t }}">&rarr;</a>
+        </li>
+      {%- endif -%}
+    </ul>
+  </nav>
+{%- endif -%}

@@ -124,6 +124,15 @@
   }
 }
 
+/*
+ * Auto-fill card grid shared by the collection, list-collections and search sections.
+ * Callers set the minimum track width as an inline --grid-min (a constant, or a mapped
+ * setting). min(..., 100%) lets one track shrink to the column on narrow screens.
+ */
+@utility grid-fill {
+  grid-template-columns: repeat(auto-fill, minmax(min(var(--grid-min), 100%), 1fr));
+}
+
 @layer base {
   /*
    * Moved from assets/critical.css (deleted in T0), verbatim except its universal
