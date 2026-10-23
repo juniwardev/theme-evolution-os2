@@ -257,6 +257,10 @@
     },
     "material_info": {
       "subtitle": "Primary composition"
+    },
+    "material_tooltip": {
+      "score_label": "Sustainability score:",
+      "unavailable_html": "Definition for <strong>{{ handle }}</strong> currently unavailable."
     }
   },
   "accessibility": {

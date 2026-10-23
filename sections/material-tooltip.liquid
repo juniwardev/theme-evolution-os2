@@ -19,27 +19,29 @@
   endif
 %}
 
-<div class="material-tooltip-inner">
+{%- assign escaped_handle = material_handle | escape -%}
+
+<div class="font-sans text-left text-[0.875rem]/[1.5] text-[#121212]">
   {% if material_metaobject != blank %}
-    <div class="material-info-content">
-      <h3 class="material-tooltip__title">
+    <div>
+      <h3 class="mb-2 text-[1rem] font-semibold tracking-[0.02em] text-black">
         {{ material_metaobject.name.value | default: material_metaobject.system.handle | replace: '-', ' ' | capitalize }}
       </h3>
       {% if material_metaobject.story.value != blank %}
-        <div class="material-tooltip__description">
+        <div class="m-0 text-[#4a4a4a]">
           {{ material_metaobject.story.value }}
         </div>
       {% endif %}
       
       {% if material_metaobject.sustainability_rating.value != blank %}
-        <div class="material-tooltip__score">
-          <strong>Sustainability Score:</strong> {{ material_metaobject.sustainability_rating.value }} / 5
+        <div class="mt-3 border-t border-[#f0f0f0] pt-3 text-[0.75rem] uppercase">
+          <strong>{{ 'sections.material_tooltip.score_label' | t }}</strong> {{ material_metaobject.sustainability_rating.value }} / 5
         </div>
       {% endif %}
     </div>
   {% else %}
-    <div class="material-info-content material-info-content--error">
-      <p>Definition for <strong>{{ material_handle }}</strong> currently unavailable.</p>
+    <div class="italic text-[#856404]">
+      <p>{{ 'sections.material_tooltip.unavailable_html' | t: handle: escaped_handle }}</p>
     </div>
   {% endif %}
 </div>

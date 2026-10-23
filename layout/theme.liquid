@@ -27,7 +27,6 @@
     {% # Tailwind, compiled from src/tailwind.css; base.css is legacy Dawn CSS inside @layer legacy %}
     {{ 'tailwind.css' | asset_url | stylesheet_tag: preload: true }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
-    {{ 'eco-tooltip.css' | asset_url | stylesheet_tag }}
 
     {% # Social, title, etc. %}
     {% render 'meta-tags' %}
