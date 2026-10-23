@@ -1,0 +1,6 @@
+{"375":{"cols":["271px"],"cg":"0px","min":"10rem","gap":"0px"},"1440":{"cols":["167px","167px","167px","167px","167px","167px","167px","167px"],"cg":"0px","min":"10rem","gap":"0px"},"mode":"px3","label":"collections--compact/0"}
+{"375":{"cols":["271px"],"cg":"10px","min":"10rem","gap":"10px"},"1440":{"cols":["182.281px","182.281px","182.281px","182.281px","182.281px","182.281px","182.281px"],"cg":"10px","min":"10rem","gap":"10px"},"mode":"px3","label":"collections--compact/10"}
+{"375":{"cols":["271px"],"cg":"50px","min":"10rem","gap":"50px"},"1440":{"cols":["181px","181px","181px","181px","181px","181px"],"cg":"50px","min":"10rem","gap":"50px"},"mode":"px3","label":"collections--compact/50"}
+{"375":{"cols":["271px"],"cg":"0px","min":"17.5rem","gap":"0px"},"1440":{"cols":["334px","334px","334px","334px"],"cg":"0px","min":"17.5rem","gap":"0px"},"mode":"px3","label":"collections--full/0"}
+{"375":{"cols":["271px"],"cg":"10px","min":"17.5rem","gap":"10px"},"1440":{"cols":["326.5px","326.5px","326.5px","326.5px"],"cg":"10px","min":"17.5rem","gap":"10px"},"mode":"px3","label":"collections--full/10"}
+{"375":{"cols":["271px"],"cg":"10px","min":"17.5rem","gap":"10px"},"1440":{"cols":["326.5px","326.5px","326.5px","326.5px"],"cg":"10px","min":"17.5rem","gap":"10px"},"mode":"px3","label":"collections--full/50"}

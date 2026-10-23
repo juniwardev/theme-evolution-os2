@@ -1,0 +1,303 @@
+{
+ "label": "head",
+ "lists": {
+  "collection": {
+   "1": {
+    "present": true,
+    "tag": "nav",
+    "hasHook": true,
+    "ariaLabel": "Pagination",
+    "hrefs": [
+     "/collections/all?page=2",
+     "/collections/all?page=3",
+     "/collections/all?page=8",
+     "/collections/all?page=2"
+    ],
+    "cur": [
+     {
+      "attr": "page",
+      "text": "Page 1\n              1"
+     }
+    ],
+    "tgt": [
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ]
+    ],
+    "html": "<nav class=\"flex justify-center\" aria-label=\"Pagination\" data-pagination=\"\">\n    <ul class=\"flex flex-wrap items-center justify-center gap-2\" role=\"list\"><li><span class=\"inline-flex h-11 min-w-11 items-center justify-center px-3 border border-current font-bold\" aria-current=\"page\">\n              <span class=\"sr-only\">Page 1</span>\n              <span aria-hidden=\"true\">1</span>\n            </span></li><li><a href=\"/collections/all?page=2\" class=\"inline-flex h-11 min-w-11 items-center justify-center px-3 no-underline hover:underline\" aria-label=\"Page 2\">2</a></li><li><a href=\"/collections/all?page=3\" class=\"inline-flex h-11 min-w-11 items-center justify-center px-3 no-underline hover:underli",
+    "text": "Page 1 1 23…8 →"
+   },
+   "4": {
+    "present": true,
+    "tag": "nav",
+    "hasHook": true,
+    "ariaLabel": "Pagination",
+    "hrefs": [
+     "/collections/all?page=3",
+     "/collections/all?page=1",
+     "/collections/all?page=2",
+     "/collections/all?page=3",
+     "/collections/all?page=5",
+     "/collections/all?page=6",
+     "/collections/all?page=8",
+     "/collections/all?page=5"
+    ],
+    "cur": [
+     {
+      "attr": "page",
+      "text": "Page 4\n              4"
+     }
+    ],
+    "tgt": [
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ]
+    ],
+    "html": "<nav class=\"flex justify-center\" aria-label=\"Pagination\" data-pagination=\"\">\n    <ul class=\"flex flex-wrap items-center justify-center gap-2\" role=\"list\"><li>\n          <a href=\"/collections/all?page=3\" class=\"inline-flex h-11 min-w-11 items-center justify-center px-3 no-underline hover:underline\" aria-label=\"Previous page\">←</a>\n        </li><li><a href=\"/collections/all?page=1\" class=\"inline-flex h-11 min-w-11 items-center justify-center px-3 no-underline hover:underline\" aria-label=\"Page 1\">1</a></li><li><a href=\"/collections/all?page=2\" class=\"inline-flex h-11 min-w-11 items-center justify-center px-3 no-underline hover:underline\" aria-label=\"Page 2\">2</a></li><li><a href=\"/collections/a",
+    "text": "← 123 Page 4 4 56…8 →"
+   },
+   "8": {
+    "present": true,
+    "tag": "nav",
+    "hasHook": true,
+    "ariaLabel": "Pagination",
+    "hrefs": [
+     "/collections/all?page=7",
+     "/collections/all?page=1",
+     "/collections/all?page=6",
+     "/collections/all?page=7"
+    ],
+    "cur": [
+     {
+      "attr": "page",
+      "text": "Page 8\n              8"
+     }
+    ],
+    "tgt": [
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ]
+    ],
+    "html": "<nav class=\"flex justify-center\" aria-label=\"Pagination\" data-pagination=\"\">\n    <ul class=\"flex flex-wrap items-center justify-center gap-2\" role=\"list\"><li>\n          <a href=\"/collections/all?page=7\" class=\"inline-flex h-11 min-w-11 items-center justify-center px-3 no-underline hover:underline\" aria-label=\"Previous page\">←</a>\n        </li><li><a href=\"/collections/all?page=1\" class=\"inline-flex h-11 min-w-11 items-center justify-center px-3 no-underline hover:underline\" aria-label=\"Page 1\">1</a></li><li><span class=\"inline-flex h-11 min-w-11 items-center justify-center px-3\">…</span></li><li><a href=\"/collections/all?page=6\" class=\"inline-flex h-11 min-w-11 items-center justify-center px",
+    "text": "← 1…67 Page 8 8"
+   },
+   "lastPage": 8
+  },
+  "search": {
+   "1": {
+    "present": true,
+    "tag": "nav",
+    "hasHook": true,
+    "ariaLabel": "Pagination",
+    "hrefs": [
+     "/search?page=2&q=snowboard",
+     "/search?page=3&q=snowboard",
+     "/search?page=8&q=snowboard",
+     "/search?page=2&q=snowboard"
+    ],
+    "cur": [
+     {
+      "attr": "page",
+      "text": "Page 1\n              1"
+     }
+    ],
+    "tgt": [
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ]
+    ],
+    "html": "<nav class=\"flex justify-center\" aria-label=\"Pagination\" data-pagination=\"\">\n    <ul class=\"flex flex-wrap items-center justify-center gap-2\" role=\"list\"><li><span class=\"inline-flex h-11 min-w-11 items-center justify-center px-3 border border-current font-bold\" aria-current=\"page\">\n              <span class=\"sr-only\">Page 1</span>\n              <span aria-hidden=\"true\">1</span>\n            </span></li><li><a href=\"/search?page=2&amp;q=snowboard\" class=\"inline-flex h-11 min-w-11 items-center justify-center px-3 no-underline hover:underline\" aria-label=\"Page 2\">2</a></li><li><a href=\"/search?page=3&amp;q=snowboard\" class=\"inline-flex h-11 min-w-11 items-center justify-center px-3 no-underline",
+    "text": "Page 1 1 23…8 →"
+   },
+   "4": {
+    "present": true,
+    "tag": "nav",
+    "hasHook": true,
+    "ariaLabel": "Pagination",
+    "hrefs": [
+     "/search?page=3&q=snowboard",
+     "/search?page=1&q=snowboard",
+     "/search?page=2&q=snowboard",
+     "/search?page=3&q=snowboard",
+     "/search?page=5&q=snowboard",
+     "/search?page=6&q=snowboard",
+     "/search?page=8&q=snowboard",
+     "/search?page=5&q=snowboard"
+    ],
+    "cur": [
+     {
+      "attr": "page",
+      "text": "Page 4\n              4"
+     }
+    ],
+    "tgt": [
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ]
+    ],
+    "html": "<nav class=\"flex justify-center\" aria-label=\"Pagination\" data-pagination=\"\">\n    <ul class=\"flex flex-wrap items-center justify-center gap-2\" role=\"list\"><li>\n          <a href=\"/search?page=3&amp;q=snowboard\" class=\"inline-flex h-11 min-w-11 items-center justify-center px-3 no-underline hover:underline\" aria-label=\"Previous page\">←</a>\n        </li><li><a href=\"/search?page=1&amp;q=snowboard\" class=\"inline-flex h-11 min-w-11 items-center justify-center px-3 no-underline hover:underline\" aria-label=\"Page 1\">1</a></li><li><a href=\"/search?page=2&amp;q=snowboard\" class=\"inline-flex h-11 min-w-11 items-center justify-center px-3 no-underline hover:underline\" aria-label=\"Page 2\">2</a></li><li><a",
+    "text": "← 123 Page 4 4 56…8 →"
+   },
+   "8": {
+    "present": true,
+    "tag": "nav",
+    "hasHook": true,
+    "ariaLabel": "Pagination",
+    "hrefs": [
+     "/search?page=7&q=snowboard",
+     "/search?page=1&q=snowboard",
+     "/search?page=6&q=snowboard",
+     "/search?page=7&q=snowboard"
+    ],
+    "cur": [
+     {
+      "attr": "page",
+      "text": "Page 8\n              8"
+     }
+    ],
+    "tgt": [
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ],
+     [
+      44,
+      44
+     ]
+    ],
+    "html": "<nav class=\"flex justify-center\" aria-label=\"Pagination\" data-pagination=\"\">\n    <ul class=\"flex flex-wrap items-center justify-center gap-2\" role=\"list\"><li>\n          <a href=\"/search?page=7&amp;q=snowboard\" class=\"inline-flex h-11 min-w-11 items-center justify-center px-3 no-underline hover:underline\" aria-label=\"Previous page\">←</a>\n        </li><li><a href=\"/search?page=1&amp;q=snowboard\" class=\"inline-flex h-11 min-w-11 items-center justify-center px-3 no-underline hover:underline\" aria-label=\"Page 1\">1</a></li><li><span class=\"inline-flex h-11 min-w-11 items-center justify-center px-3\">…</span></li><li><a href=\"/search?page=6&amp;q=snowboard\" class=\"inline-flex h-11 min-w-11 items-cen",
+    "text": "← 1…67 Page 8 8"
+   },
+   "lastPage": 8
+  }
+ }
+}

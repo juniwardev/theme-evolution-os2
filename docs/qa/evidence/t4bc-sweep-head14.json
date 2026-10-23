@@ -1,0 +1,1204 @@
+{
+ "collection-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase",
+   "grid",
+   "overflow-hidden"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 109,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "collections-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase",
+   "grid",
+   "overflow-hidden"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 19,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "search-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase",
+   "grid",
+   "overflow-hidden"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 84,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [
+   {
+    "tag": "input",
+    "type": "search",
+    "key": "q",
+    "bw": "1px",
+    "app": false
+   }
+  ],
+  "incidental": 0
+ },
+ "page-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 3,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "page2-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 5,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "blog-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 3,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "404-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 5,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "archive-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase",
+   "grid",
+   "overflow-hidden"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 116,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "home-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "grid",
+   "uppercase"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 25,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "wax-375": {
+  "unlayered": [
+   {
+    "sel": "#shopify-buyer-consent",
+    "owner": "inline<style>#shopify-accelerated-checkout-cart",
+    "n": 1,
+    "first": "small.hidden"
+   },
+   {
+    "sel": "#shopify-buyer-consent.hidden",
+    "owner": "inline<style>#shopify-accelerated-checkout-cart",
+    "n": 1,
+    "first": "small.hidden"
+   },
+   {
+    "sel": "#shopify-subscription-policy-button",
+    "owner": "inline<style>#shopify-accelerated-checkout-cart",
+    "n": 1,
+    "first": "span."
+   },
+   {
+    "sel": "#shopify-subscription-policy-button",
+    "owner": "inline<style>#shopify-accelerated-checkout-cart",
+    "n": 1,
+    "first": "span."
+   }
+  ],
+  "legacyHits": [
+   "uppercase",
+   "loading__spinner",
+   "hidden",
+   "shopify-payment-button",
+   "shopify-payment-button__button",
+   "shopify-payment-button__button--unbranded"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 47,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [
+   {
+    "tag": "select",
+    "type": "select-one",
+    "key": "id",
+    "bw": "1px",
+    "app": false
+   },
+   {
+    "tag": "input",
+    "type": "number",
+    "key": "quantity",
+    "bw": "1px",
+    "app": false
+   }
+  ],
+  "incidental": 0
+ },
+ "snow-375": {
+  "unlayered": [
+   {
+    "sel": "#more-payment-options-link",
+    "owner": "inline<style>#[object HTMLInputElement]",
+    "n": 1,
+    "first": "a.shopify-payment-button__more-options"
+   }
+  ],
+  "legacyHits": [
+   "uppercase",
+   "loading__spinner",
+   "hidden",
+   "shopify-payment-button"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 55,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [
+   {
+    "tag": "select",
+    "type": "select-one",
+    "key": "id",
+    "bw": "1px",
+    "app": false
+   },
+   {
+    "tag": "input",
+    "type": "number",
+    "key": "quantity",
+    "bw": "1px",
+    "app": false
+   }
+  ],
+  "incidental": 0
+ },
+ "p3p-375": {
+  "unlayered": [
+   {
+    "sel": "#more-payment-options-link",
+    "owner": "inline<style>#[object HTMLInputElement]",
+    "n": 1,
+    "first": "a.shopify-payment-button__more-options"
+   }
+  ],
+  "legacyHits": [
+   "uppercase",
+   "loading__spinner",
+   "hidden",
+   "shopify-payment-button"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 42,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [
+   {
+    "tag": "input",
+    "type": "number",
+    "key": "quantity",
+    "bw": "1px",
+    "app": false
+   }
+  ],
+  "incidental": 0
+ },
+ "cart-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 6,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "policy-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 5,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "policy2-375": {
+  "unlayered": [],
+  "legacyHits": [],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 0,
+  "parity": [
+   {
+    "tag": "ul",
+    "type": null,
+    "where": "theme",
+    "at": "div.rte > div > ul",
+    "text": "Contact details including your"
+   },
+   {
+    "tag": "ul",
+    "type": null,
+    "where": "theme",
+    "at": "div.rte > div > ul",
+    "text": "Directly from you including wh"
+   },
+   {
+    "tag": "ul",
+    "type": null,
+    "where": "theme",
+    "at": "div.rte > div > ul",
+    "text": "Provide, Tailor, and Improve t"
+   },
+   {
+    "tag": "ul",
+    "type": null,
+    "where": "theme",
+    "at": "div.rte > div > ul",
+    "text": "With Shopify, vendors and othe"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "ul > li > a",
+    "text": "here"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div > p > a",
+    "text": "Shopify Consumer Privacy Polic"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div > p > a",
+    "text": "Shopify Privacy Portal Link"
+   },
+   {
+    "tag": "ul",
+    "type": null,
+    "where": "theme",
+    "at": "div.rte > div > ul",
+    "text": "Right to Access / Know. You ma"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "ul > li > a",
+    "text": "here"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "collection-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase",
+   "grid",
+   "overflow-hidden"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 109,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "collections-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase",
+   "grid",
+   "overflow-hidden"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 19,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "search-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase",
+   "grid",
+   "overflow-hidden"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 84,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [
+   {
+    "tag": "input",
+    "type": "search",
+    "key": "q",
+    "bw": "1px",
+    "app": false
+   }
+  ],
+  "incidental": 0
+ },
+ "page-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 3,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "page2-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 5,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "blog-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 3,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "404-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 5,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "archive-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase",
+   "grid",
+   "overflow-hidden"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 116,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "home-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "grid",
+   "uppercase"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 25,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "wax-1440": {
+  "unlayered": [
+   {
+    "sel": "#shopify-buyer-consent",
+    "owner": "inline<style>#shopify-accelerated-checkout-cart",
+    "n": 1,
+    "first": "small.hidden"
+   },
+   {
+    "sel": "#shopify-buyer-consent.hidden",
+    "owner": "inline<style>#shopify-accelerated-checkout-cart",
+    "n": 1,
+    "first": "small.hidden"
+   },
+   {
+    "sel": "#shopify-subscription-policy-button",
+    "owner": "inline<style>#shopify-accelerated-checkout-cart",
+    "n": 1,
+    "first": "span."
+   },
+   {
+    "sel": "#shopify-subscription-policy-button",
+    "owner": "inline<style>#shopify-accelerated-checkout-cart",
+    "n": 1,
+    "first": "span."
+   }
+  ],
+  "legacyHits": [
+   "uppercase",
+   "loading__spinner",
+   "hidden",
+   "shopify-payment-button",
+   "shopify-payment-button__button",
+   "shopify-payment-button__button--unbranded"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 47,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [
+   {
+    "tag": "select",
+    "type": "select-one",
+    "key": "id",
+    "bw": "1px",
+    "app": false
+   },
+   {
+    "tag": "input",
+    "type": "number",
+    "key": "quantity",
+    "bw": "1px",
+    "app": false
+   }
+  ],
+  "incidental": 0
+ },
+ "snow-1440": {
+  "unlayered": [
+   {
+    "sel": "#more-payment-options-link",
+    "owner": "inline<style>#[object HTMLInputElement]",
+    "n": 1,
+    "first": "a.shopify-payment-button__more-options"
+   }
+  ],
+  "legacyHits": [
+   "uppercase",
+   "loading__spinner",
+   "hidden",
+   "shopify-payment-button"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 55,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [
+   {
+    "tag": "select",
+    "type": "select-one",
+    "key": "id",
+    "bw": "1px",
+    "app": false
+   },
+   {
+    "tag": "input",
+    "type": "number",
+    "key": "quantity",
+    "bw": "1px",
+    "app": false
+   }
+  ],
+  "incidental": 0
+ },
+ "p3p-1440": {
+  "unlayered": [
+   {
+    "sel": "#more-payment-options-link",
+    "owner": "inline<style>#[object HTMLInputElement]",
+    "n": 1,
+    "first": "a.shopify-payment-button__more-options"
+   }
+  ],
+  "legacyHits": [
+   "uppercase",
+   "loading__spinner",
+   "hidden",
+   "shopify-payment-button"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 42,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [
+   {
+    "tag": "input",
+    "type": "number",
+    "key": "quantity",
+    "bw": "1px",
+    "app": false
+   }
+  ],
+  "incidental": 0
+ },
+ "cart-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 6,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "policy-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 5,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "policy2-1440": {
+  "unlayered": [],
+  "legacyHits": [],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 0,
+  "parity": [
+   {
+    "tag": "ul",
+    "type": null,
+    "where": "theme",
+    "at": "div.rte > div > ul",
+    "text": "Contact details including your"
+   },
+   {
+    "tag": "ul",
+    "type": null,
+    "where": "theme",
+    "at": "div.rte > div > ul",
+    "text": "Directly from you including wh"
+   },
+   {
+    "tag": "ul",
+    "type": null,
+    "where": "theme",
+    "at": "div.rte > div > ul",
+    "text": "Provide, Tailor, and Improve t"
+   },
+   {
+    "tag": "ul",
+    "type": null,
+    "where": "theme",
+    "at": "div.rte > div > ul",
+    "text": "With Shopify, vendors and othe"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "ul > li > a",
+    "text": "here"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div > p > a",
+    "text": "Shopify Consumer Privacy Polic"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div > p > a",
+    "text": "Shopify Privacy Portal Link"
+   },
+   {
+    "tag": "ul",
+    "type": null,
+    "where": "theme",
+    "at": "div.rte > div > ul",
+    "text": "Right to Access / Know. You ma"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "ul > li > a",
+    "text": "here"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ }
+}

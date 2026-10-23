@@ -1,0 +1,279 @@
+{
+ "label": "base",
+ "lists": {
+  "collection": {
+   "1": {
+    "present": true,
+    "tag": "none (spans)",
+    "hasHook": false,
+    "ariaLabel": null,
+    "hrefs": [
+     "/collections/all?page=2",
+     "/collections/all?page=3",
+     "/collections/all?page=8",
+     "/collections/all?page=2"
+    ],
+    "cur": [
+     {
+      "attr": null,
+      "text": "1"
+     }
+    ],
+    "tgt": [
+     [
+      9,
+      19
+     ],
+     [
+      9,
+      19
+     ],
+     [
+      10,
+      19
+     ],
+     [
+      49,
+      19
+     ]
+    ],
+    "html": "",
+    "text": "1 2 3 … 8 Next »"
+   },
+   "4": {
+    "present": true,
+    "tag": "none (spans)",
+    "hasHook": false,
+    "ariaLabel": null,
+    "hrefs": [
+     "/collections/all?page=3",
+     "/collections/all?page=1",
+     "/collections/all?page=2",
+     "/collections/all?page=3",
+     "/collections/all?page=5",
+     "/collections/all?page=6",
+     "/collections/all?page=8",
+     "/collections/all?page=5"
+    ],
+    "cur": [
+     {
+      "attr": null,
+      "text": "4"
+     }
+    ],
+    "tgt": [
+     [
+      79,
+      19
+     ],
+     [
+      6,
+      19
+     ],
+     [
+      9,
+      19
+     ],
+     [
+      9,
+      19
+     ],
+     [
+      9,
+      19
+     ],
+     [
+      10,
+      19
+     ],
+     [
+      10,
+      19
+     ],
+     [
+      49,
+      19
+     ]
+    ],
+    "html": "",
+    "text": "« Previous 1 2 3 4 5 6 … 8 Next »"
+   },
+   "8": {
+    "present": true,
+    "tag": "none (spans)",
+    "hasHook": false,
+    "ariaLabel": null,
+    "hrefs": [
+     "/collections/all?page=7",
+     "/collections/all?page=1",
+     "/collections/all?page=6",
+     "/collections/all?page=7"
+    ],
+    "cur": [
+     {
+      "attr": null,
+      "text": "8"
+     }
+    ],
+    "tgt": [
+     [
+      79,
+      19
+     ],
+     [
+      6,
+      19
+     ],
+     [
+      10,
+      19
+     ],
+     [
+      9,
+      19
+     ]
+    ],
+    "html": "",
+    "text": "« Previous 1 … 6 7 8"
+   },
+   "lastPage": 8
+  },
+  "search": {
+   "1": {
+    "present": true,
+    "tag": "none (spans)",
+    "hasHook": false,
+    "ariaLabel": null,
+    "hrefs": [
+     "/search?page=2&q=snowboard",
+     "/search?page=3&q=snowboard",
+     "/search?page=8&q=snowboard",
+     "/search?page=2&q=snowboard"
+    ],
+    "cur": [
+     {
+      "attr": null,
+      "text": "1"
+     }
+    ],
+    "tgt": [
+     [
+      9,
+      19
+     ],
+     [
+      9,
+      19
+     ],
+     [
+      10,
+      19
+     ],
+     [
+      49,
+      19
+     ]
+    ],
+    "html": "",
+    "text": "1 2 3 … 8 Next »"
+   },
+   "4": {
+    "present": true,
+    "tag": "none (spans)",
+    "hasHook": false,
+    "ariaLabel": null,
+    "hrefs": [
+     "/search?page=3&q=snowboard",
+     "/search?page=1&q=snowboard",
+     "/search?page=2&q=snowboard",
+     "/search?page=3&q=snowboard",
+     "/search?page=5&q=snowboard",
+     "/search?page=6&q=snowboard",
+     "/search?page=8&q=snowboard",
+     "/search?page=5&q=snowboard"
+    ],
+    "cur": [
+     {
+      "attr": null,
+      "text": "4"
+     }
+    ],
+    "tgt": [
+     [
+      79,
+      19
+     ],
+     [
+      6,
+      19
+     ],
+     [
+      9,
+      19
+     ],
+     [
+      9,
+      19
+     ],
+     [
+      9,
+      19
+     ],
+     [
+      10,
+      19
+     ],
+     [
+      10,
+      19
+     ],
+     [
+      49,
+      19
+     ]
+    ],
+    "html": "",
+    "text": "« Previous 1 2 3 4 5 6 … 8 Next »"
+   },
+   "8": {
+    "present": true,
+    "tag": "none (spans)",
+    "hasHook": false,
+    "ariaLabel": null,
+    "hrefs": [
+     "/search?page=7&q=snowboard",
+     "/search?page=1&q=snowboard",
+     "/search?page=6&q=snowboard",
+     "/search?page=7&q=snowboard"
+    ],
+    "cur": [
+     {
+      "attr": null,
+      "text": "8"
+     }
+    ],
+    "tgt": [
+     [
+      79,
+      19
+     ],
+     [
+      6,
+      19
+     ],
+     [
+      10,
+      19
+     ],
+     [
+      9,
+      19
+     ]
+    ],
+    "html": "",
+    "text": "« Previous 1 … 6 7 8"
+   },
+   "lastPage": 8
+  }
+ }
+}

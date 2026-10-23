@@ -1,0 +1,1 @@
+200 {"ta":"center","imgs":[{"d":"inline","rect":[570,0,300,199.9]}],"h2":"theme-evolution-os2"}

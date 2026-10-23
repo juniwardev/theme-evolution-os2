@@ -1,0 +1,184 @@
+{
+ "/pages/contact": {
+  "375": {
+   "status": 200,
+   "nPre": 9,
+   "xPage": 0,
+   "offs": 0,
+   "h1Count": 1,
+   "h1": {
+    "left": 52,
+    "ff": "Oswald, sans",
+    "fs": "30px",
+    "fw": "700",
+    "tt": "uppercase",
+    "lh": "37.5px",
+    "color": "rgb(51, 51, 51)"
+   },
+   "shell": {
+    "padTop": "40px",
+    "padBottom": "40px",
+    "padL": "32px",
+    "left": 20,
+    "right": 355,
+    "gap": "32px",
+    "kids": [
+     [
+      "h1",
+      52,
+      323,
+      40,
+      37.5
+     ]
+    ]
+   },
+   "logoLeft": 52,
+   "grids": [],
+   "imgsNoDims": 0,
+   "imgs": 0,
+   "headings": [
+    "h1"
+   ],
+   "emptyDivs": 0
+  },
+  "1440": {
+   "status": 200,
+   "nPre": 9,
+   "xPage": 0,
+   "offs": 0,
+   "h1Count": 1,
+   "h1": {
+    "left": 52,
+    "ff": "Oswald, sans",
+    "fs": "36px",
+    "fw": "700",
+    "tt": "uppercase",
+    "lh": "45px",
+    "color": "rgb(51, 51, 51)"
+   },
+   "shell": {
+    "padTop": "64px",
+    "padBottom": "64px",
+    "padL": "32px",
+    "left": 20,
+    "right": 1420,
+    "gap": "32px",
+    "kids": [
+     [
+      "h1",
+      52,
+      1388,
+      64,
+      45
+     ]
+    ]
+   },
+   "logoLeft": 52,
+   "grids": [],
+   "imgsNoDims": 0,
+   "imgs": 0,
+   "headings": [
+    "h1"
+   ],
+   "emptyDivs": 0
+  }
+ },
+ "/pages/the-balanced-face-test-page": {
+  "375": {
+   "status": 200,
+   "nPre": 9,
+   "xPage": 0,
+   "offs": 0,
+   "h1Count": 1,
+   "h1": {
+    "left": 52,
+    "ff": "Oswald, sans",
+    "fs": "30px",
+    "fw": "700",
+    "tt": "uppercase",
+    "lh": "37.5px",
+    "color": "rgb(51, 51, 51)"
+   },
+   "shell": {
+    "padTop": "40px",
+    "padBottom": "40px",
+    "padL": "32px",
+    "left": 20,
+    "right": 355,
+    "gap": "32px",
+    "kids": [
+     [
+      "h1",
+      52,
+      323,
+      40,
+      75
+     ],
+     [
+      "div",
+      52,
+      323,
+      147,
+      19
+     ]
+    ]
+   },
+   "logoLeft": 52,
+   "grids": [],
+   "imgsNoDims": 0,
+   "imgs": 0,
+   "headings": [
+    "h1"
+   ],
+   "emptyDivs": 0
+  },
+  "1440": {
+   "status": 200,
+   "nPre": 9,
+   "xPage": 0,
+   "offs": 0,
+   "h1Count": 1,
+   "h1": {
+    "left": 52,
+    "ff": "Oswald, sans",
+    "fs": "36px",
+    "fw": "700",
+    "tt": "uppercase",
+    "lh": "45px",
+    "color": "rgb(51, 51, 51)"
+   },
+   "shell": {
+    "padTop": "64px",
+    "padBottom": "64px",
+    "padL": "32px",
+    "left": 20,
+    "right": 1420,
+    "gap": "32px",
+    "kids": [
+     [
+      "h1",
+      52,
+      1388,
+      64,
+      45
+     ],
+     [
+      "div",
+      52,
+      1388,
+      141,
+      19
+     ]
+    ]
+   },
+   "logoLeft": 52,
+   "grids": [],
+   "imgsNoDims": 0,
+   "imgs": 0,
+   "headings": [
+    "h1"
+   ],
+   "emptyDivs": 0
+  }
+ }
+}

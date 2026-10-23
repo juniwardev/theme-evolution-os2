@@ -1,0 +1,2 @@
+added  : basis-48 border-black/8 gap-(--grid-gap) grid-fill hover:-translate-y-1.25 hover:shadow-[0_10px_30px_rgb(0_0_0/0.05)] leading-[1.6] max-w-[37.5rem] mb-16 md:grid-cols-2 min-h-32 min-w-11 mt-auto text-[#444]
+removed: capitalize contents filter flex-grow transform truncate visible

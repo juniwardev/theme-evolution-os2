@@ -1,0 +1,1 @@
+{"mode":"px6","label":"palette","token":"#ee1188","collH1":"rgb(238, 17, 136)","collLink":"rgb(238, 17, 136)","archive":{"cardBg":"rgb(255, 255, 255)","cardColor":"rgb(51, 51, 51)","story":"rgb(68, 68, 68)","desc":"oklab(0.621123 0.247756 -0.012115 / 0.75)","h1":"rgb(238, 17, 136)"}}

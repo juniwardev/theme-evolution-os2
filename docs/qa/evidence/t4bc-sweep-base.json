@@ -1,0 +1,2588 @@
+{
+ "collection-375": {
+  "unlayered": [
+   {
+    "sel": ".collection-products",
+    "owner": "styles.css",
+    "n": 1,
+    "first": "div.collection-products"
+   }
+  ],
+  "legacyHits": [
+   "overflow-hidden"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 108,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "Gift Card"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "Selling Plans Ski Wax"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The 3p Fulfilled Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Collection Snowboard: Alte"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Collection Snowboard: Hydr"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Collection Snowboard: Liqu"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Collection Snowboard: Oxyg"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Compare at Price Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Complete Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Inventory Not Tracked Snow"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Multi-location Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Multi-managed Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Out of Stock Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Rental Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Videographer Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "collections-375": {
+  "unlayered": [
+   {
+    "sel": ".collections",
+    "owner": "styles.css",
+    "n": 1,
+    "first": "div.collections collections--full collection"
+   },
+   {
+    "sel": ".collections--full",
+    "owner": "styles.css",
+    "n": 1,
+    "first": "div.collections collections--full collection"
+   },
+   {
+    "sel": ".collection-card",
+    "owner": "styles.css",
+    "n": 3,
+    "first": "a.collection-card"
+   },
+   {
+    "sel": ".collections-custom-gap-template--27595353522272__main",
+    "owner": "inline<style>#shopify-section-template--27595353522272__main",
+    "n": 1,
+    "first": "div.collections collections--full collection"
+   }
+  ],
+  "legacyHits": [
+   "overflow-hidden"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 19,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "search-375": {
+  "unlayered": [
+   {
+    "sel": ".search-results",
+    "owner": "styles.css",
+    "n": 1,
+    "first": "div.search-results"
+   }
+  ],
+  "legacyHits": [
+   "overflow-hidden"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 97,
+  "parity": [
+   {
+    "tag": "input",
+    "type": "search",
+    "where": "theme",
+    "at": "div#shopify-section-template--27595353653344.shopify-section > form > input",
+    "text": ""
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The 3p Fulfilled Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Collection Snowboard: Oxyg"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Inventory Not Tracked Snow"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Complete Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Videographer Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Collection Snowboard: Hydr"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Collection Snowboard: Liqu"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Collection Snowboard: Alte"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Multi-managed Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Compare at Price Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Multi-location Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Rental Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "Selling Plans Ski Wax"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Out of Stock Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "Gift Card"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [
+   {
+    "tag": "input",
+    "type": "search",
+    "key": "q",
+    "bw": "1px",
+    "app": false
+   }
+  ],
+  "incidental": 0
+ },
+ "page-375": {
+  "unlayered": [],
+  "legacyHits": [],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 2,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "page2-375": {
+  "unlayered": [],
+  "legacyHits": [],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 3,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "blog-375": {
+  "unlayered": [],
+  "legacyHits": [],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 2,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "404-375": {
+  "unlayered": [],
+  "legacyHits": [],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 4,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div#shopify-section-template--27595353325664.shopify-section > a",
+    "text": "Back to shopping"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "archive-375": {
+  "unlayered": [
+   {
+    "sel": ".section-template--27595353587808__main-padding",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 1,
+    "first": "div.section-template--27595353587808__main-p"
+   },
+   {
+    "sel": ".material-grid",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 1,
+    "first": "div.material-grid"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bars",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 30,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar--active",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 21,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card"
+   },
+   {
+    "sel": ".material-archive-card",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card"
+   },
+   {
+    "sel": ".material-archive-card__image",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__image"
+   },
+   {
+    "sel": ".material-archive-card__image img",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "img."
+   },
+   {
+    "sel": ".material-archive-card__content",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__content"
+   },
+   {
+    "sel": ".material-archive-card__title",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "h2.material-archive-card__title"
+   },
+   {
+    "sel": ".material-archive-card__story",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__story"
+   },
+   {
+    "sel": ".material-archive-card__footer",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__footer"
+   },
+   {
+    "sel": ".material-archive__header",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 1,
+    "first": "div.material-archive__header center mb-12"
+   },
+   {
+    "sel": ".material-archive__description",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 1,
+    "first": "div.material-archive__description rte"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-header",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-he"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-0",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-1",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-2",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-3",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-4",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-0",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-1",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-2",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-3",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-4",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-0",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-1",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-2",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-3",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-4",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-0",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-1",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-2",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-3",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-4",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-0",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-1",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-2",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-3",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-4",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-0",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-1",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-2",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-3",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-4",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   }
+  ],
+  "legacyHits": [
+   "page-width",
+   "center",
+   "h1",
+   "rte"
+  ],
+  "emptyDivs": [
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   }
+  ],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 136,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "home-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "grid",
+   "uppercase"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 25,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "wax-375": {
+  "unlayered": [
+   {
+    "sel": "#shopify-buyer-consent",
+    "owner": "inline<style>#shopify-accelerated-checkout-cart",
+    "n": 1,
+    "first": "small.hidden"
+   },
+   {
+    "sel": "#shopify-buyer-consent.hidden",
+    "owner": "inline<style>#shopify-accelerated-checkout-cart",
+    "n": 1,
+    "first": "small.hidden"
+   },
+   {
+    "sel": "#shopify-subscription-policy-button",
+    "owner": "inline<style>#shopify-accelerated-checkout-cart",
+    "n": 1,
+    "first": "span."
+   },
+   {
+    "sel": "#shopify-subscription-policy-button",
+    "owner": "inline<style>#shopify-accelerated-checkout-cart",
+    "n": 1,
+    "first": "span."
+   }
+  ],
+  "legacyHits": [
+   "uppercase",
+   "loading__spinner",
+   "hidden",
+   "shopify-payment-button",
+   "shopify-payment-button__button",
+   "shopify-payment-button__button--unbranded"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 47,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [
+   {
+    "tag": "select",
+    "type": "select-one",
+    "key": "id",
+    "bw": "1px",
+    "app": false
+   },
+   {
+    "tag": "input",
+    "type": "number",
+    "key": "quantity",
+    "bw": "1px",
+    "app": false
+   }
+  ],
+  "incidental": 0
+ },
+ "snow-375": {
+  "unlayered": [
+   {
+    "sel": "#more-payment-options-link",
+    "owner": "inline<style>#[object HTMLInputElement]",
+    "n": 1,
+    "first": "a.shopify-payment-button__more-options"
+   }
+  ],
+  "legacyHits": [
+   "uppercase",
+   "loading__spinner",
+   "hidden",
+   "shopify-payment-button"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 55,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [
+   {
+    "tag": "select",
+    "type": "select-one",
+    "key": "id",
+    "bw": "1px",
+    "app": false
+   },
+   {
+    "tag": "input",
+    "type": "number",
+    "key": "quantity",
+    "bw": "1px",
+    "app": false
+   }
+  ],
+  "incidental": 0
+ },
+ "p3p-375": {
+  "unlayered": [
+   {
+    "sel": "#more-payment-options-link",
+    "owner": "inline<style>#[object HTMLInputElement]",
+    "n": 1,
+    "first": "a.shopify-payment-button__more-options"
+   }
+  ],
+  "legacyHits": [
+   "uppercase",
+   "loading__spinner",
+   "hidden",
+   "shopify-payment-button"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 42,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [
+   {
+    "tag": "input",
+    "type": "number",
+    "key": "quantity",
+    "bw": "1px",
+    "app": false
+   }
+  ],
+  "incidental": 0
+ },
+ "cart-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 6,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "policy-375": {
+  "unlayered": [],
+  "legacyHits": [],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 4,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div#shopify-section-template--27595353325664.shopify-section > a",
+    "text": "Back to shopping"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "policy2-375": {
+  "unlayered": [],
+  "legacyHits": [],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 0,
+  "parity": [
+   {
+    "tag": "ul",
+    "type": null,
+    "where": "theme",
+    "at": "div.rte > div > ul",
+    "text": "Contact details including your"
+   },
+   {
+    "tag": "ul",
+    "type": null,
+    "where": "theme",
+    "at": "div.rte > div > ul",
+    "text": "Directly from you including wh"
+   },
+   {
+    "tag": "ul",
+    "type": null,
+    "where": "theme",
+    "at": "div.rte > div > ul",
+    "text": "Provide, Tailor, and Improve t"
+   },
+   {
+    "tag": "ul",
+    "type": null,
+    "where": "theme",
+    "at": "div.rte > div > ul",
+    "text": "With Shopify, vendors and othe"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "ul > li > a",
+    "text": "here"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div > p > a",
+    "text": "Shopify Consumer Privacy Polic"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div > p > a",
+    "text": "Shopify Privacy Portal Link"
+   },
+   {
+    "tag": "ul",
+    "type": null,
+    "where": "theme",
+    "at": "div.rte > div > ul",
+    "text": "Right to Access / Know. You ma"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "ul > li > a",
+    "text": "here"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "collection-1440": {
+  "unlayered": [
+   {
+    "sel": ".collection-products",
+    "owner": "styles.css",
+    "n": 1,
+    "first": "div.collection-products"
+   }
+  ],
+  "legacyHits": [
+   "overflow-hidden"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 108,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "Gift Card"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "Selling Plans Ski Wax"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The 3p Fulfilled Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Collection Snowboard: Alte"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Collection Snowboard: Hydr"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Collection Snowboard: Liqu"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Collection Snowboard: Oxyg"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Compare at Price Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Complete Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Inventory Not Tracked Snow"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Multi-location Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Multi-managed Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Out of Stock Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Rental Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.collection-product__content > p > a",
+    "text": "The Videographer Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "collections-1440": {
+  "unlayered": [
+   {
+    "sel": ".collections",
+    "owner": "styles.css",
+    "n": 1,
+    "first": "div.collections collections--full collection"
+   },
+   {
+    "sel": ".collections--full",
+    "owner": "styles.css",
+    "n": 1,
+    "first": "div.collections collections--full collection"
+   },
+   {
+    "sel": ".collection-card",
+    "owner": "styles.css",
+    "n": 3,
+    "first": "a.collection-card"
+   },
+   {
+    "sel": ".collections-custom-gap-template--27595353522272__main",
+    "owner": "inline<style>#shopify-section-template--27595353522272__main",
+    "n": 1,
+    "first": "div.collections collections--full collection"
+   }
+  ],
+  "legacyHits": [
+   "overflow-hidden"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 19,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "search-1440": {
+  "unlayered": [
+   {
+    "sel": ".search-results",
+    "owner": "styles.css",
+    "n": 1,
+    "first": "div.search-results"
+   }
+  ],
+  "legacyHits": [
+   "overflow-hidden"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 97,
+  "parity": [
+   {
+    "tag": "input",
+    "type": "search",
+    "where": "theme",
+    "at": "div#shopify-section-template--27595353653344.shopify-section > form > input",
+    "text": ""
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The 3p Fulfilled Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Collection Snowboard: Oxyg"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Inventory Not Tracked Snow"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Complete Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Videographer Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Collection Snowboard: Hydr"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Collection Snowboard: Liqu"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Collection Snowboard: Alte"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Multi-managed Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Compare at Price Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Multi-location Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Rental Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "Selling Plans Ski Wax"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "The Out of Stock Snowboard"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.search-result__content > p > a",
+    "text": "Gift Card"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [
+   {
+    "tag": "input",
+    "type": "search",
+    "key": "q",
+    "bw": "1px",
+    "app": false
+   }
+  ],
+  "incidental": 0
+ },
+ "page-1440": {
+  "unlayered": [],
+  "legacyHits": [],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 2,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "page2-1440": {
+  "unlayered": [],
+  "legacyHits": [],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 3,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "blog-1440": {
+  "unlayered": [],
+  "legacyHits": [],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 2,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "404-1440": {
+  "unlayered": [],
+  "legacyHits": [],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 4,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div#shopify-section-template--27595353325664.shopify-section > a",
+    "text": "Back to shopping"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "archive-1440": {
+  "unlayered": [
+   {
+    "sel": ".section-template--27595353587808__main-padding",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 1,
+    "first": "div.section-template--27595353587808__main-p"
+   },
+   {
+    "sel": ".section-template--27595353587808__main-padding",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 1,
+    "first": "div.section-template--27595353587808__main-p"
+   },
+   {
+    "sel": ".material-grid",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 1,
+    "first": "div.material-grid"
+   },
+   {
+    "sel": ".material-grid",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 1,
+    "first": "div.material-grid"
+   },
+   {
+    "sel": ".material-grid",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 1,
+    "first": "div.material-grid"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bars",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 30,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar--active",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 21,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card"
+   },
+   {
+    "sel": ".material-archive-card",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card"
+   },
+   {
+    "sel": ".material-archive-card__image",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__image"
+   },
+   {
+    "sel": ".material-archive-card__image img",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "img."
+   },
+   {
+    "sel": ".material-archive-card__content",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__content"
+   },
+   {
+    "sel": ".material-archive-card__title",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "h2.material-archive-card__title"
+   },
+   {
+    "sel": ".material-archive-card__story",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__story"
+   },
+   {
+    "sel": ".material-archive-card__footer",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__footer"
+   },
+   {
+    "sel": ".material-archive__header",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 1,
+    "first": "div.material-archive__header center mb-12"
+   },
+   {
+    "sel": ".material-archive__description",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 1,
+    "first": "div.material-archive__description rte"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-header",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-he"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-0",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-1",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-2",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-3",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-4",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-0",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-1",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-2",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-3",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-4",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-0",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-1",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-2",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-3",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-4",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-0",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-1",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-2",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-3",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-4",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-0",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-1",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-2",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-3",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-4",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-0",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-1",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-2",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-3",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   },
+   {
+    "sel": ".material-archive-card__sustainability-bar-delay-4",
+    "owner": "inline<style>#shopify-section-template--27595353587808__main",
+    "n": 6,
+    "first": "div.material-archive-card__sustainability-ba"
+   }
+  ],
+  "legacyHits": [
+   "page-width",
+   "center",
+   "h1",
+   "rte"
+  ],
+  "emptyDivs": [
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   },
+   {
+    "cls": "material-archive-card__sustainability-bar material-archive-c",
+    "display": "block",
+    "hasCloseHook": false
+   }
+  ],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 136,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "home-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "grid",
+   "uppercase"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 25,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "wax-1440": {
+  "unlayered": [
+   {
+    "sel": "#shopify-buyer-consent",
+    "owner": "inline<style>#shopify-accelerated-checkout-cart",
+    "n": 1,
+    "first": "small.hidden"
+   },
+   {
+    "sel": "#shopify-buyer-consent.hidden",
+    "owner": "inline<style>#shopify-accelerated-checkout-cart",
+    "n": 1,
+    "first": "small.hidden"
+   },
+   {
+    "sel": "#shopify-subscription-policy-button",
+    "owner": "inline<style>#shopify-accelerated-checkout-cart",
+    "n": 1,
+    "first": "span."
+   },
+   {
+    "sel": "#shopify-subscription-policy-button",
+    "owner": "inline<style>#shopify-accelerated-checkout-cart",
+    "n": 1,
+    "first": "span."
+   }
+  ],
+  "legacyHits": [
+   "uppercase",
+   "loading__spinner",
+   "hidden",
+   "shopify-payment-button",
+   "shopify-payment-button__button",
+   "shopify-payment-button__button--unbranded"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 47,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [
+   {
+    "tag": "select",
+    "type": "select-one",
+    "key": "id",
+    "bw": "1px",
+    "app": false
+   },
+   {
+    "tag": "input",
+    "type": "number",
+    "key": "quantity",
+    "bw": "1px",
+    "app": false
+   }
+  ],
+  "incidental": 0
+ },
+ "snow-1440": {
+  "unlayered": [
+   {
+    "sel": "#more-payment-options-link",
+    "owner": "inline<style>#[object HTMLInputElement]",
+    "n": 1,
+    "first": "a.shopify-payment-button__more-options"
+   }
+  ],
+  "legacyHits": [
+   "uppercase",
+   "loading__spinner",
+   "hidden",
+   "shopify-payment-button"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 55,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [
+   {
+    "tag": "select",
+    "type": "select-one",
+    "key": "id",
+    "bw": "1px",
+    "app": false
+   },
+   {
+    "tag": "input",
+    "type": "number",
+    "key": "quantity",
+    "bw": "1px",
+    "app": false
+   }
+  ],
+  "incidental": 0
+ },
+ "p3p-1440": {
+  "unlayered": [
+   {
+    "sel": "#more-payment-options-link",
+    "owner": "inline<style>#[object HTMLInputElement]",
+    "n": 1,
+    "first": "a.shopify-payment-button__more-options"
+   }
+  ],
+  "legacyHits": [
+   "uppercase",
+   "loading__spinner",
+   "hidden",
+   "shopify-payment-button"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 42,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [
+   {
+    "tag": "input",
+    "type": "number",
+    "key": "quantity",
+    "bw": "1px",
+    "app": false
+   }
+  ],
+  "incidental": 0
+ },
+ "cart-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 6,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "policy-1440": {
+  "unlayered": [],
+  "legacyHits": [],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 4,
+  "parity": [
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div#shopify-section-template--27595353325664.shopify-section > a",
+    "text": "Back to shopping"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ },
+ "policy2-1440": {
+  "unlayered": [],
+  "legacyHits": [],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 0,
+  "parity": [
+   {
+    "tag": "ul",
+    "type": null,
+    "where": "theme",
+    "at": "div.rte > div > ul",
+    "text": "Contact details including your"
+   },
+   {
+    "tag": "ul",
+    "type": null,
+    "where": "theme",
+    "at": "div.rte > div > ul",
+    "text": "Directly from you including wh"
+   },
+   {
+    "tag": "ul",
+    "type": null,
+    "where": "theme",
+    "at": "div.rte > div > ul",
+    "text": "Provide, Tailor, and Improve t"
+   },
+   {
+    "tag": "ul",
+    "type": null,
+    "where": "theme",
+    "at": "div.rte > div > ul",
+    "text": "With Shopify, vendors and othe"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "ul > li > a",
+    "text": "here"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div > p > a",
+    "text": "Shopify Consumer Privacy Polic"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div > p > a",
+    "text": "Shopify Privacy Portal Link"
+   },
+   {
+    "tag": "ul",
+    "type": null,
+    "where": "theme",
+    "at": "div.rte > div > ul",
+    "text": "Right to Access / Know. You ma"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "ul > li > a",
+    "text": "here"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "theme-evolution-os2"
+   },
+   {
+    "tag": "a",
+    "type": null,
+    "where": "theme",
+    "at": "div.theme-evolution-footer__bottom > p.theme-evolution-footer__copyright > a",
+    "text": "Powered by Shopify"
+   }
+  ],
+  "controls": [],
+  "incidental": 0
+ }
+}

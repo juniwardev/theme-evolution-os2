@@ -1,0 +1,670 @@
+{
+ "label": "base",
+ "widths": {
+  "375": {
+   "nCards": 6,
+   "cols": "287px",
+   "gap": "32px",
+   "gridLeft": 44,
+   "gridRight": 331,
+   "gridW": 287,
+   "rects": [
+    {
+     "x": 44,
+     "y": 288,
+     "w": 287,
+     "h": 431.5,
+     "bottom": 719.5
+    },
+    {
+     "x": 44,
+     "y": 751.5,
+     "w": 287,
+     "h": 454.6,
+     "bottom": 1206.1
+    },
+    {
+     "x": 44,
+     "y": 1238.1,
+     "w": 287,
+     "h": 478.6,
+     "bottom": 1716.7
+    },
+    {
+     "x": 44,
+     "y": 1748.7,
+     "w": 287,
+     "h": 454.6,
+     "bottom": 2203.3
+    },
+    {
+     "x": 44,
+     "y": 2235.3,
+     "w": 287,
+     "h": 454.6,
+     "bottom": 2689.9
+    },
+    {
+     "x": 44,
+     "y": 2721.9,
+     "w": 287,
+     "h": 454.6,
+     "bottom": 3176.5
+    }
+   ],
+   "radius": "12px",
+   "border": "1px rgba(0, 0, 0, 0.08)",
+   "bg": "rgb(255, 255, 255)",
+   "color": "rgb(51, 51, 51)",
+   "shadow": "none",
+   "transform": "none",
+   "translate": "none",
+   "img": {
+    "box": [
+     285,
+     160
+    ]
+   },
+   "padTop": "0px",
+   "padBottom": "0px",
+   "h1": {
+    "text": "The Material Archive",
+    "ff": "\"Work Sans\", sans-se",
+    "fs": "16px"
+   },
+   "descHtml": "\n          <p><meta charset=\"utf-8\">Discover the science and sustainability behind every Evolution product.</p>\n        ",
+   "descLists": 0,
+   "descLinks": 0,
+   "descColor": "rgb(102, 102, 102)",
+   "meters": [
+    {
+     "now": "3",
+     "label": "Sustainability rating: 3 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "2",
+     "label": "Sustainability rating: 2 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "3",
+     "label": "Sustainability rating: 3 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "5",
+     "label": "Sustainability rating: 5 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "4",
+     "label": "Sustainability rating: 4 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "4",
+     "label": "Sustainability rating: 4 out of 5",
+     "bars": 0
+    }
+   ],
+   "stories": 6,
+   "html1": "<div class=\"material-archive-card\">\n          <div class=\"material-archive-card__image\"><img src=\"//theme-evolution-os2.myshopify.com/cdn/shop/files/WireBrushedNaturalOak.jpg?v=1773425711&amp;width=60"
+  },
+  "768": {
+   "nCards": 6,
+   "cols": "268px 268px",
+   "gap": "32px",
+   "gridLeft": 100,
+   "gridRight": 668,
+   "gridW": 568,
+   "rects": [
+    {
+     "x": 100,
+     "y": 270,
+     "w": 268,
+     "h": 467,
+     "bottom": 737
+    },
+    {
+     "x": 400,
+     "y": 270,
+     "w": 268,
+     "h": 467,
+     "bottom": 737
+    },
+    {
+     "x": 100,
+     "y": 769,
+     "w": 268,
+     "h": 467.9,
+     "bottom": 1236.9
+    },
+    {
+     "x": 400,
+     "y": 769,
+     "w": 268,
+     "h": 467.9,
+     "bottom": 1236.9
+    },
+    {
+     "x": 100,
+     "y": 1268.9,
+     "w": 268,
+     "h": 443.9,
+     "bottom": 1712.8
+    },
+    {
+     "x": 400,
+     "y": 1268.9,
+     "w": 268,
+     "h": 443.9,
+     "bottom": 1712.8
+    }
+   ],
+   "radius": "12px",
+   "border": "1px rgba(0, 0, 0, 0.08)",
+   "bg": "rgb(255, 255, 255)",
+   "color": "rgb(51, 51, 51)",
+   "shadow": "none",
+   "transform": "none",
+   "translate": "none",
+   "img": {
+    "box": [
+     266,
+     150
+    ]
+   },
+   "padTop": "0px",
+   "padBottom": "0px",
+   "h1": {
+    "text": "The Material Archive",
+    "ff": "\"Work Sans\", sans-se",
+    "fs": "16px"
+   },
+   "descHtml": "\n          <p><meta charset=\"utf-8\">Discover the science and sustainability behind every Evolution product.</p>\n        ",
+   "descLists": 0,
+   "descLinks": 0,
+   "descColor": "rgb(102, 102, 102)",
+   "meters": [
+    {
+     "now": "3",
+     "label": "Sustainability rating: 3 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "2",
+     "label": "Sustainability rating: 2 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "3",
+     "label": "Sustainability rating: 3 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "5",
+     "label": "Sustainability rating: 5 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "4",
+     "label": "Sustainability rating: 4 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "4",
+     "label": "Sustainability rating: 4 out of 5",
+     "bars": 0
+    }
+   ],
+   "stories": 6,
+   "html1": "<div class=\"material-archive-card\">\n          <div class=\"material-archive-card__image\"><img src=\"//theme-evolution-os2.myshopify.com/cdn/shop/files/WireBrushedNaturalOak.jpg?v=1773425711&amp;width=60"
+  },
+  "900": {
+   "nCards": 6,
+   "cols": "334px 334px",
+   "gap": "32px",
+   "gridLeft": 100,
+   "gridRight": 800,
+   "gridW": 700,
+   "rects": [
+    {
+     "x": 100,
+     "y": 270,
+     "w": 334,
+     "h": 458,
+     "bottom": 728
+    },
+    {
+     "x": 466,
+     "y": 270,
+     "w": 334,
+     "h": 458,
+     "bottom": 728
+    },
+    {
+     "x": 100,
+     "y": 760,
+     "w": 334,
+     "h": 458,
+     "bottom": 1218
+    },
+    {
+     "x": 466,
+     "y": 760,
+     "w": 334,
+     "h": 458,
+     "bottom": 1218
+    },
+    {
+     "x": 100,
+     "y": 1250,
+     "w": 334,
+     "h": 458,
+     "bottom": 1708
+    },
+    {
+     "x": 466,
+     "y": 1250,
+     "w": 334,
+     "h": 458,
+     "bottom": 1708
+    }
+   ],
+   "radius": "12px",
+   "border": "1px rgba(0, 0, 0, 0.08)",
+   "bg": "rgb(255, 255, 255)",
+   "color": "rgb(51, 51, 51)",
+   "shadow": "none",
+   "transform": "none",
+   "translate": "none",
+   "img": {
+    "box": [
+     332,
+     187
+    ]
+   },
+   "padTop": "0px",
+   "padBottom": "0px",
+   "h1": {
+    "text": "The Material Archive",
+    "ff": "\"Work Sans\", sans-se",
+    "fs": "16px"
+   },
+   "descHtml": "\n          <p><meta charset=\"utf-8\">Discover the science and sustainability behind every Evolution product.</p>\n        ",
+   "descLists": 0,
+   "descLinks": 0,
+   "descColor": "rgb(102, 102, 102)",
+   "meters": [
+    {
+     "now": "3",
+     "label": "Sustainability rating: 3 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "2",
+     "label": "Sustainability rating: 2 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "3",
+     "label": "Sustainability rating: 3 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "5",
+     "label": "Sustainability rating: 5 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "4",
+     "label": "Sustainability rating: 4 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "4",
+     "label": "Sustainability rating: 4 out of 5",
+     "bars": 0
+    }
+   ],
+   "stories": 6,
+   "html1": "<div class=\"material-archive-card\">\n          <div class=\"material-archive-card__image\"><img src=\"//theme-evolution-os2.myshopify.com/cdn/shop/files/WireBrushedNaturalOak.jpg?v=1773425711&amp;width=60"
+  },
+  "1024": {
+   "nCards": 6,
+   "cols": "253.328px 253.328px 253.328px",
+   "gap": "32px",
+   "gridLeft": 100,
+   "gridRight": 924,
+   "gridW": 824,
+   "rects": [
+    {
+     "x": 100,
+     "y": 270,
+     "w": 253.3,
+     "h": 459.6,
+     "bottom": 729.6
+    },
+    {
+     "x": 385.3,
+     "y": 270,
+     "w": 253.3,
+     "h": 459.6,
+     "bottom": 729.6
+    },
+    {
+     "x": 670.7,
+     "y": 270,
+     "w": 253.3,
+     "h": 459.6,
+     "bottom": 729.6
+    },
+    {
+     "x": 100,
+     "y": 761.6,
+     "w": 253.3,
+     "h": 458.7,
+     "bottom": 1220.3
+    },
+    {
+     "x": 385.3,
+     "y": 761.6,
+     "w": 253.3,
+     "h": 458.7,
+     "bottom": 1220.3
+    },
+    {
+     "x": 670.7,
+     "y": 761.6,
+     "w": 253.3,
+     "h": 458.7,
+     "bottom": 1220.3
+    }
+   ],
+   "radius": "12px",
+   "border": "1px rgba(0, 0, 0, 0.08)",
+   "bg": "rgb(255, 255, 255)",
+   "color": "rgb(51, 51, 51)",
+   "shadow": "none",
+   "transform": "none",
+   "translate": "none",
+   "img": {
+    "box": [
+     251,
+     141
+    ]
+   },
+   "padTop": "0px",
+   "padBottom": "0px",
+   "h1": {
+    "text": "The Material Archive",
+    "ff": "\"Work Sans\", sans-se",
+    "fs": "16px"
+   },
+   "descHtml": "\n          <p><meta charset=\"utf-8\">Discover the science and sustainability behind every Evolution product.</p>\n        ",
+   "descLists": 0,
+   "descLinks": 0,
+   "descColor": "rgb(102, 102, 102)",
+   "meters": [
+    {
+     "now": "3",
+     "label": "Sustainability rating: 3 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "2",
+     "label": "Sustainability rating: 2 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "3",
+     "label": "Sustainability rating: 3 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "5",
+     "label": "Sustainability rating: 5 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "4",
+     "label": "Sustainability rating: 4 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "4",
+     "label": "Sustainability rating: 4 out of 5",
+     "bars": 0
+    }
+   ],
+   "stories": 6,
+   "html1": "<div class=\"material-archive-card\">\n          <div class=\"material-archive-card__image\"><img src=\"//theme-evolution-os2.myshopify.com/cdn/shop/files/WireBrushedNaturalOak.jpg?v=1773425711&amp;width=60"
+  },
+  "1440": {
+   "nCards": 6,
+   "cols": "392px 392px 392px",
+   "gap": "32px",
+   "gridLeft": 100,
+   "gridRight": 1340,
+   "gridW": 1240,
+   "rects": [
+    {
+     "x": 100,
+     "y": 270,
+     "w": 392,
+     "h": 467.6,
+     "bottom": 737.6
+    },
+    {
+     "x": 524,
+     "y": 270,
+     "w": 392,
+     "h": 467.6,
+     "bottom": 737.6
+    },
+    {
+     "x": 948,
+     "y": 270,
+     "w": 392,
+     "h": 467.6,
+     "bottom": 737.6
+    },
+    {
+     "x": 100,
+     "y": 769.6,
+     "w": 392,
+     "h": 467.6,
+     "bottom": 1237.1
+    },
+    {
+     "x": 524,
+     "y": 769.6,
+     "w": 392,
+     "h": 467.6,
+     "bottom": 1237.1
+    },
+    {
+     "x": 948,
+     "y": 769.6,
+     "w": 392,
+     "h": 467.6,
+     "bottom": 1237.1
+    }
+   ],
+   "radius": "12px",
+   "border": "1px rgba(0, 0, 0, 0.08)",
+   "bg": "rgb(255, 255, 255)",
+   "color": "rgb(51, 51, 51)",
+   "shadow": "none",
+   "transform": "none",
+   "translate": "none",
+   "img": {
+    "box": [
+     390,
+     219
+    ]
+   },
+   "padTop": "0px",
+   "padBottom": "0px",
+   "h1": {
+    "text": "The Material Archive",
+    "ff": "\"Work Sans\", sans-se",
+    "fs": "16px"
+   },
+   "descHtml": "\n          <p><meta charset=\"utf-8\">Discover the science and sustainability behind every Evolution product.</p>\n        ",
+   "descLists": 0,
+   "descLinks": 0,
+   "descColor": "rgb(102, 102, 102)",
+   "meters": [
+    {
+     "now": "3",
+     "label": "Sustainability rating: 3 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "2",
+     "label": "Sustainability rating: 2 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "3",
+     "label": "Sustainability rating: 3 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "5",
+     "label": "Sustainability rating: 5 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "4",
+     "label": "Sustainability rating: 4 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "4",
+     "label": "Sustainability rating: 4 out of 5",
+     "bars": 0
+    }
+   ],
+   "stories": 6,
+   "html1": "<div class=\"material-archive-card\">\n          <div class=\"material-archive-card__image\"><img src=\"//theme-evolution-os2.myshopify.com/cdn/shop/files/WireBrushedNaturalOak.jpg?v=1773425711&amp;width=60"
+  },
+  "1920": {
+   "nCards": 6,
+   "cols": "392px 392px 392px",
+   "gap": "32px",
+   "gridLeft": 340,
+   "gridRight": 1580,
+   "gridW": 1240,
+   "rects": [
+    {
+     "x": 340,
+     "y": 270,
+     "w": 392,
+     "h": 467.6,
+     "bottom": 737.6
+    },
+    {
+     "x": 764,
+     "y": 270,
+     "w": 392,
+     "h": 467.6,
+     "bottom": 737.6
+    },
+    {
+     "x": 1188,
+     "y": 270,
+     "w": 392,
+     "h": 467.6,
+     "bottom": 737.6
+    },
+    {
+     "x": 340,
+     "y": 769.6,
+     "w": 392,
+     "h": 467.6,
+     "bottom": 1237.1
+    },
+    {
+     "x": 764,
+     "y": 769.6,
+     "w": 392,
+     "h": 467.6,
+     "bottom": 1237.1
+    },
+    {
+     "x": 1188,
+     "y": 769.6,
+     "w": 392,
+     "h": 467.6,
+     "bottom": 1237.1
+    }
+   ],
+   "radius": "12px",
+   "border": "1px rgba(0, 0, 0, 0.08)",
+   "bg": "rgb(255, 255, 255)",
+   "color": "rgb(51, 51, 51)",
+   "shadow": "none",
+   "transform": "none",
+   "translate": "none",
+   "img": {
+    "box": [
+     390,
+     219
+    ]
+   },
+   "padTop": "0px",
+   "padBottom": "0px",
+   "h1": {
+    "text": "The Material Archive",
+    "ff": "\"Work Sans\", sans-se",
+    "fs": "16px"
+   },
+   "descHtml": "\n          <p><meta charset=\"utf-8\">Discover the science and sustainability behind every Evolution product.</p>\n        ",
+   "descLists": 0,
+   "descLinks": 0,
+   "descColor": "rgb(102, 102, 102)",
+   "meters": [
+    {
+     "now": "3",
+     "label": "Sustainability rating: 3 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "2",
+     "label": "Sustainability rating: 2 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "3",
+     "label": "Sustainability rating: 3 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "5",
+     "label": "Sustainability rating: 5 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "4",
+     "label": "Sustainability rating: 4 out of 5",
+     "bars": 0
+    },
+    {
+     "now": "4",
+     "label": "Sustainability rating: 4 out of 5",
+     "bars": 0
+    }
+   ],
+   "stories": 6,
+   "html1": "<div class=\"material-archive-card\">\n          <div class=\"material-archive-card__image\"><img src=\"//theme-evolution-os2.myshopify.com/cdn/shop/files/WireBrushedNaturalOak.jpg?v=1773425711&amp;width=60"
+  }
+ },
+ "hover": {
+  "transform": "matrix(1, 0, 0, 1, 0, -5)",
+  "translate": "none",
+  "shadow": "rgba(0, 0, 0, 0.05) 0px 10px 30px 0px"
+ }
+}

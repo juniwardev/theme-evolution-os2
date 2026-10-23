@@ -1,0 +1,1415 @@
+{
+ "label": "head",
+ "pages": {
+  "/collections/all": {
+   "320": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Products",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-4",
+      "cols": "216px",
+      "gap": "16px",
+      "n": 15
+     }
+    ]
+   },
+   "375": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Products",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-4",
+      "cols": "271px",
+      "gap": "16px",
+      "n": 15
+     }
+    ]
+   },
+   "390": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Products",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-4",
+      "cols": "286px",
+      "gap": "16px",
+      "n": 15
+     }
+    ]
+   },
+   "430": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Products",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-4",
+      "cols": "326px",
+      "gap": "16px",
+      "n": 15
+     }
+    ]
+   },
+   "768": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Products",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-4",
+      "cols": "664px",
+      "gap": "16px",
+      "n": 15
+     }
+    ]
+   },
+   "1440": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Products",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-4",
+      "cols": "660px 660px",
+      "gap": "16px",
+      "n": 15
+     }
+    ]
+   },
+   "1920": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Products",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 292
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-4",
+      "cols": "660px 660px",
+      "gap": "16px",
+      "n": 15
+     }
+    ]
+   },
+   "status": 200,
+   "nPre": 9
+  },
+  "/collections": {
+   "320": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Collections",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-(--grid-gap)",
+      "cols": "216px",
+      "gap": "10px",
+      "n": 3
+     }
+    ]
+   },
+   "375": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Collections",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-(--grid-gap)",
+      "cols": "271px",
+      "gap": "10px",
+      "n": 3
+     }
+    ]
+   },
+   "390": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Collections",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-(--grid-gap)",
+      "cols": "286px",
+      "gap": "10px",
+      "n": 3
+     }
+    ]
+   },
+   "430": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Collections",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-(--grid-gap)",
+      "cols": "326px",
+      "gap": "10px",
+      "n": 3
+     }
+    ]
+   },
+   "768": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Collections",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-(--grid-gap)",
+      "cols": "327px 327px",
+      "gap": "10px",
+      "n": 3
+     }
+    ]
+   },
+   "1440": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Collections",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-(--grid-gap)",
+      "cols": "326.5px 326.5px 326.5px 326.5px",
+      "gap": "10px",
+      "n": 3
+     }
+    ]
+   },
+   "1920": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Collections",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 292
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-(--grid-gap)",
+      "cols": "326.5px 326.5px 326.5px 326.5px",
+      "gap": "10px",
+      "n": 3
+     }
+    ]
+   },
+   "status": 200,
+   "nPre": 9
+  },
+  "/search?q=snowboard": {
+   "320": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Search",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-4",
+      "cols": "216px",
+      "gap": "16px",
+      "n": 15
+     }
+    ]
+   },
+   "375": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Search",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-4",
+      "cols": "271px",
+      "gap": "16px",
+      "n": 15
+     }
+    ]
+   },
+   "390": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Search",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-4",
+      "cols": "286px",
+      "gap": "16px",
+      "n": 15
+     }
+    ]
+   },
+   "430": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Search",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-4",
+      "cols": "326px",
+      "gap": "16px",
+      "n": 15
+     }
+    ]
+   },
+   "768": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Search",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-4",
+      "cols": "210.656px 210.672px 210.672px",
+      "gap": "16px",
+      "n": 15
+     }
+    ]
+   },
+   "1440": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Search",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-4",
+      "cols": "209.328px 209.328px 209.328px 209.344px 209.328px 209.328px",
+      "gap": "16px",
+      "n": 15
+     }
+    ]
+   },
+   "1920": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Search",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 292
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-fill gap-4",
+      "cols": "209.328px 209.328px 209.328px 209.344px 209.328px 209.328px",
+      "gap": "16px",
+      "n": 15
+     }
+    ]
+   },
+   "status": 200,
+   "nPre": 9
+  },
+  "/pages/contact": {
+   "320": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Contact",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "375": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Contact",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "390": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Contact",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "430": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Contact",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "768": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Contact",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "1440": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Contact",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "1920": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Contact",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 292
+     }
+    ],
+    "grids": []
+   },
+   "status": 200,
+   "nPre": 9
+  },
+  "/pages/the-balanced-face-test-page": {
+   "320": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Balanced Face Test Page",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "375": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Balanced Face Test Page",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "390": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Balanced Face Test Page",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "430": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Balanced Face Test Page",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "768": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Balanced Face Test Page",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "1440": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Balanced Face Test Page",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "1920": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Balanced Face Test Page",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 292
+     }
+    ],
+    "grids": []
+   },
+   "status": 200,
+   "nPre": 9
+  },
+  "/blogs/news": {
+   "320": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "News",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "375": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "News",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "390": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "News",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "430": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "News",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "768": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "News",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "1440": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "News",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "1920": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "News",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 292
+     }
+    ],
+    "grids": []
+   },
+   "status": 200,
+   "nPre": 9
+  },
+  "/pages/tailwind-qa-missing": {
+   "320": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "375": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "390": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "430": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "768": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "1440": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "1920": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 292
+     }
+    ],
+    "grids": []
+   },
+   "status": 404,
+   "nPre": 9
+  },
+  "/pages/the-material-archive": {
+   "320": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Material Archive",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 44
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3",
+      "cols": "232px",
+      "gap": "32px",
+      "n": 6
+     }
+    ]
+   },
+   "375": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Material Archive",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 44
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3",
+      "cols": "287px",
+      "gap": "32px",
+      "n": 6
+     }
+    ]
+   },
+   "390": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Material Archive",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 44
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3",
+      "cols": "302px",
+      "gap": "32px",
+      "n": 6
+     }
+    ]
+   },
+   "430": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Material Archive",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 44
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3",
+      "cols": "342px",
+      "gap": "32px",
+      "n": 6
+     }
+    ]
+   },
+   "768": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Material Archive",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 100
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3",
+      "cols": "268px 268px",
+      "gap": "32px",
+      "n": 6
+     }
+    ]
+   },
+   "1440": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Material Archive",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 420
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3",
+      "cols": "392px 392px 392px",
+      "gap": "32px",
+      "n": 6
+     }
+    ]
+   },
+   "1920": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Material Archive",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 660
+     }
+    ],
+    "grids": [
+     {
+      "cls": "mb-0 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3",
+      "cols": "392px 392px 392px",
+      "gap": "32px",
+      "n": 6
+     }
+    ]
+   },
+   "status": 200,
+   "nPre": 9
+  },
+  "/policies/refund-policy": {
+   "320": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "375": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "390": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "430": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "768": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "1440": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 52
+     }
+    ],
+    "grids": []
+   },
+   "1920": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 292
+     }
+    ],
+    "grids": []
+   },
+   "status": 404,
+   "nPre": 9
+  },
+  "/products/the-3p-fulfilled-snowboard": {
+   "320": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The 3p Fulfilled Snowboard",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 44
+     }
+    ],
+    "grids": []
+   },
+   "375": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The 3p Fulfilled Snowboard",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 44
+     }
+    ],
+    "grids": []
+   },
+   "390": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The 3p Fulfilled Snowboard",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 44
+     }
+    ],
+    "grids": []
+   },
+   "430": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The 3p Fulfilled Snowboard",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 44
+     }
+    ],
+    "grids": []
+   },
+   "768": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The 3p Fulfilled Snowboard",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 464
+     }
+    ],
+    "grids": []
+   },
+   "1440": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The 3p Fulfilled Snowboard",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 846
+     }
+    ],
+    "grids": []
+   },
+   "1920": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The 3p Fulfilled Snowboard",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 1086
+     }
+    ],
+    "grids": []
+   },
+   "status": 200,
+   "nPre": 12
+  }
+ },
+ "mcss": {
+  "/collections/all": {
+   "B_head": 21957,
+   "B_doc": 21957,
+   "nDawn": 2,
+   "bundleSize": 826,
+   "bundleSelectors": [
+    ".css",
+    ".eco-tooltip",
+    ".is-visible",
+    ".map",
+    ".section-header"
+   ]
+  },
+  "/search?q=snowboard": {
+   "B_head": 21957,
+   "B_doc": 21957,
+   "nDawn": 2,
+   "bundleSize": 826,
+   "bundleSelectors": [
+    ".css",
+    ".eco-tooltip",
+    ".is-visible",
+    ".map",
+    ".section-header"
+   ]
+  },
+  "/pages/the-material-archive": {
+   "B_head": 21957,
+   "B_doc": 21957,
+   "nDawn": 2,
+   "bundleSize": 826,
+   "bundleSelectors": [
+    ".css",
+    ".eco-tooltip",
+    ".is-visible",
+    ".map",
+    ".section-header"
+   ]
+  },
+  "/": {
+   "B_head": 21957,
+   "B_doc": 21957,
+   "nDawn": 2,
+   "bundleSize": 826,
+   "bundleSelectors": [
+    ".css",
+    ".eco-tooltip",
+    ".is-visible",
+    ".map",
+    ".section-header"
+   ]
+  }
+ }
+}

@@ -1,0 +1,21 @@
+C4b.22 removed-class matches / 0 
+C4b.22 removed-class matches /collections/all 0 
+C4b.22 removed-class matches /collections 0 
+C4b.22 removed-class matches /search?q=snowboard 0 
+C4b.22 removed-class matches /pages/contact 0 
+C4b.22 removed-class matches /pages/the-balanced-face-test-page 0 
+C4b.22 removed-class matches /blogs/news 0 
+C4b.22 removed-class matches /pages/tailwind-qa-missing 0 
+C4b.22 removed-class matches /pages/the-material-archive 0 
+C4b.22 removed-class matches /products/selling-plans-ski-wax 0 
+C4b.22 removed-class matches /products/the-complete-snowboard 0 
+C4b.22 removed-class matches /products/the-3p-fulfilled-snowboard 0 
+C4b.22 removed-class matches /cart 0 
+total removed-class matches 0
+C4b.16 {"oldClass":false,"fillBarReveal":false} h1 1 heads H1H2H2H2H2H2H2 imgsNoDims 0
+  card {"now":"3","aria":"Sustainability rating: 3 out of 5","n":5,"active":3,"anim":["sustainabilityFillReveal","sustainabilityFillReveal","sustainabilityFillReveal"],"delays":["0ms","150ms","300ms"],"label":true}
+  card {"now":"2","aria":"Sustainability rating: 2 out of 5","n":5,"active":2,"anim":["sustainabilityFillReveal","sustainabilityFillReveal"],"delays":["0ms","150ms"],"label":true}
+  card {"now":"3","aria":"Sustainability rating: 3 out of 5","n":5,"active":3,"anim":["sustainabilityFillReveal","sustainabilityFillReveal","sustainabilityFillReveal"],"delays":["0ms","150ms","300ms"],"label":true}
+  card {"now":"5","aria":"Sustainability rating: 5 out of 5","n":5,"active":5,"anim":["sustainabilityFillReveal","sustainabilityFillReveal","sustainabilityFillReveal","sustainabilityFillReveal","sustainabilityFillReveal"],"delays":["0ms","150ms","300ms","450ms","600ms"],"label":true}
+  card {"now":"4","aria":"Sustainability rating: 4 out of 5","n":5,"active":4,"anim":["sustainabilityFillReveal","sustainabilityFillReveal","sustainabilityFillReveal","sustainabilityFillReveal"],"delays":["0ms","150ms","300ms","450ms"],"label":true}
+  card {"now":"4","aria":"Sustainability rating: 4 out of 5","n":5,"active":4,"anim":["sustainabilityFillReveal","sustainabilityFillReveal","sustainabilityFillReveal","sustainabilityFillReveal"],"delays":["0ms","150ms","300ms","450ms"],"label":true}

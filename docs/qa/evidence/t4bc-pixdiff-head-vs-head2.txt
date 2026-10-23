@@ -1,0 +1,12 @@
+home    1440 {"diffPixels":0,"yRange":null}
+home    375 {"diffPixels":0,"yRange":null}
+p3p     1440 {"diffPixels":0,"yRange":null}
+p3p     375 {"diffPixels":0,"yRange":null}
+wax     1440 {"diffPixels":0,"yRange":null}
+wax     375 {"diffPixels":0,"yRange":null}
+snow    1440 {"diffPixels":64,"yRange":[1060,1991]}
+snow    375 {"diffPixels":22,"yRange":[1708,2935]}
+pw      1440 {"diffPixels":0,"yRange":null}
+pw      375 {"diffPixels":0,"yRange":null}
+cart-one 1440 {"diffPixels":0,"yRange":null}
+cart-one 375 {"diffPixels":0,"yRange":null}

@@ -1,0 +1,1503 @@
+{
+ "label": "base",
+ "pages": {
+  "/collections/all": {
+   "320": {
+    "xPage": 200,
+    "off": 12,
+    "offs": [
+     "div.collection-product l20 r520",
+     "a.relative block w-full overflow-hidden co l20 r520",
+     "img.block h-auto w-full l20 r520",
+     "div.collection-product__content l20 r520"
+    ],
+    "h1": [
+     {
+      "text": "Products",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": [
+     {
+      "cls": "collection-products",
+      "cols": "500px",
+      "gap": "normal",
+      "n": 15
+     }
+    ]
+   },
+   "375": {
+    "xPage": 145,
+    "off": 12,
+    "offs": [
+     "div.collection-product l20 r520",
+     "a.relative block w-full overflow-hidden co l20 r520",
+     "img.block h-auto w-full l20 r520",
+     "div.collection-product__content l20 r520"
+    ],
+    "h1": [
+     {
+      "text": "Products",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": [
+     {
+      "cls": "collection-products",
+      "cols": "500px",
+      "gap": "normal",
+      "n": 15
+     }
+    ]
+   },
+   "390": {
+    "xPage": 130,
+    "off": 12,
+    "offs": [
+     "div.collection-product l20 r520",
+     "a.relative block w-full overflow-hidden co l20 r520",
+     "img.block h-auto w-full l20 r520",
+     "div.collection-product__content l20 r520"
+    ],
+    "h1": [
+     {
+      "text": "Products",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": [
+     {
+      "cls": "collection-products",
+      "cols": "500px",
+      "gap": "normal",
+      "n": 15
+     }
+    ]
+   },
+   "430": {
+    "xPage": 90,
+    "off": 12,
+    "offs": [
+     "div.collection-product l20 r520",
+     "a.relative block w-full overflow-hidden co l20 r520",
+     "img.block h-auto w-full l20 r520",
+     "div.collection-product__content l20 r520"
+    ],
+    "h1": [
+     {
+      "text": "Products",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": [
+     {
+      "cls": "collection-products",
+      "cols": "500px",
+      "gap": "normal",
+      "n": 15
+     }
+    ]
+   },
+   "768": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Products",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": [
+     {
+      "cls": "collection-products",
+      "cols": "728px",
+      "gap": "normal",
+      "n": 15
+     }
+    ]
+   },
+   "1440": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Products",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": [
+     {
+      "cls": "collection-products",
+      "cols": "700px 700px",
+      "gap": "normal",
+      "n": 15
+     }
+    ]
+   },
+   "1920": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Products",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 260
+     }
+    ],
+    "grids": [
+     {
+      "cls": "collection-products",
+      "cols": "700px 700px",
+      "gap": "normal",
+      "n": 15
+     }
+    ]
+   },
+   "status": 200,
+   "nPre": 9
+  },
+  "/collections": {
+   "320": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Collections",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": [
+     {
+      "cls": "collections collections--full collections-custom-gap-templat",
+      "cols": "280px",
+      "gap": "10px",
+      "n": 3
+     }
+    ]
+   },
+   "375": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Collections",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": [
+     {
+      "cls": "collections collections--full collections-custom-gap-templat",
+      "cols": "335px",
+      "gap": "10px",
+      "n": 3
+     }
+    ]
+   },
+   "390": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Collections",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": [
+     {
+      "cls": "collections collections--full collections-custom-gap-templat",
+      "cols": "350px",
+      "gap": "10px",
+      "n": 3
+     }
+    ]
+   },
+   "430": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Collections",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": [
+     {
+      "cls": "collections collections--full collections-custom-gap-templat",
+      "cols": "390px",
+      "gap": "10px",
+      "n": 3
+     }
+    ]
+   },
+   "768": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Collections",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": [
+     {
+      "cls": "collections collections--full collections-custom-gap-templat",
+      "cols": "359px 359px",
+      "gap": "10px",
+      "n": 3
+     }
+    ]
+   },
+   "1440": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Collections",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": [
+     {
+      "cls": "collections collections--full collections-custom-gap-templat",
+      "cols": "342.5px 342.5px 342.5px 342.5px",
+      "gap": "10px",
+      "n": 3
+     }
+    ]
+   },
+   "1920": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Collections",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 260
+     }
+    ],
+    "grids": [
+     {
+      "cls": "collections collections--full collections-custom-gap-templat",
+      "cols": "342.5px 342.5px 342.5px 342.5px",
+      "gap": "10px",
+      "n": 3
+     }
+    ]
+   },
+   "status": 200,
+   "nPre": 9
+  },
+  "/search?q=snowboard": {
+   "320": {
+    "xPage": 158,
+    "off": 1,
+    "offs": [
+     "input. l20 r478"
+    ],
+    "h1": [
+     {
+      "text": "Search",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": [
+     {
+      "cls": "search-results",
+      "cols": "280px",
+      "gap": "normal",
+      "n": 15
+     }
+    ]
+   },
+   "375": {
+    "xPage": 103,
+    "off": 1,
+    "offs": [
+     "input. l20 r478"
+    ],
+    "h1": [
+     {
+      "text": "Search",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": [
+     {
+      "cls": "search-results",
+      "cols": "335px",
+      "gap": "normal",
+      "n": 15
+     }
+    ]
+   },
+   "390": {
+    "xPage": 88,
+    "off": 1,
+    "offs": [
+     "input. l20 r478"
+    ],
+    "h1": [
+     {
+      "text": "Search",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": [
+     {
+      "cls": "search-results",
+      "cols": "350px",
+      "gap": "normal",
+      "n": 15
+     }
+    ]
+   },
+   "430": {
+    "xPage": 48,
+    "off": 1,
+    "offs": [
+     "input. l20 r478"
+    ],
+    "h1": [
+     {
+      "text": "Search",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": [
+     {
+      "cls": "search-results",
+      "cols": "390px",
+      "gap": "normal",
+      "n": 15
+     }
+    ]
+   },
+   "768": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Search",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": [
+     {
+      "cls": "search-results",
+      "cols": "242.656px 242.672px 242.672px",
+      "gap": "normal",
+      "n": 15
+     }
+    ]
+   },
+   "1440": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Search",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": [
+     {
+      "cls": "search-results",
+      "cols": "200px 200px 200px 200px 200px 200px 200px",
+      "gap": "normal",
+      "n": 15
+     }
+    ]
+   },
+   "1920": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Search",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 260
+     }
+    ],
+    "grids": [
+     {
+      "cls": "search-results",
+      "cols": "200px 200px 200px 200px 200px 200px 200px",
+      "gap": "normal",
+      "n": 15
+     }
+    ]
+   },
+   "status": 200,
+   "nPre": 9
+  },
+  "/pages/contact": {
+   "320": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Contact",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "375": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Contact",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "390": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Contact",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "430": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Contact",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "768": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Contact",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "1440": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Contact",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "1920": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "Contact",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 260
+     }
+    ],
+    "grids": []
+   },
+   "status": 200,
+   "nPre": 9
+  },
+  "/pages/the-balanced-face-test-page": {
+   "320": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Balanced Face Test Page",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "375": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Balanced Face Test Page",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "390": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Balanced Face Test Page",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "430": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Balanced Face Test Page",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "768": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Balanced Face Test Page",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "1440": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Balanced Face Test Page",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "1920": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Balanced Face Test Page",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 260
+     }
+    ],
+    "grids": []
+   },
+   "status": 200,
+   "nPre": 9
+  },
+  "/blogs/news": {
+   "320": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "News",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "375": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "News",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "390": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "News",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "430": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "News",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "768": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "News",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "1440": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "News",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "1920": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "News",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 260
+     }
+    ],
+    "grids": []
+   },
+   "status": 200,
+   "nPre": 9
+  },
+  "/pages/tailwind-qa-missing": {
+   "320": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "375": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "390": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "430": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "768": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "1440": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "1920": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 260
+     }
+    ],
+    "grids": []
+   },
+   "status": 404,
+   "nPre": 9
+  },
+  "/pages/the-material-archive": {
+   "320": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Material Archive",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 44
+     }
+    ],
+    "grids": [
+     {
+      "cls": "material-grid",
+      "cols": "232px",
+      "gap": "32px",
+      "n": 6
+     }
+    ]
+   },
+   "375": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Material Archive",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 44
+     }
+    ],
+    "grids": [
+     {
+      "cls": "material-grid",
+      "cols": "287px",
+      "gap": "32px",
+      "n": 6
+     }
+    ]
+   },
+   "390": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Material Archive",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 44
+     }
+    ],
+    "grids": [
+     {
+      "cls": "material-grid",
+      "cols": "302px",
+      "gap": "32px",
+      "n": 6
+     }
+    ]
+   },
+   "430": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Material Archive",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 44
+     }
+    ],
+    "grids": [
+     {
+      "cls": "material-grid",
+      "cols": "342px",
+      "gap": "32px",
+      "n": 6
+     }
+    ]
+   },
+   "768": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Material Archive",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 100
+     }
+    ],
+    "grids": [
+     {
+      "cls": "material-grid",
+      "cols": "268px 268px",
+      "gap": "32px",
+      "n": 6
+     }
+    ]
+   },
+   "1440": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Material Archive",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 420
+     }
+    ],
+    "grids": [
+     {
+      "cls": "material-grid",
+      "cols": "392px 392px 392px",
+      "gap": "32px",
+      "n": 6
+     }
+    ]
+   },
+   "1920": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The Material Archive",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 660
+     }
+    ],
+    "grids": [
+     {
+      "cls": "material-grid",
+      "cols": "392px 392px 392px",
+      "gap": "32px",
+      "n": 6
+     }
+    ]
+   },
+   "status": 200,
+   "nPre": 9
+  },
+  "/policies/refund-policy": {
+   "320": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "375": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "390": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "430": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "768": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "1440": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 20
+     }
+    ],
+    "grids": []
+   },
+   "1920": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "404",
+      "ff": "\"Work Sans\", sans-serif",
+      "fs": "16px",
+      "fw": "400",
+      "tt": "none",
+      "x": 260
+     }
+    ],
+    "grids": []
+   },
+   "status": 404,
+   "nPre": 9
+  },
+  "/products/the-3p-fulfilled-snowboard": {
+   "320": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The 3p Fulfilled Snowboard",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 44
+     }
+    ],
+    "grids": []
+   },
+   "375": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The 3p Fulfilled Snowboard",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 44
+     }
+    ],
+    "grids": []
+   },
+   "390": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The 3p Fulfilled Snowboard",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 44
+     }
+    ],
+    "grids": []
+   },
+   "430": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The 3p Fulfilled Snowboard",
+      "ff": "Oswald, sans-serif",
+      "fs": "30px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 44
+     }
+    ],
+    "grids": []
+   },
+   "768": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The 3p Fulfilled Snowboard",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 464
+     }
+    ],
+    "grids": []
+   },
+   "1440": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The 3p Fulfilled Snowboard",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 846
+     }
+    ],
+    "grids": []
+   },
+   "1920": {
+    "xPage": 0,
+    "off": 0,
+    "offs": [],
+    "h1": [
+     {
+      "text": "The 3p Fulfilled Snowboard",
+      "ff": "Oswald, sans-serif",
+      "fs": "36px",
+      "fw": "700",
+      "tt": "uppercase",
+      "x": 1086
+     }
+    ],
+    "grids": []
+   },
+   "status": 200,
+   "nPre": 12
+  }
+ },
+ "mcss": {
+  "/collections/all": {
+   "B_head": 22525,
+   "B_doc": 22525,
+   "nDawn": 2,
+   "bundleSize": 2147,
+   "bundleSelectors": [
+    ".collection-card",
+    ".collection-products",
+    ".collections",
+    ".collections--compact",
+    ".collections--full",
+    ".css",
+    ".eco-tooltip",
+    ".is-visible",
+    ".map",
+    ".next",
+    ".page",
+    ".prev",
+    ".product-mini-card",
+    ".product-mini-card__image-wrap",
+    ".product-mini-card__price",
+    ".product-mini-card__title",
+    ".relational-rec__grid",
+    ".relational-rec__title",
+    ".search-results",
+    ".section-header"
+   ]
+  },
+  "/search?q=snowboard": {
+   "B_head": 22525,
+   "B_doc": 22525,
+   "nDawn": 2,
+   "bundleSize": 2147,
+   "bundleSelectors": [
+    ".collection-card",
+    ".collection-products",
+    ".collections",
+    ".collections--compact",
+    ".collections--full",
+    ".css",
+    ".eco-tooltip",
+    ".is-visible",
+    ".map",
+    ".next",
+    ".page",
+    ".prev",
+    ".product-mini-card",
+    ".product-mini-card__image-wrap",
+    ".product-mini-card__price",
+    ".product-mini-card__title",
+    ".relational-rec__grid",
+    ".relational-rec__title",
+    ".search-results",
+    ".section-header"
+   ]
+  },
+  "/pages/the-material-archive": {
+   "B_head": 22525,
+   "B_doc": 22525,
+   "nDawn": 2,
+   "bundleSize": 2147,
+   "bundleSelectors": [
+    ".collection-card",
+    ".collection-products",
+    ".collections",
+    ".collections--compact",
+    ".collections--full",
+    ".css",
+    ".eco-tooltip",
+    ".is-visible",
+    ".map",
+    ".next",
+    ".page",
+    ".prev",
+    ".product-mini-card",
+    ".product-mini-card__image-wrap",
+    ".product-mini-card__price",
+    ".product-mini-card__title",
+    ".relational-rec__grid",
+    ".relational-rec__title",
+    ".search-results",
+    ".section-header"
+   ]
+  },
+  "/": {
+   "B_head": 22525,
+   "B_doc": 22525,
+   "nDawn": 2,
+   "bundleSize": 2147,
+   "bundleSelectors": [
+    ".collection-card",
+    ".collection-products",
+    ".collections",
+    ".collections--compact",
+    ".collections--full",
+    ".css",
+    ".eco-tooltip",
+    ".is-visible",
+    ".map",
+    ".next",
+    ".page",
+    ".prev",
+    ".product-mini-card",
+    ".product-mini-card__image-wrap",
+    ".product-mini-card__price",
+    ".product-mini-card__title",
+    ".relational-rec__grid",
+    ".relational-rec__title",
+    ".search-results",
+    ".section-header"
+   ]
+  }
+ }
+}

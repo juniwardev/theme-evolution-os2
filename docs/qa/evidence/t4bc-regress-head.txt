@@ -1,0 +1,9 @@
+PASS C4b.27 1440 add 200 drawer opens {"state":"open","hidden":false,"busy":null,"badge":"1"}
+PASS C4b.27 1440 update to 3 {"state":"open","hidden":false,"busy":null,"badge":"3"}
+PASS C4b.27 1440 remove to empty {"text":"Your cart is empty.","cta":"/collections/all"}
+PASS C4b.27 1440 Escape closes {"state":"closed","hidden":true,"busy":null,"badge":"0"}
+PASS C4b.27 375 add 200 drawer opens {"state":"open","hidden":false,"busy":null,"badge":"1"}
+PASS C4b.27 375 update to 3 {"state":"open","hidden":false,"busy":null,"badge":"3"}
+PASS C4b.27 375 remove to empty {"text":"Your cart is empty.","cta":"/collections/all"}
+PASS C4b.27 375 Escape closes {"state":"closed","hidden":true,"busy":null,"badge":"0"}
+ALL PASS

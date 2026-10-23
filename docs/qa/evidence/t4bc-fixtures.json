@@ -1,0 +1,53 @@
+{
+ "children": [
+  "https://theme-evolution-os2.myshopify.com/sitemap_agentic_discovery.xml",
+  "https://theme-evolution-os2.myshopify.com/sitemap_products_1.xml?from=7661169803360&amp;to=15418010992736",
+  "https://theme-evolution-os2.myshopify.com/sitemap_pages_1.xml?from=105879961696&amp;to=108400869472",
+  "https://theme-evolution-os2.myshopify.com/sitemap_collections_1.xml?from=290228174944&amp;to=290228240480",
+  "https://theme-evolution-os2.myshopify.com/sitemap_blogs_1.xml"
+ ],
+ "locs": {
+  "sitemap_agentic_discovery.xml": [
+   "https://theme-evolution-os2.myshopify.com/agents.md"
+  ],
+  "sitemap_products_1.xml": [
+   "https://theme-evolution-os2.myshopify.com/",
+   "https://theme-evolution-os2.myshopify.com/products/gift-card",
+   "https://theme-evolution-os2.myshopify.com/products/the-inventory-not-tracked-snowboard",
+   "https://theme-evolution-os2.myshopify.com/products/the-videographer-snowboard",
+   "https://theme-evolution-os2.myshopify.com/products/the-out-of-stock-snowboard",
+   "https://theme-evolution-os2.myshopify.com/products/the-compare-at-price-snowboard",
+   "https://theme-evolution-os2.myshopify.com/products/the-complete-snowboard",
+   "https://theme-evolution-os2.myshopify.com/products/the-collection-snowboard-hydrogen",
+   "https://theme-evolution-os2.myshopify.com/products/selling-plans-ski-wax",
+   "https://theme-evolution-os2.myshopify.com/products/the-multi-location-snowboard",
+   "https://theme-evolution-os2.myshopify.com/products/the-multi-managed-snowboard",
+   "https://theme-evolution-os2.myshopify.com/products/the-3p-fulfilled-snowboard",
+   "https://theme-evolution-os2.myshopify.com/products/the-collection-snowboard-oxygen",
+   "https://theme-evolution-os2.myshopify.com/products/the-collection-snowboard-liquid",
+   "https://theme-evolution-os2.myshopify.com/products/the-collection-snowboard-alternate-template",
+   "https://theme-evolution-os2.myshopify.com/products/the-rental-snowboard"
+  ],
+  "sitemap_pages_1.xml": [
+   "https://theme-evolution-os2.myshopify.com/pages/contact",
+   "https://theme-evolution-os2.myshopify.com/pages/data-sharing-opt-out",
+   "https://theme-evolution-os2.myshopify.com/pages/the-material-archive",
+   "https://theme-evolution-os2.myshopify.com/pages/the-balanced-face-test-page"
+  ],
+  "sitemap_collections_1.xml": [
+   "https://theme-evolution-os2.myshopify.com/collections/frontpage",
+   "https://theme-evolution-os2.myshopify.com/collections/automated-collection",
+   "https://theme-evolution-os2.myshopify.com/collections/hydrogen"
+  ],
+  "sitemap_blogs_1.xml": [
+   "https://theme-evolution-os2.myshopify.com/blogs/news"
+  ]
+ },
+ "accountLogin": {
+  "url": "https://shopify.com/authentication/66420244576/login",
+  "h1": [
+   "theme-evolution-os2",
+   "Sign in"
+  ]
+ }
+}
