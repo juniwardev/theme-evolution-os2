@@ -5,27 +5,34 @@
   https://shopify.dev/docs/storefronts/themes/architecture/templates/blog
 {% endcomment %}
 
-<h1>{{ blog.title }}</h1>
+<div class="flex flex-col gap-8 px-8 py-10 md:py-16" data-page-shell>
+  <h1 class="font-heading text-3xl leading-tight font-bold uppercase md:text-4xl">{{ blog.title | escape }}</h1>
 
-{% paginate blog.articles by 5 %}
-  {% for article in blog.articles %}
-    <div>
-      {% if article.image %}
-        {{ article.image | image_url: width: 1000 | image_tag: preload: true }}
-      {% endif %}
-      <h2>
-        {{ article.title | link_to: article.url }}
-      </h2>
-      {% assign date = article.published_at | time_tag: format: 'date' %}
-      <p>{{ 'blog.article_metadata_html' | t: date: date, author: article.author }}</p>
-      <p>{{ article.excerpt }}</p>
-    </div>
-  {% endfor %}
+  {% paginate blog.articles by 5 %}
+    {% for article in blog.articles %}
+      <article class="flex flex-col gap-4">
+        {% if article.image %}
+          {% if forloop.first %}
+            {{ article.image | image_url: width: 1000 | image_tag: preload: true }}
+          {% else %}
+            {{ article.image | image_url: width: 1000 | image_tag: loading: 'lazy' }}
+          {% endif %}
+        {% endif %}
+        <h2 class="font-heading text-2xl leading-tight font-bold uppercase">
+          {{ article.title | escape | link_to: article.url, class: 'no-underline hover:underline' }}
+        </h2>
+        {%- assign date = article.published_at | time_tag: format: 'date' -%}
+        {%- assign author = article.author | escape -%}
+        <p class="text-sm opacity-70">{{ 'blog.article_metadata_html' | t: date: date, author: author }}</p>
+        {%- if article.excerpt != blank -%}
+          <div data-rich-text>{{ article.excerpt }}</div>
+        {%- endif -%}
+      </article>
+    {% endfor %}
 
-  {%- if paginate.pages > 1 -%}
-    {{- paginate | default_pagination -}}
-  {%- endif -%}
-{% endpaginate %}
+    {% render 'pagination', paginate: paginate %}
+  {% endpaginate %}
+</div>
 
 {% schema %}
 {
