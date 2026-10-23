@@ -41,6 +41,77 @@
   --radius-input: var(--style-border-radius-inputs);
 }
 
+/*
+ * Shared button styles (docs/plans/theme-evolution-tailwind-t2.md D2.7). Also used by the
+ * roadmap's blocks/button.liquid. Named btn-* because Dawn's .button rules still match
+ * `.button`. They read the runtime variables printed by snippets/css-variables.liquid.
+ * The nested &:hover / &:focus-visible / &:disabled states are flattened only by
+ * `--minify` (Lightning CSS); never drop --minify from build:css.
+ */
+@utility btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 3rem;
+  padding-inline: 1.5rem;
+  border: 1px solid var(--color-accent);
+  background-color: var(--color-accent);
+  color: var(--color-accent-foreground);
+  font-family: var(--font-heading--family);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration-line: none;
+  transition: filter 150ms ease, opacity 150ms ease;
+  &:hover {
+    filter: brightness(0.95);
+  }
+  &:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+  &:disabled,
+  &[aria-disabled="true"] {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+@utility btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 3rem;
+  padding-inline: 1.5rem;
+  border: 1px solid currentColor;
+  background-color: transparent;
+  color: inherit;
+  font-family: var(--font-heading--family);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration-line: none;
+  transition: background-color 150ms ease;
+  &:hover {
+    background-color: color-mix(in oklab, currentColor 8%, transparent);
+  }
+  &:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+  &:disabled,
+  &[aria-disabled="true"] {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
 @layer base {
   /*
    * Moved from assets/critical.css (deleted in T0), verbatim except its universal

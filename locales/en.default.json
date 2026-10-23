@@ -255,6 +255,10 @@
       "rating_score_text": "{{ rating }} of 5",
       "rating_aria_label": "Sustainability rating: {{ rating }} out of 5"
     },
+    "product": {
+      "material_specs": "Material specs",
+      "material_specs_loading": "Loading material specs..."
+    },
     "material_info": {
       "subtitle": "Primary composition"
     },

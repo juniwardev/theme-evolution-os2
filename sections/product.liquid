@@ -8,36 +8,44 @@
 <script src="{{ 'material-api-fetch.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
-<div class="product-container page-width">
-  <div class="product-media">
-    {% for image in product.images %}
-      {{ image | image_url: width: 1000 | image_tag: class: 'product-image' }}
-    {% endfor %}
+<div class="mx-auto flex w-full max-w-page flex-col gap-8 px-6 md:flex-row md:items-start md:gap-0 md:px-20">
+  <div class="md:max-w-[50%] md:flex-[1_1_50%] lg:max-w-[55%] lg:flex-[1_1_55%]">
+    {%- for image in product.images -%}
+      {%- if forloop.first -%}
+        {%- if section.index == 1 -%}
+          {{ image | image_url: width: 1000 | image_tag: class: 'block h-auto w-full rounded-lg', loading: 'eager', fetchpriority: 'high', preload: true }}
+        {%- else -%}
+          {{ image | image_url: width: 1000 | image_tag: class: 'block h-auto w-full rounded-lg', loading: 'eager' }}
+        {%- endif -%}
+      {%- else -%}
+        {{ image | image_url: width: 1000 | image_tag: class: 'block h-auto w-full rounded-lg', loading: 'lazy' }}
+      {%- endif -%}
+    {%- endfor -%}
   </div>
 
-  <div class="product-info">
+  <div class="flex min-w-0 flex-col gap-4 md:max-w-[50%] md:flex-[1_1_50%] md:pl-20 lg:max-w-[45%] lg:flex-[1_1_45%] lg:pl-16">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
           {% render block %}
 
         {%- when 'text' -%}
-          <div class="product__text" {{ block.shopify_attributes }}>
+          <div {{ block.shopify_attributes }}>
             {{ block.settings.text }}
           </div>
 
         {%- when 'title' -%}
-          <h1 class="product__title" {{ block.shopify_attributes }}>
+          <h1 class="font-heading text-3xl leading-tight font-bold uppercase md:text-4xl" {{ block.shopify_attributes }}>
             {{ product.title | escape }}
           </h1>
 
         {%- when 'price' -%}
-          <div class="product__price" {{ block.shopify_attributes }}>
+          <div {{ block.shopify_attributes }}>
             {{ product.price | money }}
           </div>
 
         {%- when 'description' -%}
-          <div class="product__description" {{ block.shopify_attributes }}>
+          <div {{ block.shopify_attributes }}>
             {%- assign sustainable_materials = "Mycelium Bio-Fabric,Organic Cotton,Recycled Polyester" | split: "," -%}
             {%- assign description_with_tooltips = product.description -%}
             {%- for material in sustainable_materials -%}
@@ -48,22 +56,22 @@
             {{ description_with_tooltips }}
           </div>
 
-          <details id="MaterialAccordion" class="material-accordion">
-            <summary class="material-accordion__summary">
-              Material Specs
-              <span class="material-accordion__icon">+</span>
+          <details id="MaterialAccordion" class="group/acc my-4 border-y border-foreground/10 py-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between text-[1.1rem] font-semibold select-none [&::-webkit-details-marker]:hidden">
+              {{ 'sections.product.material_specs' | t }}
+              <span class="text-[1.5rem] font-normal transition-transform duration-300 group-open/acc:rotate-45">+</span>
             </summary>
-            <div id="material-data-container" class="material-accordion__content">
-              <div class="material-accordion__loading">
-                <span class="spinner"></span> Loading material specs...
+            <div id="material-data-container" class="flex items-start gap-6 pt-6 [&_.material-accordion\_\_thumbnail]:h-auto [&_.material-accordion\_\_thumbnail]:max-w-[100px] [&_.material-accordion\_\_thumbnail]:shrink-0 [&_.material-accordion\_\_thumbnail]:rounded-lg [&_.material-accordion\_\_thumbnail]:border [&_.material-accordion\_\_thumbnail]:border-foreground/5 [&_.material-accordion\_\_story]:m-0 [&_.material-accordion\_\_story]:grow [&_.material-accordion\_\_story]:leading-[1.6] [&_.material-accordion\_\_story]:text-foreground">
+              <div class="flex items-center gap-2 italic text-foreground/75">
+                {{ 'sections.product.material_specs_loading' | t }}
               </div>
             </div>
           </details>
 
         {%- when 'variant_picker' -%}
           {%- if product.variants.size > 1 -%}
-            <div class="product__variant-picker" {{ block.shopify_attributes }}>
-              <select name="id">
+            <div {{ block.shopify_attributes }}>
+              <select name="id" class="h-11 w-full min-w-0 rounded-input border border-current bg-background px-3">
                 {% for variant in product.variants %}
                   <option value="{{ variant.id }}" {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}>
                     {{ variant.title }} - {{ variant.price | money }}
@@ -74,21 +82,21 @@
           {%- endif -%}
 
         {%- when 'quantity_selector' -%}
-          <div class="product__quantity" {{ block.shopify_attributes }}>
+          <div class="flex items-center gap-3" {{ block.shopify_attributes }}>
             <label for="Quantity-{{ section.id }}">{{ 'products.product.quantity.label' | t }}</label>
-            <input type="number" id="Quantity-{{ section.id }}" name="quantity" min="1" value="1">
+            <input type="number" id="Quantity-{{ section.id }}" name="quantity" min="1" value="1" class="h-11 w-20 rounded-input border border-current bg-transparent px-3">
           </div>
 
         {%- when 'buy_buttons' -%}
-          <div class="product__buy-buttons" {{ block.shopify_attributes }}>
+          <div {{ block.shopify_attributes }}>
             <product-form>
-              {% form 'product', product %}
+              {% form 'product', product, class: 'flex flex-col gap-3' %}
                 <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                <button type="submit" name="add">
+                <button type="submit" name="add" class="btn-primary relative w-full [&.loading>span]:invisible">
                   <span>{{ 'products.product.add_to_cart' | t }}</span>
-                  <div class="loading__spinner hidden">
-                    <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                      <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                  <div class="loading__spinner hidden absolute inset-0 size-full">
+                    <svg aria-hidden="true" focusable="false" class="absolute inset-0 m-auto size-5 animate-spin" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                      <circle class="stroke-current" fill="none" stroke-width="6" stroke-dasharray="140 200" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
                     </svg>
                   </div>
                 </button>
@@ -100,8 +108,8 @@
           </div>
 
         {%- when 'share' -%}
-          <div class="product__share" {{ block.shopify_attributes }}>
-            <button>{{ block.settings.share_label | escape }}</button>
+          <div {{ block.shopify_attributes }}>
+            <button type="button" class="btn-secondary">{{ block.settings.share_label | escape }}</button>
           </div>
       {%- endcase -%}
     {%- endfor -%}
@@ -109,116 +117,6 @@
 </div>
 
 {% stylesheet %}
-  .product-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  @media screen and (min-width: 750px) {
-    .product-container {
-      flex-direction: row;
-      align-items: flex-start;
-      gap: 0;
-    }
-    
-    .product-media {
-      flex: 1 1 50%;
-      max-width: 50%;
-    }
-    
-    .product-info {
-      flex: 1 1 50%;
-      max-width: 50%;
-      min-width: 0; /* Prevents flex blowout */
-      padding: 0 0 0 5rem;
-    }
-  }
-
-  @media screen and (min-width: 990px) {
-    .product-media {
-      flex: 1 1 55%;
-      max-width: 55%;
-    }
-    
-    .product-info {
-      flex: 1 1 45%;
-      max-width: 45%;
-      padding: 0 0 0 4rem;
-    }
-  }
-  
-  .product-media img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    display: block;
-  }
-
-  .material-accordion {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    margin: 2rem 0;
-    padding: 1.5rem 0;
-  }
-
-  .material-accordion__summary {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 600;
-    font-size: 1.1rem;
-    cursor: pointer;
-    list-style: none; /* Hides default marker in standard browsers */
-    user-select: none;
-  }
-
-  /* Hides default marker in Safari */
-  .material-accordion__summary::-webkit-details-marker {
-    display: none;
-  }
-
-  .material-accordion__icon {
-    font-size: 1.5rem;
-    font-weight: 400;
-    transition: transform 0.3s ease;
-  }
-
-  /* Animate the plus to an X when open */
-  .material-accordion[open] .material-accordion__icon {
-    transform: rotate(45deg);
-  }
-
-  .material-accordion__content {
-    padding-top: 1.5rem;
-    display: flex;
-    gap: 1.5rem;
-    align-items: flex-start;
-  }
-
-  .material-accordion__loading {
-    color: #666;
-    font-style: italic;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .material-accordion__thumbnail {
-    max-width: 100px;
-    height: auto;
-    border-radius: 8px;
-    flex-shrink: 0;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-  }
-
-  .material-accordion__story {
-    flex-grow: 1;
-    line-height: 1.6;
-    color: #333;
-    margin: 0;
-  }
-
   @layer components {
     .eco-tooltip {
       position: absolute;
