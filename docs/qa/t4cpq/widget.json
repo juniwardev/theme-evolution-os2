@@ -1,0 +1,258 @@
+{
+ "dev|375": {
+  "themeId": 187953938528,
+  "proseX": 52,
+  "proseW": 271,
+  "n": 13,
+  "ctrl": [
+   {
+    "t": "INPUT:checkbox",
+    "x": -9947
+   },
+   {
+    "t": "LABEL:Don't share data from my ",
+    "x": 52
+   },
+   {
+    "t": "INPUT:checkbox",
+    "x": 52
+   },
+   {
+    "t": "BUTTON:Opt out",
+    "x": 52
+   }
+  ],
+  "overflowing": [
+   {
+    "tag": "DIV",
+    "id": "pc--optOutFormContainer",
+    "cls": "",
+    "x": 52,
+    "w": 271,
+    "sw": 379,
+    "cw": 271,
+    "ox": "visible"
+   },
+   {
+    "tag": "DIV",
+    "id": "pc--opt-out-form-container",
+    "cls": "",
+    "x": 52,
+    "w": 271,
+    "sw": 379,
+    "cw": 271,
+    "ox": "visible"
+   },
+   {
+    "tag": "FORM",
+    "id": "pc--opt-out-form",
+    "cls": "pc--opt-out-form",
+    "x": 52,
+    "w": 271,
+    "sw": 379,
+    "cw": 271,
+    "ox": "visible"
+   },
+   {
+    "tag": "DIV",
+    "id": "",
+    "cls": "pc--opt-out-form-container",
+    "x": 52,
+    "w": 271,
+    "sw": 379,
+    "cw": 271,
+    "ox": "visible"
+   },
+   {
+    "tag": "BUTTON",
+    "id": "pc--opt-out-button",
+    "cls": "pc--opt-out-form-button pc--border-color",
+    "x": 52,
+    "w": 271,
+    "sw": 265,
+    "cw": 265,
+    "ox": "hidden"
+   }
+  ],
+  "docW": 375,
+  "winW": 375,
+  "iframes": 1
+ },
+ "dev|1440": {
+  "themeId": 187953938528,
+  "proseX": 396.6,
+  "proseW": 646.9,
+  "n": 13,
+  "ctrl": [
+   {
+    "t": "INPUT:checkbox",
+    "x": -9602.4
+   },
+   {
+    "t": "LABEL:Don't share data from my ",
+    "x": 396.6
+   },
+   {
+    "t": "INPUT:checkbox",
+    "x": 396.6
+   },
+   {
+    "t": "BUTTON:Opt out",
+    "x": 396.6
+   }
+  ],
+  "overflowing": [
+   {
+    "tag": "DIV",
+    "id": "",
+    "cls": "pc--opt-out-form-container",
+    "x": 396.6,
+    "w": 375,
+    "sw": 379,
+    "cw": 375,
+    "ox": "visible"
+   },
+   {
+    "tag": "BUTTON",
+    "id": "pc--opt-out-button",
+    "cls": "pc--opt-out-form-button pc--border-color",
+    "x": 396.6,
+    "w": 141.3,
+    "sw": 135,
+    "cw": 135,
+    "ox": "hidden"
+   }
+  ],
+  "docW": 1440,
+  "winW": 1440,
+  "iframes": 1
+ },
+ "stg|375": {
+  "themeId": 187953643616,
+  "proseX": 52,
+  "proseW": 271,
+  "n": 13,
+  "ctrl": [
+   {
+    "t": "INPUT:checkbox",
+    "x": -9947
+   },
+   {
+    "t": "LABEL:Don't share data from my ",
+    "x": 52
+   },
+   {
+    "t": "INPUT:checkbox",
+    "x": 52
+   },
+   {
+    "t": "BUTTON:Opt out",
+    "x": 52
+   }
+  ],
+  "overflowing": [
+   {
+    "tag": "DIV",
+    "id": "pc--optOutFormContainer",
+    "cls": "",
+    "x": 52,
+    "w": 271,
+    "sw": 379,
+    "cw": 271,
+    "ox": "visible"
+   },
+   {
+    "tag": "DIV",
+    "id": "pc--opt-out-form-container",
+    "cls": "",
+    "x": 52,
+    "w": 271,
+    "sw": 379,
+    "cw": 271,
+    "ox": "visible"
+   },
+   {
+    "tag": "FORM",
+    "id": "pc--opt-out-form",
+    "cls": "pc--opt-out-form",
+    "x": 52,
+    "w": 271,
+    "sw": 379,
+    "cw": 271,
+    "ox": "visible"
+   },
+   {
+    "tag": "DIV",
+    "id": "",
+    "cls": "pc--opt-out-form-container",
+    "x": 52,
+    "w": 271,
+    "sw": 379,
+    "cw": 271,
+    "ox": "visible"
+   },
+   {
+    "tag": "BUTTON",
+    "id": "pc--opt-out-button",
+    "cls": "pc--opt-out-form-button pc--border-color",
+    "x": 52,
+    "w": 271,
+    "sw": 265,
+    "cw": 265,
+    "ox": "hidden"
+   }
+  ],
+  "docW": 375,
+  "winW": 375,
+  "iframes": 1
+ },
+ "stg|1440": {
+  "themeId": 187953643616,
+  "proseX": 52,
+  "proseW": 646.9,
+  "n": 13,
+  "ctrl": [
+   {
+    "t": "INPUT:checkbox",
+    "x": -9947
+   },
+   {
+    "t": "LABEL:Don't share data from my ",
+    "x": 52
+   },
+   {
+    "t": "INPUT:checkbox",
+    "x": 52
+   },
+   {
+    "t": "BUTTON:Opt out",
+    "x": 52
+   }
+  ],
+  "overflowing": [
+   {
+    "tag": "DIV",
+    "id": "",
+    "cls": "pc--opt-out-form-container",
+    "x": 52,
+    "w": 375,
+    "sw": 379,
+    "cw": 375,
+    "ox": "visible"
+   },
+   {
+    "tag": "BUTTON",
+    "id": "pc--opt-out-button",
+    "cls": "pc--opt-out-form-button pc--border-color",
+    "x": 52,
+    "w": 141.3,
+    "sw": 135,
+    "cw": 135,
+    "ox": "hidden"
+   }
+  ],
+  "docW": 1440,
+  "winW": 1440,
+  "iframes": 1
+ }
+}
