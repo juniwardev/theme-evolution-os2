@@ -3,9 +3,8 @@
   animation. Each bar is filled (green) when its index is less than or
   equal to the supplied rating.
 
-  Note: Per project CSS directive, snippets must use standard <style>
-  tags (not {% stylesheet %} or {% style %}). The CSS is therefore
-  inlined here.
+  Note: Bar fill keyframes are in a one-line <style> because snippets can't
+  use {% stylesheet %}; everything else is utilities.
 
   This snippet is a generic, reusable primitive. It does NOT bake in
   any feature-specific locale keys; callers pass localized strings
@@ -41,79 +40,21 @@
   if aria_label == blank
     assign aria_label = rating_int | append: ' out of 5'
   endif
+
+  assign active_bar_classes = 'after:absolute after:inset-0 after:origin-left after:bg-[#2d5a27] after:will-change-transform after:animate-[sustainabilityFillReveal_1s_cubic-bezier(0.19,1,0.22,1)_var(--bar-delay)_both] motion-reduce:after:animate-none'
 -%}
 
-<style>
-  .sustainability-rating { padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.08); }
-  .sustainability-rating__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 12px;
-  }
-  .sustainability-rating__label {
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #121212;
-  }
-  .sustainability-rating__score {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #2d5a27;
-  }
-  .sustainability-rating__bars {
-    display: flex;
-    gap: 4px;
-    height: 8px;
-    margin-top: 12px;
-    width: 100%;
-  }
-  .sustainability-rating__bar {
-    display: block;
-    flex: 1;
-    border-radius: 4px;
-    background-color: #eeeeee;
-    position: relative;
-    overflow: hidden;
-    height: 8px;
-  }
-  .sustainability-rating__bar--active::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: #2d5a27;
-    transform-origin: left;
-    transform: scaleX(1);
-    will-change: transform;
-    animation: sustainabilityFillReveal 1s cubic-bezier(0.19, 1, 0.22, 1) both;
-    animation-delay: var(--sustainability-anim-delay, 0s);
-  }
-  .sustainability-rating__bar:nth-child(1) { --sustainability-anim-delay: 0ms; }
-  .sustainability-rating__bar:nth-child(2) { --sustainability-anim-delay: 150ms; }
-  .sustainability-rating__bar:nth-child(3) { --sustainability-anim-delay: 300ms; }
-  .sustainability-rating__bar:nth-child(4) { --sustainability-anim-delay: 450ms; }
-  .sustainability-rating__bar:nth-child(5) { --sustainability-anim-delay: 600ms; }
-  @keyframes sustainabilityFillReveal {
-    0% { transform: scaleX(0); }
-    100% { transform: scaleX(1); }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .sustainability-rating__bar--active::after {
-      animation: none;
-    }
-  }
-</style>
+<style>@layer components{@keyframes sustainabilityFillReveal{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}}</style>
 
-<div class="sustainability-rating">
-  <div class="sustainability-rating__header">
+<div class="border-t border-current/8 pt-6">
+  <div class="mb-3 flex items-end justify-between">
     {%- if label != blank -%}
-      <span class="sustainability-rating__label">{{ label | escape }}</span>
+      <span class="text-[0.8rem] font-bold uppercase">{{ label | escape }}</span>
     {%- endif -%}
-    <span class="sustainability-rating__score">{{ score_text | escape }}</span>
+    <span class="text-[0.9rem] font-semibold text-[#2d5a27]">{{ score_text | escape }}</span>
   </div>
   <div
-    class="sustainability-rating__bars"
+    class="mt-3 flex h-2 w-full gap-1"
     role="meter"
     aria-label="{{ aria_label | escape }}"
     aria-valuenow="{{ rating_int }}"
@@ -121,10 +62,22 @@
     aria-valuemax="5"
   >
     {%- for i in (1..5) -%}
-      <span
-        class="sustainability-rating__bar{% if i <= rating_int %} sustainability-rating__bar--active{% endif %}"
-        aria-hidden="true"
-      ></span>
+      {%- if i <= rating_int -%}
+        <span
+          class="relative block h-2 flex-1 overflow-hidden rounded-sm bg-[#eeeeee] {{ active_bar_classes }}"
+          style="--bar-delay: {{ forloop.index0 | times: 150 }}ms"
+          data-sustainability-bar
+          data-active
+          aria-hidden="true"
+        ></span>
+      {%- else -%}
+        <span
+          class="relative block h-2 flex-1 overflow-hidden rounded-sm bg-[#eeeeee]"
+          style="--bar-delay: {{ forloop.index0 | times: 150 }}ms"
+          data-sustainability-bar
+          aria-hidden="true"
+        ></span>
+      {%- endif -%}
     {%- endfor -%}
   </div>
 </div>
