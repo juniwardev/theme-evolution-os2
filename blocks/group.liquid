@@ -11,41 +11,28 @@
   {% content_for 'block', type: 'group', id: 'group' %}
 {% enddoc %}
 
+{% liquid
+  if block.settings.layout_direction == 'group--horizontal'
+    assign layout_classes = 'flex-row items-center justify-between px-(--padding)'
+  else
+    case block.settings.alignment
+      when 'center'
+        assign layout_classes = 'flex-col items-center py-(--padding)'
+      when 'flex-end'
+        assign layout_classes = 'flex-col items-end py-(--padding)'
+      else
+        assign layout_classes = 'flex-col items-start py-(--padding)'
+    endcase
+  endif
+%}
+
 <div
-  class="group {{ block.settings.layout_direction }}"
-  style="
-    --padding: {{ block.settings.padding }}px;
-    --alignment: {{ block.settings.alignment }};
-  "
+  class="flex w-full flex-nowrap overflow-hidden {{ layout_classes }}"
+  style="--padding: {{ block.settings.padding }}px"
   {{ block.shopify_attributes }}
 >
   {% content_for 'blocks' %}
 </div>
-
-{% comment %}
-  Scoped so Tailwind's `group` class on other markup doesn't get this rule (docs/plans/theme-evolution-tailwind-t2.md D2.2).
-{% endcomment %}
-{% stylesheet %}
-  .group:is(.group--horizontal, .group--vertical) {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    width: 100%;
-  }
-
-  .group--horizontal {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 var(--padding);
-  }
-
-  .group--vertical {
-    flex-direction: column;
-    align-items: var(--alignment);
-    padding: var(--padding) 0;
-  }
-{% endstylesheet %}
 
 {% schema %}
 {
