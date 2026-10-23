@@ -293,19 +293,6 @@
   html {
     line-height: normal; /* T5: Preflight sets 1.5; every page was built against normal */
   }
-  ul:not([class]),
-  ol:not([class]) {
-    padding-inline-start: 1.5em; /* T4c */
-  }
-  ul:not([class]) {
-    list-style: disc; /* T4c */
-  }
-  ol:not([class]) {
-    list-style: decimal; /* T4c */
-  }
-  a:not([class]) {
-    text-decoration-line: underline; /* T4c */
-  }
   button:not(:disabled),
   [role="button"]:not(:disabled) {
     cursor: pointer; /* permanent: v4 buttons default to cursor: default */
