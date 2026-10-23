@@ -29,7 +29,7 @@
       </h3>
       {% if material_metaobject.story.value != blank %}
         <div class="m-0 text-[#4a4a4a]">
-          {{ material_metaobject.story.value }}
+          {{ material_metaobject.story.value | escape }}
         </div>
       {% endif %}
       

@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
           if (story) {
             const textContainer = document.createElement('div');
             textContainer.className = "material-accordion__story";
-            // Using innerHTML to respect newline/br formatting from the metaobject
-            textContainer.innerHTML = story;
+            // The story is plain multi-line text; textContent keeps any markup in it from being parsed.
+            textContainer.textContent = story;
             container.appendChild(textContainer);
           }
         } else {

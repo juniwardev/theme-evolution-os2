@@ -33,7 +33,7 @@
       </div>
     </div>
     {%- if material.story.value != blank -%}
-      <div class="mb-8 text-[1.05rem] leading-[1.8] text-[#3d3d3d]">{{ material.story.value | newline_to_br }}</div>
+      <div class="mb-8 text-[1.05rem] leading-[1.8] text-[#3d3d3d]">{{ material.story.value | escape | newline_to_br }}</div>
     {%- endif -%}
 
     {%- if rating_val > 0 -%}
