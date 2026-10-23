@@ -5,57 +5,40 @@
   https://shopify.dev/docs/storefronts/themes/architecture/templates/collection
 {% endcomment %}
 
-<h1>{{ 'collections.title' | t }}</h1>
+{%- liquid
+  if section.settings.grid_item_width == 'collections--compact'
+    assign grid_min = '10rem'
+  else
+    assign grid_min = '17.5rem'
+  endif
+-%}
 
-<style>
-  .collections-custom-gap-{{ section.id }} {
-    --grid-gap: {{ section.settings.grid_gap }}px;
-  }
-</style>
-<div
-  class="collections {{ section.settings.grid_item_width }} collections-custom-gap-{{ section.id }}"
->
-  {% for collection in collections %}
-    <a class="collection-card" href="{{ collection.url }}">
-      {% if collection.featured_image %}
-        {% render 'image',
-          css_class: 'collection-card__image',
-          image: collection.featured_image,
-          width: 600,
-          height: 600,
-          crop: 'center'
-        %}
-      {% endif %}
+<div class="flex flex-col gap-8 px-8 py-10 md:py-16" data-page-shell>
+  <h1 class="font-heading text-3xl leading-tight font-bold uppercase md:text-4xl">{{ 'collections.title' | t }}</h1>
 
-      <div class="collection-card__content">
-        <p>{{ collection.title }}</p>
-
-        {% if collection.description %}
-          <p>{{ collection.description | strip_html | truncatewords: 15 }}</p>
+  <div class="mb-0 grid grid-fill gap-(--grid-gap)" style="--grid-min: {{ grid_min }}; --grid-gap: {{ section.settings.grid_gap }}px">
+    {% for collection in collections %}
+      <a class="flex w-full flex-col" href="{{ collection.url }}">
+        {% if collection.featured_image %}
+          {% render 'image',
+            image: collection.featured_image,
+            width: 600,
+            height: 600,
+            crop: 'center'
+          %}
         {% endif %}
-      </div>
-    </a>
-  {% endfor %}
-</div>
 
-{% stylesheet %}
-  .collections {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(var(--collection-card-size), 100%), 1fr));
-    gap: var(--grid-gap);
-  }
-  .collections--compact {
-    --collection-card-size: 160px;
-  }
-  .collections--full {
-    --collection-card-size: 280px;
-  }
-  .collection-card {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-{% endstylesheet %}
+        <div>
+          <p>{{ collection.title | escape }}</p>
+
+          {% if collection.description %}
+            <p>{{ collection.description | strip_html | truncatewords: 15 }}</p>
+          {% endif %}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</div>
 
 {% schema %}
 {
