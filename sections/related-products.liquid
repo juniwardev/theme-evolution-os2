@@ -46,7 +46,7 @@
     data-product-id="{{ product.id }}"
   >
     {% if recommendations.performed and recommendations.products_count > 0 %}
-      <h2 class="mb-7.5 font-heading font-bold uppercase {{ heading_classes }}">
+      <h2 class="mb-7.5 font-heading font-bold uppercase [&_a]:underline {{ heading_classes }}">
         {{ section.settings.heading }}
       </h2>
       <ul class="mb-0 grid {{ mobile_columns }} {{ desktop_columns }} gap-4" role="list">
