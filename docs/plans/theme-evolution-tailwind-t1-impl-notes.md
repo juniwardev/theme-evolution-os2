@@ -196,3 +196,42 @@ Add to cart: badge 0 hidden -> 1, drawer opens (`is-open`); seeded cart quantity
 
 ### Not verified
 Theme editor behaviour (still no admin session); badge at the corner was judged visually at 1440 and 375 only; footer payment icon size not re-measured after removing `h-6.5!`/`w-auto!` (social icons 22x22 re-measured; payment selector in my probe hit a social icon).
+
+## QA-fix round 2 (full-bleed header)
+
+Owner-reported on staging: the header's dark bar was inset (left 20, width = viewport - 40) while the footer is full bleed.
+
+**Change** (`sections/header.liquid`, plus rebuilt `assets/tailwind.css`):
+- Wrapper gains `col-span-full` (same as the footer), so the background spans all `.shopify-section` grid columns.
+- `<header>` becomes `grid h-16 grid-cols-(--content-grid)`; an inner `col-start-2 flex h-full items-center justify-between px-8` div holds the logo, nav and icon row. `--content-grid` is the existing section variable, so the content column is identical to before: 20px gutter plus `px-8`.
+- Announcement bar: border and background are full bleed; the `<p>` sits in column 2 with `px-8 py-2`, so its text position is unchanged. (Not rendered in the test data, so not measured.)
+- Mobile panel: still `absolute inset-x-0` against the wrapper, so it widens to the viewport. Its side padding is now `px-[calc((100%-var(--content-width))/2+2rem)]`, which keeps the links where they were.
+- Header `{% schema %}` unchanged (diff contains no schema lines).
+
+**Bar geometry** (before = staging #187953643616 at 4ffecbc, after = dev theme; `/` and the 3p snowboard identical):
+
+| Width | Before (left, right) | After |
+|---|---|---|
+| 320 | 20, 300 | 0, 320 |
+| 375 | 20, 355 | 0, 375 |
+| 768 | 20, 748 | 0, 768 |
+| 1023 | 20, 1003 | 0, 1023 |
+| 1024 | 20, 1004 | 0, 1024 |
+| 1440 | 20, 1420 | 0, 1440 |
+
+Background is rgb(17,17,17) in all cases.
+
+**Inner content proof:** the logo, first nav link, menu toggle and cart icon left/right were compared before and after at 320, 375, 768, 900, 1023, 1024 and 1440 on both pages; there were 0 differences beyond 0.5px (e.g. logo 52-202 at 375, 52-352 at 1440; cart 1344-1388 at 1440). Script: `docs/qa/harness/t1r2-header-fullbleed.mjs`.
+
+**Menu panel geometry** (below lg): before left 20, right = viewport - 20 (e.g. 20-355 at 375); after 0 to viewport width. First link x is 52-323 at 375 both before and after. Page overflow with the menu open is unchanged from before. On the 3p snowboard it is 0 at every width.
+
+**Behavior** (`t1r2-behavior.mjs`, 375 and 900): toggle, `aria-expanded`, label swap, focus into the panel and Escape all pass. Header stays sticky (top 0 after scroll). Cart badge updated 0 -> 1 on add-to-cart.
+
+**Gates:** build:css ok; check:css exit 0; check:hidden exit 0; theme check shows 2 offenses (1 error, 1 warning, the baseline pair); CSS 14,864 bytes / 4,225 gzip (budget 60,000 / 12,000); schema unchanged.
+
+**Not verified / observations:**
+- The "click outside closes the panel" probe (click at y=650) left the panel open on both baseline and after, so it is identical to before. Not investigated.
+- The homepage has page overflow of 76px at 320 and 21px at 375, identical before and after. It is pre-existing and unrelated to the header.
+- The drawer-open class check in my probe is not meaningful. Only the badge update was confirmed.
+
+Hello-world band, card and image banner alignment are deferred to T3.

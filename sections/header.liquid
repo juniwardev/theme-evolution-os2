@@ -11,97 +11,99 @@
 -%}
 
 <div
-  class="theme-evolution-header-wrapper relative bg-(--header-bg) text-(--header-text)"
+  class="theme-evolution-header-wrapper relative col-span-full bg-(--header-bg) text-(--header-text)"
   style="--header-bg: {{ section.settings.header_background }}; --header-text: {{ section.settings.header_text }}; --logo-width: {{ section.settings.logo_width }}px"
 >
   {%- if show_announcement and announcement_text != blank -%}
-    <div class="border-b border-current/8 px-8 py-2 text-center" role="note">
-      <p class="m-0 text-xs tracking-[0.05em]">{{ announcement_text | escape }}</p>
+    <div class="grid grid-cols-(--content-grid) border-b border-current/8" role="note">
+      <p class="col-start-2 m-0 px-8 py-2 text-center text-xs tracking-[0.05em]">{{ announcement_text | escape }}</p>
     </div>
   {%- endif -%}
 
-  <header class="flex h-16 items-center justify-between px-8">
-    <h2 class="m-0 leading-none">
-      <a href="{{ routes.root_url }}" class="relative flex h-full w-(--logo-width) max-w-[40vw] items-center overflow-hidden no-underline">
-        {%- if section.settings.logo != blank -%}
-          {%- assign logo_alt = section.settings.logo.alt | default: shop.name | escape -%}
-          {%- assign logo_height = section.settings.logo_width | times: section.settings.logo.height | divided_by: section.settings.logo.width -%}
-          {{
-            section.settings.logo
-            | image_url: width: section.settings.logo_width
-            | image_tag:
-                class: 'block size-full object-contain object-left',
-                widths: '50, 100, 150, 200, 250, 300, 400, 500',
-                width: section.settings.logo_width,
-                height: logo_height,
-                alt: logo_alt,
-                loading: 'eager'
-          }}
-        {%- else -%}
-          <span class="font-heading text-2xl uppercase">{{ shop.name }}</span>
-        {%- endif -%}
-      </a>
-    </h2>
-
-    {%- if has_menu -%}
-      <div class="flex items-center gap-6 max-lg:hidden" aria-label="{{ 'sections.header.menu' | t }}">
-        {%- for link in section.settings.menu.links -%}
-          <a href="{{ link.url }}" class="relative text-sm font-semibold tracking-[0.1em] uppercase no-underline">{{ link.title | escape }}</a>
-        {%- endfor -%}
-      </div>
-    {%- endif -%}
-
-    <div class="flex items-center">
-      {%- if has_menu -%}
-        <theme-evolution-header-menu class="flex lg:hidden">
-          <button
-            type="button"
-            class="theme-evolution-header-menu__toggle group/menu flex size-11 items-center justify-center text-inherit [&_svg]:size-6"
-            aria-expanded="false"
-            aria-controls="theme-evolution-header-menu-panel-{{ section.id }}"
-          >
-            <span
-              class="sr-only"
-              data-label-open="{{ mobile_menu_label | escape }}"
-              data-label-close="{{ close_menu_label | escape }}"
-            >{{ mobile_menu_label | escape }}</span>
-            <span class="inline-flex group-aria-expanded/menu:hidden">{{ 'icon-hamburger.svg' | inline_asset_content }}</span>
-            <span class="inline-flex group-aria-[expanded=false]/menu:hidden">{{ 'icon-close.svg' | inline_asset_content }}</span>
-          </button>
-          <div
-            id="theme-evolution-header-menu-panel-{{ section.id }}"
-            class="theme-evolution-header-menu__panel absolute inset-x-0 top-full flex flex-col gap-4 border-t border-current/8 bg-(--header-bg) px-8 py-6 text-(--header-text) lg:hidden"
-            data-state="closed"
-            hidden
-          >
-            {%- for link in section.settings.menu.links -%}
-              <a href="{{ link.url }}" class="relative text-sm font-semibold tracking-[0.1em] uppercase no-underline">{{ link.title | escape }}</a>
-            {%- endfor -%}
-          </div>
-        </theme-evolution-header-menu>
-      {%- endif -%}
-
-      {%- if shop.customer_accounts_enabled -%}
-        <a href="{{ routes.account_url }}" class="relative flex size-11 items-center justify-center text-inherit no-underline [&_svg]:size-6">
-          {{ 'icon-account.svg' | inline_asset_content }}
+  <header class="grid h-16 grid-cols-(--content-grid)">
+    <div class="col-start-2 flex h-full items-center justify-between px-8">
+      <h2 class="m-0 leading-none">
+        <a href="{{ routes.root_url }}" class="relative flex h-full w-(--logo-width) max-w-[40vw] items-center overflow-hidden no-underline">
+          {%- if section.settings.logo != blank -%}
+            {%- assign logo_alt = section.settings.logo.alt | default: shop.name | escape -%}
+            {%- assign logo_height = section.settings.logo_width | times: section.settings.logo.height | divided_by: section.settings.logo.width -%}
+            {{
+              section.settings.logo
+              | image_url: width: section.settings.logo_width
+              | image_tag:
+                  class: 'block size-full object-contain object-left',
+                  widths: '50, 100, 150, 200, 250, 300, 400, 500',
+                  width: section.settings.logo_width,
+                  height: logo_height,
+                  alt: logo_alt,
+                  loading: 'eager'
+            }}
+          {%- else -%}
+            <span class="font-heading text-2xl uppercase">{{ shop.name }}</span>
+          {%- endif -%}
         </a>
+      </h2>
+
+      {%- if has_menu -%}
+        <div class="flex items-center gap-6 max-lg:hidden" aria-label="{{ 'sections.header.menu' | t }}">
+          {%- for link in section.settings.menu.links -%}
+            <a href="{{ link.url }}" class="relative text-sm font-semibold tracking-[0.1em] uppercase no-underline">{{ link.title | escape }}</a>
+          {%- endfor -%}
+        </div>
       {%- endif -%}
 
-      <a
-        href="{{ routes.cart_url }}"
-        class="relative flex size-11 items-center justify-center text-inherit no-underline [&_svg]:size-10"
-        data-header-cart-icon
-        {% if settings.enable_cart_drawer %}data-cart-drawer-trigger{% endif %}
-        aria-label="{{ cart_count_label | escape }}"
-      >
-        <span
-          class="absolute top-0 -right-1.5 h-[1.4rem] min-w-[1.4rem] rounded-full bg-(--header-text) px-1.5 text-center text-[0.7rem] leading-[1.4rem] font-bold text-(--header-bg)"
-          data-count="{{ cart.item_count }}"
-          {% if cart.item_count == 0 %}hidden{% endif %}
+      <div class="flex items-center">
+        {%- if has_menu -%}
+          <theme-evolution-header-menu class="flex lg:hidden">
+            <button
+              type="button"
+              class="theme-evolution-header-menu__toggle group/menu flex size-11 items-center justify-center text-inherit [&_svg]:size-6"
+              aria-expanded="false"
+              aria-controls="theme-evolution-header-menu-panel-{{ section.id }}"
+            >
+              <span
+                class="sr-only"
+                data-label-open="{{ mobile_menu_label | escape }}"
+                data-label-close="{{ close_menu_label | escape }}"
+              >{{ mobile_menu_label | escape }}</span>
+              <span class="inline-flex group-aria-expanded/menu:hidden">{{ 'icon-hamburger.svg' | inline_asset_content }}</span>
+              <span class="inline-flex group-aria-[expanded=false]/menu:hidden">{{ 'icon-close.svg' | inline_asset_content }}</span>
+            </button>
+            <div
+              id="theme-evolution-header-menu-panel-{{ section.id }}"
+              class="theme-evolution-header-menu__panel absolute inset-x-0 top-full flex flex-col gap-4 border-t border-current/8 bg-(--header-bg) px-[calc((100%-var(--content-width))/2+2rem)] py-6 text-(--header-text) lg:hidden"
+              data-state="closed"
+              hidden
+            >
+              {%- for link in section.settings.menu.links -%}
+                <a href="{{ link.url }}" class="relative text-sm font-semibold tracking-[0.1em] uppercase no-underline">{{ link.title | escape }}</a>
+              {%- endfor -%}
+            </div>
+          </theme-evolution-header-menu>
+        {%- endif -%}
+
+        {%- if shop.customer_accounts_enabled -%}
+          <a href="{{ routes.account_url }}" class="relative flex size-11 items-center justify-center text-inherit no-underline [&_svg]:size-6">
+            {{ 'icon-account.svg' | inline_asset_content }}
+          </a>
+        {%- endif -%}
+
+        <a
+          href="{{ routes.cart_url }}"
+          class="relative flex size-11 items-center justify-center text-inherit no-underline [&_svg]:size-10"
+          data-header-cart-icon
+          {% if settings.enable_cart_drawer %}data-cart-drawer-trigger{% endif %}
           aria-label="{{ cart_count_label | escape }}"
-        >{{ cart.item_count }}</span>
-        {{ 'icon-cart.svg' | inline_asset_content }}
-      </a>
+        >
+          <span
+            class="absolute top-0 -right-1.5 h-[1.4rem] min-w-[1.4rem] rounded-full bg-(--header-text) px-1.5 text-center text-[0.7rem] leading-[1.4rem] font-bold text-(--header-bg)"
+            data-count="{{ cart.item_count }}"
+            {% if cart.item_count == 0 %}hidden{% endif %}
+            aria-label="{{ cart_count_label | escape }}"
+          >{{ cart.item_count }}</span>
+          {{ 'icon-cart.svg' | inline_asset_content }}
+        </a>
+      </div>
     </div>
   </header>
 </div>
