@@ -1,0 +1,45 @@
+PASS C4a.5 closed 1440 {"hidden":true,"state":"closed","busy":null,"cls":"group/drawer block","display":"none"
+PASS C4a.5 open 1440 {"h":{"hidden":false,"state":"open","busy":null,"cls":"group/drawer block","display":"blo
+PASS C4a.5 escape 1440 {"hidden":true,"state":"closed","busy":null,"cls":"group/drawer block","display":"none"
+PASS C4a.5 overlay click closes 1440 
+PASS C4a.5 close button 1440 
+PASS C4a.5 closed 430 {"hidden":true,"state":"closed","busy":null,"cls":"group/drawer block","display":"none",
+PASS C4a.5 open 430 {"h":{"hidden":false,"state":"open","busy":null,"cls":"group/drawer block","display":"bloc
+PASS C4a.5 escape 430 {"hidden":true,"state":"closed","busy":null,"cls":"group/drawer block","display":"none",
+PASS C4a.5 overlay click closes 430 
+PASS C4a.5 close button 430 
+PASS C4a.5 closed 375 {"hidden":true,"state":"closed","busy":null,"cls":"group/drawer block","display":"none",
+PASS C4a.5 open 375 {"h":{"hidden":false,"state":"open","busy":null,"cls":"group/drawer block","display":"bloc
+PASS C4a.5 escape 375 {"hidden":true,"state":"closed","busy":null,"cls":"group/drawer block","display":"none",
+PASS C4a.5 panel covers overlay 375 
+PASS C4a.5 close button 375 
+PASS C4a.6 wax 1440 add opens drawer 
+PASS C4a.6 wax 1440 badge {"badge":"1","aria":"1 item","link":"1 item"}
+PASS C4a.11 wax 1440 strings {"close":"Close cart","total":"Total","label":"Quantity","qaria":"Quantity for Se
+PASS C4a.16 wax 1440 headings/imgs/h1 {"close":"Close cart","total":"Total","label":"Quantity","qaria":"Quanti
+PASS C4a.6 wax 1440 busy during {"busy":"true","vis":"visible","w":"32px","h":"32px","anim":"spin","cx":0,"cy"
+PASS C4a.6 wax 1440 after {"busy":null,"vis":"hidden","badge":"3","aria":"3 items","open":"open"}
+PASS C4a.6 wax 1440 empty after remove {"text":"Your cart is empty.","cta":"/collections/all","badgeShown":"no
+PASS C4a.17b wax 1440 section render inner count 1
+PASS C4a.6 wax 375 add opens drawer 
+PASS C4a.6 wax 375 badge {"badge":"1","aria":"1 item","link":"1 item"}
+PASS C4a.11 wax 375 strings {"close":"Close cart","total":"Total","label":"Quantity","qaria":"Quantity for Sel
+PASS C4a.16 wax 375 headings/imgs/h1 {"close":"Close cart","total":"Total","label":"Quantity","qaria":"Quantit
+PASS C4a.6 wax 375 busy during {"busy":"true","vis":"visible","w":"32px","h":"32px","anim":"spin","cx":0,"cy":
+PASS C4a.6 wax 375 after {"busy":null,"vis":"hidden","badge":"3","aria":"3 items","open":"open"}
+PASS C4a.6 wax 375 empty after remove {"text":"Your cart is empty.","cta":"/collections/all","badgeShown":"non
+PASS C4a.17b wax 375 section render inner count 1
+PASS C4a.6 snow 1440 add opens drawer 
+PASS C4a.6 snow 1440 badge {"badge":"1","aria":"1 item","link":"1 item"}
+PASS C4a.11 snow 1440 strings {"close":"Close cart","total":"Total","label":"Quantity","qaria":"Quantity for T
+PASS C4a.16 snow 1440 headings/imgs/h1 {"close":"Close cart","total":"Total","label":"Quantity","qaria":"Quant
+PASS C4a.6 snow 1440 busy during {"busy":"true","vis":"visible","w":"32px","h":"32px","anim":"spin","cx":0,"cy
+PASS C4a.6 snow 1440 after {"busy":null,"vis":"hidden","badge":"3","aria":"3 items","open":"open"}
+PASS C4a.6 snow 375 add opens drawer 
+PASS C4a.6 snow 375 badge {"badge":"1","aria":"1 item","link":"1 item"}
+PASS C4a.11 snow 375 strings {"close":"Close cart","total":"Total","label":"Quantity","qaria":"Quantity for Th
+PASS C4a.16 snow 375 headings/imgs/h1 {"close":"Close cart","total":"Total","label":"Quantity","qaria":"Quanti
+PASS C4a.6 snow 375 busy during {"busy":"true","vis":"visible","w":"32px","h":"32px","anim":"spin","cx":0,"cy"
+PASS C4a.6 snow 375 after {"busy":null,"vis":"hidden","badge":"3","aria":"3 items","open":"open"}
+PASS C4a.6 3p 422 drawer closed, button recovered {"loading":false,"spinHidden":true}
+ALL PASS

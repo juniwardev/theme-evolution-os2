@@ -1,0 +1,9 @@
+{
+ "variant": "px1",
+ "label": "head",
+ "drawerEl": false,
+ "trigger": 0,
+ "cartLink": "/cart",
+ "afterAddUrl": "/cart",
+ "rowsOnCart": 1
+}

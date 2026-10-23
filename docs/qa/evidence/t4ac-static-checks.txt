@@ -1,0 +1,24 @@
+== C4a.7a
+snippets/spinner.liquid:2:  Renders an animated loading spinner: an SVG circle that rotates with `animate-spin` and
+snippets/spinner.liquid:25:<svg aria-hidden="true" focusable="false" class="{{ size_class }} animate-spin {{ css_class }}" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+svg rg exit=1
+sections/product.liquid:98:                    {% render 'spinner', css_class: 'absolute inset-0 m-auto' %}
+sections/cart-drawer.liquid:78:          {% render 'spinner', size: 'lg' %}
+== C4a.11 static
+rg exit=1
+== C4a.17a script diff
+-      <div class="cart-drawer__panel" role="dialog" aria-modal="true" aria-label="{{ 'cart.title' | t }}">
+-          <button class="cart-drawer__close" type="button" data-cart-drawer-close aria-label="Close cart">
++      <div class="relative flex h-full w-full max-w-[25rem] translate-x-full flex-col bg-background shadow-[-5px_0_15px_rgb(0_0_0/0.1)] transition-transform duration-300 ease-[cubic-bezier(0.19,1,0.22,1)] group-data-[state=open]/drawer:translate-x-0" role="dialog" aria-modal="true" aria-label="{{ 'cart.title' | t }}">
++          <button class="text-[2rem] leading-none" type="button" data-cart-drawer-close aria-label="{{ 'cart.close' | t }}">
+-                          aria-label="Quantity for {{ item.product.title | escape }}"
++                          aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
+== schema shas
+cart-drawer 1451daac3983f770840f91d4925cb2cb68a9a1c3  -
+cart dad689eabfb5ab691e81375aa1059757eeb86e8c  -
+product 5afd8626a04a9b651cf2e1d91f67a68c3f012847  -
+cart-drawer 1451daac3983f770840f91d4925cb2cb68a9a1c3  -
+cart dad689eabfb5ab691e81375aa1059757eeb86e8c  -
+product 5afd8626a04a9b651cf2e1d91f67a68c3f012847  -
+== include
+include exit=1

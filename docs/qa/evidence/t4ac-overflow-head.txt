@@ -1,0 +1,43 @@
+PASS C4a.12 /cart empty 320 {"vw":320,"sw":320,"off":[]}
+PASS C4a.12 /cart empty 375 {"vw":375,"sw":375,"off":[]}
+PASS C4a.12 /cart empty 390 {"vw":390,"sw":390,"off":[]}
+PASS C4a.12 /cart empty 430 {"vw":430,"sw":430,"off":[]}
+PASS C4a.12 /cart empty 768 {"vw":768,"sw":768,"off":[]}
+PASS C4a.12 /cart empty 1440 {"vw":1440,"sw":1440,"off":[]}
+PASS C4a.12 drawer open empty 320 {"r":[0,320],"o":{"vw":320,"sw":320,"off":[]}}
+PASS C4a.12 drawer open empty 375 {"r":[0,375],"o":{"vw":375,"sw":375,"off":[]}}
+PASS C4a.12 /cart one 320 {"vw":320,"sw":320,"off":[]}
+PASS C4a.12 /cart one 375 {"vw":375,"sw":375,"off":[]}
+PASS C4a.12 /cart one 390 {"vw":390,"sw":390,"off":[]}
+PASS C4a.12 /cart one 430 {"vw":430,"sw":430,"off":[]}
+PASS C4a.12 /cart one 768 {"vw":768,"sw":768,"off":[]}
+PASS C4a.12 /cart one 1440 {"vw":1440,"sw":1440,"off":[]}
+PASS C4a.12 drawer open one 320 {"r":[0,320],"o":{"vw":320,"sw":320,"off":[]}}
+PASS C4a.12 drawer open one 375 {"r":[0,375],"o":{"vw":375,"sw":375,"off":[]}}
+PASS C4a.12 /cart two 320 {"vw":320,"sw":320,"off":[]}
+PASS C4a.12 /cart two 375 {"vw":375,"sw":375,"off":[]}
+PASS C4a.12 /cart two 390 {"vw":390,"sw":390,"off":[]}
+PASS C4a.12 /cart two 430 {"vw":430,"sw":430,"off":[]}
+PASS C4a.12 /cart two 768 {"vw":768,"sw":768,"off":[]}
+PASS C4a.12 /cart two 1440 {"vw":1440,"sw":1440,"off":[]}
+PASS C4a.12 drawer open two 320 {"r":[0,320],"o":{"vw":320,"sw":320,"off":[]}}
+PASS C4a.12 drawer open two 375 {"r":[0,375],"o":{"vw":375,"sw":375,"off":[]}}
+INFO regress overflow / 375: sw-vw=0 offs=0
+INFO regress overflow / 1440: sw-vw=0 offs=0
+INFO regress overflow /products/the-3p-fulfilled-snowboard 375: sw-vw=0 offs=0
+INFO regress overflow /products/the-3p-fulfilled-snowboard 1440: sw-vw=0 offs=0
+INFO regress overflow /products/selling-plans-ski-wax 375: sw-vw=0 offs=0
+INFO regress overflow /products/selling-plans-ski-wax 1440: sw-vw=0 offs=0
+INFO regress overflow /products/the-complete-snowboard 375: sw-vw=0 offs=0
+INFO regress overflow /products/the-complete-snowboard 1440: sw-vw=0 offs=0
+INFO regress overflow /collections/all 375: sw-vw=145 offs=12
+INFO regress overflow /collections/all 1440: sw-vw=0 offs=0
+INFO regress overflow /collections 375: sw-vw=0 offs=0
+INFO regress overflow /collections 1440: sw-vw=0 offs=0
+INFO regress overflow /search?q=snowboard 375: sw-vw=103 offs=1
+INFO regress overflow /search?q=snowboard 1440: sw-vw=0 offs=0
+INFO regress overflow /pages/the-material-archive 375: sw-vw=0 offs=0
+INFO regress overflow /pages/the-material-archive 1440: sw-vw=0 offs=0
+INFO regress overflow /pages/tailwind-qa-missing 375: sw-vw=0 offs=0
+INFO regress overflow /pages/tailwind-qa-missing 1440: sw-vw=0 offs=0
+ALL PASS

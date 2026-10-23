@@ -1,0 +1,65 @@
+{
+ "variant": "px2",
+ "label": "base",
+ "fgVar": "#ee1188",
+ "bgVar": "#112233",
+ "drawer": {
+  "panelBg": "rgb(255, 255, 255)",
+  "headerBorderBottom": "rgba(0, 0, 0, 0.08)",
+  "titleColor": "rgb(18, 18, 18)",
+  "removeColor": "rgb(211, 47, 47)",
+  "checkoutBg": "rgb(18, 18, 18)"
+ },
+ "banner": {
+  "x": 1060,
+  "w": 360,
+  "h": 104,
+  "paddingTop": "15px",
+  "paddingRight": "20px",
+  "paddingBottom": "15px",
+  "paddingLeft": "20px",
+  "marginTop": "0px",
+  "marginRight": "20px",
+  "marginBottom": "24px",
+  "marginLeft": "20px",
+  "borderTopWidth": "1px",
+  "borderRightWidth": "1px",
+  "borderBottomWidth": "1px",
+  "borderLeftWidth": "1px",
+  "borderTopLeftRadius": "8px",
+  "fontWeight": "600",
+  "fontSize": "16px",
+  "lineHeight": "24px",
+  "textAlign": "center",
+  "backgroundColorCh": [
+   232,
+   245,
+   233
+  ],
+  "colorCh": [
+   46,
+   125,
+   50
+  ],
+  "borderTopColorCh": [
+   76,
+   175,
+   80
+  ],
+  "borderRightColorCh": [
+   76,
+   175,
+   80
+  ],
+  "borderBottomColorCh": [
+   76,
+   175,
+   80
+  ],
+  "borderLeftColorCh": [
+   76,
+   175,
+   80
+  ]
+ }
+}

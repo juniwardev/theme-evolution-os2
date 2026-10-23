@@ -1,0 +1,22 @@
+drawer-closed-empty-375            els 12 unlayered 9 inline<style>#shopify-section-cart-drawer | legacy classes button | empty divs none*,none
+drawer-open-empty-375              els 12 unlayered 12 inline<style>#shopify-section-cart-drawer | legacy classes button | empty divs none*,none
+cart-empty-375                     els 5 unlayered 0  | legacy classes - | empty divs -
+drawer-closed-one-375              els 26 unlayered 21 inline<style>#shopify-section-cart-drawer | legacy classes visually-hidden,button | empty divs none*
+drawer-open-one-375                els 26 unlayered 24 inline<style>#shopify-section-cart-drawer | legacy classes visually-hidden,button | empty divs none*
+addtocart-rest-375                 els 5 unlayered 0  | legacy classes loading__spinner,hidden | empty divs -
+drawer-busy-375                    els 26 unlayered 24 inline<style>#shopify-section-cart-drawer | legacy classes visually-hidden,button | empty divs none*
+cart-one-375                       els 16 unlayered 2 styles.css | legacy classes - | empty divs -
+drawer-closed-two-375              els 36 unlayered 21 inline<style>#shopify-section-cart-drawer | legacy classes visually-hidden,button | empty divs none*
+drawer-open-two-375                els 36 unlayered 24 inline<style>#shopify-section-cart-drawer | legacy classes visually-hidden,button | empty divs none*
+cart-two-375                       els 26 unlayered 2 styles.css | legacy classes - | empty divs -
+drawer-closed-empty-1440           els 12 unlayered 9 inline<style>#shopify-section-cart-drawer | legacy classes button | empty divs none*,none
+drawer-open-empty-1440             els 12 unlayered 12 inline<style>#shopify-section-cart-drawer | legacy classes button | empty divs none*,none
+cart-empty-1440                    els 5 unlayered 0  | legacy classes - | empty divs -
+drawer-closed-one-1440             els 26 unlayered 21 inline<style>#shopify-section-cart-drawer | legacy classes visually-hidden,button | empty divs none*
+drawer-open-one-1440               els 26 unlayered 24 inline<style>#shopify-section-cart-drawer | legacy classes visually-hidden,button | empty divs none*
+addtocart-rest-1440                els 5 unlayered 0  | legacy classes loading__spinner,hidden | empty divs -
+drawer-busy-1440                   els 26 unlayered 24 inline<style>#shopify-section-cart-drawer | legacy classes visually-hidden,button | empty divs none*
+cart-one-1440                      els 16 unlayered 2 styles.css | legacy classes - | empty divs -
+drawer-closed-two-1440             els 36 unlayered 21 inline<style>#shopify-section-cart-drawer | legacy classes visually-hidden,button | empty divs none*
+drawer-open-two-1440               els 36 unlayered 24 inline<style>#shopify-section-cart-drawer | legacy classes visually-hidden,button | empty divs none*
+cart-two-1440                      els 26 unlayered 2 styles.css | legacy classes - | empty divs -

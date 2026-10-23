@@ -1,0 +1,242 @@
+{
+ "variant": "px34",
+ "label": "base",
+ "drawer-375": {
+  "banner": {
+   "x": 20,
+   "w": 335,
+   "h": 104,
+   "paddingTop": "15px",
+   "paddingRight": "20px",
+   "paddingBottom": "15px",
+   "paddingLeft": "20px",
+   "marginTop": "0px",
+   "marginRight": "20px",
+   "marginBottom": "24px",
+   "marginLeft": "20px",
+   "borderTopWidth": "1px",
+   "borderRightWidth": "1px",
+   "borderBottomWidth": "1px",
+   "borderLeftWidth": "1px",
+   "borderTopLeftRadius": "8px",
+   "fontWeight": "600",
+   "fontSize": "16px",
+   "lineHeight": "24px",
+   "textAlign": "center",
+   "backgroundColorCh": [
+    232,
+    245,
+    233
+   ],
+   "colorCh": [
+    46,
+    125,
+    50
+   ],
+   "borderTopColorCh": [
+    76,
+    175,
+    80
+   ],
+   "borderRightColorCh": [
+    76,
+    175,
+    80
+   ],
+   "borderBottomColorCh": [
+    76,
+    175,
+    80
+   ],
+   "borderLeftColorCh": [
+    76,
+    175,
+    80
+   ]
+  },
+  "qty": {
+   "tl": "4px",
+   "bl": "4px",
+   "tr": "4px"
+  }
+ },
+ "cart-375": {
+  "banner": {
+   "x": 40,
+   "w": 295,
+   "h": 128,
+   "paddingTop": "15px",
+   "paddingRight": "20px",
+   "paddingBottom": "15px",
+   "paddingLeft": "20px",
+   "marginTop": "0px",
+   "marginRight": "20px",
+   "marginBottom": "24px",
+   "marginLeft": "20px",
+   "borderTopWidth": "1px",
+   "borderRightWidth": "1px",
+   "borderBottomWidth": "1px",
+   "borderLeftWidth": "1px",
+   "borderTopLeftRadius": "8px",
+   "fontWeight": "600",
+   "fontSize": "16px",
+   "lineHeight": "24px",
+   "textAlign": "center",
+   "backgroundColorCh": [
+    232,
+    245,
+    233
+   ],
+   "colorCh": [
+    46,
+    125,
+    50
+   ],
+   "borderTopColorCh": [
+    76,
+    175,
+    80
+   ],
+   "borderRightColorCh": [
+    76,
+    175,
+    80
+   ],
+   "borderBottomColorCh": [
+    76,
+    175,
+    80
+   ],
+   "borderLeftColorCh": [
+    76,
+    175,
+    80
+   ]
+  },
+  "qty": {
+   "tl": "10px",
+   "bl": "10px",
+   "tr": "10px"
+  },
+  "L": 52
+ },
+ "drawer-1440": {
+  "banner": {
+   "x": 1060,
+   "w": 360,
+   "h": 104,
+   "paddingTop": "15px",
+   "paddingRight": "20px",
+   "paddingBottom": "15px",
+   "paddingLeft": "20px",
+   "marginTop": "0px",
+   "marginRight": "20px",
+   "marginBottom": "24px",
+   "marginLeft": "20px",
+   "borderTopWidth": "1px",
+   "borderRightWidth": "1px",
+   "borderBottomWidth": "1px",
+   "borderLeftWidth": "1px",
+   "borderTopLeftRadius": "8px",
+   "fontWeight": "600",
+   "fontSize": "16px",
+   "lineHeight": "24px",
+   "textAlign": "center",
+   "backgroundColorCh": [
+    232,
+    245,
+    233
+   ],
+   "colorCh": [
+    46,
+    125,
+    50
+   ],
+   "borderTopColorCh": [
+    76,
+    175,
+    80
+   ],
+   "borderRightColorCh": [
+    76,
+    175,
+    80
+   ],
+   "borderBottomColorCh": [
+    76,
+    175,
+    80
+   ],
+   "borderLeftColorCh": [
+    76,
+    175,
+    80
+   ]
+  },
+  "qty": {
+   "tl": "4px",
+   "bl": "4px",
+   "tr": "4px"
+  }
+ },
+ "cart-1440": {
+  "banner": {
+   "x": 40,
+   "w": 1360,
+   "h": 56,
+   "paddingTop": "15px",
+   "paddingRight": "20px",
+   "paddingBottom": "15px",
+   "paddingLeft": "20px",
+   "marginTop": "0px",
+   "marginRight": "20px",
+   "marginBottom": "24px",
+   "marginLeft": "20px",
+   "borderTopWidth": "1px",
+   "borderRightWidth": "1px",
+   "borderBottomWidth": "1px",
+   "borderLeftWidth": "1px",
+   "borderTopLeftRadius": "8px",
+   "fontWeight": "600",
+   "fontSize": "16px",
+   "lineHeight": "24px",
+   "textAlign": "center",
+   "backgroundColorCh": [
+    232,
+    245,
+    233
+   ],
+   "colorCh": [
+    46,
+    125,
+    50
+   ],
+   "borderTopColorCh": [
+    76,
+    175,
+    80
+   ],
+   "borderRightColorCh": [
+    76,
+    175,
+    80
+   ],
+   "borderBottomColorCh": [
+    76,
+    175,
+    80
+   ],
+   "borderLeftColorCh": [
+    76,
+    175,
+    80
+   ]
+  },
+  "qty": {
+   "tl": "10px",
+   "bl": "10px",
+   "tr": "10px"
+  },
+  "L": 52
+ }
+}

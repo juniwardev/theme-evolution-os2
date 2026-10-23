@@ -1,0 +1,19 @@
+PASS C4a.9 structure {"tables":0,"rows":2,"subs":[":BUTTON","checkout:BUTTON"],"action":"/cart","method":"post
+PASS C4a.9 update posts quantities {"qty":["2","1"],"badge":"3","aria":"3 items"}
+PASS C4a.9 remove link rows 1
+PASS C4a.9 empty {"forms":0,"text":"Your cart is empty.","cta":"/collections/all","h1":1}
+PASS C4a.10 320 {"L":52,"R":312,"h1L":52,"liL":52,"ulR":268,"rowR":268,"imgCol":80,"input":[80,44],"btnH":[48,
+PASS C4a.12 cart one 320 {"vw":320,"sw":320,"off":[]}
+PASS C4a.10 375 {"L":52,"R":334,"h1L":52,"liL":52,"ulR":323,"rowR":323,"imgCol":80,"input":[80,44],"btnH":[48,
+PASS C4a.12 cart one 375 {"vw":375,"sw":375,"off":[]}
+PASS C4a.10 390 {"L":52,"R":340,"h1L":52,"liL":52,"ulR":338,"rowR":338,"imgCol":80,"input":[80,44],"btnH":[48,
+PASS C4a.12 cart one 390 {"vw":390,"sw":390,"off":[]}
+PASS C4a.10 430 {"L":52,"R":378,"h1L":52,"liL":52,"ulR":378,"rowR":378,"imgCol":80,"input":[80,44],"btnH":[48,
+PASS C4a.12 cart one 430 {"vw":430,"sw":430,"off":[]}
+PASS C4a.10 768 {"L":52,"R":716,"h1L":52,"liL":52,"ulR":716,"rowR":716,"imgCol":80,"input":[80,44],"btnH":[48,
+PASS C4a.12 cart one 768 {"vw":768,"sw":768,"off":[]}
+PASS C4a.10 1440 {"L":52,"R":1388,"h1L":52,"liL":52,"ulR":1388,"rowR":1388,"imgCol":80,"input":[80,44],"btnH":
+PASS C4a.12 cart one 1440 {"vw":1440,"sw":1440,"off":[]}
+PASS C4a.10 1920 {"L":292,"R":1628,"h1L":292,"liL":292,"ulR":1628,"rowR":1628,"imgCol":80,"input":[80,44],"btn
+PASS C4a.12 cart one 1920 {"vw":1920,"sw":1920,"off":[]}
+ALL PASS

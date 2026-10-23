@@ -1,0 +1,334 @@
+{
+ "drawer-closed-empty-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [
+   {
+    "cls": "absolute top-0 left-0 block size-full cursor-pointer bg-blac",
+    "display": "block",
+    "hasCloseHook": true
+   }
+  ],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 14
+ },
+ "drawer-open-empty-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [
+   {
+    "cls": "absolute top-0 left-0 block size-full cursor-pointer bg-blac",
+    "display": "block",
+    "hasCloseHook": true
+   }
+  ],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 14
+ },
+ "cart-empty-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 6
+ },
+ "drawer-closed-one-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [
+   {
+    "cls": "absolute top-0 left-0 block size-full cursor-pointer bg-blac",
+    "display": "block",
+    "hasCloseHook": true
+   }
+  ],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 29
+ },
+ "drawer-open-one-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [
+   {
+    "cls": "absolute top-0 left-0 block size-full cursor-pointer bg-blac",
+    "display": "block",
+    "hasCloseHook": true
+   }
+  ],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 29
+ },
+ "addtocart-rest-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "loading__spinner",
+   "hidden"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 5
+ },
+ "drawer-busy-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [
+   {
+    "cls": "absolute top-0 left-0 block size-full cursor-pointer bg-blac",
+    "display": "block",
+    "hasCloseHook": true
+   }
+  ],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 29
+ },
+ "cart-one-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase",
+   "overflow-hidden"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 17
+ },
+ "drawer-closed-two-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [
+   {
+    "cls": "absolute top-0 left-0 block size-full cursor-pointer bg-blac",
+    "display": "block",
+    "hasCloseHook": true
+   }
+  ],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 39
+ },
+ "drawer-open-two-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [
+   {
+    "cls": "absolute top-0 left-0 block size-full cursor-pointer bg-blac",
+    "display": "block",
+    "hasCloseHook": true
+   }
+  ],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 39
+ },
+ "cart-two-375": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase",
+   "overflow-hidden"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 26
+ },
+ "drawer-closed-empty-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [
+   {
+    "cls": "absolute top-0 left-0 block size-full cursor-pointer bg-blac",
+    "display": "block",
+    "hasCloseHook": true
+   }
+  ],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 14
+ },
+ "drawer-open-empty-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [
+   {
+    "cls": "absolute top-0 left-0 block size-full cursor-pointer bg-blac",
+    "display": "block",
+    "hasCloseHook": true
+   }
+  ],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 14
+ },
+ "cart-empty-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 6
+ },
+ "drawer-closed-one-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [
+   {
+    "cls": "absolute top-0 left-0 block size-full cursor-pointer bg-blac",
+    "display": "block",
+    "hasCloseHook": true
+   }
+  ],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 29
+ },
+ "drawer-open-one-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [
+   {
+    "cls": "absolute top-0 left-0 block size-full cursor-pointer bg-blac",
+    "display": "block",
+    "hasCloseHook": true
+   }
+  ],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 29
+ },
+ "addtocart-rest-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "loading__spinner",
+   "hidden"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 5
+ },
+ "drawer-busy-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [
+   {
+    "cls": "absolute top-0 left-0 block size-full cursor-pointer bg-blac",
+    "display": "block",
+    "hasCloseHook": true
+   }
+  ],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 29
+ },
+ "cart-one-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase",
+   "overflow-hidden"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 17
+ },
+ "drawer-closed-two-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [
+   {
+    "cls": "absolute top-0 left-0 block size-full cursor-pointer bg-blac",
+    "display": "block",
+    "hasCloseHook": true
+   }
+  ],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 39
+ },
+ "drawer-open-two-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase"
+  ],
+  "emptyDivs": [
+   {
+    "cls": "absolute top-0 left-0 block size-full cursor-pointer bg-blac",
+    "display": "block",
+    "hasCloseHook": true
+   }
+  ],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 39
+ },
+ "cart-two-1440": {
+  "unlayered": [],
+  "legacyHits": [
+   "uppercase",
+   "overflow-hidden"
+  ],
+  "emptyDivs": [],
+  "skipped": [
+   "accelerated-checkout.css"
+  ],
+  "nEls": 26
+ }
+}
