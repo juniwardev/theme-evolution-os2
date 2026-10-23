@@ -65,7 +65,7 @@ handoffs between agents live under:
 - Test the new feature against the page templates it affects (product, collection, cart, etc.).
 - For viewport-sensitive UI, capture both mobile (375×667) and desktop (1440×900) snapshots via Playwright.
 - Check the theme editor preview as well as the storefront — features must work in both contexts.
-- When running `shopify theme check`, one pre-existing offense is expected and is not a regression: `TranslationKeyExists` in `cart-drawer.liquid`. Any other offense is a blocker. (Phase T2 removed the former `UnusedAssign` offense in `card-product.liquid`.) Until the owner decides their fate, three `OrphanedSnippet` warnings (`loading-spinner`, `progress-bar`, `quantity-input`) are also expected; see `docs/plans/theme-evolution-tailwind-t2-coder-questions.md`.
+- When running `shopify theme check`, one pre-existing offense is expected and is not a regression: `TranslationKeyExists` in `cart-drawer.liquid`. Any other offense is a blocker. (Phase T2 removed the former `UnusedAssign` offense in `card-product.liquid`.)
 - Before testing, run `npm ci && npm run check:css`. A failure is a blocker: the CSS under test isn't the committed CSS.
 - Record the size of `assets/tailwind.css` (`wc -c` and `gzip -9 -c assets/tailwind.css | wc -c`) and compare it with the CSS budget under `### Performance & Core Web Vitals`.
 - For every converted section, open it in the theme editor and change each `select`, `checkbox`, `range` and `color` setting at least once. Each option must visibly apply; one that doesn't usually means a class name was built from Liquid and never generated.
