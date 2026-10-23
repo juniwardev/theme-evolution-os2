@@ -1,253 +1,81 @@
 {% comment %}
-  Renders a grid of 'Material' Metaobjects.
-  This section is designed to be used on the 'page.materials' template.
-  It dynamically pulls all values from the 'shop.metaobjects.material' namespace.
-
-  Architectural Notes:
-  - Accessibility (A11y): Integrates ARIA roles (meter) and dynamic labels for screen readers.
-  - Performance: Uses GPU-accelerated transforms (scaleX) for sustainability bar animations.
-  - Styling: Applies strict BEM naming conventions for CSS predictability.
+  Renders every Material metaobject as a card with its icon, name, story and
+  sustainability rating. This section is designed to be used on the
+  'page.materials' template. The bars render snippets/sustainability-rating.liquid.
 
   @example
   {% section 'main-material-archive' %}
 {% endcomment %}
 
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
+{%- liquid
+  assign padding_top_mobile = section.settings.padding_top | times: 0.75 | round: 0
+  assign padding_bottom_mobile = section.settings.padding_bottom | times: 0.75 | round: 0
 
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
+  case section.settings.columns_desktop
+    when 1
+      assign desktop_columns = 'lg:grid-cols-1'
+    when 2
+      assign desktop_columns = 'lg:grid-cols-2'
+    when 4
+      assign desktop_columns = 'lg:grid-cols-4'
+    else
+      assign desktop_columns = 'lg:grid-cols-3'
+  endcase
 
-  .material-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
-  }
+  assign rating_label = 'sections.material_spotlight.rating_label' | t
+-%}
 
-  @media screen and (min-width: 750px) {
-    .material-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
+{% comment %} The frame copies the related-products wrapper, which keeps the archive's old side spacing; the padding variables reuse the material spotlight's names. Both already compile. {% endcomment %}
+<div
+  class="mx-auto w-full max-w-page px-6 pt-(--spotlight-pt-mobile) pb-(--spotlight-pb-mobile) md:px-20 md:pt-(--spotlight-pt) md:pb-(--spotlight-pb)"
+  style="--spotlight-pt-mobile: {{ padding_top_mobile }}px; --spotlight-pb-mobile: {{ padding_bottom_mobile }}px; --spotlight-pt: {{ section.settings.padding_top }}px; --spotlight-pb: {{ section.settings.padding_bottom }}px"
+  data-material-archive
+>
+  <div class="mx-auto mb-16 max-w-[37.5rem] text-center">
+    <h1 class="font-heading text-3xl leading-tight font-bold uppercase md:text-4xl">{{ page.title | escape }}</h1>
+    {%- if page.content != blank -%}
+      <div class="mt-6 text-foreground/75" data-rich-text>{{ page.content }}</div>
+    {%- endif -%}
+  </div>
 
-  @media screen and (min-width: 990px) {
-    .material-grid {
-      grid-template-columns: repeat({{ section.settings.columns_desktop }}, 1fr);
-    }
-  }
-
-  /* REINFORCED ARCHITECTURAL LOGIC - MATCHING PDP SNIPPET */
-  .material-archive-card__sustainability-bars {
-    display: flex !important;
-    gap: 4px !important;
-    height: 8px !important;
-    margin-top: 12px !important;
-    width: 100% !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-
-  .material-archive-card__sustainability-bar {
-    flex: 1 !important;
-    border-radius: 4px !important;
-    background-color: #eeeeee !important;
-    position: relative !important;
-    overflow: hidden !important;
-    height: 8px !important;
-    display: block !important;
-  }
-
-  /* THE GREEN FILL - HIGH SPECIFICITY */
-  .material-archive-card__sustainability-bar--active::after {
-    content: '' !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    bottom: 0 !important;
-    right: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    background-color: #2d5a27 !important;
-    transform-origin: left !important;
-    z-index: 10 !important;
-    display: block !important;
-    
-    /* Performance Optimization: GPU acceleration for smooth transforms */
-    will-change: transform;
-    /* Base state is visible; animation handles the 'reveal' */
-    transform: scaleX(1); 
-    animation: fillBarReveal 1s cubic-bezier(0.19, 1, 0.22, 1) both;
-    animation-delay: var(--anim-delay, 0s);
-  }
-
-  @keyframes fillBarReveal {
-    0% { transform: scaleX(0); }
-    100% { transform: scaleX(1); }
-  }
-
-  /* Archive Layout Styles */
-  .material-archive-card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    border: 1px solid rgba(0,0,0,0.08);
-    border-radius: 12px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .material-archive-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-  }
-
-  .material-archive-card__image {
-    aspect-ratio: 16 / 9;
-    background: #f4f4f4;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .material-archive-card__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .material-archive-card__content {
-    padding: 1.5rem;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .material-archive-card__title {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.25rem;
-    font-weight: 600;
-  }
-
-  .material-archive-card__story {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    color: #444;
-    margin-bottom: 1.5rem;
-  }
-
-  .material-archive-card__footer {
-    margin-top: auto;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(0,0,0,0.05);
-  }
-
-  .material-archive__header {
-    max-width: 600px;
-    margin: 0 auto 4rem auto;
-    text-align: center;
-  }
-
-  .material-archive__description {
-    margin-top: 1.5rem;
-    color: #666;
-  }
-
-  .material-archive-card__sustainability-header {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.7rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #888;
-  }
-{%- endstyle -%}
-
-<div class="section-{{ section.id }}-padding">
-  <div class="page-width">
-    <div class="material-archive__header center mb-12">
-      <h1 class="h1">{{ page.title | escape }}</h1>
-      {%- if page.content != blank -%}
-        <div class="material-archive__description rte">
-          {{ page.content }}
+  <div class="mb-0 grid grid-cols-1 gap-8 md:grid-cols-2 {{ desktop_columns }}">
+    {%- for material in shop.metaobjects.material.values -%}
+      {%- if material == blank %}{% continue %}{% endif -%}
+      {%- liquid
+        assign rating_val = material.sustainability_rating.value | plus: 0
+        assign material_name = material.name.value | default: material.system.handle | capitalize
+        assign rating_score_text = 'sections.material_spotlight.rating_score_text' | t: rating: rating_val
+        assign rating_aria_label = 'sections.material_spotlight.rating_aria_label' | t: rating: rating_val
+      -%}
+      <div class="flex flex-col overflow-hidden rounded-xl border border-black/8 bg-white text-[#333333] transition duration-300 ease-[ease] hover:-translate-y-1.25 hover:shadow-[0_10px_30px_rgb(0_0_0/0.05)]">
+        <div class="relative aspect-video overflow-hidden bg-[#f4f4f4]">
+          {%- if material.icon.value != blank -%}
+            {{ material.icon.value | image_url: width: 600 | image_tag: loading: 'lazy', class: 'size-full object-cover' }}
+          {%- else -%}
+            {{ 'image' | placeholder_svg_tag: 'size-full' }}
+          {%- endif -%}
         </div>
-      {%- endif -%}
-    </div>
 
-    {%- comment -%}
-      Engineering Choice: Relational Data
-      We iterate directly over shop.metaobjects.material.values. This centralized relational data model
-      reduces manual entry and ensures consistency across the store.
-    {%- endcomment -%}
-    <div class="material-grid">
-      {%- for material in shop.metaobjects.material.values -%}
-        {%- comment -%}Defensive Coding: Ensure material object exists before rendering{%- endcomment -%}
-        {%- if material == blank %}{% continue %}{% endif -%}
-        
-        {%- comment -%}
-          Engineering Choice: Integer casting
-          The sustainability rating is stored as a string or a scalar object.
-          We pipe it through `plus: 0` to forcefully cast it to an Integer for numerical logic.
-        {%- endcomment -%}
-        {%- assign rating_val = material.sustainability_rating.value | plus: 0 -%}
-        <div class="material-archive-card">
-          <div class="material-archive-card__image">
-            {%- if material.icon.value != blank -%}
-              {{ material.icon.value | image_url: width: 600 | image_tag: loading: 'lazy' }}
-            {%- else -%}
-              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-            {%- endif -%}
-          </div>
-          
-          <div class="material-archive-card__content">
-            <h2 class="material-archive-card__title">
-              {{ material.name.value | default: material.system.handle | capitalize }}
-            </h2>
-            
-            {%- if material.story.value != blank -%}
-              <div class="material-archive-card__story">
-                {{ material.story.value | truncate: 160 }}
-              </div>
-            {%- endif -%}
+        <div class="flex grow flex-col p-6">
+          <h2 class="mb-2 text-[1.25rem] font-semibold">{{ material_name | escape }}</h2>
 
-            {%- if rating_val > 0 -%}
-              <div class="material-archive-card__footer">
-                <div class="material-archive-card__sustainability-header">
-                  <span>Sustainability</span>
-                  <span>{{ rating_val }}/5</span>
-                </div>
-                <div 
-                  class="material-archive-card__sustainability-bars"
-                  role="meter"
-                  aria-label="Sustainability rating: {{ rating_val }} out of 5"
-                  aria-valuenow="{{ rating_val }}"
-                  aria-valuemin="0"
-                  aria-valuemax="5"
-                >
-                  {%- for i in (1..5) -%}
-                    <style>
-                      .material-archive-card__sustainability-bar-delay-{{ forloop.index0 }} {
-                        --anim-delay: {{ forloop.index0 | times: 150 }}ms;
-                      }
-                    </style>
-                    <div 
-                      class="material-archive-card__sustainability-bar material-archive-card__sustainability-bar-delay-{{ forloop.index0 }}{% if i <= rating_val %} material-archive-card__sustainability-bar--active{% endif %}" 
-                      aria-hidden="true"
-                    ></div>
-                  {%- endfor -%}
-                </div>
-              </div>
-            {%- endif -%}
-          </div>
+          {%- if material.story.value != blank -%}
+            <div class="mb-6 text-[0.9rem] leading-[1.6] text-[#444]">{{ material.story.value | truncate: 160 | escape }}</div>
+          {%- endif -%}
+
+          {%- if rating_val > 0 -%}
+            <div class="mt-auto">
+              {% render 'sustainability-rating',
+                rating: rating_val,
+                label: rating_label,
+                score_text: rating_score_text,
+                aria_label: rating_aria_label
+              %}
+            </div>
+          {%- endif -%}
         </div>
-      {%- endfor -%}
-    </div>
+      </div>
+    {%- endfor -%}
   </div>
 </div>
 
