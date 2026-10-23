@@ -25,7 +25,7 @@ All 41 acceptance criteria checks pass against the live Shopify storefront (publ
 ## Test environment
 
 - Base URL: `https://theme-evolution-os2.myshopify.com` (live Shopify storefront, password-protected dev store)
-- Storefront password: `yeathu` (submitted via password gate at `/password` before product navigation)
+- Storefront password: (redacted; see `docs/dev-fixtures.md`, gitignored) (submitted via password gate at `/password` before product navigation)
 - Playwright headless Chromium 1.60.0, desktop 1440x900 and mobile 375x667
 - Product with material linked: `https://theme-evolution-os2.myshopify.com/products/the-3p-fulfilled-snowboard`
 - Product without material (negative): `https://theme-evolution-os2.myshopify.com/products/selling-plans-ski-wax`
