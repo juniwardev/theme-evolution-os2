@@ -1,4 +1,4 @@
-# Impl notes: Tailwind phase T5a (Rev 2.2.2: Step 0 passed, Steps 1-2 committed, stopped at C5a.8, Q-C6)
+# Impl notes: Tailwind phase T5a (Rev 2.3.1: Steps 1-8 committed, Step 9 verified)
 
 Plan: `docs/plans/theme-evolution-tailwind-t5a.md` (Rev 2.1, review APPROVE). Base: `main`, theme files of `428094b`; HEAD at the end is `aaa03c8` (the coordinator's docs-only T6 commit; no theme, `src/`, scripts or package change). **No commit was made by the Coder, nothing pushed, no theme file touched.** Questions: `docs/plans/theme-evolution-tailwind-t5a-coder-questions.md` (Q-C1 and Q-C2 stop the gate; Q-C3 to Q-C5 are rulings for Step 9).
 
@@ -111,3 +111,76 @@ Theme-layout pages, S0 at 12 widths, S1-S4, PXZ, PXR, PXE+PXA, PXP (S0, S5): **n
 ## Owner check 3 flag list
 
 E5a.1, E5a.2, E5a.3, E5a.4, E5a.5 (S8 not run), E5a.6 (now including the bare anchor cursor), E5a.12, E5a.16, **E5a.18** (hCaptcha parts, A), and E5a.19 (not flagged by the plan; listed for sight). Q-C6's row would join if accepted.
+
+
+---
+
+# Round 3 (Revision 2.3.1): Steps 3-9
+
+Q-C6 ruled option (a): E5a.20 (A, not flagged). Guard: `git diff --stat 7dfb945..HEAD -- . ':(exclude)docs'` empty and Step 0's working-tree check empty. Work started at HEAD `f0c7897`. Dev server only on #187953938528 (repo root, then `git archive` scratch copies for the proxies); no live, no staging, no push. Staged-diff and commit greps for the password value: 0 lines in every commit. All servers are stopped; the dev theme was last synced from the repo root at HEAD.
+
+## C5a.8 evidence (R4-1)
+
+Regenerated with `t5ac-cmp.mjs noop` from the retained scratch captures of base and `7dfb945` (298 pairs): the only differences are the 108 `word-break: normal -> break-word` entries on `/password` (`h1`, `::before`, `::after`) and PXG (`h1`, `h2` and pseudo-elements) at 12 widths (9 per width); 0 pixel differences, 0 moved elements, 0 other differences. Evidence `docs/qa/evidence/t5ac-cmp-c58-*` (summary `t5ac-cmp-c58-summary.txt`), docs-only commit `5f5ae76`. C5a.8 passes under Revision 2.3.1's wording; E5a.20's classification row is A.
+
+## Commits and CSS sizes
+
+| Step | Commit | Files | `assets/tailwind.css` min / gzip |
+|---|---|---|---|
+| base | `96a8898` | | 58,366 / 11,104 |
+| 1 | `430d533` | `snippets/card-product.liquid` | 58,400 / 11,119 |
+| 2 | `7dfb945` | `src/tailwind.css` (parity block) | 58,983 / 11,303 |
+| docs | `5f5ae76` | C5a.8 evidence | |
+| 3 | `04b7d31` | `layout/theme.liquid`, `layout/password.liquid`, `templates/gift_card.liquid`, `src/tailwind.css`, `scripts/check-css-layers.mjs` | 58,963 / 11,287 |
+| 4 | `59a4e31` | `assets/base.css` and the 63 Dawn files deleted | 58,963 / 11,287 |
+| 5 | `c3f0b05` | `src/tailwind.css` (leak lines, three comments) | **58,850 / 11,269** |
+| 6 | `b9ae837` | `snippets/css-variables.liquid` (43 lines) | 58,850 / 11,269 |
+| 7 | `0e244c6` | `package.json`, `scripts/check-bare-hidden.mjs` deleted | 58,850 / 11,269 |
+| 8 | `ddde398` | `CLAUDE.md`, `AGENTS.md` (T1-T8) | n/a |
+
+Final `S_tw` equals Step 0's `P_end` (58,850 / 11,269) byte for byte in size (C5a.20(b)). Every step: fresh build, `check:css` 0, `check:hidden` 0 until Step 7, `npm run check` 0 after it, theme check 0 offenses (last: 146 files incl. untracked harness).
+
+## Criteria (Step 9, HEAD `ddde398`; head captures: 228 real-page loads + 8 state loads + 62 proxy loads, base loads A and B)
+
+| Criterion | Result |
+|---|---|
+| C5a.0 | PASS: `npm ci && npm run check:css` exit 0 on the clean tree |
+| C5a.1 | PASS: theme check 0 at every step and on HEAD; `check:hidden` 0 through Step 6; `npm run check` 0 from Step 7 |
+| C5a.2 | PASS: 23 schema shasums identical to Step 0 |
+| C5a.3 | PASS: `git diff --stat 96a8898..HEAD -- . ':(exclude)docs'` = 11 files changed plus 65 deleted (64 CSS files and the guard script); only section 6's files |
+| C5a.4 | PASS: (a) exactly the three `'tailwind.css'` lines; (b) `ls assets/*.css` prints only `tailwind.css`; (c) 0 hits for `base.css` in `layout sections blocks snippets templates src scripts package.json CLAUDE.md AGENTS.md`; (d) 228 loads: one theme stylesheet, `tailwind.css`, no `base.css` request |
+| C5a.5, C5a.7 | PASS: statement `properties, theme, base, components, utilities` on every page incl. `/password` and PXG; root 16px, line-height `normal` |
+| C5a.6 | PASS: (a) exit 0; (b) inserting `legacy` in `gift_card.liquid` exits 1 naming that file; (c) a `@layer legacy` probe in `src` exits 1 naming `legacy`; reverted; (d) in every commit `layout/theme.liquid` links `base.css` iff its statement names `legacy` (flip at `04b7d31`) |
+| C5a.8 | PASS (see above) |
+| C5a.9, C5a.10 | PASS: base vs head over 228 real-page S0 pairs + S1-S4 + proxies S0 and S5: every difference is an N or A group of the Step 0 table or E5a.20; no P group differs; no real-page element moves beyond base's own animation noise; page sizes equal; pixels equal except the registered PXN underline (13 levels, inside its grown box); size-derived entries all have a root cause. hCaptcha parts: E5a.18 (A) |
+| C5a.11 | PASS: Tab sequences equal base's (apart from the preview bar's iframe index); (a) 759 of 783 theme-owned focus stops show a ring, the other 24 are the product card link, whose ring is on its `::after`; (b) 30 elements with an own ring at base are unchanged; (c) widget rings are the browser default `auto`: checkbox offset 2px with 3px of ring clipped on the left, button 1px each side (320-430, recorded for the owner) |
+| C5a.12 | PASS: (a) per the Revision 2.2 wording the wrapper equals base (no entry; not edited); (b) vendor copy `display: none`, one 7px gap; (c) the four empty elements in merchant HTML are `display: none` |
+| C5a.13 | PASS: (a) route hit once at 375 and 1440, spinner `block`, SVG visible, label `hidden`, spinner `none` after; its 1px inset from the button equals base's; (b) no script or class-mutation site changed (no `assets/*.js` in the diff); (c) `:focus-visible` guard does not throw |
+| C5a.14 | PASS: (a) dynamic checkout crop pixel-equal on wax, snow, p3p; (b) no consent banner on the dev store; (c) widget differences are only E5a.2's rings and E5a.3's margin (8px kept); (d) no app block or embed on dev; (e) hCaptcha at head: container found, empties `block`, checkbox, button and cart icon return base's elements at 375 and 1440, none inside the container, `X_page` 0; (f) error-state values 16px, flex-shrink 0, width 20.8px |
+| C5a.15 | PASS: lists `disc`/`decimal`, inside, 32px; links underline, 4.8px offset, 1.6px thickness, 0.1s transition; hover 3.2px; at 375 and 1440 |
+| C5a.16 | PASS: bar `margin-bottom` 0px, header 32px higher than base (PXA, 375 and 1440) |
+| C5a.17 | PASS: long-word heading at 320: `break-word`, right edge equals its parent's |
+| C5a.18 | PASS: 228 loads at 12 widths: `X_page` 0 everywhere except `/policies/privacy-policy` at 320 = 5, base's known value |
+| C5a.19 | PASS: `B_rb` 12,535 B (tailwind 10,567 + accelerated-checkout 1,598 + styles 370) against `B_rb0` 15,910, one fewer `<head>` stylesheet than base (base 23,205) |
+| C5a.20 | PASS: `P_end` 58,850 / 11,269; final the same |
+| C5a.21 | PASS with one reading note: selector diffs per step (`t5ac-selset-step*.txt`) add exactly the planned selectors; Step 5 removes the two `prose-tokens` lines on purpose (D5a.14), which do match hr and blockquote in prose on PXR and PXZ, so the clause "removed selectors match 0 elements" is read as accidental loss; C5a.9 on PXR/PXZ shows the borders stay `solid`. The only `:empty` rules are `p:empty`, the two T0 margin rules, D5a.19's scoped rule and the `empty:hidden` utility |
+| C5a.22 | PASS: drawer add, update to 3, remove, Escape at 1440 and 375; header count; menu open, Escape, outside click (the first run clicked inside the panel, a test-point bug fixed in the harness); accordion API content; tooltip on PXP |
+| C5a.23 | PASS: one `h1` on every theme page; every `img` has width and height |
+| C5a.24 | PASS: (a) 0 hits for the card variables outside `docs/`; (b) `scripts/` holds only `check-css-layers.mjs`, no `check:hidden`; (c) 0 hits for the forbidden strings, the new statement occurs once in each rules file, T8's sentence once; (d) neither `S_leak` string in `assets/tailwind.css` |
+| C5a.25 | Step 0 item 14 VALID-PASS stands; to be re-run immediately before the live push |
+| C5a.26 | PASS: no head-only console error on any pair (Shopify analytics fetch errors listed, not judged) |
+
+## Deviations (round 3)
+
+- Verification ran once at the final HEAD for C5a.4(d), C5a.9, C5a.10, C5a.11 and C5a.18, rather than after Step 3, because Steps 4-8 change no rendering except Step 5 (leak lines, proven by PXR/PXZ) and Step 6 (unused variables). The Step 3 state itself was checked statically (gates, C5a.6 (a)-(c)).
+- `t5ac-cmp.mjs end` treats a (tag, pseudo, property, on, off) key present in several classes as allowed when it has an N or A class (merchant-HTML `div` display rows share a key with the hCaptcha A row); the P rows are covered by the explicit assertions (`t5ac-hpx.mjs`, `t5ac-head.mjs`).
+- Proxy pages are exempt from `t5ac-cmp`'s geometry and pixel checks (A rows move content); their effects are asserted explicitly.
+- C5a.22's menu outside-click uses a point found by scanning the header row.
+
+## Owner check 3 flag list (merchant-visible, to confirm on staging)
+
+E5a.1 (focus rings), E5a.2 (privacy widget rings, with the clipping above), E5a.3 (checkbox margin kept), E5a.4 (announcement-bar gap removed), E5a.5 (selection highlight, S8 not run), E5a.6 (tables, hr, blockquote, h6, summary, bare-anchor cursor in merchant HTML), E5a.12 (captcha page, model only), E5a.16 (merchant-HTML empties kept hidden), E5a.18 (hCaptcha popup parts). Listed for sight, not flagged: E5a.19 (error-state sizing, parity) and E5a.20 (heading `word-break` on `/password` and the gift-card page, pixel-identical).
+
+## QA focus
+
+The opt-out page (focus rings and clipping at 320-430, hCaptcha parts if a challenge can be triggered, error state if reproducible), policy parity and hover, PXA, PXZ bare and prose copies, the vendor line on a collection card with a blank vendor, keyboard focus through header, drawer and menu, `/password` and a gift card, the landing page tooltip underline (PXN) and S8 selection screenshots (not run).

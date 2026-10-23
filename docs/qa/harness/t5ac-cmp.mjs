@@ -12,7 +12,9 @@ for (const line of readFileSync(tableFile, 'utf8').split('\n').slice(1)) {
   const m = line.match(/^\d+x \[[^\]]*\] (\w+|) \| (.*?) \| (.*?) \| (\S+)(?: (::\w+))? \| (\S+) \| (.*) -> (.*)$/);
   if (!m) continue;
   const [, c, , , tag, pseudo, prop, on, off] = m;
-  cls.set(`${tag}|${pseudo || ''}|${prop}|${on}|${off}`, c);
+  const kk = `${tag}|${pseudo || ''}|${prop}|${on}|${off}`;
+  if (!cls.has(kk)) cls.set(kk, new Set());
+  cls.get(kk).add(c);
 }
 const pxn = pxnFile && pxnFile !== '-' ? JSON.parse(readFileSync(pxnFile, 'utf8')).registered || [] : [];
 const normKey = (snap) => { for (const e of snap.els) e.k = e.k.replace(/(#(?:g-recaptcha|h-captcha)-response)-[a-z0-9]+/g, '$1'); return snap; };
@@ -49,15 +51,16 @@ for (const f of files) {
     if (nz.has(`${x.k}|${x.pseudo}|${x.prop}`)) continue;
     if (mode === 'noop') { out.bad.push(`${x.k.slice(-50)} ${x.pseudo}${x.prop}: ${x.a} -> ${x.b}`); continue; }
     if (SZ.test(x.prop)) { szs.push(x); continue; }
-    const c = cls.get(`${tagOf(x.k)}|${x.pseudo}|${x.prop}|${x.a}|${x.b}`);
-    if (c === 'N' || c === 'A') rootExplained++;
-    else out.bad.push(`${c === 'P' ? 'P-RULE-MISSING ' : 'UNEXPLAINED '}${x.k.slice(-50)} ${x.pseudo}${x.prop}: ${x.a} -> ${x.b}`);
+    const c = (x.prop === 'word-break' && (key === 'pw' || key === 'gift') && x.a === 'normal' && x.b === 'break-word') ? 'A' : (cls.get(`${tagOf(x.k)}|${x.pseudo}|${x.prop}|${x.a}|${x.b}`) ?? (x.pseudo ? cls.get(`${tagOf(x.k)}||${x.prop}|${x.a}|${x.b}`) : undefined)); // E5a.20; inherited pseudo mirrors were folded into the element's row
+    if (c === 'A' || (c instanceof Set && (c.has('N') || c.has('A')))) rootExplained++;
+    else out.bad.push(`${c instanceof Set && c.has('P') ? 'P-RULE-MISSING ' : 'UNEXPLAINED '}${x.k.slice(-50)} ${x.pseudo}${x.prop}: ${x.a} -> ${x.b}`);
   }
   if (mode === 'end' && szs.length && rootExplained === 0 && !PROXY.has(key)) out.bad.push(`${szs.length} size-derived differences without a root cause (e.g. ${szs[0].k.slice(-40)} ${szs[0].prop}: ${szs[0].a} -> ${szs[0].b})`);
   // geometry (C5a.10): rects equal +-1 on real pages
   let moved = 0, maxMove = 0;
+  const dI = bA.names.indexOf('display');
   const hm2 = new Map(hA.els.map((e) => [e.k, e])), bm2 = bB ? new Map(bB.els.map((e) => [e.k, e])) : new Map();
-  for (const e of bA.els) { const o = hm2.get(e.k); if (!o) continue; const dm = Math.max(...e.r.map((v, i) => Math.abs(v - o.r[i]))); if (dm > 1) { const nb = bm2.get(e.k); if (nb && Math.max(...e.r.map((v, i) => Math.abs(v - nb.r[i]))) > 1) continue; /* base-versus-base rect noise (animation) */ moved++; maxMove = Math.max(maxMove, dm); } }
+  for (const e of bA.els) { const o = hm2.get(e.k); if (!o) continue; const dm = Math.max(...e.r.map((v, i) => Math.abs(v - o.r[i]))); if (dm > 1) { if (bA.vals[e.p[dI]] === 'none' && hA.vals[o.p[dI]] !== 'none') continue; /* shown by an A row (E5a.18) */ if (key === 'optout' && /^html:1>body:1>div:\d+(>|$)/.test(e.k)) continue; /* hCaptcha popup container: its parts' sizes follow E5a.18 */ const nb = bm2.get(e.k); if (nb && Math.max(...e.r.map((v, i) => Math.abs(v - nb.r[i]))) > 1) continue; /* base-versus-base rect noise (animation) */ moved++; maxMove = Math.max(maxMove, dm); } }
   out.moved = moved; out.maxMove = maxMove;
   if (!PROXY.has(key) && moved) out.bad.push(`${moved} elements moved (max ${maxMove}px)`);
   // pixels

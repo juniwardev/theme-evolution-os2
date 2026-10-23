@@ -1,0 +1,48 @@
+[
+ {
+  "path": "/",
+  "n": 3,
+  "total": 12535,
+  "valid": true,
+  "rows": [
+   {
+    "href": "/cdn/shop/t/12/assets/tailwind.css",
+    "bytes": 10567,
+    "how": "resource-timing"
+   },
+   {
+    "href": "/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout.css",
+    "bytes": 1598,
+    "how": "resource-timing"
+   },
+   {
+    "href": "/cdn/shop/t/12/compiled_assets/styles.css",
+    "bytes": 370,
+    "how": "resource-timing"
+   }
+  ]
+ },
+ {
+  "path": "/products/the-3p-fulfilled-snowboard",
+  "n": 3,
+  "total": 12535,
+  "valid": true,
+  "rows": [
+   {
+    "href": "/cdn/shop/t/12/assets/tailwind.css",
+    "bytes": 10567,
+    "how": "resource-timing"
+   },
+   {
+    "href": "/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout.css",
+    "bytes": 1598,
+    "how": "resource-timing"
+   },
+   {
+    "href": "/cdn/shop/t/12/compiled_assets/styles.css",
+    "bytes": 370,
+    "how": "resource-timing"
+   }
+  ]
+ }
+]

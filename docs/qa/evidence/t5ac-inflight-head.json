@@ -1,0 +1,168 @@
+[
+ {
+  "w": 375,
+  "hits": 1,
+  "valid": true,
+  "before": {
+   "btn": [
+    44,
+    1238,
+    287,
+    48
+   ],
+   "spinner": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "spDisplay": "none",
+   "spZ": "auto",
+   "svgVis": "visible",
+   "svgRect": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "label": "visible",
+   "cls": "btn-primary relative w-full [&.loading>s",
+   "loading": false
+  },
+  "during": {
+   "btn": [
+    44,
+    382,
+    287,
+    48
+   ],
+   "spinner": [
+    45,
+    383,
+    285,
+    46
+   ],
+   "spDisplay": "block",
+   "spZ": "auto",
+   "svgVis": "visible",
+   "svgRect": [
+    176.5,
+    395,
+    22,
+    22
+   ],
+   "label": "hidden",
+   "cls": "btn-primary relative w-full [&.loading>s",
+   "loading": true
+  },
+  "after": {
+   "btn": [
+    44,
+    382,
+    287,
+    48
+   ],
+   "spinner": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "spDisplay": "none",
+   "spZ": "auto",
+   "svgVis": "visible",
+   "svgRect": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "label": "visible",
+   "cls": "btn-primary relative w-full [&.loading>s",
+   "loading": false
+  }
+ },
+ {
+  "w": 1440,
+  "hits": 1,
+  "valid": true,
+  "before": {
+   "btn": [
+    846,
+    315,
+    494,
+    48
+   ],
+   "spinner": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "spDisplay": "none",
+   "spZ": "auto",
+   "svgVis": "visible",
+   "svgRect": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "label": "visible",
+   "cls": "btn-primary relative w-full [&.loading>s",
+   "loading": false
+  },
+  "during": {
+   "btn": [
+    846,
+    315,
+    494,
+    48
+   ],
+   "spinner": [
+    847,
+    316,
+    492,
+    46
+   ],
+   "spDisplay": "block",
+   "spZ": "auto",
+   "svgVis": "visible",
+   "svgRect": [
+    1082,
+    328,
+    22,
+    22
+   ],
+   "label": "hidden",
+   "cls": "btn-primary relative w-full [&.loading>s",
+   "loading": true
+  },
+  "after": {
+   "btn": [
+    846,
+    315,
+    494,
+    48
+   ],
+   "spinner": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "spDisplay": "none",
+   "spZ": "auto",
+   "svgVis": "visible",
+   "svgRect": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "label": "visible",
+   "cls": "btn-primary relative w-full [&.loading>s",
+   "loading": false
+  }
+ }
+]

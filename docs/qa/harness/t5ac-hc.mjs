@@ -1,6 +1,6 @@
 // T5a Step 0 item 7a / C5a.14(e): hCaptcha popup parts, hit test and overflow, base.css on (reference) then off, in ONE load per width.
 // Usage: node t5ac-hc.mjs <previewBase> <label> [widths]   Output: docs/qa/evidence/t5ac-hc-<label>.json (+ verdict lines)
-import { writeFileSync } from 'node:fs';
+import { writeFileSync, readFileSync, existsSync } from 'node:fs';
 import { chromium, parseArgs, loginState, newPage, sleep, settleFn, W_SW } from './t5ac-lib.mjs';
 const [, label, widthsArg] = process.argv.slice(2);
 const widths = widthsArg ? widthsArg.split(',').map(Number) : W_SW;
@@ -57,6 +57,24 @@ for (const w of widths) {
   await page.evaluate(settleFn, {});
   const hit = w === 375 || w === 1440;
   const ref = await page.evaluate(readFn, { HC, hit });
+  const hasBase = await page.evaluate(() => [...document.querySelectorAll('link[rel=stylesheet]')].some((x) => /\/assets\/base\.css/.test(x.href)));
+  if (!hasBase) {
+    // Head mode (C5a.14(e)): no base.css is linked; both clauses are judged on the one reading, against Step 0's base reference.
+    const baseJ = existsSync('docs/qa/evidence/t5ac-hc-base.json') ? JSON.parse(readFileSync('docs/qa/evidence/t5ac-hc-base.json', 'utf8')) : null;
+    const bref = baseJ?.res.find((r) => r.w === w)?.ref;
+    const v = { w, mode: 'head', valid: ref.container && (ref.empties?.length || 0) >= 1, ref, verdict: [] };
+    v.verdict.push('empties display: ' + (ref.empties || []).map((e) => e.display).join(','));
+    if (hit) for (const name of ['checkbox', 'button', 'cart']) {
+      const a = ref.hits[name], b = bref?.hits?.[name];
+      if (a.missing) { v.verdict.push(`${name}: missing target`); stop = true; continue; }
+      if (a.inContainer) { v.verdict.push(`${name}: returns an element inside the container (clause ii) FAIL`); stop = true; }
+      else if (b && a.got !== b.got) { v.verdict.push(`${name}: head ${a.got} vs base ${b.got} (clause i) FAIL`); stop = true; }
+      else v.verdict.push(`${name}: ${a.got} equals base's element, outside the container`);
+    }
+    v.verdict.push(`X_page ${ref.xPage}; offenders ${ref.offenders.length}${ref.offenders.length ? ' ' + ref.offenders.join(' ; ') : ''}`);
+    if (ref.xPage !== 0 || ref.offenders.length) { v.verdict.push('overflow FAIL'); stop = true; }
+    res.push(v); console.log(w, v.valid ? 'valid' : 'INVALID', JSON.stringify(v.verdict)); await ctx.close(); await sleep(700); continue;
+  }
   const ctl = await page.evaluate(() => { const d = document.createElement('div'); document.body.append(d); const v = getComputedStyle(d).display; d.remove(); return v; });
   await page.evaluate(() => { const l = [...document.querySelectorAll('link[rel=stylesheet]')].find((x) => /\/assets\/base\.css/.test(x.href)); l.sheet.disabled = true; document.getAnimations().filter((a) => a.playState === 'running').forEach((a) => { try { a.finish(); } catch {} }); });
   await sleep(300);
