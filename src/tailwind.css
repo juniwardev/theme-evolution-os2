@@ -240,13 +240,3 @@
     cursor: pointer; /* permanent: v4 buttons default to cursor: default */
   }
 }
-
-@layer shims {
-  /*
-   * sections/related-products.liquid uses Dawn's flex-wrap .grid (assets/base.css).
-   * Tailwind's grid utility would turn it into CSS grid. Delete in T2.
-   */
-  .product-grid.grid {
-    display: flex;
-  }
-}
