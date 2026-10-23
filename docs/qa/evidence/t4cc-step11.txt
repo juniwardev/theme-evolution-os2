@@ -1,0 +1,6 @@
+STEP 11 size: 58483 / 11120
+added 3 (prose-family descendant selectors 0); non-family: ['.shopify-policy__body a', '.shopify-policy__body ol', '.shopify-policy__body ul']
+removed 0: []
+check:css ok
+
+│  95 files inspected with no offenses found.                                  │

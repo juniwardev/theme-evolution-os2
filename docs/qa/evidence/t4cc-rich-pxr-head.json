@@ -1,0 +1,1386 @@
+{
+ "375": {
+  "copies": {
+   "page": {
+    "cls": "prose prose-tokens overflow-x-auto",
+    "w": 271,
+    "parentContent": 271,
+    "fs": "16px",
+    "lh": "28px",
+    "maxWidth": "646.88px",
+    "color": "rgb(51, 51, 51)",
+    "vars": {
+     "body": "currentColor",
+     "headings": "currentColor",
+     "lead": "color-mix(in oklab, currentColor 75%, transparent)",
+     "links": "currentColor",
+     "bold": "currentColor",
+     "counters": "color-mix(in oklab, currentColor 75%, transparent)",
+     "bullets": "color-mix(in oklab, currentColor 30%, transparent)",
+     "hr": "color-mix(in oklab, currentColor 10%, transparent)",
+     "quotes": "currentColor",
+     "quote-borders": "color-mix(in oklab, currentColor 10%, transparent)",
+     "captions": "color-mix(in oklab, currentColor 75%, transparent)",
+     "kbd": "currentColor",
+     "kbd-shadows": "oklab(21% -.00316127 -.0338527/.1)",
+     "code": "currentColor",
+     "pre-code": "oklch(92.8% .006 264.531)",
+     "pre-bg": "oklch(27.8% .033 256.848)",
+     "th-borders": "color-mix(in oklab, currentColor 30%, transparent)",
+     "td-borders": "color-mix(in oklab, currentColor 10%, transparent)"
+    },
+    "h2": {
+     "fs": "24px",
+     "fw": "700",
+     "mt": "0px",
+     "mb": "24px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "h3": {
+     "fs": "20px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "12px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "p2": {
+     "fs": "16px",
+     "fw": "400",
+     "mt": "20px",
+     "mb": "20px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "a": {
+     "fs": "16px",
+     "fw": "500",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s",
+     "td": "underline"
+    },
+    "ul": {
+     "lst": "disc",
+     "pis": "26px",
+     "lsp": "outside",
+     "pl": "26px",
+     "color": "rgb(51, 51, 51)",
+     "marker": "oklab(0.32109 0.0000146329 0.0000064075 / 0.3)"
+    },
+    "ol": {
+     "lst": "decimal",
+     "pis": "26px"
+    },
+    "hr": {
+     "bts": "solid",
+     "btw": "1px",
+     "btc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.1)"
+    },
+    "bq": {
+     "bls": "solid",
+     "blw": "4px",
+     "blc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.1)",
+     "pis": "16px",
+     "color": "rgb(51, 51, 51)"
+    },
+    "pre": {
+     "bg": "oklch(0.278 0.033 256.848)",
+     "color": "oklch(0.928 0.006 264.531)"
+    },
+    "strong": {
+     "fs": "16px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    }
+   },
+   "article": {
+    "cls": "prose prose-tokens",
+    "w": 271,
+    "parentContent": 271,
+    "fs": "16px",
+    "lh": "28px",
+    "maxWidth": "646.88px",
+    "color": "rgb(51, 51, 51)",
+    "vars": {
+     "body": "currentColor",
+     "headings": "currentColor",
+     "lead": "color-mix(in oklab, currentColor 75%, transparent)",
+     "links": "currentColor",
+     "bold": "currentColor",
+     "counters": "color-mix(in oklab, currentColor 75%, transparent)",
+     "bullets": "color-mix(in oklab, currentColor 30%, transparent)",
+     "hr": "color-mix(in oklab, currentColor 10%, transparent)",
+     "quotes": "currentColor",
+     "quote-borders": "color-mix(in oklab, currentColor 10%, transparent)",
+     "captions": "color-mix(in oklab, currentColor 75%, transparent)",
+     "kbd": "currentColor",
+     "kbd-shadows": "oklab(21% -.00316127 -.0338527/.1)",
+     "code": "currentColor",
+     "pre-code": "oklch(92.8% .006 264.531)",
+     "pre-bg": "oklch(27.8% .033 256.848)",
+     "th-borders": "color-mix(in oklab, currentColor 30%, transparent)",
+     "td-borders": "color-mix(in oklab, currentColor 10%, transparent)"
+    },
+    "h2": {
+     "fs": "24px",
+     "fw": "700",
+     "mt": "0px",
+     "mb": "24px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "h3": {
+     "fs": "20px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "12px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "p2": {
+     "fs": "16px",
+     "fw": "400",
+     "mt": "20px",
+     "mb": "20px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "a": {
+     "fs": "16px",
+     "fw": "500",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s",
+     "td": "underline"
+    },
+    "ul": {
+     "lst": "disc",
+     "pis": "26px",
+     "lsp": "outside",
+     "pl": "26px",
+     "color": "rgb(51, 51, 51)",
+     "marker": "oklab(0.32109 0.0000146329 0.0000064075 / 0.3)"
+    },
+    "ol": {
+     "lst": "decimal",
+     "pis": "26px"
+    },
+    "hr": {
+     "bts": "solid",
+     "btw": "1px",
+     "btc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.1)"
+    },
+    "bq": {
+     "bls": "solid",
+     "blw": "4px",
+     "blc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.1)",
+     "pis": "16px",
+     "color": "rgb(51, 51, 51)"
+    },
+    "pre": {
+     "bg": "oklch(0.278 0.033 256.848)",
+     "color": "oklch(0.928 0.006 264.531)"
+    },
+    "strong": {
+     "fs": "16px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    }
+   },
+   "comment": {
+    "cls": "prose prose-tokens",
+    "w": 271,
+    "parentContent": 271,
+    "fs": "16px",
+    "lh": "28px",
+    "maxWidth": "646.88px",
+    "color": "rgb(51, 51, 51)",
+    "vars": {
+     "body": "currentColor",
+     "headings": "currentColor",
+     "lead": "color-mix(in oklab, currentColor 75%, transparent)",
+     "links": "currentColor",
+     "bold": "currentColor",
+     "counters": "color-mix(in oklab, currentColor 75%, transparent)",
+     "bullets": "color-mix(in oklab, currentColor 30%, transparent)",
+     "hr": "color-mix(in oklab, currentColor 10%, transparent)",
+     "quotes": "currentColor",
+     "quote-borders": "color-mix(in oklab, currentColor 10%, transparent)",
+     "captions": "color-mix(in oklab, currentColor 75%, transparent)",
+     "kbd": "currentColor",
+     "kbd-shadows": "oklab(21% -.00316127 -.0338527/.1)",
+     "code": "currentColor",
+     "pre-code": "oklch(92.8% .006 264.531)",
+     "pre-bg": "oklch(27.8% .033 256.848)",
+     "th-borders": "color-mix(in oklab, currentColor 30%, transparent)",
+     "td-borders": "color-mix(in oklab, currentColor 10%, transparent)"
+    },
+    "h2": {
+     "fs": "24px",
+     "fw": "700",
+     "mt": "0px",
+     "mb": "24px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "h3": {
+     "fs": "20px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "12px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "p2": {
+     "fs": "16px",
+     "fw": "400",
+     "mt": "20px",
+     "mb": "20px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "a": {
+     "fs": "16px",
+     "fw": "500",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s",
+     "td": "underline"
+    },
+    "ul": {
+     "lst": "disc",
+     "pis": "26px",
+     "lsp": "outside",
+     "pl": "26px",
+     "color": "rgb(51, 51, 51)",
+     "marker": "oklab(0.32109 0.0000146329 0.0000064075 / 0.3)"
+    },
+    "ol": {
+     "lst": "decimal",
+     "pis": "26px"
+    },
+    "hr": {
+     "bts": "solid",
+     "btw": "1px",
+     "btc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.1)"
+    },
+    "bq": {
+     "bls": "solid",
+     "blw": "4px",
+     "blc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.1)",
+     "pis": "16px",
+     "color": "rgb(51, 51, 51)"
+    },
+    "pre": {
+     "bg": "oklch(0.278 0.033 256.848)",
+     "color": "oklch(0.928 0.006 264.531)"
+    },
+    "strong": {
+     "fs": "16px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    }
+   },
+   "excerpt": {
+    "cls": "prose prose-tokens",
+    "w": 271,
+    "parentContent": 271,
+    "fs": "16px",
+    "lh": "28px",
+    "maxWidth": "646.88px",
+    "color": "rgb(51, 51, 51)",
+    "vars": {
+     "body": "currentColor",
+     "headings": "currentColor",
+     "lead": "color-mix(in oklab, currentColor 75%, transparent)",
+     "links": "currentColor",
+     "bold": "currentColor",
+     "counters": "color-mix(in oklab, currentColor 75%, transparent)",
+     "bullets": "color-mix(in oklab, currentColor 30%, transparent)",
+     "hr": "color-mix(in oklab, currentColor 10%, transparent)",
+     "quotes": "currentColor",
+     "quote-borders": "color-mix(in oklab, currentColor 10%, transparent)",
+     "captions": "color-mix(in oklab, currentColor 75%, transparent)",
+     "kbd": "currentColor",
+     "kbd-shadows": "oklab(21% -.00316127 -.0338527/.1)",
+     "code": "currentColor",
+     "pre-code": "oklch(92.8% .006 264.531)",
+     "pre-bg": "oklch(27.8% .033 256.848)",
+     "th-borders": "color-mix(in oklab, currentColor 30%, transparent)",
+     "td-borders": "color-mix(in oklab, currentColor 10%, transparent)"
+    },
+    "h2": {
+     "fs": "24px",
+     "fw": "700",
+     "mt": "0px",
+     "mb": "24px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "h3": {
+     "fs": "20px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "12px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "p2": {
+     "fs": "16px",
+     "fw": "400",
+     "mt": "20px",
+     "mb": "20px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "a": {
+     "fs": "16px",
+     "fw": "500",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s",
+     "td": "underline"
+    },
+    "ul": {
+     "lst": "disc",
+     "pis": "26px",
+     "lsp": "outside",
+     "pl": "26px",
+     "color": "rgb(51, 51, 51)",
+     "marker": "oklab(0.32109 0.0000146329 0.0000064075 / 0.3)"
+    },
+    "ol": {
+     "lst": "decimal",
+     "pis": "26px"
+    },
+    "hr": {
+     "bts": "solid",
+     "btw": "1px",
+     "btc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.1)"
+    },
+    "bq": {
+     "bls": "solid",
+     "blw": "4px",
+     "blc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.1)",
+     "pis": "16px",
+     "color": "rgb(51, 51, 51)"
+    },
+    "pre": {
+     "bg": "oklch(0.278 0.033 256.848)",
+     "color": "oklch(0.928 0.006 264.531)"
+    },
+    "strong": {
+     "fs": "16px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    }
+   },
+   "archive": {
+    "cls": "prose prose-tokens max-w-none",
+    "w": 335,
+    "parentContent": 335,
+    "fs": "16px",
+    "lh": "28px",
+    "maxWidth": "none",
+    "color": "oklab(0.32109 0.0000146329 0.0000064075 / 0.75)",
+    "vars": {
+     "body": "currentColor",
+     "headings": "currentColor",
+     "lead": "color-mix(in oklab, currentColor 75%, transparent)",
+     "links": "currentColor",
+     "bold": "currentColor",
+     "counters": "color-mix(in oklab, currentColor 75%, transparent)",
+     "bullets": "color-mix(in oklab, currentColor 30%, transparent)",
+     "hr": "color-mix(in oklab, currentColor 10%, transparent)",
+     "quotes": "currentColor",
+     "quote-borders": "color-mix(in oklab, currentColor 10%, transparent)",
+     "captions": "color-mix(in oklab, currentColor 75%, transparent)",
+     "kbd": "currentColor",
+     "kbd-shadows": "oklab(21% -.00316127 -.0338527/.1)",
+     "code": "currentColor",
+     "pre-code": "oklch(92.8% .006 264.531)",
+     "pre-bg": "oklch(27.8% .033 256.848)",
+     "th-borders": "color-mix(in oklab, currentColor 30%, transparent)",
+     "td-borders": "color-mix(in oklab, currentColor 10%, transparent)"
+    },
+    "h2": {
+     "fs": "24px",
+     "fw": "700",
+     "mt": "0px",
+     "mb": "24px",
+     "color": "oklab(0.32109 0.0000146329 0.0000064075 / 0.75)",
+     "ff": "\"Work Sans\", s"
+    },
+    "h3": {
+     "fs": "20px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "12px",
+     "color": "oklab(0.32109 0.0000146329 0.0000064075 / 0.75)",
+     "ff": "\"Work Sans\", s"
+    },
+    "p2": {
+     "fs": "16px",
+     "fw": "400",
+     "mt": "20px",
+     "mb": "20px",
+     "color": "oklab(0.32109 0.0000146329 0.0000064075 / 0.75)",
+     "ff": "\"Work Sans\", s"
+    },
+    "a": {
+     "fs": "16px",
+     "fw": "500",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "oklab(0.32109 0.0000146329 0.0000064075 / 0.75)",
+     "ff": "\"Work Sans\", s",
+     "td": "underline"
+    },
+    "ul": {
+     "lst": "disc",
+     "pis": "26px",
+     "lsp": "outside",
+     "pl": "26px",
+     "color": "oklab(0.32109 0.0000146329 0.0000064075 / 0.75)",
+     "marker": "oklab(0.321091 0.0000146329 0.0000064075 / 0.225)"
+    },
+    "ol": {
+     "lst": "decimal",
+     "pis": "26px"
+    },
+    "hr": {
+     "bts": "solid",
+     "btw": "1px",
+     "btc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.075)"
+    },
+    "bq": {
+     "bls": "solid",
+     "blw": "4px",
+     "blc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.075)",
+     "pis": "16px",
+     "color": "oklab(0.32109 0.0000146329 0.0000064075 / 0.75)"
+    },
+    "pre": {
+     "bg": "oklch(0.278 0.033 256.848)",
+     "color": "oklch(0.928 0.006 264.531)"
+    },
+    "strong": {
+     "fs": "16px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "oklab(0.32109 0.0000146329 0.0000064075 / 0.75)",
+     "ff": "\"Work Sans\", s"
+    }
+   },
+   "product": {
+    "cls": "prose prose-tokens max-w-none",
+    "w": 287,
+    "parentContent": 287,
+    "fs": "16px",
+    "lh": "28px",
+    "maxWidth": "none",
+    "color": "rgb(51, 51, 51)",
+    "vars": {
+     "body": "currentColor",
+     "headings": "currentColor",
+     "lead": "color-mix(in oklab, currentColor 75%, transparent)",
+     "links": "currentColor",
+     "bold": "currentColor",
+     "counters": "color-mix(in oklab, currentColor 75%, transparent)",
+     "bullets": "color-mix(in oklab, currentColor 30%, transparent)",
+     "hr": "color-mix(in oklab, currentColor 10%, transparent)",
+     "quotes": "currentColor",
+     "quote-borders": "color-mix(in oklab, currentColor 10%, transparent)",
+     "captions": "color-mix(in oklab, currentColor 75%, transparent)",
+     "kbd": "currentColor",
+     "kbd-shadows": "oklab(21% -.00316127 -.0338527/.1)",
+     "code": "currentColor",
+     "pre-code": "oklch(92.8% .006 264.531)",
+     "pre-bg": "oklch(27.8% .033 256.848)",
+     "th-borders": "color-mix(in oklab, currentColor 30%, transparent)",
+     "td-borders": "color-mix(in oklab, currentColor 10%, transparent)"
+    },
+    "h2": {
+     "fs": "24px",
+     "fw": "700",
+     "mt": "0px",
+     "mb": "24px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "h3": {
+     "fs": "20px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "12px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "p2": {
+     "fs": "16px",
+     "fw": "400",
+     "mt": "20px",
+     "mb": "20px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "a": {
+     "fs": "16px",
+     "fw": "500",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s",
+     "td": "underline"
+    },
+    "ul": {
+     "lst": "disc",
+     "pis": "26px",
+     "lsp": "outside",
+     "pl": "26px",
+     "color": "rgb(51, 51, 51)",
+     "marker": "oklab(0.32109 0.0000146329 0.0000064075 / 0.3)"
+    },
+    "ol": {
+     "lst": "decimal",
+     "pis": "26px"
+    },
+    "hr": {
+     "bts": "solid",
+     "btw": "1px",
+     "btc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.1)"
+    },
+    "bq": {
+     "bls": "solid",
+     "blw": "4px",
+     "blc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.1)",
+     "pis": "16px",
+     "color": "rgb(51, 51, 51)"
+    },
+    "pre": {
+     "bg": "oklch(0.278 0.033 256.848)",
+     "color": "oklch(0.928 0.006 264.531)"
+    },
+    "strong": {
+     "fs": "16px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    }
+   },
+   "form-comment": {
+    "cls": "flex max-w-[28.125rem] flex-col gap-4 [&_ul]:list-disc [&_ul]:ps-[1.5em]",
+    "w": 271,
+    "parentContent": 271,
+    "fs": "16px",
+    "lh": "normal",
+    "maxWidth": "450px",
+    "color": "rgb(51, 51, 51)",
+    "vars": {
+     "body": "",
+     "headings": "",
+     "lead": "",
+     "links": "",
+     "bold": "",
+     "counters": "",
+     "bullets": "",
+     "hr": "",
+     "quotes": "",
+     "quote-borders": "",
+     "captions": "",
+     "kbd": "",
+     "kbd-shadows": "",
+     "code": "",
+     "pre-code": "",
+     "pre-bg": "",
+     "th-borders": "",
+     "td-borders": ""
+    },
+    "h2": null,
+    "h3": null,
+    "p2": null,
+    "a": null,
+    "ul": {
+     "lst": "disc",
+     "pis": "24px",
+     "lsp": "outside",
+     "pl": "24px",
+     "color": "rgb(51, 51, 51)",
+     "marker": "rgb(51, 51, 51)"
+    },
+    "ol": null,
+    "hr": null,
+    "bq": null,
+    "pre": null,
+    "strong": null
+   },
+   "form-password": {
+    "cls": "flex max-w-[28.125rem] flex-col gap-3 [&_ul]:list-disc [&_ul]:ps-[1.5em]",
+    "w": 271,
+    "parentContent": 271,
+    "fs": "16px",
+    "lh": "normal",
+    "maxWidth": "450px",
+    "color": "rgb(51, 51, 51)",
+    "vars": {
+     "body": "",
+     "headings": "",
+     "lead": "",
+     "links": "",
+     "bold": "",
+     "counters": "",
+     "bullets": "",
+     "hr": "",
+     "quotes": "",
+     "quote-borders": "",
+     "captions": "",
+     "kbd": "",
+     "kbd-shadows": "",
+     "code": "",
+     "pre-code": "",
+     "pre-bg": "",
+     "th-borders": "",
+     "td-borders": ""
+    },
+    "h2": null,
+    "h3": null,
+    "p2": null,
+    "a": null,
+    "ul": {
+     "lst": "disc",
+     "pis": "24px",
+     "lsp": "outside",
+     "pl": "24px",
+     "color": "rgb(51, 51, 51)",
+     "marker": "rgb(51, 51, 51)"
+    },
+    "ol": null,
+    "hr": null,
+    "bq": null,
+    "pre": null,
+    "strong": null
+   }
+  },
+  "xPage": {
+   "vw": 375,
+   "sw": 375,
+   "off": []
+  }
+ },
+ "1440": {
+  "copies": {
+   "page": {
+    "cls": "prose prose-tokens overflow-x-auto",
+    "w": 646.9,
+    "parentContent": 1336,
+    "fs": "16px",
+    "lh": "28px",
+    "maxWidth": "646.88px",
+    "color": "rgb(51, 51, 51)",
+    "vars": {
+     "body": "currentColor",
+     "headings": "currentColor",
+     "lead": "color-mix(in oklab, currentColor 75%, transparent)",
+     "links": "currentColor",
+     "bold": "currentColor",
+     "counters": "color-mix(in oklab, currentColor 75%, transparent)",
+     "bullets": "color-mix(in oklab, currentColor 30%, transparent)",
+     "hr": "color-mix(in oklab, currentColor 10%, transparent)",
+     "quotes": "currentColor",
+     "quote-borders": "color-mix(in oklab, currentColor 10%, transparent)",
+     "captions": "color-mix(in oklab, currentColor 75%, transparent)",
+     "kbd": "currentColor",
+     "kbd-shadows": "oklab(21% -.00316127 -.0338527/.1)",
+     "code": "currentColor",
+     "pre-code": "oklch(92.8% .006 264.531)",
+     "pre-bg": "oklch(27.8% .033 256.848)",
+     "th-borders": "color-mix(in oklab, currentColor 30%, transparent)",
+     "td-borders": "color-mix(in oklab, currentColor 10%, transparent)"
+    },
+    "h2": {
+     "fs": "24px",
+     "fw": "700",
+     "mt": "0px",
+     "mb": "24px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "h3": {
+     "fs": "20px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "12px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "p2": {
+     "fs": "16px",
+     "fw": "400",
+     "mt": "20px",
+     "mb": "20px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "a": {
+     "fs": "16px",
+     "fw": "500",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s",
+     "td": "underline"
+    },
+    "ul": {
+     "lst": "disc",
+     "pis": "26px",
+     "lsp": "outside",
+     "pl": "26px",
+     "color": "rgb(51, 51, 51)",
+     "marker": "oklab(0.32109 0.0000146329 0.0000064075 / 0.3)"
+    },
+    "ol": {
+     "lst": "decimal",
+     "pis": "26px"
+    },
+    "hr": {
+     "bts": "solid",
+     "btw": "1px",
+     "btc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.1)"
+    },
+    "bq": {
+     "bls": "solid",
+     "blw": "4px",
+     "blc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.1)",
+     "pis": "16px",
+     "color": "rgb(51, 51, 51)"
+    },
+    "pre": {
+     "bg": "oklch(0.278 0.033 256.848)",
+     "color": "oklch(0.928 0.006 264.531)"
+    },
+    "strong": {
+     "fs": "16px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    }
+   },
+   "article": {
+    "cls": "prose prose-tokens",
+    "w": 646.9,
+    "parentContent": 1336,
+    "fs": "16px",
+    "lh": "28px",
+    "maxWidth": "646.88px",
+    "color": "rgb(51, 51, 51)",
+    "vars": {
+     "body": "currentColor",
+     "headings": "currentColor",
+     "lead": "color-mix(in oklab, currentColor 75%, transparent)",
+     "links": "currentColor",
+     "bold": "currentColor",
+     "counters": "color-mix(in oklab, currentColor 75%, transparent)",
+     "bullets": "color-mix(in oklab, currentColor 30%, transparent)",
+     "hr": "color-mix(in oklab, currentColor 10%, transparent)",
+     "quotes": "currentColor",
+     "quote-borders": "color-mix(in oklab, currentColor 10%, transparent)",
+     "captions": "color-mix(in oklab, currentColor 75%, transparent)",
+     "kbd": "currentColor",
+     "kbd-shadows": "oklab(21% -.00316127 -.0338527/.1)",
+     "code": "currentColor",
+     "pre-code": "oklch(92.8% .006 264.531)",
+     "pre-bg": "oklch(27.8% .033 256.848)",
+     "th-borders": "color-mix(in oklab, currentColor 30%, transparent)",
+     "td-borders": "color-mix(in oklab, currentColor 10%, transparent)"
+    },
+    "h2": {
+     "fs": "24px",
+     "fw": "700",
+     "mt": "0px",
+     "mb": "24px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "h3": {
+     "fs": "20px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "12px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "p2": {
+     "fs": "16px",
+     "fw": "400",
+     "mt": "20px",
+     "mb": "20px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "a": {
+     "fs": "16px",
+     "fw": "500",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s",
+     "td": "underline"
+    },
+    "ul": {
+     "lst": "disc",
+     "pis": "26px",
+     "lsp": "outside",
+     "pl": "26px",
+     "color": "rgb(51, 51, 51)",
+     "marker": "oklab(0.32109 0.0000146329 0.0000064075 / 0.3)"
+    },
+    "ol": {
+     "lst": "decimal",
+     "pis": "26px"
+    },
+    "hr": {
+     "bts": "solid",
+     "btw": "1px",
+     "btc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.1)"
+    },
+    "bq": {
+     "bls": "solid",
+     "blw": "4px",
+     "blc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.1)",
+     "pis": "16px",
+     "color": "rgb(51, 51, 51)"
+    },
+    "pre": {
+     "bg": "oklch(0.278 0.033 256.848)",
+     "color": "oklch(0.928 0.006 264.531)"
+    },
+    "strong": {
+     "fs": "16px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    }
+   },
+   "comment": {
+    "cls": "prose prose-tokens",
+    "w": 646.9,
+    "parentContent": 1336,
+    "fs": "16px",
+    "lh": "28px",
+    "maxWidth": "646.88px",
+    "color": "rgb(51, 51, 51)",
+    "vars": {
+     "body": "currentColor",
+     "headings": "currentColor",
+     "lead": "color-mix(in oklab, currentColor 75%, transparent)",
+     "links": "currentColor",
+     "bold": "currentColor",
+     "counters": "color-mix(in oklab, currentColor 75%, transparent)",
+     "bullets": "color-mix(in oklab, currentColor 30%, transparent)",
+     "hr": "color-mix(in oklab, currentColor 10%, transparent)",
+     "quotes": "currentColor",
+     "quote-borders": "color-mix(in oklab, currentColor 10%, transparent)",
+     "captions": "color-mix(in oklab, currentColor 75%, transparent)",
+     "kbd": "currentColor",
+     "kbd-shadows": "oklab(21% -.00316127 -.0338527/.1)",
+     "code": "currentColor",
+     "pre-code": "oklch(92.8% .006 264.531)",
+     "pre-bg": "oklch(27.8% .033 256.848)",
+     "th-borders": "color-mix(in oklab, currentColor 30%, transparent)",
+     "td-borders": "color-mix(in oklab, currentColor 10%, transparent)"
+    },
+    "h2": {
+     "fs": "24px",
+     "fw": "700",
+     "mt": "0px",
+     "mb": "24px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "h3": {
+     "fs": "20px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "12px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "p2": {
+     "fs": "16px",
+     "fw": "400",
+     "mt": "20px",
+     "mb": "20px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "a": {
+     "fs": "16px",
+     "fw": "500",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s",
+     "td": "underline"
+    },
+    "ul": {
+     "lst": "disc",
+     "pis": "26px",
+     "lsp": "outside",
+     "pl": "26px",
+     "color": "rgb(51, 51, 51)",
+     "marker": "oklab(0.32109 0.0000146329 0.0000064075 / 0.3)"
+    },
+    "ol": {
+     "lst": "decimal",
+     "pis": "26px"
+    },
+    "hr": {
+     "bts": "solid",
+     "btw": "1px",
+     "btc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.1)"
+    },
+    "bq": {
+     "bls": "solid",
+     "blw": "4px",
+     "blc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.1)",
+     "pis": "16px",
+     "color": "rgb(51, 51, 51)"
+    },
+    "pre": {
+     "bg": "oklch(0.278 0.033 256.848)",
+     "color": "oklch(0.928 0.006 264.531)"
+    },
+    "strong": {
+     "fs": "16px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    }
+   },
+   "excerpt": {
+    "cls": "prose prose-tokens",
+    "w": 646.9,
+    "parentContent": 1336,
+    "fs": "16px",
+    "lh": "28px",
+    "maxWidth": "646.88px",
+    "color": "rgb(51, 51, 51)",
+    "vars": {
+     "body": "currentColor",
+     "headings": "currentColor",
+     "lead": "color-mix(in oklab, currentColor 75%, transparent)",
+     "links": "currentColor",
+     "bold": "currentColor",
+     "counters": "color-mix(in oklab, currentColor 75%, transparent)",
+     "bullets": "color-mix(in oklab, currentColor 30%, transparent)",
+     "hr": "color-mix(in oklab, currentColor 10%, transparent)",
+     "quotes": "currentColor",
+     "quote-borders": "color-mix(in oklab, currentColor 10%, transparent)",
+     "captions": "color-mix(in oklab, currentColor 75%, transparent)",
+     "kbd": "currentColor",
+     "kbd-shadows": "oklab(21% -.00316127 -.0338527/.1)",
+     "code": "currentColor",
+     "pre-code": "oklch(92.8% .006 264.531)",
+     "pre-bg": "oklch(27.8% .033 256.848)",
+     "th-borders": "color-mix(in oklab, currentColor 30%, transparent)",
+     "td-borders": "color-mix(in oklab, currentColor 10%, transparent)"
+    },
+    "h2": {
+     "fs": "24px",
+     "fw": "700",
+     "mt": "0px",
+     "mb": "24px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "h3": {
+     "fs": "20px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "12px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "p2": {
+     "fs": "16px",
+     "fw": "400",
+     "mt": "20px",
+     "mb": "20px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "a": {
+     "fs": "16px",
+     "fw": "500",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s",
+     "td": "underline"
+    },
+    "ul": {
+     "lst": "disc",
+     "pis": "26px",
+     "lsp": "outside",
+     "pl": "26px",
+     "color": "rgb(51, 51, 51)",
+     "marker": "oklab(0.32109 0.0000146329 0.0000064075 / 0.3)"
+    },
+    "ol": {
+     "lst": "decimal",
+     "pis": "26px"
+    },
+    "hr": {
+     "bts": "solid",
+     "btw": "1px",
+     "btc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.1)"
+    },
+    "bq": {
+     "bls": "solid",
+     "blw": "4px",
+     "blc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.1)",
+     "pis": "16px",
+     "color": "rgb(51, 51, 51)"
+    },
+    "pre": {
+     "bg": "oklch(0.278 0.033 256.848)",
+     "color": "oklch(0.928 0.006 264.531)"
+    },
+    "strong": {
+     "fs": "16px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    }
+   },
+   "archive": {
+    "cls": "prose prose-tokens max-w-none",
+    "w": 516,
+    "parentContent": 516,
+    "fs": "16px",
+    "lh": "28px",
+    "maxWidth": "none",
+    "color": "oklab(0.32109 0.0000146329 0.0000064075 / 0.75)",
+    "vars": {
+     "body": "currentColor",
+     "headings": "currentColor",
+     "lead": "color-mix(in oklab, currentColor 75%, transparent)",
+     "links": "currentColor",
+     "bold": "currentColor",
+     "counters": "color-mix(in oklab, currentColor 75%, transparent)",
+     "bullets": "color-mix(in oklab, currentColor 30%, transparent)",
+     "hr": "color-mix(in oklab, currentColor 10%, transparent)",
+     "quotes": "currentColor",
+     "quote-borders": "color-mix(in oklab, currentColor 10%, transparent)",
+     "captions": "color-mix(in oklab, currentColor 75%, transparent)",
+     "kbd": "currentColor",
+     "kbd-shadows": "oklab(21% -.00316127 -.0338527/.1)",
+     "code": "currentColor",
+     "pre-code": "oklch(92.8% .006 264.531)",
+     "pre-bg": "oklch(27.8% .033 256.848)",
+     "th-borders": "color-mix(in oklab, currentColor 30%, transparent)",
+     "td-borders": "color-mix(in oklab, currentColor 10%, transparent)"
+    },
+    "h2": {
+     "fs": "24px",
+     "fw": "700",
+     "mt": "0px",
+     "mb": "24px",
+     "color": "oklab(0.32109 0.0000146329 0.0000064075 / 0.75)",
+     "ff": "\"Work Sans\", s"
+    },
+    "h3": {
+     "fs": "20px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "12px",
+     "color": "oklab(0.32109 0.0000146329 0.0000064075 / 0.75)",
+     "ff": "\"Work Sans\", s"
+    },
+    "p2": {
+     "fs": "16px",
+     "fw": "400",
+     "mt": "20px",
+     "mb": "20px",
+     "color": "oklab(0.32109 0.0000146329 0.0000064075 / 0.75)",
+     "ff": "\"Work Sans\", s"
+    },
+    "a": {
+     "fs": "16px",
+     "fw": "500",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "oklab(0.32109 0.0000146329 0.0000064075 / 0.75)",
+     "ff": "\"Work Sans\", s",
+     "td": "underline"
+    },
+    "ul": {
+     "lst": "disc",
+     "pis": "26px",
+     "lsp": "outside",
+     "pl": "26px",
+     "color": "oklab(0.32109 0.0000146329 0.0000064075 / 0.75)",
+     "marker": "oklab(0.321091 0.0000146329 0.0000064075 / 0.225)"
+    },
+    "ol": {
+     "lst": "decimal",
+     "pis": "26px"
+    },
+    "hr": {
+     "bts": "solid",
+     "btw": "1px",
+     "btc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.075)"
+    },
+    "bq": {
+     "bls": "solid",
+     "blw": "4px",
+     "blc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.075)",
+     "pis": "16px",
+     "color": "oklab(0.32109 0.0000146329 0.0000064075 / 0.75)"
+    },
+    "pre": {
+     "bg": "oklch(0.278 0.033 256.848)",
+     "color": "oklch(0.928 0.006 264.531)"
+    },
+    "strong": {
+     "fs": "16px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "oklab(0.32109 0.0000146329 0.0000064075 / 0.75)",
+     "ff": "\"Work Sans\", s"
+    }
+   },
+   "product": {
+    "cls": "prose prose-tokens max-w-none",
+    "w": 494,
+    "parentContent": 494,
+    "fs": "16px",
+    "lh": "28px",
+    "maxWidth": "none",
+    "color": "rgb(51, 51, 51)",
+    "vars": {
+     "body": "currentColor",
+     "headings": "currentColor",
+     "lead": "color-mix(in oklab, currentColor 75%, transparent)",
+     "links": "currentColor",
+     "bold": "currentColor",
+     "counters": "color-mix(in oklab, currentColor 75%, transparent)",
+     "bullets": "color-mix(in oklab, currentColor 30%, transparent)",
+     "hr": "color-mix(in oklab, currentColor 10%, transparent)",
+     "quotes": "currentColor",
+     "quote-borders": "color-mix(in oklab, currentColor 10%, transparent)",
+     "captions": "color-mix(in oklab, currentColor 75%, transparent)",
+     "kbd": "currentColor",
+     "kbd-shadows": "oklab(21% -.00316127 -.0338527/.1)",
+     "code": "currentColor",
+     "pre-code": "oklch(92.8% .006 264.531)",
+     "pre-bg": "oklch(27.8% .033 256.848)",
+     "th-borders": "color-mix(in oklab, currentColor 30%, transparent)",
+     "td-borders": "color-mix(in oklab, currentColor 10%, transparent)"
+    },
+    "h2": {
+     "fs": "24px",
+     "fw": "700",
+     "mt": "0px",
+     "mb": "24px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "h3": {
+     "fs": "20px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "12px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "p2": {
+     "fs": "16px",
+     "fw": "400",
+     "mt": "20px",
+     "mb": "20px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    },
+    "a": {
+     "fs": "16px",
+     "fw": "500",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s",
+     "td": "underline"
+    },
+    "ul": {
+     "lst": "disc",
+     "pis": "26px",
+     "lsp": "outside",
+     "pl": "26px",
+     "color": "rgb(51, 51, 51)",
+     "marker": "oklab(0.32109 0.0000146329 0.0000064075 / 0.3)"
+    },
+    "ol": {
+     "lst": "decimal",
+     "pis": "26px"
+    },
+    "hr": {
+     "bts": "solid",
+     "btw": "1px",
+     "btc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.1)"
+    },
+    "bq": {
+     "bls": "solid",
+     "blw": "4px",
+     "blc": "oklab(0.32109 0.0000146329 0.0000064075 / 0.1)",
+     "pis": "16px",
+     "color": "rgb(51, 51, 51)"
+    },
+    "pre": {
+     "bg": "oklch(0.278 0.033 256.848)",
+     "color": "oklch(0.928 0.006 264.531)"
+    },
+    "strong": {
+     "fs": "16px",
+     "fw": "600",
+     "mt": "0px",
+     "mb": "0px",
+     "color": "rgb(51, 51, 51)",
+     "ff": "\"Work Sans\", s"
+    }
+   },
+   "form-comment": {
+    "cls": "flex max-w-[28.125rem] flex-col gap-4 [&_ul]:list-disc [&_ul]:ps-[1.5em]",
+    "w": 450,
+    "parentContent": 1336,
+    "fs": "16px",
+    "lh": "normal",
+    "maxWidth": "450px",
+    "color": "rgb(51, 51, 51)",
+    "vars": {
+     "body": "",
+     "headings": "",
+     "lead": "",
+     "links": "",
+     "bold": "",
+     "counters": "",
+     "bullets": "",
+     "hr": "",
+     "quotes": "",
+     "quote-borders": "",
+     "captions": "",
+     "kbd": "",
+     "kbd-shadows": "",
+     "code": "",
+     "pre-code": "",
+     "pre-bg": "",
+     "th-borders": "",
+     "td-borders": ""
+    },
+    "h2": null,
+    "h3": null,
+    "p2": null,
+    "a": null,
+    "ul": {
+     "lst": "disc",
+     "pis": "24px",
+     "lsp": "outside",
+     "pl": "24px",
+     "color": "rgb(51, 51, 51)",
+     "marker": "rgb(51, 51, 51)"
+    },
+    "ol": null,
+    "hr": null,
+    "bq": null,
+    "pre": null,
+    "strong": null
+   },
+   "form-password": {
+    "cls": "flex max-w-[28.125rem] flex-col gap-3 [&_ul]:list-disc [&_ul]:ps-[1.5em]",
+    "w": 450,
+    "parentContent": 1336,
+    "fs": "16px",
+    "lh": "normal",
+    "maxWidth": "450px",
+    "color": "rgb(51, 51, 51)",
+    "vars": {
+     "body": "",
+     "headings": "",
+     "lead": "",
+     "links": "",
+     "bold": "",
+     "counters": "",
+     "bullets": "",
+     "hr": "",
+     "quotes": "",
+     "quote-borders": "",
+     "captions": "",
+     "kbd": "",
+     "kbd-shadows": "",
+     "code": "",
+     "pre-code": "",
+     "pre-bg": "",
+     "th-borders": "",
+     "td-borders": ""
+    },
+    "h2": null,
+    "h3": null,
+    "p2": null,
+    "a": null,
+    "ul": {
+     "lst": "disc",
+     "pis": "24px",
+     "lsp": "outside",
+     "pl": "24px",
+     "color": "rgb(51, 51, 51)",
+     "marker": "rgb(51, 51, 51)"
+    },
+    "ol": null,
+    "hr": null,
+    "bq": null,
+    "pre": null,
+    "strong": null
+   }
+  },
+  "xPage": {
+   "vw": 1440,
+   "sw": 1440,
+   "off": []
+  }
+ },
+ "mode": "pxr",
+ "label": "head",
+ "M_ch": {
+  "span": 646.890625,
+  "maxWidth": "646.88px"
+ }
+}

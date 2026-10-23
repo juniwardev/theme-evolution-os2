@@ -1,0 +1,203 @@
+{
+ "label": "head",
+ "/pages/the-material-archive@375": [
+  {
+   "cls": "prose prose-tokens max-w-none",
+   "w": 287,
+   "parentContent": 287,
+   "fs": "16px",
+   "lh": "28px",
+   "maxWidth": "none",
+   "bodyVar": "currentColor",
+   "color": "oklab(0.32109 0.0000146329 0.0000064075 / 0.75)",
+   "text": 71,
+   "p": {
+    "mt": "0px",
+    "color": "oklab(0.32109 0.0000146329 0.0000064075 / 0.75)"
+   }
+  }
+ ],
+ "/pages/the-material-archive@1440": [
+  {
+   "cls": "prose prose-tokens max-w-none",
+   "w": 600,
+   "parentContent": 600,
+   "fs": "16px",
+   "lh": "28px",
+   "maxWidth": "none",
+   "bodyVar": "currentColor",
+   "color": "oklab(0.32109 0.0000146329 0.0000064075 / 0.75)",
+   "text": 71,
+   "p": {
+    "mt": "0px",
+    "color": "oklab(0.32109 0.0000146329 0.0000064075 / 0.75)"
+   }
+  }
+ ],
+ "/products/the-3p-fulfilled-snowboard@375": [
+  {
+   "cls": "prose prose-tokens max-w-none",
+   "w": 287,
+   "parentContent": 287,
+   "fs": "16px",
+   "lh": "28px",
+   "maxWidth": "none",
+   "bodyVar": "currentColor",
+   "color": "rgb(51, 51, 51)",
+   "text": 105,
+   "p": {
+    "mt": "0px",
+    "color": "rgb(51, 51, 51)"
+   }
+  }
+ ],
+ "/products/the-3p-fulfilled-snowboard@1440": [
+  {
+   "cls": "prose prose-tokens max-w-none",
+   "w": 494,
+   "parentContent": 494,
+   "fs": "16px",
+   "lh": "28px",
+   "maxWidth": "none",
+   "bodyVar": "currentColor",
+   "color": "rgb(51, 51, 51)",
+   "text": 105,
+   "p": {
+    "mt": "0px",
+    "color": "rgb(51, 51, 51)"
+   }
+  }
+ ],
+ "/products/selling-plans-ski-wax@375": [
+  {
+   "cls": "prose prose-tokens max-w-none",
+   "w": 287,
+   "parentContent": 287,
+   "fs": "16px",
+   "lh": "28px",
+   "maxWidth": "none",
+   "bodyVar": "currentColor",
+   "color": "rgb(51, 51, 51)",
+   "text": 0,
+   "p": null
+  }
+ ],
+ "/products/selling-plans-ski-wax@1440": [
+  {
+   "cls": "prose prose-tokens max-w-none",
+   "w": 494,
+   "parentContent": 494,
+   "fs": "16px",
+   "lh": "28px",
+   "maxWidth": "none",
+   "bodyVar": "currentColor",
+   "color": "rgb(51, 51, 51)",
+   "text": 0,
+   "p": null
+  }
+ ],
+ "/products/the-complete-snowboard@375": [
+  {
+   "cls": "prose prose-tokens max-w-none",
+   "w": 287,
+   "parentContent": 287,
+   "fs": "16px",
+   "lh": "28px",
+   "maxWidth": "none",
+   "bodyVar": "currentColor",
+   "color": "rgb(51, 51, 51)",
+   "text": 185,
+   "p": {
+    "mt": "20px",
+    "color": "rgb(51, 51, 51)"
+   }
+  }
+ ],
+ "/products/the-complete-snowboard@1440": [
+  {
+   "cls": "prose prose-tokens max-w-none",
+   "w": 494,
+   "parentContent": 494,
+   "fs": "16px",
+   "lh": "28px",
+   "maxWidth": "none",
+   "bodyVar": "currentColor",
+   "color": "rgb(51, 51, 51)",
+   "text": 185,
+   "p": {
+    "mt": "20px",
+    "color": "rgb(51, 51, 51)"
+   }
+  }
+ ],
+ "/pages/data-sharing-opt-out@375": [
+  {
+   "cls": "prose prose-tokens overflow-x-auto",
+   "w": 271,
+   "parentContent": 271,
+   "fs": "16px",
+   "lh": "28px",
+   "maxWidth": "646.88px",
+   "bodyVar": "currentColor",
+   "color": "rgb(51, 51, 51)",
+   "text": 2229,
+   "p": {
+    "mt": "20px",
+    "color": "rgb(51, 51, 51)"
+   }
+  }
+ ],
+ "/pages/data-sharing-opt-out@1440": [
+  {
+   "cls": "prose prose-tokens overflow-x-auto",
+   "w": 646.9,
+   "parentContent": 1336,
+   "fs": "16px",
+   "lh": "28px",
+   "maxWidth": "646.88px",
+   "bodyVar": "currentColor",
+   "color": "rgb(51, 51, 51)",
+   "text": 2229,
+   "p": {
+    "mt": "20px",
+    "color": "rgb(51, 51, 51)"
+   }
+  }
+ ],
+ "/pages/the-balanced-face-test-page@375": [
+  {
+   "cls": "prose prose-tokens overflow-x-auto",
+   "w": 271,
+   "parentContent": 271,
+   "fs": "16px",
+   "lh": "28px",
+   "maxWidth": "646.88px",
+   "bodyVar": "currentColor",
+   "color": "rgb(51, 51, 51)",
+   "text": 11,
+   "p": {
+    "mt": "0px",
+    "color": "rgb(51, 51, 51)"
+   }
+  }
+ ],
+ "/pages/the-balanced-face-test-page@1440": [
+  {
+   "cls": "prose prose-tokens overflow-x-auto",
+   "w": 646.9,
+   "parentContent": 1336,
+   "fs": "16px",
+   "lh": "28px",
+   "maxWidth": "646.88px",
+   "bodyVar": "currentColor",
+   "color": "rgb(51, 51, 51)",
+   "text": 11,
+   "p": {
+    "mt": "0px",
+    "color": "rgb(51, 51, 51)"
+   }
+  }
+ ],
+ "/pages/contact@375": [],
+ "/pages/contact@1440": []
+}

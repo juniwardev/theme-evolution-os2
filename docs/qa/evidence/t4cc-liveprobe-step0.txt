@@ -1,0 +1,16 @@
+PAGE / {"id":138872651872,"role":"main","valid":true}
+  discover: none | scripts 0 | shadow hosts 1
+PAGE /products/the-3p-fulfilled-snowboard {"id":138872651872,"role":"main","valid":true}
+  discover: none | scripts 0 | shadow hosts 1
+PAGE /products/selling-plans-ski-wax {"id":138872651872,"role":"main","valid":true}
+  discover: none | scripts 0 | shadow hosts 1
+PAGE /products/the-complete-snowboard {"id":138872651872,"role":"main","valid":true}
+  discover: none | scripts 0 | shadow hosts 1
+PAGE /cart {"id":138872651872,"role":"main","valid":true}
+  discover: none | scripts 0 | shadow hosts 1
+PAGE /pages/data-sharing-opt-out {"id":138872651872,"role":"main","valid":true}
+  discover: none | scripts 0 | shadow hosts 1
+PAGE /policies/privacy-policy {"id":138872651872,"role":"main","valid":true}
+  discover: none | scripts 0 | shadow hosts 1
+RESULT /products/selling-plans-ski-wax {"containers":{},"control":{"before":{"ul":{"lst":"disc","pis":"24px"},"a":"underline"},"after":{"ul":{"lst":"none","pis":"0px"},"a":"none"}},"rules":{"pad":{"count":1,"text":"ul:not([class]), ol:not([class]) { padding-inline-start: 1.5em; }"},"ul":{"count":1,"text":"ul:not([class]) { list-style: outside; }"},"ol":{"count":1,"text":"ol:not([class]) { list-style: decimal; }"},"a":{"count":1,"text":"a:not([class]) { text-decoration-line: underline; }"}},"invalidReason":null,"controlFlipped":true}
+OUTCOME VALID-PASS (no embed found by this run's theme-verified discovery; control-only probe)

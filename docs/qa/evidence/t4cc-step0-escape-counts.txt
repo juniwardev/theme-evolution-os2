@@ -1,0 +1,9 @@
+page 1
+article 6
+blog 3
+main-material-archive 3
+product 2
+footer 4
+image-banner 2
+related-products 0
+password 1

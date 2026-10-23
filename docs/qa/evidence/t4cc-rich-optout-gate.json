@@ -1,0 +1,278 @@
+{
+ "320": {
+  "cls": "prose prose-tokens overflow-x-auto",
+  "ox": "auto",
+  "oy": "auto",
+  "boxW": 216,
+  "cw": 216,
+  "sw": 379,
+  "X_in": 163,
+  "vScroll": 0,
+  "W_pc": 378.8,
+  "maxWidth": "646.88px",
+  "page": {
+   "xPage": 0
+  },
+  "off": [],
+  "focus": [
+   {
+    "tag": "input",
+    "type": "checkbox",
+    "id": "pc--show-email-field",
+    "fv": true,
+    "inBox": true,
+    "inW": true,
+    "outline": "none 3px off 4px",
+    "shadow": "none",
+    "rect": [
+     52,
+     392,
+     65,
+     420
+    ],
+    "clipPx": {
+     "l": 0,
+     "r": 0,
+     "t": 0,
+     "b": 0
+    }
+   },
+   {
+    "tag": "button",
+    "type": "submit",
+    "id": "pc--opt-out-button",
+    "fv": true,
+    "inBox": true,
+    "inW": false,
+    "outline": "none 3px off 4px",
+    "shadow": "none",
+    "rect": [
+     52,
+     436,
+     268,
+     481
+    ],
+    "clipPx": {
+     "l": 0,
+     "r": 0,
+     "t": 0,
+     "b": 0
+    }
+   },
+   {
+    "tag": "a",
+    "type": "",
+    "id": "",
+    "fv": true,
+    "inBox": false,
+    "inW": false,
+    "outline": "none 3px off 4px",
+    "shadow": "none",
+    "rect": [
+     24,
+     708.6,
+     87,
+     724.6
+    ],
+    "clipPx": {
+     "l": 28,
+     "r": 0,
+     "t": 0,
+     "b": 227.6
+    }
+   }
+  ]
+ },
+ "375": {
+  "cls": "prose prose-tokens overflow-x-auto",
+  "ox": "auto",
+  "oy": "auto",
+  "boxW": 271,
+  "cw": 271,
+  "sw": 379,
+  "X_in": 108,
+  "vScroll": 0,
+  "W_pc": 378.8,
+  "maxWidth": "646.88px",
+  "page": {
+   "xPage": 0
+  },
+  "off": [],
+  "focus": [
+   {
+    "tag": "input",
+    "type": "checkbox",
+    "id": "pc--show-email-field",
+    "fv": true,
+    "inBox": true,
+    "inW": true,
+    "outline": "none 3px off 4px",
+    "shadow": "none",
+    "rect": [
+     52,
+     392,
+     65,
+     420
+    ],
+    "clipPx": {
+     "l": 0,
+     "r": 0,
+     "t": 0,
+     "b": 0
+    }
+   },
+   {
+    "tag": "button",
+    "type": "submit",
+    "id": "pc--opt-out-button",
+    "fv": true,
+    "inBox": true,
+    "inW": false,
+    "outline": "none 3px off 4px",
+    "shadow": "none",
+    "rect": [
+     52,
+     436,
+     323,
+     481
+    ],
+    "clipPx": {
+     "l": 0,
+     "r": 0,
+     "t": 0,
+     "b": 0
+    }
+   },
+   {
+    "tag": "a",
+    "type": "",
+    "id": "",
+    "fv": true,
+    "inBox": false,
+    "inW": false,
+    "outline": "none 3px off 4px",
+    "shadow": "none",
+    "rect": [
+     24,
+     686.2,
+     87,
+     702.2
+    ],
+    "clipPx": {
+     "l": 28,
+     "r": 0,
+     "t": 0,
+     "b": 205.2
+    }
+   }
+  ],
+  "widgetText": [
+   {
+    "tag": "div",
+    "fs": "16px",
+    "lh": "28px",
+    "mt": "0px",
+    "mb": "0px",
+    "fw": "400"
+   },
+   {
+    "tag": "label",
+    "fs": "16px",
+    "lh": "28px",
+    "mt": "0px",
+    "mb": "0px",
+    "fw": "400"
+   },
+   {
+    "tag": "input",
+    "fs": "16px",
+    "lh": "28px",
+    "mt": "0px",
+    "mb": "0px",
+    "fw": "400"
+   }
+  ]
+ },
+ "390": {
+  "cls": "prose prose-tokens overflow-x-auto",
+  "ox": "auto",
+  "oy": "auto",
+  "boxW": 286,
+  "cw": 286,
+  "sw": 379,
+  "X_in": 93,
+  "vScroll": 0,
+  "W_pc": 378.8,
+  "maxWidth": "646.88px",
+  "page": {
+   "xPage": 0
+  },
+  "off": []
+ },
+ "430": {
+  "cls": "prose prose-tokens overflow-x-auto",
+  "ox": "auto",
+  "oy": "auto",
+  "boxW": 326,
+  "cw": 326,
+  "sw": 379,
+  "X_in": 53,
+  "vScroll": 0,
+  "W_pc": 378.8,
+  "maxWidth": "646.88px",
+  "page": {
+   "xPage": 0
+  },
+  "off": []
+ },
+ "768": {
+  "cls": "prose prose-tokens overflow-x-auto",
+  "ox": "auto",
+  "oy": "auto",
+  "boxW": 646.9,
+  "cw": 647,
+  "sw": 647,
+  "X_in": 0,
+  "vScroll": 0,
+  "W_pc": 378.8,
+  "maxWidth": "646.88px",
+  "page": {
+   "xPage": 0
+  },
+  "off": []
+ },
+ "1440": {
+  "cls": "prose prose-tokens overflow-x-auto",
+  "ox": "auto",
+  "oy": "auto",
+  "boxW": 646.9,
+  "cw": 647,
+  "sw": 647,
+  "X_in": 0,
+  "vScroll": 0,
+  "W_pc": 378.8,
+  "maxWidth": "646.88px",
+  "page": {
+   "xPage": 0
+  },
+  "off": []
+ },
+ "1920": {
+  "cls": "prose prose-tokens overflow-x-auto",
+  "ox": "auto",
+  "oy": "auto",
+  "boxW": 646.9,
+  "cw": 647,
+  "sw": 647,
+  "X_in": 0,
+  "vScroll": 0,
+  "W_pc": 378.8,
+  "maxWidth": "646.88px",
+  "page": {
+   "xPage": 0
+  },
+  "off": []
+ },
+ "mode": "optout",
+ "label": "gate"
+}

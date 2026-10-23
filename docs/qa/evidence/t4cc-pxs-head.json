@@ -1,0 +1,79 @@
+{
+ "label": "head",
+ "home-375": {
+  "footerLink": {
+   "td": "underline",
+   "thick": "auto",
+   "offset": "auto",
+   "color": "rgb(255, 255, 255)",
+   "tdc": "rgb(255, 255, 255)",
+   "text": "us"
+  },
+  "footerUl": {
+   "lst": "disc",
+   "lsp": "outside",
+   "pis": "21px",
+   "wrapperFs": "14px"
+  },
+  "bannerHeadingLink": {
+   "td": "underline",
+   "thick": "1px",
+   "offset": "3px",
+   "color": "rgb(51, 51, 51)",
+   "tdc": "rgb(51, 51, 51)",
+   "text": "now"
+  },
+  "bannerTextLink": {
+   "td": "underline",
+   "thick": "1px",
+   "offset": "3px",
+   "color": "rgb(51, 51, 51)",
+   "tdc": "rgb(51, 51, 51)",
+   "text": "more"
+  }
+ },
+ "related-375": null,
+ "home-1440": {
+  "footerLink": {
+   "td": "underline",
+   "thick": "auto",
+   "offset": "auto",
+   "color": "rgb(255, 255, 255)",
+   "tdc": "rgb(255, 255, 255)",
+   "text": "us"
+  },
+  "footerUl": {
+   "lst": "disc",
+   "lsp": "outside",
+   "pis": "21px",
+   "wrapperFs": "14px"
+  },
+  "bannerHeadingLink": {
+   "td": "underline",
+   "thick": "1px",
+   "offset": "3px",
+   "color": "rgb(51, 51, 51)",
+   "tdc": "rgb(51, 51, 51)",
+   "text": "now"
+  },
+  "bannerTextLink": {
+   "td": "underline",
+   "thick": "1px",
+   "offset": "3px",
+   "color": "rgb(51, 51, 51)",
+   "tdc": "rgb(51, 51, 51)",
+   "text": "more"
+  }
+ },
+ "related-1440": {
+  "handle": "the-complete-snowboard",
+  "link": {
+   "td": "underline",
+   "thick": "auto",
+   "offset": "auto",
+   "color": "rgb(51, 51, 51)",
+   "tdc": "rgb(51, 51, 51)",
+   "text": "also"
+  }
+ }
+}

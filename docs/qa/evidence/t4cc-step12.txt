@@ -1,0 +1,6 @@
+STEP 12 size: 58308 / 11082
+added 0 (prose-family descendant selectors 0); non-family: []
+removed 4: ['a:not([class])', 'ol:not([class])', 'ul:not([class])', 'ul:not([class]),ol:not([class])']
+check:css ok
+
+│  95 files inspected with no offenses found.                                  │

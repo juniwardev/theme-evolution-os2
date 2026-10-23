@@ -1,0 +1,2 @@
+[{"text":"Organic Cotton","inStrong":true,"color":"rgb(0, 112, 124)","td":"underline","tds":"dotted","off":"4px","fw":"500"},{"text":"Recycled Polyester","inStrong":false,"color":"rgb(0, 112, 124)","td":"underline","tds":"dotted","off":"4px","fw":"500"}]
+{"hoverColor":"rgb(0, 76, 85)","tooltip":1}

@@ -1,0 +1,492 @@
+{
+ "label": "base",
+ "sitemap": 200,
+ "policies": {
+  "refund-policy": {
+   "status": 404,
+   "url": "https://theme-evolution-os2.myshopify.com/policies/refund-policy",
+   "cls": [],
+   "n": 25
+  },
+  "privacy-policy": {
+   "status": 200,
+   "url": "https://theme-evolution-os2.myshopify.com/policies/privacy-policy",
+   "cls": [
+    "shopify-policy__container",
+    "shopify-policy__title",
+    "shopify-policy__body"
+   ],
+   "n": 33
+  },
+  "terms-of-service": {
+   "status": 404,
+   "url": "https://theme-evolution-os2.myshopify.com/policies/terms-of-service",
+   "cls": [],
+   "n": 25
+  },
+  "shipping-policy": {
+   "status": 404,
+   "url": "https://theme-evolution-os2.myshopify.com/policies/shipping-policy",
+   "cls": [],
+   "n": 25
+  },
+  "contact-information": {
+   "status": 404,
+   "url": "https://theme-evolution-os2.myshopify.com/policies/contact-information",
+   "cls": [],
+   "n": 25
+  },
+  "legal-notice": {
+   "status": 404,
+   "url": "https://theme-evolution-os2.myshopify.com/policies/legal-notice",
+   "cls": [],
+   "n": 25
+  },
+  "subscription-policy": {
+   "status": 404,
+   "url": "https://theme-evolution-os2.myshopify.com/policies/subscription-policy",
+   "cls": [],
+   "n": 25
+  }
+ },
+ "outlines": {
+  "/pages/data-sharing-opt-out": [
+   {
+    "cls": "",
+    "outline": {
+     "link": 1,
+     "meta": 1,
+     "p": 7,
+     "div": 6,
+     "form": 1,
+     "input": 3,
+     "label": 1,
+     "button": 1,
+     "iframe": 1,
+     "textarea": 2,
+     "svg": 3,
+     "path": 8,
+     "span": 2,
+     "small": 1,
+     "circle": 2,
+     "strong": 1,
+     "script": 2
+    },
+    "len": 2229,
+    "materials": []
+   }
+  ],
+  "/pages/the-balanced-face-test-page": [
+   {
+    "cls": "",
+    "outline": {
+     "p": 1
+    },
+    "len": 11,
+    "materials": []
+   }
+  ],
+  "/pages/the-material-archive": [
+   {
+    "cls": "mt-6 text-foreground/75",
+    "outline": {
+     "p": 1,
+     "meta": 1
+    },
+    "len": 71,
+    "materials": []
+   }
+  ],
+  "/pages/contact": [],
+  "/products/the-3p-fulfilled-snowboard": [],
+  "/products/selling-plans-ski-wax": [],
+  "/products/the-complete-snowboard": []
+ },
+ "widget": {
+  "375": {
+   "found": true,
+   "chain": [
+    {
+     "tag": "div",
+     "id": "",
+     "cls": "pc--show-email-field",
+     "l": 52,
+     "r": 430.8,
+     "ox": "visible",
+     "rich": false
+    },
+    {
+     "tag": "div",
+     "id": "",
+     "cls": "pc--opt-out-form-container",
+     "l": 52,
+     "r": 323,
+     "ox": "visible",
+     "rich": false
+    },
+    {
+     "tag": "form",
+     "id": "pc--opt-out-form",
+     "cls": "pc--opt-out-form",
+     "l": 52,
+     "r": 323,
+     "ox": "visible",
+     "rich": false
+    },
+    {
+     "tag": "div",
+     "id": "pc--opt-out-form-container",
+     "cls": "",
+     "l": 52,
+     "r": 323,
+     "ox": "visible",
+     "rich": false
+    },
+    {
+     "tag": "div",
+     "id": "pc--optOutFormContainer",
+     "cls": "",
+     "l": 52,
+     "r": 323,
+     "ox": "visible",
+     "rich": false
+    },
+    {
+     "tag": "div",
+     "id": "",
+     "cls": "",
+     "l": 52,
+     "r": 323,
+     "ox": "visible",
+     "rich": true
+    },
+    {
+     "tag": "div",
+     "id": "",
+     "cls": "flex flex-col gap-8 px-8 py-10 md:py-16",
+     "l": 20,
+     "r": 355,
+     "ox": "visible",
+     "rich": false
+    },
+    {
+     "tag": "div",
+     "id": "shopify-section-template--27595353489504__main",
+     "cls": "shopify-section",
+     "l": 0,
+     "r": 375,
+     "ox": "visible",
+     "rich": false
+    },
+    {
+     "tag": "body",
+     "id": "",
+     "cls": "",
+     "l": 0,
+     "r": 375,
+     "ox": "visible",
+     "rich": false
+    }
+   ],
+   "inlineStyle": null,
+   "rules": [
+    {
+     "sheet": "https://theme-evolution-os2.myshopify.com/cdn/shop/t/12/assets/base.css?v=164717106524863335321792702062",
+     "layer": "legacy",
+     "sel": "input[type=\"checkbox\"]",
+     "decl": "width:auto"
+    }
+   ],
+   "unreadable": [
+    "https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.css"
+   ],
+   "widgetBorderBox": [
+    52,
+    430.8,
+    378.8
+   ],
+   "furthestRight": 430.8,
+   "boxContentLeft": 52,
+   "W_pc": 378.8,
+   "descendants": [
+    {
+     "tag": "label",
+     "cls": "",
+     "type": "",
+     "inline": "",
+     "w": 378.8,
+     "r": 430.8,
+     "fs": "16px",
+     "lh": "normal",
+     "mt": "0px",
+     "mb": "0px",
+     "fw": "400",
+     "ff": "\"Work Sans\", sans-serif"
+    },
+    {
+     "tag": "input",
+     "cls": "",
+     "type": "checkbox",
+     "inline": "",
+     "w": 13,
+     "r": 65,
+     "fs": "16px",
+     "lh": "normal",
+     "mt": "0px",
+     "mb": "0px",
+     "fw": "400",
+     "ff": "\"Work Sans\", sans-serif"
+    }
+   ],
+   "insideBox": true,
+   "xPage": 56
+  },
+  "1440": {
+   "found": true,
+   "chain": [
+    {
+     "tag": "div",
+     "id": "",
+     "cls": "pc--show-email-field",
+     "l": 52,
+     "r": 430.8,
+     "ox": "visible",
+     "rich": false
+    },
+    {
+     "tag": "div",
+     "id": "",
+     "cls": "pc--opt-out-form-container",
+     "l": 52,
+     "r": 427,
+     "ox": "visible",
+     "rich": false
+    },
+    {
+     "tag": "form",
+     "id": "pc--opt-out-form",
+     "cls": "pc--opt-out-form",
+     "l": 52,
+     "r": 547,
+     "ox": "visible",
+     "rich": false
+    },
+    {
+     "tag": "div",
+     "id": "pc--opt-out-form-container",
+     "cls": "",
+     "l": 52,
+     "r": 1388,
+     "ox": "visible",
+     "rich": false
+    },
+    {
+     "tag": "div",
+     "id": "pc--optOutFormContainer",
+     "cls": "",
+     "l": 52,
+     "r": 1388,
+     "ox": "visible",
+     "rich": false
+    },
+    {
+     "tag": "div",
+     "id": "",
+     "cls": "",
+     "l": 52,
+     "r": 1388,
+     "ox": "visible",
+     "rich": true
+    },
+    {
+     "tag": "div",
+     "id": "",
+     "cls": "flex flex-col gap-8 px-8 py-10 md:py-16",
+     "l": 20,
+     "r": 1420,
+     "ox": "visible",
+     "rich": false
+    },
+    {
+     "tag": "div",
+     "id": "shopify-section-template--27595353489504__main",
+     "cls": "shopify-section",
+     "l": 0,
+     "r": 1440,
+     "ox": "visible",
+     "rich": false
+    },
+    {
+     "tag": "body",
+     "id": "",
+     "cls": "",
+     "l": 0,
+     "r": 1440,
+     "ox": "visible",
+     "rich": false
+    }
+   ],
+   "inlineStyle": null,
+   "rules": [
+    {
+     "sheet": "https://theme-evolution-os2.myshopify.com/cdn/shop/t/12/assets/base.css?v=164717106524863335321792702062",
+     "layer": "legacy",
+     "sel": "input[type=\"checkbox\"]",
+     "decl": "width:auto"
+    }
+   ],
+   "unreadable": [
+    "https://cdn.shopify.com/shopifycloud/privacy-banner/data-sale-opt-out.css"
+   ],
+   "widgetBorderBox": [
+    52,
+    430.8,
+    378.8
+   ],
+   "furthestRight": 430.8,
+   "boxContentLeft": 52,
+   "W_pc": 378.8,
+   "descendants": [
+    {
+     "tag": "label",
+     "cls": "",
+     "type": "",
+     "inline": "",
+     "w": 378.8,
+     "r": 430.8,
+     "fs": "16px",
+     "lh": "normal",
+     "mt": "0px",
+     "mb": "0px",
+     "fw": "400",
+     "ff": "\"Work Sans\", sans-serif"
+    },
+    {
+     "tag": "input",
+     "cls": "",
+     "type": "checkbox",
+     "inline": "",
+     "w": 13,
+     "r": 65,
+     "fs": "16px",
+     "lh": "normal",
+     "mt": "0px",
+     "mb": "0px",
+     "fw": "400",
+     "ff": "\"Work Sans\", sans-serif"
+    }
+   ],
+   "insideBox": true,
+   "xPage": 0
+  },
+  "inServerHtml": true,
+  "serverHtmlSnippet": ""
+ },
+ "policyChain": {
+  "privacy-policy": {
+   "rows": [
+    {
+     "tag": "ul",
+     "text": "Contact details including your",
+     "chain": "div < div.rte < div.shopify-policy__body < div.shopify-policy__container",
+     "lst": "disc",
+     "lsp": "inside",
+     "pl": "32px",
+     "td": "none"
+    },
+    {
+     "tag": "ul",
+     "text": "Directly from you including wh",
+     "chain": "div < div.rte < div.shopify-policy__body < div.shopify-policy__container",
+     "lst": "disc",
+     "lsp": "inside",
+     "pl": "32px",
+     "td": "none"
+    },
+    {
+     "tag": "ul",
+     "text": "Provide, Tailor, and Improve t",
+     "chain": "div < div.rte < div.shopify-policy__body < div.shopify-policy__container",
+     "lst": "disc",
+     "lsp": "inside",
+     "pl": "32px",
+     "td": "none"
+    },
+    {
+     "tag": "ul",
+     "text": "With Shopify, vendors and othe",
+     "chain": "div < div.rte < div.shopify-policy__body < div.shopify-policy__container",
+     "lst": "disc",
+     "lsp": "inside",
+     "pl": "32px",
+     "td": "none"
+    },
+    {
+     "tag": "a",
+     "text": "here",
+     "chain": "li < ul < div < div.rte < div.shopify-policy__body < div.shopify-policy__container",
+     "lst": "disc",
+     "lsp": "inside",
+     "pl": "0px",
+     "td": "underline"
+    },
+    {
+     "tag": "a",
+     "text": "Shopify Consumer Privacy Polic",
+     "chain": "p < div < div.rte < div.shopify-policy__body < div.shopify-policy__container",
+     "lst": "disc",
+     "lsp": "outside",
+     "pl": "0px",
+     "td": "underline"
+    },
+    {
+     "tag": "a",
+     "text": "Shopify Privacy Portal Link",
+     "chain": "p < div < div.rte < div.shopify-policy__body < div.shopify-policy__container",
+     "lst": "disc",
+     "lsp": "outside",
+     "pl": "0px",
+     "td": "underline"
+    },
+    {
+     "tag": "ul",
+     "text": "Right to Access / Know. You ma",
+     "chain": "div < div.rte < div.shopify-policy__body < div.shopify-policy__container",
+     "lst": "disc",
+     "lsp": "inside",
+     "pl": "32px",
+     "td": "none"
+    },
+    {
+     "tag": "a",
+     "text": "here",
+     "chain": "li < ul < div < div.rte < div.shopify-policy__body < div.shopify-policy__container",
+     "lst": "disc",
+     "lsp": "inside",
+     "pl": "0px",
+     "td": "underline"
+    },
+    {
+     "tag": "a",
+     "text": "Continue shopping",
+     "chain": "div.flex.flex-col.items-start.gap-4 < div.flex-1.overflow-y-auto.p-5 < div.relative.flex.h-full.w-full.max-w-[25rem].translate-x-full.flex-col.bg-background.shadow-[-5px_0_15px_rgb(0_0_0/0.1)].transition-transform.duration-300.ease-[cubic-bezier(0.19,1,0.22,1)].group-data-[state=open]/drawer:translate-x-0 < div.cart-drawer__inner.fixed.top-0.left-0.z-1000.flex.h-screen.w-screen.justify-end < cart-drawer.group/drawer.block < div.shopify-section",
+     "lst": "disc",
+     "lsp": "outside",
+     "pl": "24px",
+     "td": "none"
+    }
+   ],
+   "styles": [],
+   "counts": {
+    "ul": 5,
+    "ol": 0,
+    "a": 4
+   },
+   "total": {
+    "ul": 5,
+    "ol": 0,
+    "a": 5
+   }
+  }
+ }
+}

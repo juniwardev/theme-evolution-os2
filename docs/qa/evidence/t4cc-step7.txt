@@ -1,0 +1,6 @@
+STEP 7 size: 58333 / 11092
+added 3 (prose-family descendant selectors 0); non-family: ['.\\[\\&_a\\]\\:underline a', '.\\[\\&_ul\\]\\:list-disc ul', '.\\[\\&_ul\\]\\:ps-\\[1\\.5em\\] ul']
+removed 0: []
+check:css ok
+
+│  95 files inspected with no offenses found.                                  │
