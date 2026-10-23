@@ -5,7 +5,8 @@
   https://shopify.dev/docs/storefronts/themes/architecture/templates/page
 {% endcomment %}
 
-<div class="flex flex-col gap-8 px-8 py-10 md:py-16" data-page-shell>
+{% # The cap adds the 2rem side padding to 65ch, so the text measure matches the prose box. w-full stops the centered shell shrinking to its content. %}
+<div class="mx-auto flex w-full max-w-[calc(65ch+4rem)] flex-col gap-8 px-8 py-10 md:py-16" data-page-shell>
   <h1 class="font-heading text-3xl leading-tight font-bold uppercase md:text-4xl">{{ page.title | escape }}</h1>
 
   {%- if page.content != blank -%}
