@@ -254,6 +254,9 @@
       "rating_label": "Sustainability score",
       "rating_score_text": "{{ rating }} of 5",
       "rating_aria_label": "Sustainability rating: {{ rating }} out of 5"
+    },
+    "material_info": {
+      "subtitle": "Primary composition"
     }
   },
   "accessibility": {

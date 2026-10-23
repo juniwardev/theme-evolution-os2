@@ -1,36 +1,21 @@
-{% style %}
-  .specs-table {
-    margin: 2rem 0;
-    border-top: 1px solid {{ block.settings.text_color | color_modify: 'alpha', 0.1 }};
-  }
-  .specs-table__row {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    padding: 12px 0;
-    border-bottom: 1px solid {{ block.settings.text_color | color_modify: 'alpha', 0.1 }};
-    font-size: clamp(0.9rem, 1vw, 1.1rem);
-  }
-  .specs-table__label {
-    font-weight: 600;
-    color: {{ block.settings.text_color }};
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-size: 0.8em;
-  }
-  .specs-table__value {
-    color: {{ block.settings.text_color | color_modify: 'alpha', 0.8 }};
-  }
-{% endstyle %}
+{% doc %}
+  Renders `product.metafields.custom.technical_specs` as label/value rows.
+
+  @param {object} block - The specs_table block
+
+  @example
+  {% render 'specs-table', block: block %}
+{% enddoc %}
 
 {%- if product.metafields.custom.technical_specs.value != blank -%}
-  <div class="specs-table" {{ block.shopify_attributes }}>
+  <div class="my-8 border-t border-(--specs-color)/10" style="--specs-color: {{ block.settings.text_color }}" {{ block.shopify_attributes }}>
     {%- for spec in product.metafields.custom.technical_specs.value -%}
       {%- assign parts = spec | split: ':' -%}
-      <div class="specs-table__row">
-        <div class="specs-table__label">
+      <div class="mb-0 grid grid-cols-[1fr_2fr] border-b border-(--specs-color)/10 py-3 text-[length:clamp(0.9rem,1vw,1.1rem)]">
+        <div class="text-[0.8em] font-semibold tracking-[0.05em] text-(--specs-color) uppercase">
           {{ parts[0] | strip }}
         </div>
-        <div class="specs-table__value">
+        <div class="text-(--specs-color)/80">
           {{ parts[1] | default: parts[0] | strip }}
         </div>
       </div>
