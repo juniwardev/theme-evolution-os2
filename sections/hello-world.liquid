@@ -1,136 +1,57 @@
-{% comment %}
-  Welcome to Shopify theme development!
-{% endcomment %}
-
-<div class="welcome full-width">
-  <div class="welcome-content">
+<div class="col-span-full mb-0 grid grid-cols-(--content-grid) bg-[#f6f6f7] py-18 text-[#333333]" data-hello-band>
+  <div class="col-start-2 flex w-full items-center justify-between gap-4 px-8">
     <div>
-      <h1>Hello, World!</h1>
+      <h1 class="font-heading text-3xl leading-tight font-bold uppercase md:text-4xl">
+        {{ 'sections.hello_world.heading' | t }}
+      </h1>
 
-      <p class="welcome-description">
-        The Skeleton theme is a minimal, carefully structured Shopify theme designed to help you quickly get started.
-        Designed with modularity, maintainability, and Shopify's best practices in mind.
-      </p>
+      <p class="mt-6 max-w-[80ch] leading-[1.4]">{{ 'sections.hello_world.description_intro' | t }}</p>
 
-      <p class="welcome-description">
-        Themes shape the online store experience for merchants and their customers. Build fast, flexible themes at scale
-        using Liquid, Shopify's theme templating language, along with HTML, CSS, JavaScript, and JSON.
-      </p>
+      <p class="mt-6 max-w-[80ch] leading-[1.4]">{{ 'sections.hello_world.description_themes' | t }}</p>
     </div>
-    <div class="icon">
-      <img src="{{ 'shoppy-x-ray.svg' | asset_url }}" width="300" height="300">
+    <div class="w-[300px]">
+      <img src="{{ 'shoppy-x-ray.svg' | asset_url }}" width="300" height="300" alt="">
     </div>
   </div>
 </div>
 
-<div class="highlights">
-  <div class="highlight">
-    <h3>Key Concepts</h3>
-    <p class="highlight-description">
-      Shopify themes are a package of template files, building blocks, and supporting assets. Use these building blocks
-      to create modular, customizable themes.
+<div class="mt-12.5 mb-0 grid grid-cols-1 gap-8 px-8 lg:grid-cols-3" data-hello-cards>
+  <div class="flex flex-col gap-4 rounded-lg bg-[#eef3ff] p-6 leading-[1.4] text-[#5c5f62]" data-hello-card>
+    <h2 class="m-0 text-[1rem] text-[#202223]">{{ 'sections.hello_world.concepts_title' | t }}</h2>
+    <p class="m-0 flex-1">{{ 'sections.hello_world.concepts_text' | t }}</p>
+    <p class="m-0">
+      {{
+        'sections.hello_world.concepts_link'
+        | t
+        | link_to: 'https://shopify.dev/docs/storefronts/themes/architecture', class: 'flex w-fit rounded-sm border border-[#8c9196] bg-[#fafbfb] px-2.5 pt-[3px] pb-[5px] text-[#5c5f62] no-underline shadow-[inset_0_-3px_0_0_rgb(0_0_0/0.2),inset_0_2px_0_0_rgb(255_255_255/0.9)]'
+      }}
     </p>
-    <p>{{ 'Learn more about key concepts' | link_to: 'https://shopify.dev/docs/storefronts/themes/architecture' }}</p>
   </div>
 
-  <div class="highlight">
-    <h3>Liquid</h3>
-    <p class="highlight-description">
-      The Liquid templating language is the backbone of Shopify themes, and is used to load dynamic content on
-      storefronts. Extend Liquid objects to store and present custom data using metafields.
+  <div class="flex flex-col gap-4 rounded-lg bg-[#eef3ff] p-6 leading-[1.4] text-[#5c5f62]" data-hello-card>
+    <h2 class="m-0 text-[1rem] text-[#202223]">{{ 'sections.hello_world.liquid_title' | t }}</h2>
+    <p class="m-0 flex-1">{{ 'sections.hello_world.liquid_text' | t }}</p>
+    <p class="m-0">
+      {{
+        'sections.hello_world.liquid_link'
+        | t
+        | link_to: 'https://shopify.dev/docs/api/liquid', class: 'flex w-fit rounded-sm border border-[#8c9196] bg-[#fafbfb] px-2.5 pt-[3px] pb-[5px] text-[#5c5f62] no-underline shadow-[inset_0_-3px_0_0_rgb(0_0_0/0.2),inset_0_2px_0_0_rgb(255_255_255/0.9)]'
+      }}
     </p>
-    <p>{{ 'View the Liquid reference' | link_to: 'https://shopify.dev/docs/api/liquid' }}</p>
   </div>
 
-  <div class="highlight">
-    <h3>Best Practices</h3>
-    <p class="highlight-description">
-      To optimize your theme development experience, Shopify has established a set of best practices that you can refer
-      to when developing your theme and setting up your toolchains and processes.
+  <div class="flex flex-col gap-4 rounded-lg bg-[#eef3ff] p-6 leading-[1.4] text-[#5c5f62]" data-hello-card>
+    <h2 class="m-0 text-[1rem] text-[#202223]">{{ 'sections.hello_world.practices_title' | t }}</h2>
+    <p class="m-0 flex-1">{{ 'sections.hello_world.practices_text' | t }}</p>
+    <p class="m-0">
+      {{
+        'sections.hello_world.practices_link'
+        | t
+        | link_to: 'https://shopify.dev/docs/storefronts/themes/best-practices', class: 'flex w-fit rounded-sm border border-[#8c9196] bg-[#fafbfb] px-2.5 pt-[3px] pb-[5px] text-[#5c5f62] no-underline shadow-[inset_0_-3px_0_0_rgb(0_0_0/0.2),inset_0_2px_0_0_rgb(255_255_255/0.9)]'
+      }}
     </p>
-    <p>{{ 'Follow best practices' | link_to: 'https://shopify.dev/docs/storefronts/themes/best-practices' }}</p>
   </div>
 </div>
-
-{% stylesheet %}
-  .welcome {
-    display: grid;
-    grid-template-columns: var(--content-grid);
-    background-color: #f6f6f7;
-    padding: 72px 0;
-  }
-
-  .welcome-content {
-    grid-column: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-    padding: 0 24px;
-  }
-
-  .welcome-description {
-    max-width: 80ch;
-    line-height: 1.4;
-    margin-top: 1.5rem;
-  }
-
-  /* Scoped to this section: a bare .icon rule is unlayered and global, so it
-     overrode the size of every inline SVG icon (class="icon") in the theme. */
-  .welcome-content .icon {
-    width: 300px;
-  }
-
-  .highlights {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 50px;
-  }
-
-  @media (max-width: 1100px) {
-    .highlights {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .highlight {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 24px;
-    border-radius: 8px;
-    background-color: #eef3ff;
-    color: rgb(92, 95, 98);
-    line-height: 1.4;
-  }
-
-  .highlight > * + * {
-    margin-top: 1rem;
-  }
-
-  .highlight h3 {
-    font-size: 1rem;
-    color: rgb(32, 34, 35);
-  }
-
-  .highlight-description {
-    flex: 1 1;
-  }
-
-  .highlight a {
-    display: flex;
-    width: fit-content;
-    background-color: rgb(250, 251, 251);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px -3px 0px 0px inset, rgba(255, 255, 255, 0.9) 0px 2px 0px 0px inset;
-    border: 1px solid rgb(140, 145, 150);
-    border-radius: 4px;
-    color: rgb(92, 95, 98);
-    padding: 3px 10px 5px;
-    text-decoration: none;
-  }
-{% endstylesheet %}
 
 {% schema %}
 {
