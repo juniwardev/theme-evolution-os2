@@ -271,6 +271,22 @@
   }
 
   /*
+   * Store policy pages (/policies/*) print Shopify's own markup, which takes no theme
+   * classes. Keep their list markers and link underline. Dawn's .rte still sets the list
+   * padding and inside position while base.css loads; T5 decides the final styling.
+   * See docs/plans/theme-evolution-tailwind-t4c.md D4c.9.
+   */
+  .shopify-policy__body ul {
+    list-style-type: disc;
+  }
+  .shopify-policy__body ol {
+    list-style-type: decimal;
+  }
+  .shopify-policy__body a {
+    text-decoration-line: underline;
+  }
+
+  /*
    * Browser defaults that Preflight removes but unclassed Dawn, Shopify and merchant
    * markup still relies on (plan D6). Remove each in the phase noted.
    */
