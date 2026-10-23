@@ -62,8 +62,8 @@
 
 /*
  * Shared button styles (docs/plans/theme-evolution-tailwind-t2.md D2.7). Also used by the
- * roadmap's blocks/button.liquid. Named btn-* because Dawn's .button rules still match
- * `.button`. They read the runtime variables printed by snippets/css-variables.liquid.
+ * roadmap's blocks/button.liquid. Named btn-* so they stay clear of the plain `.button`
+ * class that Shopify and app markup use. They read the runtime variables printed by snippets/css-variables.liquid.
  * The nested &:hover / &:focus-visible / &:disabled states are flattened only by
  * `--minify` (Lightning CSS); never drop --minify from build:css.
  */
@@ -162,14 +162,6 @@
   --tw-prose-code: currentColor;
   --tw-prose-th-borders: color-mix(in oklab, currentColor 30%, transparent);
   --tw-prose-td-borders: color-mix(in oklab, currentColor 10%, transparent);
-
-  /* While assets/base.css loads, its hr and blockquote rules remove these border styles. T5 deletes these two rules. */
-  & :where(hr) {
-    border-top-style: solid;
-  }
-  & :where(blockquote) {
-    border-inline-start-style: solid;
-  }
 }
 
 @layer base {
@@ -272,8 +264,9 @@
 
   /*
    * Store policy pages (/policies/*) print Shopify's own markup, which takes no theme
-   * classes. Keep their list markers and link underline. Dawn's .rte still sets the list
-   * padding and inside position while base.css loads; T5 decides the final styling.
+   * classes. Keep their list markers and link underline. It also keeps the list padding,
+   * inside markers and link offset that Dawn's .rte gave them before T5a; T5b decides the
+   * final styling.
    * See docs/plans/theme-evolution-tailwind-t4c.md D4c.9.
    */
   .shopify-policy__body ul {
@@ -333,7 +326,7 @@
    * markup still relies on (plan D6). Remove each in the phase noted.
    */
   html {
-    line-height: normal; /* T5: Preflight sets 1.5; every page was built against normal */
+    line-height: normal; /* T5b decides: Preflight sets 1.5; every page was built against normal */
   }
   button:not(:disabled),
   [role="button"]:not(:disabled) {
