@@ -15,21 +15,7 @@
 {% endfor %}
 
 {% if eco_material_count > 0 %}
-  <div class="cart-intelligence-banner">
+  <div class="mx-5 mb-6 rounded-lg border border-[#4caf50] bg-[#e8f5e9] px-5 py-3.75 text-center text-base font-semibold text-[#2e7d32]">
     <p>{{ 'cart.intelligence_banner.sustainable_message' | t: count: eco_material_count }}</p>
   </div>
-  <style>
-    .cart-intelligence-banner {
-      background-color: #e8f5e9;
-      border: 1px solid #4caf50;
-      color: #2e7d32;
-      padding: 15px 20px;
-      border-radius: 8px;
-      margin: 0 20px 24px;
-      font-weight: 600;
-      text-align: center;
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-  </style>
 {% endif %}
