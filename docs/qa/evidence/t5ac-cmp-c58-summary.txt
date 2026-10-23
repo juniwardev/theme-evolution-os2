@@ -1,0 +1,115 @@
+C5a.8 post-Step-2 (7dfb945) base vs head, regenerated with t5ac-cmp.mjs noop from the retained scratch captures
+{"compared":298,"loadsWithDiff":24,"e5a20Entries":108,"otherDifferences":0,"loadsWithPixelDiff":0,"loadsWithMovedElements":0,"pages":["gift","pw"]}
+
+Every difference outside NZ:
+gift-1024-S0 | main:1>div:1>h1:1 |  word-break | normal -> break-word
+gift-1024-S0 | main:1>div:1>h1:1 | ::before word-break | normal -> break-word
+gift-1024-S0 | main:1>div:1>h1:1 | ::after word-break | normal -> break-word
+gift-1024-S0 | main:1>div:1>h2:1 |  word-break | normal -> break-word
+gift-1024-S0 | main:1>div:1>h2:1 | ::before word-break | normal -> break-word
+gift-1024-S0 | main:1>div:1>h2:1 | ::after word-break | normal -> break-word
+gift-1440-S0 | main:1>div:1>h1:1 |  word-break | normal -> break-word
+gift-1440-S0 | main:1>div:1>h1:1 | ::before word-break | normal -> break-word
+gift-1440-S0 | main:1>div:1>h1:1 | ::after word-break | normal -> break-word
+gift-1440-S0 | main:1>div:1>h2:1 |  word-break | normal -> break-word
+gift-1440-S0 | main:1>div:1>h2:1 | ::before word-break | normal -> break-word
+gift-1440-S0 | main:1>div:1>h2:1 | ::after word-break | normal -> break-word
+gift-1920-S0 | main:1>div:1>h1:1 |  word-break | normal -> break-word
+gift-1920-S0 | main:1>div:1>h1:1 | ::before word-break | normal -> break-word
+gift-1920-S0 | main:1>div:1>h1:1 | ::after word-break | normal -> break-word
+gift-1920-S0 | main:1>div:1>h2:1 |  word-break | normal -> break-word
+gift-1920-S0 | main:1>div:1>h2:1 | ::before word-break | normal -> break-word
+gift-1920-S0 | main:1>div:1>h2:1 | ::after word-break | normal -> break-word
+gift-320-S0 | main:1>div:1>h1:1 |  word-break | normal -> break-word
+gift-320-S0 | main:1>div:1>h1:1 | ::before word-break | normal -> break-word
+gift-320-S0 | main:1>div:1>h1:1 | ::after word-break | normal -> break-word
+gift-320-S0 | main:1>div:1>h2:1 |  word-break | normal -> break-word
+gift-320-S0 | main:1>div:1>h2:1 | ::before word-break | normal -> break-word
+gift-320-S0 | main:1>div:1>h2:1 | ::after word-break | normal -> break-word
+gift-375-S0 | main:1>div:1>h1:1 |  word-break | normal -> break-word
+gift-375-S0 | main:1>div:1>h1:1 | ::before word-break | normal -> break-word
+gift-375-S0 | main:1>div:1>h1:1 | ::after word-break | normal -> break-word
+gift-375-S0 | main:1>div:1>h2:1 |  word-break | normal -> break-word
+gift-375-S0 | main:1>div:1>h2:1 | ::before word-break | normal -> break-word
+gift-375-S0 | main:1>div:1>h2:1 | ::after word-break | normal -> break-word
+gift-390-S0 | main:1>div:1>h1:1 |  word-break | normal -> break-word
+gift-390-S0 | main:1>div:1>h1:1 | ::before word-break | normal -> break-word
+gift-390-S0 | main:1>div:1>h1:1 | ::after word-break | normal -> break-word
+gift-390-S0 | main:1>div:1>h2:1 |  word-break | normal -> break-word
+gift-390-S0 | main:1>div:1>h2:1 | ::before word-break | normal -> break-word
+gift-390-S0 | main:1>div:1>h2:1 | ::after word-break | normal -> break-word
+gift-430-S0 | main:1>div:1>h1:1 |  word-break | normal -> break-word
+gift-430-S0 | main:1>div:1>h1:1 | ::before word-break | normal -> break-word
+gift-430-S0 | main:1>div:1>h1:1 | ::after word-break | normal -> break-word
+gift-430-S0 | main:1>div:1>h2:1 |  word-break | normal -> break-word
+gift-430-S0 | main:1>div:1>h2:1 | ::before word-break | normal -> break-word
+gift-430-S0 | main:1>div:1>h2:1 | ::after word-break | normal -> break-word
+gift-749-S0 | main:1>div:1>h1:1 |  word-break | normal -> break-word
+gift-749-S0 | main:1>div:1>h1:1 | ::before word-break | normal -> break-word
+gift-749-S0 | main:1>div:1>h1:1 | ::after word-break | normal -> break-word
+gift-749-S0 | main:1>div:1>h2:1 |  word-break | normal -> break-word
+gift-749-S0 | main:1>div:1>h2:1 | ::before word-break | normal -> break-word
+gift-749-S0 | main:1>div:1>h2:1 | ::after word-break | normal -> break-word
+gift-750-S0 | main:1>div:1>h1:1 |  word-break | normal -> break-word
+gift-750-S0 | main:1>div:1>h1:1 | ::before word-break | normal -> break-word
+gift-750-S0 | main:1>div:1>h1:1 | ::after word-break | normal -> break-word
+gift-750-S0 | main:1>div:1>h2:1 |  word-break | normal -> break-word
+gift-750-S0 | main:1>div:1>h2:1 | ::before word-break | normal -> break-word
+gift-750-S0 | main:1>div:1>h2:1 | ::after word-break | normal -> break-word
+gift-768-S0 | main:1>div:1>h1:1 |  word-break | normal -> break-word
+gift-768-S0 | main:1>div:1>h1:1 | ::before word-break | normal -> break-word
+gift-768-S0 | main:1>div:1>h1:1 | ::after word-break | normal -> break-word
+gift-768-S0 | main:1>div:1>h2:1 |  word-break | normal -> break-word
+gift-768-S0 | main:1>div:1>h2:1 | ::before word-break | normal -> break-word
+gift-768-S0 | main:1>div:1>h2:1 | ::after word-break | normal -> break-word
+gift-989-S0 | main:1>div:1>h1:1 |  word-break | normal -> break-word
+gift-989-S0 | main:1>div:1>h1:1 | ::before word-break | normal -> break-word
+gift-989-S0 | main:1>div:1>h1:1 | ::after word-break | normal -> break-word
+gift-989-S0 | main:1>div:1>h2:1 |  word-break | normal -> break-word
+gift-989-S0 | main:1>div:1>h2:1 | ::before word-break | normal -> break-word
+gift-989-S0 | main:1>div:1>h2:1 | ::after word-break | normal -> break-word
+gift-990-S0 | main:1>div:1>h1:1 |  word-break | normal -> break-word
+gift-990-S0 | main:1>div:1>h1:1 | ::before word-break | normal -> break-word
+gift-990-S0 | main:1>div:1>h1:1 | ::after word-break | normal -> break-word
+gift-990-S0 | main:1>div:1>h2:1 |  word-break | normal -> break-word
+gift-990-S0 | main:1>div:1>h2:1 | ::before word-break | normal -> break-word
+gift-990-S0 | main:1>div:1>h2:1 | ::after word-break | normal -> break-word
+pw-1024-S0 | -section-template--27595353555040__main>div:1>h1:1 |  word-break | normal -> break-word
+pw-1024-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::before word-break | normal -> break-word
+pw-1024-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::after word-break | normal -> break-word
+pw-1440-S0 | -section-template--27595353555040__main>div:1>h1:1 |  word-break | normal -> break-word
+pw-1440-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::before word-break | normal -> break-word
+pw-1440-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::after word-break | normal -> break-word
+pw-1920-S0 | -section-template--27595353555040__main>div:1>h1:1 |  word-break | normal -> break-word
+pw-1920-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::before word-break | normal -> break-word
+pw-1920-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::after word-break | normal -> break-word
+pw-320-S0 | -section-template--27595353555040__main>div:1>h1:1 |  word-break | normal -> break-word
+pw-320-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::before word-break | normal -> break-word
+pw-320-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::after word-break | normal -> break-word
+pw-375-S0 | -section-template--27595353555040__main>div:1>h1:1 |  word-break | normal -> break-word
+pw-375-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::before word-break | normal -> break-word
+pw-375-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::after word-break | normal -> break-word
+pw-390-S0 | -section-template--27595353555040__main>div:1>h1:1 |  word-break | normal -> break-word
+pw-390-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::before word-break | normal -> break-word
+pw-390-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::after word-break | normal -> break-word
+pw-430-S0 | -section-template--27595353555040__main>div:1>h1:1 |  word-break | normal -> break-word
+pw-430-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::before word-break | normal -> break-word
+pw-430-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::after word-break | normal -> break-word
+pw-749-S0 | -section-template--27595353555040__main>div:1>h1:1 |  word-break | normal -> break-word
+pw-749-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::before word-break | normal -> break-word
+pw-749-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::after word-break | normal -> break-word
+pw-750-S0 | -section-template--27595353555040__main>div:1>h1:1 |  word-break | normal -> break-word
+pw-750-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::before word-break | normal -> break-word
+pw-750-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::after word-break | normal -> break-word
+pw-768-S0 | -section-template--27595353555040__main>div:1>h1:1 |  word-break | normal -> break-word
+pw-768-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::before word-break | normal -> break-word
+pw-768-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::after word-break | normal -> break-word
+pw-989-S0 | -section-template--27595353555040__main>div:1>h1:1 |  word-break | normal -> break-word
+pw-989-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::before word-break | normal -> break-word
+pw-989-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::after word-break | normal -> break-word
+pw-990-S0 | -section-template--27595353555040__main>div:1>h1:1 |  word-break | normal -> break-word
+pw-990-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::before word-break | normal -> break-word
+pw-990-S0 | -section-template--27595353555040__main>div:1>h1:1 | ::after word-break | normal -> break-word
+
+Other differences:
+none
