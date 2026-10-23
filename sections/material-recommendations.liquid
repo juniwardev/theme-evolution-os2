@@ -1,104 +1,35 @@
 {% comment %}
-  Section: Material Recommendations
-  Logic: Relational Filtering via Metaobjects
-  Description: Surfaces products that share the same 'Material' Metaobject as the current product.
+  Section: Material recommendations. Lists up to four other products that share the current
+  product's Material metaobject, as product cards. The product loop is unchanged in phase
+  T4b; see docs/plans/theme-evolution-tailwind-t4b.md Q4b.4.
 {% endcomment %}
 
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
-
-{% stylesheet %}
-  .relational-rec__title {
-    margin-bottom: 3rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-  }
-
-  .relational-rec__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-
-  @media screen and (min-width: 990px) {
-    .relational-rec__grid {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-
-  /* Refined Product Card Mini */
-  .product-mini-card {
-    text-decoration: none;
-    color: inherit;
-    group: hover;
-  }
-
-  .product-mini-card__image-wrap {
-    aspect-ratio: 1 / 1;
-    background: #f4f4f4;
-    border-radius: 8px;
-    overflow: hidden;
-    margin-bottom: 1rem;
-    border: 1px solid rgba(0,0,0,0.05);
-  }
-
-  .product-mini-card__image-wrap img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-  }
-
-  .product-mini-card:hover img {
-    transform: scale(1.08);
-  }
-
-  .product-mini-card__title {
-    font-size: 1rem;
-    font-weight: 600;
-    margin: 0 0 4px 0;
-  }
-
-  .product-mini-card__price {
-    font-size: 0.9rem;
-    color: #666;
-  }
-{% endstylesheet %}
-
-{%- assign current_material = product.metafields.custom.material_link.value -%}
+{%- liquid
+  assign current_material = product.metafields.custom.material_link.value
+  assign padding_top_mobile = section.settings.padding_top | times: 0.75 | round: 0
+  assign padding_bottom_mobile = section.settings.padding_bottom | times: 0.75 | round: 0
+-%}
 
 {%- if current_material != blank -%}
-  <div class="section-{{ section.id }}-padding page-width">
-    <h2 class="relational-rec__title h1">More items engineered with {{ current_material.name.value }}</h2>
-    
-    <div class="relational-rec__grid">
+  {%- assign material_name = current_material.name.value | default: current_material.system.handle -%}
+  <div
+    class="mx-auto w-full max-w-page px-6 pt-(--spotlight-pt-mobile) pb-(--spotlight-pb-mobile) md:px-20 md:pt-(--spotlight-pt) md:pb-(--spotlight-pb)"
+    style="--spotlight-pt-mobile: {{ padding_top_mobile }}px; --spotlight-pb-mobile: {{ padding_bottom_mobile }}px; --spotlight-pt: {{ section.settings.padding_top }}px; --spotlight-pb: {{ section.settings.padding_bottom }}px"
+    data-material-recommendations
+  >
+    <h2 class="mb-12 font-heading text-3xl leading-tight font-bold uppercase md:text-[2.5rem]">{{ 'sections.material_recommendations.heading' | t: material: material_name }}</h2>
+
+    <ul class="mb-0 grid grid-cols-2 gap-8 lg:grid-cols-4" role="list">
       {%- assign count = 0 -%}
       {%- for other_product in collections.all.products -%}
         {%- if other_product.id != product.id and other_product.metafields.custom.material_link.value.system.handle == current_material.system.handle -%}
           {%- if count < 4 -%}
-            <a href="{{ other_product.url }}" class="product-mini-card">
-              <div class="product-mini-card__image-wrap">
-                {{ other_product.featured_image | image_url: width: 400 | image_tag: loading: 'lazy' }}
-              </div>
-              <h3 class="product-mini-card__title">{{ other_product.title }}</h3>
-              <p class="product-mini-card__price">{{ other_product.price | money }}</p>
-            </a>
+            <li>{% render 'card-product', card_product: other_product %}</li>
             {%- assign count = count | plus: 1 -%}
           {%- endif -%}
         {%- endif -%}
       {%- endfor -%}
-    </div>
+    </ul>
   </div>
 {%- endif -%}
 
