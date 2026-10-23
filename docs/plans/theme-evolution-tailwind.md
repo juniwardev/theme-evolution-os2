@@ -300,8 +300,8 @@ Preflight removes browser defaults that unclassed Dawn, Shopify and merchant mar
 | Rule | Why | Removed in |
 |---|---|---|
 | `html { line-height: normal }` | Preflight's `html { line-height: 1.5 }` `[measured: orchestrator]` would change the line box of **every** text element on **every** page that has no valid line-height of its own (`LH_root`). That is site-wide, and would also swamp the Step 7 diff so that real E6 flips get lost in it. Header, footer and material spotlight were authored and QA'd against `normal`. Tested by C0.17 | T5, when `base.css` goes and element typography moves into `@layer base` (with T5's full-site screenshot review) |
-| `ul:not([class]), ol:not([class])` get `padding-inline-start: 1.5em` and disc/decimal markers | `{{ page.content }}` (`sections/page.liquid:10`) and `{{ article.content }}` (`sections/article.liquid:18`) are not wrapped in `.rte`; merchant lists would lose bullets | T4c, when rich text gets `prose` (owner decision Q7) |
-| `a:not([class]) { text-decoration-line: underline }` | Preflight makes links inherit color with no underline; links in merchant content would become invisible | T4c |
+| `ul:not([class]), ol:not([class])` get `padding-inline-start: 1.5em` and disc/decimal markers | `{{ page.content }}` (`sections/page.liquid:10`) and `{{ article.content }}` (`sections/article.liquid:18`) are not wrapped in `.rte`; merchant lists would lose bullets | T4c (removed; rich text uses `prose`, other sinks explicit utilities, policy pages a scoped rule: `docs/plans/theme-evolution-tailwind-t4c.md` D4c.7, D4c.9) |
+| `a:not([class]) { text-decoration-line: underline }` | Preflight makes links inherit color with no underline; links in merchant content would become invisible | T4c (removed; rich text uses `prose`, other sinks explicit utilities, policy pages a scoped rule: `docs/plans/theme-evolution-tailwind-t4c.md` D4c.7, D4c.9) |
 | Text inputs, `select`, `textarea`: `border-width: 1px` (color is `currentColor` in v4) | The password form (`sections/password.liquid`) has no `base.css` today and would lose its field border | T4b (password section) |
 | `button:not(:disabled), [role="button"]:not(:disabled) { cursor: pointer }` | v4 default is `cursor: default` `[quoted]` | kept permanently (upgrade-guide recommendation) |
 
@@ -1032,6 +1032,8 @@ Loading spinner (owner decision, 2026-10-22): T2's cleanup deleted the orphaned 
 Note 2026-10-23 (T4a, `docs/plans/theme-evolution-tailwind-t4a.md` §5.1): the cart page has no JavaScript line updates (it posts its form), so only the drawer and the Add to cart button render the spinner. `templates/product.api.liquid` renders JSON, not markup, so it is out of T4. T4 ships as T4a (cart) and T4b (content), §6.
 
 Note 2026-10-23 (T4b, `docs/plans/theme-evolution-tailwind-t4b.md` D4b.1): `prose` and the D6 list/link removals ship as T4c, measured on T4b's tree first.
+
+Note 2026-10-23 (T4c, `docs/plans/theme-evolution-tailwind-t4c.md`): page, article, comment, blog-excerpt, archive and product-description rich text use `prose prose-tokens`; the footer, image-banner and related-products rich-text settings and the form error lists use explicit link and list utilities; policy pages keep a scoped parity rule; the D6 list and link rules are removed.
 
 Rich text: wrap `page.content`, `article.content`, product descriptions and `richtext` settings in a styled container. **Owner decision Q7 (2026-10-22):** the official `@tailwindcss/typography` plugin (`@plugin "@tailwindcss/typography";`, class `prose`), pinned exactly like the other packages. The T4 addendum measures the `prose` output against the 60,000 / 12,000-byte budget (D12) before committing to it (review, Q7 verdict). When every rich-text output is wrapped, the list/link parity rules in D6 are deleted.
 
