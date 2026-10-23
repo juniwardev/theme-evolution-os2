@@ -22,6 +22,18 @@
 @source "../templates/*.liquid";
 
 /*
+ * Words in scanned files also generate utilities: doc comments, Liquid filter names and
+ * CSS text inside style tags. None of these five is used as a class, and two of them pull
+ * in long variable stacks. Don't use these names as classes; see
+ * docs/plans/theme-evolution-tailwind-t4b.md D4b.2.
+ */
+@source not inline("contents");
+@source not inline("filter");
+@source not inline("transform");
+@source not inline("truncate");
+@source not inline("capitalize");
+
+/*
  * Merchant settings printed on :root by snippets/css-variables.liquid. That block is
  * unlayered, so it overrides these theme-layer defaults and utilities follow the
  * theme editor. Defaults match config/settings_schema.json.
