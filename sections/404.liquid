@@ -5,15 +5,11 @@
   https://shopify.dev/docs/storefronts/themes/architecture/templates/404
 {% endcomment %}
 
-<h1>{{ '404.title' | t }}</h1>
-
-<p>
-  {{ '404.not_found' | t }}
-</p>
-
-<a href="{{ routes.all_products_collection_url }}">
-  {{ '404.back_to_shopping' | t }}
-</a>
+<div class="flex flex-col gap-8 px-8 py-10 md:py-16" data-page-shell>
+  <h1 class="font-heading text-3xl leading-tight font-bold uppercase md:text-4xl">{{ '404.title' | t }}</h1>
+  <p>{{ '404.not_found' | t }}</p>
+  <a href="{{ routes.all_products_collection_url }}" class="btn-primary w-fit">{{ '404.back_to_shopping' | t }}</a>
+</div>
 
 {% schema %}
 {
