@@ -1,0 +1,58 @@
+[
+ {
+  "case": "policy link hover (.rte a:hover)",
+  "paired": 289,
+  "nDiffs": 2,
+  "groups": [
+   "1x |text-decoration|underline 3.2px|underline|:1>div:2>div:2>div:1>div:1>ul:4>li:2>a:1",
+   "1x |text-decoration-thickness|3.2px|auto|:1>div:2>div:2>div:1>div:1>ul:4>li:2>a:1"
+  ]
+ },
+ {
+  "case": "payment button hover",
+  "paired": 298,
+  "nDiffs": 0,
+  "groups": []
+ },
+ {
+  "case": "payment button focus",
+  "paired": 298,
+  "nDiffs": 4,
+  "groups": [
+   "1x |outline-color|rgb(255, 255, 255)|rgb(0, 95, 204)|t:1>shopify-buy-it-now-button:1>button:1",
+   "1x |outline-offset|4px|0px|t:1>shopify-buy-it-now-button:1>button:1",
+   "1x |outline-style|none|auto|t:1>shopify-buy-it-now-button:1>button:1",
+   "1x |outline-width|0px|1px|t:1>shopify-buy-it-now-button:1>button:1"
+  ]
+ },
+ {
+  "case": "header link hover",
+  "paired": 234,
+  "nDiffs": 0,
+  "groups": []
+ },
+ {
+  "case": "footer link hover",
+  "paired": 234,
+  "nDiffs": 0,
+  "groups": []
+ },
+ {
+  "case": "product card hover",
+  "paired": 300,
+  "nDiffs": 0,
+  "groups": []
+ },
+ {
+  "case": "add to cart hover",
+  "paired": 298,
+  "nDiffs": 0,
+  "groups": []
+ },
+ {
+  "case": "opt-out button hover",
+  "paired": 248,
+  "nDiffs": 0,
+  "groups": []
+ }
+]

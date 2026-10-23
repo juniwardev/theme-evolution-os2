@@ -1,0 +1,79 @@
+runs=152 rows=77
+24x pages[optout] app | body > div[aria-hidden="true"]:has(> div > iframe[src*="hcaptcha"]) | div |  | display | none | block  < /  / >
+8x pages[optout] shopify | #pc--optOutFormContainer | button |  | transition-duration | 0.1s | 0s  <pc--opt-out-form-button pc--bo / Opt out / rich >
+8x pages[optout] shopify | #pc--optOutFormContainer | button |  | transition-property | box-shadow | all  <pc--opt-out-form-button pc--bo / Opt out / rich >
+16x pages[optout] shopify | #pc--optOutFormContainer | circle |  | line-height | 16px | 28px  < /  / rich >
+16x pages[optout] shopify | #pc--optOutFormContainer | input |  | margin-inline-end | 8px | 0px  < /  / rich >
+16x pages[optout] shopify | #pc--optOutFormContainer | input |  | margin-right | 8px | 0px  < /  / rich >
+16x pages[optout] shopify | #pc--optOutFormContainer | path |  | line-height | 16px | 28px  < /  / rich >
+8x pages[optout] shopify | #pc--optOutFormContainer | small |  | line-height | 16px | 28px  <pc--opt-out-form-message form_ / A problem occurred,  / rich >
+8x pages[optout] shopify | #pc--optOutFormContainer | svg |  | flex-shrink | 0 | 1  <icon icon-error /  / rich >
+8x pages[optout] shopify | #pc--optOutFormContainer | svg |  | line-height | 16px | 28px  <icon icon-error /  / rich >
+8x pages[wax] shopify | div.shopify-payment-button | button |  | position | relative | static  <shopify-payment-button__button / Buy it now / >
+8x pages[wax] shopify | div.shopify-payment-button | button | ::after | content | "" | none  <shopify-payment-button__button / Buy it now / >
+8x pages[wax] shopify | div.shopify-payment-button | button | ::after | display | block | inline  <shopify-payment-button__button / Buy it now / >
+8x pages[wax] shopify | div.shopify-payment-button | button | ::after | position | absolute | static  <shopify-payment-button__button / Buy it now / >
+8x pages[wax] shopify | div.shopify-payment-button | button | ::after | transition-duration | 0.1s | 0s  <shopify-payment-button__button / Buy it now / >
+8x pages[wax] shopify | div.shopify-payment-button | button | ::after | transition-property | box-shadow | all  <shopify-payment-button__button / Buy it now / >
+8x pages[wax] shopify | div.shopify-payment-button | button | ::after | z-index | 1 | auto  <shopify-payment-button__button / Buy it now / >
+8x pages[wax] shopify | div.shopify-payment-button | button | ::before | content | "" | none  <shopify-payment-button__button / Buy it now / >
+8x pages[wax] shopify | div.shopify-payment-button | button | ::before | display | block | inline  <shopify-payment-button__button / Buy it now / >
+8x pages[wax] shopify | div.shopify-payment-button | button | ::before | position | absolute | static  <shopify-payment-button__button / Buy it now / >
+8x pages[wax] shopify | div.shopify-payment-button | button | ::before | z-index | -1 | auto  <shopify-payment-button__button / Buy it now / >
+34x pages[landing,p3p,snow,wax] shopify | div.shopify-payment-button | shopify-accelerated-checkout |  | --shopify-accelerated-checkout-button-border-radius |  |   < / More payment options / >
+34x pages[landing,p3p,snow,wax] shopify | div.shopify-payment-button | shopify-accelerated-checkout |  | --shopify-accelerated-checkout-button-box-shadow |  |   < / More payment options / >
+16x pages[policy] shopify | div.shopify-policy__container | a |  | list-style-position | inside | outside  < / here / policy>
+32x pages[policy] shopify | div.shopify-policy__container | a |  | text-decoration | underline 1.6px | underline  < / here / policy>
+32x pages[policy] shopify | div.shopify-policy__container | a |  | text-decoration-thickness | 1.6px | auto  < / here / policy>
+32x pages[policy] shopify | div.shopify-policy__container | a |  | text-underline-offset | 4.8px | auto  < / here / policy>
+32x pages[policy] shopify | div.shopify-policy__container | a |  | transition-duration | 0.1s | 0s  < / here / policy>
+32x pages[policy] shopify | div.shopify-policy__container | a |  | transition-property | text-decoration-thickness | all  < / here / policy>
+8x pages[policy] shopify | div.shopify-policy__container | div | ::after | clear | both | none  <rte / Last updated: March  / policy>
+8x pages[policy] shopify | div.shopify-policy__container | div | ::after | content | "" | none  <rte / Last updated: March  / policy>
+8x pages[policy] shopify | div.shopify-policy__container | div | ::after | display | block | inline  <rte / Last updated: March  / policy>
+8x pages[policy] shopify | div.shopify-policy__container | h1 |  | word-break | break-word | normal  < / Privacy policy / >
+104x pages[policy] shopify | div.shopify-policy__container | h2 |  | word-break | break-word | normal  < / Personal Information / policy>
+216x pages[policy] shopify | div.shopify-policy__container | li |  | list-style-position | inside | outside  < / Contact details incl / policy>
+216x pages[policy] shopify | div.shopify-policy__container | li | ::marker | display | inline | inline-block  < / Contact details incl / policy>
+216x pages[policy] shopify | div.shopify-policy__container | li | ::marker | margin-inline-end | 16px | 0px  < / Contact details incl / policy>
+216x pages[policy] shopify | div.shopify-policy__container | li | ::marker | margin-inline-start | -1px | 0px  < / Contact details incl / policy>
+216x pages[policy] shopify | div.shopify-policy__container | li | ::marker | margin-left | -1px | 0px  < / Contact details incl / policy>
+216x pages[policy] shopify | div.shopify-policy__container | li | ::marker | margin-right | 16px | 0px  < / Contact details incl / policy>
+216x pages[policy] shopify | div.shopify-policy__container | li | ::marker | text-wrap-mode | wrap | nowrap  < / Contact details incl / policy>
+216x pages[policy] shopify | div.shopify-policy__container | li | ::marker | white-space-collapse | collapse | preserve  < / Contact details incl / policy>
+176x pages[policy] shopify | div.shopify-policy__container | strong |  | list-style-position | inside | outside  < / Contact details / policy>
+40x pages[policy] shopify | div.shopify-policy__container | ul |  | list-style-position | inside | outside  < / Contact details incl / policy>
+40x pages[policy] shopify | div.shopify-policy__container | ul |  | padding-inline-start | 32px | 0px  < / Contact details incl / policy>
+40x pages[policy] shopify | div.shopify-policy__container | ul |  | padding-left | 32px | 0px  < / Contact details incl / policy>
+2218x pages[archive,balanced,blog,cart,cartseed,collection,collections,contact,home,landing,missing,optout,p3p,policy,search,search0,snow,wax] theme |  | a |  | list-style-type | none | disc  <relative flex h-full w-(--logo /  / >
+6x pages[home] theme |  | a |  | outline-width | 0px | 3px  <relative flex size-11 items-ce / 0 / >
+256x pages[archive,balanced,blog,cart,cartseed,collection,collections,contact,home,landing,missing,optout,p3p,policy,search,search0,snow,wax] theme |  | a |  | word-break | break-word | normal  <relative flex h-full w-(--logo /  / >
+152x pages[archive,balanced,blog,cart,cartseed,collection,collections,contact,home,landing,missing,optout,p3p,policy,search,search0,snow,wax] theme |  | button |  | list-style-type | none | disc  <theme-evolution-header-menu__t / Open menu / >
+252x pages[archive,balanced,blog,cart,cartseed,collection,collections,contact,home,landing,missing,optout,p3p,policy,search,search0,snow,wax] theme |  | div |  | flex-wrap | wrap | nowrap  <mb-0 grid grid-cols-1 gap-8 md / Brushed oakSustainab / >
+2376x pages[archive,balanced,blog,cart,cartseed,collection,collections,contact,home,landing,missing,optout,p3p,policy,search,search0,snow,wax] theme |  | div |  | list-style-type | none | disc  <col-start-2 flex h-full items- / HomeCatalogContactOu / >
+34x pages[landing,p3p,snow,wax] theme |  | div |  | z-index | 1 | auto  <loading__spinner hidden absolu /  / >
+14x pages[home] theme |  | h1 |  | list-style-type | none | disc  <font-heading text-3xl leading- / Hello, world! / >
+144x pages[archive,balanced,blog,cart,cartseed,collection,collections,contact,home,landing,missing,optout,p3p,search,search0,snow,wax] theme |  | h1 |  | word-break | break-word | normal  <font-heading text-3xl leading- / The Material Archive / >
+242x pages[archive,balanced,blog,cart,cartseed,collection,collections,contact,home,landing,missing,optout,p3p,policy,search,search0,snow,wax] theme |  | h2 |  | list-style-type | none | disc  <m-0 leading-none /  / >
+460x pages[archive,balanced,blog,cart,cartseed,collection,collections,contact,home,landing,missing,optout,p3p,policy,search,search0,snow,wax] theme |  | h2 |  | word-break | break-word | normal  <m-0 leading-none /  / >
+18x pages[p3p,snow] theme |  | h3 |  | list-style-type | none | disc  <m-0 text-[1.6rem] font-semibol / Recycled steel / >
+132x pages[cartseed,home,p3p,snow,wax] theme |  | h3 |  | word-break | break-word | normal  <m-0 text-[1.1rem] / Total / >
+152x pages[archive,balanced,blog,cart,cartseed,collection,collections,contact,home,landing,missing,optout,p3p,policy,search,search0,snow,wax] theme |  | header |  | flex-wrap | wrap | nowrap  <grid h-16 grid-cols-(--content / HomeCatalogContactOu / >
+152x pages[archive,balanced,blog,cart,cartseed,collection,collections,contact,home,landing,missing,optout,p3p,policy,search,search0,snow,wax] theme |  | header |  | list-style-type | none | disc  <grid h-16 grid-cols-(--content / HomeCatalogContactOu / >
+496x pages[archive,balanced,blog,cart,cartseed,collection,collections,contact,home,landing,missing,optout,p3p,policy,search,search0,snow,wax] theme |  | img |  | list-style-type | none | disc  <block size-full object-contain /  / >
+152x pages[archive,balanced,blog,cart,cartseed,collection,collections,contact,home,landing,missing,optout,p3p,policy,search,search0,snow,wax] theme |  | img |  | word-break | break-word | normal  <block size-full object-contain /  / >
+152x pages[archive,balanced,blog,cart,cartseed,collection,collections,contact,home,landing,missing,optout,p3p,policy,search,search0,snow,wax] theme |  | nav |  | list-style-type | none | disc  <theme-evolution-footer__column / Search  / >
+648x pages[archive,balanced,blog,cart,cartseed,collection,collections,contact,home,landing,missing,optout,p3p,policy,search,search0,snow,wax] theme |  | p |  | list-style-type | none | disc  < / We're passionate abo / >
+608x pages[archive,balanced,blog,cart,cartseed,collection,collections,contact,home,landing,missing,optout,p3p,policy,search,search0,snow,wax] theme |  | path |  | list-style-type | none | disc  < /  / >
+34x pages[landing,p3p,snow,wax] theme |  | span |  | list-style-position | outside | inside  <text-[1.5rem] font-normal tran / + / >
+1168x pages[archive,balanced,blog,cart,cartseed,collection,collections,contact,home,landing,missing,optout,p3p,policy,search,search0,snow,wax] theme |  | span |  | list-style-type | none | disc  <sr-only / Open menu / >
+66x pages[archive,p3p,snow] theme |  | style |  | list-style-type | none | disc  < / @layer components{@k / >
+34x pages[landing,p3p,snow,wax] theme |  | summary |  | list-style-position | outside | inside  <flex cursor-pointer list-none  / Material specs + / >
+2x pages[p3p] theme |  | summary |  | outline-width | 0px | 3px  <flex cursor-pointer list-none  / Material specs + / >
+34x pages[landing,p3p,snow,wax] theme |  | summary |  | position | relative | static  <flex cursor-pointer list-none  / Material specs + / >
+34x pages[landing,p3p,snow,wax] theme |  | summary | ::marker | text-wrap-mode | nowrap | wrap  <flex cursor-pointer list-none  / Material specs + / >
+34x pages[landing,p3p,snow,wax] theme |  | summary | ::marker | white-space-collapse | preserve | collapse  <flex cursor-pointer list-none  / Material specs + / >
+608x pages[archive,balanced,blog,cart,cartseed,collection,collections,contact,home,landing,missing,optout,p3p,policy,search,search0,snow,wax] theme |  | svg |  | list-style-type | none | disc  <icon icon-hamburger /  / >
+152x pages[archive,balanced,blog,cart,cartseed,collection,collections,contact,home,landing,missing,optout,p3p,policy,search,search0,snow,wax] theme |  | theme-evolution-header-menu |  | list-style-type | none | disc  <flex lg:hidden / Open menu  / >
+26x pages[p3p,snow,wax] theme |  | ul |  | flex-wrap | wrap | nowrap  <mb-0 grid grid-cols-2 lg:grid- / The Collection Snowb / >
+SZ-only run keys with size entries: 112

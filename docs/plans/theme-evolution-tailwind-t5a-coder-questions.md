@@ -166,3 +166,20 @@ Plan §13, "Resuming Step 0 after Revision 2.2", is binding. In short:
 8. **Re-run item 12.** Build the scratch end state with D5a.20, add D5a.21 only if 7a selected its fallback, and leave out any banner edit. If your earlier scratch had the banner edit, first confirm that removing it alone leaves `assets/tailwind.css` byte-identical (`shasum`). Re-measure `P_end`. (2.2.1) The projection is 58,850 to 58,932 / 11,264 to 11,344 `[provisional]`, against budgets of 60,000 / 12,000. The gate must pass again.
 
 Then go on to Steps 1-9 as written.
+
+---
+
+# Round 2 (Coder, after Revision 2.2.2): Step 0 passed, Steps 1-2 committed, C5a.8 fails on two non-theme-layout pages
+
+Step 0 items 1, 6, 7a-7c, 8, 9-13 and 12 ran in full and the gate **passed** (figures in `docs/plans/theme-evolution-tailwind-t5a-impl-notes.md`). Steps 1 (`430d533`, `snippets/card-product.liquid`) and 2 (`7dfb945`, parity block) are committed. C5a.8 (parity staged as no-ops, base versus head after Step 2, every page, S0 at all 12 `W_sw` widths, S1-S4, PXZ, PXR, PXE+PXA, PXP S0 and S5, PXG) shows **no difference outside NZ on any theme-layout page**, but one rule is not a no-op on the two layouts that never loaded `base.css`.
+
+## Q-C6 (C5a.8, plan error): `h1`-`h5 { word-break: break-word }` changes `/password` and the gift-card page
+
+The parity rules live in `assets/tailwind.css`, which `layout/password.liquid` and `templates/gift_card.liquid` load without `base.css`. There, Dawn's `h1`-`h5` rule never applied, so D5a.5's rule is a **change**, not a no-op: `word-break` goes `normal` to `break-word` on the `h1` of `/password` (3 entries: `h1`, its `::before`, `::after`) and on the `h1` and `h2` of the gift-card page (PXG, 6 entries). It is the only difference. At all 12 widths on both pages the full-page screenshots are **pixel-identical** to base and no element moves (`overflow-wrap: break-word` is already set on these headings in `@layer base`; `word-break` only matters for min-content sizing in flex or grid, which neither page has). Evidence: `docs/qa/evidence/t5ac-cmp-*` is not kept for the failing run; reproduce with `t5ac-cmp.mjs noop` on the `base` and `h2` captures (scratch). The plan's §3.2, D5a.2 and §8 don't mention password or gift-card pages for this rule.
+
+Options (Architect decides):
+- **(a) Accept as a new row E5a.20, A allowed (recommended):** "`/password` and the gift-card page gain `word-break: break-word` on `h1`-`h5` (Dawn's rule for the theme layout is now permanent in `@layer base` for every layout); no pixel or geometry change in any fixture". C5a.8 then excludes `word-break` on `/password` and PXG; C5a.9/C5a.10 treat it as A (head value = `break-word`). 0 B.
+- (b) Scope the rule to the layouts that had Dawn's rule. This needs a hook the theme doesn't have (a body class or data attribute in `layout/theme.liquid`), which is markup the plan doesn't list, and costs bytes.
+- (c) Drop D5a.5 for `h1`-`h5`. Not recommended: C5a.17's long-word heading at 320 would then overflow.
+
+I stopped here: Steps 3-9 are not started. HEAD is `7dfb945` plus the docs commit that carries this file, the notes, the harness and the evidence. The dev server is stopped and the dev theme holds the last scratch sync (a proxy copy of HEAD); the next run re-syncs it.

@@ -1,0 +1,71 @@
+{
+ "registered": [
+  {
+   "key": "landing",
+   "path": "div#shopify-section-template--27595353718880__main>div:1>div:2>div:6>p:1>span:1",
+   "cls": "eco-tooltip-trigger cursor-help font-medium text-[#00707c] u",
+   "text": "Recycled Polyester",
+   "widths": [
+    320,
+    375,
+    390,
+    430,
+    749,
+    750
+   ],
+   "boxes": {
+    "320": [
+     111.91,
+     1493,
+     259.1,
+     1512
+    ],
+    "375": [
+     44,
+     1491.5,
+     191.19,
+     1510.5
+    ],
+    "390": [
+     44,
+     1506.5,
+     191.19,
+     1525.5
+    ],
+    "430": [
+     44,
+     1546.5,
+     191.19,
+     1565.5
+    ],
+    "749": [
+     44,
+     1742,
+     191.19,
+     1761
+    ],
+    "750": [
+     44,
+     1743,
+     191.19,
+     1762
+    ]
+   },
+   "maxLevel": 13,
+   "repeats": {
+    "320": 2,
+    "375": 2,
+    "390": 2,
+    "430": 2,
+    "749": 2,
+    "750": 2
+   },
+   "grown": "border box +4px horizontal, +8px vertical"
+  }
+ ],
+ "note": "PXN registered at Step 0 from 456 base S0 loads + states (all 16 state loads diff 0); landing 320/375/750 loaded a third time (C): identical 148 px / 13 levels",
+ "others": {
+  "displacedLoads": 24,
+  "explainedBlocks": 2
+ }
+}

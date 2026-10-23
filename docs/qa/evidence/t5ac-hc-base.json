@@ -1,0 +1,1484 @@
+{
+ "fallback": false,
+ "stop": false,
+ "res": [
+  {
+   "w": 320,
+   "ctlOn": "none",
+   "ctlOff": "block",
+   "valid": true,
+   "ref": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "none",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "xPage": 0,
+    "offenders": []
+   },
+   "off": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "block",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       320,
+       812
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       -21,
+       -9850,
+       22,
+       20
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       -21,
+       -9851,
+       22,
+       22
+      ]
+     }
+    ],
+    "xPage": 0,
+    "offenders": []
+   },
+   "verdict": [
+    "X_page on 0 off 0; offenders on 0 off 0"
+   ]
+  },
+  {
+   "w": 375,
+   "ctlOn": "none",
+   "ctlOff": "block",
+   "valid": true,
+   "ref": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "none",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "hits": {
+     "checkbox": {
+      "point": [
+       59,
+       406
+      ],
+      "got": "input#pc--show-email-field.",
+      "inContainer": false,
+      "isTargetOrDesc": true
+     },
+     "button": {
+      "point": [
+       188,
+       406
+      ],
+      "got": "button#pc--opt-out-button.pc--opt-out-form-button pc--bo",
+      "inContainer": false,
+      "isTargetOrDesc": true
+     },
+     "cart": {
+      "point": [
+       312,
+       32
+      ],
+      "got": "svg.icon icon-cart",
+      "inContainer": false,
+      "isTargetOrDesc": true
+     }
+    },
+    "xPage": 0,
+    "offenders": []
+   },
+   "off": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "block",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       375,
+       812
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       -21,
+       -9850,
+       22,
+       20
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       -21,
+       -9851,
+       22,
+       22
+      ]
+     }
+    ],
+    "hits": {
+     "checkbox": {
+      "point": [
+       59,
+       406
+      ],
+      "got": "input#pc--show-email-field.",
+      "inContainer": false,
+      "isTargetOrDesc": true
+     },
+     "button": {
+      "point": [
+       188,
+       406
+      ],
+      "got": "button#pc--opt-out-button.pc--opt-out-form-button pc--bo",
+      "inContainer": false,
+      "isTargetOrDesc": true
+     },
+     "cart": {
+      "point": [
+       312,
+       32
+      ],
+      "got": "svg.icon icon-cart",
+      "inContainer": false,
+      "isTargetOrDesc": true
+     }
+    },
+    "xPage": 0,
+    "offenders": []
+   },
+   "verdict": [
+    "checkbox: same element on and off (input#pc--show-email-field.; base target-or-descendant: true)",
+    "button: same element on and off (button#pc--opt-out-button.pc--opt-out-form-button pc--bo; base target-or-descendant: true)",
+    "cart: same element on and off (svg.icon icon-cart; base target-or-descendant: true)",
+    "X_page on 0 off 0; offenders on 0 off 0"
+   ]
+  },
+  {
+   "w": 390,
+   "ctlOn": "none",
+   "ctlOff": "block",
+   "valid": true,
+   "ref": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "none",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "xPage": 0,
+    "offenders": []
+   },
+   "off": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "block",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       390,
+       812
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       -21,
+       -9850,
+       22,
+       20
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       -21,
+       -9851,
+       22,
+       22
+      ]
+     }
+    ],
+    "xPage": 0,
+    "offenders": []
+   },
+   "verdict": [
+    "X_page on 0 off 0; offenders on 0 off 0"
+   ]
+  },
+  {
+   "w": 430,
+   "ctlOn": "none",
+   "ctlOff": "block",
+   "valid": true,
+   "ref": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "none",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "xPage": 0,
+    "offenders": []
+   },
+   "off": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "block",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       430,
+       812
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       -21,
+       -9850,
+       22,
+       20
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       -21,
+       -9851,
+       22,
+       22
+      ]
+     }
+    ],
+    "xPage": 0,
+    "offenders": []
+   },
+   "verdict": [
+    "X_page on 0 off 0; offenders on 0 off 0"
+   ]
+  },
+  {
+   "w": 749,
+   "ctlOn": "none",
+   "ctlOff": "block",
+   "valid": true,
+   "ref": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "none",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "xPage": 0,
+    "offenders": []
+   },
+   "off": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "block",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       749,
+       812
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       -21,
+       -9850,
+       22,
+       20
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       -21,
+       -9851,
+       22,
+       22
+      ]
+     }
+    ],
+    "xPage": 0,
+    "offenders": []
+   },
+   "verdict": [
+    "X_page on 0 off 0; offenders on 0 off 0"
+   ]
+  },
+  {
+   "w": 750,
+   "ctlOn": "none",
+   "ctlOff": "block",
+   "valid": true,
+   "ref": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "none",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "xPage": 0,
+    "offenders": []
+   },
+   "off": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "block",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       750,
+       812
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       -21,
+       -9850,
+       22,
+       20
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       -21,
+       -9851,
+       22,
+       22
+      ]
+     }
+    ],
+    "xPage": 0,
+    "offenders": []
+   },
+   "verdict": [
+    "X_page on 0 off 0; offenders on 0 off 0"
+   ]
+  },
+  {
+   "w": 768,
+   "ctlOn": "none",
+   "ctlOff": "block",
+   "valid": true,
+   "ref": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "none",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "xPage": 0,
+    "offenders": []
+   },
+   "off": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "block",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       768,
+       812
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       -21,
+       -9850,
+       22,
+       20
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       -21,
+       -9851,
+       22,
+       22
+      ]
+     }
+    ],
+    "xPage": 0,
+    "offenders": []
+   },
+   "verdict": [
+    "X_page on 0 off 0; offenders on 0 off 0"
+   ]
+  },
+  {
+   "w": 989,
+   "ctlOn": "none",
+   "ctlOff": "block",
+   "valid": true,
+   "ref": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "none",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "xPage": 0,
+    "offenders": []
+   },
+   "off": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "block",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       989,
+       812
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       -21,
+       -9850,
+       22,
+       20
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       -21,
+       -9851,
+       22,
+       22
+      ]
+     }
+    ],
+    "xPage": 0,
+    "offenders": []
+   },
+   "verdict": [
+    "X_page on 0 off 0; offenders on 0 off 0"
+   ]
+  },
+  {
+   "w": 990,
+   "ctlOn": "none",
+   "ctlOff": "block",
+   "valid": true,
+   "ref": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "none",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "xPage": 0,
+    "offenders": []
+   },
+   "off": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "block",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       990,
+       812
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       -21,
+       -9850,
+       22,
+       20
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       -21,
+       -9851,
+       22,
+       22
+      ]
+     }
+    ],
+    "xPage": 0,
+    "offenders": []
+   },
+   "verdict": [
+    "X_page on 0 off 0; offenders on 0 off 0"
+   ]
+  },
+  {
+   "w": 1024,
+   "ctlOn": "none",
+   "ctlOff": "block",
+   "valid": true,
+   "ref": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "none",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "xPage": 0,
+    "offenders": []
+   },
+   "off": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "block",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       1024,
+       812
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       -21,
+       -9850,
+       22,
+       20
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       -21,
+       -9851,
+       22,
+       22
+      ]
+     }
+    ],
+    "xPage": 0,
+    "offenders": []
+   },
+   "verdict": [
+    "X_page on 0 off 0; offenders on 0 off 0"
+   ]
+  },
+  {
+   "w": 1440,
+   "ctlOn": "none",
+   "ctlOff": "block",
+   "valid": true,
+   "ref": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "none",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "hits": {
+     "checkbox": {
+      "point": [
+       403,
+       406
+      ],
+      "got": "input#pc--show-email-field.",
+      "inContainer": false,
+      "isTargetOrDesc": true
+     },
+     "button": {
+      "point": [
+       467,
+       455
+      ],
+      "got": "button#pc--opt-out-button.pc--opt-out-form-button pc--bo",
+      "inContainer": false,
+      "isTargetOrDesc": true
+     },
+     "cart": {
+      "point": [
+       1366,
+       32
+      ],
+      "got": "svg.icon icon-cart",
+      "inContainer": false,
+      "isTargetOrDesc": true
+     }
+    },
+    "xPage": 0,
+    "offenders": []
+   },
+   "off": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "block",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       1440,
+       812
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       -21,
+       -9850,
+       22,
+       20
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       -21,
+       -9851,
+       22,
+       22
+      ]
+     }
+    ],
+    "hits": {
+     "checkbox": {
+      "point": [
+       403,
+       406
+      ],
+      "got": "input#pc--show-email-field.",
+      "inContainer": false,
+      "isTargetOrDesc": true
+     },
+     "button": {
+      "point": [
+       467,
+       455
+      ],
+      "got": "button#pc--opt-out-button.pc--opt-out-form-button pc--bo",
+      "inContainer": false,
+      "isTargetOrDesc": true
+     },
+     "cart": {
+      "point": [
+       1366,
+       32
+      ],
+      "got": "svg.icon icon-cart",
+      "inContainer": false,
+      "isTargetOrDesc": true
+     }
+    },
+    "xPage": 0,
+    "offenders": []
+   },
+   "verdict": [
+    "checkbox: same element on and off (input#pc--show-email-field.; base target-or-descendant: true)",
+    "button: same element on and off (button#pc--opt-out-button.pc--opt-out-form-button pc--bo; base target-or-descendant: true)",
+    "cart: same element on and off (svg.icon icon-cart; base target-or-descendant: true)",
+    "X_page on 0 off 0; offenders on 0 off 0"
+   ]
+  },
+  {
+   "w": 1920,
+   "ctlOn": "none",
+   "ctlOff": "block",
+   "valid": true,
+   "ref": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "none",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "none",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    ],
+    "xPage": 0,
+    "offenders": []
+   },
+   "off": {
+    "container": true,
+    "empties": [
+     {
+      "style": "width: 100%; height: 100%; position: fixed; pointer-events: none; top: 0px; left: 0px; z-index: 0; background-color: rgb(255, 255, 255); opacity: 0.05;",
+      "display": "block",
+      "position": "fixed",
+      "visibility": "hidden",
+      "opacity": "0.05",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       0,
+       0,
+       1920,
+       812
+      ]
+     },
+     {
+      "style": "border-width: 10px; border-style: solid; border-color: transparent rgb(255, 255, 255) transparent transparent; position: relative; top: 10px; z-index: 1;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "1",
+      "r": [
+       -21,
+       -9850,
+       22,
+       20
+      ]
+     },
+     {
+      "style": "border-width: 11px; border-style: solid; border-color: transparent rgb(215, 215, 215) transparent transparent; position: relative; top: -11px; z-index: 0;",
+      "display": "block",
+      "position": "relative",
+      "visibility": "hidden",
+      "opacity": "1",
+      "pe": "none",
+      "z": "0",
+      "r": [
+       -21,
+       -9851,
+       22,
+       22
+      ]
+     }
+    ],
+    "xPage": 0,
+    "offenders": []
+   },
+   "verdict": [
+    "X_page on 0 off 0; offenders on 0 off 0"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,271 @@
+INVALID tog-basepx-pxap-1440-S5.json
+runs=33 rows=268
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | align-items | center | normal  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | appearance | none | button  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | border-block-end-style | none | solid  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | border-block-start-style | none | solid  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | border-bottom-style | none | solid  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | border-inline-end-style | none | solid  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | border-inline-start-style | none | solid  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | border-left-style | none | solid  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | border-right-style | none | solid  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | border-top-style | none | solid  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | display | inline-flex | inline-block  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | font-size | 24px | 16px  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | inset-block-end | 0px | auto  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | inset-block-start | 0px | auto  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | inset-inline-end | 0px | auto  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | inset-inline-start | 0px | auto  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | justify-content | center | normal  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | letter-spacing | 1.6px | normal  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | padding-inline-end | 48px | 0px  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | padding-inline-start | 48px | 0px  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | padding-left | 48px | 0px  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | padding-right | 48px | 0px  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | position | relative | static  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | transition-duration | 0.1s | 0s  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button |  | transition-property | box-shadow | all  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button | ::after | content | "" | none  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button | ::after | display | block | inline  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button | ::after | inset-block-end | 14px | auto  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button | ::after | inset-block-start | 14px | auto  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button | ::after | inset-inline-end | 95.0312px | auto  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button | ::after | inset-inline-start | 95.0156px | auto  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button | ::after | position | absolute | static  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button | ::after | z-index | 1 | auto  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button | ::before | content | "" | none  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button | ::before | display | block | inline  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button | ::before | position | absolute | static  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | button | ::before | z-index | -1 | auto  <shopify-challenge__button / Submit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | div |  | margin-block-end | 112px | 0px  <shopify-challenge__container / MessageSubmit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | div |  | margin-block-start | 112px | 0px  <shopify-challenge__container / MessageSubmit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | div |  | margin-bottom | 112px | 0px  <shopify-challenge__container / MessageSubmit / >
+8x pages[zoo] shopify | div.shopify-challenge__container | div |  | margin-top | 112px | 0px  <shopify-challenge__container / MessageSubmit / >
+8x pages[zoo] shopify | div.shopify-payment-button | button |  | inset-block-end | 0px | auto  <shopify-payment-button__button / Buy it now / >
+8x pages[zoo] shopify | div.shopify-payment-button | button |  | inset-block-start | 0px | auto  <shopify-payment-button__button / Buy it now / >
+8x pages[zoo] shopify | div.shopify-payment-button | button |  | inset-inline-end | 0px | auto  <shopify-payment-button__button / Buy it now / >
+8x pages[zoo] shopify | div.shopify-payment-button | button |  | inset-inline-start | 0px | auto  <shopify-payment-button__button / Buy it now / >
+8x pages[zoo] shopify | div.shopify-payment-button | button |  | position | relative | static  <shopify-payment-button__button / Buy it now / >
+8x pages[zoo] shopify | div.shopify-payment-button | button | ::after | content | "" | none  <shopify-payment-button__button / Buy it now / >
+8x pages[zoo] shopify | div.shopify-payment-button | button | ::after | display | block | inline  <shopify-payment-button__button / Buy it now / >
+8x pages[zoo] shopify | div.shopify-payment-button | button | ::after | inset-block-end | 28px | auto  <shopify-payment-button__button / Buy it now / >
+8x pages[zoo] shopify | div.shopify-payment-button | button | ::after | inset-block-start | 16px | auto  <shopify-payment-button__button / Buy it now / >
+1x pages[zoo] shopify | div.shopify-payment-button | button | ::after | inset-inline-end | 126.156px | auto  <shopify-payment-button__button / Buy it now / >
+1x pages[zoo] shopify | div.shopify-payment-button | button | ::after | inset-inline-end | 313.156px | auto  <shopify-payment-button__button / Buy it now / >
+1x pages[zoo] shopify | div.shopify-payment-button | button | ::after | inset-inline-end | 313.656px | auto  <shopify-payment-button__button / Buy it now / >
+1x pages[zoo] shopify | div.shopify-payment-button | button | ::after | inset-inline-end | 433.156px | auto  <shopify-payment-button__button / Buy it now / >
+1x pages[zoo] shopify | div.shopify-payment-button | button | ::after | inset-inline-end | 433.656px | auto  <shopify-payment-button__button / Buy it now / >
+2x pages[zoo] shopify | div.shopify-payment-button | button | ::after | inset-inline-end | 658.656px | auto  <shopify-payment-button__button / Buy it now / >
+1x pages[zoo] shopify | div.shopify-payment-button | button | ::after | inset-inline-end | 98.6562px | auto  <shopify-payment-button__button / Buy it now / >
+1x pages[zoo] shopify | div.shopify-payment-button | button | ::after | inset-inline-start | 181.344px | auto  <shopify-payment-button__button / Buy it now / >
+1x pages[zoo] shopify | div.shopify-payment-button | button | ::after | inset-inline-start | 208.844px | auto  <shopify-payment-button__button / Buy it now / >
+1x pages[zoo] shopify | div.shopify-payment-button | button | ::after | inset-inline-start | 395.844px | auto  <shopify-payment-button__button / Buy it now / >
+1x pages[zoo] shopify | div.shopify-payment-button | button | ::after | inset-inline-start | 396.344px | auto  <shopify-payment-button__button / Buy it now / >
+1x pages[zoo] shopify | div.shopify-payment-button | button | ::after | inset-inline-start | 515.844px | auto  <shopify-payment-button__button / Buy it now / >
+1x pages[zoo] shopify | div.shopify-payment-button | button | ::after | inset-inline-start | 516.344px | auto  <shopify-payment-button__button / Buy it now / >
+2x pages[zoo] shopify | div.shopify-payment-button | button | ::after | inset-inline-start | 741.344px | auto  <shopify-payment-button__button / Buy it now / >
+8x pages[zoo] shopify | div.shopify-payment-button | button | ::after | position | absolute | static  <shopify-payment-button__button / Buy it now / >
+8x pages[zoo] shopify | div.shopify-payment-button | button | ::after | transition-duration | 0.1s | 0s  <shopify-payment-button__button / Buy it now / >
+8x pages[zoo] shopify | div.shopify-payment-button | button | ::after | transition-property | box-shadow | all  <shopify-payment-button__button / Buy it now / >
+8x pages[zoo] shopify | div.shopify-payment-button | button | ::after | z-index | 1 | auto  <shopify-payment-button__button / Buy it now / >
+8x pages[zoo] shopify | div.shopify-payment-button | button | ::before | content | "" | none  <shopify-payment-button__button / Buy it now / >
+8x pages[zoo] shopify | div.shopify-payment-button | button | ::before | display | block | inline  <shopify-payment-button__button / Buy it now / >
+8x pages[zoo] shopify | div.shopify-payment-button | button | ::before | position | absolute | static  <shopify-payment-button__button / Buy it now / >
+8x pages[zoo] shopify | div.shopify-payment-button | button | ::before | z-index | -1 | auto  <shopify-payment-button__button / Buy it now / >
+9x pages[pxap] shopify | div.shopify-payment-button | shopify-accelerated-checkout |  | --shopify-accelerated-checkout-button-border-radius |  |   < / More payment options / >
+9x pages[pxap] shopify | div.shopify-payment-button | shopify-accelerated-checkout |  | --shopify-accelerated-checkout-button-box-shadow |  |   < / More payment options / >
+16x pages[zoo] theme |  | a |  | cursor | not-allowed | auto  < / an anchor without hr / >
+16x pages[zoo] theme |  | a |  | display | none | inline  < /  / >
+387x pages[pxap,pxea,rt,zoo] theme |  | a |  | list-style-type | none | disc  <relative flex h-full w-(--logo /  / >
+69x pages[pxap,pxea,rt,zoo] theme |  | a |  | word-break | break-word | normal  <relative flex h-full w-(--logo /  / >
+8x pages[zoo] theme |  | blockquote |  | border-inline-start-style | none | solid  < / A quote. / >
+8x pages[zoo] theme |  | blockquote |  | border-left-style | none | solid  < / A quote. / >
+8x pages[zoo] theme |  | blockquote |  | font-style | italic | normal  < / A quote. / >
+3x pages[zoo] theme |  | blockquote |  | padding-inline-start | 16px | 0px  < / A quote. / >
+5x pages[zoo] theme |  | blockquote |  | padding-inline-start | 24px | 0px  < / A quote. / >
+3x pages[zoo] theme |  | blockquote |  | padding-left | 16px | 0px  < / A quote. / >
+5x pages[zoo] theme |  | blockquote |  | padding-left | 24px | 0px  < / A quote. / >
+33x pages[pxap,pxea,rt,zoo] theme |  | button |  | list-style-type | none | disc  <theme-evolution-header-menu__t / Open menu / >
+40x pages[zoo] theme |  | div |  | display | none | block  < /  / >
+99x pages[pxap,pxea,rt,zoo] theme |  | div |  | flex-wrap | wrap | nowrap  <grid grid-cols-(--content-grid / T5 announcement prob / >
+33x pages[pxap,pxea,rt,zoo] theme |  | div |  | grid-template-rows | 129px | 97px  <shopify-section shopify-sectio / T5 announcement prob / >
+2x pages[rt] theme |  | div |  | grid-template-rows | 726.172px | 711.578px  <shopify-section / Heading twoFirst par / >
+1x pages[zoo] theme |  | div |  | grid-template-rows | 738.594px 1154.48px 271px 44px 45px | 380px 948.547px 19px 38px 44px 52px  <shopify-section / Heading oneHeading t / >
+2x pages[rt] theme |  | div |  | grid-template-rows | 749.172px | 734.578px  <shopify-section / Heading twoFirst par / >
+2x pages[rt] theme |  | div |  | grid-template-rows | 754.172px | 739.578px  <shopify-section / Heading twoFirst par / >
+1x pages[zoo] theme |  | div |  | grid-template-rows | 777.594px 1210.48px 271px 44px 45px | 419px 1004.55px 19px 38px 44px 52px  <shopify-section / Heading oneHeading t / >
+8x pages[rt] theme |  | div |  | grid-template-rows | 778.172px | 763.578px  <shopify-section / Heading twoFirst par / >
+6x pages[rt] theme |  | div |  | grid-template-rows | 786.172px | 771.578px  <shopify-section / Heading twoFirst par / >
+1x pages[zoo] theme |  | div |  | grid-template-rows | 795.594px 1238.48px 271px 44px 45px | 437px 1032.55px 19px 38px 44px 52px  <shopify-section / Heading oneHeading t / >
+5x pages[zoo] theme |  | div |  | grid-template-rows | 802.594px 1154.48px 271px 44px 45px | 380px 948.547px 19px 38px 44px 52px  <shopify-section / Heading oneHeading t / >
+1x pages[rt] theme |  | div |  | grid-template-rows | 805.172px | 790.578px  <shopify-section / Heading twoFirst par / >
+16x pages[rt] theme |  | div |  | grid-template-rows | 826.172px | 811.578px  <shopify-section / Heading twoFirst par / >
+1x pages[rt] theme |  | div |  | grid-template-rows | 833.172px | 818.578px  <shopify-section / Heading twoFirst par / >
+4x pages[rt] theme |  | div |  | grid-template-rows | 834.172px | 819.578px  <shopify-section / Heading twoFirst par / >
+2x pages[rt] theme |  | div |  | grid-template-rows | 842.172px | 827.578px  <shopify-section / Heading twoFirst par / >
+4x pages[rt] theme |  | div |  | grid-template-rows | 862.172px | 847.578px  <shopify-section / Heading twoFirst par / >
+467x pages[pxap,pxea,rt,zoo] theme |  | div |  | list-style-type | none | disc  <grid grid-cols-(--content-grid / T5 announcement prob / >
+33x pages[pxap,pxea,rt,zoo] theme |  | div |  | margin-block-end | 32px | 0px  <grid grid-cols-(--content-grid / T5 announcement prob / >
+33x pages[pxap,pxea,rt,zoo] theme |  | div |  | margin-bottom | 32px | 0px  <grid grid-cols-(--content-grid / T5 announcement prob / >
+24x pages[zoo] theme |  | div |  | min-block-size | 0px | auto  < /  / >
+24x pages[zoo] theme |  | div |  | min-height | 0px | auto  < /  / >
+24x pages[zoo] theme |  | div |  | min-inline-size | 0px | auto  < /  / >
+24x pages[zoo] theme |  | div |  | min-width | 0px | auto  < /  / >
+9x pages[pxap] theme |  | div |  | z-index | 1 | auto  <loading__spinner hidden absolu /  / >
+8x pages[pxea] theme |  | h1 |  | list-style-type | none | disc  <font-heading text-3xl leading- / Hello, world! / >
+25x pages[pxap,pxea,zoo] theme |  | h1 |  | word-break | break-word | normal  <font-heading text-3xl leading- / The 3p Fulfilled Sno / >
+57x pages[pxap,pxea,rt,zoo] theme |  | h2 |  | list-style-type | none | disc  <m-0 leading-none /  / >
+204x pages[pxap,pxea,rt,zoo] theme |  | h2 |  | word-break | break-word | normal  <m-0 leading-none /  / >
+16x pages[zoo] theme |  | h3 |  | display | none | block  < /  / >
+9x pages[pxap] theme |  | h3 |  | list-style-type | none | disc  <m-0 text-[1.6rem] font-semibol / Recycled steel / >
+126x pages[pxap,rt,zoo] theme |  | h3 |  | word-break | break-word | normal  <m-0 / The Collection Snowb / >
+16x pages[zoo] theme |  | h4 |  | word-break | break-word | normal  < / Heading four / >
+16x pages[zoo] theme |  | h5 |  | word-break | break-word | normal  < / Heading five / >
+16x pages[zoo] theme |  | h6 |  | margin-block-end | 26.72px | 0px  < / Heading six / >
+16x pages[zoo] theme |  | h6 |  | margin-block-start | 26.72px | 0px  < / Heading six / >
+16x pages[zoo] theme |  | h6 |  | margin-bottom | 26.72px | 0px  < / Heading six / >
+16x pages[zoo] theme |  | h6 |  | margin-top | 26.72px | 0px  < / Heading six / >
+33x pages[pxap,pxea,rt,zoo] theme |  | header |  | flex-wrap | wrap | nowrap  <grid h-16 grid-cols-(--content / HomeCatalogContactOu / >
+33x pages[pxap,pxea,rt,zoo] theme |  | header |  | list-style-type | none | disc  <grid h-16 grid-cols-(--content / HomeCatalogContactOu / >
+64x pages[rt,zoo] theme |  | hr |  | border-block-end-style | none | solid  < /  / rich >
+8x pages[zoo] theme |  | hr |  | border-block-start-style | none | solid  < /  / >
+8x pages[zoo] theme |  | hr |  | border-block-start-width | 0px | 1px  < /  / >
+64x pages[rt,zoo] theme |  | hr |  | border-bottom-style | none | solid  < /  / rich >
+64x pages[rt,zoo] theme |  | hr |  | border-inline-end-style | none | solid  < /  / rich >
+64x pages[rt,zoo] theme |  | hr |  | border-inline-start-style | none | solid  < /  / rich >
+64x pages[rt,zoo] theme |  | hr |  | border-left-style | none | solid  < /  / rich >
+64x pages[rt,zoo] theme |  | hr |  | border-right-style | none | solid  < /  / rich >
+8x pages[zoo] theme |  | hr |  | border-top-style | none | solid  < /  / >
+8x pages[zoo] theme |  | hr |  | border-top-width | 0px | 1px  < /  / >
+5x pages[zoo] theme |  | hr |  | margin-block-end | 112px | 0px  < /  / >
+3x pages[zoo] theme |  | hr |  | margin-block-end | 80px | 0px  < /  / >
+5x pages[zoo] theme |  | hr |  | margin-block-start | 112px | 0px  < /  / >
+3x pages[zoo] theme |  | hr |  | margin-block-start | 80px | 0px  < /  / >
+5x pages[zoo] theme |  | hr |  | margin-bottom | 112px | 0px  < /  / >
+3x pages[zoo] theme |  | hr |  | margin-bottom | 80px | 0px  < /  / >
+5x pages[zoo] theme |  | hr |  | margin-top | 112px | 0px  < /  / >
+3x pages[zoo] theme |  | hr |  | margin-top | 80px | 0px  < /  / >
+50x pages[pxap,pxea,rt,zoo] theme |  | img |  | list-style-type | none | disc  <block size-full object-contain /  / >
+33x pages[pxap,pxea,rt,zoo] theme |  | img |  | word-break | break-word | normal  <block size-full object-contain /  / >
+16x pages[zoo] theme |  | input |  | margin-inline-end | 8px | 0px  < /  / >
+16x pages[zoo] theme |  | input |  | margin-right | 8px | 0px  < /  / >
+33x pages[pxap,pxea,rt,zoo] theme |  | nav |  | list-style-type | none | disc  <theme-evolution-footer__column / Search  / >
+8x pages[zoo] theme |  | p |  | font-style | italic | normal  < / A quote. / >
+130x pages[pxap,pxea,rt,zoo] theme |  | p |  | list-style-type | none | disc  <col-start-2 m-0 px-8 py-2 text / T5 announcement prob / >
+132x pages[pxap,pxea,rt,zoo] theme |  | path |  | list-style-type | none | disc  < /  / >
+8x pages[zoo] theme |  | span |  | border-block-end-style | none | solid  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | border-block-start-style | none | solid  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | border-bottom-style | none | solid  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | border-inline-end-style | none | solid  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | border-inline-start-style | none | solid  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | border-left-style | none | solid  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | border-right-style | none | solid  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | border-top-style | none | solid  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | clip | rect(0px, 0px, 0px, 0px) | auto  <visually-hidden / Hidden text / >
+1x pages[zoo] theme |  | span |  | inset-block-end | 2254.08px | auto  <visually-hidden / Hidden text / >
+5x pages[zoo] theme |  | span |  | inset-block-end | 2318.08px | auto  <visually-hidden / Hidden text / >
+1x pages[zoo] theme |  | span |  | inset-block-end | 2349.08px | auto  <visually-hidden / Hidden text / >
+1x pages[zoo] theme |  | span |  | inset-block-end | 2395.08px | auto  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | inset-block-start | 0px | auto  <visually-hidden / Hidden text / >
+25x pages[pxap,pxea,rt,zoo] theme |  | span |  | inset-block-start | 97.5px | 65.5px  <sr-only / Open menu / >
+1x pages[zoo] theme |  | span |  | inset-inline-end | 1421px | auto  <visually-hidden / Hidden text / >
+1x pages[zoo] theme |  | span |  | inset-inline-end | 1661px | auto  <visually-hidden / Hidden text / >
+1x pages[zoo] theme |  | span |  | inset-inline-end | 301px | auto  <visually-hidden / Hidden text / >
+1x pages[zoo] theme |  | span |  | inset-inline-end | 356px | auto  <visually-hidden / Hidden text / >
+1x pages[zoo] theme |  | span |  | inset-inline-end | 730px | auto  <visually-hidden / Hidden text / >
+1x pages[zoo] theme |  | span |  | inset-inline-end | 731px | auto  <visually-hidden / Hidden text / >
+1x pages[zoo] theme |  | span |  | inset-inline-end | 970px | auto  <visually-hidden / Hidden text / >
+1x pages[zoo] theme |  | span |  | inset-inline-end | 971px | auto  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | inset-inline-start | 0px | auto  <visually-hidden / Hidden text / >
+9x pages[pxap] theme |  | span |  | list-style-position | outside | inside  <text-[1.5rem] font-normal tran / + / >
+238x pages[pxap,pxea,rt,zoo] theme |  | span |  | list-style-type | none | disc  <sr-only / Open menu / >
+8x pages[zoo] theme |  | span |  | margin-block-end | -1px | 0px  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | margin-block-start | -1px | 0px  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | margin-bottom | -1px | 0px  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | margin-inline-end | -1px | 0px  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | margin-inline-start | -1px | 0px  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | margin-left | -1px | 0px  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | margin-right | -1px | 0px  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | margin-top | -1px | 0px  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | min-block-size | 0px | auto  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | min-height | 0px | auto  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | min-inline-size | 0px | auto  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | min-width | 0px | auto  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | overflow-block | hidden | visible  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | overflow-inline | hidden | visible  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | overflow-x | hidden | visible  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | overflow-y | hidden | visible  <visually-hidden / Hidden text / >
+8x pages[zoo] theme |  | span |  | position | absolute | static  <visually-hidden / Hidden text / >
+9x pages[pxap] theme |  | style |  | list-style-type | none | disc  < / @layer components{@k / >
+16x pages[zoo] theme |  | summary |  | cursor | pointer | auto  < / Summary / >
+25x pages[pxap,zoo] theme |  | summary |  | inset-block-end | 0px | auto  <flex cursor-pointer list-none  / Material specs + / >
+25x pages[pxap,zoo] theme |  | summary |  | inset-block-start | 0px | auto  <flex cursor-pointer list-none  / Material specs + / >
+25x pages[pxap,zoo] theme |  | summary |  | inset-inline-end | 0px | auto  <flex cursor-pointer list-none  / Material specs + / >
+25x pages[pxap,zoo] theme |  | summary |  | inset-inline-start | 0px | auto  <flex cursor-pointer list-none  / Material specs + / >
+25x pages[pxap,zoo] theme |  | summary |  | list-style-position | outside | inside  <flex cursor-pointer list-none  / Material specs + / >
+16x pages[zoo] theme |  | summary |  | list-style-type | none | disclosure-closed  < / Summary / >
+25x pages[pxap,zoo] theme |  | summary |  | position | relative | static  <flex cursor-pointer list-none  / Material specs + / >
+16x pages[zoo] theme |  | summary | ::marker | display | inline-block | inline  < / Summary / >
+16x pages[zoo] theme |  | summary | ::marker | margin-inline-end | 0px | 6.39062px  < / Summary / >
+16x pages[zoo] theme |  | summary | ::marker | margin-right | 0px | 6.39062px  < / Summary / >
+25x pages[pxap,zoo] theme |  | summary | ::marker | text-wrap-mode | nowrap | wrap  <flex cursor-pointer list-none  / Material specs + / >
+25x pages[pxap,zoo] theme |  | summary | ::marker | white-space-collapse | preserve | collapse  <flex cursor-pointer list-none  / Material specs + / >
+132x pages[pxap,pxea,rt,zoo] theme |  | svg |  | list-style-type | none | disc  <icon icon-hamburger /  / >
+64x pages[rt,zoo] theme |  | table |  | border-block-end-style | hidden | solid  < / AB12 / rich >
+64x pages[rt,zoo] theme |  | table |  | border-block-start-style | hidden | solid  < / AB12 / rich >
+64x pages[rt,zoo] theme |  | table |  | border-bottom-style | hidden | solid  < / AB12 / rich >
+64x pages[rt,zoo] theme |  | table |  | border-inline-end-style | hidden | solid  < / AB12 / rich >
+64x pages[rt,zoo] theme |  | table |  | border-inline-start-style | hidden | solid  < / AB12 / rich >
+64x pages[rt,zoo] theme |  | table |  | border-left-style | hidden | solid  < / AB12 / rich >
+64x pages[rt,zoo] theme |  | table |  | border-right-style | hidden | solid  < / AB12 / rich >
+64x pages[rt,zoo] theme |  | table |  | border-top-style | hidden | solid  < / AB12 / rich >
+8x pages[zoo] theme |  | table |  | font-size | 22.4px | 16px  < / AB12 / >
+8x pages[zoo] theme |  | table |  | table-layout | fixed | auto  < / AB12 / >
+8x pages[zoo] theme |  | tbody |  | font-size | 22.4px | 16px  < / AB12 / >
+128x pages[rt,zoo] theme |  | td |  | border-block-end-style | none | solid  < / 1 / rich >
+128x pages[rt,zoo] theme |  | td |  | border-block-start-style | none | solid  < / 1 / rich >
+128x pages[rt,zoo] theme |  | td |  | border-bottom-style | none | solid  < / 1 / rich >
+128x pages[rt,zoo] theme |  | td |  | border-inline-end-style | none | solid  < / 1 / rich >
+128x pages[rt,zoo] theme |  | td |  | border-inline-start-style | none | solid  < / 1 / rich >
+128x pages[rt,zoo] theme |  | td |  | border-left-style | none | solid  < / 1 / rich >
+128x pages[rt,zoo] theme |  | td |  | border-right-style | none | solid  < / 1 / rich >
+128x pages[rt,zoo] theme |  | td |  | border-top-style | none | solid  < / 1 / rich >
+16x pages[zoo] theme |  | td |  | font-size | 22.4px | 16px  < / 1 / >
+16x pages[zoo] theme |  | td |  | padding-block-end | 22.4px | 0px  < / 1 / >
+16x pages[zoo] theme |  | td |  | padding-block-start | 22.4px | 0px  < / 1 / >
+16x pages[zoo] theme |  | td |  | padding-bottom | 22.4px | 0px  < / 1 / >
+16x pages[zoo] theme |  | td |  | padding-inline-end | 22.4px | 0px  < / 1 / >
+16x pages[zoo] theme |  | td |  | padding-inline-start | 22.4px | 0px  < / 1 / >
+16x pages[zoo] theme |  | td |  | padding-left | 22.4px | 0px  < / 1 / >
+16x pages[zoo] theme |  | td |  | padding-right | 22.4px | 0px  < / 1 / >
+16x pages[zoo] theme |  | td |  | padding-top | 22.4px | 0px  < / 1 / >
+128x pages[rt,zoo] theme |  | th |  | border-block-end-style | none | solid  < / A / rich >
+128x pages[rt,zoo] theme |  | th |  | border-block-start-style | none | solid  < / A / rich >
+128x pages[rt,zoo] theme |  | th |  | border-bottom-style | none | solid  < / A / rich >
+128x pages[rt,zoo] theme |  | th |  | border-inline-end-style | none | solid  < / A / rich >
+128x pages[rt,zoo] theme |  | th |  | border-inline-start-style | none | solid  < / A / rich >
+128x pages[rt,zoo] theme |  | th |  | border-left-style | none | solid  < / A / rich >
+128x pages[rt,zoo] theme |  | th |  | border-right-style | none | solid  < / A / rich >
+128x pages[rt,zoo] theme |  | th |  | border-top-style | none | solid  < / A / rich >
+16x pages[zoo] theme |  | th |  | font-size | 22.4px | 16px  < / A / >
+16x pages[zoo] theme |  | th |  | padding-block-end | 14px | 0px  < / A / rich >
+16x pages[zoo] theme |  | th |  | padding-block-end | 22.4px | 0px  < / A / >
+112x pages[rt,zoo] theme |  | th |  | padding-block-start | 14px | 0px  < / A / rich >
+16x pages[zoo] theme |  | th |  | padding-block-start | 22.4px | 0px  < / A / >
+16x pages[zoo] theme |  | th |  | padding-bottom | 14px | 0px  < / A / rich >
+16x pages[zoo] theme |  | th |  | padding-bottom | 22.4px | 0px  < / A / >
+16x pages[zoo] theme |  | th |  | padding-inline-end | 14px | 0px  < / A / rich >
+16x pages[zoo] theme |  | th |  | padding-inline-end | 22.4px | 0px  < / A / >
+16x pages[zoo] theme |  | th |  | padding-inline-start | 14px | 0px  < / A / rich >
+16x pages[zoo] theme |  | th |  | padding-inline-start | 22.4px | 0px  < / A / >
+16x pages[zoo] theme |  | th |  | padding-left | 14px | 0px  < / A / rich >
+16x pages[zoo] theme |  | th |  | padding-left | 22.4px | 0px  < / A / >
+16x pages[zoo] theme |  | th |  | padding-right | 14px | 0px  < / A / rich >
+16x pages[zoo] theme |  | th |  | padding-right | 22.4px | 0px  < / A / >
+112x pages[rt,zoo] theme |  | th |  | padding-top | 14px | 0px  < / A / rich >
+16x pages[zoo] theme |  | th |  | padding-top | 22.4px | 0px  < / A / >
+33x pages[pxap,pxea,rt,zoo] theme |  | theme-evolution-header-menu |  | list-style-type | none | disc  <flex lg:hidden / Open menu  / >
+16x pages[zoo] theme |  | tr |  | font-size | 22.4px | 16px  < / AB / >
+16x pages[zoo] theme |  | ul |  | display | none | block  < /  / >
+9x pages[pxap] theme |  | ul |  | flex-wrap | wrap | nowrap  <mb-0 grid grid-cols-2 lg:grid- / The Collection Snowb / >
+SZ-only run keys with size entries: 33

@@ -1,0 +1,9 @@
+ADDED:
+.form__message
+.form__message .icon
+.shopify-policy__body :is(ul,ol)
+.shopify-policy__body a:hover
+[data-rich-text] :where(div,a,ul,dl,section,article,h1,h2,h3,h4,h5,h6):empty
+h1,h2,h3,h4,h5
+input[type=checkbox]
+REMOVED:

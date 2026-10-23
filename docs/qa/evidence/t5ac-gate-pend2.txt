@@ -1,0 +1,14 @@
+Compiled forms (scratch end state, HEAD 96a8898 theme files + all section 5 edits incl. D5a.20, no D5a.21, no banner edit)
+   58850 assets/tailwind.css
+   11269
+h1,h2,h3,h4,h5{word-break:break-word}
+.shopify-policy__body :is(ul,ol){padding-left:2rem;list-style-position:inside}
+.shopify-policy__body a:hover{text-decoration-thickness:.2rem}
+.shopify-policy__body a{text-underline-offset:.3rem;text-decoration-line:underline;text-decoration-thickness:.1rem;transition:text-decoration-thickness .1s}
+input[type=checkbox]{margin-right:.5rem}
+.form__message{align-items:center;margin-top:1rem;font-size:1.4rem;line-height:1;display:flex}
+.form__message .icon{flex-shrink:0;width:1.3rem;height:1.3rem;margin-right:.5rem}
+[data-rich-text] :where(div,a,ul,dl,section,article,h1,h2,h3,h4,h5,h6):empty{display:none}
+.empty\:hidden:empty{display:none}
+check-css-layers exit 0
+banner edit alone: byte-identical (shasum f1fd1e48feeee26a9a2101e7702e1cf4be67db68)

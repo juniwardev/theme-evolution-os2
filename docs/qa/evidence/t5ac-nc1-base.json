@@ -1,0 +1,76 @@
+{
+ "found": true,
+ "display": "none",
+ "visibility": "visible",
+ "hiddenAttr": false,
+ "html": "<small class=\"pc--opt-out-form-message form__message\" style=\"display: none;\" id=\"pc--opt-out-error\" autofocus=\"\">\n        <svg aria-hidden=\"true\" focusable=\"false\" class=\"icon icon-error\" viewBox=\"0 0 13 13\">\n          <circle cx=\"6.5\" cy=\"6.50049\" r=\"5.5\" stroke=\"white\" stroke-width=\"2\"></circle>\n          <circle cx=\"6.5\" cy=\"6.5\" r=\"5.5\" fill=\"#EB001B\" stroke=\"#EB001B\" stroke-width=\"0.7\"></circ",
+ "parentChain": [
+  {
+   "tag": "small",
+   "id": "pc--opt-out-error",
+   "cls": "pc--opt-out-form-message form__message",
+   "hiddenAttr": false,
+   "style": "display: none;",
+   "display": "none",
+   "visibility": "visible"
+  },
+  {
+   "tag": "form",
+   "id": "pc--opt-out-form",
+   "cls": "pc--opt-out-form",
+   "hiddenAttr": false,
+   "style": null,
+   "display": "flex",
+   "visibility": "visible"
+  },
+  {
+   "tag": "div",
+   "id": "pc--opt-out-form-container",
+   "cls": "",
+   "hiddenAttr": false,
+   "style": "display: block;",
+   "display": "block",
+   "visibility": "visible"
+  },
+  {
+   "tag": "div",
+   "id": "pc--optOutFormContainer",
+   "cls": "",
+   "hiddenAttr": false,
+   "style": null,
+   "display": "block",
+   "visibility": "visible"
+  },
+  {
+   "tag": "div",
+   "id": "",
+   "cls": "prose prose-tokens overflow-x-auto",
+   "hiddenAttr": false,
+   "style": null,
+   "display": "block",
+   "visibility": "visible"
+  },
+  {
+   "tag": "div",
+   "id": "",
+   "cls": "mx-auto flex w-full max-w-[calc(65ch+4rem)] flex-c",
+   "hiddenAttr": false,
+   "style": null,
+   "display": "flex",
+   "visibility": "visible"
+  }
+ ],
+ "rules": [
+  {
+   "sheet": "me-evolution-os2.myshopify.com/cdn/shop/t/12/assets/base.css",
+   "layer": "legacy",
+   "sel": ".form__message",
+   "display": "flex",
+   "visibility": ""
+  },
+  {
+   "sheet": "hopify.com/shopifycloud/privacy-banner/data-sale-opt-out.css",
+   "unreadable": true
+  }
+ ]
+}

@@ -1,0 +1,162 @@
+{
+ "label": "base",
+ "policies": {
+  "refund-policy": {
+   "status": 404,
+   "url": "https://theme-evolution-os2.myshopify.com/policies/refund-policy",
+   "policyBody": false
+  },
+  "privacy-policy": {
+   "status": 200,
+   "url": "https://theme-evolution-os2.myshopify.com/policies/privacy-policy",
+   "policyBody": true
+  },
+  "terms-of-service": {
+   "status": 404,
+   "url": "https://theme-evolution-os2.myshopify.com/policies/terms-of-service",
+   "policyBody": false
+  },
+  "shipping-policy": {
+   "status": 404,
+   "url": "https://theme-evolution-os2.myshopify.com/policies/shipping-policy",
+   "policyBody": false
+  },
+  "contact-information": {
+   "status": 404,
+   "url": "https://theme-evolution-os2.myshopify.com/policies/contact-information",
+   "policyBody": false
+  },
+  "legal-notice": {
+   "status": 404,
+   "url": "https://theme-evolution-os2.myshopify.com/policies/legal-notice",
+   "policyBody": false
+  },
+  "subscription-policy": {
+   "status": 404,
+   "url": "https://theme-evolution-os2.myshopify.com/policies/subscription-policy",
+   "policyBody": false
+  }
+ },
+ "special": {
+  "/challenge": {
+   "finalUrl": "theme-evolution-os2.myshopify.com/challenge",
+   "pageType": null,
+   "links": [
+    "/cdn/shop/t/12/assets/tailwind.css",
+    "/cdn/shop/t/12/assets/base.css",
+    "/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout.css",
+    "/cdn/shop/t/12/compiled_assets/styles.css"
+   ],
+   "tailwind": true,
+   "base": true,
+   "challenge": null,
+   "h1": 1,
+   "title": "404 Not Found – theme-evolution-os2",
+   "status": 404
+  },
+  "/account/login": {
+   "finalUrl": "shopify.com/authentication/66420244576/login",
+   "pageType": null,
+   "links": [
+    "/shopifycloud/customer-authentication-web/production/assets/index.HjPgMPKt.css",
+    "/shopifycloud/customer-authentication-web/production/assets/ShopLoginButtonInner.9d_XX9Ef.css",
+    "/shopifycloud/customer-authentication-web/production/assets/AdminPreviewBar.DNkBpH3G.css",
+    "/shopifycloud/customer-authentication-web/production/assets/BreakWord.ChZFzSjm.css",
+    "/shopifycloud/customer-authentication-web/production/assets/SignInCodeForm.D5E1an2a.css"
+   ],
+   "tailwind": false,
+   "base": false,
+   "challenge": null,
+   "h1": 2,
+   "title": "Sign in - theme-evolution-os2",
+   "status": 200
+  }
+ },
+ "sitemap": {
+  "status": 200,
+  "locs": [
+   "/sitemap_agentic_discovery.xml",
+   "/sitemap_products_1.xml?from=7661169803360&amp;to=15418010992736",
+   "/sitemap_pages_1.xml?from=105879961696&amp;to=108400869472",
+   "/sitemap_collections_1.xml?from=290228174944&amp;to=290228240480",
+   "/sitemap_blogs_1.xml"
+  ]
+ },
+ "assets": {
+  "/": {
+   "scripts": [
+    "constants.js",
+    "pubsub.js",
+    "global.js",
+    "eco-tooltip.js",
+    "storefront/load_feature-ed94c51f.js",
+    "shopify_pay/storefront-f0e26bdf.js",
+    "storefront/origin_trials-318ab40a.js",
+    "shop_events_listener-4e26a9ce.js"
+   ],
+   "css": [
+    "/cdn/shop/t/12/assets/tailwind.css",
+    "/cdn/shop/t/12/assets/base.css",
+    "/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout.css",
+    "/cdn/shop/t/12/compiled_assets/styles.css"
+   ]
+  },
+  "/products/the-3p-fulfilled-snowboard": {
+   "scripts": [
+    "constants.js",
+    "pubsub.js",
+    "global.js",
+    "eco-tooltip.js",
+    "storefront/load_feature-ed94c51f.js",
+    "shopify_pay/storefront-f0e26bdf.js",
+    "storefront/origin_trials-318ab40a.js",
+    "shop_events_listener-4e26a9ce.js",
+    "material-api-fetch.js",
+    "product-form.js"
+   ],
+   "css": [
+    "/cdn/shop/t/12/assets/tailwind.css",
+    "/cdn/shop/t/12/assets/base.css",
+    "/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout.css",
+    "/cdn/shop/t/12/compiled_assets/styles.css"
+   ]
+  },
+  "/cart": {
+   "scripts": [
+    "constants.js",
+    "pubsub.js",
+    "global.js",
+    "eco-tooltip.js",
+    "storefront/load_feature-ed94c51f.js",
+    "shopify_pay/storefront-f0e26bdf.js",
+    "storefront/origin_trials-318ab40a.js",
+    "shop_events_listener-4e26a9ce.js"
+   ],
+   "css": [
+    "/cdn/shop/t/12/assets/tailwind.css",
+    "/cdn/shop/t/12/assets/base.css",
+    "/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout.css",
+    "/cdn/shop/t/12/compiled_assets/styles.css"
+   ]
+  },
+  "/policies/privacy-policy": {
+   "scripts": [
+    "constants.js",
+    "pubsub.js",
+    "global.js",
+    "eco-tooltip.js",
+    "storefront/load_feature-ed94c51f.js",
+    "shopify_pay/storefront-f0e26bdf.js",
+    "storefront/origin_trials-318ab40a.js",
+    "shop_events_listener-4e26a9ce.js"
+   ],
+   "css": [
+    "/cdn/shop/t/12/assets/tailwind.css",
+    "/cdn/shop/t/12/assets/base.css",
+    "/cdn/shopifycloud/storefront/assets/storefront/policy-0e156355.css",
+    "/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout.css",
+    "/cdn/shop/t/12/compiled_assets/styles.css"
+   ]
+  }
+ }
+}

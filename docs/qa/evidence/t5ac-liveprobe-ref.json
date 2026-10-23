@@ -1,0 +1,4072 @@
+{
+ "containers": [
+  "div.shopify-payment-button",
+  "#pc--optOutFormContainer",
+  "body > div[aria-hidden=\"true\"]:has(> div > iframe[src*=\"hcaptcha\"])",
+  "div.shopify-policy__container"
+ ],
+ "entries": [
+  {
+   "cont": "div.shopify-payment-button",
+   "rel": "shopify-accelerated-checkout:1",
+   "prop": "--shopify-accelerated-checkout-button-border-radius",
+   "on": "",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-payment-button",
+   "rel": "shopify-accelerated-checkout:1",
+   "prop": "--shopify-accelerated-checkout-button-box-shadow",
+   "on": "",
+   "pseudo": ""
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>div:1>input:1",
+   "prop": "margin-inline-end",
+   "on": "8px",
+   "off": "0px",
+   "pseudo": ""
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>div:1>input:1",
+   "prop": "margin-right",
+   "on": "8px",
+   "off": "0px",
+   "pseudo": ""
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>div:1>div:1>label:1>input:1",
+   "prop": "margin-inline-end",
+   "on": "8px",
+   "off": "0px",
+   "pseudo": ""
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>div:1>div:1>label:1>input:1",
+   "prop": "margin-right",
+   "on": "8px",
+   "off": "0px",
+   "pseudo": ""
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>div:1>button:1",
+   "prop": "transition-duration",
+   "on": "0.1s",
+   "off": "0s",
+   "pseudo": ""
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>div:1>button:1",
+   "prop": "transition-property",
+   "on": "box-shadow",
+   "off": "all",
+   "pseudo": ""
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>small:1",
+   "prop": "line-height",
+   "on": "16px",
+   "off": "28px",
+   "pseudo": ""
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>small:1",
+   "prop": "line-height",
+   "on": "16px",
+   "off": "28px",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>small:1",
+   "prop": "line-height",
+   "on": "16px",
+   "off": "28px",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>small:1>svg:1",
+   "prop": "flex-shrink",
+   "on": "0",
+   "off": "1",
+   "pseudo": ""
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>small:1>svg:1",
+   "prop": "line-height",
+   "on": "16px",
+   "off": "28px",
+   "pseudo": ""
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>small:1>svg:1",
+   "prop": "line-height",
+   "on": "16px",
+   "off": "28px",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>small:1>svg:1",
+   "prop": "line-height",
+   "on": "16px",
+   "off": "28px",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>small:1>svg:1>circle:1",
+   "prop": "line-height",
+   "on": "16px",
+   "off": "28px",
+   "pseudo": ""
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>small:1>svg:1>circle:1",
+   "prop": "line-height",
+   "on": "16px",
+   "off": "28px",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>small:1>svg:1>circle:1",
+   "prop": "line-height",
+   "on": "16px",
+   "off": "28px",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>small:1>svg:1>circle:2",
+   "prop": "line-height",
+   "on": "16px",
+   "off": "28px",
+   "pseudo": ""
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>small:1>svg:1>circle:2",
+   "prop": "line-height",
+   "on": "16px",
+   "off": "28px",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>small:1>svg:1>circle:2",
+   "prop": "line-height",
+   "on": "16px",
+   "off": "28px",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>small:1>svg:1>path:1",
+   "prop": "line-height",
+   "on": "16px",
+   "off": "28px",
+   "pseudo": ""
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>small:1>svg:1>path:1",
+   "prop": "line-height",
+   "on": "16px",
+   "off": "28px",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>small:1>svg:1>path:1",
+   "prop": "line-height",
+   "on": "16px",
+   "off": "28px",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>small:1>svg:1>path:2",
+   "prop": "line-height",
+   "on": "16px",
+   "off": "28px",
+   "pseudo": ""
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>small:1>svg:1>path:2",
+   "prop": "line-height",
+   "on": "16px",
+   "off": "28px",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "#pc--optOutFormContainer",
+   "rel": "div:1>form:1>small:1>svg:1>path:2",
+   "prop": "line-height",
+   "on": "16px",
+   "off": "28px",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "body > div[aria-hidden=\"true\"]:has(> div > iframe[src*=\"hcaptcha\"])",
+   "rel": "div:2",
+   "prop": "display",
+   "on": "none",
+   "off": "block",
+   "pseudo": ""
+  },
+  {
+   "cont": "body > div[aria-hidden=\"true\"]:has(> div > iframe[src*=\"hcaptcha\"])",
+   "rel": "div:3>div:1",
+   "prop": "display",
+   "on": "none",
+   "off": "block",
+   "pseudo": ""
+  },
+  {
+   "cont": "body > div[aria-hidden=\"true\"]:has(> div > iframe[src*=\"hcaptcha\"])",
+   "rel": "div:3>div:2",
+   "prop": "display",
+   "on": "none",
+   "off": "block",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:1>h1:1",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:1>h1:1",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:1>h1:1",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1",
+   "prop": "clear",
+   "on": "both",
+   "off": "none",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1",
+   "prop": "content",
+   "on": "\"\"",
+   "off": "none",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1",
+   "prop": "display",
+   "on": "block",
+   "off": "inline",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:1",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:1",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:1",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1",
+   "prop": "padding-inline-start",
+   "on": "32px",
+   "off": "0px",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1",
+   "prop": "padding-left",
+   "on": "32px",
+   "off": "0px",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:1",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:1",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:1",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:1",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:1",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:1",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:1",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:1>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:1>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:1>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:2",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:2",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:2",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:2",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:2",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:2",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:2",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:2>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:2>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:2>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:3",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:3",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:3",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:3",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:3",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:3",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:3",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:3>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:3>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:3>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:4",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:4",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:4",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:4",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:4",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:4",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:4",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:4>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:4>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:4>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:5",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:5",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:5",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:5",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:5",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:5",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:5",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:5",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:5",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:5",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:5",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:5>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:5>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:5>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:6",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:6",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:6",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:6",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:6",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:6",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:6",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:6",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:6",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:6",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:6",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:6>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:6>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:6>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:7",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:7",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:7",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:7",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:7",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:7",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:7",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:7",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:7",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:7",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:7",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:7>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:7>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:1>li:7>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:2",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:2",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:2",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2",
+   "prop": "padding-inline-start",
+   "on": "32px",
+   "off": "0px",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2",
+   "prop": "padding-left",
+   "on": "32px",
+   "off": "0px",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:1",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:1",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:1",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:1",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:1",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:1",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:1",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:1>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:1>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:1>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:2",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:2",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:2",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:2",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:2",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:2",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:2",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:2>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:2>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:2>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:3",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:3",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:3",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:3",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:3",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:3",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:3",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:3>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:3>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:3>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:4",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:4",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:4",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:4",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:4",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:4",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:4",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:4>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:4>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:2>li:4>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:3",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:3",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:3",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3",
+   "prop": "padding-inline-start",
+   "on": "32px",
+   "off": "0px",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3",
+   "prop": "padding-left",
+   "on": "32px",
+   "off": "0px",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:1",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:1",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:1",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:1",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:1",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:1",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:1",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:1>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:1>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:1>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:2",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:2",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:2",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:2",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:2",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:2",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:2",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:2>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:2>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:2>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:3",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:3",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:3",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:3",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:3",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:3",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:3",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:3>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:3>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:3>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:4",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:4",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:4",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:4",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:4",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:4",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:4",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:4>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:4>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:4>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:5",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:5",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:5",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:5",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:5",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:5",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:5",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:5",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:5",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:5",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:5",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:5>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:5>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:3>li:5>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:4",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:4",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:4",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4",
+   "prop": "padding-inline-start",
+   "on": "32px",
+   "off": "0px",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4",
+   "prop": "padding-left",
+   "on": "32px",
+   "off": "0px",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:1",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:1",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:1",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:1",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:1",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:1",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:1",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2>a:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2>a:1",
+   "prop": "text-decoration",
+   "on": "underline 1.6px",
+   "off": "underline",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2>a:1",
+   "prop": "text-decoration-thickness",
+   "on": "1.6px",
+   "off": "auto",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2>a:1",
+   "prop": "text-underline-offset",
+   "on": "4.8px",
+   "off": "auto",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2>a:1",
+   "prop": "transition-duration",
+   "on": "0.1s",
+   "off": "0s",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2>a:1",
+   "prop": "transition-property",
+   "on": "text-decoration-thickness",
+   "off": "all",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2>a:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2>a:1",
+   "prop": "text-underline-offset",
+   "on": "4.8px",
+   "off": "auto",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2>a:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:2>a:1",
+   "prop": "text-underline-offset",
+   "on": "4.8px",
+   "off": "auto",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:3",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:3",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:3",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:3",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:3",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:3",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:3",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:4",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:4",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:4",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:4",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:4",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:4",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:4",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:5",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:5",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:5",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:5",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:5",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:5",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:5",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:5",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:5",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:5",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:4>li:5",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:5",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:5",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:5",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>p:8>a:1",
+   "prop": "text-decoration",
+   "on": "underline 1.6px",
+   "off": "underline",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>p:8>a:1",
+   "prop": "text-decoration-thickness",
+   "on": "1.6px",
+   "off": "auto",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>p:8>a:1",
+   "prop": "text-underline-offset",
+   "on": "4.8px",
+   "off": "auto",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>p:8>a:1",
+   "prop": "transition-duration",
+   "on": "0.1s",
+   "off": "0s",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>p:8>a:1",
+   "prop": "transition-property",
+   "on": "text-decoration-thickness",
+   "off": "all",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>p:8>a:1",
+   "prop": "text-underline-offset",
+   "on": "4.8px",
+   "off": "auto",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>p:8>a:1",
+   "prop": "text-underline-offset",
+   "on": "4.8px",
+   "off": "auto",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>p:8>a:2",
+   "prop": "text-decoration",
+   "on": "underline 1.6px",
+   "off": "underline",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>p:8>a:2",
+   "prop": "text-decoration-thickness",
+   "on": "1.6px",
+   "off": "auto",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>p:8>a:2",
+   "prop": "text-underline-offset",
+   "on": "4.8px",
+   "off": "auto",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>p:8>a:2",
+   "prop": "transition-duration",
+   "on": "0.1s",
+   "off": "0s",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>p:8>a:2",
+   "prop": "transition-property",
+   "on": "text-decoration-thickness",
+   "off": "all",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>p:8>a:2",
+   "prop": "text-underline-offset",
+   "on": "4.8px",
+   "off": "auto",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>p:8>a:2",
+   "prop": "text-underline-offset",
+   "on": "4.8px",
+   "off": "auto",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:6",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:6",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:6",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:7",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:7",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:7",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:8",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:8",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:8",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:9",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:9",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:9",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5",
+   "prop": "padding-inline-start",
+   "on": "32px",
+   "off": "0px",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5",
+   "prop": "padding-left",
+   "on": "32px",
+   "off": "0px",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:1",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:1",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:1",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:1",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:1",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:1",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:1",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:1>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:1>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:1>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:2",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:2",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:2",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:2",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:2",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:2",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:2",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:2",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:2>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:2>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:2>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:3",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:3",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:3",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:3",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:3",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:3",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:3",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:3",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:3>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:3>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:3>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:4",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:4",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:4",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:4",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:4",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:4",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:4",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:4",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:4>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:4>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:4>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5>a:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5>a:1",
+   "prop": "text-decoration",
+   "on": "underline 1.6px",
+   "off": "underline",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5>a:1",
+   "prop": "text-decoration-thickness",
+   "on": "1.6px",
+   "off": "auto",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5>a:1",
+   "prop": "text-underline-offset",
+   "on": "4.8px",
+   "off": "auto",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5>a:1",
+   "prop": "transition-duration",
+   "on": "0.1s",
+   "off": "0s",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5>a:1",
+   "prop": "transition-property",
+   "on": "text-decoration-thickness",
+   "off": "all",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5>a:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5>a:1",
+   "prop": "text-underline-offset",
+   "on": "4.8px",
+   "off": "auto",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5>a:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:5>a:1",
+   "prop": "text-underline-offset",
+   "on": "4.8px",
+   "off": "auto",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:6",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:6",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:6",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:6",
+   "prop": "display",
+   "on": "inline",
+   "off": "inline-block",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:6",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:6",
+   "prop": "margin-inline-end",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:6",
+   "prop": "margin-inline-start",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:6",
+   "prop": "margin-left",
+   "on": "-1px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:6",
+   "prop": "margin-right",
+   "on": "16px",
+   "off": "0px",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:6",
+   "prop": "text-wrap-mode",
+   "on": "wrap",
+   "off": "nowrap",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:6",
+   "prop": "white-space-collapse",
+   "on": "collapse",
+   "off": "preserve",
+   "pseudo": "::marker"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:6>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:6>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>ul:5>li:6>strong:1",
+   "prop": "list-style-position",
+   "on": "inside",
+   "off": "outside",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:10",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:10",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:10",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:11",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:11",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:11",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:12",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:12",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:12",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:13",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:13",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-policy__container",
+   "rel": "div:2>div:1>div:1>h2:13",
+   "prop": "word-break",
+   "on": "break-word",
+   "off": "normal",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-payment-button",
+   "rel": "shopify-accelerated-checkout:1>shopify-buy-it-now-button:1>button:1",
+   "prop": "position",
+   "on": "relative",
+   "off": "static",
+   "pseudo": ""
+  },
+  {
+   "cont": "div.shopify-payment-button",
+   "rel": "shopify-accelerated-checkout:1>shopify-buy-it-now-button:1>button:1",
+   "prop": "content",
+   "on": "\"\"",
+   "off": "none",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-payment-button",
+   "rel": "shopify-accelerated-checkout:1>shopify-buy-it-now-button:1>button:1",
+   "prop": "display",
+   "on": "block",
+   "off": "inline",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-payment-button",
+   "rel": "shopify-accelerated-checkout:1>shopify-buy-it-now-button:1>button:1",
+   "prop": "position",
+   "on": "absolute",
+   "off": "static",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-payment-button",
+   "rel": "shopify-accelerated-checkout:1>shopify-buy-it-now-button:1>button:1",
+   "prop": "z-index",
+   "on": "-1",
+   "off": "auto",
+   "pseudo": "::before"
+  },
+  {
+   "cont": "div.shopify-payment-button",
+   "rel": "shopify-accelerated-checkout:1>shopify-buy-it-now-button:1>button:1",
+   "prop": "content",
+   "on": "\"\"",
+   "off": "none",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-payment-button",
+   "rel": "shopify-accelerated-checkout:1>shopify-buy-it-now-button:1>button:1",
+   "prop": "display",
+   "on": "block",
+   "off": "inline",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-payment-button",
+   "rel": "shopify-accelerated-checkout:1>shopify-buy-it-now-button:1>button:1",
+   "prop": "position",
+   "on": "absolute",
+   "off": "static",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-payment-button",
+   "rel": "shopify-accelerated-checkout:1>shopify-buy-it-now-button:1>button:1",
+   "prop": "transition-duration",
+   "on": "0.1s",
+   "off": "0s",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-payment-button",
+   "rel": "shopify-accelerated-checkout:1>shopify-buy-it-now-button:1>button:1",
+   "prop": "transition-property",
+   "on": "box-shadow",
+   "off": "all",
+   "pseudo": "::after"
+  },
+  {
+   "cont": "div.shopify-payment-button",
+   "rel": "shopify-accelerated-checkout:1>shopify-buy-it-now-button:1>button:1",
+   "prop": "z-index",
+   "on": "1",
+   "off": "auto",
+   "pseudo": "::after"
+  }
+ ]
+}

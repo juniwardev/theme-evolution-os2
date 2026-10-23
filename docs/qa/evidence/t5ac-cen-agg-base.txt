@@ -1,0 +1,46 @@
+runs=144 errors=0 distinct matched selectors=44 unparsed distinct=0
+::selection | max 636 theme 630 | theme,shopify | runs 144 | background-color: rgba(var(--color-foreground),.2); | html:1|
+:focus | max 636 theme 630 | theme,shopify | runs 144 | outline: 0px; box-shadow: none; | html:1|
+:focus-visible | max 636 theme 630 | theme,shopify | runs 144 | outline: var(--focused-base-outline); outline-offset: var(--focused-base-outline-offset);  | html:1|
+:root | max 1 theme 1 | theme | runs 144 | --alpha-button-background: 1; --alpha-button-border: 1; --alpha-link: .85; --alpha-badge-b | html:1|
+:root @(prefers-reduced-motion: no-preference) and (hover: hover) | max 1 theme 1 | theme | runs 144 | --easter-egg: none; --sparkle: url(./sparkle.gif); | html:1|
+.form__message | max 1 theme 0 | shopify | runs 8 | align-items: center; display: flex; font-size: 1.4rem; line-height: 1; margin-top: 1rem; | iv:1>div:1>div:1>form:1>small:1|pc--opt-out-form-message form__message
+.form__message .icon | max 1 theme 0 | shopify | runs 8 | flex-shrink: 0; height: 1.3rem; margin-right: 0.5rem; width: 1.3rem; | y:1>div:2>div:1>div:1>div:1>div:1>form:1>small:1>svg:1|icon icon-error
+.grid | max 5 theme 5 | theme | runs 144 | display: flex; flex-wrap: wrap; margin-bottom: 2rem; padding: 0px; list-style: none; colum | 1>body:1>div:1>div:1>header:1|grid h-16 grid-cols-(--content-grid) gri
+.grid @screen and (min-width: 750px) | max 5 theme 5 | theme | runs 90 | column-gap: var(--grid-desktop-horizontal-spacing); row-gap: var(--grid-desktop-vertical-s | 1>body:1>div:1>div:1>header:1|grid h-16 grid-cols-(--content-grid) gri
+.grid:last-child | max 3 theme 3 | theme | runs 144 | margin-bottom: 0px; | 1>body:1>div:1>div:1>header:1|grid h-16 grid-cols-(--content-grid) gri
+.hidden | max 2 theme 1 | theme,shopify | runs 32 | display: none !important; | -form:1>form:1>button:1>div:1|loading__spinner hidden absolute inset-0
+.loading__spinner | max 1 theme 1 | theme | runs 32 | position: absolute; z-index: 1; width: 1.8rem; | -form:1>form:1>button:1>div:1|loading__spinner hidden absolute inset-0
+.overflow-hidden | max 43 theme 43 | theme | runs 144 | overflow: hidden; | div:1>header:1>div:1>h2:1>a:1|relative flex h-full w-(--logo-width) ma
+.rte > :first-child | max 1 theme 0 | shopify | runs 8 | margin-top: 0px; | html:1>body:1>div:2>div:2>div:1>div:1|
+.rte > :last-child | max 1 theme 0 | shopify | runs 8 | margin-bottom: 0px; | html:1>body:1>div:2>div:2>div:1>div:1|
+.rte a | max 4 theme 0 | shopify | runs 8 | color: rgba(var(--color-link),var(--alpha-link)); text-underline-offset: 0.3rem; text-deco | html:1>body:1>div:2>div:2>div:1>div:1>ul:4>li:2>a:1|
+.rte a:hover | max 4 theme 0 | shopify | runs 8 | color: rgb(var(--color-link)); text-decoration-thickness: 0.2rem; | html:1>body:1>div:2>div:2>div:1>div:1>ul:4>li:2>a:1|
+.rte li | max 27 theme 0 | shopify | runs 8 | list-style: inherit; | html:1>body:1>div:2>div:2>div:1>div:1>ul:1>li:1|
+.rte li:last-child | max 5 theme 0 | shopify | runs 8 | margin-bottom: 0px; | html:1>body:1>div:2>div:2>div:1>div:1>ul:1>li:7|
+.rte ul | max 5 theme 0 | shopify | runs 8 | list-style-position: inside; padding-left: 2rem; | html:1>body:1>div:2>div:2>div:1>div:1>ul:1|
+.rte::after | max 1 theme 0 | shopify | runs 8 | clear: both; content: ""; display: block; | html:1>body:1>div:2>div:2>div:1|rte
+.section-header.shopify-section-group-header-group | max 1 theme 1 | theme | runs 144 | z-index: 3; | html:1>body:1>div:1|shopify-section shopify-section-group-he
+.shopify-payment-button__button--unbranded::after | max 1 theme 0 | shopify | runs 8 | content: ""; position: absolute; top: var(--buttons-border-width); right: var(--buttons-bo | -buy-it-now-button:1>button:1|shopify-payment-button__button shopify-p
+.shopify-payment-button__button--unbranded::before | max 1 theme 0 | shopify | runs 8 | content: ""; position: absolute; inset: 0px; z-index: -1; border-radius: var(--buttons-rad | -buy-it-now-button:1>button:1|shopify-payment-button__button shopify-p
+.shopify-payment-button__button--unbranded:focus | max 1 theme 0 | shopify | runs 8 | outline: 0px; box-shadow: 0 0 0 .3rem rgb(var(--color-background)),0 0 0 .5rem rgba(var(-- | -buy-it-now-button:1>button:1|shopify-payment-button__button shopify-p
+.shopify-payment-button__button--unbranded:focus-visible | max 1 theme 0 | shopify | runs 8 | outline: 0px; box-shadow: 0 0 0 .3rem rgb(var(--color-background)),0 0 0 .5rem rgba(var(-- | -buy-it-now-button:1>button:1|shopify-payment-button__button shopify-p
+.shopify-payment-button__button--unbranded:focus:not(:focus-visible):not(.focused) | max 1 theme 0 | shopify | runs 8 | box-shadow: inherit; | -buy-it-now-button:1>button:1|shopify-payment-button__button shopify-p
+.shopify-payment-button__button--unbranded:hover::after | max 1 theme 0 | shopify | runs 8 | --border-offset: 1.3px; box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border- | -buy-it-now-button:1>button:1|shopify-payment-button__button shopify-p
+.shopify-section-group-header-group | max 1 theme 1 | theme | runs 144 | z-index: 4; | html:1>body:1>div:1|shopify-section shopify-section-group-he
+.uppercase | max 18 theme 18 | theme | runs 144 | text-transform: uppercase; | iv:1>header:1>div:1>div:1>a:1|relative text-sm font-semibold tracking-
+a:not([href]) | max 2 theme 2 | theme | runs 16 | cursor: not-allowed; | 1>div:1>div:3>div:1>div:1>a:1|btn-secondary max-md:grow max-md:min-w-[
+button.shopify-payment-button__button--unbranded | max 1 theme 0 | shopify | runs 8 | --shadow-horizontal-offset: var(--buttons-shadow-horizontal-offset); --shadow-vertical-off | -buy-it-now-button:1>button:1|shopify-payment-button__button shopify-p
+details > * | max 2 theme 2 | theme | runs 32 | box-sizing: border-box; | v:1>div:2>details:1>summary:1|flex cursor-pointer list-none items-cent
+div:empty | max 4 theme 4 | theme | runs 144 | display: none; | v:3>cart-drawer:1>div:1>div:1|absolute top-0 left-0 block size-full cu
+h1 | max 1 theme 1 | theme,shopify | runs 144 | font-family: var(--font-heading-family); font-style: var(--font-heading-style); font-weigh | body:1>div:2>div:1>div:1>h1:1|font-heading text-3xl leading-tight font
+h1 @only screen and (min-width: 750px) | max 1 theme 1 | theme,shopify | runs 90 | font-size: calc(var(--font-heading-scale) * 4rem); | body:1>div:2>div:1>div:1>h1:1|font-heading text-3xl leading-tight font
+h2 | max 15 theme 8 | theme,shopify | runs 144 | font-family: var(--font-heading-family); font-style: var(--font-heading-style); font-weigh | html:1>body:1>div:1>div:1>header:1>div:1>h2:1|m-0 leading-none
+h2 @only screen and (min-width: 750px) | max 15 theme 8 | theme,shopify | runs 90 | font-size: calc(var(--font-heading-scale) * 2.4rem); | html:1>body:1>div:1>div:1>header:1>div:1>h2:1|m-0 leading-none
+h3 | max 5 theme 5 | theme | runs 32 | font-family: var(--font-heading-family); font-style: var(--font-heading-style); font-weigh | y:1>div:3>cart-drawer:1>div:1>div:2>div:3>div:1>h3:1|m-0 text-[1.1rem]
+h3 @only screen and (min-width: 750px) | max 5 theme 5 | theme | runs 20 | font-size: calc(var(--font-heading-scale) * 1.8rem); | y:1>div:3>cart-drawer:1>div:1>div:2>div:3>div:1>h3:1|m-0 text-[1.1rem]
+input[type="checkbox"] | max 2 theme 0 | shopify | runs 8 | display: inline-block; width: auto; margin-right: 0.5rem; | html:1>body:1>div:2>div:1>div:1>div:1>div:1>form:1>div:1>input:1|
+shopify-accelerated-checkout | max 1 theme 0 | shopify | runs 32 | --shopify-accelerated-checkout-button-border-radius: var(--buttons-radius-outset); --shopi | iv:2>div:5>product-form:1>form:1>div:1>shopify-accelerated-checkout:1|
+summary | max 1 theme 1 | theme | runs 32 | cursor: pointer; list-style: none; position: relative; | v:1>div:2>details:1>summary:1|flex cursor-pointer list-none items-cent
+summary::-webkit-details-marker | max 1 theme 1 | theme | runs 32 | display: none; | v:1>div:2>details:1>summary:1|flex cursor-pointer list-none items-cent
+UNPARSED: []
