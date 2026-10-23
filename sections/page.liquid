@@ -10,7 +10,7 @@
 
   {%- if page.content != blank -%}
     {% # Shopify's privacy opt-out widget is wider than a phone column. It scrolls inside this box, not the page. %}
-    <div class="overflow-x-auto" data-rich-text>{{ page.content }}</div>
+    <div class="prose prose-tokens overflow-x-auto" data-rich-text>{{ page.content }}</div>
   {%- endif -%}
 </div>
 

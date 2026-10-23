@@ -11,6 +11,13 @@
 @import "tailwindcss" source(none);
 
 /*
+ * Typography plugin (owner decision Q7): plain `prose` for merchant rich text. Its size,
+ * invert and color modifiers are not used; they cost kilobytes each and need the owner's
+ * sign-off against the CSS budget. See docs/plans/theme-evolution-tailwind-t4c.md.
+ */
+@plugin "@tailwindcss/typography";
+
+/*
  * Scan theme markup only. Automatic detection would also read docs/, CLAUDE.md and
  * AGENTS.md, which quote class names, and inflate the output.
  * Add an assets/*.js file here only if it adds or removes utility classes.
@@ -131,6 +138,38 @@
  */
 @utility grid-fill {
   grid-template-columns: repeat(auto-fill, minmax(min(var(--grid-min), 100%), 1fr));
+}
+
+/*
+ * Rich-text colors follow the text around them, so rich text works on any merchant palette
+ * and surface: the plugin's grays become the current color, or a mix of it for muted text,
+ * markers and hairlines. The code block keeps the plugin's dark surface (a neutral detail).
+ * Always pair with prose. See docs/plans/theme-evolution-tailwind-t4c.md D4c.3.
+ */
+@utility prose-tokens {
+  --tw-prose-body: currentColor;
+  --tw-prose-headings: currentColor;
+  --tw-prose-lead: color-mix(in oklab, currentColor 75%, transparent);
+  --tw-prose-links: currentColor;
+  --tw-prose-bold: currentColor;
+  --tw-prose-counters: color-mix(in oklab, currentColor 75%, transparent);
+  --tw-prose-bullets: color-mix(in oklab, currentColor 30%, transparent);
+  --tw-prose-hr: color-mix(in oklab, currentColor 10%, transparent);
+  --tw-prose-quotes: currentColor;
+  --tw-prose-quote-borders: color-mix(in oklab, currentColor 10%, transparent);
+  --tw-prose-captions: color-mix(in oklab, currentColor 75%, transparent);
+  --tw-prose-kbd: currentColor;
+  --tw-prose-code: currentColor;
+  --tw-prose-th-borders: color-mix(in oklab, currentColor 30%, transparent);
+  --tw-prose-td-borders: color-mix(in oklab, currentColor 10%, transparent);
+
+  /* While assets/base.css loads, its hr and blockquote rules remove these border styles. T5 deletes these two rules. */
+  & :where(hr) {
+    border-top-style: solid;
+  }
+  & :where(blockquote) {
+    border-inline-start-style: solid;
+  }
 }
 
 @layer base {
