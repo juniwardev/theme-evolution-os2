@@ -95,9 +95,7 @@
                 <button type="submit" name="add" class="btn-primary relative w-full [&.loading>span]:invisible">
                   <span>{{ 'products.product.add_to_cart' | t }}</span>
                   <div class="loading__spinner hidden absolute inset-0 size-full">
-                    <svg aria-hidden="true" focusable="false" class="absolute inset-0 m-auto size-5 animate-spin" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                      <circle class="stroke-current" fill="none" stroke-width="6" stroke-dasharray="140 200" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
-                    </svg>
+                    {% render 'spinner', css_class: 'absolute inset-0 m-auto' %}
                   </div>
                 </button>
                 {% if block.settings.show_dynamic_checkout %}

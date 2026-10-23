@@ -1,0 +1,27 @@
+{% doc %}
+  Renders an animated loading spinner: an SVG circle that rotates with `animate-spin` and
+  strokes in the current text color. It is decorative (hidden from assistive technology);
+  announce the busy state on the parent element instead, for example with `aria-busy`.
+
+  @param {string} [size] - 'sm' (16px), 'md' (20px, the default) or 'lg' (32px)
+  @param {string} [css_class] - Extra Tailwind classes for the SVG, such as positioning
+
+  @example
+  {% render 'spinner' %}
+  {% render 'spinner', size: 'lg', css_class: 'absolute inset-0 m-auto' %}
+{% enddoc %}
+
+{%- liquid
+  case size
+    when 'sm'
+      assign size_class = 'size-4'
+    when 'lg'
+      assign size_class = 'size-8'
+    else
+      assign size_class = 'size-5'
+  endcase
+-%}
+
+<svg aria-hidden="true" focusable="false" class="{{ size_class }} animate-spin {{ css_class }}" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+  <circle class="stroke-current" fill="none" stroke-width="6" stroke-dasharray="140 200" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+</svg>
