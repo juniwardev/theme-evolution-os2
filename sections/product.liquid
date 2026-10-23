@@ -45,7 +45,7 @@
           </div>
 
         {%- when 'description' -%}
-          <div {{ block.shopify_attributes }}>
+          <div class="prose prose-tokens max-w-none" data-rich-text {{ block.shopify_attributes }}>
             {%- assign sustainable_materials = "Mycelium Bio-Fabric,Organic Cotton,Recycled Polyester" | split: "," -%}
             {%- assign description_with_tooltips = product.description -%}
             {%- for material in sustainable_materials -%}
