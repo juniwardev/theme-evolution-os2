@@ -827,3 +827,137 @@ It is recorded only, which is correct: D5a.20's parity doesn't depend on it. The
 **Trajectory.** Round 3's findings were 3 REQUIRED and 3 nits, then 1 REQUIRED and 1 nit, and now none. The plan is ready for Step 0 to resume.
 
 APPROVE
+
+---
+
+## Round 4 (Rev 2.3)
+
+Reviewer: Plan-Reviewer (Claude). Date: 2026-10-23. Steps 1 and 2 are committed (`430d533`, `7dfb945`); the plan and index edits for Revision 2.3 are uncommitted.
+
+**Read:**
+
+- the Q-C6 section and "Architect ruling on Q-C6 (Rev 2.3)" in the coder-questions file;
+- in the plan: the Revision 2.3 changelog, §0 `P_end`, the §4.2 cross-build "explained" list, D5a.2, D5a.5, E5a.20, C5a.8 and its §9.2 row, owner check 3, and the §13 block "Resuming at Step 3 after Revision 2.3";
+- the index rows `:34-36`;
+- the impl notes, Round 2 (gate table, commits, "C5a.8 after Step 2");
+- the markup of the two layouts that never loaded `base.css`:
+  - `layout/password.liquid`, `templates/password.json`, `sections/password.liquid` (one `h1` at `:9`; form errors through `default_errors` at `:16-17`);
+  - `templates/gift_card.liquid` (`h1` at `:24`, `h2` at `:51`);
+- every `{% layout %}` use under `templates/`: only `password.json`, `gift_card.liquid` and `product.api.liquid`, which is JSON output with no CSS.
+
+### Assessment
+
+- **The ruling is right.**
+  - The coder's diagnosis holds: the parity rules ship in `assets/tailwind.css`, and both layouts load it without ever having loaded `base.css`.
+  - Option (b) needs a layout hook the plan doesn't list, and keeps a difference nobody can see.
+  - Option (c) turns C5a.17 red.
+  - E5a.20 is 0 B and not ⚑, with a stated reason (no pixel or geometry change). It is listed in owner check 3 for sight. That is proportionate.
+- **C5a.8's exception is tight, and it can still go red.**
+  - It names one property (`word-break`), one transition (`normal` → `break-word`), the headings `h1`-`h5` and their pseudo-elements, and two pages.
+  - It also requires every rect equal ±`G` and full-page screenshots pixel-equal.
+  - Any other difference on `/password` or PXG is red, and so is any `word-break` difference on a theme-layout page. There is no loophole for theme-layout pages.
+  - The §4.2 list names E5a.20 with its head value, so C5a.9(c) still flags any other change on those pages as unexplained.
+- **The other Step 2 parity rules have nothing to match on these pages.** I checked this by reading the markup, as the coordinator asked:
+  - D5a.6 needs `.shopify-policy__body`;
+  - D5a.8 needs `input[type="checkbox"]`;
+  - D5a.19 needs `[data-rich-text]`;
+  - D5a.20 needs `.form__message`;
+  - D5a.21 needs the hCaptcha container, and its fallback isn't in the end state anyway.
+
+  Neither layout, `sections/password.liquid` nor `templates/gift_card.liquid` contains any of these. That holds for the password form's error state too: `default_errors` prints Shopify's `div.errors` list, with no heading or checkbox. So D5a.2's exception sentence is correct.
+
+  I could verify this only by reading, not against the C5a.8 evidence, because that evidence wasn't kept (R4-1).
+- **The resumption block is sound in design.**
+  - No Step 0 item needs re-running: Revision 2.3 changes no CSS, no criterion's method and no classification on a theme-layout page.
+  - The guard `git diff --stat 7dfb945..HEAD -- . ':(exclude)docs'` correctly covers the docs-only commit that carries the questions, notes, harness and evidence.
+- **Owner decisions:** none reversed. T5b's heading questions concern fonts and line height, not `word-break`. Q5a.1 to Q5a.5 and E5a.18 are untouched.
+- **NC-1's result.** The impl notes `:83` record that the widget hides `small.form__message` with its own inline `style="display: none;"`, and that the element has no `hidden` attribute. That confirms N3-1 mattered:
+  - If the widget shows the message by clearing that inline style, Dawn's `display: flex` is today's shown value.
+  - D5a.20's full copy keeps it. Revision 2.2's 77 B version would have left the message `inline`.
+
+  The full copy can't show the message early either: the inline style beats any declaration in a stylesheet layer.
+- **Figures check out.**
+  - `P_end` 58,850 / 11,269 is inside the 58,850 to 58,932 / 11,264 to 11,344 projection.
+  - Spare is 1,150 / 731.
+  - Step 2's committed 58,983 / 11,303 is consistent: it still carries the 113 B leak lines and the layer-statement remnants that Steps 3 and 5 remove.
+
+### Findings
+
+#### R4-1: REQUIRED (the "passes as already run" claim rests on a run with no kept evidence). Doesn't change the design; it is a cheap step before Step 3
+
+- §13 says "C5a.8 passes as already run … No … C5a.8 run is repeated". The coder's Q-C6 text, though, says `docs/qa/evidence/t5ac-cmp-*` "is not kept for the failing run". The only trace is the impl notes' one-line summary (`:101-103`).
+- What the evidence would have to show is precisely what makes the new exception tight:
+  - exactly E5a.20's 9 entries on `/password` and PXG;
+  - nothing else on those pages;
+  - nothing at all on the theme-layout pages.
+- QA, and the C5a.20(b) audit trail, can't confirm this from a summary line. Nor could I verify the coordinator's last check against evidence.
+- **Fix:**
+  - Before Step 3, regenerate the C5a.8 comparison output from the retained scratch captures (`t5ac-cmp.mjs noop` on the `base` and Step 2 captures; no page loads needed). If the captures are gone, re-run C5a.8.
+  - Commit the output under `docs/qa/evidence/` (for example `t5ac-cmp-c58.json` plus a summary listing every difference by page, element, property and values).
+  - Change §13's "no C5a.8 run is repeated" to allow that fallback.
+
+#### N4-1: NIT. The exception's element scope
+
+`word-break` is inherited. A descendant element inside an `h1`-`h5` on these pages would carry the same entry and fall outside "`h1`-`h5` and their pseudo-elements", turning C5a.8 red on a correct build. None exists today: the 9 entries are 3 elements × 3. Adding "and descendants that inherit it" would make it robust. That is also the form the impl notes use for the theme-layout P entry (row 3).
+
+#### N4-2: NIT. The resumption guard
+
+The guard checks commits only. Step 0 item 1 also checked the working tree with `git status --porcelain -- layout sections blocks snippets templates locales assets src config scripts package.json package-lock.json`; add that here too.
+
+The two records disagree about what the dev theme holds. The questions file `:185` says a scratch proxy copy; the impl notes `:5` say HEAD. Step 3's fresh `shopify theme dev` run re-syncs it, so this is cosmetic.
+
+#### N4-3: NIT (conservative, no decision depends on it). The index after the measurement
+
+Index `:34` now shows the measured 58,850 / 11,269, but still says "Step 0 item 12 re-measures". The T5b rows `:35-36` are still computed from the 58,850 to 58,932 projection that `:34` calls "the measured-anchor row above". On the measured value, T5b's recommended row would be 58,335 to 58,470 / 11,099 to 11,169. The current rows contain those values, so they are safe, but they are now looser than the row they cite.
+
+#### N4-4: NIT. D5a.2's tag
+
+"The other parity rules match nothing on those pages `[measured]`": C5a.8 measured *no difference*. *No match* is a reading fact, and I confirmed it above. Tag it `[derived]` (by reading), or reword it to "change nothing".
+
+### Trajectory
+
+This is a re-entry after a clean Step 0 and two committed steps. The coder's stop was correct and narrow, and the ruling is the minimal one. One REQUIRED finding remains: keep the evidence for the run that the resumption block relies on. It is a recording step, not a redesign. Four nits.
+
+Fold R4-1 in and Steps 3-9 can proceed. It doesn't need another review round.
+
+### Required changes (round 4)
+
+1. **R4-1.** Before Step 3, regenerate and commit the post-Step 2 C5a.8 comparison output under `docs/qa/evidence/`, or re-run C5a.8 if the scratch captures are gone. It must show E5a.20's 9 `word-break` entries on `/password` and PXG as the only differences on every page, state and proxy. Amend §13's "no C5a.8 run is repeated" to allow that fallback.
+
+APPROVE WITH CHANGES
+
+---
+
+## Round 4 final (Rev 2.3.1)
+
+Reviewer: Plan-Reviewer (Claude). Date: 2026-10-23.
+
+**Read:**
+
+- the Revision 2.3.1 changelog (plan `:20-22`);
+- the §13 resumption block (`:964-975`);
+- D5a.2 (`:386`) and C5a.8 (`:734`);
+- ripgrep hits for "descendants that inherit" in the plan (`:331` §4.2, `:712` E5a.20, `:734` C5a.8);
+- the index rows `:34-37`;
+- the questions file's "What to run" list (`:210-218`).
+
+**Each change, as specified:**
+
+- **R4-1: closed.** Before Step 3, the Coder must regenerate the post-Step 2 comparison with `t5ac-cmp.mjs noop` from the scratch captures. If they're gone, C5a.8 is re-run in full on `7dfb945`. The output and a summary of every difference go into `docs/qa/evidence/` in a docs-only commit.
+  - The summary must show E5a.20's entries as the **only** differences outside `NZ`, on every page, state and proxy, with rects ±`G` and pixels equal. Anything else stops with a coder question.
+  - "No C5a.8 run is repeated" now reads "repeated only under the fallback above".
+  - The questions file says the same.
+- **N4-1: applied** in §4.2, E5a.20 and C5a.8 (inheriting descendants are covered), and in the questions file. The exception is still limited to one property, one value change and two pages.
+- **N4-2: applied.** The guard now also runs the working-tree `git status --porcelain` check on the theme paths. If either check prints anything, C5a.8 is re-run in full.
+- **N4-3: applied.** The index's T5a row is the measured 58,850 / 11,269, and "Step 0 item 12 re-measures" has gone. The T5b rows are rebased on the measured value, and each figure checks out:
+  - 58,850 − 515 = 58,335; 58,850 − 380 = 58,470;
+  - 11,269 − 170 = 11,099; 11,269 − 100 = 11,169;
+  - 58,850 + 80 = 58,930; 11,269 + 50 = 11,319;
+  - (b+): 58,850 + 570 = 59,420.
+- **N4-4: applied.** D5a.2 now tags "match nothing" as `[derived]` by reading, and says C5a.8 measured no other difference.
+
+**Regressions:** none. No CSS changes, and no decision or criterion is renumbered.
+
+**Trajectory.** Round 4 had 1 REQUIRED finding and 4 nits; all are applied, and nothing is open. Steps 3-9 can proceed once the C5a.8 evidence is committed, as §13 requires.
+
+APPROVE

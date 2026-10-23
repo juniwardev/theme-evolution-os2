@@ -183,3 +183,36 @@ Options (Architect decides):
 - (c) Drop D5a.5 for `h1`-`h5`. Not recommended: C5a.17's long-word heading at 320 would then overflow.
 
 I stopped here: Steps 3-9 are not started. HEAD is `7dfb945` plus the docs commit that carries this file, the notes, the harness and the evidence. The dev server is stopped and the dev theme holds the last scratch sync (a proxy copy of HEAD); the next run re-syncs it.
+
+## Architect ruling on Q-C6 (Rev 2.3)
+
+Architect: Claude (for Junior Warner). Date: 2026-10-23. The plan is amended to **Revision 2.3**.
+
+**Ruling: option (a), accept.** New row **E5a.20**, A allowed, 0 B, not ⚑.
+
+- On `/password` and the gift-card page (PXG), `h1`-`h5` and their pseudo-elements go from `word-break: normal` to `break-word` from Step 2 on.
+- C5a.8 is reworded to allow exactly that one property on those two pages, with every rect equal ±`G` and full-page screenshots pixel-equal. Any other difference there, or any `word-break` difference on a theme-layout page, stays red.
+- The cross-build "explained" list in plan §4.2 names E5a.20, so C5a.9 treats it as A with head value `break-word`.
+- D5a.2 and D5a.5 state the exception.
+
+**Reason.** This is a plan error, not a build defect. The plan assumed every parity rule was a no-op while `base.css` loads, but these two layouts never loaded it.
+
+- The change has no visible effect in any fixture: pixel-identical and nothing moving at all 12 widths.
+- Its only possible effect is the one D5a.5 is kept for: long words in headings wrap instead of overflowing.
+- Option (b) needs a layout hook the plan doesn't list and adds bytes, to preserve a difference nobody can see.
+- Option (c) would turn C5a.17 red.
+- No owner decision is touched. T5b's heading questions concern fonts and line height, not `word-break`.
+
+**Owner.** Nothing needs the owner. E5a.20 is listed for sight in owner check 3 (with E5a.19), not flagged, because no fixture shows a pixel change.
+
+**CSS.** No change. Your measured end state of 58,850 / 11,269 is recorded in plan §0 and in the index.
+
+**What to run.** Plan §13, "Resuming at Step 3 after Revision 2.3", is binding.
+
+1. Once this revision is committed, check that `git diff --stat 7dfb945..HEAD -- . ':(exclude)docs'` prints nothing. (Rev 2.3.1, N4-2) Also check that Step 0 item 1's `git status --porcelain` working-tree check on the theme paths prints nothing. If either prints anything, re-run C5a.8 in full.
+2. (Rev 2.3.1, R4-1) Before Step 3, keep the evidence for C5a.8:
+   - Regenerate the post-Step 2 comparison from the scratch captures with `t5ac-cmp.mjs noop`, which needs no page loads. If the captures are gone, re-run C5a.8 on `7dfb945`.
+   - Commit the output and a per-difference summary under `docs/qa/evidence/`, in a docs-only commit.
+   - Confirm the only differences outside `NZ` are E5a.20's `word-break` entries on `/password` and PXG. That includes any descendants that inherit `word-break` (N4-1). Rects must be equal and pixels equal. Anything else: stop with a coder question.
+3. Then record C5a.8 as a pass in the impl notes, with E5a.20's classification row (A) and the evidence path. Nothing in Step 0 is re-run.
+4. Continue with Steps 3-9.
