@@ -34,7 +34,9 @@
   <div class="mx-auto mb-16 max-w-[37.5rem] text-center">
     <h1 class="font-heading text-3xl leading-tight font-bold uppercase md:text-4xl">{{ page.title | escape }}</h1>
     {%- if page.content != blank -%}
-      <div class="mt-6 text-foreground/75" data-rich-text>{{ page.content }}</div>
+      <div class="mt-6 text-foreground/75">
+        <div class="prose prose-tokens max-w-none" data-rich-text>{{ page.content }}</div>
+      </div>
     {%- endif -%}
   </div>
 
