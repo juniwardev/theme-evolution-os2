@@ -240,21 +240,16 @@
   }
   ul:not([class]),
   ol:not([class]) {
-    padding-inline-start: 1.5em; /* T4 */
+    padding-inline-start: 1.5em; /* T4c */
   }
   ul:not([class]) {
-    list-style: disc; /* T4 */
+    list-style: disc; /* T4c */
   }
   ol:not([class]) {
-    list-style: decimal; /* T4 */
+    list-style: decimal; /* T4c */
   }
   a:not([class]) {
-    text-decoration-line: underline; /* T4 */
-  }
-  input:where(:not([type="checkbox"], [type="radio"], [type="hidden"])),
-  select,
-  textarea {
-    border-width: 1px; /* T4 */
+    text-decoration-line: underline; /* T4c */
   }
   button:not(:disabled),
   [role="button"]:not(:disabled) {
