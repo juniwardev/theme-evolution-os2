@@ -79,3 +79,63 @@ Report ends with `PASS`; `.approved` present; tracked tree clean at a7e2994 (unt
 ### Rollback
 `shopify theme push --store=theme-evolution-os2.myshopify.com --theme=187953643616 --path=~/Projects/Shopify/theme-backups/theme-evolution-os2/2026-10-22-pre-t1-staging-2 --nodelete`
 Live was not changed. Do not publish #187953643616.
+
+## Live push
+
+**Deploy timestamp:** 2026-10-23 00:54 UTC (local 2026-10-22 17:54)
+**Target:** theme-evolution-os2.myshopify.com, theme `138872651872` (live, "theme-evolution-os2")
+**Git SHA deployed:** `0a1c9fa` (theme files identical to staging push 2, `a7e2994`; only docs changed since)
+**Authority:** owner request 2026-10-23, "Push to production and let's move on to the next phase." Recorded in the QA report under "Owner decision (2026-10-23)".
+**Method:** `shopify theme push -e production`
+
+### Gates
+Report ends `PASS`; `docs/qa/theme-evolution-tailwind-t1.approved` exists; no modified or staged tracked files and untracked files only under `docs/`; `npm ci`, `npm run check:css` and `npm run check:hidden` exit 0; live theme resolved from the store as #138872651872.
+
+### Applied environment (CLI box)
+```
+Using applicable flags from production environment:
+  store: theme-evolution-os2.myshopify.com
+  ignore: config/settings_data.json
+  live: true
+  nodelete: true
+  allow-live: true
+```
+Result: "The theme 'theme-evolution-os2' (#138872651872) was pushed successfully."
+
+### Backups
+- Store-side: `theme-evolution-os2-backup-2026-10-22-pre-t1-live` (#187959181408, unpublished)
+- Local pre-push: `~/Projects/Shopify/theme-backups/theme-evolution-os2/2026-10-22-pre-t1-live-push`
+- Local post-push pull: `~/Projects/Shopify/theme-backups/theme-evolution-os2/2026-10-22-post-t1-live-push`
+
+### Editor-change check
+Compared live's `templates/` and `sections/` in the pre-push backup against the repo. `sections/header-group.json` and `sections/footer-group.json` are identical, so there are no editor edits to the footer social URLs or header group. JSON differences: `templates/page.materials.json` and `templates/product.landing-page.json`, both only Shopify's auto-generated `/* IMPORTANT ... */` header. Liquid differences are all T1 changes: `header.liquid`, `footer.liquid`, `cart-drawer.liquid` (`[data-header-cart-icon]` selector), `hello-world.liquid` (scoped `.icon` rule). No unexpected editor changes. Push proceeded.
+
+### settings_data.json check
+`config/settings_data.json` in the post-push pull is byte-identical to the pre-push copy (`cmp` clean). It was skipped by the push.
+Note: T1 added settings to `config/settings_schema.json` (heading font, accent, accent foreground). Because `settings_data.json` is not pushed, live keeps its saved values and Shopify falls back to the schema defaults for the new keys, as intended by the plan (section 8.1). The merchant can set them in the theme editor.
+
+### Verification (live, behind the storefront password; the password was not printed or stored)
+- Health: `302` (password gate, healthy).
+- The cascade-layer statement `@layer properties, theme, base, legacy, components, utilities, shims;` is the first element in `<head>`.
+- `tailwind.css` is linked (`.../assets/tailwind.css?v=...`) and returns `200`.
+- Header wrapper has `col-span-full`; `<header class="grid h-16 grid-cols-(--content-grid) grid-rows-[minmax(0,1fr)]">` present.
+- `data-header-cart-icon` present (4 occurrences).
+- Oswald `oswald_n7` woff2 `<link rel="preload" as="font">` present.
+- Footer wrapper has `col-span-full`; 5 social links render (facebook, instagram, tiktok, youtube, x).
+- Accent custom properties `--color-accent` and `--color-accent-foreground` are emitted.
+
+### Pending operator checks
+- Theme editor checks C1.2, C1.7 and C1.8 on live.
+- The announcement-bar full-bleed variant, once enabled.
+- Setting the dark Ride colors in the theme editor.
+- Confirming the Supercycle app embed is still enabled (settings_data.json is unchanged, but confirm in the editor).
+- 1440x900 and 375x667 visual checks on live.
+
+### Rollback
+- Preferred (operator action): in Shopify admin, Online Store, Themes, publish `theme-evolution-os2-backup-2026-10-22-pre-t1-live` (#187959181408). This restores the whole theme including settings and app embeds.
+- Files only:
+  ```
+  shopify theme push --store=theme-evolution-os2.myshopify.com --theme=138872651872 \
+    --path=~/Projects/Shopify/theme-backups/theme-evolution-os2/2026-10-22-pre-t1-live-push \
+    --nodelete --allow-live --ignore=config/settings_data.json
+  ```
