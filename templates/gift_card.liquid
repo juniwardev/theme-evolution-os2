@@ -15,20 +15,11 @@
     {% # Social, title, etc. %}
     {% render 'meta-tags' %}
 
-    {% style %}
-      main {
-        text-align: center;
-      }
-      main img {
-        display: unset;
-      }
-    {% endstyle %}
-
     {{ content_for_header }}
   </head>
 
   <body>
-    <main>
+    <main class="text-center">
       <div class="shopify-section">
         <h1>{{ gift_card.balance | money }}</h1>
 
@@ -45,9 +36,10 @@
 
         <p>
           {% if settings.logo %}
-            {{ settings.logo | image_url: width: 300 | image_tag: alt: shop.name }}
+            {{ settings.logo | image_url: width: 300 | image_tag: alt: shop.name, class: 'inline' }}
           {% else %}
             <img
+              class="inline"
               src="{{ 'gift-card/card.svg' | shopify_asset_url }}"
               alt="{{ 'gift_card.card' | t }}"
               width="300"
@@ -56,13 +48,14 @@
           {% endif %}
         </p>
 
-        <h2>{{ shop.name }}</h2>
+        <h2>{{ shop.name | escape }}</h2>
         <p>{{ 'gift_card.use_at_checkout' | t }}</p>
         <p>{{ gift_card.code | format_code }}</p>
 
         {% if gift_card.pass_url %}
           <a href="{{ gift_card.pass_url }}">
             <img
+              class="inline"
               src="{{ 'gift-card/add-to-apple-wallet.svg' | shopify_asset_url }}"
               alt="{{ 'gift_card.add_to_apple_wallet' | t }}"
               width="200"
