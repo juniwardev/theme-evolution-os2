@@ -5,9 +5,13 @@
   https://shopify.dev/docs/storefronts/themes/architecture/templates/page
 {% endcomment %}
 
-<h1>{{ page.title }}</h1>
+<div class="flex flex-col gap-8 px-8 py-10 md:py-16" data-page-shell>
+  <h1 class="font-heading text-3xl leading-tight font-bold uppercase md:text-4xl">{{ page.title | escape }}</h1>
 
-{{ page.content }}
+  {%- if page.content != blank -%}
+    <div data-rich-text>{{ page.content }}</div>
+  {%- endif -%}
+</div>
 
 {% schema %}
 {
