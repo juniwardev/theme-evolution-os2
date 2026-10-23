@@ -1,37 +1,48 @@
-# Index: Tailwind phase T4 (commerce and content pages), split into T4a and T4b
+# Index: Tailwind phase T4 (commerce and content pages), split into T4a, T4b and T4c
 
-Slug family: `theme-evolution-tailwind-t4a` and `theme-evolution-tailwind-t4b`
+Slug family: `theme-evolution-tailwind-t4a`, `theme-evolution-tailwind-t4b` and `theme-evolution-tailwind-t4c`
 Parent: `docs/plans/theme-evolution-tailwind.md` §11
-Architect: Claude (for Junior Warner). Date: 2026-10-22.
+Architect: Claude (for Junior Warner). Date: 2026-10-22; updated 2026-10-23 (T4b Revision 2, review R6).
 
-This file holds no implementation detail. It records the split and points to the two plans. Review and implement the sub-phase files, not this one.
+This file holds no implementation detail. It records the splits and points to the three plans. Review and implement the sub-phase files, not this one.
 
 | Sub-phase | Plan | State | Scope |
 |---|---|---|---|
-| **T4a, cart** | `docs/plans/theme-evolution-tailwind-t4a.md` | **Full addendum, Revision 2** (review round 1 addressed) | `sections/cart-drawer.liquid`, `sections/cart.liquid`, `snippets/cart-intelligence-banner.liquid`, `snippets/image.liquid` (and its 3 other callers' argument rename), new `snippets/spinner.liquid` (rendered by `sections/product.liquid`), two keys in `locales/en.default.json`, the `CLAUDE.md` QA bullet. Theme check 1 → 0 |
-| **T4b, content** | `docs/plans/theme-evolution-tailwind-t4b.md` | **Outline only**; to be written in full after T4a is on staging | collection, collections, search, a pagination snippet, page, blog, article, 404, password, gift card, the materials archive and recommendations, `@tailwindcss/typography` (`prose`), the D6 parity-rule removals, R12 |
+| **T4a, cart** | `docs/plans/theme-evolution-tailwind-t4a.md` | **Approved** (Revision 2.1). QA PASS WITH NITS (`docs/qa/theme-evolution-tailwind-t4a-report.md`). **On staging #187953643616** since 2026-10-23 09:50 UTC (deploy note `docs/qa/theme-evolution-tailwind-t4a-deploy.md`). Not yet live | `sections/cart-drawer.liquid`, `sections/cart.liquid`, `snippets/cart-intelligence-banner.liquid`, `snippets/image.liquid` (and its 3 other callers' argument rename), new `snippets/spinner.liquid` (rendered by `sections/product.liquid`), two keys in `locales/en.default.json`, the `CLAUDE.md` QA bullet. Theme check 1 → 0 |
+| **T4b, content** | `docs/plans/theme-evolution-tailwind-t4b.md` | **Full addendum, Revision 2** (review round 1 addressed, `docs/reviews/theme-evolution-tailwind-t4b-review.md`) | collection, collections, search, a pagination snippet, page, blog, article, 404, password, gift card, the materials archive and recommendations, R12, unused-utility exclusions, the D6 input-rule removal. No `prose`. Ships without owner sign-off: it can't breach the CSS budget (T4b §5.15) |
+| **T4c, rich text** | `docs/plans/theme-evolution-tailwind-t4c.md` | **Outline only**; written in full after T4b is on staging | `@tailwindcss/typography` (`prose`) on page, article, blog and archive rich text and the product description; link utilities for the other rich-text sinks; the D6 list and link removals. **Gated:** proceeds if its re-measured projection fits both budgets; otherwise it stops for the owner (T4c §4, T4b §15.3) |
 
-**Why split** (full reasoning in T4a D4a.1):
+**Why split** (full reasoning in T4a D4a.1 and T4b D4b.1):
 
-- **Size.** About 16 files and 1,500 lines, roughly twice T3, which needed three review rounds.
-- **Risk profiles.** The cart is a JavaScript state machine with the Section Rendering API, on every page. The content pages are typography with a budget gate.
+- **T4a / rest of T4: size.** About 16 files and 1,500 lines, roughly twice T3, which needed three review rounds.
+- **Risk profiles.**
+  - The cart is a JavaScript state machine with the Section Rendering API, on every page.
+  - The content pages are conversions at parity.
+  - `prose` is the one budget-heavy and typography-heavy change.
 - **Independent shipping.** Each ships to staging #187953643616 on its own.
-- **Order.** T4a first, because it is a dependency (shared snippets) and because it removes the last theme-check offense.
+- **Order.** T4a first (shared snippets; the last theme-check offense), then T4b, then T4c on T4b's measured tree.
 
-**Starting condition.** T4a's Coder starts only after T3 is on staging (T4a §13 Step 0 item 1). T4b's full plan is written after T4a is on staging, so it builds on measured T4a figures.
+**Starting conditions.**
 
-**CSS budget across both** (T4a §5.8). The figures are 60,000 bytes minified and 12,000 gzip. The 2026-10-23 measurements are the orchestrator's (`@tailwindcss/typography@0.5.20`); the T4a and T4b growth is estimated.
+- T4b's Coder starts only after T4a is on staging, which it now is, **and after T4b's plan, review and this index are committed** (T4b §13 Step 0 item 1).
+- T4c's full plan is written after T4b is on staging.
 
-| After | Minified | Gzip |
-|---|---|---|
-| T3 (final commit, measured) | 41,801 | 8,989 |
-| T4a (estimated) | 43,801-45,801 | 9,389-9,789 |
-| T4b with plain `prose` (measured +12,591 / +1,651) | **59,392-64,392** | **11,640-12,540** |
-| T4b with `prose prose-sm md:prose-lg` (measured +24,602 / +2,657) | 71,403-76,403 | 12,646-13,546 |
+**CSS budget** (60,000 bytes minified, 12,000 gzip `-9`; `CLAUDE.md` `### Performance & Core Web Vitals`). The authoritative figures and the decision rule are in **T4b §15.3** (owner questions) and **T4c §4** (the gate). This table only summarizes them.
 
-- **Both budgets are at risk.** **Minified is the likelier breach**, at up to about 4,400 over; gzip at up to about 540 over. With plain `prose`, the theme's own T4a and T4b utilities fit only within 5,608 minified and 1,360 gzip bytes.
-- **Plain `prose` only.** Size variants alone breach the minified budget (66,403 measured). With T4a's and T4b's growth they breach both. So T4b uses no size modifiers unless the owner signs off.
-- **The sign-off threshold is a proposal.** T4a Q4a.11 recommends shipping plain `prose` with owner sign-off when the overshoot is at most about 5,000 minified and 1,000 gzip. That threshold is `[proposed; not an owner decision]`, and any breach still needs the owner's sign-off. On current estimates the rule always selects that row.
-- T4b re-measures on its own base and applies the two-budget rule in its §4. A breach needs owner sign-off. Replacing the plugin would reverse owner decision Q7, and only the owner can make that call.
+| After | Minified | Gzip | Source |
+|---|---|---|---|
+| T3 (final commit) | 41,801 | 8,989 | measured (orchestrator) |
+| T4a (final commit) | 44,667 | 9,437 | measured (T4a impl notes, QA C4a.13) |
+| T4b (projected) | ≈ 43,900-45,350 | ≈ 9,250-9,600 | provisional, T4b §5.15 |
+| T4c with plain `prose` (projected, after T4b) | ≈ 56,700-58,700 | ≈ 10,900-11,450 | provisional, T4b §15.3; T4c Step 0 re-measures |
+| T4c with `prose prose-sm md:prose-lg` instead | ≈ 68,700-71,400 | ≈ 11,900-12,600 | derived, T4b §15.3; not recommended |
 
-**Umbrella edits:** T4a §14.1 U1-U5, **applied** 2026-10-23 with T4a Revision 2.
+- **Plain `prose` measured** +12,591 / +1,651 (orchestrator, `@tailwindcss/typography@0.5.20`, T3 tree). T4b Step 0 re-measures it on the T4a tree; T4c re-measures it on T4b's tree.
+- **Plain `prose` only.** The size variants breach minified by themselves, so they need owner sign-off.
+- **The sign-off threshold (at most about 5,000 minified and 1,000 gzip over) is `[proposed; not an owner decision]`.** Any breach of either budget needs the owner's sign-off.
+- **Two options are the owner's call only:** replacing the plugin with a project `@utility`, and deferring T4c indefinitely. Both reverse or stretch owner decision Q7 (T4b §15.3, options 4 and 5).
+
+**Umbrella edits:**
+
+- T4a §14.1 U1-U5, **applied** 2026-10-23 with T4a Revision 2.
+- T4b §14.1 U-b1 to U-b5, **pending**: applied by the Architect on the orchestrator's instruction after T4b's approval.
