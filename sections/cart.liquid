@@ -5,31 +5,42 @@
   https://shopify.dev/docs/storefronts/themes/architecture/templates/cart
 {% endcomment %}
 
-<h1>{{ 'cart.title' | t }}</h1>
+<div class="flex flex-col gap-8 px-8 py-10 md:py-16" data-cart-page>
+  <h1 class="font-heading text-3xl leading-tight font-bold uppercase md:text-4xl">{{ 'cart.title' | t }}</h1>
 
-{% render 'cart-intelligence-banner' %}
+  {% render 'cart-intelligence-banner' %}
 
-<form action="{{ routes.cart_url }}" method="post">
-  <table>
-    {% for item in cart.items %}
-      <tr>
-        <td>
-          {% render 'image', image: item.image, url: item.url %}
-        </td>
-        <td>
-          <p>{{ item.product.title }}</p>
-          {{ 'cart.remove' | t | link_to: item.url_to_remove }}
-        </td>
-        <td>
-          <input type="text" name="updates[]" value="{{ item.quantity }}">
-          <input type="submit" value="{{ 'cart.update' | t }}">
-        </td>
-      </tr>
-    {% endfor %}
-  </table>
-
-  <input type="submit" name="checkout" value="{{ 'cart.checkout' | t }}">
-</form>
+  {%- if cart == empty -%}
+    <div class="flex flex-col items-start gap-4">
+      <p>{{ 'cart.empty' | t }}</p>
+      <a href="{{ routes.all_products_collection_url }}" class="btn-primary">{{ 'general.continue_shopping' | t }}</a>
+    </div>
+  {%- else -%}
+    <form action="{{ routes.cart_url }}" method="post" class="flex flex-col gap-6">
+      <ul class="border-t border-foreground/10" role="list">
+        {%- for item in cart.items -%}
+          <li class="flex gap-4 border-b border-foreground/10 py-6">
+            {%- if item.image -%}
+              <div class="w-20 shrink-0">
+                {% render 'image', image: item.image, url: item.url, width: 160 %}
+              </div>
+            {%- endif -%}
+            <div class="flex min-w-0 grow flex-col items-start gap-3">
+              <p class="font-semibold">{{ item.product.title | escape }}</p>
+              <label class="sr-only" for="CartPage-quantity-{{ item.index | plus: 1 }}">{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}</label>
+              <input id="CartPage-quantity-{{ item.index | plus: 1 }}" class="h-11 w-20 rounded-input border border-current bg-transparent px-3" type="text" name="updates[]" value="{{ item.quantity }}">
+              {{ 'cart.remove' | t | link_to: item.url_to_remove, class: 'text-sm underline' }}
+            </div>
+          </li>
+        {%- endfor -%}
+      </ul>
+      <div class="flex flex-wrap justify-end gap-3">
+        <button type="submit" class="btn-secondary">{{ 'cart.update' | t }}</button>
+        <button type="submit" name="checkout" class="btn-primary">{{ 'cart.checkout' | t }}</button>
+      </div>
+    </form>
+  {%- endif -%}
+</div>
 
 {% schema %}
 {
