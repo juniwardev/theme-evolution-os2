@@ -25,7 +25,7 @@
         {%- assign author = article.author | escape -%}
         <p class="text-sm opacity-70">{{ 'blog.article_metadata_html' | t: date: date, author: author }}</p>
         {%- if article.excerpt != blank -%}
-          <div data-rich-text>{{ article.excerpt }}</div>
+          <div class="prose prose-tokens" data-rich-text>{{ article.excerpt }}</div>
         {%- endif -%}
       </article>
     {% endfor %}
