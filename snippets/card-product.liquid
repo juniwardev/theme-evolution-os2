@@ -139,7 +139,7 @@
       <div class="flex flex-col gap-[0.4375rem]">
         {%- if show_vendor -%}
           <span class="sr-only">{{ 'accessibility.vendor' | t }}</span>
-          <div class="text-[0.625rem] tracking-[0.08125rem] uppercase opacity-70">{{ card_product.vendor }}</div>
+          <div class="text-[0.625rem] tracking-[0.08125rem] uppercase opacity-70 empty:hidden">{{ card_product.vendor }}</div>
         {%- endif -%}
 
         {%- if show_rating and card_product.metafields.reviews.rating.value != blank -%}
