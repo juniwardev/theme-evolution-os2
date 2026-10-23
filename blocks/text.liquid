@@ -5,26 +5,29 @@
   {% content_for 'block', type: 'text', id: 'text' %}
 {% enddoc %}
 
-<div
-  class="text {{ block.settings.text_style }}"
-  style="--text-align: {{ block.settings.alignment }}"
-  {{ block.shopify_attributes }}
->
+{% liquid
+  case block.settings.text_style
+    when 'text--title'
+      assign style_classes = 'font-heading text-3xl font-bold'
+    when 'text--subtitle'
+      assign style_classes = 'text-2xl'
+    else
+      assign style_classes = 'text-base'
+  endcase
+
+  case block.settings.alignment
+    when 'center'
+      assign align_classes = 'text-center'
+    when 'right'
+      assign align_classes = 'text-right'
+    else
+      assign align_classes = 'text-left'
+  endcase
+%}
+
+<div class="{{ style_classes }} {{ align_classes }}" {{ block.shopify_attributes }}>
   {{ block.settings.text }}
 </div>
-
-{% stylesheet %}
-  .text {
-    text-align: var(--text-align);
-  }
-  .text--title {
-    font-size: 2rem;
-    font-weight: 700;
-  }
-  .text--subtitle {
-    font-size: 1.5rem;
-  }
-{% endstylesheet %}
 
 {% schema %}
 {
