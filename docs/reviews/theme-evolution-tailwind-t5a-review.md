@@ -473,3 +473,357 @@ None found. Revision 2.1 adds no CSS (T8 is rules text), so §5.10's range of 58
 Round 1 found 1 blocker and 14 required changes. Round 2 found 3 required changes, all small. This closeout finds none, plus one cosmetic nit that a criterion already guards. The measurement method, the gates and the criteria now pass the two-sided test, and the remaining risk is low and owned by Step 0's own stop rules. Ready for the Coder.
 
 APPROVE
+
+---
+
+## Round 3 (Rev 2.2 delta)
+
+Reviewer: Plan-Reviewer (Claude). Date: 2026-10-23. HEAD `aaa03c8`. The plan and the index are modified and not yet committed; the coder-questions file is untracked.
+
+**Scope.** This round covers the Revision 2.2 delta only: the Coder's Q-C1 to Q-C5, the Architect's rulings, and the plan and index edits that carry them. Everything Revision 2.1 settled (R2-1's `SZ` grouping, R2-2's C5a.21 wording, R2-3's widget validity) is taken as closed. I didn't reopen it.
+
+**Read:**
+
+- `CLAUDE.md` (in context) and `AGENTS.md`'s CSS architecture rules. The two that matter here are "custom CSS never selects a Tailwind class name" and the layer order.
+- The coder-questions file in full, including "Architect rulings (Rev 2.2)".
+- The impl notes: the classification table and the stop note.
+- The plan:
+  - the Revision 2.2 changelog and §0 (`SZ`, `PXN`, Readings);
+  - §3.4 rows 2, 16 and 17; §4.1; §4.2 steps 3 and 9; §4.4; §4.5 D5a.9, D5a.20 and D5a.21;
+  - §5.3, §5.5, §5.10, §5.11 step 4 and §6;
+  - §8 E5a.6, E5a.9, E5a.9b, E5a.13, E5a.18 and E5a.19;
+  - §9.1 and §9.2 (C5a.9, C5a.10, C5a.12, C5a.14, C5a.19, C5a.21);
+  - §10 (PXE, owner checks), §11 RA17-RA19, §13 (Step 0, the resumption block, Steps 1-2), §14.3, §15.2, and §16's Revision 2.2 checks.
+- The index: its date line and the T5a budget row (`:34`).
+- Code:
+  - `sections/image-banner.liquid:345-477`;
+  - `snippets/card-product.liquid:130-149`;
+  - `assets/base.css:1815-1854`.
+- Ripgrep for `form__message|pc--|icon-error` over `layout`, `sections`, `blocks`, `snippets`, `templates`, `src` and `assets`, and for `recipient-form` over the Liquid folders.
+- Evidence:
+  - `t5ac-tog-groups-base.txt` (the widget lines);
+  - `t5ac-cen-agg-base.txt` (the two `.form__message` rules);
+  - `t5ac-pixel-base-l1.json`;
+  - `t5ac-pixel-base.json` (its page and width keys).
+
+Shopify Dev MCP: `learn_shopify_api` (Liquid) called once. No theme code was written, so no validator ran.
+
+### Manifest: what I sampled and what I took on trust
+
+**Sampled and confirmed:**
+
+- **Q-C2, the banner wrapper.** `image-banner.liquid:444`'s class string starts with `inline-flex`. Every tag inside the wrapper (`:448-471`) trims whitespace, so it is `:empty` when both labels are blank. `:362-363` sets `block_spacing` to `mt-5` (20 px) for a buttons block that isn't first. `utilities` sits above `legacy`, so Dawn's `div:empty` never applied. Parity really is no change.
+- **The vendor line.** `card-product.liquid:142` has no display utility. With `empty:hidden` still in the scan through this line, dropping the banner edit can't change the compiled bytes. Tailwind emits a candidate once, however many files carry it.
+- **Dawn's widget rules.** `base.css:1824-1830` and `:1841-1847` hold the values D5a.20 copies (`line-height: 1`; `flex-shrink: 0`, `width: 1.3rem`).
+- **No theme markup uses the classes.** Neither `.form__message` nor `.icon` is a Tailwind utility. No theme or `src` file uses `form__message`; the only hits are Dawn CSS files that Step 4 deletes, plus `assets/recipient-form.js:144`, which no Liquid file loads. So D5a.20's selectors can match only Shopify or app markup and don't break the "never select a Tailwind class name" rule.
+- **The CEN evidence** shows the subject is `small.pc--opt-out-form-message.form__message` ("A problem occurred") and `svg.icon.icon-error`. The TOG lines show `line-height` 16 → 28 px and `flex-shrink` 0 → 1. The icon's `width` is grouped under `SZ`, as §0 now says.
+- **D5a.20 and D5a.21 byte counts.** 14 + 15 = 29 and 20 + 28 = 48, so 77. The fallback is 4 + 1 + 3 + 18 + 5 + 4 + 7 + 15 + 1 + 10 + 14 = 82.
+- **The fallback's specificity is (0,3,5):**
+  - `[aria-hidden]` (0,1,0);
+  - the `:has()` argument `div > iframe[src*=…]` (0,1,2);
+  - `:empty` (0,1,0);
+  - the type selectors `body`, the container `div` and the subject `div` (0,0,3).
+
+  It sits in `@layer base`. The only rules in that layer it competes with are Preflight's and the theme's base element rules, all of lower specificity, so moving the effect from `legacy` to `base` keeps it.
+- **§5.10 arithmetic, every figure.**
+  - Net: +373 to +715 minified, +95 to +360 gzip.
+  - Ends: 58,739 to 59,081 and 11,199 to 11,464; spare at the high end 919 / 536.
+  - Measured anchor: 58,675 + 77 = 58,752, and + 82 = 58,834. Gzip: 11,219 + 25 = 11,244, and 11,219 + 40 + 55 = 11,314. Spare 1,166 / 686.
+  - `B_rb` at a ratio of 1.0: 11,464 + 1,598 + 1,576 = 14,638.
+  - The measured Revision 2.1 delta (58,675 − 58,366 = +309) falls inside Revision 2's low end with no twin and no `visually-hidden` rule (+296 to +321, depending on `S_lay`). The anchor is therefore consistent with the end state it claims to be.
+- **Q-C5's figure.** `t5ac-pixel-base-l1.json` reads landing, width 375, 148 differing pixels, tile `[32,1504,160,16]`.
+- **The pixel survey's extent.** `t5ac-pixel-base.json` holds exactly 32 keys: 16 pages × {375, 1440}, all S0. This drives R3-1.
+- **The fallback is named in the right places.** C5a.21, its §9.2 row and §4.2 step 3 all name D5a.21's fallback as an allowed scoped `:empty` rule. The rule can't match the positive control, a classless direct child of `body` outside the container.
+
+**Taken on trust:**
+
+- the hCaptcha container's inline styles and the "24 entries at 8 widths" count;
+- the Coder's pixel-equal on/off screenshot of the opt-out page;
+- the "Buy it now" hover result (I did confirm that `base.css` has a `:hover::after` rule for that button, `:1269`, and no `:active` rule, so N-pseudo's "press" leg has nothing to press);
+- the live probe evidence;
+- `P_end` 58,675 / 11,219 (not rebuilt);
+- every gzip delta (estimates; only `P_end` decides).
+
+**Not covered by the manifest, so reviewed in full:**
+
+- what C5a.10's A-row exclusion does with E5a.18's rects (R3-2);
+- what C5a.14(e)'s red condition actually detects, against what item 7a uses it to decide (R3-3);
+- whether `PXN` registration covers the extent C5a.10 judges (R3-1);
+- which TOG-invisible declarations D5a.20 could miss (N3-1).
+
+### Delta assessment, item by item
+
+- **Q-C1, accepting hCaptcha's parts (E5a.18, D5a.21): sound.**
+  - The parts are third-party DOM, so neither D11's nor Q5a.5's scope is touched.
+  - The fallback's selector is safe. It needs a direct child of `body` with `aria-hidden="true"` that holds a `div > iframe[src*="hcaptcha"]`, which no theme file emits. Inside that container it matches only empty `div`s, which is exactly what Dawn hid there today.
+  - The looser `:has()` form is correctly forbidden.
+  - The condition is testable: `elementFromPoint` and `X_off'` exist on the toggled base, and the mask is fixed at (0, 0) over the whole viewport, so every target sits under it and the test really bites.
+  - Two defects in how the result is used: R3-2 and R3-3.
+- **Q-C2, the banner wrapper: closed correctly.**
+  - C5a.12(a) is two-sided. The precheck can be met: `CEN` matches `div:empty` on the wrapper because the wrapper is `:empty`, even though Dawn doesn't hide it.
+  - The red case is the `display` assertion plus the next element's position. A `display: none` element still computes `margin-top: 20px` and reports a 0 × 0 rect, so those two clauses alone wouldn't catch it. The `display` clause does, and it is there.
+  - E5a.9b, §5.5, §6, Step 1, owner check 1 and §14.3 agree with each other. The vendor line stays and is confirmed by PXZ.
+- **Q-C3, the bare-anchor cursor: fine.** It is a cursor only, is added to E5a.6 (⚑, owner check 3), and §3.4 row 16 is updated.
+- **Q-C4, the three N groups: sound in principle.**
+  - N-pseudo and N-timing are bounded and testable.
+  - "Not N: elements that aren't rendered" is the right correction: a 0 × 0 rect passes vacuously.
+  - D5a.20 sits in the right layer, has enough specificity against Preflight's `svg` and against the inherited 28 px, and is a no-op while `base.css` loads (C5a.8).
+  - C5a.14(f) is two-sided on computed values. These exist on unrendered elements; the Step 0 evidence itself proves that.
+  - One completeness gap: N3-1.
+- **Q-C5, `PXN`: the design is right.**
+  - It is pre-registered, limited to one element's grown box, and capped at ≤ 16 levels.
+  - C5a.9 still compares that element's computed style, so a style regression there is caught even when its pixels stay within 16 levels.
+  - A dotted underline turned solid, a thickness change or a 1 px shift of the glyphs exceeds 16 levels.
+  - It can still catch real regressions. Its registration step doesn't cover what it gates: R3-1.
+- **Budget and index.** The arithmetic holds (above). The index row's claim is true, but it quotes a range that the plan now marks superseded: N3-3.
+- **Internal consistency.**
+  - The §13 resumption list matches the rulings' "What to run before Step 1", item for item.
+  - Criteria aren't renumbered, and §9.1 and §9.2 still have 27 rows.
+  - §0's "Two theme elements can be `:empty`" is still true; the next bullet adds that only one is a sink.
+  - Stale figures: N3-3.
+- **Owner decisions.** None is reversed.
+  - D5a.20 follows Q5a.3's "keep" for the same widget.
+  - E5a.18 is outside Q5a.4 (the `/challenge` page) and Q5a.5 (merchant HTML), is ⚑, and joins owner check 3.
+  - Q5a.1, Q5a.2 and the gate rule are untouched.
+
+### Findings
+
+#### R3-1: REQUIRED (C5a.10 can go red on a correct build, with no remedy at QA). `PXN` registration covers less than C5a.10 judges, and has no ≤ 16 condition
+
+Doesn't block resuming Step 0. It must be folded in before item 7b runs.
+
+- **Extent (failure class 1).**
+  - The survey that registration draws on is `t5ac-pixel`: 16 pages × {375, 1440}, S0 only. I verified this: 32 keys in `t5ac-pixel-base.json`.
+  - Item 7b extends only the **landing page** across the other `W_sw` widths.
+  - C5a.10, though, judges every §4.3 page at all 12 `W_sw` widths, and the states at 375 and 1440.
+  - The one artifact found is width-dependent: 13 levels at 375, nothing at 1440. Its cause isn't known (no computed or rect difference; a sub-pixel offset inside `G` is a plausible one). The same kind of artifact on another page at 390, 768 or 1024 is therefore plausible.
+  - It would first show at QA. The plan forbids registering there ("never during QA"), so C5a.10 goes red on a correct build and the run loops back.
+  - **Fix:** make 7b's survey extent equal C5a.10's. Item 13 already loads every page at every `W_sw` width and in every state for the base shots. In the same load, disable `base.css` and shoot again, then register from that complete on/off set. A raster-only difference that doesn't qualify stops Step 0, which is the right place for it.
+- **Threshold.**
+  - §0 lists four registration conditions. None says the registered difference is itself ≤ 16 levels.
+  - An element at 13 levels at 375 and, say, 20 at 390 would be registered, then red at QA on a correct build.
+  - **Fix:** add a fifth condition: the largest channel difference is ≤ 16 at every width and state where the element differs. If it isn't, the difference is unexplained and Step 0 stops.
+  - With both fixes, C5a.10 is red on a > 16-level change and green on the registered artifact.
+
+#### R3-2: REQUIRED (a criterion blinded by a true fact on the wrong referent). C5a.10's A-row pixel exclusion swallows the opt-out page under E5a.18
+
+Doesn't block resuming Step 0.
+
+- C5a.10 compares screenshots "pixel-equal to base outside the A rows' element rects".
+- Under E5a.18's accept branch, the mask is an A-row element. Its rect is the whole viewport: 1440 × 812 at (0, 0) at 1440, and fixed, so it is at least a viewport-sized region in a full-page shot.
+- Read as written, C5a.10 then skips the top of `/pages/data-sharing-opt-out`, or all of it at 375. That region holds the heading, the page text and the widget itself, so this is the very page that carries E5a.2's ring and E5a.3's checkbox change.
+- The exclusion buys nothing. The parts paint nothing (inherited `visibility: hidden`), and Step 0's on/off shot of that page was pixel-equal apart from E5a.3.
+- The rect is a correct measurement of the wrong thing. It is the element's box, not its painted area.
+- **Fix:** in C5a.10 (or E5a.18), apply the pixel exclusion only to A-row elements that paint: computed `visibility: visible`, and no ancestor with `opacity: 0`. State that E5a.18's parts are exempt from the rect check (exception 1) but stay inside the pixel comparison.
+- Two-sided: red on any visible change in that region; green on a correct build, as Step 0's shot shows.
+
+#### R3-3: REQUIRED (the branch decider's red condition isn't the risk it decides on). Item 7a keys D5a.21 on "the hit test is red"
+
+Doesn't block resuming Step 0. Fold it in before 7a runs.
+
+- C5a.14(e)'s hit test is red on either of two clauses:
+  - (i) the point doesn't return the target or a descendant;
+  - (ii) it returns an element inside the hCaptcha container.
+- Only (ii) is hCaptcha interception. Clause (i) can fail for reasons D5a.21 can't fix: a label or styled span over a native checkbox, a sticky header over the centred target, or a consent banner on live.
+- Item 7a says "if the hit test is red …, D5a.21's fallback rule joins the end state". So a red on (i) alone would select the fallback. C5a.14(e) would then stay red at head, and no remedy is written.
+- **Fix:**
+  - 7a also runs the hit test with `base.css` **on**, as the reference.
+  - The fallback trigger is clause (ii) with `base.css` off (or a new hCaptcha-container overflow offender, as now).
+  - A target that fails (i) with `base.css` on as well is recorded and replaced by the element base returns at that point.
+  - A clause (i) failure that appears only with `base.css` off, outside the container, is an ordinary unexplained entry, and Step 0 stops.
+- C5a.14(e)'s head clause should judge (ii), plus (i) against base's returned element.
+
+#### N3-1: NIT (latent, low risk; doesn't block). D5a.20 copies only what `TOG` can see on an unrendered element
+
+- "Only the declarations `TOG` shows changing" was measured on an element that isn't rendered. The new §4.4 rule says to distrust that state.
+- If `small.form__message`'s own `display` is the hiding mechanism, an on/off `display` difference can't show. Dawn's `display: flex` (and the icon's alignment) could then still be the shown state's value today, and D5a.20 wouldn't carry it.
+- The evidence makes this unlikely:
+  - `align-items`, `font-size` and `margin-top` compute whatever the `display`, and show no entry. Shopify's CSS therefore styles the message itself.
+  - The icon's `height` and `margin-right` show no entry either.
+- Cheap options:
+  - In item 8, record whether the message is unrendered by its own `display` or by an ancestor's.
+  - Or, an alternative the plan doesn't consider: copy **all** of Dawn's valid declarations for both selectors. On `.form__message`, that is `align-items`, `display`, `font-size`, `line-height` and `margin-top`. On `.form__message .icon`, it is `flex-shrink`, `height`, `margin-right` and `width`. That costs about +90 B, inside the 1,166 B spare.
+  - The full copy is parity in every state, rendered or not. Moving a rule from `legacy` to `base` changes its precedence only against `base`-layer rules, all of lower specificity, and Shopify's unlayered CSS beats both layers either way. It also doesn't depend on which state Step 0 happened to measure.
+  - C5a.8 would still prove it a no-op while `base.css` loads.
+
+#### N3-2: NIT. Item 7a's overflow widths
+
+7a checks overflow at 320, 375 and 1440, but C5a.18 judges all 12 `W_sw` widths. The parts are fixed or offset by −10,000 px, so a new offender is unlikely. Running 7a's overflow check on that one page at every `W_sw` width costs seconds, and it means no hCaptcha offender can first appear in C5a.18 at QA.
+
+#### N3-3: NIT (figures are labelled correctly, and no decision depends on them). Stale budget figures in summary text
+
+- **Index `:34`.** The T5a row still leads with Revision 2's 58,662-58,922 / 11,174-11,369. T5a §5.10 now marks that range superseded by 58,739-59,081 / 11,199-11,464.
+  - "Inside this row's range, so the T5b rows below still hold" is true for the measured projection (58,752-58,834 / 11,244-11,314). Against the new table's high end, the T5b "every option" row would read 59,161 / 11,514. That is still under budget, but it isn't the row as written.
+  - State which basis the T5b rows use, or show the new table range next to the old one.
+- **§4.1 (`:285`)** cites "§5.10, Revision 2" for a range §5.10 no longer leads with.
+- **§9.2 C5a.19** still says "about 2.5 KB to spare". Revision 2.2's high end gives about 2.3 KB at the 0.91 ratio and 1.27 KB at 1.0.
+
+### Trajectory
+
+- Rounds 1 to 2.1 converged: 1 blocker and 14 REQUIRED, then 3 REQUIRED, then none.
+- This delta is a re-entry, not a regression: the Coder's measurements overturned one prediction (Q-C2) and exposed four gaps in the method (Q-C1, Q-C3 to Q-C5).
+- The rulings are well reasoned. None reverses an owner decision.
+- The three REQUIRED findings sit in the new apparatus, where defects concentrate on this project: a registration survey with a smaller extent than its criterion, an exclusion rect that measures a box rather than paint, and a branch decider keyed to the wrong clause.
+- Each is a one- or two-sentence edit to the plan, and none changes the design or the CSS.
+- Step 0 can resume once they are folded in. A closeout check against R3-1 to R3-3 is enough; another full round isn't needed.
+
+### Required changes (round 3)
+
+1. **R3-1.** Run item 7b's on/off raster survey over C5a.10's full extent: every §4.3 page, every `W_sw` width, and the states at 375 and 1440, for example in item 13's loads. Add a fifth registration condition: the largest channel difference is ≤ 16 at every width and state where it occurs. Otherwise the element is unexplained and Step 0 stops.
+2. **R3-2.** In C5a.10 (or E5a.18), exclude from the pixel comparison only those A-row elements that paint (computed `visibility: visible`, no `opacity: 0` ancestor). Under the accept branch, E5a.18's parts are exempt from the rect check but stay inside the pixel comparison.
+3. **R3-3.** In item 7a and C5a.14(e), take a `base.css`-on reference reading. Trigger D5a.21's fallback only when an element inside the hCaptcha container is returned with `base.css` off, or on a new hCaptcha-container overflow offender. Handle a target-mismatch red unrelated to the container as the plan's other unexplained entries are handled.
+
+APPROVE WITH CHANGES
+
+---
+
+## Round 3 closeout (Rev 2.2.1)
+
+Reviewer: Plan-Reviewer (Claude). Date: 2026-10-23. HEAD `aaa03c8`; the plan and index edits are uncommitted.
+
+**Read for this closeout:**
+
+- the Revision 2.2.1 changelog;
+- in the plan: §0 `PXN`; D5a.20 and D5a.21; §5.3's parity block and fallback bullet; §5.10's table, sums and `B_rb` paragraph; §4.1; E5a.18 and E5a.19; C5a.10 and C5a.14 with their §9.2 rows; C5a.19's §9.2 row; RA6 and RA18; §13 items 7a-7c and 13 and the resumption block;
+- the "Amended by Revision 2.2.1" points in the coder-questions rulings;
+- the index rows `:34-37`;
+- `assets/base.css:1824-1847` (re-read in round 3);
+- `[hidden]` in the compiled `assets/tailwind.css`;
+- the widget lines in `t5ac-tog-groups-base.txt` and `t5ac-cen-agg-base.txt`.
+
+### R3-1: closed, but the fix opens one small gap (RC-1 below)
+
+- §0 `PXN` now surveys C5a.10's whole extent and lists five conditions. The fifth is "≤ 16 levels at every page, width and state where the element differs".
+- 7b runs inside item 13's loads, with an in-page control.
+- The C5a.10 row in §9.2 and RA18 match, and so do the coder-questions points `:131-137` and `:162`.
+- The test is two-sided:
+  - a registered element over 16 levels anywhere stops Step 0;
+  - an unregistered artifact can no longer first appear at QA.
+
+### R3-2: closed
+
+- C5a.10 now excludes from the pixel comparison only A-row elements that paint: computed `visibility: visible` and no `opacity: 0` on the element or an ancestor.
+- E5a.18 states that its parts are exempt from the rect check but stay in the pixel comparison.
+- The §9.2 row names the opt-out page, so the viewport-sized mask rect can't blind C5a.10 there.
+
+### R3-3: closed
+
+Item 7a, C5a.14(e), D5a.21, the §5.3 fallback bullet, the C5a.14 row in §9.2 and the coder-questions points `:87-90` all agree:
+
+- a reading with `base.css` on is the reference;
+- the fallback triggers only on clause (ii), or on a new overflow offender inside the hCaptcha container;
+- a target that already fails clause (i) with `base.css` on takes base's returned element as its expected element;
+- any other mismatch stops Step 0.
+
+C5a.14(e) at head judges both clauses against that expected element, so a correct build passes under either branch.
+
+### N3-1: the expanded D5a.20 holds parity, including `display: flex`
+
+**The values match Dawn's.** §5.3 and D5a.20 carry exactly Dawn's declarations:
+
+- `.form__message`: `align-items: center`, `display: flex`, `font-size: 1.4rem`, `line-height: 1`, `margin-top: 1rem`;
+- `.form__message .icon`: `flex-shrink: 0`, `height: 1.3rem`, `margin-right: 0.5rem`, `width: 1.3rem`.
+
+These match `base.css:1824-1830` and `:1841-1847`. The block deliberately leaves out the `.customer …`, `.form__message--large` and `.svg-wrapper` selectors, which match nothing here.
+
+**Byte counts:** 14 + 1 + 18 + 1 + 12 + 1 + 16 + 1 + 13 + 1 + 15 + 1 = 94, and 20 + 1 + 13 + 1 + 13 + 1 + 18 + 1 + 12 + 1 = 81, so 175. Both rules sit in `@layer base`.
+
+**What hides the message today.** The evidence settles which mechanisms it isn't. It doesn't say which one it is, and parity doesn't depend on that.
+
+- **Not emptiness.** The message has text ("A problem occurred", per the `CEN` and `TOG` excerpts). Also, `small` isn't in Dawn's `:empty` list (`a, ul, dl, div, section, article, p, h1-h6`).
+- **Not Dawn.** Dawn's `display: flex` already applies today in `legacy`, and the message is still 0 × 0 with `base.css` on. With `base.css` off, `TOG` shows no `display` entry and no rect change for it. So whatever hides it is independent of Dawn's rules.
+- **What remains** is one of these, unrecorded:
+  - Shopify's unlayered CSS on the message or an ancestor;
+  - an inline style;
+  - a `hidden` attribute.
+
+  If it's a `hidden` attribute, the compiled file carries Preflight's `[hidden]:where(:not([hidden=until-found]))` rule with `display: none !important` in `@layer base`. An important declaration beats every normal declaration in any layer, so Dawn's normal `display: flex` loses to it, and so does the copy.
+
+**Why the copy can't show it where Dawn's rule didn't.** Each remaining mechanism already beats a normal declaration in `legacy`. Anything that beats `legacy` also beats `base`, because `legacy` outranks `base`. Moving the rule down a layer only changes its standing against other `base`-layer rules, and those can only make the copy lose, never win. None of them outranks (0,1,0) on this element anyway: Preflight's `small { font-size: 80% }` is (0,0,1), and the `[data-rich-text]` `:empty` rule doesn't match a non-empty `small`.
+
+**Proof at the build.** C5a.8 proves the full copy is a no-op while `base.css` loads. At head, C5a.9 and C5a.10's rect check would catch a newly shown message.
+
+### N3-2: applied
+
+7a's overflow check runs at every `W_sw` width (§13 item 7a; coder-questions `:87`).
+
+### N3-3 and the projection: verified
+
+**Plan figures:**
+
+- §5.10 sums, minified: low 34 + 37 + 246 + 40 + 90 + 175 − 38 − 113 = +471; high 34 + 37 + 246 + 40 + 90 + 95 + 140 + 175 + 82 − 13 − 113 = +813.
+- §5.10 sums, gzip: low 10 + 15 + 60 + 15 + 30 + 45 − 15 − 45 = +115; high 15 + 25 + 90 + 25 + 45 + 40 + 60 + 70 + 55 − 5 − 30 = +390.
+- Table ends: 58,837 to 59,179 / 11,219 to 11,494; spare 821 / 506.
+- Measured basis: 58,675 + 175 = 58,850, and + 82 = 58,932. Gzip: 11,219 + 45 = 11,264, and + 70 + 55 = 11,344. Spare 1,068 / 656, which matches RA6.
+- `B_rb`: 11,494 × 0.91 + 3,174 ≈ 13,634, about 2.3 KB under `B_rb0`. At a ratio of 1.0: 14,668, about 1.2 KB under. This matches C5a.19's §9.2 row.
+
+**Index rows:**
+
+- T5b on the measured basis: 58,335 to 58,552 / 11,094 to 11,244, and 58,335 to 59,012 / 11,094 to 11,394.
+- On the table basis: 58,322 to 58,799 / 11,049 to 11,394, and 58,322 to 59,259 / 11,049 to 11,544.
+- With (b+): 59,502 on the measured basis, about 59,749 on the table's high end.
+
+All of these are correct and under 60,000 / 12,000. The basis is now stated, and Revision 2's range is marked superseded. §4.1 is refreshed too.
+
+### New finding from the R3-1 fix
+
+#### RC-1: REQUIRED, tiny; it guards the baseline every C5a.10 verdict depends on. Doesn't block resuming Step 0; fold it in before item 13 runs
+
+7b's toggle now runs inside item 13's base loads. Item 13 records the base **geometry** as well as the shots. The plan doesn't yet say two things:
+
+- that the base geometry and every other base reading in that load are taken **before** `base.css` is disabled;
+- that the control's first read (with `base.css` on) must be `display: none`, or that base shot is invalid.
+
+As written, a harness that captures rects after the off shot, or reuses a toggled load for the next width or state, would record an off-state baseline. Head roughly equals off, so C5a.10 would then pass vacuously. That is the one failure direction no other criterion catches for painting effects.
+
+**Fix (one sentence in item 7b or item 13):** take every base reading before the toggle; make "the first control read computes `none`" a validity condition of the base shot; and end the load after the off shot, or re-enable `base.css` and re-confirm `none` before any further base reading.
+
+### Nit (doesn't block)
+
+- **NC-1.** In item 8, record which mechanism hides the message: its own computed `display` and whether it has a `hidden` attribute (two values). The parity argument above doesn't need it, but E5a.19 could then say which. If you like, C5a.14(f) could also assert that at head the message's own `display` and its 0 × 0 rect equal base's. That would be a direct check that the copy shows nothing.
+
+### Trajectory
+
+- Round 3 had 3 REQUIRED findings and 3 nits. All six are applied correctly and consistently across the plan, the rulings and the index.
+- One tiny REQUIRED ordering rule remains. The R3-1 fix introduced it, and it is a one-sentence edit.
+- No owner decision is touched, and the CSS is parity in every state.
+- Fold RC-1 in and Step 0 can resume. It doesn't need another review round.
+
+### Required changes (closeout)
+
+1. **RC-1.** In item 7b or item 13: take the base geometry and every other base reading before `base.css` is disabled; make "the in-page control computes `display: none` before the toggle" a validity condition of each base shot; and end the load after the off shot, or re-enable `base.css` and re-confirm the control before any further base reading.
+
+APPROVE WITH CHANGES
+
+---
+
+## Round 3 final (Rev 2.2.2)
+
+Reviewer: Plan-Reviewer (Claude). Date: 2026-10-23.
+
+Read: the Revision 2.2.2 changelog (plan `:20-22`), §9's "Non-vacuity rule" (`:711`) and §13 items 7b, 8 and 13 (`:937-944`).
+
+**RC-1: closed.** The ordering rule now appears in all three places and reads the same in each:
+
+- every base reading of the load (geometry, rects, computed styles, the base shot) is taken before `base.css` is switched off;
+- each base shot counts only if the in-page control first reads `display: none`;
+- after the off shot the load ends, or `base.css` is switched back on and the control re-confirmed before any further base reading;
+- a toggled load is never reused for the next width.
+
+This closes the vacuous-baseline path: an off-state baseline now makes the run invalid instead of passing.
+
+The control is read after the shot but before the switch-off. That still proves the shot was taken with `base.css` on, since nothing changes in between.
+
+**NC-1: applied as specified.** Item 8 records three things for `small.form__message`:
+
+- its own computed `display`;
+- whether it carries a `hidden` attribute;
+- which ancestor or Shopify rule hides it.
+
+It is recorded only, which is correct: D5a.20's parity doesn't depend on it. The optional C5a.14(f) assertion I offered wasn't taken. That is acceptable, because C5a.9 and C5a.10's rect check already catch a newly shown message.
+
+**Regressions: none.** No CSS, criterion or decision changed, and the projection still stands as verified in the closeout.
+
+**Trajectory.** Round 3's findings were 3 REQUIRED and 3 nits, then 1 REQUIRED and 1 nit, and now none. The plan is ready for Step 0 to resume.
+
+APPROVE
