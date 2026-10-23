@@ -19,6 +19,8 @@
     "title": "Cart",
     "update": "Update",
     "remove": "Remove",
+    "empty": "Your cart is empty.",
+    "close": "Close cart",
     "intelligence_banner": {
       "sustainable_message": "Awesome! You have {{ count }} sustainable item(s) in your cart. You are actively reducing your carbon footprint!"
     }
