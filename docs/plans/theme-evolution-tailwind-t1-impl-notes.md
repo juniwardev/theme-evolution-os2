@@ -235,3 +235,23 @@ Background is rgb(17,17,17) in all cases.
 - The drawer-open class check in my probe is not meaningful. Only the badge update was confirmed.
 
 Hello-world band, card and image banner alignment are deferred to T3.
+
+## QA-fix round 3 (B1 header row height)
+
+Base commit: 9524e61 on `main`. Baseline for A/B: staging theme 187953643616 (55081ab; `git diff 4ffecbc 55081ab -- sections assets` is empty, so it is the same header as 4ffecbc). Candidate: private dev theme 187953938528.
+
+**Cause (confirmed).** `<header class="grid h-16 grid-cols-(--content-grid)">` had an implicit auto row, so the inner `h-full` div could not resolve against it and the row took the logo height (168px at 1440). Everything centred in that 168px row sat +52px low (+10 at 375, +4 at 320).
+
+**Fix.** `sections/header.liquid`: added `grid-rows-[minmax(0,1fr)]` to `<header>`. The row is now the header's definite 64px, `h-full` resolves, content is centred in 64px as before. Rebuilt `assets/tailwind.css`. No schema change.
+
+**A/B (x, y, w, h), base vs head**, `/` and `the-3p-fulfilled-snowboard` at 320, 375, 768, 900, 1023, 1024, 1440 (`t1r3c-measure.mjs`, compared with a scratch script): wrapper, header, logo link, logo image, every nav link, icon row, cart (+svg), account (+svg), toggle (+svg). Max delta 0 on y, w, h and on x for everything except wrapper and header x/width, which are intentionally full bleed (base 20 to vw-20, head 0 to vw). Examples: logo y -52 (1440) / -10 (375) / -3.8 (320), logo img 300x168 (1440) and 128x71.7 (320) identical to base, cart y 10-54, nav links y 22-42 at 1024 and 1440. Inner div (`t1r3c-rowgeom.mjs`) is y 0-64 at every width; nav link white and inside the bar. Badge with 1 item (seeded cart, 375 and 1440): 22.4x22.4 at y 10, identical to base. The announcement bar is not rendered in test data (unverified).
+
+**Panel (375, 900, height 800), base vs head:** top y 64 both, height 177 both, link boxes identical (x 52, y 89/125/161/197, w 271 or 796, h 20). Only the panel left/width differ, by design (head 0 to vw, base 20 to vw-20).
+
+**C1.4** (`t1r3c-menu.mjs`, 375/768/900, both pages, 800px viewport): toggle opens and closes, `aria-expanded` false/true/false, label Open menu/Close menu, one icon per state, focus into the panel on open, Escape closes and returns focus to the toggle, outside click closes (below panel, y500, y650, left edge, empty header area), focus back on toggle. The one "navigated" is the Shop Pay button on the product page at 375/y500 (test artifact, as in QA's report). Sticky: wrapper top 0 after scroll 800 at 375 and 900. `X_page` 0 on the 3p snowboard at all 7 widths. Cart badge on `selling-plans-ski-wax` (`t1r3c-cart.mjs`): hidden, 1, 3, 3 after reload, hidden after remove. Note: `X_page` on the wax page at 375 is 16 to 34 (not the 3p snowboard; not compared to base here).
+
+**Screenshots:** `docs/qa/screenshots/t1r3c-{base,head}-{home,p3p}-{width}.png`, `t1r3c-{base,head}-panel-{375,900}.png`; viewed `t1r3c-head-p3p-1440.png` and `t1r3c-head-panel-375.png`, header content sits in the 64px bar, nav visible.
+
+**Gates:** `npm run build:css`, staged, `npm run check:css` pass; `npm run check:hidden` pass; `shopify theme check` 62 files, 2 offenses (baseline); CSS 14,929 B min / 4,247 B gzip (budget 60,000 / 12,000); header schema unchanged (no schema lines in the diff).
+
+New harness: `docs/qa/harness/t1r3c-{measure,menu,cart,rowgeom,panel}.mjs`.
