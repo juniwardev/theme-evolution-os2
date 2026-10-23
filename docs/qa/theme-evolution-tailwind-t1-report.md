@@ -307,3 +307,153 @@ Console: home 0 messages at 1440 and 375; product pages show only Shopify teleme
 `t1r-{base,f55,head}-{home,p3p,wax,snow,coll,cart,search,mat,p404}-{1440,375}[-footer].png`; `t1r-head-{home,p3p}-{768,900,1023,1024}[-footer].png`; `t1r-{base,f55,head}-payment-{1440,768,375}.png`; `t1r-zoom-{0,1,3}items-{1440,375}.png` (4x crops of the icon row); `t1r-cart-empty-{1440,375}.png`, `t1r-cart-badge-after-add-{1440,375}.png`, `t1r-cart-badge3-{1440,375}.png`, `t1r-cart-badge3-drawer-1440.png`.
 
 PASS WITH NITS
+
+## Re-run 2 (after 9524e61)
+
+Tools: Playwright (Node harness, `docs/qa/harness/t1r2q-*`), Chromium. Dev theme 187953938528 (HEAD) vs staging 187953643616 (4ffecbc). Dev server stopped afterwards. Chrome DevTools MCP not used.
+
+### Verdict: FAIL (one blocker, B1)
+
+The bar is now full width, and the horizontal positions of the content are unchanged. But the commit broke the **vertical** layout of the header content. At 768 and wider the logo, nav, account icon and cart icon sit below the dark bar, and the white nav links are drawn on the light page background, so they cannot be seen.
+
+### B1 (BLOCKER): header content row is 168px tall inside a 64px bar
+
+Repro:
+1. Open `/` or `/products/the-3p-fulfilled-snowboard` on the dev theme at 1440x900 (any width of 750 or more shows the worst case).
+2. Compare the top of the page with staging (4ffecbc): staging has the logo, four nav links and two icons centred in the dark bar. The dev theme has an empty dark bar, and the content row starts below it.
+
+Screenshots: `docs/qa/screenshots/t1r2-head-top-1440.png` (broken) against `t1r2-base-top-1440.png` (4ffecbc), and `t1r2-head-home-1440.png` against `t1r2-base-home-1440.png`. At 375 the effect is smaller: `t1r2-head-panel-375.png`, `t1r2-head-p3p-375.png`.
+
+Numbers (`t1r2q-rowgeom.mjs`, the 3p snowboard; bar = wrapper and `<header>` = y 0 to 64 in every case):
+
+| Width | inner div y (head) | cart icon y (head) | cart icon y (base) | nav link y (head / base) | nav link inside bar? |
+|---|---|---|---|---|---|
+| 320 | 0-72 | 14-58 | 10-54 | n/a (hamburger) | n/a |
+| 375 | 0-84 | 20-64 | 10-54 | n/a | n/a |
+| 768 | 0-168 | 62-106 | 10-54 | n/a | n/a |
+| 1023 | 0-168 | 62-106 | 10-54 | n/a | n/a |
+| 1024 | 0-168 | 62-106 | 10-54 | 74-94 / 22-42 | NO (bottom 94 > bar 64) |
+| 1440 | 0-168 | 62-106 | 10-54 | 74-94 / 22-42 | NO |
+
+The same offset appears on every page I measured (home, p3p, wax, snow, coll, cart, search, mat, 404) at 1440 (+52px for every item) and 375 (+10px). The `t1r-diff.py` output is identical on all of them: `logo.y -52 -> 0`, `cart.y 10 -> 62`, `menuLinks[n].box.y 22 -> 74`, `toggle.y 10 -> 20`.
+
+Suspected cause: `<header class="grid h-16 grid-cols-(--content-grid)">` has an implicit `auto` row. The inner `col-start-2 flex h-full items-center` div has `h-full`, which resolves against an auto-height grid area, so it computes to auto and takes the logo's height. The logo anchor is `h-full w-(--logo-width) max-w-[40vw]` and the image keeps its aspect ratio (300x168 at 1440, 150x84 at 375). The row therefore becomes 168px (84 at 375) and overflows the 64px header, and `items-center` centres everything at y=84. Before the change `<header>` itself was the flex container with a definite height of 64px, so `h-full` and `items-center` resolved against 64px (the logo overflowed symmetrically, hidden behind nothing). The Coder only compared left and right values, which are unaffected, so this was not caught.
+
+Suggested fix (Coder to decide): give the grid a definite row, e.g. `grid-rows-[100%]` or `grid-rows-[minmax(0,1fr)]` on `<header>`, or put `h-16` on the inner div, or `min-h-0` and `max-h-full` on the logo link, then re-run the A/B on y as well as x. After the fix, `logo.y`, `cart.y` and `menuLinks.y` must equal base (-52, 10, 22 at 1440; -10, 10 at 375).
+
+Severity: BLOCKER. It affects every page at every width of 320 and above (worst from 750), and makes the nav and the cart and account icons effectively invisible on desktop.
+
+### Item results
+
+1. **Full-bleed bar**: PASS. `left 0`, `right = viewport` at 320, 375, 768, 900, 1023, 1024 and 1440 on both `/` and the 3p snowboard (base was 20 to viewport-20). Background rgb(17,17,17). Footer is x 0 to 1440 at 1440, so the edges now match. (`t1r2-header-fullbleed.mjs` run by me, A/B against staging.)
+2. **Inner content, horizontal**: PASS. 0 differences beyond 0.5px (max delta 0) for the logo, first nav link, toggle and cart at the 7 widths on both pages. A/B with my own `cmp` of the Coder's script output. **Vertical: FAIL, see B1.** I did not check the account icon and every nav link x separately in this script, but the `t1r2q-measure.mjs` diff for 1440 and 375 lists no x differences for `acct`, `cart`, `menuLinks[0..3]`, `toggle` or `logo`, only y.
+3. **Mobile panel and behavior at 375, 768, 900**: panel left/right is 0 to viewport on both pages (e.g. 0-375, 0-768, 0-900), link x unchanged (52-323 at 375, 52-716 at 768, 52-848 at 900, identical to base). Toggle, `aria-expanded` false/true, label "Open menu"/"Close menu", one icon per state (`[true,false]` closed, `[false,true]` open), focus into the panel, Escape closes and returns focus to the toggle: all PASS at all three widths on both pages (`t1r2q-menu.mjs`). Panel renders from y=64 (`t1r2-head-panel-375.png`); but its toggle button is at y 20-64 at 375 (B1).
+   - **Outside click: PASS, no regression.** I clicked five outside points per width (just below the panel, y=500, y=650, x=5 at y=400, and the empty header area). All closed the menu at 375, 768 and 900 on both pages, on HEAD and on 4ffecbc (the one "navigated" at 375 is a click on the Shop Pay button on the product page, a test artifact). Focus returns to the toggle.
+   - **Resolution of the contradiction**: the Coder's probe (`t1r2-behavior.mjs`) uses a 700px-high viewport and clicks y=650. I reproduced the failure and logged document click events: `elementFromPoint(187, 650)` at 375x700 returns the **Shopify preview-bar IFRAME** (the bar overlays the bottom of the viewport). Clicks into that iframe never reach the page, so no click event fires at all (log empty). At 800px height, y=650 is page content and the menu closes. So this was a test artifact, not a theme bug. The same Coder probe on 4ffecbc also fails, which matches their claim; my earlier re-run used an 800px viewport and y=500. The outside-click handler (`this.contains(event.target)` where `this` is `theme-evolution-header-menu`, holding both toggle and panel) is unchanged and works with the full-width panel.
+4. **Overflow**: PASS. `X_page` 0 on the 3p snowboard at 320, 375, 768, 900, 1023, 1024 and 1440, open and closed. `/`: 76 at 320, 21 at 375, 0 from 768 up, the same as base (image-banner buttons, T3). `xHdr` is now 0 (was -20); no header overflow. `X_page` has no difference between HEAD and base on any of the 9 pages at 1440 and 375.
+5. **Sticky and cart**: sticky PASS (Coder's `t1r2-behavior.mjs`, rerun by me: wrapper top 0 after scrolling 800 at 375 and 900). Cart flow on `selling-plans-ski-wax` at 1440 (`t1r2q-cart.mjs`): badge hidden, add gives 1, quantity 3 gives 3, remove gives 0 and hidden, `xPage` 0 throughout. Functionally PASS, but the cart icon is at y 62-106, below the bar (B1).
+6. **Regression**:
+   - `npm ci`, `npm run check:css` (exit 0, `assets/tailwind.css` unchanged by the rebuild), `npm run check:hidden` (exit 0): PASS.
+   - `shopify theme check`: 62 files, 2 offenses (1 error, 1 warning), the baseline pair: PASS.
+   - CSS size 14,864 B minified, 4,226 B gzip (budget 60,000 / 12,000): PASS.
+   - Header `{% schema %}` unchanged (`git diff 4ffecbc HEAD -- sections/header.liquid` has no schema lines): PASS.
+   - A/B of 9 pages x {1440, 375} (`t1r2q-measure.mjs`, `t1r-diff.py`): every difference is in header wrapper, header, header children (the y offsets of B1, `headerCs` display flex to grid, padding moved to the inner div) or `xHdr`. Nothing in the footer, page body, `X_page`, H1 count or status.
+   - Console: head 0 messages on home at both widths and 0-1 on the other pages (base 1-2; Shopify telemetry), so no theme errors. One expected 404 on the missing page.
+7. **Homepage / banner / hello-world band**: T3, not assessed.
+
+### N7
+
+N7 (bar not full width): the bar fix itself is verified, but N7 stays **open** until B1 is fixed, because the same change broke the content row.
+
+### Owner-acceptance list (updated, pending B1)
+
+1. Cart glyph 17.4 x 22.3 in a 40px SVG inside a 44px hit area; badge at the top-right corner covering part of the handle.
+2. Header icon row vertically centred, lost its 12.8px right padding; desktop menu about 18px further right at 1440; hamburger glyph 24px (was about 32), 9px further left at 375.
+3. Footer 2.4px taller at 1440 and 8.9px taller at 375; copyright wraps to two lines at 375.
+4. Header switches to the hamburger and mobile panel at widths under 1024 (iPad portrait and split windows get the mobile header while the footer stays desktop-style from 768).
+5. `group/menu` deviation (N4) stays.
+6. Footer mobile breakpoint 750 to 768 (planned); header 1024 (see 4).
+7. Accent `#e3fc01`, accent text `#111111`, Oswald Bold: unchanged.
+8. **NEW: full-bleed header bar** (dark bar now spans the viewport, as in the v2 design; content column unchanged). Accept after B1 is fixed.
+9. **NEW: full-width mobile panel** (below 1024, spans the viewport edge to edge with links at the same x). Accept after B1 is fixed.
+
+### BLOCKED (unchanged)
+
+- C1.2 editor round-trip, C1.7 live updates, C1.8 editor display, and the theme editor preview check: no admin login. Operator list from the first run applies (logo_width, header and footer colors, announcement settings, social URLs, `about_text`, `show_social_icons`, `show_payment_icons`, global `background_color` / `accent_color` / `type_heading_font`; confirm Oswald Bold default).
+- The announcement bar full-bleed variant is not rendered in the test data, so it is unverified (and its row may be affected by the same grid sizing; check once enabled).
+- Supercycle embed and gift card page on the dev theme: operator on staging.
+- `B_rb0` comparison: not re-run.
+
+### Harness added (`docs/qa/harness/`, originals untouched)
+
+`t1r2q-menu.mjs` (multi-point outside click, A/B), `t1r2q-outside-probe.mjs` (click-event log proving the preview-bar iframe cause), `t1r2q-rowgeom.mjs` (vertical geometry and screenshots), `t1r2q-measure.mjs` and `t1r2q-cart.mjs` (copies with the `t1r2-` screenshot prefix). Screenshots: `docs/qa/screenshots/t1r2-{base,head}-*`.
+
+FAIL
+
+## Re-run 3 (after c4d49aa)
+
+Tools: Playwright (Node harness, `docs/qa/harness/t1r3q-*`), Chromium. Dev theme 187953938528 (HEAD c4d49aa) vs staging 187953643616 (same header as 4ffecbc). Dev server stopped afterwards. Chrome DevTools MCP not used.
+
+### Verdict: PASS (no blocker; B1 resolved)
+
+### B1: RESOLVED
+
+`<header>` now has `grid-rows-[minmax(0,1fr)]`; the inner div is y 0-64 at all 7 widths and the content sits inside the dark bar.
+
+- **y / w / h vs base (`t1r3q-measure.mjs` + `t1r3q-cmp.py`)**, `/` and `the-3p-fulfilled-snowboard` at 320, 375, 768, 900, 1023, 1024, 1440, seeded cart (1 item): logo link, logo image, every visible nav link, icon row, cart (+svg), account (+svg), toggle (+svg), badge. **Max delta 0.0 on y, w and h.** x max delta 0.0 for everything except wrapper and `<header>` (and panel), which are intentionally full bleed (width +40, or +4 at 320 where base was inset 20/2).
+- Inner div (`t1r3q-rowgeom.mjs`, p3p): y 0-64 at all 7 widths. Cart icon y 10-54 everywhere (base 10-54). Nav links y 22-42 at 1024 and 1440 (base 22-42), colour rgb(255,255,255), inside the bar. Logo y -52 to 116 at 768-1440 (-10 to 74 at 375, -4 to 68 at 320), the same as base: the 168px-tall logo overflowing the 64px bar is pre-existing, not a regression.
+- Badge with 1 item: 22.4 x 22.4 at y 10, identical to base at every width.
+- Full bleed: wrapper and header left 0, right = viewport (320, 375, 768, 900, 1023, 1024, 1440), height 64, `xHdr` 0 (base -20).
+
+### C1.4 (375, 768, 900 at viewport height 800, `t1r3q-menu.mjs`, both pages): PASS
+
+Toggle `aria-expanded` false/true/false, label Open menu/Close menu, one icon per state, focus into the panel, Escape closes and returns focus to the toggle, outside click closes at 5 points (below panel, y500, y650, x5, empty header area), focus back on the toggle. One "ctx destroyed" at 375/y500 on the product page is the Shop Pay button (test artifact, as in re-run 2). Panel (`t1r3q-panel.mjs`) head vs base: top y 64 both, height 177 both, links identical (x 52, y 89/125/161/197, w 271 at 375 or 796 at 900, h 20); panel x/width 0 to viewport vs 20 to vw-20 by design. Sticky: wrapper top 0 after scrolling 800 at 375 and 900.
+
+### Visual
+
+Viewed `docs/qa/screenshots/t1r3-head-vis-1440-closed.png` (logo, HOME/CATALOG/CONTACT/OUR MATERIALS in white, account and cart icons, all inside the dark bar), `t1r3-head-vis-375-closed.png` (logo, hamburger, account, cart in the bar) and `t1r3-head-vis-375-open.png` (X icon, full-width panel from y 64 with the four links visible). Desktop has no panel state.
+
+### Regression
+
+- `npm ci`, `npm run check:css` (exit 0, `assets/tailwind.css` unchanged by rebuild), `npm run check:hidden` (exit 0): PASS.
+- `shopify theme check`: 62 files, 2 offenses (1 error, 1 warning), the baseline pair: PASS.
+- CSS 14,929 B minified / 4,247 B gzip (budget 60,000 / 12,000): PASS.
+- Header `{% schema %}` unchanged (no schema lines in `git diff 4ffecbc HEAD -- sections/header.liquid`): PASS.
+- `X_page` on the 3p snowboard: 0 at all 7 widths. On `/`: 76 at 320, 21 at 375 (T3 banner), 0 from 768. No HEAD vs base difference on any of the 9 pages.
+- A/B of 9 pages x {1440, 375} (`t1r-diff.py`): only difference is `headerCs` display flex to grid and padding 32px to 0 (intended structure change), plus wrapper/header x/width. Nothing in footer, body, H1 count, status.
+- Cart drawer on `selling-plans-ski-wax` (`t1r3q-cart.mjs`, 1440 and 375): badge hidden, add gives 1, qty 3 gives 3 (also after reload), remove gives hidden. PASS. (One transient `ERR_TIMED_OUT` on the 375 page load, passed on retry.)
+- Console: 0 on most pages; the p3p/snow pages log the Shopify monorail telemetry "Failed to fetch" (also on base); the intentional 404 page logs one 404. No theme errors.
+
+### N7: RESOLVED
+
+Bar is full bleed and the content row is correct.
+
+### Owner-acceptance list (updated)
+
+1. Cart glyph 17.4 x 22.3 in a 40px SVG inside a 44px hit area; badge at the top-right corner covering part of the handle.
+2. Header icon row vertically centred, lost its 12.8px right padding; desktop menu about 18px further right at 1440; hamburger glyph 24px (was about 32), 9px further left at 375.
+3. Footer 2.4px taller at 1440 and 8.9px taller at 375; copyright wraps to two lines at 375.
+4. Header switches to the hamburger and mobile panel under 1024 (iPad portrait and split windows get the mobile header while the footer stays desktop-style from 768).
+5. `group/menu` deviation (N4) stays.
+6. Footer mobile breakpoint 750 to 768 (planned); header 1024 (see 4).
+7. Accent `#e3fc01`, accent text `#111111`, Oswald Bold unchanged.
+8. Full-bleed header bar (content column unchanged): verified, ready to accept.
+9. Full-width mobile panel (links at the same x): verified, ready to accept.
+
+### Info (carried forward)
+
+- `X_page` on `selling-plans-ski-wax` at 375 grows 16 to 34 after the add (page, not header; not a regression of this commit).
+- Cart link `aria-label` can be stale ("0 items") after an add; pre-existing, not part of T1.
+- The logo overflows the 64px bar (168px tall at 768+); identical to base.
+
+### BLOCKED (unchanged)
+
+- C1.2 editor round-trip, C1.7 live updates, C1.8 editor display, and the theme editor preview check: no admin login (operator list from the first run applies).
+- Announcement bar full-bleed variant not rendered in the test data; unverified (check once enabled, same grid-row sizing may apply).
+- Supercycle embed and gift card page on the dev theme: operator on staging.
+
+### Harness added
+
+`docs/qa/harness/t1r3q-{measure,menu,cart,rowgeom,panel,shots}.mjs`, `t1r3q-cmp.py`. Screenshots `docs/qa/screenshots/t1r3-*`.
+
+PASS
