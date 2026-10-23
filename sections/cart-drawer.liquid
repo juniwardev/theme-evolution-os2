@@ -320,6 +320,11 @@
           if (newContent && sectionElement) {
             sectionElement.innerHTML = newContent.innerHTML;
           }
+          if (section.id === 'header' && newContent && sectionElement) {
+            // Why: the cart link's own aria-label carries the count; innerHTML alone left it stale.
+            const label = newContent.getAttribute('aria-label');
+            if (label !== null) sectionElement.setAttribute('aria-label', label);
+          }
         });
         
         this.bindEvents();
@@ -378,6 +383,9 @@
             const currentHeaderIcon = document.querySelector('[data-header-cart-icon]');
             if (newHeaderIcon && currentHeaderIcon) {
               currentHeaderIcon.innerHTML = newHeaderIcon.innerHTML;
+              // Why: keep the link's own aria-label in step with its badge.
+              const label = newHeaderIcon.getAttribute('aria-label');
+              if (label !== null) currentHeaderIcon.setAttribute('aria-label', label);
             }
           })
           .catch((e) => console.error('Error updating header icon:', e));
