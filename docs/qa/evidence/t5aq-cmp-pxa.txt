@@ -1,0 +1,124 @@
+## collection-1440  status 200/200  paired 458  unpaired 0 (+7 in <head>)  noise 0
+  META docH: 6413 -> 6381
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  RECT MOVES 240: html 0,0,1440,6413 -> 0,0,1440,6381 | html>body 0,0,1440,6413 -> 0,0,1440,6381 | html>body>div:1 0,0,1440,129 -> 0,0,1440,97 | html>body>div:1>div 0,0,1440,129 -> 0,0,1440,97
+  PIXELS base-vs-head: {"n":102861,"mx":240,"bbox":[0,619,1439,6239],"w":1440,"h":6413}   base-vs-base(noise): n/a
+## collection-375  status 200/200  paired 449  unpaired 0 (+12 in <head>)  noise 0
+  META docH: 5930 -> 5898
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  RECT MOVES 241: html 0,0,375,5929.67 -> 0,0,375,5897.67 | html>body 0,0,375,5929.67 -> 0,0,375,5897.67 | html>body>div:1 0,0,375,129 -> 0,0,375,97 | html>body>div:1>div 0,0,375,129 -> 0,0,375,97
+  PIXELS base-vs-head: {"n":28049,"mx":241,"bbox":[0,615,374,5730],"w":375,"h":5930}   base-vs-base(noise): n/a
+## home-1440  status 200/200  paired 375  unpaired 0 (+13 in <head>)  noise 0
+  META docH: 1878 -> 1846
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  RECT MOVES 174: html 0,0,1440,1877.78 -> 0,0,1440,1845.78 | html>body 0,0,1440,1877.78 -> 0,0,1440,1845.78 | html>body>div:1 0,0,1440,129 -> 0,0,1440,97 | html>body>div:1>div 0,0,1440,129 -> 0,0,1440,97
+  PIXELS base-vs-head: {"n":132344,"mx":238,"bbox":[0,116,1439,1421],"w":1440,"h":1878}   base-vs-base(noise): n/a
+## home-375  status 200/200  paired 375  unpaired 0 (+6 in <head>)  noise 0
+  META docH: 2769 -> 2737
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  RECT MOVES 175: html 0,0,375,2768.61 -> 0,0,375,2736.61 | html>body 0,0,375,2768.61 -> 0,0,375,2736.61 | html>body>div:1 0,0,375,129 -> 0,0,375,97 | html>body>div:1>div 0,0,375,129 -> 0,0,375,97
+  PIXELS base-vs-head: {"n":28190,"mx":255,"bbox":[0,615,374,2423],"w":375,"h":2769}   base-vs-base(noise): n/a
+## p3p-1440  status 200/200  paired 487  unpaired 0 (+10 in <head>)  noise 0
+  META docH: 2433 -> 2401
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  RECT MOVES 260: html 0,0,1440,2433.34 -> 0,0,1440,2401.34 | html>body 0,0,1440,2433.34 -> 0,0,1440,2401.34 | html>body>div:1 0,0,1440,129 -> 0,0,1440,97 | html>body>div:1>div 0,0,1440,129 -> 0,0,1440,97
+  PIXELS base-vs-head: {"n":102572,"mx":255,"bbox":[0,619,1439,1655],"w":1440,"h":2433}   base-vs-base(noise): n/a
+## p3p-375  status 200/200  paired 622  unpaired 0 (+3 in <head>)  noise 0
+  META docH: 3488 -> 3456
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  RECT MOVES 261: html 0,0,375,3487.56 -> 0,0,375,3455.56 | html>body 0,0,375,3487.56 -> 0,0,375,3455.56 | html>body>div:1 0,0,375,129 -> 0,0,375,97 | html>body>div:1>div 0,0,375,129 -> 0,0,375,97
+  PIXELS base-vs-head: {"n":28062,"mx":255,"bbox":[0,615,374,2753],"w":375,"h":3488}   base-vs-base(noise): n/a
+
+# GROUPED STYLE DIFFS (head vs base, noise removed; count, pages)
+  152x [collection-1440,collection-375,home-1440,home-375,p3p-1440,+1] div | list-style-type | none -> disc
+  132x [collection-1440,collection-375,home-1440,home-375,p3p-1440,+1] a | list-style-type | none -> disc
+   88x [collection-1440,collection-375,home-1440,home-375,p3p-1440,+1] p | list-style-type | none -> disc
+   48x [collection-1440,collection-375,home-1440,home-375,p3p-1440,+1] span | list-style-type | none -> disc
+   40x [collection-1440,collection-375,home-1440,home-375,p3p-1440,+1] img | list-style-type | none -> disc
+   24x [collection-1440,collection-375,home-1440,home-375,p3p-1440,+1] svg | list-style-type | none -> disc
+   24x [collection-1440,collection-375,home-1440,home-375,p3p-1440,+1] path | list-style-type | none -> disc
+   22x [collection-1440,collection-375,home-1440,home-375,p3p-1440,+1] div | flex-wrap | wrap -> nowrap
+   12x [collection-1440,collection-375,home-1440,home-375,p3p-1440,+1] div | block-size | 129px -> 97px
+   12x [collection-1440,collection-375,home-1440,home-375,p3p-1440,+1] div | height | 129px -> 97px
+   12x [collection-1440,collection-375,home-1440,home-375,p3p-1440,+1] h2 | list-style-type | none -> disc
+    8x [p3p-1440,p3p-375] span::after | list-style-type | none -> disc
+    6x [collection-1440,collection-375,home-1440,home-375,p3p-1440,+1] div | grid-template-rows | 129px -> 97px
+    6x [collection-1440,home-1440,p3p-1440] div | perspective-origin | 720px 64.5px -> 720px 48.5px
+    6x [collection-1440,home-1440,p3p-1440] div | transform-origin | 720px 64.5px -> 720px 48.5px
+    6x [collection-1440,collection-375,home-1440,home-375,p3p-1440,+1] div | margin-block-end | 32px -> 0px
+    6x [collection-1440,collection-375,home-1440,home-375,p3p-1440,+1] div | margin-bottom | 32px -> 0px
+    6x [collection-1440,collection-375,home-1440,home-375,p3p-1440,+1] header | flex-wrap | wrap -> nowrap
+    6x [collection-1440,collection-375,home-1440,home-375,p3p-1440,+1] header | list-style-type | none -> disc
+    6x [collection-1440,collection-375,home-1440,home-375,p3p-1440,+1] theme-evolution-header-menu | list-style-type | none -> disc
+    6x [collection-1440,collection-375,home-1440,home-375,p3p-1440,+1] button | list-style-type | none -> disc
+    6x [collection-1440,collection-375,home-1440,home-375,p3p-1440,+1] nav | list-style-type | none -> disc
+    6x [collection-375,home-375,p3p-375] div | perspective-origin | 187.5px 64.5px -> 187.5px 48.5px
+    6x [collection-375,home-375,p3p-375] div | transform-origin | 187.5px 64.5px -> 187.5px 48.5px
+    3x [collection-375,home-375,p3p-375] span | inset-block-start | 97.5px -> 65.5px
+    3x [collection-375,home-375,p3p-375] span | top | 97.5px -> 65.5px
+    2x [home-1440,home-375] h1 | list-style-type | none -> disc
+    2x [home-1440,home-375] div#TrustBadge-trust-badge | list-style-type | none -> disc
+    2x [p3p-1440,p3p-375] div | z-index | 1 -> auto
+    2x [p3p-1440,p3p-375] summary | bottom | 0px -> auto
+    2x [p3p-1440,p3p-375] summary | inset-block-end | 0px -> auto
+    2x [p3p-1440,p3p-375] summary | inset-block-start | 0px -> auto
+    2x [p3p-1440,p3p-375] summary | inset-inline-end | 0px -> auto
+    2x [p3p-1440,p3p-375] summary | inset-inline-start | 0px -> auto
+    2x [p3p-1440,p3p-375] summary | left | 0px -> auto
+    2x [p3p-1440,p3p-375] summary | list-style-position | outside -> inside
+    2x [p3p-1440,p3p-375] summary | position | relative -> static
+    2x [p3p-1440,p3p-375] summary | right | 0px -> auto
+    2x [p3p-1440,p3p-375] summary | top | 0px -> auto
+    2x [p3p-1440,p3p-375] span | list-style-position | outside -> inside
+    2x [p3p-1440,p3p-375] ul | flex-wrap | wrap -> nowrap
+    2x [p3p-1440,p3p-375] h3 | list-style-type | none -> disc
+    2x [p3p-1440,p3p-375] style | list-style-type | none -> disc
+    2x [p3p-1440,p3p-375] div#TrustBadge-trust_badge_9mJ3Em | list-style-type | none -> disc
+    1x [collection-1440] html | block-size | 6413px -> 6381px
+    1x [collection-1440] html | height | 6413px -> 6381px
+    1x [collection-1440] html | perspective-origin | 720px 3206.5px -> 720px 3190.5px
+    1x [collection-1440] html | transform-origin | 720px 3206.5px -> 720px 3190.5px
+    1x [collection-1440] body | block-size | 6413px -> 6381px
+    1x [collection-1440] body | height | 6413px -> 6381px
+    1x [collection-1440] body | perspective-origin | 720px 3206.5px -> 720px 3190.5px
+    1x [collection-1440] body | transform-origin | 720px 3206.5px -> 720px 3190.5px
+    1x [collection-375] html | block-size | 5929.67px -> 5897.67px
+    1x [collection-375] html | height | 5929.67px -> 5897.67px
+    1x [collection-375] html | perspective-origin | 187.5px 2964.83px -> 187.5px 2948.83px
+    1x [collection-375] html | transform-origin | 187.5px 2964.84px -> 187.5px 2948.84px
+    1x [collection-375] body | block-size | 5929.67px -> 5897.67px
+    1x [collection-375] body | height | 5929.67px -> 5897.67px
+    1x [collection-375] body | perspective-origin | 187.5px 2964.83px -> 187.5px 2948.83px
+    1x [collection-375] body | transform-origin | 187.5px 2964.84px -> 187.5px 2948.84px
+    1x [home-1440] html | block-size | 1877.78px -> 1845.78px
+    1x [home-1440] html | height | 1877.78px -> 1845.78px
+    1x [home-1440] html | perspective-origin | 720px 938.891px -> 720px 922.891px
+    1x [home-1440] html | transform-origin | 720px 938.891px -> 720px 922.891px
+    1x [home-1440] body | block-size | 1877.78px -> 1845.78px
+    1x [home-1440] body | height | 1877.78px -> 1845.78px
+    1x [home-1440] body | perspective-origin | 720px 938.891px -> 720px 922.891px
+    1x [home-1440] body | transform-origin | 720px 938.891px -> 720px 922.891px
+    1x [home-375] html | block-size | 2768.61px -> 2736.61px
+    1x [home-375] html | height | 2768.61px -> 2736.61px
+    1x [home-375] html | perspective-origin | 187.5px 1384.3px -> 187.5px 1368.3px
+    1x [home-375] html | transform-origin | 187.5px 1384.3px -> 187.5px 1368.3px
+    1x [home-375] body | block-size | 2768.61px -> 2736.61px
+    1x [home-375] body | height | 2768.61px -> 2736.61px
+    1x [home-375] body | perspective-origin | 187.5px 1384.3px -> 187.5px 1368.3px
+    1x [home-375] body | transform-origin | 187.5px 1384.3px -> 187.5px 1368.3px
+    1x [p3p-1440] html | block-size | 2433.34px -> 2401.34px
+    1x [p3p-1440] html | height | 2433.34px -> 2401.34px
+    1x [p3p-1440] html | perspective-origin | 720px 1216.67px -> 720px 1200.67px
+    1x [p3p-1440] html | transform-origin | 720px 1216.67px -> 720px 1200.67px
+    1x [p3p-1440] body | block-size | 2433.34px -> 2401.34px
+    1x [p3p-1440] body | height | 2433.34px -> 2401.34px
+    1x [p3p-1440] body | perspective-origin | 720px 1216.67px -> 720px 1200.67px
+    1x [p3p-1440] body | transform-origin | 720px 1216.67px -> 720px 1200.67px
+    1x [p3p-375] html | block-size | 3487.56px -> 3455.56px
+    1x [p3p-375] html | height | 3487.56px -> 3455.56px
+    1x [p3p-375] html | perspective-origin | 187.5px 1743.78px -> 187.5px 1727.78px
+    1x [p3p-375] html | transform-origin | 187.5px 1743.78px -> 187.5px 1727.78px
+    1x [p3p-375] body | block-size | 3487.56px -> 3455.56px
+    1x [p3p-375] body | height | 3487.56px -> 3455.56px
+    1x [p3p-375] body | perspective-origin | 187.5px 1743.78px -> 187.5px 1727.78px
+    1x [p3p-375] body | transform-origin | 187.5px 1743.78px -> 187.5px 1727.78px

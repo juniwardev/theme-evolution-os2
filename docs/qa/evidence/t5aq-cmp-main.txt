@@ -1,0 +1,1760 @@
+## archive-1440  status 200/200  paired 413  unpaired 0 (+39 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  HEAD-ONLY CONSOLE: console.error: Failed to load resource: net::ERR_NETWORK_CHANGED
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":1440,"h":1629}   base-vs-base(noise): {"n":0,"mx":0}
+## archive-375  status 200/200  paired 463  unpaired 0 (+4 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":375,"h":3862}   base-vs-base(noise): {"n":0,"mx":0}
+## balanced-1440  status 200/200  paired 337  unpaired 0 (+2 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":1440,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## balanced-375  status 200/200  paired 332  unpaired 0 (+7 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":375,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## blog-1440  status 200/200  paired 330  unpaired 0 (+5 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":1440,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## blog-375  status 200/200  paired 333  unpaired 0 (+2 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":375,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## cart-1440  status 200/200  paired 336  unpaired 0 (+5 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":1440,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## cart-320  status 200/200  paired 339  unpaired 0 (+2 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":320,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## cart-375  status 200/200  paired 335  unpaired 0 (+3 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":375,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## cart-430  status 200/200  paired 337  unpaired 0 (+2 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":430,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## cart-750  status 200/200  paired 328  unpaired 0 (+6 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":750,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## cart-990  status 200/200  paired 338  unpaired 0 (+5 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":990,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## collection-1440  status 200/200  paired 458  unpaired 0 (+2 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":1440,"h":6348}   base-vs-base(noise): {"n":0,"mx":0}
+## collection-320  status 200/200  paired 411  unpaired 0 (+51 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":320,"h":5176}   base-vs-base(noise): {"n":0,"mx":0}
+## collection-375  status 200/200  paired 450  unpaired 0 (+7 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":375,"h":5865}   base-vs-base(noise): {"n":0,"mx":0}
+## collection-430  status 200/200  paired 459  unpaired 0 (+11 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  HEAD-ONLY CONSOLE: console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || pageerror: Failed to fetch || console.error: [bugsnag] Session failed to send… Error: Request failed with status 0
+    at Q.onreadystatechange (https://cdn.shopify.com/shopifycloud/preview-bar/vendor-DS1bqi2U1wPA.js:25:2743) || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":430,"h":6613}   base-vs-base(noise): {"n":0,"mx":0}
+## collection-750  status 200/200  paired 470  unpaired 0 (+15 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":750,"h":11337}   base-vs-base(noise): {"n":0,"mx":0}
+## collection-990  status 200/200  paired 384  unpaired 0 (+110 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  HEAD-ONLY CONSOLE: console.error: [bugsnag] Session failed to send… Error: Request failed with status 0
+    at Q.onreadystatechange (https://cdn.shopify.com/shopifycloud/preview-bar/vendor-DS1bqi2U1wPA.js:25:2743) || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":990,"h":14863}   base-vs-base(noise): {"n":0,"mx":0}
+## collections-1440  status 200/200  paired 347  unpaired 0 (+10 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":1440,"h":870}   base-vs-base(noise): {"n":0,"mx":0}
+## collections-375  status 200/200  paired 348  unpaired 0 (+5 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":375,"h":1580}   base-vs-base(noise): {"n":0,"mx":0}
+## contact-1440  status 200/200  paired 331  unpaired 0 (+5 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":1440,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## contact-320  status 200/200  paired 281  unpaired 0 (+51 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  HEAD-ONLY CONSOLE: console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || console.error: [bugsnag] Session failed to send… Error: Request failed with status 0
+    at Q.onreadystatechange (https://cdn.shopify.com/shopifycloud/preview-bar/vendor-DS1bqi2U1wPA.js:25:2743) || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":320,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## contact-375  status 200/200  paired 332  unpaired 0 (+7 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":375,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## contact-430  status 200/200  paired 330  unpaired 0 (+5 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":430,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## contact-750  status 200/200  paired 323  unpaired 0 (+8 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":750,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## contact-990  status 200/200  paired 328  unpaired 0 (+10 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":990,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## home-1440  status 200/200  paired 375  unpaired 0 (+5 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":1440,"h":1813}   base-vs-base(noise): {"n":0,"mx":0}
+## home-320  status 200/200  paired 381  unpaired 1 (+3 in <head>)  noise 0
+  UNPAIRED: html>body>shop-cart-sync
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  HEAD-ONLY CONSOLE: console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || pageerror: Failed to fetch dynamically imported module: https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":320,"h":3144}   base-vs-base(noise): {"n":0,"mx":0}
+## home-375  status 200/200  paired 380  unpaired 0 (+8 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":375,"h":2704}   base-vs-base(noise): {"n":0,"mx":0}
+## home-430  status 200/200  paired 378  unpaired 0 (+2 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":430,"h":2482}   base-vs-base(noise): {"n":0,"mx":0}
+## home-750  status 200/200  paired 382  unpaired 0 (+3 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":750,"h":2023}   base-vs-base(noise): {"n":0,"mx":0}
+## home-990  status 200/200  paired 378  unpaired 0 (+7 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":990,"h":2124}   base-vs-base(noise): {"n":0,"mx":0}
+## landing-1440  status 200/200  paired 478  unpaired 0 (+8 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":1440,"h":1607}   base-vs-base(noise): {"n":0,"mx":0}
+## landing-375  status 200/200  paired 475  unpaired 0 (+11 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":375,"h":2314}   base-vs-base(noise): {"n":0,"mx":0}
+## missing-1440  status 404/404  paired 334  unpaired 0 (+4 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":1440,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## missing-375  status 404/404  paired 331  unpaired 0 (+3 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":375,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## optout-1440  status 200/200  paired 384  unpaired 0 (+6 in <head>)  noise 0
+  sheets base 5 head 4; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  RECT MOVES 4: html>body>div:7>div:2 0,0,0,0 -> 0,0,1440,812 | html>body>div:7>div:3 1,-9860,0,0 -> -21,-9860,22,42 | html>body>div:7>div:3>div:1 0,0,0,0 -> -21,-9850,22,20 | html>body>div:7>div:3>div:2 0,0,0,0 -> -21,-9851,22,22
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":1440,"h":1281}   base-vs-base(noise): {"n":0,"mx":0}
+## optout-320  status 200/200  paired 385  unpaired 0 (+3 in <head>)  noise 0
+  sheets base 5 head 4; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  RECT MOVES 4: html>body>div:7>div:2 0,0,0,0 -> 0,0,320,812 | html>body>div:7>div:3 1,-9860,0,0 -> -21,-9860,22,42 | html>body>div:7>div:3>div:1 0,0,0,0 -> -21,-9850,22,20 | html>body>div:7>div:3>div:2 0,0,0,0 -> -21,-9851,22,22
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":320,"h":2515}   base-vs-base(noise): {"n":0,"mx":0}
+## optout-375  status 200/200  paired 385  unpaired 0 (+10 in <head>)  noise 0
+  sheets base 5 head 4; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  RECT MOVES 4: html>body>div:7>div:2 0,0,0,0 -> 0,0,375,812 | html>body>div:7>div:3 1,-9860,0,0 -> -21,-9860,22,42 | html>body>div:7>div:3>div:1 0,0,0,0 -> -21,-9850,22,20 | html>body>div:7>div:3>div:2 0,0,0,0 -> -21,-9851,22,22
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":375,"h":2156}   base-vs-base(noise): {"n":0,"mx":0}
+## optout-430  status 200/200  paired 388  unpaired 0 (+2 in <head>)  noise 0
+  sheets base 5 head 4; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  RECT MOVES 4: html>body>div:7>div:2 0,0,0,0 -> 0,0,430,812 | html>body>div:7>div:3 1,-9860,0,0 -> -21,-9860,22,42 | html>body>div:7>div:3>div:1 0,0,0,0 -> -21,-9850,22,20 | html>body>div:7>div:3>div:2 0,0,0,0 -> -21,-9851,22,22
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":430,"h":1875}   base-vs-base(noise): {"n":0,"mx":0}
+## optout-750  status 200/200  paired 351  unpaired 0 (+40 in <head>)  noise 0
+  sheets base 5 head 4; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  RECT MOVES 4: html>body>div:7>div:2 0,0,0,0 -> 0,0,750,812 | html>body>div:7>div:3 1,-9860,0,0 -> -21,-9860,22,42 | html>body>div:7>div:3>div:1 0,0,0,0 -> -21,-9850,22,20 | html>body>div:7>div:3>div:2 0,0,0,0 -> -21,-9851,22,22
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":750,"h":1370}   base-vs-base(noise): {"n":0,"mx":0}
+## optout-990  status 200/200  paired 385  unpaired 0 (+2 in <head>)  noise 0
+  sheets base 5 head 4; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  RECT MOVES 4: html>body>div:7>div:2 0,0,0,0 -> 0,0,990,812 | html>body>div:7>div:3 1,-9860,0,0 -> -21,-9860,22,42 | html>body>div:7>div:3>div:1 0,0,0,0 -> -21,-9850,22,20 | html>body>div:7>div:3>div:2 0,0,0,0 -> -21,-9851,22,22
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":990,"h":1296}   base-vs-base(noise): {"n":0,"mx":0}
+## p3p-1440  status 200/200  paired 497  unpaired 0 (+2 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":1440,"h":2368}   base-vs-base(noise): {"n":0,"mx":0}
+## p3p-320  status 200/200  paired 575  unpaired 0 (+48 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":320,"h":3679}   base-vs-base(noise): {"n":0,"mx":0}
+## p3p-375  status 200/200  paired 620  unpaired 0 (+3 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":375,"h":3423}   base-vs-base(noise): {"n":0,"mx":0}
+## p3p-430  status 200/200  paired 620  unpaired 0 (+3 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":430,"h":3338}   base-vs-base(noise): {"n":0,"mx":0}
+## p3p-750  status 200/200  paired 620  unpaired 0 (+3 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":750,"h":3558}   base-vs-base(noise): {"n":0,"mx":0}
+## p3p-990  status 200/200  paired 494  unpaired 0 (+2 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":990,"h":2949}   base-vs-base(noise): {"n":0,"mx":0}
+## password-1440  status 200/200  paired 108  unpaired 0 (+39 in <head>)  noise 0
+  sheets base 2 head 2; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":1440,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## password-320  status 200/200  paired 147  unpaired 0 (+3 in <head>)  noise 0
+  sheets base 2 head 2; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":320,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## password-375  status 200/200  paired 145  unpaired 0 (+5 in <head>)  noise 0
+  sheets base 2 head 2; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":375,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## password-430  status 200/200  paired 144  unpaired 0 (+8 in <head>)  noise 0
+  sheets base 2 head 2; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":430,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## password-750  status 200/200  paired 142  unpaired 0 (+6 in <head>)  noise 0
+  sheets base 2 head 2; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":750,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## password-990  status 200/200  paired 144  unpaired 0 (+3 in <head>)  noise 0
+  sheets base 2 head 2; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":990,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## policy-1440  status 200/200  paired 446  unpaired 0 (+9 in <head>)  noise 0
+  sheets base 5 head 4; head theme css: tailwind.css,policy-0e156355.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":1440,"h":4955}   base-vs-base(noise): {"n":0,"mx":0}
+## policy-320  status 200/200  paired 425  unpaired 0 (+40 in <head>)  noise 0
+  sheets base 5 head 4; head theme css: tailwind.css,policy-0e156355.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":325,"h":10557}   base-vs-base(noise): {"n":0,"mx":0}
+## policy-375  status 200/200  paired 453  unpaired 0 (+2 in <head>)  noise 0
+  sheets base 5 head 4; head theme css: tailwind.css,policy-0e156355.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":375,"h":8900}   base-vs-base(noise): {"n":0,"mx":0}
+## policy-430  status 200/200  paired 452  unpaired 0 (+7 in <head>)  noise 0
+  sheets base 5 head 4; head theme css: tailwind.css,policy-0e156355.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":430,"h":7569}   base-vs-base(noise): {"n":0,"mx":0}
+## policy-750  status 200/200  paired 419  unpaired 0 (+27 in <head>)  noise 0
+  sheets base 5 head 4; head theme css: tailwind.css,policy-0e156355.css; layers head ["properties","theme","base","components","utilities"]
+  HEAD-ONLY CONSOLE: console.error: Failed to load resource: net::ERR_NETWORK_CHANGED || pageerror: Failed to fetch
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":750,"h":5100}   base-vs-base(noise): {"n":0,"mx":0}
+## policy-990  status 200/200  paired 444  unpaired 0 (+7 in <head>)  noise 0
+  sheets base 5 head 4; head theme css: tailwind.css,policy-0e156355.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":990,"h":4970}   base-vs-base(noise): {"n":0,"mx":0}
+## search-1440  status 200/200  paired 413  unpaired 0 (+9 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":1440,"h":1575}   base-vs-base(noise): {"n":0,"mx":0}
+## search-375  status 200/200  paired 429  unpaired 0 (+8 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":375,"h":6020}   base-vs-base(noise): {"n":0,"mx":0}
+## search0-1440  status 200/200  paired 345  unpaired 0 (+4 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":1440,"h":812}   base-vs-base(noise): {"n":0,"mx":0}
+## search0-375  status 200/200  paired 339  unpaired 0 (+2 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":375,"h":845}   base-vs-base(noise): {"n":0,"mx":0}
+## snow-1440  status 200/200  paired 503  unpaired 0 (+3 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":1440,"h":2414}   base-vs-base(noise): {"n":0,"mx":0}
+## snow-375  status 200/200  paired 634  unpaired 0 (+3 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":375,"h":3617}   base-vs-base(noise): {"n":0,"mx":0}
+## wax-1440  status 200/200  paired 584  unpaired 0 (+3 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":1440,"h":2925}   base-vs-base(noise): {"n":0,"mx":0}
+## wax-375  status 200/200  paired 584  unpaired 0 (+3 in <head>)  noise 0
+  sheets base 4 head 3; head theme css: tailwind.css; layers head ["properties","theme","base","components","utilities"]
+  PIXELS base-vs-head: {"n":0,"mx":0,"bbox":null,"w":375,"h":2692}   base-vs-base(noise): {"n":0,"mx":0}
+
+# GROUPED STYLE DIFFS (head vs base, noise removed; count, pages)
+  954x [archive-1440,archive-375,balanced-1440,balanced-375,blog-1440,+57] div | list-style-type | none -> disc
+  946x [archive-1440,archive-375,balanced-1440,balanced-375,blog-1440,+57] a | list-style-type | none -> disc
+  428x [archive-1440,archive-375,balanced-1440,balanced-375,blog-1440,+57] span | list-style-type | none -> disc
+  326x [archive-1440,archive-375,balanced-1440,balanced-375,blog-1440,+57] p | list-style-type | none -> disc
+  248x [archive-1440,archive-375,balanced-1440,balanced-375,blog-1440,+57] svg | list-style-type | none -> disc
+  248x [archive-1440,archive-375,balanced-1440,balanced-375,blog-1440,+57] path | list-style-type | none -> disc
+  214x [archive-1440,archive-375,balanced-1440,balanced-375,blog-1440,+57] img | list-style-type | none -> disc
+  102x [archive-1440,archive-375,balanced-1440,balanced-375,blog-1440,+57] div | flex-wrap | wrap -> nowrap
+   92x [archive-1440,archive-375,balanced-1440,balanced-375,blog-1440,+57] h2 | list-style-type | none -> disc
+   74x [archive-1440,archive-375,p3p-1440,p3p-320,p3p-375,+5] span::after | list-style-type | none -> disc
+   62x [archive-1440,archive-375,balanced-1440,balanced-375,blog-1440,+57] header | flex-wrap | wrap -> nowrap
+   62x [archive-1440,archive-375,balanced-1440,balanced-375,blog-1440,+57] header | list-style-type | none -> disc
+   62x [archive-1440,archive-375,balanced-1440,balanced-375,blog-1440,+57] theme-evolution-header-menu | list-style-type | none -> disc
+   62x [archive-1440,archive-375,balanced-1440,balanced-375,blog-1440,+57] button | list-style-type | none -> disc
+   62x [archive-1440,archive-375,balanced-1440,balanced-375,blog-1440,+57] nav | list-style-type | none -> disc
+   20x [archive-1440,archive-375,p3p-1440,p3p-320,p3p-375,+5] style | list-style-type | none -> disc
+   18x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | display | none -> block
+   18x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | inset-inline-end | auto -> 0px
+   18x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | right | auto -> 0px
+   12x [landing-1440,landing-375,p3p-1440,p3p-320,p3p-375,+7] div | z-index | 1 -> auto
+   12x [landing-1440,landing-375,p3p-1440,p3p-320,p3p-375,+7] summary | bottom | 0px -> auto
+   12x [landing-1440,landing-375,p3p-1440,p3p-320,p3p-375,+7] summary | inset-block-end | 0px -> auto
+   12x [landing-1440,landing-375,p3p-1440,p3p-320,p3p-375,+7] summary | inset-block-start | 0px -> auto
+   12x [landing-1440,landing-375,p3p-1440,p3p-320,p3p-375,+7] summary | inset-inline-end | 0px -> auto
+   12x [landing-1440,landing-375,p3p-1440,p3p-320,p3p-375,+7] summary | inset-inline-start | 0px -> auto
+   12x [landing-1440,landing-375,p3p-1440,p3p-320,p3p-375,+7] summary | left | 0px -> auto
+   12x [landing-1440,landing-375,p3p-1440,p3p-320,p3p-375,+7] summary | list-style-position | outside -> inside
+   12x [landing-1440,landing-375,p3p-1440,p3p-320,p3p-375,+7] summary | position | relative -> static
+   12x [landing-1440,landing-375,p3p-1440,p3p-320,p3p-375,+7] summary | right | 0px -> auto
+   12x [landing-1440,landing-375,p3p-1440,p3p-320,p3p-375,+7] summary | top | 0px -> auto
+   12x [landing-1440,landing-375,p3p-1440,p3p-320,p3p-375,+7] span | list-style-position | outside -> inside
+   12x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | inline-size | auto -> 22px
+   12x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | inset-inline-start | auto -> 0px
+   12x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | left | auto -> 0px
+   12x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | width | auto -> 22px
+   10x [p3p-1440,p3p-320,p3p-375,p3p-430,p3p-750,+5] ul | flex-wrap | wrap -> nowrap
+   10x [p3p-1440,p3p-320,p3p-375,p3p-430,p3p-750,+5] div#TrustBadge-trust_badge_9mJ3Em | list-style-type | none -> disc
+    8x [p3p-1440,p3p-320,p3p-375,p3p-430,p3p-750,+3] h3 | list-style-type | none -> disc
+    6x [home-1440,home-320,home-375,home-430,home-750,+1] h1 | list-style-type | none -> disc
+    6x [home-1440,home-320,home-375,home-430,home-750,+1] div#TrustBadge-trust-badge | list-style-type | none -> disc
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] button#pc--opt-out-button | transition-duration | 0.1s -> 0s
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] button#pc--opt-out-button | transition-property | box-shadow -> all
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | block-size | 100% -> 812px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | bottom | auto -> 0px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | height | 100% -> 812px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | inset-block-end | auto -> 0px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | block-size | 0px -> 42px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | bottom | 11px -> -31px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | height | 0px -> 42px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | inline-size | 0px -> 22px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | inset-block-end | 11px -> -31px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | inset-inline-start | 0px -> -22px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | left | 0px -> -22px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | perspective-origin | 0px 0px -> 11px 21px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | transform-origin | 0px 0px -> 11px 21px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | width | 0px -> 22px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | block-size | auto -> 20px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | bottom | auto -> -10px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | height | auto -> 20px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | inset-block-end | auto -> -10px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | perspective-origin | 50% 50% -> 11px 10px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | transform-origin | 50% 50% -> 11px 10px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | block-size | auto -> 22px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | bottom | auto -> 11px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | height | auto -> 22px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | inset-block-end | auto -> 11px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | perspective-origin | 50% 50% -> 11px 11px
+    6x [optout-1440,optout-320,optout-375,optout-430,optout-750,+1] div | transform-origin | 50% 50% -> 11px 11px
+    6x [password-1440,password-320,password-375,password-430,password-750,+1] h1 | word-break | normal -> break-word
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | accent-color | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | align-content | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | align-items | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | align-self | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | alignment-baseline | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | anchor-name | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | anchor-scope | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | animation-composition | replace -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | animation-delay | 0s -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | animation-direction | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | animation-duration | 0s -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | animation-fill-mode | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | animation-iteration-count | 1 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | animation-name | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | animation-play-state | running -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | animation-range-end | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | animation-range-start | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | animation-timeline | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | animation-timing-function | ease -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | animation-trigger | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | app-region | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | appearance | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | aspect-ratio | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | backdrop-filter | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | backface-visibility | visible -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | background-attachment | scroll -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | background-blend-mode | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | background-clip | border-box -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | background-color | rgba(0, 0, 0, 0) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | background-image | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | background-origin | padding-box -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | background-position | 0% 0% -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | background-repeat | repeat -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | background-size | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | baseline-shift | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | baseline-source | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | block-size | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-block-end-color | rgb(51, 51, 51) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-block-end-style | solid -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-block-end-width | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-block-start-color | rgb(51, 51, 51) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-block-start-style | solid -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-block-start-width | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-bottom-color | rgb(51, 51, 51) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-bottom-left-radius | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-bottom-right-radius | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-bottom-style | solid -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-bottom-width | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-collapse | separate -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-end-end-radius | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-end-start-radius | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-image-outset | 0 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-image-repeat | stretch -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-image-slice | 100% -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-image-source | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-image-width | 1 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-inline-end-color | rgb(51, 51, 51) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-inline-end-style | solid -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-inline-end-width | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-inline-start-color | rgb(51, 51, 51) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-inline-start-style | solid -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-inline-start-width | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-left-color | rgb(51, 51, 51) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-left-style | solid -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-left-width | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-right-color | rgb(51, 51, 51) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-right-style | solid -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-right-width | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-shape | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-start-end-radius | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-start-start-radius | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-top-color | rgb(51, 51, 51) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-top-left-radius | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-top-right-radius | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-top-style | solid -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | border-top-width | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | bottom | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | box-decoration-break | slice -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | box-shadow | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | box-sizing | border-box -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | break-after | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | break-before | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | break-inside | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | buffered-rendering | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | caption-side | top -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | caret-animation | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | caret-color | rgb(51, 51, 51) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | caret-shape | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | clear | both -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | clip | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | clip-path | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | clip-rule | nonzero -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | color | rgb(51, 51, 51) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | color-interpolation | srgb -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | color-interpolation-filters | linearrgb -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | color-rendering | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | color-scheme | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | column-count | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | column-fill | balance -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | column-gap | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | column-height | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | column-rule-break | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | column-rule-color | rgb(51, 51, 51) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | column-rule-inset-cap-end | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | column-rule-inset-cap-start | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | column-rule-inset-junction-end | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | column-rule-inset-junction-start | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | column-rule-style | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | column-rule-visibility-items | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | column-rule-width | 3px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | column-span | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | column-width | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | column-wrap | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | contain | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | contain-intrinsic-block-size | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | contain-intrinsic-height | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | contain-intrinsic-inline-size | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | contain-intrinsic-size | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | contain-intrinsic-width | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | container-name | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | container-type | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | content | "" -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | content-visibility | visible -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | corner-bottom-left-shape | round -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | corner-bottom-right-shape | round -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | corner-end-end-shape | round -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | corner-end-start-shape | round -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | corner-start-end-shape | round -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | corner-start-start-shape | round -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | corner-top-left-shape | round -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | corner-top-right-shape | round -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | counter-increment | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | counter-reset | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | counter-set | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | cursor | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | cx | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | cy | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | d | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | direction | ltr -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | display | block -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | dominant-baseline | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | dynamic-range-limit | no-limit -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | empty-cells | show -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | field-sizing | fixed -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | fill | rgb(0, 0, 0) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | fill-opacity | 1 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | fill-rule | nonzero -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | filter | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | flex-basis | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | flex-direction | row -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | flex-grow | 0 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | flex-shrink | 1 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | flex-wrap | nowrap -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | float | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | flood-color | rgb(0, 0, 0) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | flood-opacity | 1 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-family | "Work Sans", sans-serif -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-feature-settings | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-kerning | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-language-override | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-optical-sizing | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-palette | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-size | 16px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-size-adjust | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-stretch | 100% -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-style | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-synthesis-small-caps | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-synthesis-style | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-synthesis-weight | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-variant | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-variant-alternates | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-variant-caps | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-variant-east-asian | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-variant-emoji | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-variant-ligatures | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-variant-numeric | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-variant-position | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-variation-settings | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | font-weight | 400 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | forced-color-adjust | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | grid-auto-columns | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | grid-auto-flow | row -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | grid-auto-rows | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | grid-column-end | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | grid-column-start | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | grid-row-end | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | grid-row-start | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | grid-template-areas | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | grid-template-columns | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | grid-template-rows | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | height | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | hyphenate-character | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | hyphenate-limit-chars | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | hyphens | manual -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | image-orientation | from-image -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | image-rendering | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | initial-letter | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | inset-block-end | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | inset-block-start | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | inset-inline-end | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | inset-inline-start | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | interactivity | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | interest-delay-end | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | interest-delay-start | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | interpolate-size | numeric-only -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | isolation | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | justify-content | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | justify-items | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | justify-self | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | left | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | letter-spacing | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | lighting-color | rgb(255, 255, 255) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | line-break | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | line-height | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | list-style-image | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | list-style-position | outside -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | list-style-type | disc -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | margin-block-end | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | margin-block-start | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | margin-bottom | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | margin-inline-end | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | margin-inline-start | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | margin-left | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | margin-right | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | margin-top | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | marker-end | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | marker-mid | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | marker-start | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | mask-clip | border-box -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | mask-composite | add -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | mask-image | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | mask-mode | match-source -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | mask-origin | border-box -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | mask-position | 0% 0% -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | mask-repeat | repeat -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | mask-size | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | mask-type | luminance -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | math-depth | 0 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | math-shift | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | math-style | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | max-block-size | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | max-height | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | max-inline-size | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | max-width | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | min-block-size | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | min-height | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | min-inline-size | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | min-width | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | mix-blend-mode | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | object-fit | fill -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | object-position | 50% 50% -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | object-view-box | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | offset-anchor | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | offset-distance | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | offset-path | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | offset-position | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | offset-rotate | auto 0deg -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | opacity | 1 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | order | 0 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | orphans | 2 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | outline-color | rgb(51, 51, 51) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | outline-offset | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | outline-style | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | outline-width | 3px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | overflow-anchor | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | overflow-block | visible -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | overflow-clip-margin | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | overflow-inline | visible -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | overflow-wrap | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | overflow-x | visible -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | overflow-y | visible -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | overlay | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | overscroll-behavior-block | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | overscroll-behavior-inline | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | overscroll-behavior-x | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | overscroll-behavior-y | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | padding-block-end | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | padding-block-start | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | padding-bottom | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | padding-inline-end | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | padding-inline-start | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | padding-left | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | padding-right | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | padding-top | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | paint-order | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | perspective | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | pointer-events | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | position | static -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | position-anchor | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | position-area | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | position-try-fallbacks | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | position-try-order | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | position-visibility | anchors-visible -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | print-color-adjust | economy -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | quotes | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | r | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | reading-flow | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | reading-order | 0 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | resize | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | right | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | rotate | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | row-gap | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | row-rule-break | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | row-rule-color | rgb(51, 51, 51) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | row-rule-inset-cap-end | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | row-rule-inset-cap-start | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | row-rule-inset-junction-end | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | row-rule-inset-junction-start | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | row-rule-style | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | row-rule-visibility-items | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | row-rule-width | 3px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | ruby-align | space-around -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | ruby-position | over -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | rule-overlap | row-over-column -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | rx | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | ry | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scale | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-behavior | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-initial-target | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-margin-block-end | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-margin-block-start | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-margin-bottom | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-margin-inline-end | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-margin-inline-start | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-margin-left | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-margin-right | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-margin-top | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-marker-group | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-padding-block-end | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-padding-block-start | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-padding-bottom | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-padding-inline-end | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-padding-inline-start | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-padding-left | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-padding-right | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-padding-top | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-snap-align | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-snap-stop | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-snap-type | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-target-group | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-timeline-axis | block -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scroll-timeline-name | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scrollbar-color | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scrollbar-gutter | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | scrollbar-width | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | shape-image-threshold | 0 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | shape-margin | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | shape-outside | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | shape-rendering | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | speak | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | stop-color | rgb(0, 0, 0) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | stop-opacity | 1 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | stroke | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | stroke-dasharray | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | stroke-dashoffset | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | stroke-linecap | butt -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | stroke-linejoin | miter -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | stroke-miterlimit | 4 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | stroke-opacity | 1 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | stroke-width | 1px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | tab-size | 4 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | table-layout | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-align | start -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-align-last | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-anchor | start -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-autospace | no-autospace -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-box-edge | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-box-trim | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-combine-upright | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-decoration | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-decoration-color | rgb(51, 51, 51) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-decoration-line | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-decoration-skip-ink | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-decoration-style | solid -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-decoration-thickness | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-emphasis-color | rgb(51, 51, 51) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-emphasis-position | over -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-emphasis-style | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-indent | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-justify | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-orientation | mixed -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-overflow | clip -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-rendering | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-shadow | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-size-adjust | 100% -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-spacing-trim | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-transform | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-underline-offset | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-underline-position | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-wrap-mode | wrap -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | text-wrap-style | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | timeline-scope | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | timeline-trigger-activation-range-end | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | timeline-trigger-activation-range-start | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | timeline-trigger-active-range-end | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | timeline-trigger-active-range-start | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | timeline-trigger-name | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | timeline-trigger-source | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | top | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | touch-action | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | transform | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | transform-box | view-box -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | transform-style | flat -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | transition-behavior | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | transition-delay | 0s -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | transition-duration | 0s -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | transition-property | all -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | transition-timing-function | ease -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | translate | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | trigger-scope | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | unicode-bidi | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | user-select | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | vector-effect | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | vertical-align | baseline -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | view-timeline-axis | block -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | view-timeline-inset | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | view-timeline-name | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | view-transition-class | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | view-transition-group | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | view-transition-name | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | view-transition-scope | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | visibility | visible -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | white-space-collapse | collapse -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | widows | 2 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | will-change | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | word-break | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | word-spacing | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | writing-mode | horizontal-tb -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | x | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | y | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | z-index | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | zoom | 1 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-border-horizontal-spacing | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-border-image | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-border-vertical-spacing | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-box-align | stretch -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-box-decoration-break | slice -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-box-direction | normal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-box-flex | 0 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-box-ordinal-group | 1 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-box-orient | horizontal -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-box-pack | start -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-box-reflect | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-font-smoothing | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-line-break | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-line-clamp | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-locale | "en" -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-mask-box-image | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-mask-box-image-outset | 0 -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-mask-box-image-repeat | stretch -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-mask-box-image-slice | 0 fill -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-mask-box-image-source | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-mask-box-image-width | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-mask-position-x | 0% -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-mask-position-y | 0% -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-rtl-ordering | logical -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-ruby-position | before -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-tap-highlight-color | rgba(0, 0, 0, 0) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-text-combine | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-text-decorations-in-effect | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-text-fill-color | rgb(51, 51, 51) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-text-orientation | vertical-right -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-text-security | none -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-text-stroke-color | rgb(51, 51, 51) -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-text-stroke-width | 0px -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-user-drag | auto -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-user-modify | read-only -> undefined
+    6x [policy-1440,policy-320,policy-375,policy-430,policy-750,+1] div::after | -webkit-writing-mode | horizontal-tb -> undefined
+    3x [policy-1440,policy-750,policy-990] div::after | inline-size | 606.875px -> undefined
+    3x [policy-1440,policy-750,policy-990] div::after | perspective-origin | 303.438px 0px -> undefined
+    3x [policy-1440,policy-750,policy-990] div::after | transform-origin | 303.438px 0px -> undefined
+    3x [policy-1440,policy-750,policy-990] div::after | width | 606.875px -> undefined
+    2x [wax-1440,wax-375] button | bottom | 0px -> auto
+    2x [wax-1440,wax-375] button | inset-block-end | 0px -> auto
+    2x [wax-1440,wax-375] button | inset-block-start | 0px -> auto
+    2x [wax-1440,wax-375] button | inset-inline-end | 0px -> auto
+    2x [wax-1440,wax-375] button | inset-inline-start | 0px -> auto
+    2x [wax-1440,wax-375] button | left | 0px -> auto
+    2x [wax-1440,wax-375] button | position | relative -> static
+    2x [wax-1440,wax-375] button | right | 0px -> auto
+    2x [wax-1440,wax-375] button | top | 0px -> auto
+    2x [wax-1440,wax-375] button::before | accent-color | auto -> undefined
+    2x [wax-1440,wax-375] button::before | align-content | normal -> undefined
+    2x [wax-1440,wax-375] button::before | align-items | normal -> undefined
+    2x [wax-1440,wax-375] button::before | align-self | auto -> undefined
+    2x [wax-1440,wax-375] button::before | alignment-baseline | auto -> undefined
+    2x [wax-1440,wax-375] button::before | anchor-name | none -> undefined
+    2x [wax-1440,wax-375] button::before | anchor-scope | none -> undefined
+    2x [wax-1440,wax-375] button::before | animation-composition | replace -> undefined
+    2x [wax-1440,wax-375] button::before | animation-delay | 0s -> undefined
+    2x [wax-1440,wax-375] button::before | animation-direction | normal -> undefined
+    2x [wax-1440,wax-375] button::before | animation-duration | 0s -> undefined
+    2x [wax-1440,wax-375] button::before | animation-fill-mode | none -> undefined
+    2x [wax-1440,wax-375] button::before | animation-iteration-count | 1 -> undefined
+    2x [wax-1440,wax-375] button::before | animation-name | none -> undefined
+    2x [wax-1440,wax-375] button::before | animation-play-state | running -> undefined
+    2x [wax-1440,wax-375] button::before | animation-range-end | normal -> undefined
+    2x [wax-1440,wax-375] button::before | animation-range-start | normal -> undefined
+    2x [wax-1440,wax-375] button::before | animation-timeline | auto -> undefined
+    2x [wax-1440,wax-375] button::before | animation-timing-function | ease -> undefined
+    2x [wax-1440,wax-375] button::before | animation-trigger | none -> undefined
+    2x [wax-1440,wax-375] button::before | app-region | none -> undefined
+    2x [wax-1440,wax-375] button::before | appearance | none -> undefined
+    2x [wax-1440,wax-375] button::before | aspect-ratio | auto -> undefined
+    2x [wax-1440,wax-375] button::before | backdrop-filter | none -> undefined
+    2x [wax-1440,wax-375] button::before | backface-visibility | visible -> undefined
+    2x [wax-1440,wax-375] button::before | background-attachment | scroll -> undefined
+    2x [wax-1440,wax-375] button::before | background-blend-mode | normal -> undefined
+    2x [wax-1440,wax-375] button::before | background-clip | border-box -> undefined
+    2x [wax-1440,wax-375] button::before | background-color | rgba(0, 0, 0, 0) -> undefined
+    2x [wax-1440,wax-375] button::before | background-image | none -> undefined
+    2x [wax-1440,wax-375] button::before | background-origin | padding-box -> undefined
+    2x [wax-1440,wax-375] button::before | background-position | 0% 0% -> undefined
+    2x [wax-1440,wax-375] button::before | background-repeat | repeat -> undefined
+    2x [wax-1440,wax-375] button::before | background-size | auto -> undefined
+    2x [wax-1440,wax-375] button::before | baseline-shift | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | baseline-source | auto -> undefined
+    2x [wax-1440,wax-375] button::before | block-size | 44px -> undefined
+    2x [wax-1440,wax-375] button::before | border-block-end-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::before | border-block-end-style | solid -> undefined
+    2x [wax-1440,wax-375] button::before | border-block-end-width | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | border-block-start-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::before | border-block-start-style | solid -> undefined
+    2x [wax-1440,wax-375] button::before | border-block-start-width | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | border-bottom-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::before | border-bottom-left-radius | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | border-bottom-right-radius | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | border-bottom-style | solid -> undefined
+    2x [wax-1440,wax-375] button::before | border-bottom-width | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | border-collapse | separate -> undefined
+    2x [wax-1440,wax-375] button::before | border-end-end-radius | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | border-end-start-radius | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | border-image-outset | 0 -> undefined
+    2x [wax-1440,wax-375] button::before | border-image-repeat | stretch -> undefined
+    2x [wax-1440,wax-375] button::before | border-image-slice | 100% -> undefined
+    2x [wax-1440,wax-375] button::before | border-image-source | none -> undefined
+    2x [wax-1440,wax-375] button::before | border-image-width | 1 -> undefined
+    2x [wax-1440,wax-375] button::before | border-inline-end-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::before | border-inline-end-style | solid -> undefined
+    2x [wax-1440,wax-375] button::before | border-inline-end-width | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | border-inline-start-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::before | border-inline-start-style | solid -> undefined
+    2x [wax-1440,wax-375] button::before | border-inline-start-width | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | border-left-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::before | border-left-style | solid -> undefined
+    2x [wax-1440,wax-375] button::before | border-left-width | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | border-right-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::before | border-right-style | solid -> undefined
+    2x [wax-1440,wax-375] button::before | border-right-width | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | border-shape | none -> undefined
+    2x [wax-1440,wax-375] button::before | border-start-end-radius | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | border-start-start-radius | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | border-top-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::before | border-top-left-radius | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | border-top-right-radius | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | border-top-style | solid -> undefined
+    2x [wax-1440,wax-375] button::before | border-top-width | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | bottom | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | box-decoration-break | slice -> undefined
+    2x [wax-1440,wax-375] button::before | box-shadow | none -> undefined
+    2x [wax-1440,wax-375] button::before | box-sizing | border-box -> undefined
+    2x [wax-1440,wax-375] button::before | break-after | auto -> undefined
+    2x [wax-1440,wax-375] button::before | break-before | auto -> undefined
+    2x [wax-1440,wax-375] button::before | break-inside | auto -> undefined
+    2x [wax-1440,wax-375] button::before | buffered-rendering | auto -> undefined
+    2x [wax-1440,wax-375] button::before | caption-side | top -> undefined
+    2x [wax-1440,wax-375] button::before | caret-animation | auto -> undefined
+    2x [wax-1440,wax-375] button::before | caret-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::before | caret-shape | auto -> undefined
+    2x [wax-1440,wax-375] button::before | clear | none -> undefined
+    2x [wax-1440,wax-375] button::before | clip | auto -> undefined
+    2x [wax-1440,wax-375] button::before | clip-path | none -> undefined
+    2x [wax-1440,wax-375] button::before | clip-rule | nonzero -> undefined
+    2x [wax-1440,wax-375] button::before | color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::before | color-interpolation | srgb -> undefined
+    2x [wax-1440,wax-375] button::before | color-interpolation-filters | linearrgb -> undefined
+    2x [wax-1440,wax-375] button::before | color-rendering | auto -> undefined
+    2x [wax-1440,wax-375] button::before | color-scheme | normal -> undefined
+    2x [wax-1440,wax-375] button::before | column-count | auto -> undefined
+    2x [wax-1440,wax-375] button::before | column-fill | balance -> undefined
+    2x [wax-1440,wax-375] button::before | column-gap | normal -> undefined
+    2x [wax-1440,wax-375] button::before | column-height | auto -> undefined
+    2x [wax-1440,wax-375] button::before | column-rule-break | normal -> undefined
+    2x [wax-1440,wax-375] button::before | column-rule-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::before | column-rule-inset-cap-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | column-rule-inset-cap-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | column-rule-inset-junction-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | column-rule-inset-junction-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | column-rule-style | none -> undefined
+    2x [wax-1440,wax-375] button::before | column-rule-visibility-items | normal -> undefined
+    2x [wax-1440,wax-375] button::before | column-rule-width | 3px -> undefined
+    2x [wax-1440,wax-375] button::before | column-span | none -> undefined
+    2x [wax-1440,wax-375] button::before | column-width | auto -> undefined
+    2x [wax-1440,wax-375] button::before | column-wrap | auto -> undefined
+    2x [wax-1440,wax-375] button::before | contain | none -> undefined
+    2x [wax-1440,wax-375] button::before | contain-intrinsic-block-size | none -> undefined
+    2x [wax-1440,wax-375] button::before | contain-intrinsic-height | none -> undefined
+    2x [wax-1440,wax-375] button::before | contain-intrinsic-inline-size | none -> undefined
+    2x [wax-1440,wax-375] button::before | contain-intrinsic-size | none -> undefined
+    2x [wax-1440,wax-375] button::before | contain-intrinsic-width | none -> undefined
+    2x [wax-1440,wax-375] button::before | container-name | none -> undefined
+    2x [wax-1440,wax-375] button::before | container-type | normal -> undefined
+    2x [wax-1440,wax-375] button::before | content | "" -> undefined
+    2x [wax-1440,wax-375] button::before | content-visibility | visible -> undefined
+    2x [wax-1440,wax-375] button::before | corner-bottom-left-shape | round -> undefined
+    2x [wax-1440,wax-375] button::before | corner-bottom-right-shape | round -> undefined
+    2x [wax-1440,wax-375] button::before | corner-end-end-shape | round -> undefined
+    2x [wax-1440,wax-375] button::before | corner-end-start-shape | round -> undefined
+    2x [wax-1440,wax-375] button::before | corner-start-end-shape | round -> undefined
+    2x [wax-1440,wax-375] button::before | corner-start-start-shape | round -> undefined
+    2x [wax-1440,wax-375] button::before | corner-top-left-shape | round -> undefined
+    2x [wax-1440,wax-375] button::before | corner-top-right-shape | round -> undefined
+    2x [wax-1440,wax-375] button::before | counter-increment | none -> undefined
+    2x [wax-1440,wax-375] button::before | counter-reset | none -> undefined
+    2x [wax-1440,wax-375] button::before | counter-set | none -> undefined
+    2x [wax-1440,wax-375] button::before | cursor | pointer -> undefined
+    2x [wax-1440,wax-375] button::before | cx | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | cy | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | d | none -> undefined
+    2x [wax-1440,wax-375] button::before | direction | ltr -> undefined
+    2x [wax-1440,wax-375] button::before | display | block -> undefined
+    2x [wax-1440,wax-375] button::before | dominant-baseline | auto -> undefined
+    2x [wax-1440,wax-375] button::before | dynamic-range-limit | no-limit -> undefined
+    2x [wax-1440,wax-375] button::before | empty-cells | show -> undefined
+    2x [wax-1440,wax-375] button::before | field-sizing | fixed -> undefined
+    2x [wax-1440,wax-375] button::before | fill | rgb(0, 0, 0) -> undefined
+    2x [wax-1440,wax-375] button::before | fill-opacity | 1 -> undefined
+    2x [wax-1440,wax-375] button::before | fill-rule | nonzero -> undefined
+    2x [wax-1440,wax-375] button::before | filter | none -> undefined
+    2x [wax-1440,wax-375] button::before | flex-basis | auto -> undefined
+    2x [wax-1440,wax-375] button::before | flex-direction | row -> undefined
+    2x [wax-1440,wax-375] button::before | flex-grow | 0 -> undefined
+    2x [wax-1440,wax-375] button::before | flex-shrink | 1 -> undefined
+    2x [wax-1440,wax-375] button::before | flex-wrap | nowrap -> undefined
+    2x [wax-1440,wax-375] button::before | float | none -> undefined
+    2x [wax-1440,wax-375] button::before | flood-color | rgb(0, 0, 0) -> undefined
+    2x [wax-1440,wax-375] button::before | flood-opacity | 1 -> undefined
+    2x [wax-1440,wax-375] button::before | font-family | "Work Sans", sans-serif -> undefined
+    2x [wax-1440,wax-375] button::before | font-feature-settings | normal -> undefined
+    2x [wax-1440,wax-375] button::before | font-kerning | auto -> undefined
+    2x [wax-1440,wax-375] button::before | font-language-override | normal -> undefined
+    2x [wax-1440,wax-375] button::before | font-optical-sizing | auto -> undefined
+    2x [wax-1440,wax-375] button::before | font-palette | normal -> undefined
+    2x [wax-1440,wax-375] button::before | font-size | 16px -> undefined
+    2x [wax-1440,wax-375] button::before | font-size-adjust | none -> undefined
+    2x [wax-1440,wax-375] button::before | font-stretch | 100% -> undefined
+    2x [wax-1440,wax-375] button::before | font-style | normal -> undefined
+    2x [wax-1440,wax-375] button::before | font-synthesis-small-caps | auto -> undefined
+    2x [wax-1440,wax-375] button::before | font-synthesis-style | auto -> undefined
+    2x [wax-1440,wax-375] button::before | font-synthesis-weight | auto -> undefined
+    2x [wax-1440,wax-375] button::before | font-variant | normal -> undefined
+    2x [wax-1440,wax-375] button::before | font-variant-alternates | normal -> undefined
+    2x [wax-1440,wax-375] button::before | font-variant-caps | normal -> undefined
+    2x [wax-1440,wax-375] button::before | font-variant-east-asian | normal -> undefined
+    2x [wax-1440,wax-375] button::before | font-variant-emoji | normal -> undefined
+    2x [wax-1440,wax-375] button::before | font-variant-ligatures | normal -> undefined
+    2x [wax-1440,wax-375] button::before | font-variant-numeric | normal -> undefined
+    2x [wax-1440,wax-375] button::before | font-variant-position | normal -> undefined
+    2x [wax-1440,wax-375] button::before | font-variation-settings | normal -> undefined
+    2x [wax-1440,wax-375] button::before | font-weight | 500 -> undefined
+    2x [wax-1440,wax-375] button::before | forced-color-adjust | auto -> undefined
+    2x [wax-1440,wax-375] button::before | grid-auto-columns | auto -> undefined
+    2x [wax-1440,wax-375] button::before | grid-auto-flow | row -> undefined
+    2x [wax-1440,wax-375] button::before | grid-auto-rows | auto -> undefined
+    2x [wax-1440,wax-375] button::before | grid-column-end | auto -> undefined
+    2x [wax-1440,wax-375] button::before | grid-column-start | auto -> undefined
+    2x [wax-1440,wax-375] button::before | grid-row-end | auto -> undefined
+    2x [wax-1440,wax-375] button::before | grid-row-start | auto -> undefined
+    2x [wax-1440,wax-375] button::before | grid-template-areas | none -> undefined
+    2x [wax-1440,wax-375] button::before | grid-template-columns | none -> undefined
+    2x [wax-1440,wax-375] button::before | grid-template-rows | none -> undefined
+    2x [wax-1440,wax-375] button::before | height | 44px -> undefined
+    2x [wax-1440,wax-375] button::before | hyphenate-character | auto -> undefined
+    2x [wax-1440,wax-375] button::before | hyphenate-limit-chars | auto -> undefined
+    2x [wax-1440,wax-375] button::before | hyphens | manual -> undefined
+    2x [wax-1440,wax-375] button::before | image-orientation | from-image -> undefined
+    2x [wax-1440,wax-375] button::before | image-rendering | auto -> undefined
+    2x [wax-1440,wax-375] button::before | initial-letter | normal -> undefined
+    2x [wax-1440,wax-375] button::before | inset-block-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | inset-block-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | inset-inline-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | inset-inline-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | interactivity | auto -> undefined
+    2x [wax-1440,wax-375] button::before | interest-delay-end | normal -> undefined
+    2x [wax-1440,wax-375] button::before | interest-delay-start | normal -> undefined
+    2x [wax-1440,wax-375] button::before | interpolate-size | numeric-only -> undefined
+    2x [wax-1440,wax-375] button::before | isolation | auto -> undefined
+    2x [wax-1440,wax-375] button::before | justify-content | normal -> undefined
+    2x [wax-1440,wax-375] button::before | justify-items | normal -> undefined
+    2x [wax-1440,wax-375] button::before | justify-self | auto -> undefined
+    2x [wax-1440,wax-375] button::before | left | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | letter-spacing | normal -> undefined
+    2x [wax-1440,wax-375] button::before | lighting-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::before | line-break | auto -> undefined
+    2x [wax-1440,wax-375] button::before | line-height | 16px -> undefined
+    2x [wax-1440,wax-375] button::before | list-style-image | none -> undefined
+    2x [wax-1440,wax-375] button::before | list-style-position | outside -> undefined
+    2x [wax-1440,wax-375] button::before | list-style-type | disc -> undefined
+    2x [wax-1440,wax-375] button::before | margin-block-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | margin-block-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | margin-bottom | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | margin-inline-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | margin-inline-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | margin-left | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | margin-right | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | margin-top | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | marker-end | none -> undefined
+    2x [wax-1440,wax-375] button::before | marker-mid | none -> undefined
+    2x [wax-1440,wax-375] button::before | marker-start | none -> undefined
+    2x [wax-1440,wax-375] button::before | mask-clip | border-box -> undefined
+    2x [wax-1440,wax-375] button::before | mask-composite | add -> undefined
+    2x [wax-1440,wax-375] button::before | mask-image | none -> undefined
+    2x [wax-1440,wax-375] button::before | mask-mode | match-source -> undefined
+    2x [wax-1440,wax-375] button::before | mask-origin | border-box -> undefined
+    2x [wax-1440,wax-375] button::before | mask-position | 0% 0% -> undefined
+    2x [wax-1440,wax-375] button::before | mask-repeat | repeat -> undefined
+    2x [wax-1440,wax-375] button::before | mask-size | auto -> undefined
+    2x [wax-1440,wax-375] button::before | mask-type | luminance -> undefined
+    2x [wax-1440,wax-375] button::before | math-depth | 0 -> undefined
+    2x [wax-1440,wax-375] button::before | math-shift | normal -> undefined
+    2x [wax-1440,wax-375] button::before | math-style | normal -> undefined
+    2x [wax-1440,wax-375] button::before | max-block-size | none -> undefined
+    2x [wax-1440,wax-375] button::before | max-height | none -> undefined
+    2x [wax-1440,wax-375] button::before | max-inline-size | none -> undefined
+    2x [wax-1440,wax-375] button::before | max-width | none -> undefined
+    2x [wax-1440,wax-375] button::before | min-block-size | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | min-height | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | min-inline-size | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | min-width | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | mix-blend-mode | normal -> undefined
+    2x [wax-1440,wax-375] button::before | object-fit | fill -> undefined
+    2x [wax-1440,wax-375] button::before | object-position | 50% 50% -> undefined
+    2x [wax-1440,wax-375] button::before | object-view-box | none -> undefined
+    2x [wax-1440,wax-375] button::before | offset-anchor | auto -> undefined
+    2x [wax-1440,wax-375] button::before | offset-distance | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | offset-path | none -> undefined
+    2x [wax-1440,wax-375] button::before | offset-position | normal -> undefined
+    2x [wax-1440,wax-375] button::before | offset-rotate | auto 0deg -> undefined
+    2x [wax-1440,wax-375] button::before | opacity | 1 -> undefined
+    2x [wax-1440,wax-375] button::before | order | 0 -> undefined
+    2x [wax-1440,wax-375] button::before | orphans | 2 -> undefined
+    2x [wax-1440,wax-375] button::before | outline-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::before | outline-offset | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | outline-style | none -> undefined
+    2x [wax-1440,wax-375] button::before | outline-width | 3px -> undefined
+    2x [wax-1440,wax-375] button::before | overflow-anchor | auto -> undefined
+    2x [wax-1440,wax-375] button::before | overflow-block | visible -> undefined
+    2x [wax-1440,wax-375] button::before | overflow-clip-margin | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | overflow-inline | visible -> undefined
+    2x [wax-1440,wax-375] button::before | overflow-wrap | normal -> undefined
+    2x [wax-1440,wax-375] button::before | overflow-x | visible -> undefined
+    2x [wax-1440,wax-375] button::before | overflow-y | visible -> undefined
+    2x [wax-1440,wax-375] button::before | overlay | none -> undefined
+    2x [wax-1440,wax-375] button::before | overscroll-behavior-block | auto -> undefined
+    2x [wax-1440,wax-375] button::before | overscroll-behavior-inline | auto -> undefined
+    2x [wax-1440,wax-375] button::before | overscroll-behavior-x | auto -> undefined
+    2x [wax-1440,wax-375] button::before | overscroll-behavior-y | auto -> undefined
+    2x [wax-1440,wax-375] button::before | padding-block-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | padding-block-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | padding-bottom | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | padding-inline-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | padding-inline-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | padding-left | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | padding-right | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | padding-top | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | paint-order | normal -> undefined
+    2x [wax-1440,wax-375] button::before | perspective | none -> undefined
+    2x [wax-1440,wax-375] button::before | pointer-events | auto -> undefined
+    2x [wax-1440,wax-375] button::before | position | absolute -> undefined
+    2x [wax-1440,wax-375] button::before | position-anchor | none -> undefined
+    2x [wax-1440,wax-375] button::before | position-area | none -> undefined
+    2x [wax-1440,wax-375] button::before | position-try-fallbacks | none -> undefined
+    2x [wax-1440,wax-375] button::before | position-try-order | normal -> undefined
+    2x [wax-1440,wax-375] button::before | position-visibility | anchors-visible -> undefined
+    2x [wax-1440,wax-375] button::before | print-color-adjust | economy -> undefined
+    2x [wax-1440,wax-375] button::before | quotes | auto -> undefined
+    2x [wax-1440,wax-375] button::before | r | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | reading-flow | normal -> undefined
+    2x [wax-1440,wax-375] button::before | reading-order | 0 -> undefined
+    2x [wax-1440,wax-375] button::before | resize | none -> undefined
+    2x [wax-1440,wax-375] button::before | right | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | rotate | none -> undefined
+    2x [wax-1440,wax-375] button::before | row-gap | normal -> undefined
+    2x [wax-1440,wax-375] button::before | row-rule-break | normal -> undefined
+    2x [wax-1440,wax-375] button::before | row-rule-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::before | row-rule-inset-cap-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | row-rule-inset-cap-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | row-rule-inset-junction-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | row-rule-inset-junction-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | row-rule-style | none -> undefined
+    2x [wax-1440,wax-375] button::before | row-rule-visibility-items | normal -> undefined
+    2x [wax-1440,wax-375] button::before | row-rule-width | 3px -> undefined
+    2x [wax-1440,wax-375] button::before | ruby-align | space-around -> undefined
+    2x [wax-1440,wax-375] button::before | ruby-position | over -> undefined
+    2x [wax-1440,wax-375] button::before | rule-overlap | row-over-column -> undefined
+    2x [wax-1440,wax-375] button::before | rx | auto -> undefined
+    2x [wax-1440,wax-375] button::before | ry | auto -> undefined
+    2x [wax-1440,wax-375] button::before | scale | none -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-behavior | auto -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-initial-target | none -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-margin-block-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-margin-block-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-margin-bottom | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-margin-inline-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-margin-inline-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-margin-left | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-margin-right | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-margin-top | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-marker-group | none -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-padding-block-end | auto -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-padding-block-start | auto -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-padding-bottom | auto -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-padding-inline-end | auto -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-padding-inline-start | auto -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-padding-left | auto -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-padding-right | auto -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-padding-top | auto -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-snap-align | none -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-snap-stop | normal -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-snap-type | none -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-target-group | none -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-timeline-axis | block -> undefined
+    2x [wax-1440,wax-375] button::before | scroll-timeline-name | none -> undefined
+    2x [wax-1440,wax-375] button::before | scrollbar-color | auto -> undefined
+    2x [wax-1440,wax-375] button::before | scrollbar-gutter | auto -> undefined
+    2x [wax-1440,wax-375] button::before | scrollbar-width | auto -> undefined
+    2x [wax-1440,wax-375] button::before | shape-image-threshold | 0 -> undefined
+    2x [wax-1440,wax-375] button::before | shape-margin | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | shape-outside | none -> undefined
+    2x [wax-1440,wax-375] button::before | shape-rendering | auto -> undefined
+    2x [wax-1440,wax-375] button::before | speak | normal -> undefined
+    2x [wax-1440,wax-375] button::before | stop-color | rgb(0, 0, 0) -> undefined
+    2x [wax-1440,wax-375] button::before | stop-opacity | 1 -> undefined
+    2x [wax-1440,wax-375] button::before | stroke | none -> undefined
+    2x [wax-1440,wax-375] button::before | stroke-dasharray | none -> undefined
+    2x [wax-1440,wax-375] button::before | stroke-dashoffset | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | stroke-linecap | butt -> undefined
+    2x [wax-1440,wax-375] button::before | stroke-linejoin | miter -> undefined
+    2x [wax-1440,wax-375] button::before | stroke-miterlimit | 4 -> undefined
+    2x [wax-1440,wax-375] button::before | stroke-opacity | 1 -> undefined
+    2x [wax-1440,wax-375] button::before | stroke-width | 1px -> undefined
+    2x [wax-1440,wax-375] button::before | tab-size | 4 -> undefined
+    2x [wax-1440,wax-375] button::before | table-layout | auto -> undefined
+    2x [wax-1440,wax-375] button::before | text-align | center -> undefined
+    2x [wax-1440,wax-375] button::before | text-align-last | auto -> undefined
+    2x [wax-1440,wax-375] button::before | text-anchor | start -> undefined
+    2x [wax-1440,wax-375] button::before | text-autospace | no-autospace -> undefined
+    2x [wax-1440,wax-375] button::before | text-box-edge | auto -> undefined
+    2x [wax-1440,wax-375] button::before | text-box-trim | none -> undefined
+    2x [wax-1440,wax-375] button::before | text-combine-upright | none -> undefined
+    2x [wax-1440,wax-375] button::before | text-decoration | none -> undefined
+    2x [wax-1440,wax-375] button::before | text-decoration-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::before | text-decoration-line | none -> undefined
+    2x [wax-1440,wax-375] button::before | text-decoration-skip-ink | auto -> undefined
+    2x [wax-1440,wax-375] button::before | text-decoration-style | solid -> undefined
+    2x [wax-1440,wax-375] button::before | text-decoration-thickness | auto -> undefined
+    2x [wax-1440,wax-375] button::before | text-emphasis-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::before | text-emphasis-position | over -> undefined
+    2x [wax-1440,wax-375] button::before | text-emphasis-style | none -> undefined
+    2x [wax-1440,wax-375] button::before | text-indent | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | text-justify | auto -> undefined
+    2x [wax-1440,wax-375] button::before | text-orientation | mixed -> undefined
+    2x [wax-1440,wax-375] button::before | text-overflow | clip -> undefined
+    2x [wax-1440,wax-375] button::before | text-rendering | auto -> undefined
+    2x [wax-1440,wax-375] button::before | text-shadow | none -> undefined
+    2x [wax-1440,wax-375] button::before | text-size-adjust | 100% -> undefined
+    2x [wax-1440,wax-375] button::before | text-spacing-trim | normal -> undefined
+    2x [wax-1440,wax-375] button::before | text-transform | none -> undefined
+    2x [wax-1440,wax-375] button::before | text-underline-offset | auto -> undefined
+    2x [wax-1440,wax-375] button::before | text-underline-position | auto -> undefined
+    2x [wax-1440,wax-375] button::before | text-wrap-mode | wrap -> undefined
+    2x [wax-1440,wax-375] button::before | text-wrap-style | auto -> undefined
+    2x [wax-1440,wax-375] button::before | timeline-scope | none -> undefined
+    2x [wax-1440,wax-375] button::before | timeline-trigger-activation-range-end | normal -> undefined
+    2x [wax-1440,wax-375] button::before | timeline-trigger-activation-range-start | normal -> undefined
+    2x [wax-1440,wax-375] button::before | timeline-trigger-active-range-end | auto -> undefined
+    2x [wax-1440,wax-375] button::before | timeline-trigger-active-range-start | auto -> undefined
+    2x [wax-1440,wax-375] button::before | timeline-trigger-name | none -> undefined
+    2x [wax-1440,wax-375] button::before | timeline-trigger-source | auto -> undefined
+    2x [wax-1440,wax-375] button::before | top | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | touch-action | auto -> undefined
+    2x [wax-1440,wax-375] button::before | transform | none -> undefined
+    2x [wax-1440,wax-375] button::before | transform-box | view-box -> undefined
+    2x [wax-1440,wax-375] button::before | transform-style | flat -> undefined
+    2x [wax-1440,wax-375] button::before | transition-behavior | normal -> undefined
+    2x [wax-1440,wax-375] button::before | transition-delay | 0s -> undefined
+    2x [wax-1440,wax-375] button::before | transition-duration | 0s -> undefined
+    2x [wax-1440,wax-375] button::before | transition-property | all -> undefined
+    2x [wax-1440,wax-375] button::before | transition-timing-function | ease -> undefined
+    2x [wax-1440,wax-375] button::before | translate | none -> undefined
+    2x [wax-1440,wax-375] button::before | trigger-scope | none -> undefined
+    2x [wax-1440,wax-375] button::before | unicode-bidi | normal -> undefined
+    2x [wax-1440,wax-375] button::before | user-select | auto -> undefined
+    2x [wax-1440,wax-375] button::before | vector-effect | none -> undefined
+    2x [wax-1440,wax-375] button::before | vertical-align | baseline -> undefined
+    2x [wax-1440,wax-375] button::before | view-timeline-axis | block -> undefined
+    2x [wax-1440,wax-375] button::before | view-timeline-inset | auto -> undefined
+    2x [wax-1440,wax-375] button::before | view-timeline-name | none -> undefined
+    2x [wax-1440,wax-375] button::before | view-transition-class | none -> undefined
+    2x [wax-1440,wax-375] button::before | view-transition-group | normal -> undefined
+    2x [wax-1440,wax-375] button::before | view-transition-name | none -> undefined
+    2x [wax-1440,wax-375] button::before | view-transition-scope | none -> undefined
+    2x [wax-1440,wax-375] button::before | visibility | visible -> undefined
+    2x [wax-1440,wax-375] button::before | white-space-collapse | collapse -> undefined
+    2x [wax-1440,wax-375] button::before | widows | 2 -> undefined
+    2x [wax-1440,wax-375] button::before | will-change | auto -> undefined
+    2x [wax-1440,wax-375] button::before | word-break | normal -> undefined
+    2x [wax-1440,wax-375] button::before | word-spacing | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | writing-mode | horizontal-tb -> undefined
+    2x [wax-1440,wax-375] button::before | x | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | y | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | z-index | -1 -> undefined
+    2x [wax-1440,wax-375] button::before | zoom | 1 -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-border-horizontal-spacing | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-border-image | none -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-border-vertical-spacing | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-box-align | stretch -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-box-decoration-break | slice -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-box-direction | normal -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-box-flex | 0 -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-box-ordinal-group | 1 -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-box-orient | horizontal -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-box-pack | start -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-box-reflect | none -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-font-smoothing | auto -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-line-break | auto -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-line-clamp | none -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-locale | "en" -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-mask-box-image | none -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-mask-box-image-outset | 0 -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-mask-box-image-repeat | stretch -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-mask-box-image-slice | 0 fill -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-mask-box-image-source | none -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-mask-box-image-width | auto -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-mask-position-x | 0% -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-mask-position-y | 0% -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-rtl-ordering | logical -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-ruby-position | before -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-tap-highlight-color | rgba(0, 0, 0, 0) -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-text-combine | none -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-text-decorations-in-effect | none -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-text-fill-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-text-orientation | vertical-right -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-text-security | none -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-text-stroke-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-text-stroke-width | 0px -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-user-drag | auto -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-user-modify | read-only -> undefined
+    2x [wax-1440,wax-375] button::before | -webkit-writing-mode | horizontal-tb -> undefined
+    2x [wax-1440,wax-375] button::after | accent-color | auto -> undefined
+    2x [wax-1440,wax-375] button::after | align-content | normal -> undefined
+    2x [wax-1440,wax-375] button::after | align-items | normal -> undefined
+    2x [wax-1440,wax-375] button::after | align-self | auto -> undefined
+    2x [wax-1440,wax-375] button::after | alignment-baseline | auto -> undefined
+    2x [wax-1440,wax-375] button::after | anchor-name | none -> undefined
+    2x [wax-1440,wax-375] button::after | anchor-scope | none -> undefined
+    2x [wax-1440,wax-375] button::after | animation-composition | replace -> undefined
+    2x [wax-1440,wax-375] button::after | animation-delay | 0s -> undefined
+    2x [wax-1440,wax-375] button::after | animation-direction | normal -> undefined
+    2x [wax-1440,wax-375] button::after | animation-duration | 0s -> undefined
+    2x [wax-1440,wax-375] button::after | animation-fill-mode | none -> undefined
+    2x [wax-1440,wax-375] button::after | animation-iteration-count | 1 -> undefined
+    2x [wax-1440,wax-375] button::after | animation-name | none -> undefined
+    2x [wax-1440,wax-375] button::after | animation-play-state | running -> undefined
+    2x [wax-1440,wax-375] button::after | animation-range-end | normal -> undefined
+    2x [wax-1440,wax-375] button::after | animation-range-start | normal -> undefined
+    2x [wax-1440,wax-375] button::after | animation-timeline | auto -> undefined
+    2x [wax-1440,wax-375] button::after | animation-timing-function | ease -> undefined
+    2x [wax-1440,wax-375] button::after | animation-trigger | none -> undefined
+    2x [wax-1440,wax-375] button::after | app-region | none -> undefined
+    2x [wax-1440,wax-375] button::after | appearance | none -> undefined
+    2x [wax-1440,wax-375] button::after | aspect-ratio | auto -> undefined
+    2x [wax-1440,wax-375] button::after | backdrop-filter | none -> undefined
+    2x [wax-1440,wax-375] button::after | backface-visibility | visible -> undefined
+    2x [wax-1440,wax-375] button::after | background-attachment | scroll -> undefined
+    2x [wax-1440,wax-375] button::after | background-blend-mode | normal -> undefined
+    2x [wax-1440,wax-375] button::after | background-clip | border-box -> undefined
+    2x [wax-1440,wax-375] button::after | background-color | rgba(0, 0, 0, 0) -> undefined
+    2x [wax-1440,wax-375] button::after | background-image | none -> undefined
+    2x [wax-1440,wax-375] button::after | background-origin | padding-box -> undefined
+    2x [wax-1440,wax-375] button::after | background-position | 0% 0% -> undefined
+    2x [wax-1440,wax-375] button::after | background-repeat | repeat -> undefined
+    2x [wax-1440,wax-375] button::after | background-size | auto -> undefined
+    2x [wax-1440,wax-375] button::after | baseline-shift | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | baseline-source | auto -> undefined
+    2x [wax-1440,wax-375] button::after | block-size | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | border-block-end-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::after | border-block-end-style | solid -> undefined
+    2x [wax-1440,wax-375] button::after | border-block-end-width | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | border-block-start-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::after | border-block-start-style | solid -> undefined
+    2x [wax-1440,wax-375] button::after | border-block-start-width | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | border-bottom-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::after | border-bottom-left-radius | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | border-bottom-right-radius | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | border-bottom-style | solid -> undefined
+    2x [wax-1440,wax-375] button::after | border-bottom-width | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | border-collapse | separate -> undefined
+    2x [wax-1440,wax-375] button::after | border-end-end-radius | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | border-end-start-radius | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | border-image-outset | 0 -> undefined
+    2x [wax-1440,wax-375] button::after | border-image-repeat | stretch -> undefined
+    2x [wax-1440,wax-375] button::after | border-image-slice | 100% -> undefined
+    2x [wax-1440,wax-375] button::after | border-image-source | none -> undefined
+    2x [wax-1440,wax-375] button::after | border-image-width | 1 -> undefined
+    2x [wax-1440,wax-375] button::after | border-inline-end-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::after | border-inline-end-style | solid -> undefined
+    2x [wax-1440,wax-375] button::after | border-inline-end-width | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | border-inline-start-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::after | border-inline-start-style | solid -> undefined
+    2x [wax-1440,wax-375] button::after | border-inline-start-width | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | border-left-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::after | border-left-style | solid -> undefined
+    2x [wax-1440,wax-375] button::after | border-left-width | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | border-right-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::after | border-right-style | solid -> undefined
+    2x [wax-1440,wax-375] button::after | border-right-width | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | border-shape | none -> undefined
+    2x [wax-1440,wax-375] button::after | border-start-end-radius | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | border-start-start-radius | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | border-top-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::after | border-top-left-radius | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | border-top-right-radius | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | border-top-style | solid -> undefined
+    2x [wax-1440,wax-375] button::after | border-top-width | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | bottom | 28px -> undefined
+    2x [wax-1440,wax-375] button::after | box-decoration-break | slice -> undefined
+    2x [wax-1440,wax-375] button::after | box-shadow | none -> undefined
+    2x [wax-1440,wax-375] button::after | box-sizing | border-box -> undefined
+    2x [wax-1440,wax-375] button::after | break-after | auto -> undefined
+    2x [wax-1440,wax-375] button::after | break-before | auto -> undefined
+    2x [wax-1440,wax-375] button::after | break-inside | auto -> undefined
+    2x [wax-1440,wax-375] button::after | buffered-rendering | auto -> undefined
+    2x [wax-1440,wax-375] button::after | caption-side | top -> undefined
+    2x [wax-1440,wax-375] button::after | caret-animation | auto -> undefined
+    2x [wax-1440,wax-375] button::after | caret-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::after | caret-shape | auto -> undefined
+    2x [wax-1440,wax-375] button::after | clear | none -> undefined
+    2x [wax-1440,wax-375] button::after | clip | auto -> undefined
+    2x [wax-1440,wax-375] button::after | clip-path | none -> undefined
+    2x [wax-1440,wax-375] button::after | clip-rule | nonzero -> undefined
+    2x [wax-1440,wax-375] button::after | color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::after | color-interpolation | srgb -> undefined
+    2x [wax-1440,wax-375] button::after | color-interpolation-filters | linearrgb -> undefined
+    2x [wax-1440,wax-375] button::after | color-rendering | auto -> undefined
+    2x [wax-1440,wax-375] button::after | color-scheme | normal -> undefined
+    2x [wax-1440,wax-375] button::after | column-count | auto -> undefined
+    2x [wax-1440,wax-375] button::after | column-fill | balance -> undefined
+    2x [wax-1440,wax-375] button::after | column-gap | normal -> undefined
+    2x [wax-1440,wax-375] button::after | column-height | auto -> undefined
+    2x [wax-1440,wax-375] button::after | column-rule-break | normal -> undefined
+    2x [wax-1440,wax-375] button::after | column-rule-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::after | column-rule-inset-cap-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | column-rule-inset-cap-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | column-rule-inset-junction-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | column-rule-inset-junction-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | column-rule-style | none -> undefined
+    2x [wax-1440,wax-375] button::after | column-rule-visibility-items | normal -> undefined
+    2x [wax-1440,wax-375] button::after | column-rule-width | 3px -> undefined
+    2x [wax-1440,wax-375] button::after | column-span | none -> undefined
+    2x [wax-1440,wax-375] button::after | column-width | auto -> undefined
+    2x [wax-1440,wax-375] button::after | column-wrap | auto -> undefined
+    2x [wax-1440,wax-375] button::after | contain | none -> undefined
+    2x [wax-1440,wax-375] button::after | contain-intrinsic-block-size | none -> undefined
+    2x [wax-1440,wax-375] button::after | contain-intrinsic-height | none -> undefined
+    2x [wax-1440,wax-375] button::after | contain-intrinsic-inline-size | none -> undefined
+    2x [wax-1440,wax-375] button::after | contain-intrinsic-size | none -> undefined
+    2x [wax-1440,wax-375] button::after | contain-intrinsic-width | none -> undefined
+    2x [wax-1440,wax-375] button::after | container-name | none -> undefined
+    2x [wax-1440,wax-375] button::after | container-type | normal -> undefined
+    2x [wax-1440,wax-375] button::after | content | "" -> undefined
+    2x [wax-1440,wax-375] button::after | content-visibility | visible -> undefined
+    2x [wax-1440,wax-375] button::after | corner-bottom-left-shape | round -> undefined
+    2x [wax-1440,wax-375] button::after | corner-bottom-right-shape | round -> undefined
+    2x [wax-1440,wax-375] button::after | corner-end-end-shape | round -> undefined
+    2x [wax-1440,wax-375] button::after | corner-end-start-shape | round -> undefined
+    2x [wax-1440,wax-375] button::after | corner-start-end-shape | round -> undefined
+    2x [wax-1440,wax-375] button::after | corner-start-start-shape | round -> undefined
+    2x [wax-1440,wax-375] button::after | corner-top-left-shape | round -> undefined
+    2x [wax-1440,wax-375] button::after | corner-top-right-shape | round -> undefined
+    2x [wax-1440,wax-375] button::after | counter-increment | none -> undefined
+    2x [wax-1440,wax-375] button::after | counter-reset | none -> undefined
+    2x [wax-1440,wax-375] button::after | counter-set | none -> undefined
+    2x [wax-1440,wax-375] button::after | cursor | pointer -> undefined
+    2x [wax-1440,wax-375] button::after | cx | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | cy | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | d | none -> undefined
+    2x [wax-1440,wax-375] button::after | direction | ltr -> undefined
+    2x [wax-1440,wax-375] button::after | display | block -> undefined
+    2x [wax-1440,wax-375] button::after | dominant-baseline | auto -> undefined
+    2x [wax-1440,wax-375] button::after | dynamic-range-limit | no-limit -> undefined
+    2x [wax-1440,wax-375] button::after | empty-cells | show -> undefined
+    2x [wax-1440,wax-375] button::after | field-sizing | fixed -> undefined
+    2x [wax-1440,wax-375] button::after | fill | rgb(0, 0, 0) -> undefined
+    2x [wax-1440,wax-375] button::after | fill-opacity | 1 -> undefined
+    2x [wax-1440,wax-375] button::after | fill-rule | nonzero -> undefined
+    2x [wax-1440,wax-375] button::after | filter | none -> undefined
+    2x [wax-1440,wax-375] button::after | flex-basis | auto -> undefined
+    2x [wax-1440,wax-375] button::after | flex-direction | row -> undefined
+    2x [wax-1440,wax-375] button::after | flex-grow | 0 -> undefined
+    2x [wax-1440,wax-375] button::after | flex-shrink | 1 -> undefined
+    2x [wax-1440,wax-375] button::after | flex-wrap | nowrap -> undefined
+    2x [wax-1440,wax-375] button::after | float | none -> undefined
+    2x [wax-1440,wax-375] button::after | flood-color | rgb(0, 0, 0) -> undefined
+    2x [wax-1440,wax-375] button::after | flood-opacity | 1 -> undefined
+    2x [wax-1440,wax-375] button::after | font-family | "Work Sans", sans-serif -> undefined
+    2x [wax-1440,wax-375] button::after | font-feature-settings | normal -> undefined
+    2x [wax-1440,wax-375] button::after | font-kerning | auto -> undefined
+    2x [wax-1440,wax-375] button::after | font-language-override | normal -> undefined
+    2x [wax-1440,wax-375] button::after | font-optical-sizing | auto -> undefined
+    2x [wax-1440,wax-375] button::after | font-palette | normal -> undefined
+    2x [wax-1440,wax-375] button::after | font-size | 16px -> undefined
+    2x [wax-1440,wax-375] button::after | font-size-adjust | none -> undefined
+    2x [wax-1440,wax-375] button::after | font-stretch | 100% -> undefined
+    2x [wax-1440,wax-375] button::after | font-style | normal -> undefined
+    2x [wax-1440,wax-375] button::after | font-synthesis-small-caps | auto -> undefined
+    2x [wax-1440,wax-375] button::after | font-synthesis-style | auto -> undefined
+    2x [wax-1440,wax-375] button::after | font-synthesis-weight | auto -> undefined
+    2x [wax-1440,wax-375] button::after | font-variant | normal -> undefined
+    2x [wax-1440,wax-375] button::after | font-variant-alternates | normal -> undefined
+    2x [wax-1440,wax-375] button::after | font-variant-caps | normal -> undefined
+    2x [wax-1440,wax-375] button::after | font-variant-east-asian | normal -> undefined
+    2x [wax-1440,wax-375] button::after | font-variant-emoji | normal -> undefined
+    2x [wax-1440,wax-375] button::after | font-variant-ligatures | normal -> undefined
+    2x [wax-1440,wax-375] button::after | font-variant-numeric | normal -> undefined
+    2x [wax-1440,wax-375] button::after | font-variant-position | normal -> undefined
+    2x [wax-1440,wax-375] button::after | font-variation-settings | normal -> undefined
+    2x [wax-1440,wax-375] button::after | font-weight | 500 -> undefined
+    2x [wax-1440,wax-375] button::after | forced-color-adjust | auto -> undefined
+    2x [wax-1440,wax-375] button::after | grid-auto-columns | auto -> undefined
+    2x [wax-1440,wax-375] button::after | grid-auto-flow | row -> undefined
+    2x [wax-1440,wax-375] button::after | grid-auto-rows | auto -> undefined
+    2x [wax-1440,wax-375] button::after | grid-column-end | auto -> undefined
+    2x [wax-1440,wax-375] button::after | grid-column-start | auto -> undefined
+    2x [wax-1440,wax-375] button::after | grid-row-end | auto -> undefined
+    2x [wax-1440,wax-375] button::after | grid-row-start | auto -> undefined
+    2x [wax-1440,wax-375] button::after | grid-template-areas | none -> undefined
+    2x [wax-1440,wax-375] button::after | grid-template-columns | none -> undefined
+    2x [wax-1440,wax-375] button::after | grid-template-rows | none -> undefined
+    2x [wax-1440,wax-375] button::after | height | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | hyphenate-character | auto -> undefined
+    2x [wax-1440,wax-375] button::after | hyphenate-limit-chars | auto -> undefined
+    2x [wax-1440,wax-375] button::after | hyphens | manual -> undefined
+    2x [wax-1440,wax-375] button::after | image-orientation | from-image -> undefined
+    2x [wax-1440,wax-375] button::after | image-rendering | auto -> undefined
+    2x [wax-1440,wax-375] button::after | initial-letter | normal -> undefined
+    2x [wax-1440,wax-375] button::after | inline-size | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | inset-block-end | 28px -> undefined
+    2x [wax-1440,wax-375] button::after | inset-block-start | 16px -> undefined
+    2x [wax-1440,wax-375] button::after | interactivity | auto -> undefined
+    2x [wax-1440,wax-375] button::after | interest-delay-end | normal -> undefined
+    2x [wax-1440,wax-375] button::after | interest-delay-start | normal -> undefined
+    2x [wax-1440,wax-375] button::after | interpolate-size | numeric-only -> undefined
+    2x [wax-1440,wax-375] button::after | isolation | auto -> undefined
+    2x [wax-1440,wax-375] button::after | justify-content | normal -> undefined
+    2x [wax-1440,wax-375] button::after | justify-items | normal -> undefined
+    2x [wax-1440,wax-375] button::after | justify-self | auto -> undefined
+    2x [wax-1440,wax-375] button::after | letter-spacing | normal -> undefined
+    2x [wax-1440,wax-375] button::after | lighting-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::after | line-break | auto -> undefined
+    2x [wax-1440,wax-375] button::after | line-height | 16px -> undefined
+    2x [wax-1440,wax-375] button::after | list-style-image | none -> undefined
+    2x [wax-1440,wax-375] button::after | list-style-position | outside -> undefined
+    2x [wax-1440,wax-375] button::after | list-style-type | disc -> undefined
+    2x [wax-1440,wax-375] button::after | margin-block-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | margin-block-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | margin-bottom | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | margin-inline-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | margin-inline-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | margin-left | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | margin-right | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | margin-top | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | marker-end | none -> undefined
+    2x [wax-1440,wax-375] button::after | marker-mid | none -> undefined
+    2x [wax-1440,wax-375] button::after | marker-start | none -> undefined
+    2x [wax-1440,wax-375] button::after | mask-clip | border-box -> undefined
+    2x [wax-1440,wax-375] button::after | mask-composite | add -> undefined
+    2x [wax-1440,wax-375] button::after | mask-image | none -> undefined
+    2x [wax-1440,wax-375] button::after | mask-mode | match-source -> undefined
+    2x [wax-1440,wax-375] button::after | mask-origin | border-box -> undefined
+    2x [wax-1440,wax-375] button::after | mask-position | 0% 0% -> undefined
+    2x [wax-1440,wax-375] button::after | mask-repeat | repeat -> undefined
+    2x [wax-1440,wax-375] button::after | mask-size | auto -> undefined
+    2x [wax-1440,wax-375] button::after | mask-type | luminance -> undefined
+    2x [wax-1440,wax-375] button::after | math-depth | 0 -> undefined
+    2x [wax-1440,wax-375] button::after | math-shift | normal -> undefined
+    2x [wax-1440,wax-375] button::after | math-style | normal -> undefined
+    2x [wax-1440,wax-375] button::after | max-block-size | none -> undefined
+    2x [wax-1440,wax-375] button::after | max-height | none -> undefined
+    2x [wax-1440,wax-375] button::after | max-inline-size | none -> undefined
+    2x [wax-1440,wax-375] button::after | max-width | none -> undefined
+    2x [wax-1440,wax-375] button::after | min-block-size | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | min-height | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | min-inline-size | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | min-width | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | mix-blend-mode | normal -> undefined
+    2x [wax-1440,wax-375] button::after | object-fit | fill -> undefined
+    2x [wax-1440,wax-375] button::after | object-position | 50% 50% -> undefined
+    2x [wax-1440,wax-375] button::after | object-view-box | none -> undefined
+    2x [wax-1440,wax-375] button::after | offset-anchor | auto -> undefined
+    2x [wax-1440,wax-375] button::after | offset-distance | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | offset-path | none -> undefined
+    2x [wax-1440,wax-375] button::after | offset-position | normal -> undefined
+    2x [wax-1440,wax-375] button::after | offset-rotate | auto 0deg -> undefined
+    2x [wax-1440,wax-375] button::after | opacity | 1 -> undefined
+    2x [wax-1440,wax-375] button::after | order | 0 -> undefined
+    2x [wax-1440,wax-375] button::after | orphans | 2 -> undefined
+    2x [wax-1440,wax-375] button::after | outline-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::after | outline-offset | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | outline-style | none -> undefined
+    2x [wax-1440,wax-375] button::after | outline-width | 3px -> undefined
+    2x [wax-1440,wax-375] button::after | overflow-anchor | auto -> undefined
+    2x [wax-1440,wax-375] button::after | overflow-block | visible -> undefined
+    2x [wax-1440,wax-375] button::after | overflow-clip-margin | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | overflow-inline | visible -> undefined
+    2x [wax-1440,wax-375] button::after | overflow-wrap | normal -> undefined
+    2x [wax-1440,wax-375] button::after | overflow-x | visible -> undefined
+    2x [wax-1440,wax-375] button::after | overflow-y | visible -> undefined
+    2x [wax-1440,wax-375] button::after | overlay | none -> undefined
+    2x [wax-1440,wax-375] button::after | overscroll-behavior-block | auto -> undefined
+    2x [wax-1440,wax-375] button::after | overscroll-behavior-inline | auto -> undefined
+    2x [wax-1440,wax-375] button::after | overscroll-behavior-x | auto -> undefined
+    2x [wax-1440,wax-375] button::after | overscroll-behavior-y | auto -> undefined
+    2x [wax-1440,wax-375] button::after | padding-block-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | padding-block-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | padding-bottom | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | padding-inline-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | padding-inline-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | padding-left | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | padding-right | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | padding-top | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | paint-order | normal -> undefined
+    2x [wax-1440,wax-375] button::after | perspective | none -> undefined
+    2x [wax-1440,wax-375] button::after | perspective-origin | 0px 0px -> undefined
+    2x [wax-1440,wax-375] button::after | pointer-events | auto -> undefined
+    2x [wax-1440,wax-375] button::after | position | absolute -> undefined
+    2x [wax-1440,wax-375] button::after | position-anchor | none -> undefined
+    2x [wax-1440,wax-375] button::after | position-area | none -> undefined
+    2x [wax-1440,wax-375] button::after | position-try-fallbacks | none -> undefined
+    2x [wax-1440,wax-375] button::after | position-try-order | normal -> undefined
+    2x [wax-1440,wax-375] button::after | position-visibility | anchors-visible -> undefined
+    2x [wax-1440,wax-375] button::after | print-color-adjust | economy -> undefined
+    2x [wax-1440,wax-375] button::after | quotes | auto -> undefined
+    2x [wax-1440,wax-375] button::after | r | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | reading-flow | normal -> undefined
+    2x [wax-1440,wax-375] button::after | reading-order | 0 -> undefined
+    2x [wax-1440,wax-375] button::after | resize | none -> undefined
+    2x [wax-1440,wax-375] button::after | rotate | none -> undefined
+    2x [wax-1440,wax-375] button::after | row-gap | normal -> undefined
+    2x [wax-1440,wax-375] button::after | row-rule-break | normal -> undefined
+    2x [wax-1440,wax-375] button::after | row-rule-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::after | row-rule-inset-cap-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | row-rule-inset-cap-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | row-rule-inset-junction-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | row-rule-inset-junction-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | row-rule-style | none -> undefined
+    2x [wax-1440,wax-375] button::after | row-rule-visibility-items | normal -> undefined
+    2x [wax-1440,wax-375] button::after | row-rule-width | 3px -> undefined
+    2x [wax-1440,wax-375] button::after | ruby-align | space-around -> undefined
+    2x [wax-1440,wax-375] button::after | ruby-position | over -> undefined
+    2x [wax-1440,wax-375] button::after | rule-overlap | row-over-column -> undefined
+    2x [wax-1440,wax-375] button::after | rx | auto -> undefined
+    2x [wax-1440,wax-375] button::after | ry | auto -> undefined
+    2x [wax-1440,wax-375] button::after | scale | none -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-behavior | auto -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-initial-target | none -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-margin-block-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-margin-block-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-margin-bottom | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-margin-inline-end | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-margin-inline-start | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-margin-left | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-margin-right | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-margin-top | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-marker-group | none -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-padding-block-end | auto -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-padding-block-start | auto -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-padding-bottom | auto -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-padding-inline-end | auto -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-padding-inline-start | auto -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-padding-left | auto -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-padding-right | auto -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-padding-top | auto -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-snap-align | none -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-snap-stop | normal -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-snap-type | none -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-target-group | none -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-timeline-axis | block -> undefined
+    2x [wax-1440,wax-375] button::after | scroll-timeline-name | none -> undefined
+    2x [wax-1440,wax-375] button::after | scrollbar-color | auto -> undefined
+    2x [wax-1440,wax-375] button::after | scrollbar-gutter | auto -> undefined
+    2x [wax-1440,wax-375] button::after | scrollbar-width | auto -> undefined
+    2x [wax-1440,wax-375] button::after | shape-image-threshold | 0 -> undefined
+    2x [wax-1440,wax-375] button::after | shape-margin | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | shape-outside | none -> undefined
+    2x [wax-1440,wax-375] button::after | shape-rendering | auto -> undefined
+    2x [wax-1440,wax-375] button::after | speak | normal -> undefined
+    2x [wax-1440,wax-375] button::after | stop-color | rgb(0, 0, 0) -> undefined
+    2x [wax-1440,wax-375] button::after | stop-opacity | 1 -> undefined
+    2x [wax-1440,wax-375] button::after | stroke | none -> undefined
+    2x [wax-1440,wax-375] button::after | stroke-dasharray | none -> undefined
+    2x [wax-1440,wax-375] button::after | stroke-dashoffset | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | stroke-linecap | butt -> undefined
+    2x [wax-1440,wax-375] button::after | stroke-linejoin | miter -> undefined
+    2x [wax-1440,wax-375] button::after | stroke-miterlimit | 4 -> undefined
+    2x [wax-1440,wax-375] button::after | stroke-opacity | 1 -> undefined
+    2x [wax-1440,wax-375] button::after | stroke-width | 1px -> undefined
+    2x [wax-1440,wax-375] button::after | tab-size | 4 -> undefined
+    2x [wax-1440,wax-375] button::after | table-layout | auto -> undefined
+    2x [wax-1440,wax-375] button::after | text-align | center -> undefined
+    2x [wax-1440,wax-375] button::after | text-align-last | auto -> undefined
+    2x [wax-1440,wax-375] button::after | text-anchor | start -> undefined
+    2x [wax-1440,wax-375] button::after | text-autospace | no-autospace -> undefined
+    2x [wax-1440,wax-375] button::after | text-box-edge | auto -> undefined
+    2x [wax-1440,wax-375] button::after | text-box-trim | none -> undefined
+    2x [wax-1440,wax-375] button::after | text-combine-upright | none -> undefined
+    2x [wax-1440,wax-375] button::after | text-decoration | none -> undefined
+    2x [wax-1440,wax-375] button::after | text-decoration-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::after | text-decoration-line | none -> undefined
+    2x [wax-1440,wax-375] button::after | text-decoration-skip-ink | auto -> undefined
+    2x [wax-1440,wax-375] button::after | text-decoration-style | solid -> undefined
+    2x [wax-1440,wax-375] button::after | text-decoration-thickness | auto -> undefined
+    2x [wax-1440,wax-375] button::after | text-emphasis-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::after | text-emphasis-position | over -> undefined
+    2x [wax-1440,wax-375] button::after | text-emphasis-style | none -> undefined
+    2x [wax-1440,wax-375] button::after | text-indent | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | text-justify | auto -> undefined
+    2x [wax-1440,wax-375] button::after | text-orientation | mixed -> undefined
+    2x [wax-1440,wax-375] button::after | text-overflow | clip -> undefined
+    2x [wax-1440,wax-375] button::after | text-rendering | auto -> undefined
+    2x [wax-1440,wax-375] button::after | text-shadow | none -> undefined
+    2x [wax-1440,wax-375] button::after | text-size-adjust | 100% -> undefined
+    2x [wax-1440,wax-375] button::after | text-spacing-trim | normal -> undefined
+    2x [wax-1440,wax-375] button::after | text-transform | none -> undefined
+    2x [wax-1440,wax-375] button::after | text-underline-offset | auto -> undefined
+    2x [wax-1440,wax-375] button::after | text-underline-position | auto -> undefined
+    2x [wax-1440,wax-375] button::after | text-wrap-mode | wrap -> undefined
+    2x [wax-1440,wax-375] button::after | text-wrap-style | auto -> undefined
+    2x [wax-1440,wax-375] button::after | timeline-scope | none -> undefined
+    2x [wax-1440,wax-375] button::after | timeline-trigger-activation-range-end | normal -> undefined
+    2x [wax-1440,wax-375] button::after | timeline-trigger-activation-range-start | normal -> undefined
+    2x [wax-1440,wax-375] button::after | timeline-trigger-active-range-end | auto -> undefined
+    2x [wax-1440,wax-375] button::after | timeline-trigger-active-range-start | auto -> undefined
+    2x [wax-1440,wax-375] button::after | timeline-trigger-name | none -> undefined
+    2x [wax-1440,wax-375] button::after | timeline-trigger-source | auto -> undefined
+    2x [wax-1440,wax-375] button::after | top | 16px -> undefined
+    2x [wax-1440,wax-375] button::after | touch-action | auto -> undefined
+    2x [wax-1440,wax-375] button::after | transform | none -> undefined
+    2x [wax-1440,wax-375] button::after | transform-box | view-box -> undefined
+    2x [wax-1440,wax-375] button::after | transform-origin | 0px 0px -> undefined
+    2x [wax-1440,wax-375] button::after | transform-style | flat -> undefined
+    2x [wax-1440,wax-375] button::after | transition-behavior | normal -> undefined
+    2x [wax-1440,wax-375] button::after | transition-delay | 0s -> undefined
+    2x [wax-1440,wax-375] button::after | transition-duration | 0.1s -> undefined
+    2x [wax-1440,wax-375] button::after | transition-property | box-shadow -> undefined
+    2x [wax-1440,wax-375] button::after | transition-timing-function | ease -> undefined
+    2x [wax-1440,wax-375] button::after | translate | none -> undefined
+    2x [wax-1440,wax-375] button::after | trigger-scope | none -> undefined
+    2x [wax-1440,wax-375] button::after | unicode-bidi | normal -> undefined
+    2x [wax-1440,wax-375] button::after | user-select | auto -> undefined
+    2x [wax-1440,wax-375] button::after | vector-effect | none -> undefined
+    2x [wax-1440,wax-375] button::after | vertical-align | baseline -> undefined
+    2x [wax-1440,wax-375] button::after | view-timeline-axis | block -> undefined
+    2x [wax-1440,wax-375] button::after | view-timeline-inset | auto -> undefined
+    2x [wax-1440,wax-375] button::after | view-timeline-name | none -> undefined
+    2x [wax-1440,wax-375] button::after | view-transition-class | none -> undefined
+    2x [wax-1440,wax-375] button::after | view-transition-group | normal -> undefined
+    2x [wax-1440,wax-375] button::after | view-transition-name | none -> undefined
+    2x [wax-1440,wax-375] button::after | view-transition-scope | none -> undefined
+    2x [wax-1440,wax-375] button::after | visibility | visible -> undefined
+    2x [wax-1440,wax-375] button::after | white-space-collapse | collapse -> undefined
+    2x [wax-1440,wax-375] button::after | widows | 2 -> undefined
+    2x [wax-1440,wax-375] button::after | width | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | will-change | auto -> undefined
+    2x [wax-1440,wax-375] button::after | word-break | normal -> undefined
+    2x [wax-1440,wax-375] button::after | word-spacing | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | writing-mode | horizontal-tb -> undefined
+    2x [wax-1440,wax-375] button::after | x | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | y | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | z-index | 1 -> undefined
+    2x [wax-1440,wax-375] button::after | zoom | 1 -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-border-horizontal-spacing | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-border-image | none -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-border-vertical-spacing | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-box-align | stretch -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-box-decoration-break | slice -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-box-direction | normal -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-box-flex | 0 -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-box-ordinal-group | 1 -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-box-orient | horizontal -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-box-pack | start -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-box-reflect | none -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-font-smoothing | auto -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-line-break | auto -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-line-clamp | none -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-locale | "en" -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-mask-box-image | none -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-mask-box-image-outset | 0 -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-mask-box-image-repeat | stretch -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-mask-box-image-slice | 0 fill -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-mask-box-image-source | none -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-mask-box-image-width | auto -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-mask-position-x | 0% -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-mask-position-y | 0% -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-rtl-ordering | logical -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-ruby-position | before -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-tap-highlight-color | rgba(0, 0, 0, 0) -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-text-combine | none -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-text-decorations-in-effect | none -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-text-fill-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-text-orientation | vertical-right -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-text-security | none -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-text-stroke-color | rgb(255, 255, 255) -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-text-stroke-width | 0px -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-user-drag | auto -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-user-modify | read-only -> undefined
+    2x [wax-1440,wax-375] button::after | -webkit-writing-mode | horizontal-tb -> undefined
+    1x [optout-1440] div | inline-size | 100% -> 1440px
+    1x [optout-1440] div | perspective-origin | 50% 50% -> 720px 406px
+    1x [optout-1440] div | transform-origin | 50% 50% -> 720px 406px
+    1x [optout-1440] div | width | 100% -> 1440px
+    1x [optout-320] div | inline-size | 100% -> 320px
+    1x [optout-320] div | perspective-origin | 50% 50% -> 160px 406px
+    1x [optout-320] div | transform-origin | 50% 50% -> 160px 406px
+    1x [optout-320] div | width | 100% -> 320px
+    1x [optout-375] div | inline-size | 100% -> 375px
+    1x [optout-375] div | perspective-origin | 50% 50% -> 187.5px 406px
+    1x [optout-375] div | transform-origin | 50% 50% -> 187.5px 406px
+    1x [optout-375] div | width | 100% -> 375px
+    1x [optout-430] div | inline-size | 100% -> 430px
+    1x [optout-430] div | perspective-origin | 50% 50% -> 215px 406px
+    1x [optout-430] div | transform-origin | 50% 50% -> 215px 406px
+    1x [optout-430] div | width | 100% -> 430px
+    1x [optout-750] div | inline-size | 100% -> 750px
+    1x [optout-750] div | perspective-origin | 50% 50% -> 375px 406px
+    1x [optout-750] div | transform-origin | 50% 50% -> 375px 406px
+    1x [optout-750] div | width | 100% -> 750px
+    1x [optout-990] div | inline-size | 100% -> 990px
+    1x [optout-990] div | perspective-origin | 50% 50% -> 495px 406px
+    1x [optout-990] div | transform-origin | 50% 50% -> 495px 406px
+    1x [optout-990] div | width | 100% -> 990px
+    1x [policy-320] div::after | inline-size | 285.062px -> undefined
+    1x [policy-320] div::after | perspective-origin | 142.531px 0px -> undefined
+    1x [policy-320] div::after | transform-origin | 142.531px 0px -> undefined
+    1x [policy-320] div::after | width | 285.062px -> undefined
+    1x [policy-375] div::after | inline-size | 335px -> undefined
+    1x [policy-375] div::after | perspective-origin | 167.5px 0px -> undefined
+    1x [policy-375] div::after | transform-origin | 167.5px 0px -> undefined
+    1x [policy-375] div::after | width | 335px -> undefined
+    1x [policy-430] div::after | inline-size | 390px -> undefined
+    1x [policy-430] div::after | perspective-origin | 195px 0px -> undefined
+    1x [policy-430] div::after | transform-origin | 195px 0px -> undefined
+    1x [policy-430] div::after | width | 390px -> undefined
+    1x [wax-1440] button::before | inline-size | 494px -> undefined
+    1x [wax-1440] button::before | perspective-origin | 247px 22px -> undefined
+    1x [wax-1440] button::before | transform-origin | 247px 22px -> undefined
+    1x [wax-1440] button::before | width | 494px -> undefined
+    1x [wax-1440] button::after | inset-inline-end | 205.656px -> undefined
+    1x [wax-1440] button::after | inset-inline-start | 288.344px -> undefined
+    1x [wax-1440] button::after | left | 288.344px -> undefined
+    1x [wax-1440] button::after | right | 205.656px -> undefined
+    1x [wax-375] button::before | inline-size | 287px -> undefined
+    1x [wax-375] button::before | perspective-origin | 143.5px 22px -> undefined
+    1x [wax-375] button::before | transform-origin | 143.5px 22px -> undefined
+    1x [wax-375] button::before | width | 287px -> undefined
+    1x [wax-375] button::after | inset-inline-end | 102.156px -> undefined
+    1x [wax-375] button::after | inset-inline-start | 184.844px -> undefined
+    1x [wax-375] button::after | left | 184.844px -> undefined
+    1x [wax-375] button::after | right | 102.156px -> undefined
