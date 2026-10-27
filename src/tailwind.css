@@ -322,6 +322,27 @@
   }
 
   /*
+   * Spacing for elements that prose leaves unstyled in merchant HTML (owner, 2026-10-26,
+   * T5a E5a.6). h5 and h6 take prose's h4 margins. A row of th inside tbody or tfoot, a
+   * header row without thead, takes the td padding, so its columns line up with the data.
+   * :where keeps the h5/h6 rule below the first-child and last-child trims above.
+   * See docs/plans/theme-evolution-tailwind-t5a-spacing.md.
+   */
+  [data-rich-text] :where(h5, h6) {
+    margin-block: 1.5em 0.5em;
+  }
+  [data-rich-text] :where(tbody, tfoot) th {
+    vertical-align: baseline;
+    padding: 0.571429em;
+  }
+  [data-rich-text] :where(tbody, tfoot) th:first-child {
+    padding-inline-start: 0;
+  }
+  [data-rich-text] :where(tbody, tfoot) th:last-child {
+    padding-inline-end: 0;
+  }
+
+  /*
    * Browser defaults that Preflight removes but unclassed Dawn, Shopify and merchant
    * markup still relies on (plan D6). Remove each in the phase noted.
    */
