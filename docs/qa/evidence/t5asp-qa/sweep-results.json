@@ -1,0 +1,546 @@
+[
+ {
+  "name": "home",
+  "vw": 375,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 270,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   306332,
+   306332
+  ]
+ },
+ {
+  "name": "home",
+  "vw": 1440,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 270,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   1076275,
+   1076275
+  ]
+ },
+ {
+  "name": "p3p",
+  "vw": 375,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 322,
+  "rectDiffs": 1,
+  "noise": null,
+  "size": [
+   181574,
+   181574
+  ]
+ },
+ {
+  "name": "p3p",
+  "vw": 1440,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 372,
+  "rectDiffs": 1,
+  "noise": null,
+  "size": [
+   345089,
+   345089
+  ]
+ },
+ {
+  "name": "wax",
+  "vw": 375,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 287,
+  "rectDiffs": 1,
+  "noise": null,
+  "size": [
+   118374,
+   118374
+  ]
+ },
+ {
+  "name": "wax",
+  "vw": 1440,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 287,
+  "rectDiffs": 1,
+  "noise": null,
+  "size": [
+   321992,
+   321992
+  ]
+ },
+ {
+  "name": "snow",
+  "vw": 375,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 335,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   208951,
+   208951
+  ]
+ },
+ {
+  "name": "snow",
+  "vw": 1440,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 385,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   400682,
+   400682
+  ]
+ },
+ {
+  "name": "landing",
+  "vw": 375,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": false,
+  "rectElems": 357,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   155455,
+   155457
+  ]
+ },
+ {
+  "name": "landing",
+  "vw": 1440,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 357,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   314075,
+   314075
+  ]
+ },
+ {
+  "name": "collection",
+  "vw": 375,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 343,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   762095,
+   762095
+  ]
+ },
+ {
+  "name": "collection",
+  "vw": 1440,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 343,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   2559362,
+   2559362
+  ]
+ },
+ {
+  "name": "cart",
+  "vw": 375,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 233,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   38437,
+   38437
+  ]
+ },
+ {
+  "name": "cart",
+  "vw": 1440,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 233,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   60614,
+   60614
+  ]
+ },
+ {
+  "name": "cartseed",
+  "vw": 375,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 259,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   45548,
+   45548
+  ]
+ },
+ {
+  "name": "cartseed",
+  "vw": 1440,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 259,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   65986,
+   65986
+  ]
+ },
+ {
+  "name": "optout",
+  "vw": 375,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 284,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   143989,
+   143989
+  ]
+ },
+ {
+  "name": "optout",
+  "vw": 1440,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 284,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   170619,
+   170619
+  ]
+ },
+ {
+  "name": "balanced",
+  "vw": 375,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 232,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   38339,
+   38339
+  ]
+ },
+ {
+  "name": "balanced",
+  "vw": 1440,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 232,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   61381,
+   61381
+  ]
+ },
+ {
+  "name": "contact",
+  "vw": 375,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 230,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   35743,
+   35743
+  ]
+ },
+ {
+  "name": "contact",
+  "vw": 1440,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 230,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   56524,
+   56524
+  ]
+ },
+ {
+  "name": "archive",
+  "vw": 375,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": false,
+  "rectElems": 344,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   665745,
+   665748
+  ]
+ },
+ {
+  "name": "archive",
+  "vw": 1440,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 344,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   962624,
+   962624
+  ]
+ },
+ {
+  "name": "blog",
+  "vw": 375,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 230,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   35389,
+   35389
+  ]
+ },
+ {
+  "name": "blog",
+  "vw": 1440,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 230,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   55972,
+   55972
+  ]
+ },
+ {
+  "name": "missing",
+  "vw": 375,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 232,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   38957,
+   38957
+  ]
+ },
+ {
+  "name": "missing",
+  "vw": 1440,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 232,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   59963,
+   59963
+  ]
+ },
+ {
+  "name": "policy",
+  "vw": 375,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 325,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   1097734,
+   1097734
+  ]
+ },
+ {
+  "name": "policy",
+  "vw": 1440,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 325,
+  "rectDiffs": 0,
+  "noise": null,
+  "size": [
+   1341355,
+   1341355
+  ]
+ },
+ {
+  "name": "rental",
+  "vw": 375,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 472,
+  "rectDiffs": 1,
+  "noise": "identical",
+  "size": [
+   182761,
+   182761
+  ]
+ },
+ {
+  "name": "rental",
+  "vw": 1440,
+  "valid": true,
+  "probeHead": "24px",
+  "probeOff": "0px",
+  "rules": 4,
+  "removed": 4,
+  "pngEqual": true,
+  "rectElems": 626,
+  "rectDiffs": 1,
+  "noise": "DIFFERS",
+  "size": [
+   372552,
+   372552
+  ]
+ }
+]

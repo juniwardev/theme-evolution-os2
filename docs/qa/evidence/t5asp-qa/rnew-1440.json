@@ -1,0 +1,10 @@
+{
+ "count": 4,
+ "removed": 4,
+ "rules": [
+  "[data-rich-text] :where(h5, h6) { margin-block: 1.5em 0.5em; }",
+  "[data-rich-text] :where(tbody, tfoot) th { vertical-align: baseline; padding: 0.571429em; }",
+  "[data-rich-text] :where(tbody, tfoot) th:first-child { padding-inline-start: 0px; }",
+  "[data-rich-text] :where(tbody, tfoot) th:last-child { padding-inline-end: 0px; }"
+ ]
+}
