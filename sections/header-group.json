@@ -14,9 +14,13 @@
     "header": {
       "type": "header",
       "settings": {
-        "logo": "shopify://shop_images/logo2.svg",
-        "logo_width": 300,
-        "menu": "main-menu"
+        "logo": "shopify://shop_images/evolution-logo-white-trimmed.svg",
+        "logo_width": 180,
+        "menu": "main-menu",
+        "header_background": "#111111",
+        "header_text": "#ffffff",
+        "show_announcement": false,
+        "announcement_text": ""
       }
     }
   },
