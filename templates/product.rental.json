@@ -1,0 +1,151 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "supercycle_methods_FNm9Bj": {
+          "type": "shopify://apps/supercycle/blocks/methods/7b3228ed-a72a-4935-9fee-0cebe8daa0aa",
+          "settings": {
+            "default_method": "calendar",
+            "item_condition_options": false,
+            "item_condition_options_display": "radio",
+            "subtitle_alignment": "right",
+            "help_text_display": "tooltip",
+            "calendar_unavailable_start_dates": "",
+            "calendar_unavailable_end_dates": "",
+            "calendar_price_display": "total_price/from_price",
+            "calendar_dropdown_alignment": "modal",
+            "calendar_duration_options": false,
+            "calendar_duration_options_display": "radio",
+            "subscription_price_interval": "day",
+            "subscription_price_interval_count": 1,
+            "subscription_price_format": "from_price",
+            "pricing_groups_display": "radio",
+            "membership_join_button_url": "",
+            "custom_css": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "supercycle_methods_FNm9Bj",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "settings": {}
+    },
+    "material-spotlight": {
+      "type": "material-spotlight",
+      "settings": {
+        "heading": "Crafted from",
+        "heading_tag": "h2",
+        "icon_style": "inline",
+        "preload_icon": true,
+        "show_rating": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "custom_section_jxpfJF": {
+      "type": "custom-section",
+      "blocks": {
+        "material_highlight_caVaA9": {
+          "type": "material_highlight",
+          "settings": {}
+        },
+        "trust_badge_9mJ3Em": {
+          "type": "trust_badge",
+          "settings": {
+            "style": "underline",
+            "heading": "Free shipping on all orders",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "material_highlight_caVaA9",
+        "trust_badge_9mJ3Em"
+      ],
+      "name": "t:general.custom_section",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "material-spotlight",
+    "related-products",
+    "custom_section_jxpfJF"
+  ]
+}
