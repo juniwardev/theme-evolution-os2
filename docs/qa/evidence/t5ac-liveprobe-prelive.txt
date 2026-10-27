@@ -1,0 +1,37 @@
+PAGE / {"id":138872651872,"role":"main","valid":true}
+  controls {"c1on":"none","c1off":"block","c2on":26.72,"fs":16,"c2off":"0px"} | containers 0
+PAGE /products/the-3p-fulfilled-snowboard {"id":138872651872,"role":"main","valid":true}
+  controls {"c1on":"none","c1off":"block","c2on":26.72,"fs":16,"c2off":"0px"} | containers 2
+  container #shopify-block-AR09lSWJGQmpYc1BBR__supercycle_methods_FNm9Bj (NEW, not in Step 0) els=3 rootDiffs=0 matched=0 sizeDiffs=0 -> ok
+    new container excerpt: <div id="shopify-block-AR09lSWJGQmpYc1BBR__supercycle_methods_FNm9Bj" class="shopify-block shopify-app-block" data-block-handle="methods"><x-methods data-settings="{&quot;default_method&quot;:&quot;calendar&quot;,&quot;item_condition_options&quot;:false,&quot;item_condition_options_display&quot;:&qu
+  container div.shopify-payment-button (recorded) els=6 rootDiffs=2 matched=2 sizeDiffs=0 -> ok
+PAGE /products/selling-plans-ski-wax {"id":138872651872,"role":"main","valid":true}
+  controls {"c1on":"none","c1off":"block","c2on":26.72,"fs":16,"c2off":"0px"} | containers 2
+  container #shopify-block-AR09lSWJGQmpYc1BBR__supercycle_methods_FNm9Bj (NEW, not in Step 0) els=3 rootDiffs=0 matched=0 sizeDiffs=0 -> ok
+    new container excerpt: <div id="shopify-block-AR09lSWJGQmpYc1BBR__supercycle_methods_FNm9Bj" class="shopify-block shopify-app-block" data-block-handle="methods"><x-methods data-settings="{&quot;default_method&quot;:&quot;calendar&quot;,&quot;item_condition_options&quot;:false,&quot;item_condition_options_display&quot;:&qu
+  container div.shopify-payment-button (recorded) els=6 rootDiffs=13 matched=13 sizeDiffs=36 -> ok
+PAGE /products/the-complete-snowboard {"id":138872651872,"role":"main","valid":true}
+  controls {"c1on":"none","c1off":"block","c2on":26.72,"fs":16,"c2off":"0px"} | containers 2
+  container #shopify-block-AR09lSWJGQmpYc1BBR__supercycle_methods_FNm9Bj (NEW, not in Step 0) els=3 rootDiffs=0 matched=0 sizeDiffs=0 -> ok
+    new container excerpt: <div id="shopify-block-AR09lSWJGQmpYc1BBR__supercycle_methods_FNm9Bj" class="shopify-block shopify-app-block" data-block-handle="methods"><x-methods data-settings="{&quot;default_method&quot;:&quot;calendar&quot;,&quot;item_condition_options&quot;:false,&quot;item_condition_options_display&quot;:&qu
+  container div.shopify-payment-button (recorded) els=6 rootDiffs=2 matched=2 sizeDiffs=0 -> ok
+PAGE /cart {"id":138872651872,"role":"main","valid":true}
+  controls {"c1on":"none","c1off":"block","c2on":26.72,"fs":16,"c2off":"0px"} | containers 0
+PAGE /collections/all {"id":138872651872,"role":"main","valid":true}
+  controls {"c1on":"none","c1off":"block","c2on":26.72,"fs":16,"c2off":"0px"} | containers 0
+PAGE /search?q=snowboard {"id":138872651872,"role":"main","valid":true}
+  controls {"c1on":"none","c1off":"block","c2on":26.72,"fs":16,"c2off":"0px"} | containers 0
+PAGE /pages/data-sharing-opt-out {"id":138872651872,"role":"main","valid":true}
+  controls {"c1on":"none","c1off":"block","c2on":26.72,"fs":16,"c2off":"0px"} | containers 2
+  container #pc--optOutFormContainer (recorded) els=39 rootDiffs=25 matched=25 sizeDiffs=12 -> ok
+  container body > div[aria-hidden="true"]:has(> div > iframe[src*="hcaptcha"]) (recorded) els=7 rootDiffs=3 matched=3 sizeDiffs=44 -> ok
+PAGE /pages/the-material-archive {"id":138872651872,"role":"main","valid":true}
+  controls {"c1on":"none","c1off":"block","c2on":26.72,"fs":16,"c2off":"0px"} | containers 0
+PAGE /blogs/news {"id":138872651872,"role":"main","valid":true}
+  controls {"c1on":"none","c1off":"block","c2on":26.72,"fs":16,"c2off":"0px"} | containers 0
+PAGE /policies/privacy-policy {"id":138872651872,"role":"main","valid":true}
+  controls {"c1on":"none","c1off":"block","c2on":26.72,"fs":16,"c2off":"0px"} | containers 1
+  container div.shopify-policy__container (recorded) els=98 rootDiffs=251 matched=251 sizeDiffs=158 -> ok
+PAGE /pages/tailwind-qa-missing {"id":138872651872,"role":"main","valid":true}
+  controls {"c1on":"none","c1off":"block","c2on":26.72,"fs":16,"c2off":"0px"} | containers 0
+OUTCOME VALID-PASS
