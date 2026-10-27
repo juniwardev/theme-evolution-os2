@@ -90,4 +90,10 @@ No blockers.
 
 Dev theme #187953938528 was left synced to HEAD from the repo root; all dev servers are stopped. Live and staging untouched; nothing pushed or committed.
 
+## Owner check 3 decisions (recorded after staging)
+
+- **E5a.18, 2026-10-26: keep the dim.** Owner: "Go with your recommendation to keep the dim". D5a.21's fallback rule is not added. The owner found that, in a normal browser, "Opt out" with nothing entered submits without a challenge (hCaptcha challenges only traffic it suspects, such as the automated browser above), and saw the challenge state in `t5aq-{base,head}-optout-challenge-375.png`.
+- **Opt-out form with the email checkbox ticked, 2026-10-26: not compared.** The parity runs above cover the form with the checkbox unticked. Owner: "don't QA with the email field, I will go with the default behaviour."
+- The other owner check 3 items are still open.
+
 PASS WITH NITS
