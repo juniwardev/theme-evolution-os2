@@ -37,6 +37,9 @@ More detail: per-load tables in `docs/qa/evidence/t5bc-sets-table.txt` and `docs
 
 ## Q5b.2: A heading base rule (needed before live; coding proceeds on the recommendation)
 
+> **Owner answer, 2026-11-06 (verbatim, in chat):** "Go with your recommendation for the heading font. If there is a tailwind default, use that."
+> This maps to **option (c), no heading base rule.** Tailwind's own default agrees: Preflight sets no heading `font-family`, so headings inherit the body font, and the theme opts into the heading font per element with `font-heading`. Gate 2 (the owner's own dated answer before live) is satisfied.
+
 Recommended: **(c) no rule** (0 B, nothing changes). Step 1 is therefore "not applicable", no commit. Measured for reference: with the rule, the heading font would also apply to the policy title and its 13 `h2`s (merchant), the logo wrapper, the home cards, product cards, spotlight, tooltip and cart total titles (see `t5bc-sets` `A_hd`; V2 / V2a screenshots). Options in words: (c) no rule; (a) the rule plus `font-sans` on 9 lines (+80 B); (b) the rule with no opt-outs (+80 B); (d) also in rich text (not recommended). **The owner's own dated answer is required before live (gate 2).**
 
 ## Q5b.3: Policy pages (built on the recommendation; the owner reviews it on staging)
