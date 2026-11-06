@@ -6,9 +6,17 @@ Parent: `docs/plans/theme-evolution-tailwind.md`. Format model: `docs/plans/them
 Architect: Claude (for Junior Warner). Date: 2026-10-23. Revision: 2.1. It closes round 2 of `docs/reviews/theme-evolution-tailwind-t6b-review.md` (APPROVE WITH CHANGES: RR2-1, RR2-2, nits RN1-RN5; closeout below). Revision 2 addressed round 1 (blocker B1, R1-R8, nits N1-N12; changelog below).
 Tier: 2. JavaScript behavior in the cart drawer (on every page) and the tooltip script (on every page), small markup on three pages, a preload fix. No schema change.
 
-**Status: written before T5a landed; re-validate at Step 0.** Planned on HEAD `1f2a390`. T5 is split into T5a (retire `base.css`, decide focus rings: Q5a.1) and T5b (typography; owner-gated line height): `docs/plans/theme-evolution-tailwind-t5-index.md`, `-t5a.md`, `-t5b.md`, read here for scope only. Two items (S5's focus ring, S7) may already be fixed by T5a and are **verified and dropped** at Step 0 if so (§3.2). **T5a must be on staging before Step 1; T5b is not required** (§3.3). T6b doesn't depend on T6a; if T6a lands first, Step 0 re-baselines on its tree (index §3).
+**Status: written before T5a landed; re-validate at Step 0.** Planned on HEAD `1f2a390`. T5 is split into T5a (retire `base.css`, decide focus rings: Q5a.1) and T5b (typography; owner-gated line height): `docs/plans/theme-evolution-tailwind-t5-index.md`, `-t5a.md`, `-t5b.md`, read here for scope only. Two items (S5's focus ring, S7) may already be fixed by T5a and are **verified and dropped** at Step 0 if so (§3.2). **T5a must be on staging before Step 1; T5b is not required** (§3.3). **Updated 2026-11-06:** T5a is live; T5b runs first, then T6a/T6b (§3.3). T6b doesn't depend on T6a; if T6a lands first, Step 0 re-baselines on its tree (index §3).
 
 ---
+
+## Update 2026-11-06 (order; no design change)
+
+| Date | What changed | Where |
+|---|---|---|
+| 2026-11-06 | **Order:** T5b first, then T6a/T6b (was: T5b not required, either order). Reason: the owner's spacing answer Q1 (a), 2026-10-26, leaves the policy body to T5b's wrapper | status line, §3.3 |
+
+Not changed: design, steps, decisions, criteria, §5.8's budget. §13 Step 0 item 1 ("T5b (§3.3): not required. Record whether its commits are in HEAD; if so, baseline on them") already handles T5b being in HEAD; its "no T5b Coder active" check stays.
 
 ## Revision 2.1 closeout (review round 2)
 
@@ -165,10 +173,10 @@ From the T5 index and the scopes of `-t5a.md` and `-t5b.md` (read, not edited). 
 
 ### 3.3 T5b's position (R1)
 
-**T5b is not required.** What T6b depends on is T5a (`base.css` gone, Q5a.1 decided, `check:hidden` removed, the new layer statement). T5b waits on the owner's written line-height choice (T5 index, Q5b.1 "**yes, before T5b Step 2**").
+**Updated 2026-11-06: T5b runs first, then T6a/T6b**, because the owner's spacing answer Q1 (a) (2026-10-26) leaves the policy body to T5b's wrapper, so T5b (at least its Step 3) ships before T6 (`docs/plans/theme-evolution-tailwind-t5a-spacing.md` §5.4; index §3). Revision 2.1 said "T5b is not required"; what T6b's design depends on is still only T5a (`base.css` gone, Q5a.1 decided, `check:hidden` removed, the new layer statement). T5b's line-height step waits on the owner's written choice (T5 index, Q5b.1 "**yes, before T5b Step 2**").
 
-- If T5b's commits are already in HEAD at Step 0, Step 0 baselines on them.
-- If T5b lands after T6b, T5b's own Step 0 absorbs T6b.
+- Step 0 baselines on T5b's commits (the expected case now).
+- If Q5b.1 is still open once T5b's other steps are live, T6b may start then, and T5b's late Step 2 re-baselines on T6b's tree (T5b §13 "Order with T6"). (Revision 2.1's "if T5b lands after T6b" case is otherwise superseded.)
 - T6b and T5b aren't implemented at the same time (both rebuild `assets/tailwind.css`, and T6b's base readings must stay put from Step 0 to Step 8): Step 0 item 1 records that no T5b Coder is active and no T5b commit is in HEAD past the recorded base, and Step 8 re-checks it.
 
 ---

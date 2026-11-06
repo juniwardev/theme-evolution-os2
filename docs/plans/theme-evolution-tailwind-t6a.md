@@ -6,9 +6,18 @@ Parent: `docs/plans/theme-evolution-tailwind.md` (umbrella). Format model: `docs
 Architect: Claude (for Junior Warner). Date: 2026-10-23. Revision: 2.1. It closes round 2 of `docs/reviews/theme-evolution-tailwind-t6a-review.md` (APPROVE WITH CHANGES: R2-1 to R2-3, nits N2-1 to N2-5; closeout below). Revision 2 addressed round 1 (R1-R8, nits N1-N13; changelog below).
 Tier: 2. One section's schema gains two settings (merchant-visible in the theme editor), one snippet gains three optional parameters, about +160 to +210 B of CSS.
 
-**Status: written before T5a landed; re-validate at Step 0.** Planned on HEAD `1f2a390` (T0-T4c live). T5 is split into T5a (retire `base.css` at parity) and T5b (typography, owner-gated on line height): `docs/plans/theme-evolution-tailwind-t5-index.md`, `-t5a.md`, `-t5b.md`, all under revision while this was written and read only for their scope and budget. Every figure T5a or T5b can move is tagged `[provisional: re-measure on T5's tree]` and Step 0 re-baselines it. **T5a must be on staging before Step 1**; T5b's position is option §3.3 (b) by default (§13 Step 0 item 1).
+**Status: written before T5a landed; re-validate at Step 0.** Planned on HEAD `1f2a390` (T0-T4c live). T5 is split into T5a (retire `base.css` at parity) and T5b (typography, owner-gated on line height): `docs/plans/theme-evolution-tailwind-t5-index.md`, `-t5a.md`, `-t5b.md`, all under revision while this was written and read only for their scope and budget. Every figure T5a or T5b can move is tagged `[provisional: re-measure on T5's tree]` and Step 0 re-baselines it. **T5a must be on staging before Step 1**; T5b's position is option §3.3 (b) by default (§13 Step 0 item 1). **Updated 2026-11-06:** T5a is live; T5b runs first, so option §3.3 (a) is now the default.
 
 ---
+
+## Update 2026-11-06 (order and budget; no design change)
+
+| Date | What changed | Where |
+|---|---|---|
+| 2026-11-06 | **Order:** T5b first, then T6a; option (a) becomes the default and (b) is marked superseded. Reason: the owner's spacing answer Q1 (a), 2026-10-26, leaves the policy body to T5b's wrapper | status line, §3.3, §13 Step 0 item 1 |
+| 2026-11-06 | **Budget:** §5.6's end figures restated on today's tree (59,134 / 11,322) and T5b Revision 2.2 §5.5; the (b+) "about 59,922 (78 B spare)" no longer holds | §5.6 |
+
+Not changed: design, steps, decisions, criteria. RA9 (§11) and §0 still quote Revision 2.1's order (b) figures; §5.6 supersedes them, and Step 0 measures `P_a` regardless.
 
 ## Revision 2.1 closeout (review round 2)
 
@@ -149,14 +158,16 @@ From the T5 index and the scopes of `-t5a.md` and `-t5b.md` (read, not edited; b
 
 **Nothing in T6a is something T5a or T5b could fix**, so nothing here is "verify and drop".
 
-### 3.3 T5b's position (R1): two order options
+### 3.3 T5b's position (R1): T5b first (updated 2026-11-06)
 
-T5b is gated on the owner's written line-height choice (T5 index, Q5b.1 "**yes, before T5b Step 2**"), so it may wait a while.
+**T5b runs first, then T6a**, because the owner's spacing answer Q1 (a) (2026-10-26) leaves the policy body to T5b's wrapper, so T5b (at least its Step 3) ships before T6 (`docs/plans/theme-evolution-tailwind-t5a-spacing.md` §5.4; index §3).
 
-- **(a) T6a waits for T5b on staging.** The cleanest baseline (final line height), but T6a then waits on an unrelated owner decision.
-- **(b) T6a runs once T5a is on staging, between T5a and T5b. Recommended.** Conditions, checked at Step 0 item 1 and again before Step 4: no T5b commit is in HEAD past T5a's deploy SHA, and T5b's Coder isn't active from T6a's Step 0 to its Step 4. **Why both:** both phases rebuild `assets/tailwind.css` (index §3), and C6a.3 compares head with Step 0's base, so the base must not move under T6a. T6a's criteria are width-based except C6a.3(c)'s rects; T5b changes heights, which is exactly what would break C6a.3 mid-run. If T5b lands afterwards, T5b's own Step 0 absorbs T6a.
+T5b's line-height step is gated on the owner's written choice (T5 index, Q5b.1 "**yes, before T5b Step 2**"), so it may wait a while.
 
-If T5b's commits are already in HEAD when T6a starts, that is option (a) by circumstance: Step 0 baselines on them and nothing else changes.
+- **(a) T6a waits for T5b. The order since 2026-11-06.** T6a's Step 0 baselines on T5b's commits (at least Step 3). If Q5b.1 is still open once T5b's other steps are live, T6a may start then, and T5b's late Step 2 re-baselines on T6a's tree (T5b §13 "Order with T6").
+- **(b) T6a between T5a and T5b.** Recommended in Revision 2.1; **superseded 2026-11-06** for the reason above. Its condition still applies under (a): T5b's Coder isn't active from T6a's Step 0 to its Step 4, because both phases rebuild `assets/tailwind.css` (index §3) and C6a.3 compares head with Step 0's base, so the base must not move under T6a (T5b changes heights, which is exactly what would break C6a.3(c)'s rects mid-run).
+
+If T5b's commits are in HEAD when T6a starts (the expected case now), Step 0 baselines on them and nothing else changes.
 
 ---
 
@@ -512,7 +523,7 @@ Each sentence is checked against §5.3's track table `[derived]`: Automatic/1 is
 | 3 | none (`loading`, `srcset` and `sizes` are attributes) | 0 | 0 to +5 |
 | **End** | `S_T5` + | **+160 to +210** | **+45 to +85** |
 
-Against T5a Revision 2's high end (58,922 / 11,369) the end is at most **59,132 / 11,454** under order (b), leaving at least 868 / 546 for T6b's 0 to +220 / +70; under order (a) ≤ 59,212 / 11,504, or about 59,702 with T5b (b+), after which T6b could reach about 59,922 (78 B spare) `[provisional]` (N2-1). Only `P_a` decides (§13 Step 0 item 8).
+Against T5a Revision 2's high end (58,922 / 11,369) the end is at most **59,132 / 11,454** under order (b), leaving at least 868 / 546 for T6b's 0 to +220 / +70; under order (a) ≤ 59,212 / 11,504 `[provisional]` (N2-1). **Updated 2026-11-06** (T5b Revision 2.2 §5.5; spacing review R3): today's tree is 59,134 / 11,322 after T5a and its spacing follow-up, and T5b runs first. After T5b (any option but (b+), ≤ 59,214 / 11,372) T6a ends ≤ 59,424 / 11,457, leaving T6b room (≤ 59,644 / 11,527). After T5b (b+) (59,469 to 59,829), T6a ends about 59,629 to 60,039 and T6b about 59,629 to 60,259: **only the top of each range, above 60,000, is over `B_min`** (60,000 to 60,039 for T6a, 60,000 to 60,259 for T6b), so the later of T6a/T6b may stop at its Step 0 gate (corrected 2026-11-06 after T5b review round 4 R15; the earlier wording said "most of that range", which holds only for T5b's own 59,899 to 60,259). The earlier "about 59,702 with T5b (b+)" and "about 59,922 (78 B spare)" no longer hold. Only `P_a` decides (§13 Step 0 item 8).
 
 ---
 
@@ -696,7 +707,7 @@ One step is one commit. Impl notes: `docs/plans/theme-evolution-tailwind-t6a-imp
 
 1. **Preconditions.** If any fails, stop.
    - **T5a is on staging:** `docs/qa/theme-evolution-tailwind-t5a-deploy.md` exists and names #187953643616 and a SHA; that SHA is an ancestor of HEAD; `docs/qa/theme-evolution-tailwind-t5a-report.md` ends with `PASS` or `PASS WITH NITS`; `assets/base.css` doesn't exist and `rg -n "base.css" layout` prints nothing.
-   - **T5b's position (§3.3).** Record which applies. **Option (b), the default:** `git log <T5a SHA>..HEAD` contains no T5b commit, and the orchestrator confirms no T5b Coder is active; re-check both before Step 4, and stop if either changed. **Option (a):** `docs/qa/theme-evolution-tailwind-t5b-deploy.md` names an ancestor SHA; baseline on it.
+   - **T5b's position (§3.3).** Record which applies. **Option (b), the default:** `git log <T5a SHA>..HEAD` contains no T5b commit, and the orchestrator confirms no T5b Coder is active; re-check both before Step 4, and stop if either changed. **Option (a):** `docs/qa/theme-evolution-tailwind-t5b-deploy.md` names an ancestor SHA; baseline on it. **Updated 2026-11-06: option (a) is now the default (§3.3)**; the orchestrator still confirms that no T5b Coder is active, re-checked before Step 4.
    - This plan, the index and their review are committed (no ` M`, no `??` for them).
    - `git status --porcelain -- layout sections blocks snippets templates locales assets src config scripts package.json package-lock.json` prints nothing.
 2. Record the commit, `N_tc`, `S_T5` (`wc -c`, `M_gz`) and the `scripts` block of `package.json` (whether `check:hidden` still exists).

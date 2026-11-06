@@ -12,6 +12,7 @@ Builds on: T5a, repo HEAD `fcc1261` `[quoted: orchestrator, 2026-10-26]`. Stagin
 
 | Item | What changed | Sections |
 |---|---|---|
+| **Note, 2026-11-06** (no text rewritten) | This plan's `S_pol` = 396 and T5b lower bound −420 (§5.3, its review N5) are superseded by T5b Revision 2.2 §0: **391 and −415**, counted from the five compiled `.shopify-policy__body` rules at `3774e29` (the build drops the transition's default `ease`) | §5.3, §5.5 |
 | **RC-1** | The C-S.10 probe is appended to the end of `body`, not `main`: neither `layout/theme.liquid` nor `layout/password.liquid` renders a `<main>`; both print `content_for_layout` straight into `<body>`. Nothing else changed | §6.1 item 1 |
 
 ## Revision 1.1.1 changelog (review round 2)

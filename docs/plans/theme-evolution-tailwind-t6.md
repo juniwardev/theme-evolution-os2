@@ -3,9 +3,19 @@
 Slug family: `theme-evolution-tailwind-t6a`, `theme-evolution-tailwind-t6b`
 Input: `docs/backlog/t6-batch.md` (added 2026-10-23 at the owner's request)
 Parent: `docs/plans/theme-evolution-tailwind.md`. Format model: `docs/plans/theme-evolution-tailwind-t4.md` (index) and `-t4c.md` (Revision 2.1).
-Architect: Claude (for Junior Warner). Date: 2026-10-23. Revision: 2.1 (updated with T6a and T6b Revision 2.1, closing both round-2 reviews; T5's split into T5a and T5b).
+Architect: Claude (for Junior Warner). Date: 2026-10-23. Revision: 2.2 (2026-11-06; changelog below). Revision 2.1 updated it with T6a and T6b Revision 2.1, closing both round-2 reviews, and T5's split into T5a and T5b.
 
 **Status: written before T5a landed; re-validate at Step 0.** Planned on HEAD `1f2a390` (T0-T4c live on #138872651872 since 2026-10-23). T5 is split: `docs/plans/theme-evolution-tailwind-t5-index.md`, `-t5a.md` (retire `base.css` at parity) and `-t5b.md` (typography; its line-height step is owner-gated). They were under revision while T6 was written; T6 reads them only for scope and budget and never edits them. Each sub-plan's Step 0 re-baselines on the tree it starts from and stops if an anchor moved.
+
+## Revision 2.2 changelog (2026-11-06)
+
+| Date | What changed | Where |
+|---|---|---|
+| 2026-11-06 | **Order:** T5b first, then T6a/T6b (was: T6 between T5a and T5b, recommended). Reason: the owner's spacing answer Q1 (a), 2026-10-26, leaves the policy body to T5b's wrapper (`docs/plans/theme-evolution-tailwind-t5a-spacing.md` §5.4) | §3 |
+| 2026-11-06 | **Budget figures restated** from T5b Revision 2.2 §0 and §5.5 on today's tree (59,134 / 11,322 after T5a and its spacing follow-up): T5a measured, a spacing follow-up row, T5b's ranges, T6a after T5b, and the worst ends (≤ 59,644 / 11,527 without T5b (b+); about 59,900 to 60,260 with it, over `B_min` on most of that range). The order (b) row is kept, marked superseded | §4 row "The CSS budget headroom", §5 rows |
+| 2026-11-06 | **(b+) wording** (spacing review R3 hand-off): the "about 59,922, 78 B spare" margin no longer holds | §5 "T6b after T6a" row and the paragraph after the table |
+
+Not changed: the T6a/T6b scopes, their criteria, and §8's live-order note (its "under order (b)" case no longer arises, and the note is otherwise still true).
 
 This file holds no implementation detail. Review and implement the sub-phase files.
 
@@ -30,7 +40,7 @@ The brief named `docs/qa/harness/t6c-*.mjs`. With the split, the Coder prefixes 
 ## 3. Order and starting conditions
 
 - **Both wait for T5a on staging**: `docs/qa/theme-evolution-tailwind-t5a-deploy.md` naming #187953643616 and an ancestor SHA, and T5a's QA verdict `PASS` or `PASS WITH NITS`. Neither is started while T5a is being implemented, so T6 can't hinder T5: until then T6 has written only `docs/plans/theme-evolution-tailwind-t6*.md`.
-- **T5b is not required.** It waits on the owner's line-height choice (T5 index, Q5b.1). T6a §3.3 and T6b §3.3 give the options: (a) wait for T5b, or (b) run between T5a and T5b with no T5b commit in HEAD and no T5b Coder active during the sub-phase (recommended). If T5b's commits are already in HEAD, Step 0 baselines on them; if T5b lands later, T5b's own Step 0 absorbs T6. T6 and T5b are never implemented at the same time: both rebuild `assets/tailwind.css`.
+- **T5b first, then T6a/T6b** (updated 2026-11-06; Revision 2.1 recommended running T6 between T5a and T5b). Reason: the owner's spacing answer Q1 (a) (2026-10-26) left the policy body to T5b's wrapper, so T5b, at least its Step 3, ships before T6 (`docs/plans/theme-evolution-tailwind-t5a-spacing.md` §5.4; T5b Revision 2.2 header and §13). T6a §3.3 and T6b §3.3 say the same. Each T6 Step 0 baselines on T5b's commits. If the owner's line-height answer (Q5b.1) is still open once T5b's other steps are live, T6 may start then, and T5b's late Step 2 re-baselines on T6's tree (T5b §13 "Order with T6"). T6 and T5b are never implemented at the same time: both rebuild `assets/tailwind.css`.
 - **Recommended order: T6a, then T6b.** Either order works; the second re-baselines on the first's tree at its Step 0 (budget and anchors). They shouldn't be implemented at the same time: both rebuild `assets/tailwind.css`.
 - Each Coder starts only after its plan, this index and the plan's review are committed.
 
@@ -41,7 +51,7 @@ Full tables: T6a §3.2 and T6b §3.2.
 | What T5a / T5b change | T6 items affected | How T6 handles it |
 |---|---|---|
 | **T5a** removes `assets/base.css` (Dawn focus rules, `.hidden !important`, `.grid` margin, `div:empty`, `visually-hidden`, form styles) and decides focus rings (Q5a.1: browser default recommended, or a theme ring) | T6b S7 and S5's focus ring; S2's panel ring; S4's hidden wrapper | T6b Step 0 records the Q5a.1 option that shipped and measures focus indicators as a focused-vs-resting **difference** (T6b Revision 2, B1): **S7 is verified and dropped** if a ring is already there; S5 adds ring utilities only if needed; the panel gets `focus-visible:outline-none` either way; S4 uses the `hidden` attribute, which Preflight hides independently |
-| The CSS budget headroom: at `1f2a390` 58,366 / 11,104 `[quoted]`; **T5a Revision 2 §5.10** projects 58,662-58,922 / 11,174-11,369; T5b, every option but (b+), up to 59,002 / 11,419, and (b+) up to about 59,492 `[provisional]` (quoted from the T6a round-2 review, N2-1) | both | each Step 0 builds its end state in scratch and **stops for the owner on a breach** (binding gate). Worst projected end after T5a + T6a + T6b: **≤ 59,352 / 11,524**; with T5b (not (b+)) ≤ 59,432 / 11,574; with T5b (b+) about 59,922, leaving about 78 B (§5) |
+| The CSS budget headroom (restated 2026-11-06 from T5b Revision 2.2 §0 and §5.5): T5a measured **58,850 / 11,269**; after its spacing follow-up, live and staging today, **59,134 / 11,322** `[measured]`; T5b, every option but (b+), **58,719 to 59,214 / 11,152 to 11,372**, and with (b+) **59,469 to 59,829** `[provisional]` | both | each Step 0 builds its end state in scratch and **stops for the owner on a breach** (binding gate). Worst projected end with T5b first, then T6a + T6b: **≤ 59,644 / 11,527** with T5b (not (b+)); with T5b (b+) **about 59,900 to 60,260, over `B_min` on most of that range** (§5). (Revision 2.1's ≤ 59,352 / 11,524, ≤ 59,432 / 11,574 and about 59,922 are superseded) |
 | **T5b**: `html { line-height: normal }` vs `1.5`; **T5a**: the layer statement `properties, theme, base, components, utilities` | T6a heights, T6b layouts | criteria compare with Step 0's measurements, never with planning-time figures; T6a reads `W_c` from each run; neither sub-phase overlaps T5b's implementation |
 | **T5a** deletes `check:hidden` (D5a.16) | both | the per-commit gate is `npm run check` as T5a leaves it |
 | One fewer stylesheet in the `Link` header | T6b S6 | `L_n` re-measured |
@@ -54,15 +64,16 @@ Nothing is asked of T5. If T5's plan turns out to touch a T6 file, T6's Step 0 a
 | After | Minified | Gzip | Source |
 |---|---|---|---|
 | T4c + page-center (`1f2a390`) | 58,366 | 11,104 | `[quoted]` orchestrator brief |
-| T5a (Revision 2 §5.10) | 58,662 to 58,922 | 11,174 to 11,369 | `[provisional]` `docs/plans/theme-evolution-tailwind-t5a.md` §5.10 (via the T6 round-2 reviews); T5a deploy note; T6a/T6b Step 0 measure |
-| T5b (if it ships before T6) | up to 59,002 (every option but (b+)); about 59,492 with (b+) | up to 11,419 | `[provisional]` T6a round-2 review N2-1 |
-| T6a, order (b) (on T5a only) | + 160 to 210 (end **≤ 59,132**) | + 45 to 85 (end **≤ 11,454**) | `[provisional]` T6a §5.6 |
-| T6a, order (a) (on T5b) | end ≤ 59,212, or about 59,702 with (b+) | end ≤ 11,504 | `[derived]` |
-| T6b after T6a | + 0 to 220 (end **≤ 59,352** on T5a only; ≤ 59,432 on T5b; about 59,922 with (b+)) | + 0 to 70 (end ≤ 11,524 on T5a; ≤ 11,574 on T5b) | `[provisional]` T6b §5.8 |
+| T5a | 58,850 | 11,269 | `[measured]` T5a QA report "Gates" (restated 2026-11-06; Revision 2.1 quoted T5a Revision 2's projection, 58,662 to 58,922 / 11,174 to 11,369) |
+| T5a spacing follow-up (live and staging today) | 59,134 | 11,322 | `[measured]` `docs/qa/theme-evolution-tailwind-t5a-spacing-report.md` C-S.2 (added 2026-11-06) |
+| T5b (ships before T6) | 58,719 to 59,214 (every option but (b+)); 59,469 to 59,829 with (b+) | 11,152 to 11,372 (every option but (b+)); (b+) measured by T5b | `[provisional]` T5b Revision 2.2 §0 and §5.5 (restated 2026-11-06; Revision 2.1 said up to 59,002 / 11,419, about 59,492 with (b+)) |
+| *T6a, order (b) (on T5a only): superseded 2026-11-06, T5b runs first* | + 160 to 210 | + 45 to 85 | `[provisional]` T6a §5.6. Revision 2.1's end ≤ 59,132 / 11,454 no longer applies |
+| T6a after T5b | + 160 to 210 (end **≤ 59,424** after T5b without (b+); about 59,629 to 60,039 with (b+)) | + 45 to 85 (end **≤ 11,457** without (b+)) | `[derived]` (restated 2026-11-06; Revision 2.1 said ≤ 59,212 / 11,504, about 59,702 with (b+)) |
+| T6b after T6a | + 0 to 220. **Updated 2026-11-06** (T5b Revision 2.2 §5.5, spacing review R3): on today's tree (59,134 after T5a and its spacing follow-up) with T5b first, the end is **≤ 59,644** after T5b (any option but (b+)); after T5b (b+), about **59,900 to 60,260, over `B_min` on most of that range**. (Revision 2.1's ≤ 59,352 on T5a only, ≤ 59,432 on T5b and about 59,922 with (b+) are superseded.) | + 0 to 70 (end ≤ 11,527 after T5b, any option but (b+); Revision 2.1's 11,524 / 11,574 superseded) | `[provisional]` T6b §5.8; T5b §5.5 |
 
 T6b's round-2 review gave 59,282 / 11,499 for the worst case after T6; that used T6a Revision 1's +140 / +60. With T6a Revision 2's +210 / +85 it is 59,352 / 11,524 `[derived]`.
 
-The `CLAUDE.md` rule applies: a breach needs the owner's sign-off. Each sub-plan's gate stops before any commit if its scratch end state doesn't fit both budgets. With T5b (b+) the margin is about 78 B, so a T6b ring-utility step could be the one that breaches; its gate catches that.
+The `CLAUDE.md` rule applies: a breach needs the owner's sign-off. Each sub-plan's gate stops before any commit if its scratch end state doesn't fit both budgets. With T5b (b+) there is no reliable margin any more (updated 2026-11-06): after the spacing follow-up's 284 B, T5b (b+) plus T6a and T6b at their upper bounds ends at about 59,900 to 60,260, over `B_min` on most of that range (T5b Revision 2.2 §5.5). T5b's own gate passes; **the later of T6a/T6b stops at its Step 0 gate** and needs the owner's sign-off or a smaller change. Whoever asks the owner T5b's (b+) question says so. (Revision 2.1's "about 78 B" margin no longer holds.)
 
 ## 6. Out of scope: separate future plans (not planned here)
 

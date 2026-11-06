@@ -283,3 +283,152 @@ Read: the Revision 2.1 changelog and every section it names (§0 `SZ`, §5 flowc
 Over three rounds the findings went from 9 REQUIRED, to 2 REQUIRED, to one cosmetic note. Every gate, criterion and owner-facing text I flagged now holds on the build it names. The plan is ready for the Coder, on the preconditions in its own §13 Step 0 item 1: T5a on staging, T5a's owner check 3 recorded, and this plan, the index and this review committed.
 
 APPROVE
+
+---
+
+## Round 4 (Revision 2.2)
+
+Reviewer: Plan-Reviewer (Claude). Date: 2026-11-06. HEAD `3774e29`; plan, T5 index, T6 index and T6a modified in the working tree.
+Read: T5b Revision 2.2 in full (730 lines); the spacing plan §3 and §5.3-§5.5; the spacing QA report and live deploy note; T5a's QA report ("Owner check 3 decisions"); the T5 index; the T6 index (header, §3-§5) and T6a §3.3 and §5.6; `src/tailwind.css:165-357`; `layout/theme.liquid`; `templates/product.json` and `templates/product.rental.json`; `sections/product.liquid:20-35`; `docs/qa/harness/t5ac-lib.mjs:265-303`, `:338-340`, `:362-386`; `docs/qa/harness/t5as-sweep.mjs:55-79`; `CLAUDE.md` (in context) and `AGENTS.md` by ripgrep, re-read for this pass. `docs/dev-fixtures.md` not opened.
+
+### Summary
+
+Revision 2.2 is a careful catch-up, and its load-bearing facts are right. All eight hand-offs from the spacing plan's §5.5 are applied. `S_pol` = 391 is correct, I counted it myself from the compiled file, so the corrected lower bound of −415 holds. Every budget figure I re-added checks. The new capture rules (`TH`, `SEL`, `body` injection) close the spacing round's false-live error at the right place.
+
+Two things Revision 2.2 adds are new defects, and two are small owner-facing defects:
+
+- **R12 (failure class 2).** S9 is date-dependent. The rental picker is a calendar, so a criterion that compares an S9 load with Step 0's S9 recording by element path goes red on a correct build when it runs on another day or in another month. That affects C5b.5 and the live probe's pass rule (C5b.13, §5.6).
+- **R13 (owner-facing).** The owner sheet's panel letters cross the option letters: panel A is option (b), and panel B is option (a).
+- **R14 (owner-facing).** The ten pairs are fixed before Step 0 measures where 1.5 actually bites. No pair shows the header, the one element on every page.
+- **R15 (hand-off text).** §14 and the T5 index still flag T6 edits for the orchestrator, but those edits have already been made, and the SP-4 line citations have moved.
+
+None of these changes a decision or a recommendation, and none needs a redesign. Each fix is a sentence or a rule. After them, a closeout check is enough.
+
+### Check-by-check (the orchestrator's six)
+
+| # | Question | Result |
+|---|---|---|
+| 1 | All eight §5.5 hand-offs applied | **Yes.** Row 1 maps to SP-1 (§3.3, §5.2, E5b.4, Step 0 item 5). Row 2 maps to SP-2 (`OWN`, C5b.11, §10). Row 3 maps to SP-3 (§15.2, RB12, §14). Row 4 maps to SP-4 (§5.5, §15.2; the T6 edits exist, see R15). Row 5 maps to SP-5 (§5.4; both strings occur once in `CLAUDE.md:198` and `AGENTS.md:193`, which I confirmed by ripgrep). Row 6 maps to SP-6: the plan deliberately departs from the hand-off's −420 and gives its reason, and the reason is correct (below). Row 7 (T5a E5a.6) asks nothing of T5b. Row 8 maps to SP-7 |
+| 2 | Budget arithmetic, §0 and index | **Re-derives.** I counted the five compiled `.shopify-policy__body` rules myself: 46 + 49 + 156 + 78 + 62 = **391**. The `a` rule ends `;transition:text-decoration-thickness .1s}`, 41 B without `ease`. None of the five rules is wrapped in a media block, no other selector names the class, and no policy `:empty` rule is compiled. So −24 − 391 = **−415** ✓. The other figures also check: `S_pm` 21 + 35 = 56 ✓ (`px-(--page-margin)` is not compiled; the `px-\(--padding\)` model is). §5.5: 58,719 / 58,775 / 59,214 ✓; (b+) 59,469 and 59,829 ✓; + 430 = 59,899 to 60,259 ✓; fits at ≤ 59,570 ✓; gzip 11,152 / 11,222 / 11,372 / 11,527 ✓; RB12 59,110 to 59,214, + 490, + 430 = 60,030 to 60,134 ✓. T5 index rows 38-42 ✓, including the superseded row (11,099 / 11,319) |
+| 3 | §3.4's reach claims | **True as stated.** Line height reaches app markup only by inheritance. The Supercycle block is printed bare by `{% render block %}` (`sections/product.liquid:29-30`), and no theme ancestor sets a line height, so its markup inherits the root value. The opt-out widget sits in `.prose`, whose rule ends `font-size:1rem;line-height:1.75}` in the compiled file. I confirmed this: the plan's "…" spans the long `--tw-prose-*` declaration list. The heading rule reaches only `h1`-`h6` that the app's own CSS leaves unset. The wrapper can't reach the picker. One omission, n8 (shadow-DOM widgets) |
+| 4 | S9 and the rental pages in every set that needs them | **Yes**, in `A_lh`, `A_hd`, `NZ_b`, the screenshots, C5b.5, C5b.8, §5.6/C5b.13, owner check 2 and Late Step 2. The open picker works on the dev theme: the spacing QA opened it there. But S9's presence makes R12 bite. Trivial omissions are in n12 |
+| 5 | Can a non-technical owner choose from the sheet? | **Almost.** The format is right: ten pairs, today on the left, a plain caption, the same anchor in both panels. R13 (crossed letters) and R14 (pairs chosen blind, no header) need fixing first. n9 covers anchors that can't be scrolled to 80 px |
+| 6 | Criteria unreachable or red on a correct build | **One new instance: R12.** Rows C5b.0, C5b.7, C5b.8 and C5b.11 of §9.2, re-run both ways, hold. The exemption in C5b.4 and the "not applicable" branch in C5b.7 are right at `3774e29` (no compiled policy `:empty` rule) |
+
+### Manifest: sampled and taken on trust
+
+**Sampled and confirmed:**
+
+- `S_pol` component by component.
+- `S_lh`.
+- `S_pm`, the absence of `px-(--page-margin)` and `wrap-break-word`, and the presence of `.w-full{width:100%}` and `.mx-auto{margin-inline:auto}`.
+- The `.prose` line height.
+- The anchors in `src/tailwind.css`: `:172-177`, `:237-241`, `:265-283`, `:297-303`, `:307-313`, `:324-343`, `:345-355`.
+- `layout/theme.liquid:44` and `layout/password.liquid:20`, with no `<main>`.
+- `sections/page.liquid:14`.
+- `H_plain`: 30 lines, and the same 12 without a font class (ripgrep).
+- Both `templates/*.json` claims: dropdown `left` and `modal`, `disabled: true`, `show_dynamic_checkout: false`.
+- `OWN_APP` / `OWN_SHOP` at `t5ac-lib.mjs:271-272`.
+- How S9 is reached in `t5as-sweep.mjs:66`.
+- The spacing QA's 59,134 / 11,322, its census counts and the picker opened on the dev theme.
+- The deploy note's 59,081 B, its policy census and theme check showing no offenses.
+- Every sum in §5.5, RB12, the T5 index and T6a §5.6.
+
+**Taken on trust:**
+
+- Every gzip delta and `S_ph`; Step 0 measures them.
+- `snippets/css-variables.liquid` line citations.
+- `sections/header-group.json:17-18` and `config/settings_data.json:21`.
+- The contents of T5a §4.3 and §5.11.
+- `request.page_type` = `policy`, which Step 0 item 5 prints.
+
+**Not in the manifest, reviewed in full:**
+
+- How S9 interacts with date (R12).
+- The labels and pair selection on the owner sheet (R13, R14).
+- Whether the T6 files are still in the state that §14 describes (R15).
+- How `OWN`'s merchant class interacts with §5.6's container-relative matching (n6).
+
+### Required changes (round 4)
+
+#### R12: REQUIRED (a criterion red on a correct build). S9 is a calendar, so path matching against Step 0's recording fails on another day
+
+The picker shows the current month, today's cell, past (disabled) dates and the app's availability. All of these depend on the date. Two Revision 2.2 criteria compare an S9 load with something recorded at Step 0:
+
+- **C5b.5** compares HEAD with base cross-build. In T5a's method, base and head are loaded separately (T5a §0 `NZ`, "load base and head separately"). `NZ_b` is two base loads taken on the same day, so it can't absorb day-to-day changes.
+- **§5.6 / C5b.13** passes only differences that "Step 0's measurement … recorded for the same container, matched by … container-relative path", and it runs "immediately before" the live push.
+
+Between Step 0 and QA, or the live push, the owner's Q5b.1 wait can be long. In that time the calendar's cells change class and colour, and a new month can change the number of week rows, so element paths shift. Then a correct build shows differences outside `A_lh`, outside `NZ_b` and outside Step 0's list. C5b.5 goes red, and C5b.13 fails. The C5b.13 failure then triggers RB10's "stops with a coder question" for a change that doesn't exist. This is the two-sided test failing on its green side, and it is new in this revision, because S9 is new.
+
+**Fix (the Architect's choice, recorded):** for elements owned by the app (`OWN` = app) at S9, judge `line-height` and `font-family` differences by §4.2's **mechanism allowance**, not by a path in Step 0's list. That applies in C5b.5 and in §5.6's pass rule. Record their other property differences, but don't count them red, unless the same difference also appears in a same-day pair of base loads. Alternatively, take the S9 base load in the **same session** as the head load, with the browser clock pinned to one instant (Playwright `page.clock`). This is the stronger form for C5b.5, but it doesn't help the live probe, whose reference is Step 0. Either way, update §9.2's C5b.5 and C5b.13 rows.
+
+#### R13: REQUIRED (owner-facing). The sheet's panel letters cross the option letters
+
+§4.2 and §13 Step 0 item 6 label the panels "A: today (line height normal)" and "B: proposed (Preflight 1.5)", and say "A = Q5b.1 (b), keep `normal`; B = Q5b.1 (a), Preflight's 1.5". So the owner's "a" or "A" means the opposite choice depending on which list they read. The optional third panel "C" does match option (c), which makes the crossing easier to miss. C5b.4(c) only requires a dated verbatim quote, so it would accept an ambiguous "go with A" and Step 2 could ship the wrong value. This is the defect class that N8 fixed for Q5b.3 in round 1.
+
+**Fix:** label the panels with words, for example "Today" / "Proposed (looser lines)" / "Your value", or make the letters match the options. Ask the owner to answer in words ("keep today", "proposed", "another value: …"). The impl notes record which option the answer maps to before Step 2. Drop "Preflight" from the panel label; the caption carries the meaning.
+
+#### R14: REQUIRED (owner-facing evidence). The pairs are chosen before Step 0 measures what changes, and none shows the header
+
+The ten anchors are fixed in the plan. Step 0 items 3-4 then measure `A_lh` and `D_h`, which say where 1.5 actually changes things, including RB2's fixed-height components: a badge, the cart count, a button. No pair is taken at scroll 0, so the header (nav links, cart count, announcement bar) appears in none of them, except perhaps pair 8 with the menu open. Yet it is the one region on every page. The full set is "available on request", but a non-technical owner won't ask for it.
+
+**Fix (one sentence in §4.2 and Step 0 item 5a):** after items 3-4, make sure that the header at 1440 and 375, the element with the largest clipped or overflowing change, and the page with the largest `D_h` each appear in some pair. Swap out the least informative pairs to keep the total at 10 or fewer, and record each swap.
+
+#### R15: REQUIRED (hand-off text; doesn't block a build). §14, SP-4 and the T5 index describe T6 files that have already changed
+
+The T6 index now carries its own Revision 2.2 changelog: "T5b first, then T6a/T6b" (`:14`, `:43`), and the budget restated at `:54` and `:66-76`. T6a and T6b carry the same order in their changelogs and §3.3. Yet the following still say otherwise:
+
+- **T5b §14** says "Not edited, flagged for the orchestrator: the T6 index still says 'T5b is not required' … `:33` … `:44`, `:57`, `:58` and `:60`; T6a §3.3 and T6b §3.3 carry the same order options".
+- **T5 index `:29`** says "The T6 index's §3 still recommends T6 between T5a and T5b; that is superseded and is flagged in T5b §14".
+
+SP-4's citations (T6 index `:61`/`:65`, T6a `:515`) now point at the wrong lines (now `:72`/`:76` and `:526`; T6a `:515` is the locale-text paragraph). Separately, T6a `:526` says T6b ends "about 59,629 to 60,259: **over `B_min` on most of that range**". Only 259 B of that 630 B range are over the budget. T5b's own sentence is true only on its range (59,899 to 60,259).
+
+**Fix:** update §14 and the index's `:29` to say the T6 files were updated on 2026-11-06. Cite SP-4's lines by heading rather than line number. Correct T6a `:526`'s wording, or give that range as T5b's 59,899 to 60,259.
+
+### NITs (round 4; none blocks a build)
+
+- **n6.** `OWN` classes policy-body descendants as merchant before Shopify. §5.6 matches by "container selector and container-relative path", and in `t5ac-lib.mjs:293-297` the container is `app || shop`. If the copy derives the container from the owner class, merchant elements lose `.shopify-policy__container` as their container and fall back to absolute paths. Say that the container used for matching stays `.shopify-policy__container` (or the wrapper), whatever the owner label. The third owner function (`:376-377`, the focus sweep) lacks the Supercycle selectors. Say "`OWN` everywhere in the copy".
+- **n7.** If the `modal` picker is appended to `body` without a `supercycle` id or class and outside `shopify-block-*`, `OWN` classes it as theme. Once Step 0 records where it sits, add its container selector to `OWN_APP`. Name that selector in §4.2's S9 readiness ("a modal it appended to `body`" is otherwise undefined).
+- **n8.** §3.4 leaves out Shopify's shadow-DOM widgets on default-template products: accelerated checkout and payment terms (the "`DIV.flex` settling" the spacing QA saw). Inherited `line-height` crosses shadow boundaries, and the snapshots don't pierce shadow roots, so only screenshots see these widgets. Pair 4 likely covers them; add a row so nobody reads the table as complete.
+- **n9.** "Anchor at 80 px from the viewport top" can't be reached for fixed overlays (S2 drawer, S3 menu, the S9 modal) or for the footer at the end of the page. Add "or as close as the scroll range allows; overlays aren't scrolled", so the Coder doesn't retake those pairs indefinitely.
+- **n10.** RB10's coder question could name an option the owner already controls: the Supercycle block's own `custom_css` setting, in the theme editor (merchant-controlled; not a T5b edit).
+- **n11.** `SEL` assumes the CDN's re-minification keeps selector and declaration text. The deploy note's count of `:where(tbody,tfoot)` suggests it does, but the 53 B difference is unexplained. Step 0 item 8 could diff live's CSSOM rule set against the committed build's once, on the marker rules at least, before relying on it.
+- **n12.** C5b.6 (under (c), "every page and state"), C5b.7(b) (the zero-count pages) and C5b.12 ("every theme page") don't name the two rental products. That is harmless (the wrapper can't render there), but listing them would make the page sets match §4.2.
+
+### Required changes (numbered, round 4)
+
+1. R12: at S9, judge app-owned `line-height` and `font-family` differences by the mechanism allowance in C5b.5 and in §5.6's pass rule. Record other app-owned differences instead of counting them red, or pin the clock and take same-session base loads for C5b.5. Update §9.2's C5b.5 and C5b.13 rows.
+2. R13: label the sheet's panels so that no letter crosses an option letter. Ask for the owner's Q5b.1 answer in words, and record the mapping before Step 2.
+3. R14: after Step 0 items 3-4, make sure the sheet includes the header (1440 and 375), the worst clipped or overflowing change and the page with the largest `D_h`. Keep the total at 10 pairs or fewer.
+4. R15: update §14, SP-4's citations and T5 index `:29` to reflect that the T6 files are already updated. Correct T6a `:526`'s "most of that range".
+
+APPROVE WITH CHANGES
+
+---
+
+## Closeout (Revision 2.2.1)
+
+Reviewer: Plan-Reviewer (Claude). Date: 2026-11-06.
+Read: the header and Revision 2.2.1 changelog; §4.2 (S9 readiness, owner classes, the new "S9 is date-dependent" rule, the owner sheet at `:258-276`); §5.5 tables; §5.6's pass rule (`:432`); C5b.4, C5b.5 and C5b.12 in §9.1; the §9.2 rows for C5b.4, C5b.5 and C5b.13; §13 Step 0 items 5, 5a, 6 and 8; §14; the T5 index `:5` and `:29`; T6a `:524-526`.
+
+### Verification
+
+| Item | Where | Result |
+|---|---|---|
+| R12 | §4.2 `:246`; C5b.5 `:492`; §5.6 `:432`; §9.2 C5b.5 `:512` and C5b.13 `:520`; Step 0 item 8 | **Closed.** At S9, app-owned `line-height` and `font-family` differences now pass only by the mechanism allowance, in the same load. Other app-owned differences, and app elements with no Step 0 counterpart, are recorded rather than counted red. Theme-owned elements at S9 are judged as in every other state. The two-sided test holds. A correct build on a later day is green. A theme-owned change at S9, or an app line height other than the chosen value × `font-size`, is still red. §9.2 states the cost honestly: a non-inherited app difference at S9 shows only in the record and the screenshots. That is acceptable for markup the theme doesn't own and doesn't style. The optional clock pin is correctly limited to C5b.5 |
+| R13 | §4.2 `:258`, `:276`; Step 0 items 5a and 6; C5b.4(c) `:491`; §9.2 `:511` | **Closed.** Every panel label is now in words ("Today: normal" / "Proposed: 1.5" / "Your value"). The owner is asked to answer in words, and C5b.4(c) rejects a letter-only answer. The impl notes record which option the owner's words map to before Step 2. The only remaining "A: today" strings are in the Revision 2.2 changelog row and the Revision 2.2 manifest, which is correct |
+| R14 | §4.2 `:261`; Step 0 item 5a `:609` | **Closed.** The sheet must now include the header at 1440 and 375, the element with the largest clipped or overflowing change (defined measurably, with "none found" recorded) and the page with the largest `D_h`. Each swap replaces the pair with the fewest `A_lh` elements in its crop, the total stays at 10 or fewer, and every swap is recorded |
+| R15 | §14 `:647-648`; T5 index `:5`, `:29`; T6a `:526` | **Closed.** §14 now says the T6 files were updated on 2026-11-06 and cites them by heading. The T5 index's order bullet says the same. T6a `:526` now gives the over-budget part of each range (60,000 to 60,039 for T6a, 60,000 to 60,259 for T6b) and keeps "most of that range" only for T5b's 59,899 to 60,259, which is correct |
+| n6-n12 | §4.2 `:244-245`, §3.4 (shadow-DOM row; `custom_css` in RB10), `:259` (anchors), Step 0 item 8 (`SEL` diff), C5b.12 `:499` | All applied as worded in round 4 |
+
+**Nothing else moved.** The §5.5 tables are byte-for-byte the figures I verified in round 4 (−415 to +80; 58,719 / 59,214 / 59,469 to 59,829 / ≤ 59,644 / 59,899 to 60,260). §9.1 still has 15 criteria, C5b.0 to C5b.14. No step, decision or recommendation changed. The edits are confined to the sections the changelog names.
+
+### Remaining note (does not block a build)
+
+- **c2.** The manifest itself says it is unknown whether Playwright's `page.clock` freezes the picker's idea of "today", since the app may take the date from its server. Nothing depends on it: the clock pin is optional, and the S9 rule stands without it.
+
+### Verdict
+
+The trajectory went from 9 REQUIRED findings in round 1, to 2 in round 2, to 0 at the closeout, then 4 in round 4 for the new Revision 2.2 material, and now 0 again with one informational note. Every gate and criterion I flagged now passes on a correct build and fails on the one it names. The owner sheet can no longer turn an ambiguous letter into a Step 2 commit. The plan is ready for the Coder, on the preconditions in its own §13 Step 0 item 1 (this plan, the indexes and this review committed; no T6 Coder active).
+
+APPROVE
