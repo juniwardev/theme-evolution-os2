@@ -51,3 +51,8 @@ Done on the recommendation (b), `prose` through a `w-full` layout wrapper: commi
 ## Stops and open points
 
 - No gate stopped Step 0. Open: the owner's Q5b.1 answer (Step 2 and the line-height sentence of Step 4 wait) and Q5b.2's dated answer (before live).
+
+## Q5b.3 owner answer (2026-11-06, on staging)
+
+> **Owner answer, 2026-11-06 (verbatim, in chat):** "I don't want to use any custom css, go with tailwind defaults and the theme font settings."
+> This accepts **(b) as built** (commit `942a661`, on staging since 2026-11-06 18:41 UTC): the policy body uses plain `prose` (Tailwind typography defaults) in the theme's body font, and the policy title stays `prose`'s default `h1` in the body font. No (b+) heading-font variants, no theme-editor Custom CSS, no follow-up. Owner check 2 for Q5b.3 is closed.
