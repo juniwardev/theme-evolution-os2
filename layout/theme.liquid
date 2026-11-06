@@ -41,7 +41,12 @@
   <body>
     {% sections 'header-group' %}
 
-    {{ content_for_layout }}
+    {%- if request.page_type == 'policy' -%}
+      {% # Shopify renders store policies without theme classes; the typography plugin styles them like page content. w-full stops the centered box shrinking to its content. %}
+      <div class="prose prose-tokens mx-auto w-full" data-rich-text data-policy-prose>{{ content_for_layout }}</div>
+    {%- else -%}
+      {{ content_for_layout }}
+    {%- endif -%}
 
     {% section 'cart-drawer' %}
     {% sections 'footer-group' %}

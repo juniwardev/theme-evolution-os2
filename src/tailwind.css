@@ -263,26 +263,6 @@
   }
 
   /*
-   * Store policy pages (/policies/*) print Shopify's own markup, which takes no theme
-   * classes. Keep their list markers and link underline. It also keeps the list padding,
-   * inside markers and link offset that Dawn's .rte gave them before T5a; T5b decides the
-   * final styling.
-   * See docs/plans/theme-evolution-tailwind-t4c.md D4c.9.
-   */
-  .shopify-policy__body ul {
-    list-style-type: disc;
-  }
-  .shopify-policy__body ol {
-    list-style-type: decimal;
-  }
-  .shopify-policy__body a {
-    text-decoration-line: underline;
-    text-underline-offset: 0.3rem;
-    text-decoration-thickness: 0.1rem;
-    transition: text-decoration-thickness 100ms ease;
-  }
-
-  /*
    * What Dawn's stylesheet gave markup that the theme can't add classes to, or gave every
    * page, kept after it went (T5a). Each matches Dawn's value exactly.
    * See docs/plans/theme-evolution-tailwind-t5a.md D5a.5-D5a.8, D5a.19-D5a.21.
@@ -293,13 +273,6 @@
   h4,
   h5 {
     word-break: break-word; /* permanent: long words in headings wrap at narrow widths */
-  }
-  .shopify-policy__body :is(ul, ol) {
-    padding-left: 2rem;
-    list-style-position: inside;
-  }
-  .shopify-policy__body a:hover {
-    text-decoration-thickness: 0.2rem;
   }
   input[type="checkbox"] {
     margin-right: 0.5rem; /* Shopify's privacy widget (Q5a.3) */
