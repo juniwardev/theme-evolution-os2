@@ -316,12 +316,8 @@
   }
 
   /*
-   * Browser defaults that Preflight removes but unclassed Dawn, Shopify and merchant
-   * markup still relies on (plan D6). Remove each in the phase noted.
+   * Kept from plan D6 permanently: Tailwind v4 buttons default to cursor: default.
    */
-  html {
-    line-height: normal; /* T5b decides: Preflight sets 1.5; every page was built against normal */
-  }
   button:not(:disabled),
   [role="button"]:not(:disabled) {
     cursor: pointer; /* permanent: v4 buttons default to cursor: default */
