@@ -13,6 +13,9 @@
   @param {number} [width] - The highest resolution width of the image to be rendered
   @param {number} [height] - The highest resolution height of the image to be rendered
   @param {string} [crop] - The crop position of the image
+  @param {string} [widths] - Comma-separated srcset widths for image_tag. Pass together with sizes
+  @param {string} [sizes] - The sizes attribute for image_tag. Pass together with widths
+  @param {string} [loading] - 'eager' or 'lazy'; used only with widths and sizes (default 'eager')
 
   @example
   {% render 'image', image: product.featured_image %}
@@ -24,6 +27,15 @@
     width: 1200,
     height: 800,
     crop: 'center',
+  %}
+  {% render 'image',
+    image: product.featured_image,
+    width: 1600,
+    height: 1600,
+    crop: 'center',
+    widths: '360, 720, 1080, 1600',
+    sizes: '(min-width: 1024px) 33vw, 100vw',
+    loading: 'lazy'
   %}
 {% enddoc %}
 
@@ -45,5 +57,10 @@
     href="{{ url }}"
   {% endif %}
 >
-  {{ image | image_url: width: width, height: height, crop: crop | image_tag: class: 'block h-auto w-full' }}
+  {% if sizes != blank and widths != blank %}
+    {% assign image_loading = loading | default: 'eager' %}
+    {{ image | image_url: width: width, height: height, crop: crop | image_tag: class: 'block h-auto w-full', widths: widths, sizes: sizes, loading: image_loading }}
+  {% else %}
+    {{ image | image_url: width: width, height: height, crop: crop | image_tag: class: 'block h-auto w-full' }}
+  {% endif %}
 </{{ wrapper }}>
