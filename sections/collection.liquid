@@ -42,6 +42,54 @@
   endcase
 -%}
 
+{%- liquid
+  # Image sizes hint: the rendered card width at each viewport, from the page width and margin that css-variables prints.
+  # 64 is the shell's horizontal padding (both sides), 16 the gap; 500 is --grid-min (31.25rem) and 516 adds the gap.
+  assign page_px = settings.max_page_width | default: '120rem' | remove: 'rem' | times: 16
+  assign edge_px = settings.min_page_margin | default: 15 | times: 2 | plus: 64
+  assign cap_px = page_px | minus: edge_px
+  assign edge_px_2 = edge_px | plus: 16
+  assign edge_px_3 = edge_px | plus: 32
+  assign base_widths = '360,540,720,1080,1600' | split: ','
+
+  if section.settings.columns_mobile == '2'
+    assign mobile_sizes = 'calc((100vw - ' | append: edge_px_2 | append: 'px) / 2)'
+  else
+    assign mobile_sizes = 'calc(100vw - ' | append: edge_px | append: 'px)'
+  endif
+
+  case section.settings.columns_desktop
+    when '2', '3', '4', '5'
+      assign n = section.settings.columns_desktop | plus: 0
+      assign gaps_px = n | minus: 1 | times: 16
+      assign cap_card_px = cap_px | minus: gaps_px | divided_by: n
+      assign edge_px_n = edge_px | plus: gaps_px
+      assign n_eager = n
+      if n > 2
+        assign tablet_sizes = '(min-width: 768px) calc((100vw - ' | append: edge_px_3 | append: 'px) / 3), '
+      else
+        assign tablet_sizes = '(min-width: 768px) calc((100vw - ' | append: edge_px_2 | append: 'px) / 2), '
+      endif
+      assign card_sizes = '(min-width: ' | append: page_px | append: 'px) ' | append: cap_card_px | append: 'px, (min-width: 1024px) calc((100vw - ' | append: edge_px_n | append: 'px) / ' | append: n | append: '), ' | append: tablet_sizes | append: mobile_sizes
+    else
+      assign k_cap = cap_px | plus: 16 | divided_by: 516
+      assign n_eager = k_cap
+      assign cap_gaps_px = k_cap | minus: 1 | times: 16
+      assign cap_card_px = cap_px | minus: cap_gaps_px | divided_by: k_cap
+      assign card_sizes = '(min-width: ' | append: page_px | append: 'px) ' | append: cap_card_px | append: 'px, '
+      if k_cap > 2
+        assign bp3_px = edge_px | plus: 1532
+        assign card_sizes = card_sizes | append: '(min-width: ' | append: bp3_px | append: 'px) calc((100vw - ' | append: edge_px_3 | append: 'px) / 3), '
+      endif
+      if section.settings.columns_mobile == '2'
+        assign card_sizes = card_sizes | append: mobile_sizes
+      else
+        assign bp2_px = edge_px | plus: 1016
+        assign card_sizes = card_sizes | append: '(min-width: ' | append: bp2_px | append: 'px) calc((100vw - ' | append: edge_px_2 | append: 'px) / 2), ' | append: mobile_sizes
+      endif
+  endcase
+-%}
+
 <div class="flex flex-col gap-8 px-8 py-10 md:py-16" data-page-shell>
   <h1 class="font-heading text-3xl leading-tight font-bold uppercase md:text-4xl">{{ collection.title | escape }}</h1>
 
@@ -50,12 +98,32 @@
       {% for product in collection.products %}
         <div class="flex min-w-0 flex-col gap-3">
           {% if product.featured_image %}
+          {%- liquid
+            # Card widths: the base widths below this image's square output, then the output width itself, so no upload is under-served.
+            assign out_px = product.featured_image.width | at_most: product.featured_image.height | at_most: 1600
+            assign card_widths = ''
+            for base_width in base_widths
+              assign base_px = base_width | plus: 0
+              if base_px < out_px
+                assign card_widths = card_widths | append: base_width | append: ', '
+              endif
+            endfor
+            assign card_widths = card_widths | append: out_px
+            if forloop.index > n_eager
+              assign card_loading = 'lazy'
+            else
+              assign card_loading = 'eager'
+            endif
+          -%}
             {% render 'image',
               image: product.featured_image,
               url: product.url,
-              width: 400,
-              height: 400,
-              crop: 'center'
+              width: 1600,
+              height: 1600,
+              crop: 'center',
+              widths: card_widths,
+              sizes: card_sizes,
+              loading: card_loading
             %}
           {% endif %}
           <div class="flex flex-col gap-1">
