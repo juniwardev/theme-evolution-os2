@@ -5,11 +5,48 @@
   https://shopify.dev/docs/storefronts/themes/architecture/templates/collection
 {% endcomment %}
 
+{%- liquid
+  # Each column option maps to one complete class string: the CSS build reads only literal class names.
+  # Automatic with one phone column is the original attribute, byte for byte.
+  case section.settings.columns_desktop
+    when '2'
+      if section.settings.columns_mobile == '2'
+        assign grid_classes = 'mb-0 grid grid-cols-2 gap-4'
+      else
+        assign grid_classes = 'mb-0 grid grid-cols-1 md:grid-cols-2 gap-4'
+      endif
+    when '3'
+      if section.settings.columns_mobile == '2'
+        assign grid_classes = 'mb-0 grid grid-cols-2 md:grid-cols-3 gap-4'
+      else
+        assign grid_classes = 'mb-0 grid grid-cols-1 md:grid-cols-3 gap-4'
+      endif
+    when '4'
+      if section.settings.columns_mobile == '2'
+        assign grid_classes = 'mb-0 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'
+      else
+        assign grid_classes = 'mb-0 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4'
+      endif
+    when '5'
+      if section.settings.columns_mobile == '2'
+        assign grid_classes = 'mb-0 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4'
+      else
+        assign grid_classes = 'mb-0 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4'
+      endif
+    else
+      if section.settings.columns_mobile == '2'
+        assign grid_classes = 'mb-0 grid grid-cols-2 xl:grid-fill gap-4'
+      else
+        assign grid_classes = 'mb-0 grid grid-fill gap-4'
+      endif
+  endcase
+-%}
+
 <div class="flex flex-col gap-8 px-8 py-10 md:py-16" data-page-shell>
   <h1 class="font-heading text-3xl leading-tight font-bold uppercase md:text-4xl">{{ collection.title | escape }}</h1>
 
   {% paginate collection.products by 20 %}
-    <div class="mb-0 grid grid-fill gap-4" style="--grid-min: 31.25rem">
+    <div class="{{ grid_classes }}" style="--grid-min: 31.25rem">
       {% for product in collection.products %}
         <div class="flex min-w-0 flex-col gap-3">
           {% if product.featured_image %}
@@ -36,6 +73,32 @@
 {% schema %}
 {
   "name": "t:general.collection",
-  "settings": []
+  "settings": [
+    {
+      "type": "select",
+      "id": "columns_desktop",
+      "label": "t:labels.columns_desktop",
+      "info": "t:info.columns_desktop",
+      "options": [
+        { "value": "auto", "label": "t:options.columns.auto" },
+        { "value": "2", "label": "2" },
+        { "value": "3", "label": "3" },
+        { "value": "4", "label": "4" },
+        { "value": "5", "label": "5" }
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "t:labels.columns_mobile",
+      "info": "t:info.columns_mobile",
+      "options": [
+        { "value": "1", "label": "1" },
+        { "value": "2", "label": "2" }
+      ],
+      "default": "1"
+    }
+  ]
 }
 {% endschema %}

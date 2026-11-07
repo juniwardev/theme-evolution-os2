@@ -39,6 +39,8 @@
     "accent_foreground": "Text on accent color",
     "alignment": "Alignment",
     "background": "Background",
+    "columns_desktop": "Desktop columns",
+    "columns_mobile": "Mobile columns",
     "foreground": "Foreground",
     "grid_gap": "Grid spacing",
     "grid_item_width": "Grid item width",
@@ -58,6 +60,7 @@
       "center": "Center",
       "right": "Right"
     },
+    "columns": { "auto": "Automatic" },
     "direction": {
       "horizontal": "Horizontal",
       "vertical": "Vertical"
@@ -75,6 +78,10 @@
       "subtitle": "Subtitle",
       "normal": "Normal text"
     }
+  },
+  "info": {
+    "columns_desktop": "Automatic fits as many columns of at least 500 px as there is room for, so 1 column below about 1120 px wide with 1 mobile column (more with a wider page margin). 2 shows 2 columns from 768 px wide. 3 to 5 show that many from 1024 px wide, and 3 columns from 768 px.",
+    "columns_mobile": "Below 768 px wide. With Automatic desktop columns, 2 also applies up to 1280 px wide."
   },
   "sections": {
     "all": {
