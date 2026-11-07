@@ -1,0 +1,204 @@
+{
+ "mode": "pxw",
+ "runs": [
+  {
+   "key": "auto-1",
+   "w": 1024,
+   "wc": 860,
+   "tracks": 1,
+   "cardW": 860,
+   "sEval0": 860,
+   "sw": 0
+  },
+  {
+   "key": "auto-1",
+   "w": 1200,
+   "wc": 1036,
+   "tracks": 2,
+   "cardW": 510,
+   "sEval0": 510,
+   "sw": 0
+  },
+  {
+   "key": "auto-1",
+   "w": 1440,
+   "wc": 1276,
+   "tracks": 2,
+   "cardW": 630,
+   "sEval0": 630,
+   "sw": 0
+  },
+  {
+   "key": "auto-1",
+   "w": 1700,
+   "wc": 1536,
+   "tracks": 3,
+   "cardW": 501.3,
+   "sEval0": 501.3,
+   "sw": 0
+  },
+  {
+   "key": "auto-1",
+   "w": 1759,
+   "wc": 1595,
+   "tracks": 3,
+   "cardW": 521,
+   "sEval0": 521,
+   "sw": 0
+  },
+  {
+   "key": "auto-1",
+   "w": 1760,
+   "wc": 1596,
+   "tracks": 3,
+   "cardW": 521.3,
+   "sEval0": 521,
+   "sw": 0
+  },
+  {
+   "key": "auto-1",
+   "w": 1920,
+   "wc": 1596,
+   "tracks": 3,
+   "cardW": 521.3,
+   "sEval0": 521,
+   "sw": 0
+  },
+  {
+   "key": "3-1",
+   "w": 1024,
+   "wc": 860,
+   "tracks": 3,
+   "cardW": 276,
+   "sEval0": 276,
+   "sw": 0
+  },
+  {
+   "key": "3-1",
+   "w": 1200,
+   "wc": 1036,
+   "tracks": 3,
+   "cardW": 334.7,
+   "sEval0": 334.7,
+   "sw": 0
+  },
+  {
+   "key": "3-1",
+   "w": 1440,
+   "wc": 1276,
+   "tracks": 3,
+   "cardW": 414.7,
+   "sEval0": 414.7,
+   "sw": 0
+  },
+  {
+   "key": "3-1",
+   "w": 1700,
+   "wc": 1536,
+   "tracks": 3,
+   "cardW": 501.3,
+   "sEval0": 501.3,
+   "sw": 0
+  },
+  {
+   "key": "3-1",
+   "w": 1759,
+   "wc": 1595,
+   "tracks": 3,
+   "cardW": 521,
+   "sEval0": 521,
+   "sw": 0
+  },
+  {
+   "key": "3-1",
+   "w": 1760,
+   "wc": 1596,
+   "tracks": 3,
+   "cardW": 521.3,
+   "sEval0": 521,
+   "sw": 0
+  },
+  {
+   "key": "3-1",
+   "w": 1920,
+   "wc": 1596,
+   "tracks": 3,
+   "cardW": 521.3,
+   "sEval0": 521,
+   "sw": 0
+  },
+  {
+   "key": "5-2",
+   "w": 1024,
+   "wc": 860,
+   "tracks": 5,
+   "cardW": 159.2,
+   "sEval0": 159.2,
+   "sw": 0
+  },
+  {
+   "key": "5-2",
+   "w": 1200,
+   "wc": 1036,
+   "tracks": 5,
+   "cardW": 194.4,
+   "sEval0": 194.4,
+   "sw": 0
+  },
+  {
+   "key": "5-2",
+   "w": 1440,
+   "wc": 1276,
+   "tracks": 5,
+   "cardW": 242.4,
+   "sEval0": 242.4,
+   "sw": 0
+  },
+  {
+   "key": "5-2",
+   "w": 1700,
+   "wc": 1536,
+   "tracks": 5,
+   "cardW": 294.4,
+   "sEval0": 294.4,
+   "sw": 0
+  },
+  {
+   "key": "5-2",
+   "w": 1759,
+   "wc": 1595,
+   "tracks": 5,
+   "cardW": 306.2,
+   "sEval0": 306.2,
+   "sw": 0
+  },
+  {
+   "key": "5-2",
+   "w": 1760,
+   "wc": 1596,
+   "tracks": 5,
+   "cardW": 306.4,
+   "sEval0": 306,
+   "sw": 0
+  },
+  {
+   "key": "5-2",
+   "w": 1920,
+   "wc": 1596,
+   "tracks": 5,
+   "cardW": 306.4,
+   "sEval0": 306,
+   "sw": 0
+  }
+ ],
+ "fails": [],
+ "sizesStrings": {
+  "auto-1": "(min-width: 1760px) 521px, (min-width: 1696px) calc((100vw - 196px) / 3), (min-width: 1180px) calc((100vw - 180px) / 2), calc(100vw - 164px)",
+  "3-1": "(min-width: 1760px) 521px, (min-width: 1024px) calc((100vw - 196px) / 3), (min-width: 768px) calc((100vw - 196px) / 3), calc(100vw - 164px)",
+  "5-2": "(min-width: 1760px) 306px, (min-width: 1024px) calc((100vw - 228px) / 5), (min-width: 768px) calc((100vw - 196px) / 3), calc((100vw - 180px) / 2)"
+ },
+ "pxwPre": [
+  "110rem",
+  "50px"
+ ]
+}
