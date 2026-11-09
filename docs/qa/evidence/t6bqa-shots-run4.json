@@ -1,0 +1,23 @@
+{
+ "label": "run4",
+ "results": {
+  "tooltip@1440": {
+   "logs": [
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: the server responded with a status of 429 ()"
+   ],
+   "active": "eco-tooltip-trigger cursor-hel",
+   "visible": []
+  },
+  "tooltip@375": {
+   "logs": [
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep"
+   ],
+   "active": "eco-tooltip-trigger cursor-hel",
+   "visible": []
+  }
+ }
+}

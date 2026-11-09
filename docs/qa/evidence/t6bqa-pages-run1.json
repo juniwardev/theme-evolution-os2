@@ -1,0 +1,264 @@
+{
+ "label": "run1",
+ "themeId": "188245508192",
+ "rows": [
+  {
+   "name": "home",
+   "w": 375,
+   "status": 200,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep",
+    "console.error: Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
+    "console.error: Failed to load resource: the server responded with a status of 403 ()"
+   ]
+  },
+  {
+   "name": "home",
+   "w": 1440,
+   "status": 200,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep",
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: %c%d font-size:0;color:transparent NaN",
+    "console.error: %c%d font-size:0;color:transparent NaN",
+    "console.error: %c%o font-size:0;color:transparent {}",
+    "console.error: %c%o font-size:0;color:transparent {}",
+    "console.error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https://dnstes",
+    "console.error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https://dnstes",
+    "console.error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https://dnstes",
+    "console.error: Fetch API cannot load data:,. Refused to connect because it violates the document's Content Security Policy."
+   ]
+  },
+  {
+   "name": "collection",
+   "w": 375,
+   "status": 200,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep",
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: the server responded with a status of 429 ()"
+   ]
+  },
+  {
+   "name": "collection",
+   "w": 1440,
+   "status": 200,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep",
+    "console.error: Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
+    "console.error: Failed to load resource: the server responded with a status of 403 ()",
+    "console.error: Failed to load resource: the server responded with a status of 429 ()"
+   ]
+  },
+  {
+   "name": "policy",
+   "w": 375,
+   "status": 200,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep",
+    "console.error: Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
+    "console.error: Failed to load resource: the server responded with a status of 403 ()"
+   ]
+  },
+  {
+   "name": "policy",
+   "w": 1440,
+   "status": 200,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep",
+    "console.error: Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
+    "console.error: Failed to load resource: the server responded with a status of 403 ()"
+   ]
+  },
+  {
+   "name": "wax",
+   "w": 375,
+   "status": 200,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep",
+    "console.error: Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
+    "console.error: Failed to load resource: the server responded with a status of 403 ()"
+   ]
+  },
+  {
+   "name": "wax",
+   "w": 1440,
+   "status": 200,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep",
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https://dnstes",
+    "console.error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https://dnstes",
+    "console.error: Fetch API cannot load data:,. Refused to connect because it violates the document's Content Security Policy."
+   ]
+  },
+  {
+   "name": "snow",
+   "w": 375,
+   "status": 200,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep",
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: %c%d font-size:0;color:transparent NaN",
+    "console.error: %c%d font-size:0;color:transparent NaN",
+    "console.error: %c%o font-size:0;color:transparent {}",
+    "console.error: %c%o font-size:0;color:transparent {}",
+    "console.error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https://dnstes",
+    "console.error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https://dnstes",
+    "console.error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https://dnstes",
+    "console.error: Fetch API cannot load data:,. Refused to connect because it violates the document's Content Security Policy."
+   ]
+  },
+  {
+   "name": "snow",
+   "w": 1440,
+   "status": 200,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep",
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https://dnstes",
+    "console.error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https://dnstes",
+    "console.error: Fetch API cannot load data:,. Refused to connect because it violates the document's Content Security Policy.",
+    "console.error: %c%d font-size:0;color:transparent NaN",
+    "console.error: %c%d font-size:0;color:transparent NaN",
+    "console.error: %c%o font-size:0;color:transparent {}",
+    "console.error: %c%o font-size:0;color:transparent {}"
+   ]
+  },
+  {
+   "name": "p3p",
+   "w": 375,
+   "status": 200,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep",
+    "console.error: Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
+    "console.error: Failed to load resource: the server responded with a status of 403 ()",
+    "console.error: %c%d font-size:0;color:transparent NaN",
+    "console.error: %c%d font-size:0;color:transparent NaN",
+    "console.error: %c%o font-size:0;color:transparent {}",
+    "console.error: %c%o font-size:0;color:transparent {}",
+    "console.error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https://dnstes",
+    "console.error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https://dnstes",
+    "console.error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https://dnstes",
+    "console.error: Fetch API cannot load data:,. Refused to connect because it violates the document's Content Security Policy."
+   ]
+  },
+  {
+   "name": "p3p",
+   "w": 1440,
+   "status": 200,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep",
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: %c%d font-size:0;color:transparent NaN",
+    "console.error: %c%d font-size:0;color:transparent NaN",
+    "console.error: %c%o font-size:0;color:transparent {}",
+    "console.error: %c%o font-size:0;color:transparent {}"
+   ]
+  },
+  {
+   "name": "cart",
+   "w": 375,
+   "status": 200,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep",
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https://dnstes",
+    "console.error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https://dnstes",
+    "console.error: Fetch API cannot load data:,. Refused to connect because it violates the document's Content Security Policy.",
+    "console.error: %c%d font-size:0;color:transparent NaN",
+    "console.error: %c%d font-size:0;color:transparent NaN",
+    "console.error: %c%o font-size:0;color:transparent {}",
+    "console.error: %c%o font-size:0;color:transparent {}"
+   ]
+  },
+  {
+   "name": "cart",
+   "w": 1440,
+   "status": 200,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep",
+    "console.error: Failed to load resource: the server responded with a status of 429 ()",
+    "console.error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https://dnstes",
+    "console.error: Connecting to 'data:,' violates the following Content Security Policy directive: \"connect-src 'self' https://hagen.challenges.cloudflare.com https://brunhild.challenges.cloudflare.com https://*.alg13.dnstest.challenges.cloudflare.com https://*.mldsa44.dnstest.challenges.cloudflare.com https://dnstes",
+    "console.error: Fetch API cannot load data:,. Refused to connect because it violates the document's Content Security Policy.",
+    "console.error: %c%d font-size:0;color:transparent NaN",
+    "console.error: %c%d font-size:0;color:transparent NaN",
+    "console.error: %c%o font-size:0;color:transparent {}",
+    "console.error: %c%o font-size:0;color:transparent {}"
+   ]
+  }
+ ],
+ "header": {
+  "exp1": "true",
+  "exp2": "false",
+  "logs": [
+   "console.error: Failed to load resource: the server responded with a status of 429 ()",
+   "console.error: Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOriginAfterDefaultedToSameOriginByCoep",
+   "console.error: Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
+   "console.error: Failed to load resource: the server responded with a status of 403 ()"
+  ]
+ }
+}

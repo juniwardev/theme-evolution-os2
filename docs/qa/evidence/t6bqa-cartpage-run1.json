@@ -1,0 +1,128 @@
+{
+ "label": "run1",
+ "themeId": "188245508192",
+ "results": {
+  "seed": {
+   "real": {
+    "add": 2,
+    "change": 0,
+    "status": [
+     "add:200",
+     "add:200"
+    ]
+   }
+  },
+  "C6b.11": {
+   "before": {
+    "lis": 2,
+    "prices": [
+     {
+      "n": 1,
+      "text": "$699.95"
+     },
+     {
+      "n": 1,
+      "text": "$24.95"
+     }
+    ],
+    "drawerPrices": [
+     "$699.95",
+     "$24.95"
+    ],
+    "total": "$724.90 USD",
+    "drawerTotal": "$724.90 USD"
+   },
+   "after": {
+    "lis": 2,
+    "prices": [
+     {
+      "n": 1,
+      "text": "$1,399.90"
+     },
+     {
+      "n": 1,
+      "text": "$24.95"
+     }
+    ],
+    "drawerPrices": [
+     "$1,399.90",
+     "$24.95"
+    ],
+    "total": "$1,424.85 USD",
+    "drawerTotal": "$1,424.85 USD"
+   },
+   "pass": true
+  },
+  "C6b.12": {
+   "attrs": {
+    "inputs": [
+     {
+      "type": "number",
+      "inputmode": "numeric",
+      "min": "0"
+     },
+     {
+      "type": "number",
+      "inputmode": "numeric",
+      "min": "0"
+     }
+    ],
+    "checkoutNoValidate": true,
+    "h1": 1,
+    "headingsInCart": 0
+   },
+   "upd": {
+    "urlSame": true,
+    "posts": 0,
+    "valid": false
+   },
+   "chk": {
+    "posts": 1,
+    "hasCheckoutField": true
+   },
+   "geo": [
+    {
+     "n": "Update",
+     "h": 48,
+     "right": 1250,
+     "w": 1440
+    },
+    {
+     "n": "Checkout",
+     "h": 48,
+     "right": 1388,
+     "w": 1440
+    }
+   ],
+   "ov": {
+    "320": {
+     "diff": 0,
+     "off": 0
+    },
+    "375": {
+     "diff": 0,
+     "off": 0
+    },
+    "768": {
+     "diff": 0,
+     "off": 0
+    },
+    "1440": {
+     "diff": 0,
+     "off": 0
+    },
+    "1920": {
+     "diff": 0,
+     "off": 0
+    }
+   },
+   "pass": true
+  },
+  "shots@1440": {
+   "logs": []
+  },
+  "shots@375": {
+   "logs": []
+  }
+ }
+}

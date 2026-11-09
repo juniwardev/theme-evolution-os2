@@ -1,0 +1,305 @@
+{
+ "label": "run1",
+ "themeId": "188245508192",
+ "results": {
+  "C6b.6a@1440": {
+   "hops": 10,
+   "onAdd": "button[name=add]",
+   "afterOpen": "div[role=dialog] (in dialog)",
+   "pass": true,
+   "real": {
+    "adds": 1,
+    "changes": 0,
+    "status": [
+     "add:200",
+     "change:200"
+    ],
+    "saw429": false
+   }
+  },
+  "C6b.8a@1440": {
+   "trail": {
+    "escape": "button[name=add]",
+    "closeButton": "button[name=add]",
+    "overlay": "button[name=add]"
+   },
+   "pass": true,
+   "notMenuToggle": true
+  },
+  "C6b.6b@1440": {
+   "hopsT": 26,
+   "afterOpen": "div[role=dialog] (in dialog)",
+   "pass": true
+  },
+  "C6b.8b@1440": {
+   "matches": true,
+   "connected": true,
+   "pass": true,
+   "real": {
+    "adds": 1,
+    "changes": 1,
+    "status": [
+     "add:200",
+     "change:200"
+    ],
+    "saw429": false
+   }
+  },
+  "C6b.10:detach": {
+   "seen": [
+    "button",
+    "summary"
+   ],
+   "pageerrors": 0,
+   "pass": true
+  },
+  "wax@1440:logs": [],
+  "C6b.6a@375": {
+   "hops": 7,
+   "onAdd": "button[name=add]",
+   "afterOpen": "div[role=dialog] (in dialog)",
+   "pass": true,
+   "real": {
+    "adds": 1,
+    "changes": 0,
+    "status": [
+     "add:200",
+     "change:200"
+    ],
+    "saw429": false
+   }
+  },
+  "C6b.8a@375": {
+   "trail": {
+    "escape": "button[name=add]",
+    "closeButton": "button[name=add]"
+   },
+   "pass": true,
+   "notMenuToggle": true
+  },
+  "C6b.6b@375": {
+   "hopsT": 26,
+   "afterOpen": "div[role=dialog] (in dialog)",
+   "pass": true
+  },
+  "C6b.8b@375": {
+   "matches": true,
+   "connected": true,
+   "pass": true,
+   "real": {
+    "adds": 1,
+    "changes": 1,
+    "status": [
+     "add:200",
+     "change:200"
+    ],
+    "saw429": false
+   }
+  },
+  "wax@375:logs": [],
+  "C6b.13:wax@1440": {
+   "before": {
+    "hidden": true,
+    "display": "none",
+    "h": 0,
+    "role": "alert",
+    "text": "",
+    "color": "rgb(211, 47, 47)"
+   },
+   "during": {
+    "hidden": true,
+    "display": "none",
+    "h": 0,
+    "role": "alert",
+    "text": "",
+    "color": "rgb(211, 47, 47)"
+   },
+   "after": {
+    "hidden": true,
+    "display": "none",
+    "h": 0,
+    "role": "alert",
+    "text": "",
+    "color": "rgb(211, 47, 47)"
+   },
+   "pass": true
+  },
+  "C6b.10:flow@1440": {
+   "closedInitial": {
+    "hidden": true,
+    "state": "closed"
+   },
+   "afterAdd": {
+    "hidden": false,
+    "state": "open"
+   },
+   "panelOutline": "none",
+   "afterEsc": {
+    "hidden": true,
+    "state": "closed"
+   },
+   "afterIcon": {
+    "hidden": false,
+    "state": "open"
+   },
+   "afterOverlay": {
+    "hidden": true,
+    "state": "closed"
+   },
+   "afterCloseBtn": {
+    "hidden": true,
+    "state": "closed"
+   },
+   "busyVisibility": "visible",
+   "totalChanged": true,
+   "emptyText": "Your cart is empty.",
+   "pass": true,
+   "logs": [],
+   "real": {
+    "adds": 1,
+    "changes": 2,
+    "status": [
+     "add:200",
+     "change:200",
+     "change:200"
+    ],
+    "saw429": false
+   }
+  },
+  "C6b.13:wax@375": {
+   "before": {
+    "hidden": true,
+    "display": "none",
+    "h": 0,
+    "role": "alert",
+    "text": "",
+    "color": "rgb(211, 47, 47)"
+   },
+   "during": {
+    "hidden": true,
+    "display": "none",
+    "h": 0,
+    "role": "alert",
+    "text": "",
+    "color": "rgb(211, 47, 47)"
+   },
+   "after": {
+    "hidden": true,
+    "display": "none",
+    "h": 0,
+    "role": "alert",
+    "text": "",
+    "color": "rgb(211, 47, 47)"
+   },
+   "pass": true
+  },
+  "C6b.10:flow@375": {
+   "closedInitial": {
+    "hidden": true,
+    "state": "closed"
+   },
+   "afterAdd": {
+    "hidden": false,
+    "state": "open"
+   },
+   "panelOutline": "none",
+   "afterEsc": {
+    "hidden": true,
+    "state": "closed"
+   },
+   "afterIcon": {
+    "hidden": false,
+    "state": "open"
+   },
+   "afterOverlay": {
+    "hidden": true,
+    "state": "closed"
+   },
+   "afterCloseBtn": {
+    "hidden": true,
+    "state": "closed"
+   },
+   "busyVisibility": "visible",
+   "totalChanged": true,
+   "emptyText": "Your cart is empty.",
+   "pass": true,
+   "logs": [],
+   "real": {
+    "adds": 1,
+    "changes": 2,
+    "status": [
+     "add:200",
+     "change:200",
+     "change:200"
+    ],
+    "saw429": false
+   }
+  },
+  "C6b.10:422": {
+   "status": 422,
+   "drawer": "closed",
+   "hidden": true,
+   "aria": null,
+   "pass": true
+  },
+  "C6b.13@1440": {
+   "status": 422,
+   "desc": "The product 'The 3p Fulfilled Snowboard' is already sold out.",
+   "w1": {
+    "hidden": false,
+    "display": "block",
+    "h": 20,
+    "role": "alert",
+    "text": "The product 'The 3p Fulfilled Snowboard' is already sold out.",
+    "color": "rgb(211, 47, 47)"
+   },
+   "extra": {
+    "drawer": "closed",
+    "hidden": true,
+    "aria": null
+   },
+   "mid": {
+    "hidden": true,
+    "display": "none",
+    "h": 0,
+    "role": "alert",
+    "text": "The product 'The 3p Fulfilled Snowboard' is already sold out.",
+    "color": "rgb(211, 47, 47)"
+   },
+   "w2": {
+    "hidden": false,
+    "display": "block",
+    "h": 20,
+    "role": "alert",
+    "text": "The product 'The 3p Fulfilled Snowboard' is already sold out.",
+    "color": "rgb(211, 47, 47)"
+   },
+   "pass": true
+  },
+  "C6b.21": {
+   "trig": true,
+   "a": "A",
+   "pass": true,
+   "real": {
+    "adds": 2,
+    "changes": 0,
+    "status": [
+     "add:422",
+     "add:422"
+    ],
+    "saw429": false
+   }
+  },
+  "p3p@1440:logs": [
+   "console.error: Error producing monorail event MonorailRequestError: Error completing request. A network failure may have prevented the request from completing. Error: TypeError: Failed to fetch. Schemas: shopify_pay_page_load/2.7\n    at T.produce (https://shopify-assets.shopifycdn.com/shopifycloud/arrive-server/pa",
+   "console.error: Failed to load resource: the server responded with a status of 422 ()",
+   "console.error: Failed to load resource: the server responded with a status of 429 ()",
+   "console.error: Error refreshing cart: SyntaxError: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+   "console.error: Failed to load resource: the server responded with a status of 429 ()",
+   "console.error: Failed to load resource: the server responded with a status of 422 ()",
+   "console.error: Failed to load resource: the server responded with a status of 429 ()",
+   "console.error: Error refreshing cart: SyntaxError: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+  ],
+  "p3p@375:ERROR": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+ }
+}

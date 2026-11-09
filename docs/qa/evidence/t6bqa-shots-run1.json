@@ -1,0 +1,52 @@
+{
+ "label": "run1",
+ "results": {
+  "error@375": {
+   "w1": {
+    "hidden": false,
+    "display": "block",
+    "h": 40,
+    "text": "The product 'The 3p Fulfilled Snowboard' is already sold out."
+   },
+   "real": {
+    "add": 2,
+    "change": 0,
+    "status": [
+     "add:422",
+     "add:429"
+    ]
+   },
+   "saw429": false
+  },
+  "C6b.13-second@375": {
+   "mid": {
+    "hidden": true,
+    "display": "none",
+    "h": 0,
+    "text": "The product 'The 3p Fulfilled Snowboard' is already sold out."
+   },
+   "status2": 429,
+   "after": {
+    "hidden": true,
+    "display": "none",
+    "h": 0,
+    "text": "The product 'The 3p Fulfilled Snowboard' is already sold out."
+   },
+   "real": {
+    "add": 2,
+    "change": 0,
+    "status": [
+     "add:422",
+     "add:429"
+    ]
+   }
+  },
+  "error@1440:ERROR": "locator.scrollIntoViewIfNeeded: Timeout 119991.83000000002ms exceeded.\nCall log:\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    2 × waiting for element to be stable\u001b[22m\n\u001b[2m      - element i",
+  "tooltip@1440": {
+   "visible": []
+  },
+  "tooltip@375": {
+   "visible": []
+  }
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "label": "run2",
+ "results": {
+  "error@1440": {
+   "w1": {
+    "hidden": false,
+    "display": "block",
+    "h": 20,
+    "text": "The product 'The 3p Fulfilled Snowboard' is already sold out."
+   },
+   "real": {
+    "add": 1,
+    "change": 0,
+    "status": [
+     "add:422"
+    ]
+   },
+   "saw429": false
+  },
+  "tooltip@1440": {
+   "visible": []
+  },
+  "tooltip@375": {
+   "visible": []
+  }
+ }
+}
