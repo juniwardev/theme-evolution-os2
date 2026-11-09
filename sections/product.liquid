@@ -90,6 +90,10 @@
         {%- when 'buy_buttons' -%}
           <div {{ block.shopify_attributes }}>
             <product-form>
+              {% # product-form.js fills this in when the cart rejects an add (for example a 422). %}
+              <p class="product-form__error-message-wrapper mb-3 text-sm text-[#d32f2f]" role="alert" hidden>
+                <span class="product-form__error-message"></span>
+              </p>
               {% form 'product', product, class: 'flex flex-col gap-3' %}
                 <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
                 <button type="submit" name="add" class="btn-primary relative w-full [&.loading>span]:invisible">
