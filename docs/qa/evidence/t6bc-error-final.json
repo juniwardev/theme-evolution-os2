@@ -1,0 +1,100 @@
+{
+ "label": "final",
+ "themeId": "188245508192",
+ "results": {
+  "C6b.13@1440": {
+   "status": 422,
+   "desc": "The product 'The 3p Fulfilled Snowboard' is already sold out.",
+   "w1": {
+    "hidden": false,
+    "display": "block",
+    "h": 20,
+    "role": "alert",
+    "text": "The product 'The 3p Fulfilled Snowboard' is already sold out.",
+    "color": "rgb(211, 47, 47)"
+   },
+   "extra": {
+    "drawer": "closed",
+    "aria": null
+   },
+   "mid": {
+    "hidden": true,
+    "display": "none",
+    "h": 0,
+    "role": "alert",
+    "text": "The product 'The 3p Fulfilled Snowboard' is already sold out.",
+    "color": "rgb(211, 47, 47)"
+   },
+   "w2": {
+    "hidden": false,
+    "display": "block",
+    "h": 20,
+    "role": "alert",
+    "text": "The product 'The 3p Fulfilled Snowboard' is already sold out.",
+    "color": "rgb(211, 47, 47)"
+   },
+   "pass": true
+  },
+  "C6b.13@375": {
+   "status": 422,
+   "desc": "The product 'The 3p Fulfilled Snowboard' is already sold out.",
+   "w1": {
+    "hidden": false,
+    "display": "block",
+    "h": 40,
+    "role": "alert",
+    "text": "The product 'The 3p Fulfilled Snowboard' is already sold out.",
+    "color": "rgb(211, 47, 47)"
+   },
+   "extra": {
+    "drawer": "closed",
+    "aria": null
+   },
+   "mid": {
+    "hidden": true,
+    "display": "none",
+    "h": 0,
+    "role": "alert",
+    "text": "The product 'The 3p Fulfilled Snowboard' is already sold out.",
+    "color": "rgb(211, 47, 47)"
+   },
+   "w2": {
+    "hidden": false,
+    "display": "block",
+    "h": 40,
+    "role": "alert",
+    "text": "The product 'The 3p Fulfilled Snowboard' is already sold out.",
+    "color": "rgb(211, 47, 47)"
+   },
+   "pass": true
+  },
+  "C6b.13:wax": {
+   "status": 200,
+   "before": {
+    "hidden": true,
+    "display": "none",
+    "h": 0,
+    "role": "alert",
+    "text": "",
+    "color": "rgb(211, 47, 47)"
+   },
+   "during": {
+    "hidden": true,
+    "display": "none",
+    "h": 0,
+    "role": "alert",
+    "text": "",
+    "color": "rgb(211, 47, 47)"
+   },
+   "after": {
+    "hidden": true,
+    "display": "none",
+    "h": 0,
+    "role": "alert",
+    "text": "",
+    "color": "rgb(211, 47, 47)"
+   },
+   "pass": true
+  }
+ }
+}

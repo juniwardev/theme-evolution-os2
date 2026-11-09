@@ -1,0 +1,172 @@
+{
+ "label": "final",
+ "themeId": "188245508192",
+ "rows": [
+  {
+   "name": "p3p+error",
+   "w": 320,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
+    "console.error: Failed to load resource: the server responded with a status of 403 ()",
+    "console.error: Error producing monorail event MonorailRequestError: Error completing request. A network failure may have prevented the request from completing. Error: TypeError: Failed to fetch. Schemas: shopify_pay_page_load/2.7\n    at T.produce (https://shopify-assets.shopifycdn.com/shopifycloud/arrive-server/pa"
+   ]
+  },
+  {
+   "name": "p3p+error",
+   "w": 375,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
+    "console.error: Failed to load resource: the server responded with a status of 403 ()",
+    "console.error: Error producing monorail event MonorailRequestError: Error completing request. A network failure may have prevented the request from completing. Error: TypeError: Failed to fetch. Schemas: shopify_pay_page_load/2.7\n    at T.produce (https://shopify-assets.shopifycdn.com/shopifycloud/arrive-server/pa"
+   ]
+  },
+  {
+   "name": "p3p+error",
+   "w": 768,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": []
+  },
+  {
+   "name": "p3p+error",
+   "w": 1440,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Error producing monorail event MonorailRequestError: Error completing request. A network failure may have prevented the request from completing. Error: TypeError: Failed to fetch. Schemas: shopify_pay_page_load/2.7\n    at T.produce (https://shopify-assets.shopifycdn.com/shopifycloud/arrive-server/pa"
+   ]
+  },
+  {
+   "name": "wax",
+   "w": 320,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
+    "console.error: Failed to load resource: the server responded with a status of 403 ()"
+   ]
+  },
+  {
+   "name": "wax",
+   "w": 375,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": []
+  },
+  {
+   "name": "wax",
+   "w": 768,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
+    "console.error: Failed to load resource: the server responded with a status of 403 ()"
+   ]
+  },
+  {
+   "name": "wax",
+   "w": 1440,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": []
+  },
+  {
+   "name": "p3p+tooltip",
+   "w": 320,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Error producing monorail event MonorailRequestError: Error completing request. A network failure may have prevented the request from completing. Error: TypeError: Failed to fetch. Schemas: shopify_pay_page_load/2.7\n    at T.produce (https://shopify-assets.shopifycdn.com/shopifycloud/arrive-server/pa"
+   ]
+  },
+  {
+   "name": "p3p+tooltip",
+   "w": 375,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
+    "console.error: Failed to load resource: the server responded with a status of 403 ()",
+    "console.error: Error producing monorail event MonorailRequestError: Error completing request. A network failure may have prevented the request from completing. Error: TypeError: Failed to fetch. Schemas: shopify_pay_page_load/2.7\n    at T.produce (https://shopify-assets.shopifycdn.com/shopifycloud/arrive-server/pa"
+   ]
+  },
+  {
+   "name": "p3p+tooltip",
+   "w": 768,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
+    "console.error: Failed to load resource: the server responded with a status of 403 ()"
+   ]
+  },
+  {
+   "name": "p3p+tooltip",
+   "w": 1440,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
+    "console.error: Failed to load resource: the server responded with a status of 403 ()",
+    "console.error: Error producing monorail event MonorailRequestError: Error completing request. A network failure may have prevented the request from completing. Error: TypeError: Failed to fetch. Schemas: shopify_pay_page_load/2.7\n    at T.produce (https://shopify-assets.shopifycdn.com/shopifycloud/arrive-server/pa"
+   ]
+  },
+  {
+   "name": "home",
+   "w": 320,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": []
+  },
+  {
+   "name": "home",
+   "w": 375,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
+    "console.error: Failed to load resource: the server responded with a status of 403 ()"
+   ]
+  },
+  {
+   "name": "home",
+   "w": 768,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
+    "console.error: Failed to load resource: the server responded with a status of 403 ()"
+   ]
+  },
+  {
+   "name": "home",
+   "w": 1440,
+   "diff": 0,
+   "off": [],
+   "h1": 1,
+   "logs": [
+    "console.error: Framing 'https://shop.app/' violates the following Content Security Policy directive: \"frame-ancestors 'self' https://shop.app https://admin.shopify.com\". The request has been blocked.\n",
+    "console.error: Failed to load resource: the server responded with a status of 403 ()"
+   ]
+  }
+ ]
+}

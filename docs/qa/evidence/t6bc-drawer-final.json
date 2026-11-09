@@ -1,0 +1,259 @@
+{
+ "label": "final",
+ "themeId": "188245508192",
+ "results": {
+  "C6b.4@1440": {
+   "a": {
+    "hidden": false,
+    "state": "open",
+    "overflow": "hidden",
+    "right": 1440,
+    "vw": 1440
+   },
+   "okA": true,
+   "b": {
+    "hidden": true,
+    "state": "closed",
+    "overflow": "visible",
+    "right": 0,
+    "vw": 1440
+   },
+   "okB": true
+  },
+  "C6b.4@375": {
+   "a": {
+    "hidden": false,
+    "state": "open",
+    "overflow": "hidden",
+    "right": 375,
+    "vw": 375
+   },
+   "okA": true,
+   "b": {
+    "hidden": true,
+    "state": "closed",
+    "overflow": "visible",
+    "right": 0,
+    "vw": 375
+   },
+   "okB": true
+  },
+  "C6b.5": {
+   "before": {
+    "keyup": 1,
+    "keydown": 4
+   },
+   "after": {
+    "keyup": 1,
+    "keydown": 4
+   },
+   "unchanged": true,
+   "closeCallsAfterOneEscape": 1
+  },
+  "C6b.6a@1440": {
+   "hops": 10,
+   "onAdd": "button[name=add]",
+   "afterOpen": "div[role=dialog] (in dialog)",
+   "pass": true
+  },
+  "C6b.8a@1440": {
+   "trail": {
+    "escape": "button[name=add]",
+    "closeButton": "button[name=add]",
+    "overlay": "button[name=add]"
+   },
+   "ok": true,
+   "notMenuToggle": true
+  },
+  "C6b.6a@375": {
+   "hops": 7,
+   "onAdd": "button[name=add]",
+   "afterOpen": "div[role=dialog] (in dialog)",
+   "pass": true
+  },
+  "C6b.8a@375": {
+   "trail": {
+    "escape": "button[name=add]",
+    "closeButton": "button[name=add]"
+   },
+   "ok": true,
+   "notMenuToggle": true
+  },
+  "C6b.6b": {
+   "afterOpen": "div[role=dialog] (in dialog)",
+   "pass": true
+  },
+  "C6b.8b": {
+   "matches": true,
+   "connected": true,
+   "d": "A",
+   "pass": true
+  },
+  "C6b.7:one": {
+   "N_f": 5,
+   "items": [
+    "button.text-[2rem]",
+    "a.mb-1.25",
+    "input#Drawer-quantity-1.cart-drawer__quantity-input",
+    "a.cart-drawer__item-remove",
+    "button#CartDrawer-Checkout.btn-primary"
+   ],
+   "readings": [
+    "button.text-[2rem]",
+    "a.mb-1.25",
+    "input#Drawer-quantity-1.cart-drawer__quantity-input",
+    "a.cart-drawer__item-remove",
+    "button#CartDrawer-Checkout.btn-primary",
+    "button.text-[2rem]"
+   ],
+   "allInside": true,
+   "distinct": true,
+   "wraps": true,
+   "backOk": true,
+   "pass": true
+  },
+  "C6b.7:two": {
+   "N_f": 8,
+   "items": [
+    "button.text-[2rem]",
+    "a.mb-1.25",
+    "input#Drawer-quantity-1.cart-drawer__quantity-input",
+    "a.cart-drawer__item-remove",
+    "a.mb-1.25",
+    "input#Drawer-quantity-2.cart-drawer__quantity-input",
+    "a.cart-drawer__item-remove",
+    "button#CartDrawer-Checkout.btn-primary"
+   ],
+   "readings": [
+    "button.text-[2rem]",
+    "a.mb-1.25",
+    "input#Drawer-quantity-1.cart-drawer__quantity-input",
+    "a.cart-drawer__item-remove",
+    "a.mb-1.25",
+    "input#Drawer-quantity-2.cart-drawer__quantity-input",
+    "a.cart-drawer__item-remove",
+    "button#CartDrawer-Checkout.btn-primary",
+    "button.text-[2rem]"
+   ],
+   "allInside": true,
+   "distinct": false,
+   "wraps": true,
+   "backOk": true,
+   "pass": false
+  },
+  "C6b.7:empty": {
+   "N_f": 2,
+   "items": [
+    "button.text-[2rem]",
+    "a.btn-primary"
+   ],
+   "readings": [
+    "button.text-[2rem]",
+    "a.btn-primary",
+    "button.text-[2rem]"
+   ],
+   "allInside": true,
+   "distinct": true,
+   "wraps": true,
+   "backOk": true,
+   "pass": true
+  },
+  "C6b.9": {
+   "reached": true,
+   "a": "Drawer-quantity-1",
+   "aPass": true,
+   "reachedRemove": true,
+   "b": {
+    "inside": true,
+    "d": "DIV"
+   },
+   "bPass": true
+  },
+  "C6b.10:flow@1440": {
+   "closedInitial": {
+    "hidden": true,
+    "state": "closed"
+   },
+   "afterAdd": {
+    "hidden": false,
+    "state": "open"
+   },
+   "panelOutline": "none",
+   "afterEsc": {
+    "hidden": true,
+    "state": "closed"
+   },
+   "afterIcon": {
+    "hidden": false,
+    "state": "open"
+   },
+   "afterOverlay": {
+    "hidden": true,
+    "state": "closed"
+   },
+   "afterCloseBtn": {
+    "hidden": true,
+    "state": "closed"
+   },
+   "busyVisibility": "visible",
+   "totalChanged": true,
+   "emptyText": "Your cart is empty.",
+   "pass": true,
+   "logs": []
+  },
+  "C6b.10:flow@430": {
+   "closedInitial": {
+    "hidden": true,
+    "state": "closed"
+   },
+   "afterAdd": {
+    "hidden": false,
+    "state": "open"
+   },
+   "panelOutline": "none",
+   "afterEsc": {
+    "hidden": true,
+    "state": "closed"
+   },
+   "afterIcon": {
+    "hidden": false,
+    "state": "open"
+   },
+   "afterOverlay": {
+    "hidden": true,
+    "state": "closed"
+   },
+   "afterCloseBtn": {
+    "hidden": true,
+    "state": "closed"
+   },
+   "busyVisibility": "visible",
+   "totalChanged": true,
+   "emptyText": "Your cart is empty.",
+   "pass": true,
+   "logs": []
+  },
+  "C6b.10:422": {
+   "status": 422,
+   "state": "closed",
+   "hidden": true,
+   "pass": true
+  },
+  "C6b.10:detach": {
+   "seen": [
+    "button",
+    "span"
+   ],
+   "changed": true,
+   "pageerrors": 0,
+   "pass": true
+  },
+  "C6b.21": {
+   "status": 422,
+   "trig": true,
+   "a": "A",
+   "pass": true
+  }
+ },
+ "logs": "see per-test"
+}

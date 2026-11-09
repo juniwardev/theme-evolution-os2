@@ -1,0 +1,127 @@
+{
+  "label": "final",
+  "themeId": "188245508192",
+  "hello_count": 3,
+  "hello": [
+    {
+      "href": "https://shopify.dev/docs/storefronts/themes/architecture",
+      "valid": true,
+      "fi": true,
+      "outline": true,
+      "shadow": false,
+      "rest": {
+        "os": "none",
+        "ow": "3px",
+        "bs": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px -3px 0px 0px inset, rgba(255, 255, 255, 0.9) 0px 2px 0px 0px inset",
+        "fv": false,
+        "active": false
+      },
+      "foc": {
+        "os": "auto",
+        "ow": "1px",
+        "bs": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px -3px 0px 0px inset, rgba(255, 255, 255, 0.9) 0px 2px 0px 0px inset",
+        "fv": true,
+        "active": true
+      }
+    },
+    {
+      "href": "https://shopify.dev/docs/api/liquid",
+      "valid": true,
+      "fi": true,
+      "outline": true,
+      "shadow": false,
+      "rest": {
+        "os": "none",
+        "ow": "3px",
+        "bs": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px -3px 0px 0px inset, rgba(255, 255, 255, 0.9) 0px 2px 0px 0px inset",
+        "fv": false,
+        "active": false
+      },
+      "foc": {
+        "os": "auto",
+        "ow": "1px",
+        "bs": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px -3px 0px 0px inset, rgba(255, 255, 255, 0.9) 0px 2px 0px 0px inset",
+        "fv": true,
+        "active": true
+      }
+    },
+    {
+      "href": "https://shopify.dev/docs/storefronts/themes/best-practices",
+      "valid": true,
+      "fi": true,
+      "outline": true,
+      "shadow": false,
+      "rest": {
+        "os": "none",
+        "ow": "3px",
+        "bs": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px -3px 0px 0px inset, rgba(255, 255, 255, 0.9) 0px 2px 0px 0px inset",
+        "fv": false,
+        "active": false
+      },
+      "foc": {
+        "os": "auto",
+        "ow": "1px",
+        "bs": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.2) 0px -3px 0px 0px inset, rgba(255, 255, 255, 0.9) 0px 2px 0px 0px inset",
+        "fv": true,
+        "active": true
+      }
+    }
+  ],
+  "desc_wrapper": {
+    "found": true,
+    "cls": "prose prose-tokens max-w-none"
+  },
+  "trigger": {
+    "valid": true,
+    "fi": true,
+    "outline": true,
+    "shadow": false,
+    "rest": {
+      "os": "none",
+      "ow": "3px",
+      "bs": "none",
+      "fv": false,
+      "active": false
+    },
+    "foc": {
+      "os": "auto",
+      "ow": "1px",
+      "bs": "none",
+      "fv": true,
+      "active": true
+    }
+  },
+  "addbtn_order": "button-before-trigger",
+  "addbtn_control": {
+    "valid": true,
+    "fi": true,
+    "outline": true,
+    "shadow": false,
+    "rest": {
+      "os": "none",
+      "ow": "3px",
+      "bs": "none",
+      "fv": false,
+      "active": false
+    },
+    "foc": {
+      "os": "solid",
+      "ow": "2px",
+      "bs": "none",
+      "fv": true,
+      "active": true
+    }
+  },
+  "headerEscape": {
+    "375": "button[menu-toggle]",
+    "1440": "body"
+  },
+  "d422": {
+    "status": 422,
+    "body": {
+      "status": 422,
+      "message": "The product 'The 3p Fulfilled Snowboard' is already sold out.",
+      "description": "The product 'The 3p Fulfilled Snowboard' is already sold out."
+    }
+  }
+}

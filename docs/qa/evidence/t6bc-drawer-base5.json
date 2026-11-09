@@ -1,0 +1,84 @@
+{
+ "label": "base5",
+ "themeId": "188245508192",
+ "results": {
+  "C6b.5": {
+   "before": {
+    "keyup": 1,
+    "keydown": 2
+   },
+   "after": {
+    "keyup": 4,
+    "keydown": 2
+   },
+   "unchanged": false,
+   "closeCallsAfterOneEscape": 4
+  },
+  "C6b.6a@1440": {
+   "hops": 10,
+   "onAdd": "button[name=add]",
+   "afterOpen": "button[name=add]",
+   "pass": false
+  },
+  "C6b.8a@1440": {
+   "trail": {
+    "escape": "button[name=add]",
+    "closeButton": "body",
+    "overlay": "body"
+   },
+   "ok": false,
+   "notMenuToggle": true
+  },
+  "C6b.6a@375": {
+   "hops": 7,
+   "onAdd": "button[name=add]",
+   "afterOpen": "button[name=add]",
+   "pass": false
+  },
+  "C6b.8a@375": {
+   "trail": {
+    "escape": "button[menu-toggle]",
+    "closeButton": "body"
+   },
+   "ok": false,
+   "notMenuToggle": false
+  },
+  "C6b.6b/8b:ERROR": "add to cart selling-plans-ski-wax -> 429",
+  "C6b.7:one:ERROR": "add to cart selling-plans-ski-wax -> 429",
+  "C6b.7:two:ERROR": "add to cart selling-plans-ski-wax -> 429",
+  "C6b.7:empty": {
+   "N_f": 2,
+   "items": [
+    "button.text-[2rem]",
+    "a.btn-primary"
+   ],
+   "readings": [
+    "select.h-11",
+    "input#Quantity-template--27693185859680__main.h-11",
+    "button.btn-primary"
+   ],
+   "allInside": false,
+   "distinct": true,
+   "wraps": false,
+   "backOk": true,
+   "pass": false
+  },
+  "C6b.9:ERROR": "add to cart selling-plans-ski-wax -> 429",
+  "C6b.10:flow@1440:ERROR": "page.waitForFunction: Timeout 6000ms exceeded.",
+  "C6b.10:flow@430:ERROR": "page.waitForFunction: Timeout 6000ms exceeded.",
+  "C6b.10:422": {
+   "status": 429,
+   "state": "closed",
+   "hidden": true,
+   "pass": false
+  },
+  "C6b.10:detach:ERROR": "add to cart selling-plans-ski-wax -> 429",
+  "C6b.21": {
+   "status": 429,
+   "trig": true,
+   "a": "A",
+   "pass": false
+  }
+ },
+ "logs": "see per-test"
+}
