@@ -94,6 +94,11 @@
       constructor() {
         super();
         this.drawer = this;
+        this.openTimer = null;
+        this.closeTimer = null;
+        // Why: bindEvents() runs again after every re-render, so document listeners are added here, once.
+        this.onDocumentKeyup = this.onDocumentKeyup.bind(this);
+        document.addEventListener('keyup', this.onDocumentKeyup);
         this.bindEvents();
       }
 
@@ -128,22 +133,29 @@
             this.updateLineItem(link.dataset.index, 0);
           });
         });
+      }
 
-        document.addEventListener('keyup', (e) => {
-          if (e.code === 'Escape') this.close();
-        });
+      onDocumentKeyup(e) {
+        // Why: a document listener outlives its element; a replaced drawer (theme editor) must stay inert.
+        if (!this.isConnected) return;
+        if (e.code === 'Escape') this.close();
       }
 
       open() {
+        // Why: a close() still in flight would otherwise set hidden after this open (T4a QA nit 2).
+        clearTimeout(this.closeTimer);
+        clearTimeout(this.openTimer);
         this.drawer.hidden = false;
-        setTimeout(() => {
+        this.openTimer = setTimeout(() => {
           this.drawer.dataset.state = 'open';
         }, 10);
       }
 
       close() {
+        clearTimeout(this.openTimer);
+        clearTimeout(this.closeTimer);
         this.drawer.dataset.state = 'closed';
-        setTimeout(() => {
+        this.closeTimer = setTimeout(() => {
           this.drawer.hidden = true;
         }, 300);
       }
