@@ -1,0 +1,135 @@
+[
+ {
+  "key": "contact",
+  "w": 375,
+  "theme": 188245508192,
+  "H1": 1,
+  "policyCount": 0,
+  "X_page": 0,
+  "footerTop": 181.5,
+  "headerBottom": 64,
+  "G_top": 40,
+  "status": 200,
+  "url": "/pages/contact",
+  "logs": []
+ },
+ {
+  "key": "contact",
+  "w": 1440,
+  "theme": 188245508192,
+  "H1": 1,
+  "policyCount": 0,
+  "X_page": 0,
+  "footerTop": 237,
+  "headerBottom": 64,
+  "G_top": 64,
+  "status": 200,
+  "url": "/pages/contact",
+  "logs": []
+ },
+ {
+  "key": "optout",
+  "w": 375,
+  "theme": 188245508192,
+  "H1": 1,
+  "policyCount": 0,
+  "X_page": 0,
+  "footerTop": 1680,
+  "headerBottom": 64,
+  "G_top": 40,
+  "C_L": 52,
+  "C_R": 323,
+  "C_w": 271,
+  "PT": 40,
+  "PB": 40,
+  "T_L": 52,
+  "T_R": 430.796875,
+  "G_bot": 56,
+  "W_gap": 0,
+  "status": 200,
+  "url": "/pages/data-sharing-opt-out",
+  "logs": []
+ },
+ {
+  "key": "optout",
+  "w": 1440,
+  "theme": 188245508192,
+  "H1": 1,
+  "policyCount": 0,
+  "X_page": 0,
+  "footerTop": 1026,
+  "headerBottom": 64,
+  "G_top": 64,
+  "C_L": 396.5625,
+  "C_R": 1043.4375,
+  "C_w": 646.875,
+  "PT": 64,
+  "PB": 64,
+  "T_L": 396.5625,
+  "T_R": 1043.4375,
+  "G_bot": 80,
+  "W_gap": 0,
+  "status": 200,
+  "url": "/pages/data-sharing-opt-out",
+  "logs": []
+ },
+ {
+  "key": "blog",
+  "w": 375,
+  "theme": 188245508192,
+  "H1": 1,
+  "policyCount": 0,
+  "X_page": 0,
+  "footerTop": 181.5,
+  "headerBottom": 64,
+  "G_top": 40,
+  "status": 200,
+  "url": "/blogs/news",
+  "logs": []
+ },
+ {
+  "key": "blog",
+  "w": 1440,
+  "error": "page.goto: net::ERR_TIMED_OUT at https://theme-evolution-os2.myshopify.com/blogs/news?preview_theme_id=188245508192\nCall log:\n\u001b[2m  - navigating to \"https://the"
+ },
+ {
+  "key": "collection",
+  "w": 375,
+  "error": "page.goto: net::ERR_TIMED_OUT at https://theme-evolution-os2.myshopify.com/collections/all?preview_theme_id=188245508192\nCall log:\n\u001b[2m  - navigating to \"https:"
+ },
+ {
+  "key": "collection",
+  "w": 1440,
+  "error": "page.goto: net::ERR_TIMED_OUT at https://theme-evolution-os2.myshopify.com/collections/all?preview_theme_id=188245508192\nCall log:\n\u001b[2m  - navigating to \"https:"
+ },
+ {
+  "key": "search",
+  "w": 375,
+  "error": "page.goto: net::ERR_TIMED_OUT at https://theme-evolution-os2.myshopify.com/search?q=snowboard&preview_theme_id=188245508192\nCall log:\n\u001b[2m  - navigating to \"htt"
+ },
+ {
+  "key": "search",
+  "w": 1440,
+  "error": "page.goto: net::ERR_TIMED_OUT at https://theme-evolution-os2.myshopify.com/search?q=snowboard&preview_theme_id=188245508192\nCall log:\n\u001b[2m  - navigating to \"htt"
+ },
+ {
+  "key": "cart",
+  "w": 375,
+  "error": "page.goto: net::ERR_TIMED_OUT at https://theme-evolution-os2.myshopify.com/cart?preview_theme_id=188245508192\nCall log:\n\u001b[2m  - navigating to \"https://theme-evo"
+ },
+ {
+  "key": "cart",
+  "w": 1440,
+  "error": "page.goto: net::ERR_TIMED_OUT at https://theme-evolution-os2.myshopify.com/cart?preview_theme_id=188245508192\nCall log:\n\u001b[2m  - navigating to \"https://theme-evo"
+ },
+ {
+  "key": "snow",
+  "w": 375,
+  "error": "page.goto: net::ERR_TIMED_OUT at https://theme-evolution-os2.myshopify.com/products/the-complete-snowboard?preview_theme_id=188245508192\nCall log:\n\u001b[2m  - navig"
+ },
+ {
+  "key": "snow",
+  "w": 1440,
+  "error": "page.goto: net::ERR_TIMED_OUT at https://theme-evolution-os2.myshopify.com/products/the-complete-snowboard?preview_theme_id=188245508192\nCall log:\n\u001b[2m  - navig"
+ }
+]

@@ -1,0 +1,1500 @@
+[
+ {
+  "key": "policy",
+  "w": 375,
+  "TC": [
+   "div.shopify-policy__container",
+   "div.shopify-policy__body",
+   "div.rte",
+   "div",
+   "p"
+  ],
+  "TCpaths": [
+   "div:0",
+   "div:0>div:1",
+   "div:0>div:1>div:0",
+   "div:0>div:1>div:0>div:0",
+   "div:0>div:1>div:0>div:0>p:38"
+  ],
+  "TCmb": [
+   "0px",
+   "0px",
+   "0px",
+   "0px",
+   "20px"
+  ],
+  "directKids": [
+   "div.shopify-policy__container"
+  ],
+  "margins": {
+   "div:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": true,
+    "tag": "div"
+   },
+   "div:0>div:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "div"
+   },
+   "div:0>div:0>h1:0": {
+    "mb": "32px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "h1"
+   },
+   "div:0>div:1": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": true,
+    "tag": "div"
+   },
+   "div:0>div:1>div:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": true,
+    "tag": "div"
+   },
+   "div:0>div:1>div:0>div:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": true,
+    "tag": "div"
+   },
+   "div:0>div:1>div:0>div:0>p:0": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>p:1": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>p:2": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>h2:3": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:4": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>ul:5": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "ul"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:0": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:0>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:1": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:1>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:2": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:2>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:3": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:3>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:4": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:4>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:5": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:5>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:6": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:6>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>h2:6": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:7": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>ul:8": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "ul"
+   },
+   "div:0>div:1>div:0>div:0>ul:8>li:0": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:8>li:0>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:8>li:1": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:8>li:1>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:8>li:2": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:8>li:2>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:8>li:3": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:8>li:3>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>h2:9": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:10": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>ul:11": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "ul"
+   },
+   "div:0>div:1>div:0>div:0>ul:11>li:0": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:11>li:0>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:11>li:1": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:11>li:1>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:11>li:2": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:11>li:2>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:11>li:3": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:11>li:3>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:11>li:4": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:11>li:4>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>h2:12": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:13": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>ul:14": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "ul"
+   },
+   "div:0>div:1>div:0>div:0>ul:14>li:0": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:14>li:1": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:14>li:1>a:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "a"
+   },
+   "div:0>div:1>div:0>div:0>ul:14>li:2": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:14>li:3": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:14>li:4": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>h2:15": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:16": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>p:16>a:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "a"
+   },
+   "div:0>div:1>div:0>div:0>p:16>a:1": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "a"
+   },
+   "div:0>div:1>div:0>div:0>h2:17": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:18": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>h2:19": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:20": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>h2:21": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:22": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>p:23": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>h2:24": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:25": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>ul:26": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "ul"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:0": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:0>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:1": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:1>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:2": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:2>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:3": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:3>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:4": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:4>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:4>a:1": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "a"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:5": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:5>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>div:27": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "div"
+   },
+   "div:0>div:1>div:0>div:0>p:28": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>p:29": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>h2:30": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:31": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>h2:32": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:33": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>p:34": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>h2:35": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:36": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>h2:37": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:38": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": true,
+    "tag": "p"
+   }
+  },
+  "witnesses": 6,
+  "empties": [
+   {
+    "path": "div:0>div:1>div:0>div:0>div:27",
+    "d": "div",
+    "display": "block",
+    "inTC": false,
+    "isLast": false
+   }
+  ],
+  "liRunMax": 253.0625,
+  "nLi": 27,
+  "sheets": [
+   {
+    "href": "https://theme-evolution-os2.myshopify.com/cdn/shopifycloud/storefront/assets/storefront/policy-0e156355.css",
+    "err": null,
+    "hit": [
+     {
+      "sel": ".shopify-policy__container",
+      "css": "max-width: 65ch; margin: 0px auto; padding-left: 20px; padding-right: 20px;",
+      "layer": null
+     },
+     {
+      "sel": ".shopify-policy__title",
+      "css": "text-align: center;",
+      "layer": null
+     },
+     {
+      "sel": ".shopify-policy__remote-policy-heading-wrapper",
+      "css": "text-align: center;",
+      "layer": null
+     },
+     {
+      "sel": ".shopify-policy__remote-policy-body",
+      "css": "margin-bottom: 20px;",
+      "layer": null
+     }
+    ]
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/client-DvHpcRFL.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/client-DvHpcRFL.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/ProductContextSync-BxlfAdmB.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/modal-DpVqB4RH.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/options-CfQ-Vm1e.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/methods-CfMaH18E.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/options-CfQ-Vm1e.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/client-DvHpcRFL.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/ProductContextSync-BxlfAdmB.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/modal-DpVqB4RH.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/options-CfQ-Vm1e.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/options-CfQ-Vm1e.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   }
+  ],
+  "ul": [
+   {
+    "lst": "disc",
+    "pis": "26px"
+   },
+   {
+    "lst": "disc",
+    "pis": "26px"
+   },
+   {
+    "lst": "disc",
+    "pis": "26px"
+   },
+   {
+    "lst": "disc",
+    "pis": "26px"
+   },
+   {
+    "lst": "disc",
+    "pis": "26px"
+   }
+  ],
+  "aa": [
+   "underline",
+   "underline",
+   "underline",
+   "underline"
+  ],
+  "nUl": 5,
+  "status": "ok",
+  "logs": []
+ },
+ {
+  "key": "policy",
+  "w": 1440,
+  "TC": [
+   "div.shopify-policy__container",
+   "div.shopify-policy__body",
+   "div.rte",
+   "div",
+   "p"
+  ],
+  "TCpaths": [
+   "div:0",
+   "div:0>div:1",
+   "div:0>div:1>div:0",
+   "div:0>div:1>div:0>div:0",
+   "div:0>div:1>div:0>div:0>p:38"
+  ],
+  "TCmb": [
+   "0px",
+   "0px",
+   "0px",
+   "0px",
+   "20px"
+  ],
+  "directKids": [
+   "div.shopify-policy__container"
+  ],
+  "margins": {
+   "div:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": true,
+    "tag": "div"
+   },
+   "div:0>div:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "div"
+   },
+   "div:0>div:0>h1:0": {
+    "mb": "32px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "h1"
+   },
+   "div:0>div:1": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": true,
+    "tag": "div"
+   },
+   "div:0>div:1>div:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": true,
+    "tag": "div"
+   },
+   "div:0>div:1>div:0>div:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": true,
+    "tag": "div"
+   },
+   "div:0>div:1>div:0>div:0>p:0": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>p:1": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>p:2": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>h2:3": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:4": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>ul:5": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "ul"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:0": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:0>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:1": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:1>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:2": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:2>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:3": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:3>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:4": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:4>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:5": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:5>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:6": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:5>li:6>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>h2:6": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:7": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>ul:8": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "ul"
+   },
+   "div:0>div:1>div:0>div:0>ul:8>li:0": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:8>li:0>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:8>li:1": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:8>li:1>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:8>li:2": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:8>li:2>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:8>li:3": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:8>li:3>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>h2:9": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:10": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>ul:11": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "ul"
+   },
+   "div:0>div:1>div:0>div:0>ul:11>li:0": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:11>li:0>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:11>li:1": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:11>li:1>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:11>li:2": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:11>li:2>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:11>li:3": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:11>li:3>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:11>li:4": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:11>li:4>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>h2:12": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:13": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>ul:14": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "ul"
+   },
+   "div:0>div:1>div:0>div:0>ul:14>li:0": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:14>li:1": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:14>li:1>a:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "a"
+   },
+   "div:0>div:1>div:0>div:0>ul:14>li:2": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:14>li:3": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:14>li:4": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>h2:15": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:16": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>p:16>a:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "a"
+   },
+   "div:0>div:1>div:0>div:0>p:16>a:1": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "a"
+   },
+   "div:0>div:1>div:0>div:0>h2:17": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:18": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>h2:19": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:20": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>h2:21": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:22": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>p:23": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>h2:24": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:25": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>ul:26": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "ul"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:0": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:0>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:1": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:1>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:2": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:2>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:3": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:3>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:4": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:4>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:4>a:1": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "a"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:5": {
+    "mb": "8px",
+    "mt": "8px",
+    "inTC": false,
+    "tag": "li"
+   },
+   "div:0>div:1>div:0>div:0>ul:26>li:5>strong:0": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "strong"
+   },
+   "div:0>div:1>div:0>div:0>div:27": {
+    "mb": "0px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "div"
+   },
+   "div:0>div:1>div:0>div:0>p:28": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>p:29": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>h2:30": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:31": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>h2:32": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:33": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>p:34": {
+    "mb": "20px",
+    "mt": "20px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>h2:35": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:36": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": false,
+    "tag": "p"
+   },
+   "div:0>div:1>div:0>div:0>h2:37": {
+    "mb": "24px",
+    "mt": "48px",
+    "inTC": false,
+    "tag": "h2"
+   },
+   "div:0>div:1>div:0>div:0>p:38": {
+    "mb": "20px",
+    "mt": "0px",
+    "inTC": true,
+    "tag": "p"
+   }
+  },
+  "witnesses": 6,
+  "empties": [
+   {
+    "path": "div:0>div:1>div:0>div:0>div:27",
+    "d": "div",
+    "display": "block",
+    "inTC": false,
+    "isLast": false
+   }
+  ],
+  "liRunMax": 253.0625,
+  "nLi": 27,
+  "sheets": [
+   {
+    "href": "https://theme-evolution-os2.myshopify.com/cdn/shopifycloud/storefront/assets/storefront/policy-0e156355.css",
+    "err": null,
+    "hit": [
+     {
+      "sel": ".shopify-policy__container",
+      "css": "max-width: 65ch; margin: 0px auto; padding-left: 20px; padding-right: 20px;",
+      "layer": null
+     },
+     {
+      "sel": ".shopify-policy__title",
+      "css": "text-align: center;",
+      "layer": null
+     },
+     {
+      "sel": ".shopify-policy__remote-policy-heading-wrapper",
+      "css": "text-align: center;",
+      "layer": null
+     },
+     {
+      "sel": ".shopify-policy__remote-policy-body",
+      "css": "margin-bottom: 20px;",
+      "layer": null
+     }
+    ]
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/client-DvHpcRFL.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/client-DvHpcRFL.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/ProductContextSync-BxlfAdmB.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/modal-DpVqB4RH.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/options-CfQ-Vm1e.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/methods-CfMaH18E.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/options-CfQ-Vm1e.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/client-DvHpcRFL.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/ProductContextSync-BxlfAdmB.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/modal-DpVqB4RH.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/options-CfQ-Vm1e.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   },
+   {
+    "href": "https://cdn.shopify.com/extensions/01a1ac7b-4ae3-7792-9390-ddcc6f7266fa/supercycle-2676/assets/options-CfQ-Vm1e.css",
+    "err": "Failed to read the 'cssRules' property from 'CSSStyleSheet': Cannot access rules",
+    "hit": []
+   }
+  ],
+  "ul": [
+   {
+    "lst": "disc",
+    "pis": "26px"
+   },
+   {
+    "lst": "disc",
+    "pis": "26px"
+   },
+   {
+    "lst": "disc",
+    "pis": "26px"
+   },
+   {
+    "lst": "disc",
+    "pis": "26px"
+   },
+   {
+    "lst": "disc",
+    "pis": "26px"
+   }
+  ],
+  "aa": [
+   "underline",
+   "underline",
+   "underline",
+   "underline"
+  ],
+  "nUl": 5,
+  "status": "ok",
+  "logs": []
+ }
+]
