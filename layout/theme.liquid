@@ -42,8 +42,18 @@
     {% sections 'header-group' %}
 
     {%- if request.page_type == 'policy' -%}
-      {% # Shopify renders store policies without theme classes; the typography plugin styles them like page content. w-full stops the centered box shrinking to its content. %}
-      <div class="prose prose-tokens mx-auto w-full" data-rich-text data-policy-prose>{{ content_for_layout }}</div>
+      {% comment %}
+        Shopify renders store policies without theme classes; the typography plugin styles them like page content.
+        The two outer boxes copy a page section: its side margin and the page shell in sections/page.liquid, so policy text lines up with other pages.
+        The ! modifier is needed: Shopify's storefront policy stylesheet gives .shopify-policy__container 20px side padding in an unlayered rule, which outranks any utility.
+        The last-child variant zeroes the bottom margin of the last element at every depth, skipping any element with a wrapper above it, inside this box, that has a later sibling; the typography plugin clears only its direct last child.
+        Keep data-rich-text on this box: the variant is anchored to it.
+      {% endcomment %}
+      <div class="px-(--page-margin)">
+        <div class="mx-auto w-full max-w-[calc(65ch+4rem)] px-8 py-10 md:py-16">
+          <div class="prose prose-tokens wrap-break-word *:px-0! [&_:last-child:not([data-rich-text]_:not(:last-child)_*)]:mb-0" data-rich-text data-policy-prose>{{ content_for_layout }}</div>
+        </div>
+      </div>
     {%- else -%}
       {{ content_for_layout }}
     {%- endif -%}
