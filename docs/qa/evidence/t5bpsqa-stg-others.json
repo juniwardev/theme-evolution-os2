@@ -1,0 +1,146 @@
+{
+ "contact|375": {
+  "theme": 187953643616,
+  "H1": 1,
+  "policyCount": 0,
+  "X_page": 0,
+  "footerTop": 181.5,
+  "G_top": 40,
+  "status": "ok"
+ },
+ "optout|375": {
+  "theme": 187953643616,
+  "H1": 1,
+  "policyCount": 0,
+  "X_page": 0,
+  "footerTop": 1680,
+  "G_top": 40,
+  "C_L": 52,
+  "C_R": 323,
+  "C_w": 271,
+  "PT": 40,
+  "PB": 40,
+  "T_L": 52,
+  "T_R": 430.796875,
+  "G_bot": 56,
+  "lastTextEl": "button",
+  "status": "ok"
+ },
+ "blog|375": {
+  "theme": 187953643616,
+  "H1": 1,
+  "policyCount": 0,
+  "X_page": 0,
+  "footerTop": 181.5,
+  "G_top": 40,
+  "status": "ok"
+ },
+ "collection|375": {
+  "theme": 187953643616,
+  "H1": 1,
+  "policyCount": 0,
+  "X_page": 0,
+  "footerTop": 2241.5,
+  "G_top": 40,
+  "status": "ok"
+ },
+ "search|375": {
+  "theme": 187953643616,
+  "H1": 1,
+  "policyCount": 0,
+  "X_page": 0,
+  "footerTop": 6035.75,
+  "G_top": 40,
+  "status": "ok"
+ },
+ "cart|375": {
+  "theme": 187953643616,
+  "H1": 1,
+  "policyCount": 0,
+  "X_page": 0,
+  "footerTop": 301.5,
+  "G_top": 40,
+  "status": "ok"
+ },
+ "snow|375": {
+  "theme": 187953643616,
+  "H1": 1,
+  "policyCount": 0,
+  "X_page": 0,
+  "footerTop": 2867.296875,
+  "G_top": 359,
+  "status": "ok"
+ },
+ "contact|1440": {
+  "theme": 187953643616,
+  "H1": 1,
+  "policyCount": 0,
+  "X_page": 0,
+  "footerTop": 237,
+  "G_top": 64,
+  "status": "ok"
+ },
+ "optout|1440": {
+  "theme": 187953643616,
+  "H1": 1,
+  "policyCount": 0,
+  "X_page": 0,
+  "footerTop": 1026,
+  "G_top": 64,
+  "C_L": 396.5625,
+  "C_R": 1043.4375,
+  "C_w": 646.875,
+  "PT": 64,
+  "PB": 64,
+  "T_L": 396.5625,
+  "T_R": 1043.4375,
+  "G_bot": 80,
+  "lastTextEl": "button",
+  "status": "ok"
+ },
+ "blog|1440": {
+  "theme": 187953643616,
+  "H1": 1,
+  "policyCount": 0,
+  "X_page": 0,
+  "footerTop": 237,
+  "G_top": 64,
+  "status": "ok"
+ },
+ "collection|1440": {
+  "theme": 187953643616,
+  "H1": 1,
+  "policyCount": 0,
+  "X_page": 0,
+  "footerTop": 3341.015625,
+  "G_top": 64,
+  "status": "ok"
+ },
+ "search|1440": {
+  "theme": 187953643616,
+  "H1": 1,
+  "policyCount": 0,
+  "X_page": 0,
+  "footerTop": 1354.875,
+  "G_top": 64,
+  "status": "ok"
+ },
+ "cart|1440": {
+  "theme": 187953643616,
+  "H1": 1,
+  "policyCount": 0,
+  "X_page": 0,
+  "footerTop": 357,
+  "G_top": 64,
+  "status": "ok"
+ },
+ "snow|1440": {
+  "theme": 187953643616,
+  "H1": 1,
+  "policyCount": 0,
+  "X_page": 0,
+  "footerTop": 2392.703125,
+  "G_top": 40,
+  "status": "ok"
+ }
+}

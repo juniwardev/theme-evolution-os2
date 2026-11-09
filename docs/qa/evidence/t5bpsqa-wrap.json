@@ -1,0 +1,26 @@
+{
+ "320": {
+  "cls": "prose prose-tokens wrap-break-word *:px-0! [&_:last-child:not([data-rich-text]_:not(:last-child)_*)]:mb-0",
+  "withFix": 0,
+  "longWords": [
+   "https://globalprivacycontrol.org/. (34)"
+  ],
+  "liCount": 1,
+  "liH": 1344,
+  "liRight": 268,
+  "withoutFix": 17,
+  "restored": 0
+ },
+ "360": {
+  "cls": "prose prose-tokens wrap-break-word *:px-0! [&_:last-child:not([data-rich-text]_:not(:last-child)_*)]:mb-0",
+  "withFix": 0,
+  "longWords": [
+   "https://globalprivacycontrol.org/. (34)"
+  ],
+  "liCount": 1,
+  "liH": 1120,
+  "liRight": 308,
+  "withoutFix": 0,
+  "restored": 0
+ }
+}
