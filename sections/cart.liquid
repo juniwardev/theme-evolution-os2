@@ -27,16 +27,21 @@
             {%- endif -%}
             <div class="flex min-w-0 grow flex-col items-start gap-3">
               <p class="font-semibold">{{ item.product.title | escape }}</p>
+              <p data-cart-line-price>{{ item.final_line_price | money }}</p>
               <label class="sr-only" for="CartPage-quantity-{{ item.index | plus: 1 }}">{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}</label>
-              <input id="CartPage-quantity-{{ item.index | plus: 1 }}" class="h-11 w-20 rounded-input border border-current bg-transparent px-3" type="text" name="updates[]" value="{{ item.quantity }}">
+              <input id="CartPage-quantity-{{ item.index | plus: 1 }}" class="h-11 w-20 rounded-input border border-current bg-transparent px-3" type="number" inputmode="numeric" min="0" name="updates[]" value="{{ item.quantity }}">
               {{ 'cart.remove' | t | link_to: item.url_to_remove, class: 'text-sm underline' }}
             </div>
           </li>
         {%- endfor -%}
       </ul>
+      <div class="flex items-center justify-between gap-3">
+        <p class="font-semibold">{{ 'sections.cart.headings.total' | t }}</p>
+        <p class="text-[1.25rem] font-bold" data-cart-total>{{ cart.total_price | money_with_currency }}</p>
+      </div>
       <div class="flex flex-wrap justify-end gap-3">
         <button type="submit" class="btn-secondary">{{ 'cart.update' | t }}</button>
-        <button type="submit" name="checkout" class="btn-primary">{{ 'cart.checkout' | t }}</button>
+        <button type="submit" name="checkout" class="btn-primary" formnovalidate>{{ 'cart.checkout' | t }}</button>
       </div>
     </form>
   {%- endif -%}
