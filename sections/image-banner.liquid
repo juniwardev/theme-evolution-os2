@@ -8,12 +8,15 @@
 {%- liquid
   assign full_width = '100vw'
   assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+  # Shopify omits an image's preload Link header once its imagesrcset gets long (T3 QA F1), so the preloaded banner image uses a shorter set.
+  assign preload_widths = '750, 1100, 1500, 2000, 3000'
 
   if section.settings.image_behavior == 'ambient'
     assign half_width = '60vw'
     assign full_width = '120vw'
     assign stacked_sizes = '(min-width: 750px) 60vw, 120vw'
     assign widths = '450, 660, 900, 1320, 1800, 2136, 2400, 3600, 7680'
+    assign preload_widths = '900, 1320, 1800, 2400, 3600'
   elsif section.settings.image_behavior == 'fixed' or section.settings.image_behavior == 'zoom-in'
     assign half_width = '100vw'
     assign stacked_sizes = '100vw'
@@ -276,7 +279,7 @@
             height: image_height,
             class: img_classes,
             sizes: sizes,
-            widths: widths,
+            widths: preload_widths,
             fetchpriority: fetch_priority
         }}
       {%- else -%}
@@ -320,7 +323,7 @@
             height: image_height_2,
             class: img2_classes,
             sizes: sizes,
-            widths: widths,
+            widths: preload_widths,
             fetchpriority: fetch_priority
         }}
       {%- else -%}
