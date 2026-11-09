@@ -3,12 +3,17 @@ class EcoTooltip {
     this.tooltips = new Map();
     this.cache = new Map();
     this.debounceTimer = null;
+    this.activeTrigger = null;
     this.init();
   }
 
   init() {
     document.body.addEventListener('mouseover', this.handleMouseOver.bind(this));
     document.body.addEventListener('mouseout', this.handleMouseOut.bind(this));
+    // Why: keyboard users reach triggers with Tab (WCAG 2.1.1) and dismiss the tooltip with Escape (1.4.13).
+    document.body.addEventListener('focusin', this.handleFocusIn.bind(this));
+    document.body.addEventListener('focusout', this.handleFocusOut.bind(this));
+    document.addEventListener('keydown', this.handleKeydown.bind(this));
   }
 
   handleMouseOver(event) {
@@ -17,6 +22,7 @@ class EcoTooltip {
 
     clearTimeout(this.debounceTimer);
     this.debounceTimer = setTimeout(() => {
+      this.activeTrigger = trigger;
       this.showTooltip(trigger);
     }, 100);
   }
@@ -26,7 +32,34 @@ class EcoTooltip {
     if (!trigger) return;
 
     clearTimeout(this.debounceTimer);
+    // Why: a keyboard-focused trigger keeps its tooltip when the pointer leaves; a mouse click doesn't make it stick.
+    if (document.activeElement === trigger && trigger.matches(':focus-visible')) return;
+    if (this.activeTrigger === trigger) this.activeTrigger = null;
     this.hideTooltip(trigger);
+  }
+
+  handleFocusIn(event) {
+    const trigger = event.target.closest('.eco-tooltip-trigger');
+    if (!trigger) return;
+
+    clearTimeout(this.debounceTimer);
+    this.activeTrigger = trigger;
+    this.showTooltip(trigger);
+  }
+
+  handleFocusOut(event) {
+    const trigger = event.target.closest('.eco-tooltip-trigger');
+    if (!trigger) return;
+
+    if (this.activeTrigger === trigger) this.activeTrigger = null;
+    this.hideTooltip(trigger);
+  }
+
+  handleKeydown(event) {
+    if (event.key !== 'Escape') return;
+
+    this.activeTrigger = null;
+    this.tooltips.forEach((tooltip) => tooltip.classList.remove('is-visible'));
   }
 
   async showTooltip(trigger) {
@@ -37,7 +70,10 @@ class EcoTooltip {
     let materialData = this.cache.get(materialHandle);
 
     if (tooltip && materialData) {
+      // Why: the trigger may have lost focus or hover since this call started.
+      if (this.activeTrigger !== trigger) return;
       this.positionTooltip(trigger, tooltip);
+      trigger.setAttribute('aria-describedby', tooltip.id);
       tooltip.classList.add('is-visible');
       return;
     }
@@ -65,14 +101,17 @@ class EcoTooltip {
     }
 
     if (!tooltip) {
-      tooltip = this.createTooltipElement(materialData);
+      tooltip = this.createTooltipElement(materialData, materialHandle);
       this.tooltips.set(materialHandle, tooltip);
       document.body.appendChild(tooltip);
     } else {
       tooltip.innerHTML = materialData;
     }
     
+    // Why: the fetch is async; a tooltip whose trigger lost focus or hover meanwhile must not appear afterwards and stay.
+    if (this.activeTrigger !== trigger) return;
     this.positionTooltip(trigger, tooltip);
+    trigger.setAttribute('aria-describedby', tooltip.id);
     tooltip.classList.add('is-visible');
   }
 
@@ -84,9 +123,11 @@ class EcoTooltip {
     }
   }
 
-  createTooltipElement(content) {
+  createTooltipElement(content, materialHandle) {
     const tooltip = document.createElement('div');
     tooltip.classList.add('eco-tooltip');
+    tooltip.id = 'eco-tooltip-' + materialHandle;
+    tooltip.setAttribute('role', 'tooltip');
     tooltip.innerHTML = content;
     // Positioning is handled by positionTooltip
     return tooltip;
