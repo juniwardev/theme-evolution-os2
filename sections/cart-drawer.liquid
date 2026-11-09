@@ -2,7 +2,7 @@
   <cart-drawer class="group/drawer block" data-state="closed" hidden>
     <div id="CartDrawer" class="cart-drawer__inner fixed top-0 left-0 z-1000 flex h-screen w-screen justify-end">
       <div class="absolute top-0 left-0 block size-full cursor-pointer bg-black/50 opacity-0 transition-opacity duration-300 ease-[ease] group-data-[state=open]/drawer:opacity-100" data-cart-drawer-close></div>
-      <div class="relative flex h-full w-full max-w-[25rem] translate-x-full flex-col bg-background shadow-[-5px_0_15px_rgb(0_0_0/0.1)] transition-transform duration-300 ease-[cubic-bezier(0.19,1,0.22,1)] group-data-[state=open]/drawer:translate-x-0" role="dialog" aria-modal="true" aria-label="{{ 'cart.title' | t }}">
+      <div class="relative flex h-full w-full max-w-[25rem] translate-x-full flex-col bg-background shadow-[-5px_0_15px_rgb(0_0_0/0.1)] transition-transform duration-300 ease-[cubic-bezier(0.19,1,0.22,1)] group-data-[state=open]/drawer:translate-x-0 focus-visible:outline-none" role="dialog" aria-modal="true" tabindex="-1" aria-label="{{ 'cart.title' | t }}">
         <div class="flex items-center justify-between border-b border-foreground/10 p-5">
           <h2 class="m-0 font-heading text-[1.25rem] leading-tight font-bold uppercase">{{ 'cart.title' | t }}</h2>
           <button class="text-[2rem] leading-none" type="button" data-cart-drawer-close aria-label="{{ 'cart.close' | t }}">
@@ -99,6 +99,16 @@
         // Why: bindEvents() runs again after every re-render, so document listeners are added here, once.
         this.onDocumentKeyup = this.onDocumentKeyup.bind(this);
         document.addEventListener('keyup', this.onDocumentKeyup);
+        this.returnFocusTo = null;
+        this.lastFocused = { id: '', removeIndex: '' };
+        this.onDocumentKeydown = this.onDocumentKeydown.bind(this);
+        document.addEventListener('keydown', this.onDocumentKeydown);
+        // Why: the host survives every innerHTML swap, so it remembers which control had focus.
+        this.addEventListener('focusin', (e) => {
+          const target = e.target;
+          const isRemove = target.classList.contains('cart-drawer__item-remove');
+          this.lastFocused = { id: target.id || '', removeIndex: isRemove ? target.dataset.index || '' : '' };
+        });
         this.bindEvents();
       }
 
@@ -110,6 +120,8 @@
           }
           newTrigger.addEventListener('click', (e) => {
             e.preventDefault();
+            // Why: product-form sets activeElement before its fetch and a 422 never consumes it; the icon must win.
+            this.setActiveElement(newTrigger);
             this.open();
           });
         });
@@ -135,29 +147,104 @@
         });
       }
 
+      get panel() {
+        return this.querySelector('[role="dialog"]');
+      }
+
+      isOpen() {
+        return this.drawer.dataset.state === 'open';
+      }
+
+      focusables() {
+        const panel = this.panel;
+        if (!panel) return [];
+        const selector = 'a[href], button:not([disabled]), input:not([disabled]):not([type="hidden"]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+        return [...panel.querySelectorAll(selector)].filter(
+          (el) => el.getClientRects().length > 0 && getComputedStyle(el).visibility !== 'hidden'
+        );
+      }
+
       onDocumentKeyup(e) {
         // Why: a document listener outlives its element; a replaced drawer (theme editor) must stay inert.
         if (!this.isConnected) return;
-        if (e.code === 'Escape') this.close();
+        if (e.code === 'Escape' && this.isOpen()) this.close();
+      }
+
+      onDocumentKeydown(e) {
+        // Why: a detached drawer that still reads "open" would otherwise swallow every Tab on the page (N7).
+        if (!this.isConnected) return;
+        if (e.key !== 'Tab' || !this.isOpen()) return;
+        const panel = this.panel;
+        if (!panel) return;
+        const items = this.focusables();
+        if (items.length === 0) {
+          e.preventDefault();
+          panel.focus({ preventScroll: true });
+          return;
+        }
+        const first = items[0];
+        const last = items[items.length - 1];
+        const active = document.activeElement;
+        const inside = panel.contains(active);
+        if (e.shiftKey && (!inside || active === first || active === panel)) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && (!inside || active === last)) {
+          e.preventDefault();
+          first.focus();
+        }
       }
 
       open() {
         // Why: a close() still in flight would otherwise set hidden after this open (T4a QA nit 2).
         clearTimeout(this.closeTimer);
         clearTimeout(this.openTimer);
+        const wasOpen = this.isOpen() && !this.drawer.hidden;
+        if (!wasOpen) {
+          // Why: product-form passes the add button; otherwise whatever had focus opened the drawer.
+          this.returnFocusTo = this.activeElement || document.activeElement;
+          this.activeElement = null;
+        }
         this.drawer.hidden = false;
         this.openTimer = setTimeout(() => {
           this.drawer.dataset.state = 'open';
+          if (!wasOpen && this.panel) this.panel.focus({ preventScroll: true });
         }, 10);
       }
 
       close() {
         clearTimeout(this.openTimer);
         clearTimeout(this.closeTimer);
+        const wasOpen = this.isOpen();
         this.drawer.dataset.state = 'closed';
         this.closeTimer = setTimeout(() => {
           this.drawer.hidden = true;
         }, 300);
+        if (wasOpen) this.returnFocus();
+      }
+
+      returnFocus() {
+        let target = this.returnFocusTo;
+        this.returnFocusTo = null;
+        // Why: bindEvents() replaces the header icon with a clone, so a stored trigger can be detached.
+        if (!target || !target.isConnected || target === document.body) {
+          target = document.querySelector('[data-cart-drawer-trigger]');
+        }
+        if (target) target.focus();
+      }
+
+      keepFocusInside() {
+        if (!this.isOpen() || this.contains(document.activeElement)) return;
+        const { id, removeIndex } = this.lastFocused;
+        let target = id ? document.getElementById(id) : null;
+        if (!target && removeIndex) {
+          target = this.querySelector('.cart-drawer__item-remove[data-index="' + removeIndex + '"]');
+        }
+        if (target && this.contains(target)) {
+          target.focus();
+        } else if (this.panel) {
+          this.panel.focus({ preventScroll: true });
+        }
       }
 
       getSectionsToRender() {
@@ -206,6 +293,7 @@
         
         this.bindEvents();
         this.open();
+        this.keepFocusInside();
       }
 
       updateLineItem(line, quantity) {
@@ -248,6 +336,7 @@
               this.querySelector('.cart-drawer__inner').innerHTML = newDrawerInner.innerHTML;
               this.bindEvents();
               this.open();
+              this.keepFocusInside();
             }
           })
           .catch((error) => console.error('Error updating cart drawer:', error));
